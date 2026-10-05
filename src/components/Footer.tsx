@@ -68,10 +68,10 @@ export default function Footer() {
               <span>
                 {site.address.locality}, {site.address.region} {site.address.postalCode}
               </span>
-              <a href={site.phone.href} className={`mt-1.5 ${linkCls}`}>
+              <a href={site.phone.href} className={`mt-1.5 py-1 lg:py-0 ${linkCls}`}>
                 {site.phone.display}
               </a>
-              <a href={`mailto:${site.email}`} className={linkCls}>
+              <a href={`mailto:${site.email}`} className={`py-1 lg:py-0 ${linkCls}`}>
                 {site.email}
               </a>
               <span>{site.hours.display}</span>

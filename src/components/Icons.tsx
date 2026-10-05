@@ -81,3 +81,12 @@ export const FlagES = ({ className = "h-[13px] w-[18px]" }: { className?: string
     style={{ background: "linear-gradient(#AA151B 0 25%,#F1BF00 25% 75%,#AA151B 75%)" }}
   />
 );
+
+/** Five stars drawn as SVG (sized in em, colored by currentColor) so no fallback glyph font is needed. */
+export const Stars = ({ className }: { className?: string }) => (
+  <svg viewBox="0 0 100 20" aria-hidden="true" className={`inline-block h-[1em] w-[5em] flex-none align-[-0.12em] ${className ?? ""}`} fill="currentColor">
+    {[0, 1, 2, 3, 4].map((i) => (
+      <path key={i} transform={`translate(${i * 20} 0)`} d="M10 1.8l2.5 5.3 5.7.7-4.2 4 1.1 5.7L10 14.7l-5.1 2.8 1.1-5.7-4.2-4 5.7-.7z" />
+    ))}
+  </svg>
+);

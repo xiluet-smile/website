@@ -1,7 +1,7 @@
 import Link from "next/link";
 import FaqAccordion from "@/components/FaqAccordion";
 import Header from "@/components/Header";
-import { CameraIcon, PhoneIcon, WhatsAppIcon } from "@/components/Icons";
+import { CameraIcon, PhoneIcon, Stars, WhatsAppIcon } from "@/components/Icons";
 import Img from "@/components/Img";
 import JsonLd from "@/components/JsonLd";
 import LineIcon, { type LineIconName } from "@/components/LineIcon";
@@ -19,7 +19,6 @@ export const metadata = pageMetadata("/");
 
 const h2 = "m-0 font-serif text-[34px] leading-[1.2] font-normal lg:text-[48px] lg:leading-[1.1]";
 const headRow = "mb-4 flex flex-col gap-3 lg:mb-10 lg:flex-row lg:items-end lg:justify-between lg:gap-8";
-const stars = "★★★★★";
 const calloutPos = { tl: "top-4 left-4", tr: "top-4 right-4", br: "right-4 bottom-4" } as const;
 
 const packageIcons: Record<string, LineIconName> = {
@@ -76,9 +75,7 @@ export default function Home() {
                     />
                   ))}
                 </span>
-                <span className="text-sm tracking-[.08em] text-gold" aria-hidden="true">
-                  {stars}
-                </span>
+                <Stars className="text-sm text-gold" />
                 <span>{rating.count} five-star Google reviews</span>
               </div>
               <div className="flex items-baseline gap-2.5 text-[17px] leading-[1.35] font-semibold lg:text-sm lg:font-medium lg:text-[#E3DDD0]">
@@ -109,7 +106,7 @@ export default function Home() {
         <div className="relative z-[2] lg:border-t lg:border-[rgba(247,244,238,.18)] lg:bg-[rgba(4,30,36,.35)] lg:backdrop-blur-[10px]">
           <dl className="wrap m-0 grid grid-cols-2 gap-x-5 gap-y-3 pb-6 text-[15px] text-on-dark-muted max-lg:[&>div:nth-child(-n+2)]:border-t max-lg:[&>div:nth-child(-n+2)]:border-[rgba(247,244,238,.18)] max-lg:[&>div:nth-child(-n+2)]:pt-4 lg:grid-cols-4 lg:gap-0 lg:pt-6 lg:pb-7 lg:text-lg">
             {[
-              { big: rating.value, small: stars, label: `${rating.value} out of 5 stars`, gold: true },
+              { big: rating.value, small: "stars", label: `${rating.value} out of 5 stars`, gold: true },
               { big: String(rating.count), small: "Google reviews" },
               { big: `${site.warrantyYears}-year`, small: "warranty" },
               { big: String(doctors.length), small: "doctors, DMD" },
@@ -118,7 +115,7 @@ export default function Home() {
                 <dt className="order-2 m-0">
                   {s.gold ? (
                     <span className="text-sm text-gold lg:text-lg" role="img" aria-label={s.label}>
-                      {s.small}
+                      <Stars />
                     </span>
                   ) : (
                     s.small
@@ -132,7 +129,7 @@ export default function Home() {
       </section>
 
       {/* Sound familiar */}
-      <section className="wrap pt-16 lg:pt-28">
+      <section className="defer-render wrap pt-16 lg:pt-28">
         <div className={headRow}>
           <h2 className={h2}>Sound familiar?</h2>
           <p className="m-0 max-w-[420px] text-[17px] leading-normal text-pretty text-body lg:mb-2 lg:text-right">
@@ -187,7 +184,7 @@ export default function Home() {
       </section>
 
       {/* Real results */}
-      <section className="wrap overflow-hidden pt-16 lg:pt-28">
+      <section className="defer-render wrap overflow-hidden pt-16 lg:pt-28">
         <div className="mb-4 flex items-end justify-between gap-8 lg:mb-6">
           <h2 className={h2}>Real results</h2>
           <Link href="/before-and-after" className="link-strong hidden lg:inline">
@@ -204,7 +201,7 @@ export default function Home() {
           ([Patient name], no video files). Section is omitted until real videos are supplied. */}
 
       {/* Doctors */}
-      <section className="wrap pt-16 lg:pt-28">
+      <section className="defer-render wrap pt-16 lg:pt-28">
         <div className={headRow}>
           <h2 className={h2}>The doctors who design your smile</h2>
           <Link href="/doctors" className="link-strong">
@@ -236,7 +233,7 @@ export default function Home() {
       </section>
 
       {/* How it works */}
-      <section className="wrap pt-16 lg:pt-28">
+      <section className="defer-render wrap pt-16 lg:pt-28">
         <div className="relative">
           <div className="mb-4 lg:mb-14 lg:min-h-[110px]">
             <h2 className={`${h2} lg:mb-3`}>How it works</h2>
@@ -252,7 +249,7 @@ export default function Home() {
       </section>
 
       {/* What it costs */}
-      <section className="wrap pt-16 lg:pt-28">
+      <section className="defer-render wrap pt-16 lg:pt-28">
         <div className="mb-5 flex flex-col gap-3 lg:mb-7 lg:flex-row lg:items-end lg:justify-between lg:gap-8">
           <div className="flex flex-col gap-2">
             <h2 className={h2}>What it costs</h2>
@@ -312,7 +309,7 @@ export default function Home() {
       </section>
 
       {/* Financing */}
-      <section className="wrap pt-16 lg:pt-24">
+      <section className="defer-render wrap pt-16 lg:pt-24">
         <div className="mb-5 flex flex-col gap-3 lg:mb-6 lg:flex-row lg:items-end lg:justify-between lg:gap-8">
           <div className="flex max-w-[640px] flex-col gap-2">
             <span className="eyebrow text-gold-text">Financing</span>
@@ -331,8 +328,8 @@ export default function Home() {
               className="glass-card flex flex-col gap-2.5 rounded-2xl p-[18px] text-ink no-underline transition-[transform,box-shadow] duration-[240ms] ease-card hover:-translate-y-[3px] hover:text-ink hover:shadow-[inset_0_1px_0_rgba(255,255,255,.6),0_18px_36px_rgba(26,26,26,.1)] lg:gap-3 lg:p-5"
             >
               <div className="flex items-center justify-between gap-3 xl:block">
-                <div className="flex h-[34px] items-center">
-                  <Img src={l.logo} alt={l.name} sizes="128px" className="block h-auto max-h-[30px] w-auto max-w-[128px] object-contain" />
+                <div className="flex h-[34px] flex-none items-center">
+                  <Img src={l.logo} alt={l.name} sizes="128px" className="block h-[26px] w-auto max-w-[128px] object-contain object-left" />
                 </div>
                 <span className="rounded-full bg-[rgba(205,177,128,.16)] px-2.5 py-1 text-xs font-semibold whitespace-nowrap text-gold-text xl:mt-3 xl:inline-block xl:px-[9px] xl:text-[11px]">
                   {l.tag}
@@ -347,7 +344,7 @@ export default function Home() {
       </section>
 
       {/* Why trust */}
-      <section className="wrap pt-16 lg:pt-24">
+      <section className="defer-render wrap pt-16 lg:pt-24">
         <div className="dark-panel flex flex-col gap-5 rounded-[20px] px-6 py-8 lg:grid lg:grid-cols-[minmax(0,.9fr)_minmax(0,1.1fr)] lg:items-center lg:gap-10 lg:px-11 lg:py-10">
           <div className="flex max-w-[460px] flex-col gap-3.5">
             <span className="eyebrow text-gold">Why patients trust us</span>
@@ -386,9 +383,7 @@ export default function Home() {
                     </span>
                   )}
                   {t.stars && (
-                    <span className="text-[11px] tracking-[1px] text-gold" aria-hidden="true">
-                      {stars}
-                    </span>
+                    <Stars className="text-[11px] text-gold" />
                   )}
                   {t.sub && <span className="text-xs text-on-dark-muted">{t.sub}</span>}
                 </span>
@@ -399,7 +394,7 @@ export default function Home() {
       </section>
 
       {/* In-house lab */}
-      <section className="wrap pt-16 lg:pt-28">
+      <section className="defer-render wrap pt-16 lg:pt-28">
         <div className="flex flex-col gap-4 lg:grid lg:grid-cols-2 lg:items-center lg:gap-16">
           {/* Design has an empty image slot here; using the supplied editorial lab image. */}
           <Img
@@ -431,7 +426,7 @@ export default function Home() {
       </section>
 
       {/* Out of state */}
-      <section className="wrap pt-16 lg:pt-28">
+      <section className="defer-render wrap pt-16 lg:pt-28">
         <div className="relative overflow-hidden rounded-[18px] bg-teal text-on-dark lg:grid lg:min-h-[520px] lg:grid-cols-[minmax(0,.9fr)_minmax(0,1.1fr)] lg:rounded-[20px] lg:shadow-[0_30px_80px_rgba(4,40,46,.28)]">
           {site.videos.miamiArrival ? (
             <video autoPlay muted loop playsInline preload="none" aria-hidden="true" poster="/og/gen-clinic-room.jpg" className="absolute inset-0 h-full w-full object-cover object-[60%_50%] lg:object-[70%_50%]">
@@ -468,7 +463,7 @@ export default function Home() {
       </section>
 
       {/* Questions */}
-      <section className="wrap pt-16 lg:pt-28">
+      <section className="defer-render wrap pt-16 lg:pt-28">
         <div className={headRow}>
           <h2 className={h2}>Questions patients ask first</h2>
         </div>
@@ -478,14 +473,14 @@ export default function Home() {
       </section>
 
       {/* Reviews */}
-      <section className="wrap pt-16 lg:pt-28">
+      <section className="defer-render wrap pt-16 lg:pt-28">
         <div className={headRow}>
           <div>
             <h2 className={`${h2} mb-1.5 lg:mb-2`}>What patients say on Google</h2>
             <div className="flex items-baseline gap-2 lg:gap-2.5">
               <span className="font-serif text-2xl lg:text-[28px]">{rating.value}</span>
               <span className="text-sm text-gold-text lg:text-base" role="img" aria-label={`${rating.value} out of 5 stars`}>
-                {stars}
+                <Stars />
               </span>
               <span className="text-[15px] text-body lg:text-lg">{rating.count} reviews</span>
             </div>
@@ -499,8 +494,8 @@ export default function Home() {
         <div className="-mx-5 flex gap-3 overflow-x-auto px-5 pb-1 lg:mx-0 lg:grid lg:grid-cols-4 lg:gap-6 lg:overflow-visible lg:px-0 lg:pb-0">
           {reviews.reviews.slice(0, 4).map((r) => (
             <article key={r.name} className="glass-card flex w-[280px] flex-none flex-col gap-3 rounded-2xl p-[22px] lg:min-h-[240px] lg:w-auto lg:gap-3.5 lg:p-7">
-              <div className="text-sm tracking-[.1em] text-gold-text lg:text-[15px]" aria-hidden="true">
-                {stars}
+              <div className="text-sm text-gold-text lg:text-[15px]">
+                <Stars />
               </div>
               <p className="m-0 text-base leading-normal text-pretty lg:text-[17px]">{r.text}</p>
               <div className="mt-auto text-[13px] text-muted lg:text-sm">
@@ -512,7 +507,7 @@ export default function Home() {
       </section>
 
       {/* Our office */}
-      <section className="wrap pt-16 lg:pt-28">
+      <section className="defer-render wrap pt-16 lg:pt-28">
         <div className={headRow}>
           <div>
             <h2 className={`${h2} mb-1.5 lg:mb-2`}>Our office</h2>

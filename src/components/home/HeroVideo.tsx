@@ -4,18 +4,55 @@ import { useEffect, useRef } from "react";
 
 /**
  * Background hero video: muted, plays once and holds its last frame.
- * The tag is written as raw HTML so `muted` is a real attribute (React omits
- * it from server HTML, which blocks autoplay before hydration).
+ * It is attached only after the page has loaded and the browser is idle, so it
+ * never competes with first paint; visitors who prefer reduced motion or use
+ * data saver get the static hero. Without JS the <noscript> copy plays instead.
  */
 export default function HeroVideo({ src }: { src: string }) {
   const ref = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
-    const video = ref.current?.querySelector("video");
-    if (!video) return;
-    video.muted = true;
-    if (matchMedia("(prefers-reduced-motion: reduce)").matches) video.pause();
-    else video.play().catch(() => {});
-  }, []);
-  const html = `<video autoplay muted playsinline preload="metadata" aria-hidden="true" tabindex="-1" class="absolute inset-0 h-full w-full bg-[#0A2624] object-cover object-[60%_30%] lg:object-[78%_40%]"><source src="${encodeURI(src)}" type="video/mp4"></video>`;
-  return <div ref={ref} className="absolute inset-0" dangerouslySetInnerHTML={{ __html: html }} />;
+    const host = ref.current;
+    if (!host || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    if ((navigator as Navigator & { connection?: { saveData?: boolean } }).connection?.saveData) return;
+
+    let cancelled = false;
+    const start = () => {
+      if (cancelled) return;
+      const video = document.createElement("video");
+      video.muted = true;
+      video.playsInline = true;
+      video.preload = "auto";
+      video.tabIndex = -1;
+      video.setAttribute("aria-hidden", "true");
+      video.className = "absolute inset-0 h-full w-full object-cover object-[60%_30%] opacity-0 transition-opacity duration-700 lg:object-[78%_40%]";
+      video.addEventListener(
+        "playing",
+        () => {
+          video.classList.remove("opacity-0");
+          // Starts the hero callout animations (see .hero-callout in globals.css).
+          document.documentElement.dataset.heroPlaying = "1";
+        },
+        { once: true },
+      );
+      video.src = src;
+      host.appendChild(video);
+      video.play().catch(() => {});
+    };
+    // Give images and scripts a head start on slow connections before the 2.4 MB video.
+    const whenIdle = () => setTimeout(() => ("requestIdleCallback" in window ? requestIdleCallback(start, { timeout: 2000 }) : start()), 2000);
+    if (document.readyState === "complete") whenIdle();
+    else window.addEventListener("load", whenIdle, { once: true });
+    return () => {
+      cancelled = true;
+      window.removeEventListener("load", whenIdle);
+    };
+  }, [src]);
+
+  const fallback = `<video autoplay muted playsinline aria-hidden="true" tabindex="-1" class="absolute inset-0 h-full w-full object-cover object-[60%_30%] lg:object-[78%_40%]"><source src="${encodeURI(src)}" type="video/mp4"></video><style>.hero-callout{animation-play-state:running}</style>`;
+  return (
+    <div ref={ref} className="absolute inset-0 bg-[#0A2624]">
+      <noscript dangerouslySetInnerHTML={{ __html: fallback }} />
+    </div>
+  );
 }

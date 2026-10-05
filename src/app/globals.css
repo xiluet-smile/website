@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* Self-hosted fonts (latin subset) */
+/* Self-hosted fonts (latin subset) in public/fonts. */
 @font-face {
   font-family: "Playfair Display";
   font-style: normal;
@@ -36,6 +36,23 @@
   font-display: swap;
   src: url("/fonts/source-sans-3-latin-600-normal.woff2") format("woff2");
 }
+/* Metric-matched system fallbacks so text does not shift when the web fonts swap in. */
+@font-face {
+  font-family: "Playfair Fallback";
+  src: local("Times New Roman");
+  ascent-override: 97.38%;
+  descent-override: 22.59%;
+  line-gap-override: 0%;
+  size-adjust: 111.11%;
+}
+@font-face {
+  font-family: "Source Sans Fallback";
+  src: local("Arial");
+  ascent-override: 108.71%;
+  descent-override: 42.47%;
+  line-gap-override: 0%;
+  size-adjust: 94.19%;
+}
 
 /* Design tokens from the handoff README */
 @theme {
@@ -53,8 +70,8 @@
   --color-on-dark: #f7f4ee;
   --color-on-dark-muted: #c9c2b3;
 
-  --font-serif: "Playfair Display", Georgia, serif;
-  --font-sans: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "Playfair Display", "Playfair Fallback", Georgia, serif;
+  --font-sans: "Source Sans 3", "Source Sans Fallback", "Helvetica Neue", Arial, sans-serif;
 
   --radius-input: 12px;
   --radius-card: 18px;
@@ -110,6 +127,14 @@
   /* The header needs ~1200px of content width, so its gutter shrinks first. */
   .header-gutter {
     padding-inline: clamp(24px, calc((100vw - 1200px) / 2), 120px);
+  }
+  /* Below-the-fold sections: skip layout and paint until they approach the viewport. */
+  .defer-render {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 900px;
+    /* Paint containment clips at the box edge; leave room for card shadows. */
+    padding-bottom: 48px;
+    margin-bottom: -48px;
   }
   .page-bg {
     background-color: var(--color-cream);
@@ -299,7 +324,10 @@
   /* Home hero callouts: fade up in sequence, timed to the hero video. */
   .hero-callout {
     opacity: 0;
-    animation: xrise 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+    animation: xrise 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) forwards paused;
+  }
+  [data-hero-playing] .hero-callout {
+    animation-play-state: running;
   }
 
   .card-hover {

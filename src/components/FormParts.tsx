@@ -39,7 +39,8 @@ export function ConsentField({ consent }: { consent: Consent }) {
 export function FormGuards() {
   return (
     <>
-      <div aria-hidden="true" className="absolute -left-[9999px] h-px w-px overflow-hidden">
+      {/* visibility:hidden (not just off-screen) so browser autofill never fills it for a real visitor. */}
+      <div aria-hidden="true" className="invisible absolute h-0 w-0 overflow-hidden">
         <label>
           Company
           <input type="text" name="company" tabIndex={-1} autoComplete="off" defaultValue="" />
@@ -73,6 +74,15 @@ export function FormError({ generic, message }: { generic: string; message: stri
 }
 
 const noopSubscribe = () => () => {};
+
+/** False on the server and before hydration, true once the client script runs. */
+export function useHydrated(): boolean {
+  return useSyncExternalStore(
+    noopSubscribe,
+    () => true,
+    () => false,
+  );
+}
 
 /** True after the no-JS redirect lands on `?sent=1`. */
 export function useSentParam(): boolean {

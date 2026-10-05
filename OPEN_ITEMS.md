@@ -27,6 +27,17 @@ Things the design files leave unresolved. Each is marked `TODO(clinic)` in the c
 - **Legal pages**: Privacy Policy, Terms, Notice of Privacy Practices, Refund and Cancellation have no designs or copy; footer links point to `#` (`src/content/nav.json` → `legal`).
 - **Spanish**: the EN | ES switch is in the design but /es/ is phase 2; the ES link points to `#`.
 
+## Forms (copy and behaviour not in the designs)
+- **Photo limit.** The design says "Up to 10 photos"; STACK.md says 8 (10 MB each). The site and the function use 8 (`src/content/lead-form.json` → `limits`).
+- **Photos are optional** (README), so the design's disabled "Add at least one photo to send" button state is not used.
+- **Error messages** for both forms are not in the designs; the strings under `errors` in `lead-form.json` and `contact.json` were written for the build and need sign-off.
+- **"Notes (optional)"** field label: STACK.md lists a `notes` field but the design has no such input.
+- **`origin` field**: STACK.md does not define it; implemented as a hidden lead-source field (the page the visitor came from). Change if it was meant to be the patient's city or state.
+- **Consent text** links to the Privacy Policy, which does not exist yet.
+- **Autoresponder email** uses only the design's confirmation wording: subject "Sent. A doctor is reviewing your smile."; body "You will hear from us by text first, then email, within 6 hours during office hours (Mon–Fri 9am–5pm ET)." The "by text first" promise needs an SMS provider or a person texting.
+- **Bot protection vs no-JavaScript.** Turnstile cannot run without JavaScript. Submissions without a token are accepted only from the no-JS form path, with an empty honeypot and a stricter rate limit. Set `REQUIRE_TURNSTILE=1` to refuse them (the no-JS form then stops working).
+- **Contact page JSON-LD** keeps the site-wide Dentist/WebPage/WebSite nodes; the design's contact block used a slightly different Dentist node (`$$$`, extra `contactPoint`/`hasMap`) that contradicts the other 23 pages.
+
 ## Lender claims to confirm against merchant agreements (rendered verbatim)
 - **Cherry**: $200 to $30,000; 3 to 60 months; 0% APR options for qualified patients; "approving around 75 percent of applicants"; no early-payoff penalty; no hard pull.
 - **Sunbit**: "approves about 9 in 10 applicants" / "~90%"; decision in 30 sec / under a minute; no late, origination or prepayment fees; terms up to 72 months.
@@ -41,6 +52,8 @@ Things the design files leave unresolved. Each is marked `TODO(clinic)` in the c
 - **Out-of-state video** (`miami-arrival.mp4`) is not in the repo per STACK.md; the poster image shows until a URL is set in `site.json` → `videos.miamiArrival`.
 - **CRM endpoint** for leads (`CRM_WEBHOOK_URL`) is not specified.
 - **SMS autoresponder**: no provider specified; only the email autoresponder is implemented.
+- **Hero poster image**: the hero video has no poster, so the hero shows the dark teal background until the video starts (about 2 seconds after load). A still frame from the video would fix that.
+- **Case captions**: the Full Mouth Reconstruction page captions case BA13 "Full mouth reconstruction", while the Results page files BA13 (and BA9) under other types. Confirm the treatment for each case.
 
 ## Build decisions worth knowing
 - Schema `logo`/`image` URLs point to `/og/…` (real files in the build) rather than the design's `/assets/…` paths, which do not exist in production.

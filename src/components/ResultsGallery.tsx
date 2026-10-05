@@ -38,10 +38,11 @@ export default function ResultsGallery() {
         Showing {shown} of {cases.length}
       </p>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {cases.map((c) => (
+        {cases.map((c, i) => (
           <CaseCard
             key={c.id}
             c={c}
+            priority={i === 0}
             sizes="(min-width: 1440px) 384px, (min-width: 1024px) 28vw, (min-width: 640px) 46vw, 92vw"
             data-type={c.type}
             className={filter === "All" || c.type === filter ? "" : "hidden"}
