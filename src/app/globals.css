@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+/* Self-hosted fonts (latin subset) */
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/playfair-display-latin-400-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/playfair-display-latin-400-italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Source Sans 3";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/source-sans-3-latin-400-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Source Sans 3";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/source-sans-3-latin-500-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Source Sans 3";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/source-sans-3-latin-600-normal.woff2") format("woff2");
+}
+
+/* Design tokens from the handoff README */
+@theme {
+  --color-ink: #1a1a1a;
+  --color-body: #4f4e4a;
+  --color-muted: #6b6960;
+  --color-hint: #a39e92;
+  --color-cream: #f7f4ee;
+  --color-card: #fffdf8;
+  --color-sand: #ded5c2;
+  --color-teal: #04282e;
+  --color-teal-mid: #0a3e44;
+  --color-gold: #cdb180;
+  --color-gold-text: #8a6a33;
+  --color-on-dark: #f7f4ee;
+  --color-on-dark-muted: #c9c2b3;
+
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
+
+  --radius-input: 12px;
+  --radius-card: 18px;
+  --radius-panel: 24px;
+
+  --ease-card: cubic-bezier(0.2, 0.7, 0.2, 1);
+
+  /* 1440 canvas: 120px gutters, 112px section gap. 390 mobile: 20px / 64px. */
+  --spacing-gutter: 120px;
+  --spacing-gutter-sm: 20px;
+  --spacing-section: 112px;
+  --spacing-section-sm: 64px;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+  }
+  body {
+    background: var(--color-sand);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 18px;
+    line-height: 1.55;
+  }
+  a {
+    color: var(--color-teal);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+  }
+  a:hover {
+    color: var(--color-gold-text);
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-gold);
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .eyebrow {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+  .glass-card {
+    background: rgba(255, 253, 248, 0.55);
+    backdrop-filter: blur(18px) saturate(1.2);
+    -webkit-backdrop-filter: blur(18px) saturate(1.2);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    box-shadow:
+      0 1px 0 rgba(255, 255, 255, 0.6) inset,
+      0 12px 32px rgba(26, 26, 26, 0.06);
+  }
+  .dark-panel {
+    background: linear-gradient(
+      150deg,
+      rgba(10, 62, 68, 0.92),
+      rgba(4, 40, 46, 0.88),
+      rgba(6, 48, 54, 0.86)
+    );
+    border: 1px solid rgba(247, 244, 238, 0.14);
+    color: var(--color-on-dark);
+  }
+  .card-hover {
+    transition: transform 240ms var(--ease-card);
+  }
+  .card-hover:hover {
+    transform: translateY(-4px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "xiluet-site",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm run images && next dev",
+    "images": "node scripts/build-images.mjs",
+    "build": "npm run images && next build",
+    "preview": "npx wrangler pages dev out",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "next": "16.3.8",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.8",
+    "sharp": "^0.35.5",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
