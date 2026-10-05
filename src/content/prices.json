@@ -1,0 +1,341 @@
+{
+  "packages": [
+    {
+      "id": "signature-veneers",
+      "kicker": "Smile design",
+      "name": "Signature Veneers",
+      "price": "$6,000",
+      "sub": "20 porcelain veneers",
+      "badge": "Most chosen",
+      "features": [
+        "20 porcelain veneers",
+        "Professional cleaning and X-rays",
+        "Design preview you approve first",
+        "Delivery in 5 business days",
+        "5-year warranty, in writing"
+      ],
+      "note": "Veneers only. Deep cleaning and other procedures quoted separately.",
+      "priceUsd": 6000,
+      "featured": true,
+      "href": "/porcelain-veneers-miami",
+      "home": {
+        "sub": "20 veneers",
+        "features": [
+          "20 porcelain veneers, 0.3 mm",
+          "Design preview you approve first",
+          "Delivery in 5 business days",
+          "5-year warranty, in writing"
+        ]
+      }
+    },
+    {
+      "id": "complete-restoration",
+      "kicker": "Crowns and bridges",
+      "name": "Complete Restoration",
+      "price": "$7,000",
+      "sub": "20 dental restorations",
+      "badge": "",
+      "features": [
+        "20 crowns, bridges or veneers",
+        "Professional cleaning and X-rays",
+        "Delivery in 5 business days",
+        "Rush delivery in 3 business days: $10,000",
+        "5-year warranty, in writing"
+      ],
+      "note": "Deep cleaning and other procedures quoted separately.",
+      "priceUsd": 7000,
+      "featured": false,
+      "href": "/full-mouth-reconstruction-miami",
+      "home": {
+        "sub": "20 restorations",
+        "features": [
+          "20 crowns, bridges or veneers",
+          "Delivery in 5 business days",
+          "3-day rush: $10,000",
+          "5-year warranty, in writing"
+        ]
+      }
+    },
+    {
+      "id": "full-mouth-reconstruction",
+      "kicker": "Full mouth",
+      "name": "Full Mouth Reconstruction",
+      "price": "$10,000",
+      "sub": "complete rehabilitation",
+      "badge": "",
+      "features": [
+        "Every tooth planned together",
+        "Bite analysis and 3D scans",
+        "Professional cleaning and X-rays",
+        "Delivery in 7 business days",
+        "5-year warranty, in writing"
+      ],
+      "note": "Deep cleaning and other procedures quoted separately.",
+      "priceUsd": 10000,
+      "featured": false,
+      "href": "/full-mouth-reconstruction-miami",
+      "home": {
+        "sub": "complete",
+        "features": [
+          "Every tooth planned together",
+          "Bite analysis and 3D scans",
+          "Delivery in 7 business days",
+          "5-year warranty, in writing"
+        ]
+      }
+    },
+    {
+      "id": "all-on-x-fixed-arch",
+      "kicker": "Implants",
+      "name": "All-on-X Fixed Arch",
+      "price": "$10,000",
+      "sub": "per arch · $9,000 cash",
+      "badge": "Cash price",
+      "features": [
+        "Up to 6 implants per arch",
+        "Hybrid fixed bridge",
+        "Professional cleaning and X-rays",
+        "CT review before surgery"
+      ],
+      "note": "Does not include extractions, bone graft, sinus lift or membranes. Quoted from the price list if needed.",
+      "priceUsd": 10000,
+      "featured": false,
+      "href": "/all-on-x-dental-implants-miami",
+      "home": {
+        "sub": "per arch · $9,000 cash",
+        "features": [
+          "Up to 6 implants per arch",
+          "Hybrid fixed bridge",
+          "CT review before surgery",
+          "Extractions and grafts quoted separately"
+        ]
+      }
+    }
+  ],
+  "groups": [
+    {
+      "n": "01",
+      "title": "Cleaning",
+      "sub": "Before any cosmetic work",
+      "note": "Regular cleaning is included in every package. Deep cleaning is added only if your gums need it.",
+      "items": [
+        {
+          "name": "Regular cleaning",
+          "price": "$100",
+          "priceUsd": 100,
+          "unit": "",
+          "was": "",
+          "note": ""
+        },
+        {
+          "name": "Deep cleaning",
+          "price": "$700",
+          "priceUsd": 700,
+          "unit": "",
+          "was": "",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "n": "02",
+      "title": "Restorative",
+      "sub": "Single teeth",
+      "note": "Crowns and bridges are 50% off ($500) when done with your smile design. The $6,000 package covers a full set of 20 veneers.",
+      "items": [
+        {
+          "name": "Filling",
+          "price": "$300",
+          "priceUsd": 300,
+          "unit": "",
+          "was": "",
+          "note": ""
+        },
+        {
+          "name": "Porcelain crown",
+          "price": "$500",
+          "priceUsd": 500,
+          "unit": "",
+          "was": "$1,000",
+          "note": "50% off with your smile design"
+        },
+        {
+          "name": "Bridge",
+          "price": "$500",
+          "priceUsd": 500,
+          "unit": "per unit",
+          "was": "$1,000",
+          "note": "50% off with your smile design"
+        },
+        {
+          "name": "Veneer",
+          "price": "$1,000",
+          "priceUsd": 1000,
+          "unit": "",
+          "was": "",
+          "note": ""
+        },
+        {
+          "name": "Root canal",
+          "price": "$1,000",
+          "priceUsd": 1000,
+          "unit": "",
+          "was": "",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "n": "03",
+      "title": "Implants and dentures",
+      "sub": "Replacing missing teeth",
+      "note": "For a whole arch, the All-on-X package is usually the better value.",
+      "items": [
+        {
+          "name": "Implant crown",
+          "price": "$1,500",
+          "priceUsd": 1500,
+          "unit": "",
+          "was": "",
+          "note": ""
+        },
+        {
+          "name": "Complete dental implant with crown",
+          "price": "$2,500",
+          "priceUsd": 2500,
+          "unit": "",
+          "was": "",
+          "note": ""
+        },
+        {
+          "name": "Immediate denture",
+          "price": "$1,000",
+          "priceUsd": 1000,
+          "unit": "",
+          "was": "",
+          "note": ""
+        },
+        {
+          "name": "Permanent denture",
+          "price": "$2,000",
+          "priceUsd": 2000,
+          "unit": "",
+          "was": "",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "n": "04",
+      "title": "Alignment and protection",
+      "sub": "Straighten and protect",
+      "note": "A nightguard is recommended after veneers if you grind.",
+      "items": [
+        {
+          "name": "Invisalign",
+          "price": "$4,000",
+          "priceUsd": 4000,
+          "unit": "",
+          "was": "",
+          "note": ""
+        },
+        {
+          "name": "Retainer",
+          "price": "$400",
+          "priceUsd": 400,
+          "unit": "",
+          "was": "",
+          "note": ""
+        },
+        {
+          "name": "Nightguard",
+          "price": "$400",
+          "priceUsd": 400,
+          "unit": "",
+          "was": "",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "n": "05",
+      "title": "Surgery and gums",
+      "sub": "When needed before design",
+      "note": "Gingivectomy evens the gum line before veneers. Old smile design removal applies to previous veneers or crowns.",
+      "items": [
+        {
+          "name": "Gingivectomy",
+          "price": "$500",
+          "priceUsd": 500,
+          "unit": "per arch",
+          "was": "",
+          "note": ""
+        },
+        {
+          "name": "Tooth extraction",
+          "price": "$400",
+          "priceUsd": 400,
+          "unit": "",
+          "was": "",
+          "note": ""
+        },
+        {
+          "name": "Wisdom tooth extraction",
+          "price": "$1,000",
+          "priceUsd": 1000,
+          "unit": "",
+          "was": "",
+          "note": ""
+        },
+        {
+          "name": "Old smile design removal",
+          "price": "$500",
+          "priceUsd": 500,
+          "unit": "",
+          "was": "",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "n": "06",
+      "title": "All-on-X add-ons",
+      "sub": "Quoted after CT review",
+      "note": "Not included in the $10,000 All-on-X package. Only if your scan shows they are needed.",
+      "items": [
+        {
+          "name": "Tooth extraction",
+          "price": "$400",
+          "priceUsd": 400,
+          "unit": "each",
+          "was": "",
+          "note": ""
+        },
+        {
+          "name": "Bone graft",
+          "price": "Quoted",
+          "priceUsd": null,
+          "unit": "",
+          "was": "",
+          "note": ""
+        },
+        {
+          "name": "Sinus lift",
+          "price": "Quoted",
+          "priceUsd": null,
+          "unit": "",
+          "was": "",
+          "note": ""
+        },
+        {
+          "name": "Membranes",
+          "price": "Quoted",
+          "priceUsd": null,
+          "unit": "",
+          "was": "",
+          "note": ""
+        }
+      ]
+    }
+  ]
+}

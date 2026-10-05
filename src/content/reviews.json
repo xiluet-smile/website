@@ -1,0 +1,30 @@
+{
+  "source": "Google",
+  "reviews": [
+    {
+      "text": "I couldn’t be happier with my smile makeover. The results exceeded my expectations, and the entire experience, from consultation to final results, was smooth and professional. The team made me feel comfortable every step of the way.",
+      "name": "Maria G.",
+      "treatment": "Smile makeover"
+    },
+    {
+      "text": "The level of care and attention to detail was amazing. Everything was explained clearly, and I felt confident throughout the entire process. My new smile looks natural and beautiful.",
+      "name": "Daniel R.",
+      "treatment": "Implants and crowns"
+    },
+    {
+      "text": "I had an incredible experience. The staff was friendly, patient, and very knowledgeable. They took the time to explain every step and made sure I was comfortable during my treatment.",
+      "name": "Sofia M.",
+      "treatment": "Whitening and aesthetic dentistry"
+    },
+    {
+      "text": "This was one of the best decisions I’ve made. The environment is modern and welcoming, and the results truly changed my confidence. I finally love my smile.",
+      "name": "Carlos V.",
+      "treatment": "Veneers"
+    },
+    {
+      "text": "From the first visit to the final result, everything was perfect. The team is extremely professional and caring. I felt supported the entire time, and the outcome is exactly what I wanted.",
+      "name": "Andrea L.",
+      "treatment": "Full smile"
+    }
+  ]
+}

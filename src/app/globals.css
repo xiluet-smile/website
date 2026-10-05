@@ -170,6 +170,151 @@
     border: 1px solid rgba(247, 244, 238, 0.14);
     color: var(--color-on-dark);
   }
+  /* Buttons: pill shape; size with utilities (h-12 px-6 text-base …). */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 999px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .btn-gold {
+    background: var(--color-gold);
+    color: var(--color-teal);
+  }
+  .btn-gold:hover {
+    background: #d4b471;
+    color: var(--color-teal);
+  }
+  .btn-teal {
+    background: var(--color-teal);
+    color: var(--color-on-dark);
+  }
+  .btn-teal:hover {
+    background: #0a3a40;
+    color: var(--color-on-dark);
+  }
+  /* Translucent outline button for dark backgrounds. */
+  .btn-ghost {
+    background: rgba(247, 244, 238, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1.5px solid rgba(247, 244, 238, 0.5);
+    color: var(--color-on-dark);
+  }
+  .btn-ghost:hover {
+    background: rgba(247, 244, 238, 0.2);
+    color: var(--color-on-dark);
+  }
+  /* Frosted button for cream backgrounds. */
+  .btn-glass {
+    background: rgba(255, 253, 248, 0.55);
+    backdrop-filter: blur(18px) saturate(1.2);
+    -webkit-backdrop-filter: blur(18px) saturate(1.2);
+    border: 1.5px solid rgba(255, 255, 255, 0.8);
+    box-shadow:
+      0 1px 0 rgba(255, 255, 255, 0.6) inset,
+      0 8px 24px rgba(26, 26, 26, 0.08);
+    color: var(--color-teal);
+  }
+  .link-strong {
+    font-weight: 600;
+  }
+
+  /* FAQ accordion (native details) */
+  .faq-item {
+    transition: border-color 200ms;
+  }
+  .faq-item[open] {
+    border-color: rgba(205, 177, 128, 0.6);
+  }
+  .faq-plus {
+    transition: transform 240ms;
+  }
+  .faq-item[open] .faq-plus {
+    transform: rotate(45deg);
+  }
+
+  /* Animated line icons (LineIcon.tsx) */
+  .xi {
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: visible;
+  }
+  .xi path,
+  .xi circle,
+  .xi rect,
+  .xi line,
+  .xi polyline {
+    fill: none;
+    stroke: var(--color-gold);
+    stroke-width: 1.6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .xi .d {
+    stroke-dasharray: 400;
+    stroke-dashoffset: 400;
+    animation: xdraw 1.8s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+  }
+  .xi .d2 {
+    animation-delay: 0.5s;
+  }
+  .xi .d3 {
+    animation-delay: 1s;
+  }
+  .xi .d4 {
+    animation-delay: 1.4s;
+  }
+  .xi .p {
+    transform-box: fill-box;
+    transform-origin: center;
+    opacity: 0;
+    animation: xpop 0.6s ease 1.6s forwards;
+  }
+  .xi .f {
+    fill: var(--color-gold);
+    stroke: none;
+    opacity: 0;
+    animation: xfill 0.6s ease 1.7s forwards;
+  }
+  .xi .s {
+    stroke-dasharray: none;
+    stroke-dashoffset: 0;
+    animation: xslide 1s ease 1s both;
+  }
+  .xi .r {
+    stroke-dasharray: none;
+    stroke-dashoffset: 0;
+    animation: xrise 1s ease 0.8s both;
+  }
+  .xi .t {
+    stroke-dasharray: 60;
+    stroke-dashoffset: 60;
+    animation: xtick 0.6s ease 1.8s forwards;
+  }
+  .xi .sp {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: xspin 2s cubic-bezier(0.65, 0, 0.35, 1) 1.2s forwards;
+  }
+  .xi.lt path,
+  .xi.lt circle,
+  .xi.lt rect,
+  .xi.lt line,
+  .xi.lt polyline {
+    stroke: var(--color-teal);
+  }
+  .xi.lt .f {
+    fill: var(--color-gold);
+    stroke: none;
+  }
+
   .card-hover {
     transition: transform 240ms var(--ease-card);
   }
@@ -178,9 +323,68 @@
   }
 }
 
+@keyframes xdraw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes xpop {
+  from {
+    opacity: 0;
+    transform: scale(0.4);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes xfill {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes xslide {
+  from {
+    transform: translateX(-14px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes xrise {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes xtick {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes xspin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+  .xi .d,
+  .xi .t {
+    stroke-dashoffset: 0 !important;
+  }
+  .xi .p,
+  .xi .f {
+    opacity: 1 !important;
   }
   *,
   *::before,

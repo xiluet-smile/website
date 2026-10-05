@@ -1,0 +1,100 @@
+{
+  "disclaimer": "Actual Xiluet patient. Individual results vary.",
+  "types": [
+    "Veneers",
+    "Restorations",
+    "Full mouth"
+  ],
+  "cases": [
+    {
+      "id": "BA8",
+      "image": "BA8.jpg",
+      "type": "Veneers",
+      "alt": "Before and after porcelain veneers, Xiluet patient, Miami"
+    },
+    {
+      "id": "BA4",
+      "image": "BA4.jpg",
+      "type": "Veneers",
+      "alt": "Before and after porcelain veneers, Xiluet patient, Miami"
+    },
+    {
+      "id": "BA11",
+      "image": "BA11.jpg",
+      "type": "Full mouth",
+      "alt": "Before and after full mouth reconstruction, Xiluet patient, Miami"
+    },
+    {
+      "id": "BA9",
+      "image": "BA9.jpg",
+      "type": "Restorations",
+      "alt": "Before and after dental restorations, Xiluet patient, Miami"
+    },
+    {
+      "id": "BA1",
+      "image": "BA1.jpg",
+      "type": "Veneers",
+      "alt": "Before and after porcelain veneers, Xiluet patient, Miami"
+    },
+    {
+      "id": "BA2",
+      "image": "BA2.jpg",
+      "type": "Veneers",
+      "alt": "Before and after porcelain veneers, Xiluet patient, Miami"
+    },
+    {
+      "id": "BA5",
+      "image": "BA5.jpg",
+      "type": "Veneers",
+      "alt": "Before and after porcelain veneers, Xiluet patient, Miami"
+    },
+    {
+      "id": "BA7",
+      "image": "BA7.jpg",
+      "type": "Veneers",
+      "alt": "Before and after porcelain veneers, Xiluet patient, Miami"
+    },
+    {
+      "id": "BA6",
+      "image": "BA6.jpg",
+      "type": "Veneers",
+      "alt": "Before and after porcelain veneers, Xiluet patient, Miami"
+    },
+    {
+      "id": "BA13",
+      "image": "BA13.jpg",
+      "type": "Veneers",
+      "alt": "Before and after porcelain veneers, Xiluet patient, Miami"
+    },
+    {
+      "id": "BA14",
+      "image": "BA14.jpg",
+      "type": "Restorations",
+      "alt": "Before and after dental restorations, Xiluet patient, Miami"
+    },
+    {
+      "id": "BA15",
+      "image": "BA15.jpg",
+      "type": "Veneers",
+      "alt": "Before and after porcelain veneers, Xiluet patient, Miami"
+    },
+    {
+      "id": "BA10",
+      "image": "BA10.jpg",
+      "type": "Veneers",
+      "alt": "Before and after porcelain veneers, Xiluet patient, Miami"
+    },
+    {
+      "id": "BA12",
+      "image": "BA12.jpg",
+      "type": "Veneers",
+      "alt": "Before and after porcelain veneers, Xiluet patient, Miami"
+    },
+    {
+      "id": "BA3",
+      "image": "BA3.jpg",
+      "type": "Veneers",
+      "alt": "Before and after porcelain veneers, Xiluet patient, Miami"
+    }
+  ]
+}

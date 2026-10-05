@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "dr-roger-ramos-navarro",
+    "href": "/doctors/dr-roger-ramos-navarro",
+    "name": "Dr. Roger Ramos Navarro, DMD",
+    "shortName": "Dr. Roger Ramos Navarro",
+    "role": "Implantology, endodontics and full mouth rehabilitation",
+    "bio": "Dr. Ramos Navarro plans the complex cases: full mouth rehabilitation, dental implants and root canals. Trained in Cuba, the United States, Spain and Peru, he reviews every Xiluet estimate before it is sent.",
+    "langs": "English and Spanish",
+    "image": "dr-roger-ramos-navarro.webp"
+  },
+  {
+    "slug": "dr-marta-puentes-marrero",
+    "href": "/doctors/dr-marta-puentes-marrero",
+    "name": "Dr. Marta Puentes Marrero, DMD",
+    "shortName": "Dr. Marta Puentes Marrero",
+    "role": "Restorative and adhesive esthetic dentistry",
+    "bio": "Dr. Puentes has practiced in Spain, the United Kingdom and the United States. Her work is conservative by design: preserve the natural tooth, restore function, and make the result look like it was always there.",
+    "langs": "English and Spanish",
+    "image": "dr-marta-puentes-marrero.webp"
+  },
+  {
+    "slug": "dr-gretell-alonso-fiel",
+    "href": "/doctors/dr-gretell-alonso-fiel",
+    "name": "Dr. Gretell Alonso Fiel, DMD",
+    "shortName": "Dr. Gretell Alonso Fiel",
+    "role": "Porcelain veneers, digital smile design and facial aesthetics",
+    "bio": "Dr. Alonso designs smiles for the face. Trained in Madrid and at Rutgers, she combines porcelain veneers, digital smile design and facial aesthetics so the result is balanced from every angle, not just the teeth.",
+    "langs": "English and Spanish",
+    "image": "dr-gretell-alonso-fiel.webp"
+  }
+]

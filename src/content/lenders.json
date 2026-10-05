@@ -1,0 +1,42 @@
+[
+  {
+    "slug": "cherry",
+    "href": "/financing/cherry",
+    "name": "Cherry",
+    "logo": "logo-cherry.webp",
+    "tag": "Soft credit check",
+    "note": "Pre-qualify in 60 seconds without affecting your score. Plans from 3 to 60 months."
+  },
+  {
+    "slug": "sunbit",
+    "href": "/financing/sunbit",
+    "name": "Sunbit",
+    "logo": "logo-sunbit.svg",
+    "tag": "High approval rate",
+    "note": "Built for dental. Most applicants approved, decision in under a minute."
+  },
+  {
+    "slug": "carecredit",
+    "href": "/financing/carecredit",
+    "name": "CareCredit",
+    "logo": "logo-carecredit.webp",
+    "tag": "Health care card",
+    "note": "Promotional financing on purchases over $200 with the most widely accepted health card."
+  },
+  {
+    "slug": "lendingclub",
+    "href": "/financing/lendingclub",
+    "name": "LendingClub",
+    "logo": "logo-lendingclub.svg",
+    "tag": "Fixed monthly payments",
+    "note": "Personal loans up to $65,000 with a fixed rate and no prepayment penalty."
+  },
+  {
+    "slug": "affirm",
+    "href": "/financing/affirm",
+    "name": "Affirm",
+    "logo": "logo-affirm.webp",
+    "tag": "No late fees",
+    "note": "Pay over time with transparent terms. Check eligibility in seconds without affecting your credit score."
+  }
+]
