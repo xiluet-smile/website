@@ -62,9 +62,7 @@
 
   --ease-card: cubic-bezier(0.2, 0.7, 0.2, 1);
 
-  /* 1440 canvas: 120px gutters, 112px section gap. 390 mobile: 20px / 64px. */
-  --spacing-gutter: 120px;
-  --spacing-gutter-sm: 20px;
+  /* Section gap: 112px desktop, 64px mobile. Gutters live in .wrap. */
   --spacing-section: 112px;
   --spacing-section-sm: 64px;
 }
@@ -75,7 +73,7 @@
     scroll-behavior: smooth;
   }
   body {
-    background: var(--color-sand);
+    background: var(--color-cream);
     color: var(--color-ink);
     font-family: var(--font-sans);
     font-size: 18px;
@@ -97,6 +95,56 @@
 }
 
 @layer components {
+  /* Page column: 1440 canvas with 120px gutters, 20px on mobile. */
+  .wrap {
+    width: 100%;
+    max-width: 1440px;
+    margin-inline: auto;
+    padding-inline: 20px;
+  }
+  @media (width >= 64rem) {
+    .wrap {
+      padding-inline: clamp(40px, 8.333vw, 120px);
+    }
+  }
+  /* The header needs ~1200px of content width, so its gutter shrinks first. */
+  .header-gutter {
+    padding-inline: clamp(24px, calc((100vw - 1200px) / 2), 120px);
+  }
+  .page-bg {
+    background-color: var(--color-cream);
+    background-image:
+      radial-gradient(500px 400px at 10% 6%, rgba(205, 177, 128, 0.16), transparent 70%),
+      radial-gradient(500px 500px at 95% 40%, rgba(4, 40, 46, 0.1), transparent 70%),
+      radial-gradient(500px 400px at 15% 75%, rgba(205, 177, 128, 0.12), transparent 70%);
+  }
+  @media (width >= 64rem) {
+    .page-bg {
+      background-image:
+        radial-gradient(900px 600px at 15% 8%, rgba(205, 177, 128, 0.16), transparent 70%),
+        radial-gradient(800px 700px at 90% 40%, rgba(4, 40, 46, 0.1), transparent 70%),
+        radial-gradient(700px 600px at 20% 75%, rgba(205, 177, 128, 0.12), transparent 70%);
+    }
+  }
+  /* Nav dropdown: CSS-driven so it works without JS. */
+  .nav-panel {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 160ms, visibility 160ms;
+  }
+  .nav-item:hover > .nav-panel,
+  .nav-item:focus-within > .nav-panel {
+    visibility: visible;
+    opacity: 1;
+  }
+  .nav-item[data-dismissed] > .nav-panel {
+    visibility: hidden;
+    opacity: 0;
+  }
+  .nav-item:hover > .nav-trigger,
+  .nav-item:focus-within > .nav-trigger {
+    color: var(--color-gold);
+  }
   .eyebrow {
     font-size: 12px;
     font-weight: 600;

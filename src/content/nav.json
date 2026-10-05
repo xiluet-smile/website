@@ -1,0 +1,105 @@
+{
+  "menus": [
+    {
+      "key": "treatments",
+      "label": "Treatments",
+      "href": "/porcelain-veneers-miami",
+      "items": [
+        { "t": "Porcelain Veneers", "d": "20 veneers, as thin as 0.3 mm", "href": "/porcelain-veneers-miami" },
+        { "t": "Smile Design", "d": "Planned around your face", "href": "/smile-design-miami" },
+        { "t": "Full Mouth Reconstruction", "d": "Crowns, bridges and veneers together", "href": "/full-mouth-reconstruction-miami" },
+        { "t": "Implants All-on-X", "d": "Fixed full-arch teeth", "href": "/all-on-x-dental-implants-miami" },
+        { "t": "Smile Makeover", "d": "Veneers plus whitening and gum contouring", "href": "/smile-makeover-miami" }
+      ]
+    },
+    {
+      "key": "doctors",
+      "label": "Doctors",
+      "href": "/doctors",
+      "items": [
+        { "t": "Dr. Roger Ramos Navarro, DMD", "d": "Implantology, endodontics, full mouth", "href": "/doctors/dr-roger-ramos-navarro" },
+        { "t": "Dr. Marta Puentes Marrero, DMD", "d": "Restorative and adhesive esthetics", "href": "/doctors/dr-marta-puentes-marrero" },
+        { "t": "Dr. Gretell Alonso Fiel, DMD", "d": "Veneers, digital smile design", "href": "/doctors/dr-gretell-alonso-fiel" },
+        { "t": "All doctors", "d": "Meet the team", "href": "/doctors" }
+      ]
+    },
+    { "key": "results", "label": "Results", "href": "/before-and-after" },
+    {
+      "key": "financing",
+      "label": "Financing",
+      "href": "/financing",
+      "items": [
+        { "t": "Cherry", "d": "Soft credit check, 3 to 60 months", "href": "/financing/cherry" },
+        { "t": "Sunbit", "d": "High approval rate, built for dental", "href": "/financing/sunbit" },
+        { "t": "CareCredit", "d": "Health care credit card", "href": "/financing/carecredit" },
+        { "t": "LendingClub", "d": "Fixed-rate personal loans", "href": "/financing/lendingclub" },
+        { "t": "Affirm", "d": "Transparent terms, no late fees", "href": "/financing/affirm" }
+      ]
+    },
+    {
+      "key": "about",
+      "label": "About Us",
+      "href": "/clinic",
+      "items": [
+        { "t": "Clinic", "d": "Our office in Miami", "href": "/clinic" },
+        { "t": "Contact Us", "d": "Call, text, WhatsApp or email", "href": "/contact" },
+        { "t": "Reviews", "d": "What patients say", "href": "/reviews" },
+        { "t": "Out of State", "d": "Fly in Monday, home Thursday", "href": "/out-of-state-patients" },
+        { "t": "Cost", "d": "Packages and full price list", "href": "/veneers-cost-miami" },
+        { "t": "Blog", "d": "Straight answers from the doctors", "href": "/blog" }
+      ]
+    }
+  ],
+  "footer": [
+    {
+      "title": "Treatments",
+      "links": [
+        { "label": "Porcelain Veneers", "href": "/porcelain-veneers-miami" },
+        { "label": "Smile Design", "href": "/smile-design-miami" },
+        { "label": "Smile Makeover", "href": "/smile-makeover-miami" },
+        { "label": "Full Mouth Reconstruction", "href": "/full-mouth-reconstruction-miami" },
+        { "label": "Implants All-on-X", "href": "/all-on-x-dental-implants-miami" },
+        { "label": "Cost and price list", "href": "/veneers-cost-miami" }
+      ]
+    },
+    {
+      "title": "Doctors",
+      "links": [
+        { "label": "Dr. Roger Ramos Navarro", "href": "/doctors/dr-roger-ramos-navarro" },
+        { "label": "Dr. Marta Puentes Marrero", "href": "/doctors/dr-marta-puentes-marrero" },
+        { "label": "Dr. Gretell Alonso Fiel", "href": "/doctors/dr-gretell-alonso-fiel" },
+        { "label": "All doctors", "href": "/doctors" },
+        { "label": "Before and after", "href": "/before-and-after" },
+        { "label": "Reviews", "href": "/reviews" }
+      ]
+    },
+    {
+      "title": "Financing",
+      "links": [
+        { "label": "How financing works", "href": "/financing" },
+        { "label": "Cherry", "href": "/financing/cherry" },
+        { "label": "Sunbit", "href": "/financing/sunbit" },
+        { "label": "CareCredit", "href": "/financing/carecredit" },
+        { "label": "LendingClub", "href": "/financing/lendingclub" },
+        { "label": "Affirm", "href": "/financing/affirm" }
+      ]
+    },
+    {
+      "title": "About Us",
+      "links": [
+        { "label": "Clinic", "href": "/clinic" },
+        { "label": "Contact Us", "href": "/contact" },
+        { "label": "Out-of-state patients", "href": "/out-of-state-patients" },
+        { "label": "Free photo evaluation", "href": "/free-photo-evaluation" },
+        { "label": "Blog", "href": "/blog" },
+        { "label": "Get directions", "href": "maps:place" }
+      ]
+    }
+  ],
+  "legal": [
+    { "label": "Privacy Policy", "href": "#" },
+    { "label": "Terms", "href": "#" },
+    { "label": "Notice of Privacy Practices", "href": "#" },
+    { "label": "Refund and Cancellation", "href": "#" }
+  ]
+}

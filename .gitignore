@@ -50,3 +50,5 @@ next-env.d.ts
 # cloudflare
 .wrangler
 .dev.vars
+
+/public/og/
