@@ -1,0 +1,77 @@
+{
+  "slug": "dr-gretell-alonso-fiel",
+  "display": "Dr. Alonso",
+  "quote": "Bright, but still natural. The best veneers are the ones nobody can point to.",
+  "stats": [
+    {
+      "big": "2",
+      "sub": "continents of training"
+    },
+    {
+      "big": "AAFE",
+      "sub": "Facial aesthetics certified"
+    },
+    {
+      "big": "Digital",
+      "sub": "smile design workflow"
+    }
+  ],
+  "focus": [
+    {
+      "n": "01",
+      "t": "Porcelain veneers",
+      "d": "E.max and zirconia, conservative preparation, shade matched in person against skin and eyes."
+    },
+    {
+      "n": "02",
+      "t": "Digital smile design",
+      "d": "Medit intraoral scanning and facial photography. You preview the result before any tooth is touched."
+    },
+    {
+      "n": "03",
+      "t": "Implant restorations",
+      "d": "Digitally planned crowns and bridges on implants for fit, comfort and stability."
+    },
+    {
+      "n": "04",
+      "t": "Facial aesthetics",
+      "d": "AAFE-certified for Botox and dermal fillers when soft tissue should complement the smile."
+    }
+  ],
+  "education": [
+    {
+      "t": "Doctor of Dental Medicine (DMD)",
+      "i": "Rutgers School of Dental Medicine",
+      "c": "United States"
+    },
+    {
+      "t": "Degree in Dentistry",
+      "i": "Universidad Europea de Madrid",
+      "c": "Spain"
+    },
+    {
+      "t": "Facial aesthetics certification",
+      "i": "American Academy of Facial Esthetics (AAFE)",
+      "c": "United States"
+    },
+    {
+      "t": "Specialized implant and cosmetic training",
+      "i": "Continuing education",
+      "c": ""
+    }
+  ],
+  "certs": [
+    "American Dental Association",
+    "Florida Dental Association",
+    "Academy of General Dentistry",
+    "American Academy of Cosmetic Dentistry",
+    "AAFE Botox and dermal fillers",
+    "Florida dental license",
+    "CPR and BLS certified"
+  ],
+  "caseIds": [
+    "BA8",
+    "BA4",
+    "BA2"
+  ]
+}

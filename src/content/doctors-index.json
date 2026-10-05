@@ -1,0 +1,20 @@
+{
+  "facts": [
+    {
+      "big": "10+",
+      "sub": "Years of experience, each doctor"
+    },
+    {
+      "big": "3",
+      "sub": "Doctors review every treatment plan"
+    },
+    {
+      "big": "{rating}",
+      "sub": "Google rating across {count} reviews"
+    },
+    {
+      "big": "1 lab",
+      "sub": "Ceramist in the same building"
+    }
+  ]
+}

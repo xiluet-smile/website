@@ -1,0 +1,86 @@
+{
+  "slug": "dr-roger-ramos-navarro",
+  "display": "Dr. Ramos Navarro",
+  "quote": "Every patient deserves to understand exactly what will happen before it happens. I explain, then I treat.",
+  "stats": [
+    {
+      "big": "4",
+      "sub": "countries of training"
+    },
+    {
+      "big": "AAE",
+      "sub": "Endodontics member"
+    },
+    {
+      "big": "10+",
+      "sub": "years of experience"
+    }
+  ],
+  "focus": [
+    {
+      "n": "01",
+      "t": "Dental implants and All-on-X",
+      "d": "Simple to complex implant surgery, full-arch fixed teeth, guided on CT scans."
+    },
+    {
+      "n": "02",
+      "t": "Root canal treatment",
+      "d": "Member of the American Association of Endodontics. Preserving natural teeth where possible."
+    },
+    {
+      "n": "03",
+      "t": "Full mouth rehabilitation",
+      "d": "Crowns, bridges, dentures and veneers planned together so the bite works and the smile looks natural."
+    },
+    {
+      "n": "04",
+      "t": "Treatment planning",
+      "d": "Writes and reviews the estimates. The number you receive is the number he stands behind."
+    }
+  ],
+  "education": [
+    {
+      "t": "Doctor in Stomatology",
+      "i": "Superior Institute of Medical Sciences of Havana",
+      "c": "Cuba"
+    },
+    {
+      "t": "Doctor of Dental Medicine (DMD)",
+      "i": "University of Chicago",
+      "c": "United States"
+    },
+    {
+      "t": "Implantology and full mouth rehabilitation",
+      "i": "University of Puerto Rico",
+      "c": "Puerto Rico"
+    },
+    {
+      "t": "Master’s in Implantology",
+      "i": "Universidad Tecnológica, Santa Cruz de Tenerife",
+      "c": "Spain"
+    },
+    {
+      "t": "Specialist certification in Endodontics",
+      "i": "Universidad de Lima",
+      "c": "Peru"
+    },
+    {
+      "t": "Simple to Complex Implant Surgery",
+      "i": "Salama Education Institute",
+      "c": "United States"
+    }
+  ],
+  "certs": [
+    "American Association of Endodontics",
+    "First Degree Specialist, General Odontology (Cuba)",
+    "Florida Laws and Rules certification",
+    "Dental Radiography, Dade County FL",
+    "Certified Expanded Functions Dental Assistant",
+    "Implantology certifications, Spain and Peru"
+  ],
+  "caseIds": [
+    "BA11",
+    "BA9",
+    "BA14"
+  ]
+}

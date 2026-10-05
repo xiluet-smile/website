@@ -1,0 +1,197 @@
+{
+  "path": "/full-mouth-reconstruction-miami",
+  "packageId": "full-mouth-reconstruction",
+  "breadcrumb": "Full Mouth Reconstruction",
+  "schema": {
+    "name": "Full Mouth Reconstruction",
+    "procedureType": "http://schema.org/NoninvasiveProcedure"
+  },
+  "hero": {
+    "definition": "Full mouth reconstruction rebuilds all of your teeth with crowns, bridges and veneers planned as one case, so the bite works and the smile looks natural. At Xiluet Smiles in Miami it costs $10,000, takes 7 business days across four visits, and includes a 5-year written warranty.",
+    "lead": "Crowns, bridges and veneers planned together so your bite works and your smile looks natural. Delivered in 7 business days in Miami, with a 5-year warranty in writing.",
+    "secondaryCta": "See the two-week plan",
+    "stats": [
+      {
+        "kind": "price",
+        "label": "full mouth reconstruction"
+      },
+      {
+        "kind": "text",
+        "value": "7 days",
+        "label": "business days to delivery"
+      },
+      {
+        "kind": "text",
+        "value": "5 years",
+        "label": "warranty, in writing"
+      },
+      {
+        "kind": "rating",
+        "label": "Google reviews"
+      }
+    ],
+    "image": {
+      "caseId": "BA11",
+      "caption": "Full mouth reconstruction · Actual Xiluet patient"
+    }
+  },
+  "candidates": {
+    "title": "For teeth that are worn, broken or failing all at once",
+    "intro": "Reconstruction treats the whole mouth as one plan, not one tooth at a time.",
+    "items": [
+      {
+        "t": "Worn-down teeth",
+        "d": "Years of grinding have shortened your teeth and aged your face."
+      },
+      {
+        "t": "Many failing teeth",
+        "d": "Old fillings and crowns breaking one after another."
+      },
+      {
+        "t": "A bite that hurts",
+        "d": "Jaw pain, headaches, or teeth that no longer meet properly."
+      },
+      {
+        "t": "Missing teeth",
+        "d": "Gaps closed with bridges, so you chew on both sides again."
+      },
+      {
+        "t": "Old dental work",
+        "d": "Dark metal margins and mismatched colors replaced in one plan."
+      }
+    ]
+  },
+  "why": {
+    "eyebrow": "Why reconstruct here",
+    "title": "One plan, one lab, two weeks of visits.",
+    "body": "Most clinics rebuild a mouth over months of separate appointments. Our lab is in the building, so every crown, bridge and veneer is designed together, matched together and delivered together.",
+    "image": {
+      "src": "gen-ceramist-hands.jpg",
+      "alt": "Ceramist hand-finishing a restoration in the in-house lab"
+    },
+    "facts": [
+      {
+        "label": "Timeline",
+        "big": "7 business days",
+        "sub": "From first exam to final delivery. Two short trips, or stay the two weeks."
+      },
+      {
+        "label": "Materials",
+        "big": "Zirconia and porcelain",
+        "sub": "Strong where you chew, translucent where it shows."
+      },
+      {
+        "label": "Lifespan",
+        "big": "10 to 30 years",
+        "sub": "With normal care and a night guard if you grind."
+      },
+      {
+        "label": "Warranty",
+        "big": "5 years",
+        "sub": "In writing, on every restoration."
+      }
+    ]
+  },
+  "week": {
+    "title": "Your two weeks in Miami",
+    "intro": "Photos, estimate and plan from home. Then four visits across 7 business days.",
+    "linkLabel": "Pick a date and see the full schedule →",
+    "visits": [
+      {
+        "k": "From home",
+        "t": "Photos, estimate, plan",
+        "d": "Send photos, get your written estimate within 6 hours, pick a payment plan and reserve with a $250 deposit.",
+        "time": "Any day, about 2 minutes of your time"
+      },
+      {
+        "k": "Visit 1 · Monday",
+        "t": "Exam, scans and bite analysis",
+        "d": "X-rays, 3D scans and photos. Your doctor plans every tooth with you and confirms the design.",
+        "time": "About 2 hours"
+      },
+      {
+        "k": "Visit 2 · Tuesday",
+        "t": "Preparation and temporaries",
+        "d": "Teeth prepared and fitted with temporaries shaped like your final design. You chew and speak with them for a week.",
+        "time": "Half a day"
+      },
+      {
+        "k": "Visits 3 and 4 · Week 2",
+        "t": "Try-in, then delivery",
+        "d": "Fit and bite checked on Monday. Final crowns, bridges and veneers bonded on Wednesday with your warranty in writing.",
+        "time": "About 2 hours each"
+      }
+    ]
+  },
+  "results": {
+    "title": "Reconstruction results",
+    "linkLabel": "All cases →",
+    "label": "Full mouth reconstruction",
+    "caseIds": [
+      "BA11",
+      "BA9",
+      "BA13"
+    ]
+  },
+  "price": {
+    "eyebrow": "Cost",
+    "title": "One price for the whole mouth, in writing",
+    "body": "Send photos and a doctor writes your estimate within 6 hours. If the exam finds something that must be treated first, you get that in writing too, before anything starts.",
+    "lendersLabel": "Pay over time with",
+    "compareLabel": "Compare all packages →",
+    "card": {
+      "title": "20 dental restorations",
+      "sub": "Full mouth reconstruction",
+      "badge": "Complete",
+      "pricePrefix": null,
+      "priceSuffix": null,
+      "included": [
+        "Up to 20 crowns, bridges and veneers",
+        "Bite analysis and 3D scans",
+        "Temporaries shaped like your final design",
+        "Delivery in 7 business days",
+        "5-year warranty, in writing"
+      ],
+      "cta": "Get my written estimate"
+    },
+    "footnote": "Prices shown are minimum fees. Your final fee is confirmed in writing after a doctor's evaluation."
+  },
+  "faq": {
+    "title": "Reconstruction questions, answered by the doctors",
+    "linkLabel": "All answers →",
+    "items": [
+      {
+        "q": "Is it painful?",
+        "a": "Preparation is done under local anesthesia. Expect soreness for a few days, managed with over-the-counter pain relief.",
+        "doc": "Dr. Marta Puentes Marrero, DMD"
+      },
+      {
+        "q": "Does insurance cover it?",
+        "a": "Crowns and bridges are often classed as major restorative work and may be covered 50 to 80 percent depending on your plan. We give you the codes for your claim.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "Do I need implants?",
+        "a": "Not for this package. Missing teeth are replaced with bridges. If implants would serve you better, your doctor says so in the estimate.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "How long will it last?",
+        "a": "Porcelain and zirconia restorations typically last 10 to 30 years with good care. Ours carry a 5-year written warranty.",
+        "doc": "Dr. Gretell Alonso Fiel, DMD"
+      },
+      {
+        "q": "Can I eat normally afterwards?",
+        "a": "Soft foods for the first two days, then everything. Chewing on both sides again is usually the first thing patients notice.",
+        "doc": "Dr. Marta Puentes Marrero, DMD"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Start with photos. A doctor replies within 6 hours.",
+    "body": "Free, no visit needed. Written estimate included.",
+    "cardTitle": "Free photo evaluation",
+    "cardBody": "Two photos of your smile, from your phone. Takes 2 minutes.",
+    "button": "Start my evaluation"
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "path": "/porcelain-veneers-miami",
+  "packageId": "signature-veneers",
+  "breadcrumb": "Veneers",
+  "schema": {
+    "name": "Porcelain Veneers",
+    "procedureType": "http://schema.org/NoninvasiveProcedure"
+  },
+  "hero": {
+    "definition": "Porcelain veneers are thin shells of ceramic, as thin as 0.3 mm, bonded to the front of your teeth to change their shape, length and color. At Xiluet Smiles in Miami, 20 veneers cost $6,000, take three visits in one week, and carry a 5-year written warranty.",
+    "lead": "Little to no drilling, a design you approve before any tooth is touched, and delivery in one week in Miami. Covered by a 5-year warranty, in writing.",
+    "secondaryCta": "See your week in Miami",
+    "stats": [
+      {
+        "kind": "price",
+        "label": "20 porcelain veneers"
+      },
+      {
+        "kind": "text",
+        "value": "3 visits",
+        "label": "in one week"
+      },
+      {
+        "kind": "text",
+        "value": "5 years",
+        "label": "warranty, in writing"
+      },
+      {
+        "kind": "rating",
+        "label": "Google reviews"
+      }
+    ],
+    "image": {
+      "caseId": "BA8",
+      "caption": "20 veneers · Actual Xiluet patient"
+    }
+  },
+  "candidates": {
+    "title": "Veneers fix what whitening and aligners cannot",
+    "intro": "If you recognise yourself in one of these, you are likely a candidate.",
+    "items": [
+      {
+        "t": "Stains whitening won’t lift",
+        "d": "Tetracycline, fluorosis or deep internal discoloration."
+      },
+      {
+        "t": "Chips and worn edges",
+        "d": "Teeth shortened by grinding or old bonding that keeps breaking."
+      },
+      {
+        "t": "Gaps between teeth",
+        "d": "Closed in one week, without years of aligners."
+      },
+      {
+        "t": "Uneven size or shape",
+        "d": "Small, peg-shaped or mismatched front teeth."
+      },
+      {
+        "t": "Mild crowding or rotation",
+        "d": "When a straighter look matters more than moving roots."
+      }
+    ]
+  },
+  "why": {
+    "eyebrow": "Why Xiluet veneers",
+    "title": "Thin enough to keep your teeth. Strong enough to last.",
+    "body": "Our veneers are hand-finished by a ceramist in the same building as your doctor. That is why we can go thinner, match shade in person, and deliver in days instead of weeks.",
+    "image": {
+      "src": "gen-veneer-macro.jpg",
+      "alt": "Ultra-thin porcelain veneer held with tweezers"
+    },
+    "facts": [
+      {
+        "label": "Thickness",
+        "big": "0.3 mm",
+        "sub": "Little to no drilling. Your natural tooth stays almost entirely intact."
+      },
+      {
+        "label": "Lab",
+        "big": "In-house",
+        "sub": "Doctor and ceramist in the same building. Shade matched in person."
+      },
+      {
+        "label": "Design preview",
+        "big": "You approve",
+        "sub": "See the design in your mouth before any permanent work starts."
+      },
+      {
+        "label": "Warranty",
+        "big": "5 years",
+        "sub": "In writing. Five times longer than the usual one year."
+      }
+    ]
+  },
+  "week": {
+    "title": "Your week in Miami",
+    "intro": "Everything before the trip happens from home: photos, written estimate, payment plan and dates. Then three visits in one week.",
+    "linkLabel": "Pick a date and see the full schedule →",
+    "visits": [
+      {
+        "k": "From home",
+        "t": "Photos, estimate, dates",
+        "d": "Send photos, get your written estimate within 6 hours, pick a payment plan and reserve with a $250 deposit.",
+        "time": "Any day, about 2 minutes of your time"
+      },
+      {
+        "k": "Visit 1 · Monday",
+        "t": "Exam and treatment plan review",
+        "d": "Cleaning, X-rays, scans and photos. You confirm the design with your doctor.",
+        "time": "About 2 hours"
+      },
+      {
+        "k": "Visit 2 · Tuesday",
+        "t": "Preparation and preview",
+        "d": "Minimal preparation, then temporaries shaped like your final design so you can live with it for two days.",
+        "time": "About 3 hours"
+      },
+      {
+        "k": "Visit 3 · Thursday",
+        "t": "Delivery and final adjustments",
+        "d": "Your veneers are bonded, bite checked, and your 5-year warranty is handed over in writing.",
+        "time": "About 2 hours. Fly home the same evening."
+      }
+    ]
+  },
+  "results": {
+    "title": "Veneer results",
+    "linkLabel": "All cases →",
+    "label": "Veneers",
+    "caseIds": [
+      "BA4",
+      "BA1",
+      "BA2"
+    ]
+  },
+  "price": {
+    "eyebrow": "Cost",
+    "title": "One price for 20 veneers, confirmed in writing before you book",
+    "body": "Send photos, and a doctor writes your estimate within 6 hours. The number you see is the number you pay, unless your exam finds something that needs treating first, and we tell you that in writing too.",
+    "lendersLabel": "Pay over time with",
+    "compareLabel": "Compare all packages →",
+    "card": {
+      "title": "20 porcelain veneers",
+      "sub": "Smile design",
+      "badge": "Most chosen",
+      "pricePrefix": "20 veneers",
+      "priceSuffix": null,
+      "included": [
+        "20 porcelain veneers, 0.3 mm minimal prep",
+        "Professional cleaning and X-rays",
+        "Design preview you approve first",
+        "Delivery in 5 business days",
+        "5-year warranty, in writing"
+      ],
+      "cta": "Get my written estimate"
+    },
+    "footnote": "Prices shown are minimum fees. Your final fee is confirmed in writing after a doctor's evaluation."
+  },
+  "faq": {
+    "title": "Veneer questions, answered by the doctors",
+    "linkLabel": "All answers →",
+    "items": [
+      {
+        "q": "Do veneers hurt?",
+        "a": "Most patients feel pressure, not pain. The area is numbed for preparation, and mild sensitivity usually settles within a few days.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "How much of my tooth is removed?",
+        "a": "With 0.3 mm veneers, usually very little and sometimes none. Your doctor confirms this at Visit 1 after the scans.",
+        "doc": "Dr. Marta Puentes Marrero, DMD"
+      },
+      {
+        "q": "Will they look fake?",
+        "a": "Not if they are designed for your face. You see and approve the design before any tooth is prepared, and shade is matched in person.",
+        "doc": "Dr. Gretell Alonso Fiel, DMD"
+      },
+      {
+        "q": "How long do porcelain veneers last?",
+        "a": "With normal care, 10 to 15 years is typical. Ours are covered for 5 years in writing, and a night guard is recommended if you grind.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "Can I really do this in one week?",
+        "a": "Yes. Our lab is in the same building, so design, preparation and delivery happen across 3 visits in as little as 4 business days.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Start with photos. A doctor replies within 6 hours.",
+    "body": "Free, no visit needed. Written estimate included.",
+    "cardTitle": "Free photo evaluation",
+    "cardBody": "Two photos of your smile, from your phone. Takes 2 minutes.",
+    "button": "Start my evaluation"
+  }
+}

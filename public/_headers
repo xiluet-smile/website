@@ -1,0 +1,28 @@
+# Security headers and HTML caching for every response.
+/*
+  Cache-Control: public, max-age=0, must-revalidate
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://challenges.cloudflare.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; media-src 'self' https://d8j0ntlcm91z4.cloudfront.net https://*.cloudflarestream.com; frame-src https://www.google.com https://maps.google.com https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com https://cloudflareinsights.com; form-action 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'
+
+# Long-lived caching for fingerprinted build output and static media.
+/_next/static/*
+  ! Cache-Control
+  Cache-Control: public, max-age=31536000, immutable
+
+/fonts/*
+  ! Cache-Control
+  Cache-Control: public, max-age=31536000, immutable
+
+/images/*
+  ! Cache-Control
+  Cache-Control: public, max-age=31536000, immutable
+
+# Lead photos and API responses are never cached or indexed.
+/api/*
+  ! Cache-Control
+  Cache-Control: no-store
+  X-Robots-Tag: noindex

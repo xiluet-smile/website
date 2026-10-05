@@ -1,0 +1,56 @@
+{
+  "slug": "sunbit",
+  "intro": "Sunbit was built for dental offices. Fair rates, no late fees, no origination fees and no penalties.",
+  "site": {
+    "url": "https://sunbit.com",
+    "label": "Check your options with Sunbit →",
+    "note": "Soft credit check. Does not affect your score."
+  },
+  "facts": [
+    {
+      "big": "~90%",
+      "sub": "Of applicants approved"
+    },
+    {
+      "big": "30 sec",
+      "sub": "Decision time"
+    },
+    {
+      "big": "No late fees",
+      "sub": "No origination fees or penalties"
+    },
+    {
+      "big": "Up to 72 mo",
+      "sub": "Terms on larger amounts"
+    }
+  ],
+  "steps": [
+    {
+      "n": "01",
+      "t": "Apply with your coordinator in the chair or by text link"
+    },
+    {
+      "n": "02",
+      "t": "See your approved amount and monthly options instantly"
+    },
+    {
+      "n": "03",
+      "t": "Sunbit pays Xiluet. You pay Sunbit monthly"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Does Sunbit check credit?",
+      "a": "A soft check to pre-qualify, which does not affect your score."
+    },
+    {
+      "q": "Who is Sunbit for?",
+      "a": "Patients who have been declined elsewhere often qualify with Sunbit. It is designed for everyday expenses like dental care."
+    },
+    {
+      "q": "Are there hidden fees?",
+      "a": "No. Sunbit charges no late fees, origination fees or prepayment penalties."
+    }
+  ],
+  "disclaimer": "Sunbit is a third-party lender. Financing is subject to credit approval. Terms and rates are set by Sunbit and may change. Xiluet does not make credit decisions."
+}

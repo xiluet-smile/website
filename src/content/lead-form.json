@@ -1,0 +1,55 @@
+{
+  "guide": [
+    { "n": 1, "title": "Front smile", "hint": "Natural smile, teeth together", "img": "guide-front-smile.jpg", "zoom": false },
+    { "n": 2, "title": "Right side", "hint": "Right side bite", "img": "guide-right-side.jpg", "zoom": false },
+    { "n": 3, "title": "Left side", "hint": "Left side bite", "img": "guide-left-side.jpg", "zoom": false },
+    { "n": 4, "title": "Upper arch", "hint": "From below, camera facing up", "img": "guide-upper-arch.jpg", "zoom": true },
+    { "n": 5, "title": "Lower arch", "hint": "From above, camera facing down", "img": "guide-lower-arch.jpg", "zoom": true }
+  ],
+  "limits": { "maxPhotos": 8, "maxPhotoMb": 10 },
+  "drop": {
+    "empty": "Tap to add your photos",
+    "emptyHint": "Select all five at once, or start with the front smile. JPG, PNG or HEIC.",
+    "one": "{count} photo added · add more",
+    "many": "{count} photos added · add more",
+    "limitHint": "Up to {max} photos"
+  },
+  "privacyNote": "Your photos are private and seen only by your Xiluet dental team.",
+  "concernsLabel": "What bothers you most?",
+  "concerns": ["Color", "Chips or wear", "Gaps", "Crooked", "Missing teeth", "Old dental work", "Gummy smile"],
+  "consent": {
+    "version": "lead-2026-10",
+    "text": "I agree to be contacted by Xiluet Smiles about my evaluation by text, call or email. Message and data rates may apply. Reply STOP to opt out.",
+    "privacyLabel": "Privacy Policy"
+  },
+  "submit": { "idle": "Send to the doctor", "sent": "Sent" },
+  "confirmation": {
+    "heading": "Sent. A doctor is reviewing your smile.",
+    "receivedOne": "{count} photo received",
+    "receivedMany": "{count} photos received",
+    "noted": ", noted: {concerns}.",
+    "body": "You will hear from us by text first, then email, within {replyHours} hours during office hours ({officeHours} ET).",
+    "link": "See results while you wait →"
+  },
+  "autoresponder": {
+    "subject": "Sent. A doctor is reviewing your smile.",
+    "photosLine": "Your photos go straight to the doctor who will design your case.",
+    "body": "You will hear from us by text first, then email, within {replyHours} hours during office hours ({officeHours} ET)."
+  },
+  "after": [
+    { "n": "01", "t": "A doctor looks, not a salesperson", "d": "Your photos go to one of the three doctors. They check whether you are a candidate and which treatment fits." },
+    { "n": "02", "t": "Written estimate within {replyHours} hours", "d": "Treatment, number of teeth, price and timeline. In writing, during office hours." },
+    { "n": "03", "t": "Financing options included", "d": "The two or three partners most likely to approve you, with example monthly payments." },
+    { "n": "04", "t": "You decide. No follow-up pressure", "d": "Reserve dates with a ${depositUsd} deposit when you are ready. One check-in from us, then we leave you alone." }
+  ],
+  "errors": {
+    "generic": "Your photos were not sent. Please try again, or call us.",
+    "invalid": "Please fill in your name, phone and email, and tick the consent box.",
+    "photos": "Photos must be images (JPG, PNG, WebP, GIF or HEIC), up to {max} photos of {mb} MB each.",
+    "too_many": "You can send up to {max} photos.",
+    "too_big": "Each photo must be {mb} MB or smaller.",
+    "not_image": "Only image files can be added.",
+    "rate": "Too many attempts. Please wait a few minutes and try again, or call us.",
+    "turnstile": "We could not verify your browser. Please reload the page and try again, or call us."
+  }
+}

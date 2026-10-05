@@ -1,0 +1,56 @@
+{
+  "slug": "lendingclub",
+  "intro": "A personal loan with a fixed rate and a set term. Good for full mouth reconstruction and All-on-X, where the amount is larger.",
+  "site": {
+    "url": "https://www.lendingclub.com",
+    "label": "Check your options with LendingClub →",
+    "note": "Soft credit check. Does not affect your score."
+  },
+  "facts": [
+    {
+      "big": "Up to $65k",
+      "sub": "Loan amounts"
+    },
+    {
+      "big": "Fixed rate",
+      "sub": "Same payment every month"
+    },
+    {
+      "big": "24 to 84 mo",
+      "sub": "Terms available"
+    },
+    {
+      "big": "No penalty",
+      "sub": "Pay off early any time"
+    }
+  ],
+  "steps": [
+    {
+      "n": "01",
+      "t": "Check your rate online in minutes with a soft check"
+    },
+    {
+      "n": "02",
+      "t": "Choose your term and see the exact monthly payment"
+    },
+    {
+      "n": "03",
+      "t": "Funds go to Xiluet. You pay LendingClub monthly"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Does checking my rate hurt my credit?",
+      "a": "No. Checking your rate is a soft inquiry. A hard inquiry happens only if you accept a loan."
+    },
+    {
+      "q": "Is there an origination fee?",
+      "a": "LendingClub charges an origination fee that is deducted from the loan amount. Your coordinator will show the net figure."
+    },
+    {
+      "q": "How fast is funding?",
+      "a": "Typically within a few business days of approval."
+    }
+  ],
+  "disclaimer": "LendingClub is a third-party lender. Financing is subject to credit approval. Terms and rates are set by LendingClub and may change. Xiluet does not make credit decisions."
+}

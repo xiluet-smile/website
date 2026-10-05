@@ -1,0 +1,77 @@
+{
+  "slug": "dr-marta-puentes-marrero",
+  "display": "Dr. Puentes",
+  "quote": "Exceptional dentistry begins with listening. The plan is built around your goals and your bite, not a catalogue.",
+  "stats": [
+    {
+      "big": "3",
+      "sub": "countries of clinical practice"
+    },
+    {
+      "big": "AACD",
+      "sub": "Cosmetic Dentistry member"
+    },
+    {
+      "big": "10+",
+      "sub": "years of experience"
+    }
+  ],
+  "focus": [
+    {
+      "n": "01",
+      "t": "Adhesive and esthetic dentistry",
+      "d": "Composite veneers, esthetic restorations and minimally invasive bonding that preserves enamel."
+    },
+    {
+      "n": "02",
+      "t": "Implant restorations and prosthodontics",
+      "d": "Crowns, bridges and implant-supported teeth evaluated for bite harmony and long-term stability."
+    },
+    {
+      "n": "03",
+      "t": "Endodontics and minor oral surgery",
+      "d": "Root canals and extractions when preservation is no longer an option."
+    },
+    {
+      "n": "04",
+      "t": "Clear aligner therapy",
+      "d": "Alignment first when a straighter smile matters more than covering teeth."
+    }
+  ],
+  "education": [
+    {
+      "t": "Doctor of Dental Medicine (DMD)",
+      "i": "Rutgers School of Dental Medicine",
+      "c": "United States"
+    },
+    {
+      "t": "Degree in Dentistry",
+      "i": "Spain",
+      "c": "Spain"
+    },
+    {
+      "t": "Advanced training in esthetic rehabilitation and adhesive dentistry",
+      "i": "United States and Europe",
+      "c": ""
+    },
+    {
+      "t": "Ongoing specialization in occlusion, function and tissue health",
+      "i": "Continuing education",
+      "c": ""
+    }
+  ],
+  "certs": [
+    "American Dental Association",
+    "Florida Dental Association",
+    "American Academy of Cosmetic Dentistry",
+    "Academy of General Dentistry",
+    "Florida dental license",
+    "CPR and BLS certified",
+    "DEA credentials"
+  ],
+  "caseIds": [
+    "BA13",
+    "BA6",
+    "BA5"
+  ]
+}

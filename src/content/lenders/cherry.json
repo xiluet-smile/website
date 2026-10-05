@@ -1,0 +1,56 @@
+{
+  "slug": "cherry",
+  "intro": "Cherry splits your treatment into monthly payments, from $200 to $30,000. Approval does not affect your credit score.",
+  "site": {
+    "url": "https://withcherry.com",
+    "label": "Check your options with Cherry →",
+    "note": "Soft credit check. Does not affect your score."
+  },
+  "facts": [
+    {
+      "big": "60 sec",
+      "sub": "Application, from your phone"
+    },
+    {
+      "big": "No hard pull",
+      "sub": "Checking does not affect your score"
+    },
+    {
+      "big": "0% APR",
+      "sub": "Options available for qualified patients"
+    },
+    {
+      "big": "3 to 60 mo",
+      "sub": "Choose the term that fits"
+    }
+  ],
+  "steps": [
+    {
+      "n": "01",
+      "t": "Apply on your phone before or after your estimate"
+    },
+    {
+      "n": "02",
+      "t": "Pick the monthly plan you prefer from the approved options"
+    },
+    {
+      "n": "03",
+      "t": "Cherry pays Xiluet directly. You pay Cherry monthly"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Does applying hurt my credit?",
+      "a": "No. Cherry runs a soft check to pre-qualify you, which does not affect your score."
+    },
+    {
+      "q": "What is the approval rate?",
+      "a": "Cherry reports approving around 75 percent of applicants. If you are not approved, our coordinator helps you try another partner."
+    },
+    {
+      "q": "Can I pay it off early?",
+      "a": "Yes. There is no penalty for paying off your plan early."
+    }
+  ],
+  "disclaimer": "Cherry is a third-party lender. Financing is subject to credit approval. Terms and rates are set by Cherry and may change. Xiluet does not make credit decisions."
+}

@@ -1,0 +1,31 @@
+# Old WordPress URLs -> new URLs (301). Generated from the handoff redirects.txt;
+# each rule is listed with and without the trailing slash.
+/porcelain-veneers /porcelain-veneers-miami 301
+/porcelain-veneers/ /porcelain-veneers-miami 301
+/lumineers /porcelain-veneers-miami 301
+/lumineers/ /porcelain-veneers-miami 301
+/smile-makeover /smile-makeover-miami 301
+/smile-makeover/ /smile-makeover-miami 301
+/full-mouth-reconstruction /full-mouth-reconstruction-miami 301
+/full-mouth-reconstruction/ /full-mouth-reconstruction-miami 301
+/our-doctors /doctors 301
+/our-doctors/ /doctors 301
+/dr-roger-ramos-navarro /doctors/dr-roger-ramos-navarro 301
+/dr-roger-ramos-navarro/ /doctors/dr-roger-ramos-navarro 301
+/dr-marta-puentes-marrero /doctors/dr-marta-puentes-marrero 301
+/dr-marta-puentes-marrero/ /doctors/dr-marta-puentes-marrero 301
+/dr-gretell-alonso-fiel /doctors/dr-gretell-alonso-fiel 301
+/dr-gretell-alonso-fiel/ /doctors/dr-gretell-alonso-fiel 301
+/financing/ /financing 301
+/cherry-payment-plans /financing/cherry 301
+/cherry-payment-plans/ /financing/cherry 301
+/sunbit /financing/sunbit 301
+/sunbit/ /financing/sunbit 301
+/care-credit /financing/carecredit 301
+/care-credit/ /financing/carecredit 301
+/lendingclub /financing/lendingclub 301
+/lendingclub/ /financing/lendingclub 301
+/gallery /before-and-after 301
+/gallery/ /before-and-after 301
+/contact-us /free-photo-evaluation 301
+/contact-us/ /free-photo-evaluation 301

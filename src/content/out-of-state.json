@@ -1,0 +1,16 @@
+{
+  "visits": [
+    { "k": "From home", "t": "Photos, estimate, dates", "d": "Send photos, get your written estimate within {replyHours} hours, pick a payment plan and reserve with a ${depositUsd} deposit.", "time": "Any day, about 2 minutes of your time" },
+    { "k": "Visit 1 · Monday", "t": "Exam and treatment plan review", "d": "Cleaning, X-rays, scans and photos. You confirm the design with your doctor.", "time": "About 2 hours. Rest of the day free." },
+    { "k": "Visit 2 · Tuesday", "t": "Preparation and preview", "d": "Minimal preparation, then temporaries in your approved design. Live with it Wednesday.", "time": "About 3 hours" },
+    { "k": "Visit 3 · Thursday", "t": "Delivery and final adjustments", "d": "Veneers bonded, bite checked, {warrantyYears}-year warranty handed over in writing.", "time": "About 2 hours. Fly home the same evening." }
+  ],
+  "perks": [
+    { "t": "Hotel shortlist", "d": "Three vetted hotels within 10 minutes, at different price points, sent with your estimate." },
+    { "t": "Airport pickup", "d": "MIA is 15 minutes away. We arrange your ride for Visit 1 if you want it." },
+    { "t": "Rides to every visit", "d": "Uber or Lyft to and from the clinic on each treatment day, on us." },
+    { "t": "Your coordinator", "d": "One person, by text, from first message to the flight home." },
+    { "t": "Aftercare from home", "d": "Video check-in two weeks after delivery. Your warranty is honored by any dentist for small adjustments." },
+    { "t": "Wednesday off", "d": "A free day between preparation and delivery. Beach, Wynwood or just rest." }
+  ]
+}

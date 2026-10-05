@@ -1,14 +1,50 @@
 # Open items
 
-Things the design files leave unresolved. Each is marked `TODO(clinic)` in the code or content where it applies.
+Things the design files leave unresolved. Each is marked `TODO(clinic)` in the code or content where it applies. Nothing here was invented to fill a gap; placeholders were left out instead.
 
-## Needs clinic confirmation
-- **Google rating and review count.** Site uses the design's 5.0 · 236 (`src/content/site.json` → `rating`); the live site says 4.9 · 500+. Pick one.
-- **Reply-time promise.** The footer, Free Photo Evaluation page and SEO copy say "within 6 hours"; the Home how-it-works step and final CTA say "within 12 hours". Kept verbatim from the designs; pick one.
-- **Schema `priceRange`.** Design JSON-LD says `$$`, SEO.md says `$$$`. Using the design's `$$`.
-- **Legal pages.** Privacy Policy, Terms, Notice of Privacy Practices, Refund and Cancellation have no designs or copy; footer links point to `#` (`src/content/nav.json` → `legal`).
-- **Spanish.** The EN | ES switch is in the design but /es/ is phase 2; the ES link points to `#`.
+## Facts that contradict each other in the designs (pick one)
+- **Google rating and review count.** Site uses the design's 5.0 · 236 (`src/content/site.json` → `rating`); the live site says 4.9 · 500+.
+- **Reply-time promise.** Footer, Free Photo Evaluation, Financing, Cost and SEO copy say "within 6 hours" (`site.json` → `replyHours`); the Home how-it-works step and Home final CTA say "within 12 hours". Kept verbatim.
+- **Airport distance.** Home says "20 minutes from MIA"; Clinic and the SEO description say "15 minutes".
+- **Days in Miami.** Home copy mixes "4 business days", "3 visits", "one week" and package cards say "Delivery in 5 business days".
+- **Cost financing band.** Heading "From about $149 a month for 20 veneers" vs the example beneath it "$6,000 over 60 months … at 0% APR" (= $100 a month).
+- **Reviews footnote.** "Reviews from Google, Healthgrades and RealSelf." vs the hero's "Reviews as published on Google".
+- **Schema `priceRange`.** Design JSON-LD says `$$`, SEO.md says `$$$`. Using `$$`.
+- **Sunbit.** "30 sec" decision time in the facts vs "under a minute" in the H1.
+- **CareCredit.** "over $200" (card note) vs "$200 or more" (intro). The shared hero note "Soft credit check. Does not affect your score." also appears on CareCredit, a credit card whose full application is normally a hard inquiry.
+- **Old `/contact-us/` URL** redirects to `/free-photo-evaluation` (per `redirects.txt`), not to the new `/contact` page.
 
-## Assets not supplied
-- **Hero video** is loaded from the designer's CloudFront URL (`site.json` → `videos.hero`). Upload to Cloudflare Stream and replace.
-- **Out-of-state video** (`miami-arrival.mp4`) is not in the repo per STACK.md; the poster image shows until a Stream URL is set in `site.json` → `videos.miamiArrival`.
+## Placeholders in the designs (not rendered)
+- **Patient video stories** ("In their own words" on Home and on each doctor profile): `[Patient name]`, no video files. Sections omitted.
+- **Home review cards** are placeholders; Home shows the first four reviews from the Reviews page instead.
+- **Reviews page, sixth card** is a placeholder; omitted. The five named reviews (Maria G., Daniel R., Sofia M., Carlos V., Andrea L.) must be verified against Google, and the design intends a Google Business Profile feed. No `Review`/`AggregateRating` schema is emitted until then.
+- **Home FAQ "How does the 5-year warranty work?"** has `[covered items]` in its answer; omitted. Warranty terms needed. The Home links "How the 5-year warranty works" and "All answers" have no target page and are omitted.
+- **Home doctor cards** show `[Credential line]`; using each doctor's focus line from the Doctors page.
+- **Home in-house lab photo** is an empty slot in the design; using the supplied AI editorial image `gen-ceramist-hands.jpg`. Replace with a real lab photo.
+- **Dr. Marta Puentes Marrero's education**: "Degree in Dentistry" lists the institution as just "Spain".
+- **Dr. Adriana Hernandez**: no photo or bio supplied; not on the site.
+- **Blog**: six draft titles with no articles. Cards are shown without links; no `Article` schema.
+- **Legal pages**: Privacy Policy, Terms, Notice of Privacy Practices, Refund and Cancellation have no designs or copy; footer links point to `#` (`src/content/nav.json` → `legal`).
+- **Spanish**: the EN | ES switch is in the design but /es/ is phase 2; the ES link points to `#`.
+
+## Lender claims to confirm against merchant agreements (rendered verbatim)
+- **Cherry**: $200 to $30,000; 3 to 60 months; 0% APR options for qualified patients; "approving around 75 percent of applicants"; no early-payoff penalty; no hard pull.
+- **Sunbit**: "approves about 9 in 10 applicants" / "~90%"; decision in 30 sec / under a minute; no late, origination or prepayment fees; terms up to 72 months.
+- **CareCredit**: accepted at over 200,000 locations; promotional financing from $200; 6 to 24 month no-interest periods if paid in full; deferred-interest wording.
+- **LendingClub**: loans up to $65,000; fixed rate; 24 to 84 months; no prepayment penalty; origination fee deducted from the loan; hard inquiry only on acceptance.
+- **Affirm**: 0 to 36 percent APR; 3 to 36 months; no late or hidden fees.
+- **Financing index**: "All five partners pre-qualify with a soft check"; "Most patients qualify with at least one partner".
+- **All-on-X**: price per arch ($10,000, $9,000 cash) and whether surgery is in-house (README open item).
+
+## Assets and services not supplied
+- **Hero video** loads from the designer's CloudFront URL (`site.json` → `videos.hero`). Upload to Cloudflare Stream and replace; update `media-src` in `public/_headers`.
+- **Out-of-state video** (`miami-arrival.mp4`) is not in the repo per STACK.md; the poster image shows until a URL is set in `site.json` → `videos.miamiArrival`.
+- **CRM endpoint** for leads (`CRM_WEBHOOK_URL`) is not specified.
+- **SMS autoresponder**: no provider specified; only the email autoresponder is implemented.
+
+## Build decisions worth knowing
+- Schema `logo`/`image` URLs point to `/og/…` (real files in the build) rather than the design's `/assets/…` paths, which do not exist in production.
+- The Cost page emits an `OfferCatalog` with all four priced packages (SEO.md says three; the design shows four).
+- Results cards on every page use one 13:16 crop with the full disclaimer "Actual Xiluet patient. Individual results vary."
+- FAQ accordions use the native `<details>` element (one open at a time, all answers in the HTML, no JavaScript).
+- The Home financing section is a grid (as drawn in the design), not a carousel.

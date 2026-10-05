@@ -1,0 +1,32 @@
+# Local values for `npm run preview` (wrangler pages dev). Copy to .dev.vars and
+# fill in. In production set these in Cloudflare Pages → Settings → Variables
+# and Secrets; R2_PHOTOS and RATE_LIMIT are bindings (Settings → Bindings),
+# not variables. All values below are dummies.
+
+# --- Secrets ---
+# Cloudflare Turnstile secret key (this one is Cloudflare's always-pass test key).
+TURNSTILE_SECRET=1x0000000000000000000000000000000AA
+# Resend API key used to send the clinic notification and the patient autoresponder.
+RESEND_API_KEY=re_dummy_xxxxxxxxxxxxxxxxxxxxxxxx
+# Signs the 7-day photo links in the clinic email. Any long random string.
+LINK_SIGNING_SECRET=dummy-change-me-to-a-long-random-string
+
+# --- Variables ---
+# Clinic inbox that receives leads and contact messages.
+NOTIFY_EMAIL=frontdesk@example.com
+# Sender; the domain must be verified in Resend.
+FROM_EMAIL=Xiluet Smiles <hello@example.com>
+# Optional. Leads and contact messages are POSTed here as JSON. Leave empty to skip.
+CRM_WEBHOOK_URL=
+# Optional. "1" rejects every submission without a Turnstile token (turns off the no-JS fallback).
+REQUIRE_TURNSTILE=
+# Optional. Base URL used in signed photo links. Defaults to https://xiluetsmiledesign.com
+SITE_URL=http://localhost:8788
+
+# --- Bindings (not set here) ---
+# R2_PHOTOS   R2 bucket for photos and lead records.  Local: wrangler pages dev out --r2=R2_PHOTOS
+# RATE_LIMIT  Optional KV namespace for rate limiting. Local: wrangler pages dev out --kv=RATE_LIMIT
+
+# --- Build-time (Next.js, not a function variable) ---
+# NEXT_PUBLIC_TURNSTILE_SITE_KEY goes in .env.local / the Pages build environment.
+# Unset = no Turnstile widget is rendered. Cloudflare's always-pass test site key: 1x00000000000000000000AA

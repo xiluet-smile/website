@@ -1,0 +1,34 @@
+{
+  "schemaName": "Contact Xiluet Smiles, Cosmetic Dentist in Miami",
+  "addressNote": "Westchester, on Calle Ocho · 15 min from Miami International Airport · Free parking on site",
+  "hours": "Monday – Friday, 9:00 AM – 5:00 PM (EST)",
+  "topics": [
+    "Porcelain veneers",
+    "Smile design",
+    "Full mouth reconstruction",
+    "Implants All-on-X",
+    "Financing",
+    "Existing patient",
+    "Something else"
+  ],
+  "replyViaLabel": "How should we reply?",
+  "replyVia": ["Text", "Call", "WhatsApp", "Email"],
+  "consent": {
+    "version": "contact-2026-10",
+    "text": "I agree to be contacted by Xiluet Smiles by text, call or email. Message and data rates may apply. Reply STOP to opt out.",
+    "privacyLabel": "Privacy Policy"
+  },
+  "submit": { "idle": "Send message", "sent": "Sent" },
+  "confirmation": {
+    "heading": "Message received.",
+    "body": "We reply within a few hours during office hours",
+    "by": ", by {via}",
+    "urgent": "For anything urgent, call"
+  },
+  "errors": {
+    "generic": "Your message was not sent. Please try again, or call us.",
+    "invalid": "Please fill in your name, email and message, and tick the consent box.",
+    "rate": "Too many attempts. Please wait a few minutes and try again, or call us.",
+    "turnstile": "We could not verify your browser. Please reload the page and try again, or call us."
+  }
+}

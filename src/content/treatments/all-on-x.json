@@ -1,0 +1,210 @@
+{
+  "path": "/all-on-x-dental-implants-miami",
+  "packageId": "all-on-x-fixed-arch",
+  "breadcrumb": "Implants All-on-X",
+  "schema": {
+    "name": "All-on-X Dental Implants",
+    "procedureType": "http://schema.org/NoninvasiveProcedure"
+  },
+  "hero": {
+    "definition": "All-on-X replaces a whole arch of missing or failing teeth with a fixed bridge supported by 4 to 6 dental implants. At Xiluet Smiles in Miami the package is $10,000 per arch ($9,000 cash) for up to 6 implants and a hybrid bridge; extractions, grafts and sinus lifts are quoted separately after a CT scan.",
+    "lead": "For a whole jaw of missing or failing teeth. Implants placed and a fixed temporary bridge fitted in one visit, final zirconia teeth after healing. Nothing removable.",
+    "secondaryCta": "See the timeline",
+    "stats": [
+      {
+        "kind": "text",
+        "value": "Same day",
+        "label": "fixed temporary teeth"
+      },
+      {
+        "kind": "text",
+        "value": "4 to 6",
+        "label": "implants per arch"
+      },
+      {
+        "kind": "text",
+        "value": "94–98%",
+        "label": "implant survival at 10 years"
+      },
+      {
+        "kind": "rating",
+        "label": "Google reviews"
+      }
+    ],
+    "image": {
+      "src": "gen-zirconia-bridge.jpg",
+      "alt": "Full-arch zirconia bridge",
+      "caption": "Final zirconia bridge, fixed on 4 to 6 implants"
+    }
+  },
+  "candidates": {
+    "title": "For a whole jaw, not a few teeth",
+    "intro": "If any of these is you, All-on-X is the right conversation to have.",
+    "items": [
+      {
+        "t": "Loose or failing teeth",
+        "d": "Most of the arch is beyond saving with crowns or root canals."
+      },
+      {
+        "t": "Dentures that move",
+        "d": "Fixed teeth never come out, never slip and need no adhesive."
+      },
+      {
+        "t": "Bone loss",
+        "d": "Angled implants use the bone you have, often without grafting."
+      },
+      {
+        "t": "Avoiding food",
+        "d": "Steak, apples and nuts again, with teeth that stay put."
+      },
+      {
+        "t": "A sunken look",
+        "d": "Fixed teeth support your lips and cheeks from the inside."
+      }
+    ]
+  },
+  "why": {
+    "eyebrow": "Why All-on-X here",
+    "title": "Surgery, lab and final teeth under one roof.",
+    "body": "Your surgeon, restorative doctor and ceramist work in the same building. That is why your temporary bridge is fitted the same day as surgery and your final teeth are shaped and shaded in person.",
+    "image": null,
+    "facts": [
+      {
+        "label": "Evidence",
+        "big": "94–98%",
+        "sub": "Implant survival at 10 years in long-term studies of the All-on-4 concept."
+      },
+      {
+        "label": "Fixed bridge",
+        "big": "99%",
+        "sub": "Of prostheses still in place at 10 years in the same studies."
+      },
+      {
+        "label": "Grafting",
+        "big": "Often avoided",
+        "sub": "Back implants are angled to use existing bone."
+      },
+      {
+        "label": "Final teeth",
+        "big": "Zirconia",
+        "sub": "Fixed, stain-resistant and shaped for your face."
+      }
+    ]
+  },
+  "week": {
+    "title": "Your All-on-X timeline",
+    "intro": "One visit for surgery and same-day teeth, healing at home, then one week in Miami for your final bridge.",
+    "linkLabel": "Ask about surgery dates →",
+    "visits": [
+      {
+        "k": "From home",
+        "t": "Photos, X-rays, estimate",
+        "d": "Send photos and any X-rays. A doctor writes your estimate within 6 hours and tells you if a CT scan is needed first.",
+        "time": "Any day"
+      },
+      {
+        "k": "Visit 1 · Surgery day",
+        "t": "Implants and fixed temporary teeth",
+        "d": "Extractions if needed, 4 to 6 implants placed, and a fixed temporary bridge screwed in the same day. Local anesthesia.",
+        "time": "One day. Soft diet for 2 weeks."
+      },
+      {
+        "k": "At home · 3 to 4 months",
+        "t": "Healing",
+        "d": "Implants fuse with bone while you wear fixed temporary teeth. Check-ins by video.",
+        "time": "No travel needed"
+      },
+      {
+        "k": "Visits 2 and 3 · One week",
+        "t": "Final zirconia bridge",
+        "d": "Scans, try-in and delivery of your final fixed teeth across one week in Miami.",
+        "time": "About 2 hours each"
+      }
+    ]
+  },
+  "results": {
+    "title": "Life with fixed teeth",
+    "linkLabel": "All cases →",
+    "editorial": [
+      {
+        "src": "gen-aox-man.jpg",
+        "label": "Eat what you want",
+        "cap": "Fixed teeth never slip",
+        "alt": "Man laughing outdoors in Miami"
+      },
+      {
+        "src": "gen-aox-woman-apple.jpg",
+        "label": "Bite into anything",
+        "cap": "Full chewing strength",
+        "alt": "Woman biting an apple"
+      },
+      {
+        "src": "gen-implant-guide.jpg",
+        "label": "Guided surgery",
+        "cap": "Planned on your CT scan",
+        "alt": "Surgical guide and CT scan"
+      }
+    ]
+  },
+  "price": {
+    "eyebrow": "Cost",
+    "title": "$10,000 per arch. $9,000 cash.",
+    "body": "$10,000 per arch, or $9,000 cash, for up to 6 implants and a hybrid fixed bridge. Extractions, bone graft, sinus lift and membranes are quoted separately from the price list if your CT shows they are needed.",
+    "lendersLabel": "Pay over time with",
+    "compareLabel": "Compare all packages →",
+    "card": {
+      "title": "All-on-X, per arch",
+      "sub": "Fixed full-arch teeth",
+      "badge": "$9,000 cash",
+      "pricePrefix": "per arch",
+      "priceSuffix": "$9,000 cash",
+      "included": [
+        "Up to 6 implants per arch",
+        "Hybrid fixed bridge",
+        "Professional cleaning and X-rays",
+        "CT review before surgery",
+        "Extractions, grafts, sinus lift and membranes quoted separately"
+      ],
+      "cta": "Get my written estimate"
+    },
+    "footnote": "Final price confirmed in writing after a doctor's evaluation and CT review."
+  },
+  "faq": {
+    "title": "All-on-X questions, answered by the doctors",
+    "linkLabel": "All answers →",
+    "items": [
+      {
+        "q": "All-on-4 or All-on-6?",
+        "a": "Four implants is the standard protocol. Six adds support for a heavy bite or softer bone. Your CT scan decides, not the price.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "Will I be without teeth?",
+        "a": "No. A fixed temporary bridge is fitted the same day as surgery. You leave with teeth.",
+        "doc": "Dr. Marta Puentes Marrero, DMD"
+      },
+      {
+        "q": "Do I need bone grafting?",
+        "a": "Usually not. The back implants are angled to use the bone you have. If grafting is needed, it is in your written estimate.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "How long do they last?",
+        "a": "Long-term studies report 94 to 98 percent of implants and about 99 percent of bridges still in function at 10 years. Zirconia bridges typically last 10 to 20 years.",
+        "doc": "Dr. Gretell Alonso Fiel, DMD"
+      },
+      {
+        "q": "Is the surgery done awake?",
+        "a": "Under local anesthesia. Most patients describe pressure rather than pain and go home the same afternoon.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Start with photos. A doctor replies within 6 hours.",
+    "body": "Free, no visit needed. Written estimate included.",
+    "cardTitle": "Free photo evaluation",
+    "cardBody": "Two photos of your smile, from your phone. Takes 2 minutes.",
+    "button": "Start my evaluation"
+  }
+}

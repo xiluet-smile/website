@@ -1,0 +1,56 @@
+{
+  "slug": "carecredit",
+  "intro": "A reusable credit card for health, dental and wellness. Promotional financing on purchases of $200 or more, and you can use it again for future care.",
+  "site": {
+    "url": "https://www.carecredit.com",
+    "label": "Check your options with CareCredit →",
+    "note": "Soft credit check. Does not affect your score."
+  },
+  "facts": [
+    {
+      "big": "$200+",
+      "sub": "Promotional financing threshold"
+    },
+    {
+      "big": "6 to 24 mo",
+      "sub": "No-interest promotional periods if paid in full"
+    },
+    {
+      "big": "Reusable",
+      "sub": "Use it again for future dental care"
+    },
+    {
+      "big": "200,000+",
+      "sub": "Locations accept it"
+    }
+  ],
+  "steps": [
+    {
+      "n": "01",
+      "t": "Apply online or by phone and get a decision in minutes"
+    },
+    {
+      "n": "02",
+      "t": "Choose a promotional plan that fits your estimate"
+    },
+    {
+      "n": "03",
+      "t": "Pay CareCredit monthly. Pay in full within the promo period to avoid interest"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is it really no interest?",
+      "a": "Yes, if you pay the full balance within the promotional period. Interest is charged from the purchase date if you do not."
+    },
+    {
+      "q": "Can I use CareCredit for both visits?",
+      "a": "Yes. It is a revolving card, so it covers your whole treatment and future visits."
+    },
+    {
+      "q": "What credit score do I need?",
+      "a": "CareCredit does not publish a minimum. Our coordinator can help you compare with Cherry or Sunbit if you are not approved."
+    }
+  ],
+  "disclaimer": "CareCredit is a third-party lender. Financing is subject to credit approval. Terms and rates are set by CareCredit and may change. Xiluet does not make credit decisions."
+}

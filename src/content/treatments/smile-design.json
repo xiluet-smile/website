@@ -1,0 +1,197 @@
+{
+  "path": "/smile-design-miami",
+  "packageId": "signature-veneers",
+  "breadcrumb": "Smile Design",
+  "schema": {
+    "name": "Digital Smile Design",
+    "procedureType": "http://schema.org/NoninvasiveProcedure"
+  },
+  "hero": {
+    "definition": "Smile design is the planning stage of cosmetic dentistry: your face, lips, skin tone and bite are photographed and scanned, then a new smile is designed digitally and previewed in your mouth before any permanent work. At Xiluet Smiles in Miami it is included with every veneer case.",
+    "lead": "We photograph and scan your face and teeth, design your new smile digitally, and show it to you in your own mouth. Nothing permanent happens until you say yes.",
+    "secondaryCta": "See how the design works",
+    "stats": [
+      {
+        "kind": "price",
+        "label": "20 porcelain veneers"
+      },
+      {
+        "kind": "text",
+        "value": "1 week",
+        "label": "design to delivery"
+      },
+      {
+        "kind": "text",
+        "value": "5 years",
+        "label": "warranty, in writing"
+      },
+      {
+        "kind": "rating",
+        "label": "Google reviews"
+      }
+    ],
+    "image": {
+      "caseId": "BA4",
+      "caption": "Smile design, 20 veneers · Actual Xiluet patient"
+    }
+  },
+  "candidates": {
+    "title": "Designed for the person, not from a catalogue",
+    "intro": "Five things we design around before a single tooth is touched.",
+    "items": [
+      {
+        "t": "Your face",
+        "d": "Lip line, face shape and symmetry set the length and width of each tooth."
+      },
+      {
+        "t": "Your skin tone",
+        "d": "Shade is chosen against your skin and eyes, not a whiteness chart."
+      },
+      {
+        "t": "Your age",
+        "d": "How much tooth shows when you talk and smile. We match what suits you."
+      },
+      {
+        "t": "Your gums",
+        "d": "An even gum line frames the design. Contoured first if needed."
+      },
+      {
+        "t": "Your bite",
+        "d": "Edges are shaped so you speak and chew comfortably from day one."
+      }
+    ]
+  },
+  "why": {
+    "eyebrow": "Why design first",
+    "title": "See it in your mouth before you commit.",
+    "body": "The design preview is not a photo on a screen. It is temporaries shaped exactly like your final smile. You live with it for two days, ask for changes, and only then is the porcelain finished.",
+    "image": {
+      "src": "gen-design-tablet.jpg",
+      "alt": "Doctor showing a digital smile design on a tablet"
+    },
+    "facts": [
+      {
+        "label": "Preview",
+        "big": "In your mouth",
+        "sub": "Temporaries shaped like the final design, worn for two days."
+      },
+      {
+        "label": "Changes",
+        "big": "Unlimited",
+        "sub": "Longer, shorter, rounder, whiter. Adjusted before porcelain is made."
+      },
+      {
+        "label": "Shade",
+        "big": "Matched in person",
+        "sub": "The ceramist checks color against your skin and eyes."
+      },
+      {
+        "label": "Natural look",
+        "big": "No two alike",
+        "sub": "Each tooth shaped individually, never a flat uniform set."
+      }
+    ]
+  },
+  "week": {
+    "title": "Your design week in Miami",
+    "intro": "Photos and estimate from home. Then design, preview and delivery across three visits in one week.",
+    "linkLabel": "Pick a date and see the full schedule →",
+    "visits": [
+      {
+        "k": "From home",
+        "t": "Photos, estimate, dates",
+        "d": "Send photos, get your written estimate within 6 hours, pick a payment plan and reserve with a $250 deposit.",
+        "time": "Any day, about 2 minutes of your time"
+      },
+      {
+        "k": "Visit 1 · Monday",
+        "t": "Exam, scans and design session",
+        "d": "Cleaning, X-rays, 3D scans and facial photos. You and your doctor decide shape, length and shade together.",
+        "time": "About 2 hours"
+      },
+      {
+        "k": "Visit 2 · Tuesday",
+        "t": "Preview in your mouth",
+        "d": "Minimal preparation, then temporaries in your approved design. Live with it, then ask for any change.",
+        "time": "About 3 hours"
+      },
+      {
+        "k": "Visit 3 · Thursday",
+        "t": "Delivery and final adjustments",
+        "d": "Final porcelain bonded, bite checked, 5-year warranty handed over in writing.",
+        "time": "About 2 hours. Fly home the same evening."
+      }
+    ]
+  },
+  "results": {
+    "title": "Smile design results",
+    "linkLabel": "All cases →",
+    "label": "Smile design",
+    "caseIds": [
+      "BA8",
+      "BA4",
+      "BA3"
+    ]
+  },
+  "price": {
+    "eyebrow": "Cost",
+    "title": "Design, preview and 20 veneers. One written price.",
+    "body": "Send photos and a doctor writes your estimate within 6 hours. The design preview and any changes are included, never billed as extras.",
+    "lendersLabel": "Pay over time with",
+    "compareLabel": "Compare all packages →",
+    "card": {
+      "title": "20 porcelain veneers",
+      "sub": "Smile design package",
+      "badge": "Most chosen",
+      "pricePrefix": "20 veneers",
+      "priceSuffix": null,
+      "included": [
+        "Facial analysis and digital smile design",
+        "Preview in your mouth, with changes included",
+        "20 porcelain veneers, 0.3 mm minimal prep",
+        "Professional cleaning and X-rays",
+        "5-year warranty, in writing"
+      ],
+      "cta": "Get my written estimate"
+    },
+    "footnote": "Prices shown are minimum fees. Your final fee is confirmed in writing after a doctor's evaluation."
+  },
+  "faq": {
+    "title": "Smile design questions, answered by the doctors",
+    "linkLabel": "All answers →",
+    "items": [
+      {
+        "q": "What is the difference between smile design and veneers?",
+        "a": "Veneers are the material. Smile design is the planning that decides their shape, length and shade for your face. Every veneer case here starts with a design.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "Can I choose how white?",
+        "a": "Yes. We recommend a shade that suits your skin and eyes, and you make the final call during the preview.",
+        "doc": "Dr. Gretell Alonso Fiel, DMD"
+      },
+      {
+        "q": "What if I do not like the preview?",
+        "a": "We change it. Temporaries are adjusted in the chair until you approve, and only then is the porcelain finished.",
+        "doc": "Dr. Marta Puentes Marrero, DMD"
+      },
+      {
+        "q": "Do I need all 20 teeth?",
+        "a": "Not always. Some smiles need 8 or 10. Your doctor tells you in the written estimate, and the price changes accordingly.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "How long does the design take?",
+        "a": "The design session is part of Visit 1. The whole process, design to delivery, is one week.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Start with photos. A doctor replies within 6 hours.",
+    "body": "Free, no visit needed. Written estimate included.",
+    "cardTitle": "Free photo evaluation",
+    "cardBody": "Two photos of your smile, from your phone. Takes 2 minutes.",
+    "button": "Start my evaluation"
+  }
+}
