@@ -11,6 +11,8 @@ const socials = [
 ];
 
 const linkCls = "text-on-dark no-underline hover:text-gold";
+// Footer column links get a little vertical padding on mobile for a comfortable tap target.
+const navLinkCls = `${linkCls} max-lg:py-0.5`;
 
 export default function Footer() {
   return (
@@ -98,11 +100,11 @@ export default function Footer() {
                 {col.links.map((l) => {
                   const href = resolveHref(l.href);
                   return isExternal(href) ? (
-                    <a key={l.label} href={href} rel="noopener" className={linkCls}>
+                    <a key={l.label} href={href} rel="noopener" className={navLinkCls}>
                       {l.label}
                     </a>
                   ) : (
-                    <Link key={l.label} href={href} className={linkCls}>
+                    <Link key={l.label} href={href} className={navLinkCls}>
                       {l.label}
                     </Link>
                   );

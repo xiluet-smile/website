@@ -36,22 +36,23 @@
   font-display: swap;
   src: url("/fonts/source-sans-3-latin-600-normal.woff2") format("woff2");
 }
-/* Metric-matched system fallbacks so text does not shift when the web fonts swap in. */
+/* Metric-matched system fallbacks so text does not shift when the web fonts swap in.
+   size-adjust is calibrated against the rendered width of this site's own headings and body copy. */
 @font-face {
   font-family: "Playfair Fallback";
   src: local("Times New Roman");
-  ascent-override: 97.38%;
-  descent-override: 22.59%;
+  ascent-override: 98.11%;
+  descent-override: 22.76%;
   line-gap-override: 0%;
-  size-adjust: 111.11%;
+  size-adjust: 110.28%;
 }
 @font-face {
   font-family: "Source Sans Fallback";
   src: local("Arial");
-  ascent-override: 108.71%;
-  descent-override: 42.47%;
+  ascent-override: 109.71%;
+  descent-override: 42.86%;
   line-gap-override: 0%;
-  size-adjust: 94.19%;
+  size-adjust: 93.33%;
 }
 
 /* Design tokens from the handoff README */
@@ -72,6 +73,17 @@
 
   --font-serif: "Playfair Display", "Playfair Fallback", Georgia, serif;
   --font-sans: "Source Sans 3", "Source Sans Fallback", "Helvetica Neue", Arial, sans-serif;
+
+  /* The designs set font-size and line-height independently (line-height is
+     inherited unless stated), so named text sizes must not imply a line-height. */
+  --text-xs--line-height: inherit;
+  --text-sm--line-height: inherit;
+  --text-base--line-height: inherit;
+  --text-lg--line-height: inherit;
+  --text-xl--line-height: inherit;
+  --text-2xl--line-height: inherit;
+  --text-3xl--line-height: inherit;
+  --text-4xl--line-height: inherit;
 
   --radius-input: 12px;
   --radius-card: 18px;
@@ -104,6 +116,11 @@
   }
   a:hover {
     color: var(--color-gold-text);
+  }
+  /* <picture class="contents"> lets the <img> take part in its parent's layout;
+     the <source> children must not become flex/grid items (they would add gaps). */
+  picture > source {
+    display: none;
   }
   :focus-visible {
     outline: 2px solid var(--color-gold);

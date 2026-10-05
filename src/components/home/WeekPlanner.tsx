@@ -73,7 +73,7 @@ export default function WeekPlanner({ steps, bars }: { steps: Step[]; bars: Bar[
 
   return (
     <div>
-      <label className="mb-5 flex flex-wrap items-center gap-2.5 rounded-[14px] border border-[rgba(205,177,128,.45)] bg-[rgba(255,253,248,.6)] px-3.5 py-2.5 text-sm text-body lg:absolute lg:top-0 lg:right-0 lg:mb-0 lg:flex-nowrap lg:gap-3 lg:rounded-full lg:py-2.5 lg:pr-3.5 lg:pl-[18px] lg:whitespace-nowrap lg:shadow-[inset_0_1px_0_rgba(255,255,255,.7),0_8px_20px_rgba(26,26,26,.05)]">
+      <label className="mb-5 flex flex-wrap items-center gap-2.5 rounded-[14px] border border-[rgba(205,177,128,.45)] bg-[rgba(255,253,248,.6)] px-3.5 py-2.5 text-sm text-body lg:absolute lg:top-[42px] lg:right-0 lg:mb-0 lg:flex-nowrap lg:gap-3 lg:rounded-full lg:py-2.5 lg:pr-3.5 lg:pl-[18px] lg:whitespace-nowrap lg:shadow-[inset_0_1px_0_rgba(255,255,255,.7),0_8px_20px_rgba(26,26,26,.05)]">
         <span>If I send my photos on</span>
         <input
           type="date"

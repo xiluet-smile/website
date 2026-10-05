@@ -42,7 +42,7 @@ export default function HomeResults({ cases, types }: { cases: Case[]; types: st
       </div>
       <div
         ref={row}
-        className="-mx-5 flex snap-x snap-mandatory gap-2.5 overflow-x-auto px-5 pb-1 [scrollbar-width:none] lg:-mx-2 lg:gap-6 lg:px-2"
+        className="-mx-5 flex snap-x scroll-px-5 snap-mandatory gap-2.5 overflow-x-auto px-5 pb-1 [scrollbar-width:none] lg:-mx-2 lg:gap-6 lg:px-2"
       >
         {cases.map((c) => (
           <CaseCard

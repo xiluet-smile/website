@@ -51,7 +51,7 @@ export default function Page() {
               </span>
             </nav>
             <h1 className="m-0 font-serif text-[38px] leading-[1.1] font-normal tracking-[-.01em] text-pretty lg:text-[56px] lg:leading-[1.04]">
-              Contact Us <span className="text-on-dark-muted">· Cosmetic Dentist in Miami, FL</span>
+              Contact Us <span className="text-on-dark-muted max-lg:block">· Cosmetic Dentist in Miami, FL</span>
             </h1>
             <p className="m-0 max-w-[62ch] text-[17px] leading-[1.55] text-pretty text-on-dark-muted lg:text-lg">
               {site.name} is a cosmetic dentistry practice at {address}, open Monday to Friday 9 AM to 5 PM. Call or WhatsApp{" "}
@@ -70,7 +70,7 @@ export default function Page() {
               <h2 className="m-0 font-serif text-[34px] leading-[1.2] font-normal text-ink lg:text-[40px] lg:leading-[1.1]">
                 Contact information
               </h2>
-              <p className="m-0 max-w-[46ch] text-[17px] leading-[1.55] text-body">
+              <p className="max-lg:min-h-[4lh] m-0 max-w-[46ch] text-[17px] leading-[1.55] text-body">
                 Call, text, WhatsApp or email. {site.languages.display}. Outside office hours, leave a message and we reply the
                 next business morning.
               </p>
@@ -118,7 +118,7 @@ export default function Page() {
                 }
               >
                 <address className="font-medium not-italic">
-                  {address}
+                  {street}, <span className="max-lg:block">{locality}, {region} {postalCode}</span>
                   <span className="block text-sm font-normal text-muted">{content.addressNote}</span>
                 </address>
               </Row>

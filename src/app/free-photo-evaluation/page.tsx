@@ -35,7 +35,7 @@ export default function Page() {
 
       {/* photo guide */}
       <section className="wrap pt-10 lg:pt-16" aria-label="Example photos">
-        <div className="-mx-5 flex snap-x gap-3.5 overflow-x-auto px-5 pb-2 lg:mx-0 lg:grid lg:grid-cols-5 lg:overflow-visible lg:px-0 lg:pb-0">
+        <div className="-mx-5 flex snap-x scroll-px-5 gap-3.5 overflow-x-auto px-5 pb-2 lg:mx-0 lg:grid lg:grid-cols-5 lg:overflow-visible lg:px-0 lg:pb-0">
           {content.guide.map((g) => (
             <figure
               key={g.n}

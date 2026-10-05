@@ -207,7 +207,7 @@ export default function DoctorProfile({ doctor, profile }: { doctor: Doctor; pro
             All cases →
           </Link>
         </div>
-        <div className="-mx-5 flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-2 lg:mx-0 lg:grid lg:grid-cols-3 lg:gap-6 lg:overflow-visible lg:px-0 lg:pb-0">
+        <div className="-mx-5 flex snap-x scroll-px-5 snap-mandatory gap-4 overflow-x-auto px-5 pb-2 lg:mx-0 lg:grid lg:grid-cols-3 lg:gap-6 lg:overflow-visible lg:px-0 lg:pb-0">
           {cases.map((c) => (
             <CaseCard
               key={c.id}

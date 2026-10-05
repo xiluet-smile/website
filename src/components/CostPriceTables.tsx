@@ -19,8 +19,8 @@ export default function CostPriceTables() {
                   {g.n}
                 </span>
                 <span className="flex flex-col gap-0.5">
-                  <span className="text-base leading-[1.3] font-semibold">{g.title}</span>
-                  <span className="text-[13px] leading-[1.3] text-on-dark-muted">{g.sub}</span>
+                  <span className="text-base leading-[1.55] font-semibold">{g.title}</span>
+                  <span className="text-[13px] leading-[1.55] text-on-dark-muted">{g.sub}</span>
                 </span>
               </span>
             </caption>
@@ -35,7 +35,7 @@ export default function CostPriceTables() {
                 <tr key={it.name}>
                   <th
                     scope="row"
-                    className={`${rule} bg-[position:22px_100%] py-3 pr-3 pl-[22px] align-baseline text-base leading-[1.4] font-normal text-ink`}
+                    className={`${rule} bg-[position:22px_100%] py-3 pr-3 pl-[22px] align-baseline text-base leading-[1.55] font-normal text-ink`}
                   >
                     {it.name}
                   </th>
@@ -44,11 +44,11 @@ export default function CostPriceTables() {
                   >
                     <span className="flex items-baseline justify-end gap-[7px]">
                       {it.was && <s className="font-serif text-base text-[#807b70]">{it.was}</s>}
-                      <span className="font-serif text-[21px] leading-[1.3] text-teal">{it.price}</span>
+                      <span className="font-serif text-[21px] leading-[1.55] text-teal">{it.price}</span>
                       {it.unit && <span className="text-xs text-muted">{it.unit}</span>}
                     </span>
                     {it.note && (
-                      <span className="mt-0.5 block text-[11px] leading-[1.4] font-semibold whitespace-normal text-gold-text">
+                      <span className="mt-0.5 block text-[11px] leading-[1.55] font-semibold whitespace-normal text-gold-text">
                         {it.note}
                       </span>
                     )}

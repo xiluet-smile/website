@@ -52,12 +52,13 @@ Things the design files leave unresolved. Each is marked `TODO(clinic)` in the c
 - **Out-of-state video** (`miami-arrival.mp4`) is not in the repo per STACK.md; the poster image shows until a URL is set in `site.json` → `videos.miamiArrival`.
 - **CRM endpoint** for leads (`CRM_WEBHOOK_URL`) is not specified.
 - **SMS autoresponder**: no provider specified; only the email autoresponder is implemented.
-- **Hero poster image**: the hero video has no poster, so the hero shows the dark teal background until the video starts (about 2 seconds after load). A still frame from the video would fix that.
+- **Hero poster image**: the hero video has no poster, so the Home hero shows the dark teal background until the video starts (about 2 seconds after load, longer on slow connections). This is what keeps Home at 88–89 on Lighthouse mobile performance (Speed Index); every other page is 90+. Supply a still of the video's first frame (1920×1080) and it can be shown immediately.
 - **Case captions**: the Full Mouth Reconstruction page captions case BA13 "Full mouth reconstruction", while the Results page files BA13 (and BA9) under other types. Confirm the treatment for each case.
 
 ## Build decisions worth knowing
 - Schema `logo`/`image` URLs point to `/og/…` (real files in the build) rather than the design's `/assets/…` paths, which do not exist in production.
 - The Cost page emits an `OfferCatalog` with all four priced packages (SEO.md says three; the design shows four).
 - Results cards on every page use one 13:16 crop with the full disclaimer "Actual Xiluet patient. Individual results vary."
+- Web fonts use `font-display: swap` with metric-matched fallback fonts. On a slow first visit text can still re-wrap slightly when the fonts arrive; switching the body font to `font-display: optional` in `src/app/globals.css` would remove that entirely at the cost of some first visits seeing the fallback font.
 - FAQ accordions use the native `<details>` element (one open at a time, all answers in the HTML, no JavaScript).
 - The Home financing section is a grid (as drawn in the design), not a carousel.

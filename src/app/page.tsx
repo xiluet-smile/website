@@ -131,7 +131,7 @@ export default function Home() {
       {/* Sound familiar */}
       <section className="defer-render wrap pt-16 lg:pt-28">
         <div className={headRow}>
-          <h2 className={h2}>Sound familiar?</h2>
+          <h2 className={`${h2} lg:leading-[1.55]`}>Sound familiar?</h2>
           <p className="m-0 max-w-[420px] text-[17px] leading-normal text-pretty text-body lg:mb-2 lg:text-right">
             Six things we hear on almost every first call. Tap a card to see our answer.
           </p>
@@ -241,9 +241,12 @@ export default function Home() {
               Six steps from your phone to your follow-up. Most of it happens before you ever visit.
             </p>
           </div>
+          <Link href="/out-of-state-patients" className="link-strong absolute top-0 right-0 hidden whitespace-nowrap lg:inline">
+            See the full process →
+          </Link>
           <WeekPlanner steps={home.steps} bars={home.timelineBars} />
         </div>
-        <Link href="/out-of-state-patients" className="link-strong mt-4 inline-block">
+        <Link href="/out-of-state-patients" className="link-strong mt-4 inline-block lg:hidden">
           See the full process →
         </Link>
       </section>
@@ -469,7 +472,7 @@ export default function Home() {
         </div>
         {/* TODO(clinic): the design's sixth question ("How does the 5-year warranty work?") has a
             "[covered items]" placeholder in its answer and is omitted until the terms are supplied. */}
-        <FaqAccordion faqs={faqs} />
+        <FaqAccordion faqs={faqs} variant="home" />
       </section>
 
       {/* Reviews */}
