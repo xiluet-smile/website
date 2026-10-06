@@ -3,6 +3,7 @@ import DoctorCta from "@/components/DoctorCta";
 import { PhoneIcon } from "@/components/Icons";
 import Img from "@/components/Img";
 import PageHero from "@/components/PageHero";
+import PatientStories from "@/components/home/PatientStories";
 import { getContent, tpl, ui, type Doctor } from "@/lib/content-i18n";
 import { localizeHref, localizePath, type Locale } from "@/lib/i18n";
 import { site } from "@/lib/site";
@@ -22,25 +23,46 @@ export type DoctorProfileData = {
   caseIds: string[];
 };
 
-const h2 = "m-0 font-serif font-normal text-[34px] leading-[1.2] lg:leading-[1.1]";
-const sectionHead = "mb-7 flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between lg:gap-8";
-const panelShadow = "shadow-[inset_0_1px_0_rgba(247,244,238,.18),0_30px_80px_rgba(4,40,46,.32)]";
+const h2 =
+  "m-0 font-serif font-normal text-[34px] leading-[1.2] lg:leading-[1.1]";
+const sectionHead =
+  "mb-7 flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between lg:gap-8";
+const panelShadow =
+  "shadow-[inset_0_1px_0_rgba(247,244,238,.18),0_30px_80px_rgba(4,40,46,.32)]";
 
-function Hero({ doctor, profile, locale }: { doctor: Doctor; profile: DoctorProfileData; locale: Locale }) {
+function Hero({
+  doctor,
+  profile,
+  locale,
+}: {
+  doctor: Doctor;
+  profile: DoctorProfileData;
+  locale: Locale;
+}) {
   const t = ui(locale);
   const stat = "flex flex-col gap-0.5";
-  const statBig = "font-serif text-[26px] leading-none whitespace-nowrap lg:text-[28px]";
+  const statBig =
+    "font-serif text-[26px] leading-none whitespace-nowrap lg:text-[28px]";
   const statSub = "text-sm text-on-dark-muted";
   return (
     <PageHero locale={locale}>
       <div className="wrap relative z-[2] grid items-center gap-10 pt-8 pb-14 lg:grid-cols-[minmax(0,1fr)_460px] lg:gap-[72px] lg:pt-12 lg:pb-[88px]">
         <div className="flex flex-col gap-6">
-          <nav aria-label="Breadcrumb" className="flex flex-wrap gap-2 text-[13px] text-on-dark-muted">
-            <Link href={localizePath("/", locale)} className="text-on-dark-muted no-underline hover:text-gold">
+          <nav
+            aria-label="Breadcrumb"
+            className="flex flex-wrap gap-2 text-[13px] text-on-dark-muted"
+          >
+            <Link
+              href={localizePath("/", locale)}
+              className="text-on-dark-muted no-underline hover:text-gold"
+            >
               {t.home}
             </Link>
             <span aria-hidden="true">/</span>
-            <Link href={localizePath("/doctors", locale)} className="text-on-dark-muted no-underline hover:text-gold">
+            <Link
+              href={localizePath("/doctors", locale)}
+              className="text-on-dark-muted no-underline hover:text-gold"
+            >
               {t.breadcrumb.doctors}
             </Link>
             <span aria-hidden="true">/</span>
@@ -52,13 +74,18 @@ function Hero({ doctor, profile, locale }: { doctor: Doctor; profile: DoctorProf
           <h1 className="m-0 font-serif text-[38px] leading-[1.1] font-normal tracking-[-.01em] lg:text-[64px] lg:leading-[1.02]">
             {doctor.shortName}
             <span className="sr-only">, </span>
-            <span className="mt-2.5 block text-[22px] tracking-[.08em] text-on-dark-muted lg:text-[26px]">DMD</span>
+            <span className="mt-2.5 block text-[22px] tracking-[.08em] text-on-dark-muted lg:text-[26px]">
+              DMD
+            </span>
           </h1>
           <p className="m-0 max-w-[56ch] text-[17px] leading-[1.55] text-pretty text-on-dark-muted lg:text-[19px]">
             {doctor.bio}
           </p>
           <div className="flex flex-col gap-3 lg:flex-row lg:flex-wrap lg:items-center lg:gap-3.5">
-            <Link href={localizePath("/free-photo-evaluation", locale)} className="btn btn-gold h-[52px] px-[26px] text-[17px]">
+            <Link
+              href={localizePath("/free-photo-evaluation", locale)}
+              className="btn btn-gold h-[52px] px-[26px] text-[17px]"
+            >
               {tpl(t.doctor.sendPhotosTo, { name: profile.display })}
             </Link>
             <a
@@ -71,14 +98,19 @@ function Hero({ doctor, profile, locale }: { doctor: Doctor; profile: DoctorProf
           </div>
           <dl className="m-0 mt-1.5 grid grid-cols-2 gap-x-6 gap-y-[18px] border-t border-[rgba(247,244,238,.16)] pt-[22px] lg:flex lg:flex-wrap lg:gap-x-0">
             {profile.stats.map((st) => (
-              <div key={st.sub} className={`${stat} border-[rgba(247,244,238,.16)] lg:mr-6 lg:border-r lg:pr-6`}>
+              <div
+                key={st.sub}
+                className={`${stat} border-[rgba(247,244,238,.16)] lg:mr-6 lg:border-r lg:pr-6`}
+              >
                 <dt className={`${statSub} order-2`}>{st.sub}</dt>
                 <dd className={`${statBig} m-0`}>{st.big}</dd>
               </div>
             ))}
             <div className={stat}>
               <dt className={`${statSub} order-2`}>{doctor.langs}</dt>
-              <dd className={`${statBig} m-0`}>{site.languages.codes.map((c) => c.toUpperCase()).join(" · ")}</dd>
+              <dd className={`${statBig} m-0`}>
+                {site.languages.codes.map((c) => c.toUpperCase()).join(" · ")}
+              </dd>
             </div>
           </dl>
         </div>
@@ -100,7 +132,10 @@ function Hero({ doctor, profile, locale }: { doctor: Doctor; profile: DoctorProf
             <span className="text-sm text-on-dark-muted">
               {site.name} · {site.address.locality}
             </span>
-            <span aria-hidden="true" className="text-[13px] tracking-[2px] text-gold">
+            <span
+              aria-hidden="true"
+              className="text-[13px] tracking-[2px] text-gold"
+            >
               ★★★★★
             </span>
           </div>
@@ -111,9 +146,18 @@ function Hero({ doctor, profile, locale }: { doctor: Doctor; profile: DoctorProf
 }
 
 /** Full doctor profile: hero, focus, education, credentials, results, other doctors, CTA. */
-export default function DoctorProfile({ doctor, profile, locale = "en" }: { doctor: Doctor; profile: DoctorProfileData; locale?: Locale }) {
+export default function DoctorProfile({
+  doctor,
+  profile,
+  locale = "en",
+}: {
+  doctor: Doctor;
+  profile: DoctorProfileData;
+  locale?: Locale;
+}) {
   const t = ui(locale);
-  const { doctors } = getContent(locale);
+  const { doctors, stories } = getContent(locale);
+  const doctorStories = stories.filter((s) => s.doctor === doctor.name);
   const name = profile.display;
   const others = doctors.filter((d) => d.slug !== doctor.slug);
 
@@ -124,18 +168,31 @@ export default function DoctorProfile({ doctor, profile, locale = "en" }: { doct
       {/* Focus */}
       <section className="wrap pt-16 lg:pt-28">
         <div className="mb-7 flex flex-col gap-3 lg:mb-10 lg:flex-row lg:items-end lg:justify-between lg:gap-8">
-          <h2 className={`${h2} lg:max-w-[18ch] lg:text-[48px]`}>{tpl(t.doctor.doesBest, { name })}</h2>
-          <Link href={localizePath("/before-and-after", locale)} className="font-semibold whitespace-nowrap">
+          <h2 className={`${h2} lg:max-w-[18ch] lg:text-[48px]`}>
+            {tpl(t.doctor.doesBest, { name })}
+          </h2>
+          <Link
+            href={localizePath("/before-and-after", locale)}
+            className="font-semibold whitespace-nowrap"
+          >
             {t.doctor.seeResults}
           </Link>
         </div>
         <ul className="m-0 grid list-none gap-4 p-0 sm:grid-cols-2 lg:grid-cols-4">
           {profile.focus.map((f) => (
-            <li key={f.n} className="glass-card flex flex-col gap-3.5 rounded-2xl p-6 lg:min-h-[210px] lg:rounded-[18px] lg:px-6 lg:py-[26px]">
-              <span aria-hidden="true" className="text-xs font-semibold tracking-[.14em] text-hint">
+            <li
+              key={f.n}
+              className="glass-card flex flex-col gap-3.5 rounded-2xl p-6 lg:min-h-[210px] lg:rounded-[18px] lg:px-6 lg:py-[26px]"
+            >
+              <span
+                aria-hidden="true"
+                className="text-xs font-semibold tracking-[.14em] text-hint"
+              >
                 {f.n}
               </span>
-              <h3 className="m-0 font-serif text-[21px] leading-[1.2] font-normal text-teal lg:text-[23px]">{f.t}</h3>
+              <h3 className="m-0 font-serif text-[21px] leading-[1.2] font-normal text-teal lg:text-[23px]">
+                {f.t}
+              </h3>
               <p className="m-0 text-[15px] leading-[1.5] text-body">{f.d}</p>
             </li>
           ))}
@@ -144,10 +201,16 @@ export default function DoctorProfile({ doctor, profile, locale = "en" }: { doct
 
       {/* Education */}
       <section className="wrap pt-16 lg:pt-28">
-        <div className={`dark-panel grid items-start gap-8 rounded-2xl p-6 lg:grid-cols-[minmax(0,.8fr)_minmax(0,1.3fr)] lg:gap-16 lg:rounded-[20px] lg:p-16 ${panelShadow}`}>
+        <div
+          className={`dark-panel grid items-start gap-8 rounded-2xl p-6 lg:grid-cols-[minmax(0,.8fr)_minmax(0,1.3fr)] lg:gap-16 lg:rounded-[20px] lg:p-16 ${panelShadow}`}
+        >
           <div className="flex flex-col gap-[18px] lg:sticky lg:top-8">
             <p className="eyebrow m-0 text-gold">{t.doctor.educationEyebrow}</p>
-            <h2 className={`${h2} text-pretty lg:text-[44px] lg:leading-[1.08]`}>{t.doctor.educationTitle}</h2>
+            <h2
+              className={`${h2} text-pretty lg:text-[44px] lg:leading-[1.08]`}
+            >
+              {t.doctor.educationTitle}
+            </h2>
             <blockquote className="m-0 mt-3 border-l-2 border-gold pl-[18px] font-serif text-[19px] leading-[1.4] text-on-dark italic lg:text-[22px]">
               “{profile.quote}”
             </blockquote>
@@ -158,9 +221,14 @@ export default function DoctorProfile({ doctor, profile, locale = "en" }: { doct
                 key={e.t}
                 className="grid grid-cols-[28px_minmax(0,1fr)] items-start gap-x-[18px] gap-y-1.5 border-t border-[rgba(247,244,238,.14)] py-5 lg:grid-cols-[28px_minmax(0,1fr)_auto]"
               >
-                <span aria-hidden="true" className="mt-2 h-2.5 w-2.5 rounded-full bg-gold shadow-[0_0_0_4px_rgba(205,177,128,.18)]" />
+                <span
+                  aria-hidden="true"
+                  className="mt-2 h-2.5 w-2.5 rounded-full bg-gold shadow-[0_0_0_4px_rgba(205,177,128,.18)]"
+                />
                 <span className="flex flex-col gap-1">
-                  <span className="text-lg leading-[1.3] font-semibold">{e.t}</span>
+                  <span className="text-lg leading-[1.3] font-semibold">
+                    {e.t}
+                  </span>
                   <span className="text-[15px] text-on-dark-muted">{e.i}</span>
                 </span>
                 {e.c && (
@@ -178,7 +246,9 @@ export default function DoctorProfile({ doctor, profile, locale = "en" }: { doct
       <section className="wrap pt-16 lg:pt-28">
         <div className="grid items-start gap-7 lg:grid-cols-[minmax(0,.8fr)_minmax(0,1.4fr)] lg:gap-16">
           <div className="flex flex-col gap-3.5">
-            <p className="eyebrow m-0 text-gold-text">{t.doctor.certsEyebrow}</p>
+            <p className="eyebrow m-0 text-gold-text">
+              {t.doctor.certsEyebrow}
+            </p>
             <h2 className={`${h2} lg:text-[40px]`}>{t.doctor.certsTitle}</h2>
             <p className="m-0 text-base leading-[1.55] text-body">
               {t.doctor.certsBody}
@@ -186,9 +256,25 @@ export default function DoctorProfile({ doctor, profile, locale = "en" }: { doct
           </div>
           <ul className="m-0 flex list-none flex-wrap gap-2.5 p-0">
             {profile.certs.map((c) => (
-              <li key={c} className="glass-card inline-flex items-center gap-2.5 rounded-[18px] px-[18px] py-3 text-[15px] font-semibold text-teal">
-                <svg viewBox="0 0 18 18" width="16" height="16" aria-hidden="true" className="flex-none">
-                  <path d="M3.5 9.5l3.5 3.5 7.5-8" fill="none" stroke="#CDB180" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+              <li
+                key={c}
+                className="glass-card inline-flex items-center gap-2.5 rounded-[18px] px-[18px] py-3 text-[15px] font-semibold text-teal"
+              >
+                <svg
+                  viewBox="0 0 18 18"
+                  width="16"
+                  height="16"
+                  aria-hidden="true"
+                  className="flex-none"
+                >
+                  <path
+                    d="M3.5 9.5l3.5 3.5 7.5-8"
+                    fill="none"
+                    stroke="#CDB180"
+                    strokeWidth="2.2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
                 </svg>
                 {c}
               </li>
@@ -197,15 +283,24 @@ export default function DoctorProfile({ doctor, profile, locale = "en" }: { doct
         </div>
       </section>
 
-      {/* TODO(clinic): "Patient stories" video strip ("{name}'s patients, in their own words") is not rendered:
-          every story in the design is a placeholder ([Patient name], no video src). Needs real patient
-          names, consented quotes and video files before it can be built. */}
+      {/* Patient stories for this doctor: rendered once src/content/stories.json has consented clips tagged with the doctor. */}
+      {doctorStories.length > 0 && (
+        <PatientStories
+          stories={doctorStories}
+          locale={locale}
+          title={tpl(t.storiesDoctorTitle, { name: doctor.shortName })}
+          lead={t.storiesLead}
+        />
+      )}
 
       {/* Other doctors */}
       <section className="wrap pt-16 lg:pt-28">
         <div className={sectionHead}>
           <h2 className={`${h2} lg:text-[40px]`}>{t.doctor.alsoOnTeam}</h2>
-          <Link href={localizePath("/doctors", locale)} className="font-semibold whitespace-nowrap">
+          <Link
+            href={localizePath("/doctors", locale)}
+            className="font-semibold whitespace-nowrap"
+          >
             {t.doctor.allDoctors}
           </Link>
         </div>
@@ -223,9 +318,15 @@ export default function DoctorProfile({ doctor, profile, locale = "en" }: { doct
                 className="block h-[120px] w-[100px] rounded-xl object-cover object-[50%_15%] lg:h-[160px] lg:w-[140px]"
               />
               <div className="flex flex-col gap-1.5">
-                <h3 className="m-0 font-serif text-[20px] leading-[1.15] font-normal text-teal lg:text-2xl lg:leading-[1.15]">{d.name}</h3>
-                <span className="text-[13px] leading-[1.4] font-semibold tracking-[.1em] text-gold-text uppercase">{d.role}</span>
-                <span className="mt-1.5 text-sm font-semibold text-gold-text">{t.viewProfile}</span>
+                <h3 className="m-0 font-serif text-[20px] leading-[1.15] font-normal text-teal lg:text-2xl lg:leading-[1.15]">
+                  {d.name}
+                </h3>
+                <span className="text-[13px] leading-[1.4] font-semibold tracking-[.1em] text-gold-text uppercase">
+                  {d.role}
+                </span>
+                <span className="mt-1.5 text-sm font-semibold text-gold-text">
+                  {t.viewProfile}
+                </span>
               </div>
             </Link>
           ))}

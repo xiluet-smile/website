@@ -23,6 +23,7 @@ import outOfState from "@/content/out-of-state.json";
 import contact from "@/content/contact.json";
 import leadForm from "@/content/lead-form.json";
 import referrals from "@/content/referrals.json";
+import stories from "@/content/stories.json";
 import reviews from "@/content/reviews.json";
 import legal from "@/content/legal.json";
 import faqHome from "@/content/faq/home.json";
@@ -62,6 +63,7 @@ import esOutOfState from "@/content/es/out-of-state.json";
 import esContact from "@/content/es/contact.json";
 import esLeadForm from "@/content/es/lead-form.json";
 import esReferrals from "@/content/es/referrals.json";
+import esStories from "@/content/es/stories.json";
 import esLegalNotice from "@/content/es/legal-notice.json";
 import esFaqHome from "@/content/es/faq/home.json";
 import esFaqContact from "@/content/es/faq/contact.json";
@@ -103,6 +105,7 @@ type OutOfState = typeof outOfState;
 type Contact = typeof contact & { topicsLabels?: Labels; replyViaLabels?: Labels };
 type LeadForm = typeof leadForm & { concernsLabels?: Labels };
 type Referrals = typeof referrals;
+export type Story = { id: string; video: string; poster: string; quote: string; name: string; treatment: string; duration: string; doctor?: string };
 /** Short Spanish note shown above the (English) legal documents on /es, plus the Spanish document names. */
 export type LegalNotice = { notice: string; names: Record<string, string> };
 
@@ -124,6 +127,7 @@ const content = (l: {
   contact: Contact;
   leadForm: LeadForm;
   referrals: Referrals;
+  stories: Story[];
   legalNotice: LegalNotice | null;
   faq: { home: Faq[]; contact: Faq[]; cost: Faq[]; doctors: Faq[]; financing: Faq[]; outOfState: Faq[] };
   treatments: Record<TreatmentKey, Treatment>;
@@ -153,6 +157,7 @@ const en = content({
   contact,
   leadForm,
   referrals,
+  stories: stories as Story[],
   legalNotice: null,
   faq: { home: faqHome, contact: faqContact, cost: faqCost, doctors: faqDoctors, financing: faqFinancing, outOfState: faqOutOfState },
   treatments: {
@@ -183,6 +188,7 @@ const es = content({
   contact: esContact as Contact,
   leadForm: esLeadForm as LeadForm,
   referrals: esReferrals as Referrals,
+  stories: esStories as Story[],
   legalNotice: esLegalNotice as LegalNotice,
   faq: {
     home: esFaqHome as Faq[],

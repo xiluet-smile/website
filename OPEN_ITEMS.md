@@ -15,7 +15,7 @@ Things the design files leave unresolved. Each is marked `TODO(clinic)` in the c
 - **Old `/contact-us/` URL** redirects to `/free-photo-evaluation` (per `redirects.txt`), not to the new `/contact` page.
 
 ## Placeholders in the designs (not rendered)
-- **Patient video stories** ("In their own words" on Home and on each doctor profile): `[Patient name]`, no video files. Sections omitted.
+- **Patient video stories** ("In their own words" on Home and on each doctor profile): built and wired (`src/components/home/PatientStories.tsx`), hidden while `src/content/stories.json` is empty. Needs real clips with written consent; format in `src/content/stories.README.md`.
 - **Home review cards** are placeholders; Home shows the first four reviews from the Reviews page instead.
 - **Reviews page, sixth card** is a placeholder; omitted. The five named reviews (Maria G., Daniel R., Sofia M., Carlos V., Andrea L.) must be verified against Google, and the design intends a Google Business Profile feed. No `Review`/`AggregateRating` schema is emitted until then.
 - **Home FAQ "How does the 5-year warranty work?"** has `[covered items]` in its answer; omitted. Warranty terms needed. The Home links "How the 5-year warranty works" and "All answers" have no target page and are omitted.
