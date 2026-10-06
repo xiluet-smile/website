@@ -7,6 +7,8 @@ import JsonLd from "@/components/JsonLd";
 import LineIcon, { type LineIconName } from "@/components/LineIcon";
 import GoogleReviews from "@/components/home/GoogleReviews";
 import HeroVideo from "@/components/home/HeroVideo";
+import LazyVideo from "@/components/LazyVideo";
+import { imageInfo } from "@/lib/images";
 import HomeResults from "@/components/home/HomeResults";
 import ScrollRow from "@/components/ScrollRow";
 import WeekPlanner from "@/components/home/WeekPlanner";
@@ -410,13 +412,21 @@ export default function HomePage({ locale = "en" }: { locale?: Locale }) {
       {/* In-house lab */}
       <section className="defer-render wrap pt-16 lg:pt-28">
         <div className="flex flex-col gap-4 lg:grid lg:grid-cols-2 lg:items-center lg:gap-16">
-          {/* Design has an empty image slot here; using the supplied editorial lab image. */}
-          <Img
-            src={home.lab.image}
-            alt={t.labAlt}
-            sizes="(min-width: 1024px) 50vw, 100vw"
-            className="block aspect-[4/3] h-auto w-full rounded-lg object-cover lg:aspect-[5/4] lg:rounded-xl"
-          />
+          {site.videos.lab ? (
+            <LazyVideo
+              src={site.videos.lab}
+              poster={imageInfo(home.lab.image).src}
+              label={t.labAlt}
+              className="block aspect-[4/3] h-auto w-full rounded-lg object-cover lg:aspect-[5/4] lg:rounded-xl"
+            />
+          ) : (
+            <Img
+              src={home.lab.image}
+              alt={t.labAlt}
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              className="block aspect-[4/3] h-auto w-full rounded-lg object-cover lg:aspect-[5/4] lg:rounded-xl"
+            />
+          )}
           <div className="flex flex-col gap-4 lg:gap-5">
             <div className="text-[13px] font-semibold tracking-[.12em] text-gold-text uppercase lg:text-sm">{t.labEyebrow}</div>
             <h2 className="-mt-2 mb-0 font-serif text-[32px] leading-[1.15] font-normal text-pretty lg:mt-0 lg:text-[48px] lg:leading-[1.1]">{t.labTitle}</h2>
@@ -442,9 +452,11 @@ export default function HomePage({ locale = "en" }: { locale?: Locale }) {
       <section className="defer-render wrap pt-16 lg:pt-28">
         <div className="relative overflow-hidden rounded-[18px] bg-teal text-on-dark lg:grid lg:min-h-[520px] lg:grid-cols-[minmax(0,.9fr)_minmax(0,1.1fr)] lg:rounded-[20px] lg:shadow-[0_30px_80px_rgba(4,40,46,.28)]">
           {site.videos.miamiArrival ? (
-            <video autoPlay muted loop playsInline preload="none" aria-hidden="true" poster="/og/gen-clinic-room.jpg" className="absolute inset-0 h-full w-full object-cover object-[60%_50%] lg:object-[70%_50%]">
-              <source src={site.videos.miamiArrival} type="video/mp4" />
-            </video>
+            <LazyVideo
+              src={site.videos.miamiArrival}
+              poster={imageInfo("out-of-state-poster.jpg").src}
+              className="absolute inset-0 h-full w-full object-cover object-[60%_50%] lg:object-[70%_50%]"
+            />
           ) : (
             <Img src="gen-miami-aerial.jpg" alt="" sizes="(min-width: 1024px) 1200px, 100vw" className="absolute inset-0 h-full w-full object-cover object-[60%_50%] lg:object-[70%_50%]" />
           )}

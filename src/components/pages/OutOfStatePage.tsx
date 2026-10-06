@@ -7,6 +7,7 @@ import {
 } from "@/components/ClinicSections";
 import FaqAccordion from "@/components/FaqAccordion";
 import Img from "@/components/Img";
+import LazyVideo from "@/components/LazyVideo";
 import JsonLd from "@/components/JsonLd";
 import PageHero from "@/components/PageHero";
 import { getContent, tpl, ui } from "@/lib/content-i18n";
@@ -16,7 +17,7 @@ import { faqPage, pageGraph } from "@/lib/schema";
 
 const PATH = "/out-of-state-patients" as const;
 
-const POSTER = "gen-miami-aerial.jpg";
+const POSTER = "out-of-state-poster.jpg";
 const mediaClass = "block aspect-[4/3] h-auto w-full object-cover";
 
 const visitCard =
@@ -39,17 +40,7 @@ export default function OutOfStatePage({ locale = "en" }: { locale?: Locale }) {
           lead={tpl(t.outOfStatePage.lead, { years: site.warrantyYears })}
           media={
             arrivalVideo ? (
-              <video
-                src={arrivalVideo}
-                poster={imageInfo(POSTER).src}
-                muted
-                loop
-                autoPlay
-                playsInline
-                preload="none"
-                aria-label={t.outOfStatePage.mediaAlt}
-                className={mediaClass}
-              />
+              <LazyVideo src={arrivalVideo} poster={imageInfo(POSTER).src} label={t.outOfStatePage.mediaAlt} className={mediaClass} />
             ) : (
               <Img
                 src={POSTER}
