@@ -24,7 +24,7 @@ const json = (body: unknown, status = 200, cache = `public, max-age=${CACHE_SECO
 
 export const onRequestGet: PagesFunction<Env> = async ({ request, env }) => {
   const { GOOGLE_PLACES_API_KEY: key, GOOGLE_PLACE_ID: placeId } = env;
-  if (!key || !placeId) return json({ ok: false, error: "not-configured" }, 503, "no-store");
+  if (!key || !placeId) return json({ ok: false, error: "not-configured" }, 200, "public, max-age=600");
 
   const cache = caches.default;
   const cacheKey = new Request(new URL("/api/reviews", request.url).toString(), { method: "GET" });

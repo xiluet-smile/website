@@ -2,7 +2,7 @@
 
 import { useRef, useState } from "react";
 import CaseCard from "@/components/CaseCard";
-import { caseTypeLabel, tpl, ui, type Case } from "@/lib/content-i18n";
+import { caseTypeLabel, tpl, ui, type Case } from "@/lib/ui-i18n";
 import type { Locale } from "@/lib/i18n";
 
 const ALL = "All";

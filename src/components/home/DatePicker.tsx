@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useId, useRef, useState } from "react";
-import { ui } from "@/lib/content-i18n";
+import { ui } from "@/lib/ui-i18n";
 import { langTag, type Locale } from "@/lib/i18n";
 
 const iso = (d: Date) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;

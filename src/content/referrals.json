@@ -1,8 +1,8 @@
 {
-  "_note": "TODO(clinic): the $500 bonus per completed treatment is confirmed; how it is paid (credit toward treatment, check, other) is not stated. Partner types for the Partnerships page still need confirming.",
+  "_note": "TODO(clinic): partner types for the Partnerships page still need confirming.",
   "referrals": {
     "eyebrow": "Referrals",
-    "intro": "Most of our patients come from someone who already had their smile done here. If a friend or family member is thinking about veneers, a smile design or full mouth reconstruction, send us their name and we take it from there: a free photo evaluation, a written estimate within 6 hours, and a $500 bonus for you once their treatment is completed.",
+    "intro": "Most of our patients come from someone who already had their smile done here. If a friend or family member is thinking about veneers, a smile design or full mouth reconstruction, send us their name and we take it from there: a free photo evaluation, a written estimate within 6 hours, and a $500 credit toward your own treatment once theirs is completed.",
     "formTitle": "Refer someone",
     "formIntro": "Tell us who to contact and how. We only reach out once, and only to the person you refer.",
     "messageLabel": "Who are you referring?",
@@ -10,7 +10,7 @@
     "points": [
       {
         "t": "$500 per completed treatment",
-        "d": "For every person you refer who completes their treatment, you receive a $500 bonus. Add your own name in the form so we know who sent them."
+        "d": "For every person you refer who completes their treatment, you receive a $500 credit toward your own treatment. Add your own name in the form so we know who sent them."
       },
       {
         "t": "Free photo evaluation",
@@ -28,7 +28,7 @@
     "bonus": {
       "amount": "$500",
       "title": "$500 per completed treatment",
-      "text": "For every person you refer who completes their treatment, you receive a $500 bonus. Add your own name and contact details in the form so we know who sent them."
+      "text": "For every person you refer who completes their treatment, you receive a $500 credit toward your own treatment. Add your name and contact details in the form so we know who sent them."
     }
   },
   "partnerships": {

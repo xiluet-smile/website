@@ -42,7 +42,18 @@ export default function HomePage({ locale = "en" }: { locale?: Locale }) {
       {/* Header + hero (video) */}
       <section className="relative z-10 flex min-h-[720px] flex-col bg-teal text-on-dark shadow-[0_30px_80px_rgba(4,40,46,.28)] lg:min-h-[820px]">
         <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
-          <HeroVideo src={site.videos.hero} />
+          <HeroVideo
+            src={site.videos.hero}
+            poster={
+              <Img
+                src="hero-poster.jpg"
+                alt=""
+                priority
+                sizes="100vw"
+                className="absolute inset-0 h-full w-full object-cover object-[60%_30%] lg:origin-center lg:scale-150 lg:translate-x-[20%] lg:object-[50%_40%]"
+              />
+            }
+          />
           <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(4,30,36,.55)_0%,rgba(4,30,36,.15)_30%,rgba(4,30,36,.55)_55%,rgba(4,30,36,.92)_100%)] lg:bg-[linear-gradient(90deg,rgba(4,30,36,.94)_0%,rgba(4,30,36,.86)_42%,rgba(4,30,36,.35)_68%,rgba(4,30,36,.05)_100%)]" />
           <div className="absolute inset-0 hidden bg-[linear-gradient(180deg,rgba(4,30,36,.55)_0%,rgba(4,30,36,0)_30%,rgba(4,30,36,0)_70%,rgba(4,30,36,.6)_100%)] lg:block" />
         </div>

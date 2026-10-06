@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Stars } from "@/components/Icons";
-import { tpl, ui } from "@/lib/content-i18n";
+import { tpl, ui } from "@/lib/ui-i18n";
 import type { Locale } from "@/lib/i18n";
 
 export type Review = { name: string; text: string; rating?: number; when?: string; treatment?: string };

@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import { ui } from "@/lib/content-i18n";
+import { ui } from "@/lib/ui-i18n";
 import type { Locale } from "@/lib/i18n";
 
 /**

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import CaseCard from "./CaseCard";
-import { caseTypeLabel, getContent, tpl, ui } from "@/lib/content-i18n";
+import { caseTypeLabel, casesFor, tpl, ui } from "@/lib/ui-i18n";
 import type { Locale } from "@/lib/i18n";
 
 const ALL = "All";
@@ -13,7 +13,7 @@ const ALL = "All";
  */
 export default function ResultsGallery({ locale = "en" }: { locale?: Locale }) {
   const t = ui(locale);
-  const { cases, types } = getContent(locale).cases;
+  const { cases, types } = casesFor(locale);
   const filters = [ALL, ...types];
   const [filter, setFilter] = useState(ALL);
   const shown = cases.filter((c) => filter === ALL || c.type === filter).length;

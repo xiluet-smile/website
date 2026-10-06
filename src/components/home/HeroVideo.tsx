@@ -6,9 +6,9 @@ import { useEffect, useRef } from "react";
  * Background hero video: muted, plays once and holds its last frame.
  * It is attached only after the page has loaded and the browser is idle, so it
  * never competes with first paint; visitors who prefer reduced motion or use
- * data saver get the static hero. Without JS the <noscript> copy plays instead.
+ * data saver keep the poster frame. Without JS the <noscript> copy plays instead.
  */
-export default function HeroVideo({ src }: { src: string }) {
+export default function HeroVideo({ src, poster }: { src: string; poster?: React.ReactNode }) {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -54,6 +54,8 @@ export default function HeroVideo({ src }: { src: string }) {
   const fallback = `<video autoplay muted playsinline aria-hidden="true" tabindex="-1" class="absolute inset-0 h-full w-full object-cover object-[60%_30%] lg:object-[50%_40%] lg:origin-center lg:scale-150 lg:translate-x-[20%]"><source src="${encodeURI(src)}" type="video/mp4"></video><style>.hero-callout{animation-play-state:running}</style>`;
   return (
     <div ref={ref} className="absolute inset-0 bg-[#0A2624]">
+      {/* Poster: the video's first frame, shown instantly; the video fades in over it. */}
+      {poster}
       <noscript dangerouslySetInnerHTML={{ __html: fallback }} />
     </div>
   );

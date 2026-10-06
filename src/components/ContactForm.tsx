@@ -13,7 +13,7 @@ import {
   submitForm,
   useSentParam,
 } from "./FormParts";
-import { getContent, labelOf, ui } from "@/lib/content-i18n";
+import { formContent, labelOf, ui } from "@/lib/ui-i18n";
 import type { Locale } from "@/lib/i18n";
 
 const ICONS = {
@@ -76,7 +76,7 @@ type Props = {
 
 export default function ContactForm({ topic, messageLabel, messagePlaceholder, heading, intro, locale = "en" }: Props = {}) {
   const t = ui(locale).contactForm;
-  const { contact: content, site } = getContent(locale);
+  const { contact: content, site } = formContent(locale);
   const [status, setStatus] = useState<"idle" | "sending" | "sent">("idle");
   const [error, setError] = useState<string | null>(null);
   const [via, setVia] = useState("");

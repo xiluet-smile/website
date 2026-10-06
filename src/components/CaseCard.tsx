@@ -1,5 +1,5 @@
 import Img from "./Img";
-import { caseTypeLabel, getContent, ui, type Case } from "@/lib/content-i18n";
+import { caseTypeLabel, casesFor, ui, type Case } from "@/lib/ui-i18n";
 import type { Locale } from "@/lib/i18n";
 
 /** Before/after photo with labels and the required patient disclaimer. */
@@ -23,7 +23,7 @@ export default function CaseCard({
       </div>
       <figcaption className="flex justify-between gap-3 text-sm text-muted">
         <span>{caseTypeLabel(locale, c.type)}</span>
-        <span className="text-right">{getContent(locale).cases.disclaimer}</span>
+        <span className="text-right">{casesFor(locale).disclaimer}</span>
       </figcaption>
     </figure>
   );

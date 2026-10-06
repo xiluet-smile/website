@@ -3,7 +3,7 @@
 import { useState, useSyncExternalStore } from "react";
 import LineIcon, { type LineIconName } from "@/components/LineIcon";
 import DatePicker from "./DatePicker";
-import { tpl, ui } from "@/lib/content-i18n";
+import { tpl, ui } from "@/lib/ui-i18n";
 import { langTag, type Locale } from "@/lib/i18n";
 
 type Step = { icon: string; title: string; time: string };

@@ -2,15 +2,15 @@
   "_note": "TODO(clinic): the $500 referral bonus is confirmed; the conditions (when it is paid, e.g. after the referred patient's treatment, and how) are not. Partnership types and copy also need confirmation.",
   "referrals": {
     "eyebrow": "Referidos",
-    "intro": "La mayoría de nuestros pacientes llegan por alguien que ya se hizo la sonrisa aquí. Si un amigo o familiar está pensando en carillas, un diseño de sonrisa o una reconstrucción bucal completa, envíanos su nombre y nosotros nos encargamos: una evaluación gratuita por fotos, un presupuesto por escrito en menos de 6 horas y un bono de $500 para ti por cada referido.",
+    "intro": "La mayoría de nuestros pacientes llegan por alguien que ya se hizo la sonrisa aquí. Si un amigo o familiar está pensando en carillas, un diseño de sonrisa o una reconstrucción bucal completa, envíanos su nombre y nosotros nos encargamos: una evaluación gratuita por fotos, un presupuesto por escrito en menos de 6 horas y un crédito de $500 para tu propio tratamiento cuando el suyo se complete.",
     "formTitle": "Refiere a alguien",
     "formIntro": "Dinos a quién contactar y cómo. Solo nos comunicamos una vez, y solo con la persona que refieres.",
     "messageLabel": "¿A quién refieres?",
     "messagePlaceholder": "Su nombre, cómo contactarlo y qué le interesa.",
     "points": [
       {
-        "t": "Bono de $500 por referido",
-        "d": "Por cada persona que refieras, recibes un bono de $500. Escribe tu propio nombre en el formulario para que sepamos quién la envió."
+        "t": "$500 por tratamiento completado",
+        "d": "Por cada persona que refieras y complete su tratamiento, recibes un crédito de $500 para tu propio tratamiento. Escribe tu propio nombre en el formulario para que sepamos quién la envió."
       },
       {
         "t": "Evaluación gratuita por fotos",
@@ -27,8 +27,8 @@
     ],
     "bonus": {
       "amount": "$500",
-      "title": "Bono de $500 por referido",
-      "text": "Por cada persona que refieras, recibes un bono de $500. Escribe tu nombre y tus datos de contacto en el formulario para que sepamos quién la envió."
+      "title": "$500 por tratamiento completado",
+      "text": "Por cada persona que refieras y complete su tratamiento, recibes un crédito de $500 para tu propio tratamiento. Escribe tu nombre y tus datos de contacto en el formulario para que sepamos quién la envió."
     }
   },
   "partnerships": {

@@ -15,7 +15,7 @@ import {
   useHydrated,
   useSentParam,
 } from "./FormParts";
-import { getContent, labelOf, tpl, ui } from "@/lib/content-i18n";
+import { formContent, labelOf, tpl, ui } from "@/lib/ui-i18n";
 import { localizePath, type Locale } from "@/lib/i18n";
 
 type Photo = { file: File; url: string };
@@ -29,7 +29,7 @@ const isImage = (f: File) => (f.type ? f.type.startsWith("image/") && !f.type.in
  */
 export default function LeadForm({ locale = "en" }: { locale?: Locale }) {
   const t = ui(locale).leadForm;
-  const { leadForm: content, site } = getContent(locale);
+  const { leadForm: content, site } = formContent(locale);
   const page = localizePath("/free-photo-evaluation", locale);
   const { maxPhotos, maxPhotoMb } = content.limits;
   const vars = { max: String(maxPhotos), mb: String(maxPhotoMb) };
