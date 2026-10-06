@@ -75,7 +75,7 @@ export function breadcrumb(path: PagePath, locale: Locale = "en"): Node {
   const parts = path.split("/").filter(Boolean);
   const trail = parts.map((_, i) => `/${parts.slice(0, i + 1).join("/")}` as PagePath);
   // Parents use their short nav name (e.g. "Doctors"), the leaf uses its own label.
-  const parentNames: Record<string, string> = { "/doctors": t.breadcrumb.doctors, "/financing": t.breadcrumb.financing };
+  const parentNames: Record<string, string> = { "/doctors": t.breadcrumb.doctors, "/financing": t.breadcrumb.financing, "/blog": t.breadcrumb.blog };
   return {
     "@type": "BreadcrumbList",
     itemListElement: [
@@ -166,6 +166,38 @@ export function imageGallery(path: PagePath, name: string, images: { url: string
 
 export function contactPage(path: PagePath, locale: Locale = "en", name?: string): Node {
   return { "@type": "ContactPage", url: absL(path, locale), name: name ?? getContent(locale).pages[path].title };
+}
+
+/** Blog post: Article with the authoring doctor, the reviewing doctor and the practice as publisher. */
+export function article(
+  path: PagePath,
+  a: { headline: string; description: string; image: string; datePublished: string; dateModified?: string; author: string; reviewedBy?: string; wordCount?: number },
+  locale: Locale = "en",
+): Node {
+  const { doctors } = getContent(locale);
+  const person = (name: string) => {
+    const d = doctors.find((x) => x.name === name);
+    return d
+      ? { "@type": "Person", name, jobTitle: "Dentist", url: absL(`/doctors/${d.slug}` as PagePath, locale), worksFor: dentistRef() }
+      : { "@type": "Organization", name, "@id": DENTIST_ID };
+  };
+  const url = absL(path, locale);
+  return {
+    "@type": ["Article", "MedicalWebPage"],
+    "@id": `${url}#article`,
+    mainEntityOfPage: { "@id": `${url}#webpage` },
+    headline: a.headline,
+    description: a.description,
+    image: site.url + ogImagePath(a.image),
+    datePublished: a.datePublished,
+    dateModified: a.dateModified ?? a.datePublished,
+    author: person(a.author),
+    ...(a.reviewedBy ? { reviewedBy: person(a.reviewedBy) } : {}),
+    publisher: dentistRef(),
+    inLanguage: langTag(locale),
+    ...(a.wordCount ? { wordCount: a.wordCount } : {}),
+    about: { "@type": "MedicalSpecialty", name: "Dentistry" },
+  };
 }
 
 /** Standard graph for a page: Dentist, WebPage, WebSite, BreadcrumbList (non-home) + extras. */

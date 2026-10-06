@@ -5,9 +5,8 @@ import casesData from "@/content/cases.json";
 import doctors from "@/content/doctors.json";
 import lenders from "@/content/lenders.json";
 import reviews from "@/content/reviews.json";
-import blog from "@/content/blog.json";
 
-export { prices, doctors, lenders, reviews, blog };
+export { prices, doctors, lenders, reviews };
 export const cases = casesData.cases;
 export const caseTypes = casesData.types;
 export const caseDisclaimer = casesData.disclaimer;

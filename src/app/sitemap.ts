@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import blogPosts from "@/content/blog-posts.json";
 import { cases } from "@/lib/content";
 import { localizePath } from "@/lib/i18n";
 import { imageInfo } from "@/lib/images";
@@ -7,6 +8,7 @@ import { abs, pages, site, type PagePath } from "@/lib/site";
 export const dynamic = "force-static";
 
 const TREATMENTS = ["/porcelain-veneers-miami", "/smile-design-miami", "/complete-restoration-miami", "/full-mouth-reconstruction-miami", "/all-on-x-dental-implants-miami", "/smile-makeover-miami"];
+const lastModified = Object.fromEntries(blogPosts.map((p) => [`/blog/${p.slug}`, new Date(p.dateModified)]));
 const priority = (p: string) => (p === "/" ? 1 : TREATMENTS.includes(p) ? 0.9 : p === "/contact" ? 0.6 : 0.7);
 
 /** sitemap.xml: every route in pages.json in both languages (with hreflang alternates), plus image entries for the before/after gallery. */
@@ -23,6 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url,
       changeFrequency: "monthly" as const,
       priority: priority(path),
+      ...(lastModified[path] ? { lastModified: lastModified[path] } : {}),
       alternates: { languages },
       ...(path === "/before-and-after" ? { images: caseImages } : {}),
     }));

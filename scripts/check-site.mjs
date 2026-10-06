@@ -8,9 +8,11 @@ import { existsSync, readFileSync } from "node:fs";
 const pages = JSON.parse(readFileSync("src/content/pages.json", "utf8"));
 const esPages = JSON.parse(readFileSync("src/content/es/pages.json", "utf8"));
 // English route → Spanish route, read from the source of truth in src/lib/i18n.ts.
-const esPaths = Object.fromEntries(
-  [...readFileSync("src/lib/i18n.ts", "utf8").matchAll(/^\s*"(\/[^"]*)": "(\/es[^"]*)",?$/gm)].map((m) => [m[1], m[2]]),
-);
+const esPaths = Object.fromEntries([
+  ...[...readFileSync("src/lib/i18n.ts", "utf8").matchAll(/^\s*"(\/[^"]*)": "(\/es[^"]*)",?$/gm)].map((m) => [m[1], m[2]]),
+  // Blog articles are registered by scripts/sync-blog.mjs.
+  ...JSON.parse(readFileSync("src/content/blog-posts.json", "utf8")).map((p) => [`/blog/${p.slug}`, `/es/blog/${p.esSlug}`]),
+]);
 const DESIGN = "design_handoff_xiluet_website/design/";
 const designFiles = existsSync(DESIGN)
   ? Object.fromEntries(

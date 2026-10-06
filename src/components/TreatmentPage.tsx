@@ -6,6 +6,8 @@ import JsonLd from "@/components/JsonLd";
 import PageHero from "@/components/PageHero";
 import { caseById, getContent, packageById, ui, type Faq } from "@/lib/content-i18n";
 import { localizeHref, localizePath, type Locale } from "@/lib/i18n";
+import { postsForTreatment } from "@/lib/blog";
+import { PostCard } from "@/components/blog/BlogArticle";
 import { faqPage, medicalProcedure, pageGraph } from "@/lib/schema";
 import { site, type PagePath } from "@/lib/site";
 
@@ -78,6 +80,8 @@ export default function TreatmentPage({ data, locale = "en" }: { data: Treatment
   const { hero, candidates, why, week, results, price, faq, cta } = data;
   const heroCase = hero.image.caseId ? caseById(locale, hero.image.caseId) : null;
   const evaluation = localizePath("/free-photo-evaluation", locale);
+  // Articles tag treatments by route slug without the "-miami" suffix (e.g. "porcelain-veneers").
+  const guides = postsForTreatment(locale, data.path.replace(/^\//, "").replace(/-miami$/, "")).slice(0, 3);
 
   return (
     <main id="main">
@@ -399,6 +403,23 @@ export default function TreatmentPage({ data, locale = "en" }: { data: Treatment
         </div>
         <p className="m-0 mt-5 text-sm text-muted">{price.footnote}</p>
       </section>
+
+      {/* Guides from the doctors (blog articles tagged with this treatment) */}
+      {guides.length > 0 && (
+        <section className="wrap pt-16 lg:pt-28">
+          <div className="mb-6 flex flex-wrap items-end justify-between gap-3 lg:mb-8">
+            <h2 className={h2}>{t.blogPage.treatmentArticles}</h2>
+            <Link href={localizePath("/blog", locale)} className="inline-flex min-h-11 items-center font-semibold lg:min-h-0">
+              {t.blogPage.treatmentArticlesLink}
+            </Link>
+          </div>
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {guides.map((p) => (
+              <PostCard key={p.slug} post={p} locale={locale} />
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* FAQ */}
       <section className="wrap pt-16 lg:pt-28">

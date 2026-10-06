@@ -23,7 +23,6 @@ import outOfState from "@/content/out-of-state.json";
 import contact from "@/content/contact.json";
 import leadForm from "@/content/lead-form.json";
 import referrals from "@/content/referrals.json";
-import blog from "@/content/blog.json";
 import reviews from "@/content/reviews.json";
 import legal from "@/content/legal.json";
 import faqHome from "@/content/faq/home.json";
@@ -63,7 +62,6 @@ import esOutOfState from "@/content/es/out-of-state.json";
 import esContact from "@/content/es/contact.json";
 import esLeadForm from "@/content/es/lead-form.json";
 import esReferrals from "@/content/es/referrals.json";
-import esBlog from "@/content/es/blog.json";
 import esLegalNotice from "@/content/es/legal-notice.json";
 import esFaqHome from "@/content/es/faq/home.json";
 import esFaqContact from "@/content/es/faq/contact.json";
@@ -105,7 +103,6 @@ type OutOfState = typeof outOfState;
 type Contact = typeof contact & { topicsLabels?: Labels; replyViaLabels?: Labels };
 type LeadForm = typeof leadForm & { concernsLabels?: Labels };
 type Referrals = typeof referrals;
-type Blog = typeof blog;
 /** Short Spanish note shown above the (English) legal documents on /es, plus the Spanish document names. */
 export type LegalNotice = { notice: string; names: Record<string, string> };
 
@@ -127,7 +124,6 @@ const content = (l: {
   contact: Contact;
   leadForm: LeadForm;
   referrals: Referrals;
-  blog: Blog;
   legalNotice: LegalNotice | null;
   faq: { home: Faq[]; contact: Faq[]; cost: Faq[]; doctors: Faq[]; financing: Faq[]; outOfState: Faq[] };
   treatments: Record<TreatmentKey, Treatment>;
@@ -157,7 +153,6 @@ const en = content({
   contact,
   leadForm,
   referrals,
-  blog,
   legalNotice: null,
   faq: { home: faqHome, contact: faqContact, cost: faqCost, doctors: faqDoctors, financing: faqFinancing, outOfState: faqOutOfState },
   treatments: {
@@ -188,7 +183,6 @@ const es = content({
   contact: esContact as Contact,
   leadForm: esLeadForm as LeadForm,
   referrals: esReferrals as Referrals,
-  blog: esBlog as Blog,
   legalNotice: esLegalNotice as LegalNotice,
   faq: {
     home: esFaqHome as Faq[],

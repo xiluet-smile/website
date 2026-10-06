@@ -4,6 +4,7 @@
 import LegalPage from "@/components/LegalPage";
 import ReferralPage from "@/components/ReferralPage";
 import TreatmentPage from "@/components/TreatmentPage";
+import BlogArticle from "@/components/blog/BlogArticle";
 import BlogPage from "./BlogPage";
 import ClinicPage from "./ClinicPage";
 import ContactPage from "./ContactPage";
@@ -32,6 +33,7 @@ const TREATMENTS: Partial<Record<PagePath, TreatmentKey>> = {
 export default function PageBody({ path, locale }: { path: PagePath; locale: Locale }) {
   const treatment = TREATMENTS[path];
   if (treatment) return <TreatmentPage data={getContent(locale).treatments[treatment]} locale={locale} />;
+  if (path.startsWith("/blog/")) return <BlogArticle slug={path.slice("/blog/".length)} locale={locale} />;
   if (path.startsWith("/doctors/")) return <DoctorPage slug={path.slice("/doctors/".length)} locale={locale} />;
   if (path.startsWith("/financing/")) return <LenderDetailPage slug={path.slice("/financing/".length)} locale={locale} />;
   switch (path) {
