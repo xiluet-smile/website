@@ -25,7 +25,7 @@ export default function HeroVideo({ src, poster }: { src: string; poster?: React
       video.preload = "auto";
       video.tabIndex = -1;
       video.setAttribute("aria-hidden", "true");
-      video.className = "absolute inset-0 h-full w-full object-cover object-[60%_30%] opacity-0 transition-opacity duration-700 lg:object-[50%_40%] lg:origin-center lg:scale-150 lg:translate-x-[20%]";
+      video.className = "absolute inset-0 h-full w-full object-cover object-[62%_30%] opacity-0 transition-opacity duration-700 lg:object-[50%_40%] lg:origin-center lg:scale-150 lg:translate-x-[20%]";
       video.addEventListener(
         "playing",
         () => {
@@ -51,7 +51,7 @@ export default function HeroVideo({ src, poster }: { src: string; poster?: React
     };
   }, [src]);
 
-  const fallback = `<video autoplay muted playsinline aria-hidden="true" tabindex="-1" class="absolute inset-0 h-full w-full object-cover object-[60%_30%] lg:object-[50%_40%] lg:origin-center lg:scale-150 lg:translate-x-[20%]"><source src="${encodeURI(src)}" type="video/mp4"></video><style>.hero-callout{animation-play-state:running}</style>`;
+  const fallback = `<video autoplay muted playsinline aria-hidden="true" tabindex="-1" class="absolute inset-0 h-full w-full object-cover object-[62%_30%] lg:object-[50%_40%] lg:origin-center lg:scale-150 lg:translate-x-[20%]"><source src="${encodeURI(src)}" type="video/mp4"></video><style>.hero-callout{animation-play-state:running}</style>`;
   return (
     <div ref={ref} className="absolute inset-0 bg-[#0A2624]">
       {/* Poster: the video's first frame, shown instantly; the video fades in over it. */}

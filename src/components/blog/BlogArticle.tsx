@@ -171,7 +171,8 @@ export default function BlogArticle({ slug, locale = "en" }: { slug: string; loc
               </span>
               {post.reviewedBy && (
                 <span>
-                  · {t.blogPage.reviewedBy}{" "}
+                  <span aria-hidden="true" className="hidden lg:inline">· </span>
+                  {t.blogPage.reviewedBy}{" "}
                   {reviewer ? (
                     <Link href={localizeHref(reviewer.href, locale)} className="font-semibold text-on-dark no-underline hover:text-gold">
                       {post.reviewedBy}
@@ -182,10 +183,14 @@ export default function BlogArticle({ slug, locale = "en" }: { slug: string; loc
                 </span>
               )}
               <span>
-                · {post.dateModified && post.dateModified !== post.datePublished ? t.blogPage.updated : t.blogPage.published}{" "}
+                <span aria-hidden="true" className="hidden lg:inline">· </span>
+                {post.dateModified && post.dateModified !== post.datePublished ? t.blogPage.updated : t.blogPage.published}{" "}
                 <time dateTime={post.dateModified ?? post.datePublished}>{dateFmt(post.dateModified ?? post.datePublished, locale)}</time>
               </span>
-              <span>· {tpl(t.blogPage.readTime, { n: post.readMinutes })}</span>
+              <span>
+                <span aria-hidden="true" className="hidden lg:inline">· </span>
+                {tpl(t.blogPage.readTime, { n: post.readMinutes })}
+              </span>
             </p>
           </div>
         </div>

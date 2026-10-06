@@ -30,7 +30,7 @@ export default function Footer({ locale = "en" }: { locale?: Locale }) {
         aria-hidden="true"
         className="absolute inset-0 bg-[linear-gradient(180deg,#04282E_0%,rgba(4,40,46,.96)_55%,rgba(4,40,46,.7)_80%,rgba(4,30,36,.92)_100%)] lg:bg-[linear-gradient(180deg,#04282E_0%,rgba(4,40,46,.96)_38%,rgba(4,40,46,.72)_62%,rgba(4,40,46,.55)_85%,rgba(4,30,36,.9)_100%)]"
       />
-      <div className="wrap relative flex flex-col gap-7 pt-10 pb-[100px] lg:gap-12 lg:pt-16 lg:pb-10">
+      <div className="wrap relative flex flex-col gap-7 pt-10 pb-10 lg:gap-12 lg:pt-16">
         {/* CTA band */}
         <div className="flex flex-col gap-3 border-b border-[rgba(247,244,238,.12)] pb-6 lg:grid lg:grid-cols-[1.4fr_minmax(0,1fr)] lg:items-center lg:gap-16 lg:pb-10">
           <div className="flex flex-col gap-3">

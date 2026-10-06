@@ -2,8 +2,8 @@
   "slug": "porcelain-veneers-cost-miami",
   "esSlug": "precio-carillas-de-porcelana-miami",
   "title": "How much do porcelain veneers cost in Miami in 2026?",
-  "seoTitle": "Porcelain Veneers Cost in Miami 2026: Per Tooth, Full Set, What's Included",
-  "description": "What Miami practices charge per veneer and per full set, the line items that are usually extra, how $6,000 for 20 veneers is possible, and what to ask before you pay a deposit.",
+  "seoTitle": "Porcelain Veneers Cost in Miami 2026: Per Tooth, Full Set, Included",
+  "description": "What Miami practices charge per veneer and per full set, the line items that are usually extra, how $6,000 for 20 veneers is possible, and what to ask before paying.",
   "breadcrumb": "Veneers cost in Miami",
   "category": "Cost",
   "author": "Dr. Roger Ramos Navarro, DMD",
@@ -12,81 +12,169 @@
   "image": "cost-veneers.png",
   "imageAlt": "Porcelain veneer cost comparison in Miami",
   "readMinutes": 7,
-  "treatments": ["porcelain-veneers", "smile-design", "smile-makeover"],
-  "related": ["/porcelain-veneers-miami", "/veneers-cost-miami", "/financing"],
+  "treatments": [
+    "porcelain-veneers",
+    "smile-design",
+    "smile-makeover"
+  ],
+  "related": [
+    "/porcelain-veneers-miami",
+    "/veneers-cost-miami",
+    "/financing"
+  ],
   "answer": "In Miami, porcelain veneers are usually quoted at **$900 to $2,500 per tooth**, and a full set of 20 at **$8,000 to $14,000**. At Xiluet Smiles, 20 porcelain veneers cost **$6,000**, or $300 per tooth, with the lab, cleaning, X-rays, design preview and a 5-year written warranty included. Your exact price is confirmed in writing within 6 hours of sending photos.",
   "sections": [
     {
       "h2": "What Miami dentists actually charge",
       "blocks": [
-        { "p": "Most Miami practices publish a range rather than a number. Per tooth, the ranges quoted on local websites run from $900 to $2,500 for porcelain, and $200 to $450 for composite (resin). Nationally, the 2026 Synchrony study cited by [CareCredit](https://www.carecredit.com/well-u/health-wellness/dental-veneers-cost-dental-veneers-financing/) puts the average single porcelain veneer at about $1,455." },
-        { "p": "Full-set pricing is where Miami differs from the rest of the country. Because several practices here own their labs and treat many out-of-town patients, 20-veneer packages are common. The published packages we found in October 2026 ranged from $5,000 to $10,999, with most between $8,000 and $9,999." },
-        { "table": { "head": ["", "Typical Miami range", "Xiluet Smiles"], "rows": [
-          ["Porcelain veneer, per tooth", "$900 – $2,500", "$300 (as part of a 20-veneer set)"],
-          ["Full set, 20 porcelain veneers", "$8,000 – $14,000", "$6,000"],
-          ["Timeline", "2 – 4 weeks, outside lab", "3 visits in one week, lab in the building"],
-          ["Warranty", "None, or 1 year", "5 years, in writing"],
-          ["Design preview before drilling", "Sometimes", "Always, you approve it first"]
-        ] } },
-        { "p": "The ranges in this table come from prices published on Miami practice websites in October 2026. They change, so treat them as a guide and ask every practice for a written quote." }
+        {
+          "p": "Most Miami practices publish a range rather than a number. Per tooth, the ranges quoted on local websites run from $900 to $2,500 for porcelain, and $200 to $450 for composite (resin). Nationally, the 2026 Synchrony study cited by [CareCredit](https://www.carecredit.com/well-u/health-wellness/dental-veneers-cost-dental-veneers-financing/) puts the average single porcelain veneer at about $1,455."
+        },
+        {
+          "p": "Full-set pricing is where Miami differs from the rest of the country. Because several practices here own their labs and treat many out-of-town patients, 20-veneer packages are common. The published packages we found in October 2026 ranged from $5,000 to $10,999, with most between $8,000 and $9,999."
+        },
+        {
+          "table": {
+            "head": [
+              "",
+              "Typical Miami range",
+              "Xiluet Smiles"
+            ],
+            "rows": [
+              [
+                "Porcelain veneer, per tooth",
+                "$900 – $2,500",
+                "$300 (as part of a 20-veneer set)"
+              ],
+              [
+                "Full set, 20 porcelain veneers",
+                "$8,000 – $14,000",
+                "$6,000"
+              ],
+              [
+                "Timeline",
+                "2 – 4 weeks, outside lab",
+                "3 visits in one week, lab in the building"
+              ],
+              [
+                "Warranty",
+                "None, or 1 year",
+                "5 years, in writing"
+              ],
+              [
+                "Design preview before drilling",
+                "Sometimes",
+                "Always, you approve it first"
+              ]
+            ]
+          }
+        },
+        {
+          "p": "The ranges in this table come from prices published on Miami practice websites in October 2026. They change, so treat them as a guide and ask every practice for a written quote."
+        }
       ]
     },
     {
       "h2": "Why the same 20 veneers can cost $6,000 or $14,000",
       "blocks": [
-        { "p": "Four things drive the price of a veneer: the lab that makes it, the material, the doctor's time, and the practice's overhead. The lab is the biggest variable. A veneer made by an outside laboratory carries a lab fee of roughly $200 to $800 per tooth before the dentist adds anything, and the shipping back and forth is why most cases take two to four weeks." },
-        { "p": "Our ceramist works in the same building as our doctors. That removes the outside lab fee, lets the doctor and ceramist match shade in person, and is the reason we can prepare, try in and deliver in one week. The price difference is not a cheaper veneer. It is a shorter supply chain." },
-        { "list": [
-          "**Lab:** in-house vs outside laboratory. The single biggest factor.",
-          "**Material:** pressed or layered porcelain (lithium disilicate, feldspathic). Composite is cheaper up front but lasts about half as long.",
-          "**Preparation:** 0.3 mm minimal-prep veneers take more planning but keep more of your tooth.",
-          "**Overhead:** a Brickell or Coral Gables address costs more than SW 8th Street, and you pay for it."
-        ] }
+        {
+          "p": "Four things drive the price of a veneer: the lab that makes it, the material, the doctor's time, and the practice's overhead. The lab is the biggest variable. A veneer made by an outside laboratory carries a lab fee of roughly $200 to $800 per tooth before the dentist adds anything, and the shipping back and forth is why most cases take two to four weeks."
+        },
+        {
+          "p": "Our ceramist works in the same building as our doctors. That removes the outside lab fee, lets the doctor and ceramist match shade in person, and is the reason we can prepare, try in and deliver in one week. The price difference is not a cheaper veneer. It is a shorter supply chain."
+        },
+        {
+          "list": [
+            "**Lab:** in-house vs outside laboratory. The single biggest factor.",
+            "**Material:** pressed or layered porcelain (lithium disilicate, feldspathic). Composite is cheaper up front but lasts about half as long.",
+            "**Preparation:** 0.3 mm minimal-prep veneers take more planning but keep more of your tooth.",
+            "**Overhead:** a Brickell or Coral Gables address costs more than SW 8th Street, and you pay for it."
+          ]
+        }
       ]
     },
     {
       "h2": "The seven line items that are often extra",
       "blocks": [
-        { "p": "A low headline price is only useful if you know what it covers. These are the items that most often appear on the final invoice but not in the advertisement. Ask about each one before you pay a deposit." },
-        { "steps": [
-          "**Consultation and exam.** $100 to $300 at many practices. Ours is free: send photos, and a doctor replies within 6 hours.",
-          "**X-rays and scans.** Included in every Xiluet package.",
-          "**Professional cleaning.** Required before veneers. Included in our packages; deep cleaning (scaling and root planing) is quoted separately if your gums need it.",
-          "**Design preview or mock-up.** Included. You see the design in your mouth and approve it before any tooth is prepared.",
-          "**Temporaries.** $300 to $700 elsewhere. Included.",
-          "**Lab fee.** $200 to $800 per tooth with an outside lab. Not applicable, our lab is in the building.",
-          "**Warranty.** Usually none, sometimes one year. Ours is 5 years, in writing, and we hand it to you at Visit 3."
-        ] },
-        { "p": "Procedures that are not veneers, such as a root canal, an extraction, gum reshaping or a crown on a broken tooth, are quoted separately after the exam, and we tell you in writing before anything starts. See [what's included on the cost page](/veneers-cost-miami)." }
+        {
+          "p": "A low headline price is only useful if you know what it covers. These are the items that most often appear on the final invoice but not in the advertisement. Ask about each one before you pay a deposit."
+        },
+        {
+          "steps": [
+            "**Consultation and exam.** $100 to $300 at many practices. Ours is free: send photos, and a doctor replies within 6 hours.",
+            "**X-rays and scans.** Included in every Xiluet package.",
+            "**Professional cleaning.** Required before veneers. Included in our packages; deep cleaning (scaling and root planing) is quoted separately if your gums need it.",
+            "**Design preview or mock-up.** Included. You see the design in your mouth and approve it before any tooth is prepared.",
+            "**Temporaries.** $300 to $700 elsewhere. Included.",
+            "**Lab fee.** $200 to $800 per tooth with an outside lab. Not applicable, our lab is in the building.",
+            "**Warranty.** Usually none, sometimes one year. Ours is 5 years, in writing, and we hand it to you at Visit 3."
+          ]
+        },
+        {
+          "p": "Procedures that are not veneers, such as a root canal, an extraction, gum reshaping or a crown on a broken tooth, are quoted separately after the exam, and we tell you in writing before anything starts. See [what's included on the cost page](/veneers-cost-miami)."
+        }
       ]
     },
     {
       "h2": "What 20 veneers cost per month",
       "blocks": [
-        { "p": "Most of our patients finance. As an example, $6,000 over 48 months at 9% APR is about $149 a month. Rates and terms are set by the lender and depend on your approval. We work with five partners (Cherry, Sunbit, CareCredit, LendingClub and Affirm), every one pre-qualifies you with a soft check that does not affect your credit score, and your coordinator shows you the real offers side by side before you decide." },
-        { "p": "Dental insurance almost never covers veneers because they are classed as cosmetic. HSA and FSA accounts sometimes can be used; check with your plan administrator. Read more on the [financing page](/financing)." }
+        {
+          "p": "Most of our patients finance. As an example, $6,000 over 48 months at 9% APR is about $149 a month. Rates and terms are set by the lender and depend on your approval. We work with five partners (Cherry, Sunbit, CareCredit, LendingClub and Affirm), every one pre-qualifies you with a soft check that does not affect your credit score, and your coordinator shows you the real offers side by side before you decide."
+        },
+        {
+          "p": "Dental insurance almost never covers veneers because they are classed as cosmetic. HSA and FSA accounts sometimes can be used; check with your plan administrator. Read more on the [financing page](/financing)."
+        }
       ]
     },
     {
       "h2": "Miami vs Turkey vs Colombia: the all-in math",
       "blocks": [
-        { "p": "Packages abroad are advertised at $5,300 to $6,800 for 20 veneers including a hotel. Add round-trip flights, a week off work, and the cost of a second trip if anything needs adjusting, and the total is usually higher than $6,000 in Miami, where your warranty is 15 minutes from the airport and the doctor who placed your veneers is the one who adjusts them." },
-        { "p": "There is also a clinical point. A British Dental Association survey found that [86% of UK dentists had treated complications](https://www.bda.org/media-centre/uk-dentists-picking-up-the-pieces-from-dental-tourism-boom/) from dental work done abroad, most often crowns sold as veneers. Whoever you choose, ask how much tooth will be removed and insist on seeing the design before any drilling." }
+        {
+          "p": "Packages abroad are advertised at $5,300 to $6,800 for 20 veneers including a hotel. Add round-trip flights, a week off work, and the cost of a second trip if anything needs adjusting, and the total is usually higher than $6,000 in Miami, where your warranty is 15 minutes from the airport and the doctor who placed your veneers is the one who adjusts them."
+        },
+        {
+          "p": "There is also a clinical point. A British Dental Association survey found that [86% of UK dentists had treated complications](https://www.bda.org/media-centre/uk-dentists-picking-up-the-pieces-from-dental-tourism-boom/) from dental work done abroad, most often crowns sold as veneers. Whoever you choose, ask how much tooth will be removed and insist on seeing the design before any drilling."
+        }
       ]
     },
     {
       "h2": "How to get an exact price",
       "blocks": [
-        { "p": "Send three photos (front smile, left side, right side) through our [free photo evaluation](/free-photo-evaluation). A doctor reviews them and writes your estimate within 6 hours. The number you receive is the number you pay, unless the exam finds something that needs treating first, and we tell you that in writing too." },
-        { "quote": "A price you cannot get in writing is not a price. It is an opening offer.", "by": "Dr. Roger Ramos Navarro, DMD" }
+        {
+          "p": "Send three photos (front smile, left side, right side) through our [free photo evaluation](/free-photo-evaluation). A doctor reviews them and writes your estimate within 6 hours. The number you receive is the number you pay, unless the exam finds something that needs treating first, and we tell you that in writing too."
+        },
+        {
+          "quote": "A price you cannot get in writing is not a price. It is an opening offer.",
+          "by": "Dr. Roger Ramos Navarro, DMD"
+        }
       ]
     }
   ],
   "faq": [
-    { "q": "How much is one porcelain veneer in Miami?", "a": "Single veneers in Miami are usually $900 to $2,500. At Xiluet Smiles, veneers are priced as a set of 20 at $6,000; a doctor quotes smaller cases in writing after seeing your photos.", "doc": "Dr. Roger Ramos Navarro, DMD" },
-    { "q": "Does the $6,000 include everything?", "a": "It includes 20 porcelain veneers, professional cleaning, X-rays, the design preview, temporaries, delivery in 5 business days and a 5-year written warranty. Deep cleaning and procedures that are not veneers are quoted separately.", "doc": "Dr. Marta Puentes Marrero, DMD" },
-    { "q": "Why are veneers cheaper at Xiluet than at other Miami practices?", "a": "Our ceramist works in the same building as the doctors, so there is no outside lab fee or shipping, and we are on SW 8th Street rather than in Brickell. Same porcelain, shorter supply chain.", "doc": "Dr. Roger Ramos Navarro, DMD" },
-    { "q": "Can I get veneers with bad credit?", "a": "Often, yes. Each of our five financing partners pre-qualifies you with a soft check that does not affect your score, and they have different approval criteria. Your coordinator applies to the ones most likely to approve you.", "doc": "Dr. Gretell Alonso Fiel, DMD" },
-    { "q": "Does insurance pay for veneers?", "a": "Almost never, because veneers are classed as cosmetic. Some HSA and FSA accounts can be used; check with your plan.", "doc": "Dr. Marta Puentes Marrero, DMD" }
+    {
+      "q": "How much is one porcelain veneer in Miami?",
+      "a": "Single veneers in Miami are usually $900 to $2,500. At Xiluet Smiles, veneers are priced as a set of 20 at $6,000; a doctor quotes smaller cases in writing after seeing your photos.",
+      "doc": "Dr. Roger Ramos Navarro, DMD"
+    },
+    {
+      "q": "Does the $6,000 include everything?",
+      "a": "It includes 20 porcelain veneers, professional cleaning, X-rays, the design preview, temporaries, delivery in 5 business days and a 5-year written warranty. Deep cleaning and procedures that are not veneers are quoted separately.",
+      "doc": "Dr. Marta Puentes Marrero, DMD"
+    },
+    {
+      "q": "Why are veneers cheaper at Xiluet than at other Miami practices?",
+      "a": "Our ceramist works in the same building as the doctors, so there is no outside lab fee or shipping, and we are on SW 8th Street rather than in Brickell. Same porcelain, shorter supply chain.",
+      "doc": "Dr. Roger Ramos Navarro, DMD"
+    },
+    {
+      "q": "Can I get veneers with bad credit?",
+      "a": "Often, yes. Each of our five financing partners pre-qualifies you with a soft check that does not affect your score, and they have different approval criteria. Your coordinator applies to the ones most likely to approve you.",
+      "doc": "Dr. Gretell Alonso Fiel, DMD"
+    },
+    {
+      "q": "Does insurance pay for veneers?",
+      "a": "Almost never, because veneers are classed as cosmetic. Some HSA and FSA accounts can be used; check with your plan.",
+      "doc": "Dr. Marta Puentes Marrero, DMD"
+    }
   ]
 }

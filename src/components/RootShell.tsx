@@ -1,5 +1,4 @@
 import Footer from "./Footer";
-import MobileCtaBar from "./MobileCtaBar";
 import SiteScripts from "./SiteScripts";
 import { ui } from "@/lib/content-i18n";
 import { langTag, type Locale } from "@/lib/i18n";
@@ -24,7 +23,6 @@ export default function RootShell({ locale, children }: { locale: Locale; childr
         </a>
         <div className="page-bg">{children}</div>
         <Footer locale={locale} />
-        <MobileCtaBar locale={locale} />
       </body>
     </html>
   );

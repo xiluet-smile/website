@@ -49,6 +49,11 @@ Things the design files leave unresolved. Each is marked `TODO(clinic)` in the c
 - **404 page** is served in English for both sites (Cloudflare serves one static 404).
 - **Doctor names** keep "Dr." in Spanish structured fields (nav, headings, bylines); "Dra." would be the natural form for Dr. Puentes and Dr. Alonso. Change `name`/`shortName` in `src/content/es/doctors.json` and the FAQ `doc` fields together if wanted.
 
+## Blog (/blog, /es/blog)
+- **Articles need doctor review before launch.** Each JSON in `src/content/blog/` (EN) and `src/content/es/blog/` (ES) names an `author` and a `reviewedBy` doctor; both appear on the page and in the Article schema, so the named doctors should read and approve their articles. Clinical statements come from published sources that are linked inline (PMC systematic review, Wiley/JERD enamel study, BDA survey, Cleveland Clinic, CareCredit/Synchrony study).
+- **Market prices are dated October 2026.** Competitor ranges ("$900–$2,500 per tooth", "$8,000–$14,000 per set", "$5,300–$6,800 abroad") were read from Miami practice websites and dental-tourism sites in October 2026 and are described as such. Re-check them when `dateModified` is bumped. No competitor is named.
+- **Adding an article:** drop `<slug>.json` in both folders and run `npm run blog` (also runs in `npm run dev` / `npm run build`); routes, hreflang, sitemap, page metadata and the treatment-page "Guides from the doctors" block pick it up from `treatments[]`.
+
 ## Migration
 - **Old service pages without an equivalent** (gum lightening, orthodontics, dentures, crowns, root canals, oral surgery, etc.) 301 to the closest new page (`public/_redirects`). Search Console shows real demand for **gum depigmentation / gum lightening in Miami**; a dedicated page (with the clinic's price and copy) would keep that traffic instead of redirecting it to Smile Makeover.
 - **Dr. Adriana Hernandez** is no longer with the practice (clinic, October 2026); her old profile URL redirects to /doctors.

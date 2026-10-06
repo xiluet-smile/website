@@ -75,7 +75,6 @@ const uiEn = {
     nav: "Footer",
     legal: "Individual results vary. Financing subject to credit approval.",
   },
-  mobileBar: { call: "Call", whatsapp: "WhatsApp", evaluation: "Free evaluation" },
   breadcrumb: { treatments: "Treatments", doctors: "Doctors", financing: "Financing", aboutUs: "About Us", clinic: "Clinic", outOfState: "Out of State", cost: "Cost", results: "Results", blog: "Blog" },
   notFound: {
     title: "Page not found",
@@ -374,7 +373,6 @@ const uiEs: UiStrings = {
     nav: "Pie de página",
     legal: "Los resultados individuales varían. Financiamiento sujeto a aprobación de crédito.",
   },
-  mobileBar: { call: "Llamar", whatsapp: "WhatsApp", evaluation: "Evaluación gratis" },
   breadcrumb: { treatments: "Tratamientos", doctors: "Doctores", financing: "Financiamiento", aboutUs: "Nosotros", clinic: "Clínica", outOfState: "Otros estados", cost: "Precios", results: "Resultados", blog: "Blog" },
   notFound: {
     title: "Página no encontrada",

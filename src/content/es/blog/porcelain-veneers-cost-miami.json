@@ -2,8 +2,8 @@
   "slug": "porcelain-veneers-cost-miami",
   "esSlug": "precio-carillas-de-porcelana-miami",
   "title": "¿Cuánto cuestan las carillas de porcelana en Miami en 2026?",
-  "seoTitle": "Precio de Carillas de Porcelana en Miami 2026: Por Diente, Set Completo y Qué Incluye",
-  "description": "Lo que cobran las clínicas de Miami por carilla y por set completo, los cargos que suelen ir aparte, cómo es posible $6,000 por 20 carillas y qué preguntar antes de pagar un depósito.",
+  "seoTitle": "Precio de Carillas de Porcelana en Miami 2026: Por Diente y Set Completo",
+  "description": "Lo que cobran las clínicas de Miami por carilla y por set completo, los cargos que suelen ir aparte, cómo es posible $6,000 por 20 carillas y qué preguntar antes de pagar.",
   "breadcrumb": "Precio de carillas en Miami",
   "category": "Precios",
   "author": "Dr. Roger Ramos Navarro, DMD",
@@ -12,81 +12,169 @@
   "image": "cost-veneers.png",
   "imageAlt": "Comparación del precio de carillas de porcelana en Miami",
   "readMinutes": 7,
-  "treatments": ["porcelain-veneers", "smile-design", "smile-makeover"],
-  "related": ["/porcelain-veneers-miami", "/veneers-cost-miami", "/financing"],
+  "treatments": [
+    "porcelain-veneers",
+    "smile-design",
+    "smile-makeover"
+  ],
+  "related": [
+    "/porcelain-veneers-miami",
+    "/veneers-cost-miami",
+    "/financing"
+  ],
   "answer": "En Miami, las carillas de porcelana suelen cotizarse entre **$900 y $2,500 por diente**, y un set completo de 20 entre **$8,000 y $14,000**. En Xiluet Smiles, 20 carillas de porcelana cuestan **$6,000**, es decir $300 por diente, con laboratorio, limpieza, radiografías, vista previa del diseño y garantía de 5 años por escrito incluidos. Tu precio exacto se confirma por escrito en menos de 6 horas tras enviar tus fotos.",
   "sections": [
     {
       "h2": "Lo que cobran realmente los dentistas de Miami",
       "blocks": [
-        { "p": "La mayoría de las clínicas de Miami publica un rango, no un número. Por diente, los rangos en las webs locales van de $900 a $2,500 en porcelana y de $200 a $450 en composite (resina). A nivel nacional, el estudio de Synchrony de 2026 citado por [CareCredit](https://www.carecredit.com/well-u/health-wellness/dental-veneers-cost-dental-veneers-financing/) sitúa el promedio de una carilla de porcelana en unos $1,455." },
-        { "p": "El precio por set completo es donde Miami se diferencia del resto del país. Como varias clínicas tienen laboratorio propio y atienden a muchos pacientes de fuera, los paquetes de 20 carillas son habituales. Los paquetes publicados que encontramos en octubre de 2026 iban de $5,000 a $10,999, la mayoría entre $8,000 y $9,999." },
-        { "table": { "head": ["", "Rango típico en Miami", "Xiluet Smiles"], "rows": [
-          ["Carilla de porcelana, por diente", "$900 – $2,500", "$300 (dentro de un set de 20)"],
-          ["Set completo, 20 carillas de porcelana", "$8,000 – $14,000", "$6,000"],
-          ["Tiempo", "2 – 4 semanas, laboratorio externo", "3 visitas en una semana, laboratorio en el edificio"],
-          ["Garantía", "Ninguna, o 1 año", "5 años, por escrito"],
-          ["Vista previa del diseño antes de tallar", "A veces", "Siempre, tú la apruebas primero"]
-        ] } },
-        { "p": "Los rangos de esta tabla provienen de precios publicados en webs de clínicas de Miami en octubre de 2026. Cambian, así que tómalos como referencia y pide a cada clínica un presupuesto por escrito." }
+        {
+          "p": "La mayoría de las clínicas de Miami publica un rango, no un número. Por diente, los rangos en las webs locales van de $900 a $2,500 en porcelana y de $200 a $450 en composite (resina). A nivel nacional, el estudio de Synchrony de 2026 citado por [CareCredit](https://www.carecredit.com/well-u/health-wellness/dental-veneers-cost-dental-veneers-financing/) sitúa el promedio de una carilla de porcelana en unos $1,455."
+        },
+        {
+          "p": "El precio por set completo es donde Miami se diferencia del resto del país. Como varias clínicas tienen laboratorio propio y atienden a muchos pacientes de fuera, los paquetes de 20 carillas son habituales. Los paquetes publicados que encontramos en octubre de 2026 iban de $5,000 a $10,999, la mayoría entre $8,000 y $9,999."
+        },
+        {
+          "table": {
+            "head": [
+              "",
+              "Rango típico en Miami",
+              "Xiluet Smiles"
+            ],
+            "rows": [
+              [
+                "Carilla de porcelana, por diente",
+                "$900 – $2,500",
+                "$300 (dentro de un set de 20)"
+              ],
+              [
+                "Set completo, 20 carillas de porcelana",
+                "$8,000 – $14,000",
+                "$6,000"
+              ],
+              [
+                "Tiempo",
+                "2 – 4 semanas, laboratorio externo",
+                "3 visitas en una semana, laboratorio en el edificio"
+              ],
+              [
+                "Garantía",
+                "Ninguna, o 1 año",
+                "5 años, por escrito"
+              ],
+              [
+                "Vista previa del diseño antes de tallar",
+                "A veces",
+                "Siempre, tú la apruebas primero"
+              ]
+            ]
+          }
+        },
+        {
+          "p": "Los rangos de esta tabla provienen de precios publicados en webs de clínicas de Miami en octubre de 2026. Cambian, así que tómalos como referencia y pide a cada clínica un presupuesto por escrito."
+        }
       ]
     },
     {
       "h2": "Por qué las mismas 20 carillas pueden costar $6,000 o $14,000",
       "blocks": [
-        { "p": "Cuatro cosas determinan el precio de una carilla: el laboratorio que la fabrica, el material, el tiempo del doctor y los gastos de la clínica. El laboratorio es la variable más grande. Una carilla hecha por un laboratorio externo tiene un costo de laboratorio de unos $200 a $800 por diente antes de que el dentista añada nada, y el envío de ida y vuelta es la razón de que la mayoría de los casos tarde de dos a cuatro semanas." },
-        { "p": "Nuestro ceramista trabaja en el mismo edificio que nuestros doctores. Eso elimina el costo del laboratorio externo, permite que doctor y ceramista igualen el tono en persona y es la razón de que podamos preparar, probar y entregar en una semana. La diferencia de precio no es una carilla más barata. Es una cadena de suministro más corta." },
-        { "list": [
-          "**Laboratorio:** propio o externo. El factor más importante.",
-          "**Material:** porcelana prensada o estratificada (disilicato de litio, feldespática). El composite es más barato al inicio pero dura cerca de la mitad.",
-          "**Preparación:** las carillas de 0.3 mm de mínima preparación requieren más planificación pero conservan más de tu diente.",
-          "**Gastos:** una dirección en Brickell o Coral Gables cuesta más que la SW 8th Street, y lo pagas tú."
-        ] }
+        {
+          "p": "Cuatro cosas determinan el precio de una carilla: el laboratorio que la fabrica, el material, el tiempo del doctor y los gastos de la clínica. El laboratorio es la variable más grande. Una carilla hecha por un laboratorio externo tiene un costo de laboratorio de unos $200 a $800 por diente antes de que el dentista añada nada, y el envío de ida y vuelta es la razón de que la mayoría de los casos tarde de dos a cuatro semanas."
+        },
+        {
+          "p": "Nuestro ceramista trabaja en el mismo edificio que nuestros doctores. Eso elimina el costo del laboratorio externo, permite que doctor y ceramista igualen el tono en persona y es la razón de que podamos preparar, probar y entregar en una semana. La diferencia de precio no es una carilla más barata. Es una cadena de suministro más corta."
+        },
+        {
+          "list": [
+            "**Laboratorio:** propio o externo. El factor más importante.",
+            "**Material:** porcelana prensada o estratificada (disilicato de litio, feldespática). El composite es más barato al inicio pero dura cerca de la mitad.",
+            "**Preparación:** las carillas de 0.3 mm de mínima preparación requieren más planificación pero conservan más de tu diente.",
+            "**Gastos:** una dirección en Brickell o Coral Gables cuesta más que la SW 8th Street, y lo pagas tú."
+          ]
+        }
       ]
     },
     {
       "h2": "Los siete cargos que suelen ir aparte",
       "blocks": [
-        { "p": "Un precio bajo de entrada solo sirve si sabes qué cubre. Estos son los conceptos que más a menudo aparecen en la factura final pero no en el anuncio. Pregunta por cada uno antes de pagar un depósito." },
-        { "steps": [
-          "**Consulta y examen.** De $100 a $300 en muchas clínicas. La nuestra es gratuita: envía fotos y un doctor responde en menos de 6 horas.",
-          "**Radiografías y escaneos.** Incluidos en todos los paquetes de Xiluet.",
-          "**Limpieza profesional.** Necesaria antes de las carillas. Incluida en nuestros paquetes; la limpieza profunda (raspado y alisado radicular) se cotiza aparte si tus encías la necesitan.",
-          "**Vista previa del diseño o mock-up.** Incluida. Ves el diseño en tu boca y lo apruebas antes de preparar ningún diente.",
-          "**Provisionales.** De $300 a $700 en otros sitios. Incluidos.",
-          "**Costo de laboratorio.** De $200 a $800 por diente con un laboratorio externo. No aplica, nuestro laboratorio está en el edificio.",
-          "**Garantía.** Normalmente ninguna, a veces un año. La nuestra es de 5 años, por escrito, y te la entregamos en la Visita 3."
-        ] },
-        { "p": "Los procedimientos que no son carillas, como una endodoncia, una extracción, un contorneado de encía o una corona en un diente roto, se cotizan aparte después del examen, y te lo decimos por escrito antes de empezar. Consulta [qué incluye en la página de precios](/veneers-cost-miami)." }
+        {
+          "p": "Un precio bajo de entrada solo sirve si sabes qué cubre. Estos son los conceptos que más a menudo aparecen en la factura final pero no en el anuncio. Pregunta por cada uno antes de pagar un depósito."
+        },
+        {
+          "steps": [
+            "**Consulta y examen.** De $100 a $300 en muchas clínicas. La nuestra es gratuita: envía fotos y un doctor responde en menos de 6 horas.",
+            "**Radiografías y escaneos.** Incluidos en todos los paquetes de Xiluet.",
+            "**Limpieza profesional.** Necesaria antes de las carillas. Incluida en nuestros paquetes; la limpieza profunda (raspado y alisado radicular) se cotiza aparte si tus encías la necesitan.",
+            "**Vista previa del diseño o mock-up.** Incluida. Ves el diseño en tu boca y lo apruebas antes de preparar ningún diente.",
+            "**Provisionales.** De $300 a $700 en otros sitios. Incluidos.",
+            "**Costo de laboratorio.** De $200 a $800 por diente con un laboratorio externo. No aplica, nuestro laboratorio está en el edificio.",
+            "**Garantía.** Normalmente ninguna, a veces un año. La nuestra es de 5 años, por escrito, y te la entregamos en la Visita 3."
+          ]
+        },
+        {
+          "p": "Los procedimientos que no son carillas, como una endodoncia, una extracción, un contorneado de encía o una corona en un diente roto, se cotizan aparte después del examen, y te lo decimos por escrito antes de empezar. Consulta [qué incluye en la página de precios](/veneers-cost-miami)."
+        }
       ]
     },
     {
       "h2": "Cuánto cuestan 20 carillas al mes",
       "blocks": [
-        { "p": "La mayoría de nuestros pacientes financia. Como ejemplo, $6,000 en 48 meses al 9% APR son unos $149 al mes. Las tasas y los plazos los fija el prestamista y dependen de tu aprobación. Trabajamos con cinco socios (Cherry, Sunbit, CareCredit, LendingClub y Affirm), todos te precalifican con una consulta blanda que no afecta tu puntaje de crédito, y tu coordinadora te muestra las ofertas reales lado a lado antes de que decidas." },
-        { "p": "El seguro dental casi nunca cubre carillas porque se consideran estéticas. A veces se pueden usar cuentas HSA y FSA; consúltalo con el administrador de tu plan. Más información en la [página de financiamiento](/financing)." }
+        {
+          "p": "La mayoría de nuestros pacientes financia. Como ejemplo, $6,000 en 48 meses al 9% APR son unos $149 al mes. Las tasas y los plazos los fija el prestamista y dependen de tu aprobación. Trabajamos con cinco socios (Cherry, Sunbit, CareCredit, LendingClub y Affirm), todos te precalifican con una consulta blanda que no afecta tu puntaje de crédito, y tu coordinadora te muestra las ofertas reales lado a lado antes de que decidas."
+        },
+        {
+          "p": "El seguro dental casi nunca cubre carillas porque se consideran estéticas. A veces se pueden usar cuentas HSA y FSA; consúltalo con el administrador de tu plan. Más información en la [página de financiamiento](/financing)."
+        }
       ]
     },
     {
       "h2": "Miami vs Turquía vs Colombia: la cuenta completa",
       "blocks": [
-        { "p": "Los paquetes en el extranjero se anuncian entre $5,300 y $6,800 por 20 carillas con hotel incluido. Suma los vuelos de ida y vuelta, una semana sin trabajar y el costo de un segundo viaje si algo necesita ajuste, y el total suele superar los $6,000 de Miami, donde tu garantía está a 15 minutos del aeropuerto y el doctor que colocó tus carillas es quien las ajusta." },
-        { "p": "También hay un punto clínico. Una encuesta de la British Dental Association encontró que el [86% de los dentistas del Reino Unido había tratado complicaciones](https://www.bda.org/media-centre/uk-dentists-picking-up-the-pieces-from-dental-tourism-boom/) de tratamientos hechos en el extranjero, casi siempre coronas vendidas como carillas. Elijas a quien elijas, pregunta cuánto diente se va a eliminar y exige ver el diseño antes de cualquier tallado." }
+        {
+          "p": "Los paquetes en el extranjero se anuncian entre $5,300 y $6,800 por 20 carillas con hotel incluido. Suma los vuelos de ida y vuelta, una semana sin trabajar y el costo de un segundo viaje si algo necesita ajuste, y el total suele superar los $6,000 de Miami, donde tu garantía está a 15 minutos del aeropuerto y el doctor que colocó tus carillas es quien las ajusta."
+        },
+        {
+          "p": "También hay un punto clínico. Una encuesta de la British Dental Association encontró que el [86% de los dentistas del Reino Unido había tratado complicaciones](https://www.bda.org/media-centre/uk-dentists-picking-up-the-pieces-from-dental-tourism-boom/) de tratamientos hechos en el extranjero, casi siempre coronas vendidas como carillas. Elijas a quien elijas, pregunta cuánto diente se va a eliminar y exige ver el diseño antes de cualquier tallado."
+        }
       ]
     },
     {
       "h2": "Cómo obtener un precio exacto",
       "blocks": [
-        { "p": "Envía tres fotos (sonrisa de frente, lado izquierdo, lado derecho) a través de nuestra [evaluación gratuita por fotos](/free-photo-evaluation). Un doctor las revisa y redacta tu presupuesto en menos de 6 horas. El número que recibes es el número que pagas, salvo que el examen encuentre algo que haya que tratar primero, y eso también te lo decimos por escrito." },
-        { "quote": "Un precio que no puedes obtener por escrito no es un precio. Es una oferta inicial.", "by": "Dr. Roger Ramos Navarro, DMD" }
+        {
+          "p": "Envía tres fotos (sonrisa de frente, lado izquierdo, lado derecho) a través de nuestra [evaluación gratuita por fotos](/free-photo-evaluation). Un doctor las revisa y redacta tu presupuesto en menos de 6 horas. El número que recibes es el número que pagas, salvo que el examen encuentre algo que haya que tratar primero, y eso también te lo decimos por escrito."
+        },
+        {
+          "quote": "Un precio que no puedes obtener por escrito no es un precio. Es una oferta inicial.",
+          "by": "Dr. Roger Ramos Navarro, DMD"
+        }
       ]
     }
   ],
   "faq": [
-    { "q": "¿Cuánto cuesta una carilla de porcelana en Miami?", "a": "Una carilla individual en Miami suele costar entre $900 y $2,500. En Xiluet Smiles las carillas se cotizan como set de 20 por $6,000; un doctor cotiza por escrito los casos más pequeños después de ver tus fotos.", "doc": "Dr. Roger Ramos Navarro, DMD" },
-    { "q": "¿Los $6,000 lo incluyen todo?", "a": "Incluyen 20 carillas de porcelana, limpieza profesional, radiografías, la vista previa del diseño, provisionales, entrega en 5 días hábiles y garantía de 5 años por escrito. La limpieza profunda y los procedimientos que no son carillas se cotizan aparte.", "doc": "Dr. Marta Puentes Marrero, DMD" },
-    { "q": "¿Por qué las carillas son más baratas en Xiluet que en otras clínicas de Miami?", "a": "Nuestro ceramista trabaja en el mismo edificio que los doctores, así que no hay costo de laboratorio externo ni envíos, y estamos en la SW 8th Street en lugar de Brickell. La misma porcelana, una cadena de suministro más corta.", "doc": "Dr. Roger Ramos Navarro, DMD" },
-    { "q": "¿Puedo ponerme carillas con mal crédito?", "a": "Muchas veces, sí. Cada uno de nuestros cinco socios de financiamiento te precalifica con una consulta blanda que no afecta tu puntaje, y tienen criterios de aprobación distintos. Tu coordinadora aplica a los que tienen más probabilidad de aprobarte.", "doc": "Dr. Gretell Alonso Fiel, DMD" },
-    { "q": "¿El seguro paga las carillas?", "a": "Casi nunca, porque las carillas se consideran estéticas. Algunas cuentas HSA y FSA se pueden usar; consúltalo con tu plan.", "doc": "Dr. Marta Puentes Marrero, DMD" }
+    {
+      "q": "¿Cuánto cuesta una carilla de porcelana en Miami?",
+      "a": "Una carilla individual en Miami suele costar entre $900 y $2,500. En Xiluet Smiles las carillas se cotizan como set de 20 por $6,000; un doctor cotiza por escrito los casos más pequeños después de ver tus fotos.",
+      "doc": "Dr. Roger Ramos Navarro, DMD"
+    },
+    {
+      "q": "¿Los $6,000 lo incluyen todo?",
+      "a": "Incluyen 20 carillas de porcelana, limpieza profesional, radiografías, la vista previa del diseño, provisionales, entrega en 5 días hábiles y garantía de 5 años por escrito. La limpieza profunda y los procedimientos que no son carillas se cotizan aparte.",
+      "doc": "Dr. Marta Puentes Marrero, DMD"
+    },
+    {
+      "q": "¿Por qué las carillas son más baratas en Xiluet que en otras clínicas de Miami?",
+      "a": "Nuestro ceramista trabaja en el mismo edificio que los doctores, así que no hay costo de laboratorio externo ni envíos, y estamos en la SW 8th Street en lugar de Brickell. La misma porcelana, una cadena de suministro más corta.",
+      "doc": "Dr. Roger Ramos Navarro, DMD"
+    },
+    {
+      "q": "¿Puedo ponerme carillas con mal crédito?",
+      "a": "Muchas veces, sí. Cada uno de nuestros cinco socios de financiamiento te precalifica con una consulta blanda que no afecta tu puntaje, y tienen criterios de aprobación distintos. Tu coordinadora aplica a los que tienen más probabilidad de aprobarte.",
+      "doc": "Dr. Gretell Alonso Fiel, DMD"
+    },
+    {
+      "q": "¿El seguro paga las carillas?",
+      "a": "Casi nunca, porque las carillas se consideran estéticas. Algunas cuentas HSA y FSA se pueden usar; consúltalo con tu plan.",
+      "doc": "Dr. Marta Puentes Marrero, DMD"
+    }
   ]
 }
