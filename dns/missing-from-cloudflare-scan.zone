@@ -1,0 +1,26 @@
+; Records Cloudflare's quick scan did NOT find (captured from the live SiteGround zone, 2026-10-06).
+; Import in Cloudflare: DNS → Records → Import and Export → Import DNS records → this file.
+; If a record already exists, Cloudflare reports it as a conflict and skips it; that is fine.
+$ORIGIN xiluetsmiledesign.com.
+$TTL 300
+
+; --- GoHighLevel / LeadConnector email sending (lc subdomain, via Mailgun) ---
+lc                      IN MX 10 mxa.mailgun.org.
+lc                      IN MX 10 mxb.mailgun.org.
+lc                      IN TXT   "v=spf1 include:spf.leadconnectorhq.com include:mailgun.org ~all"
+email.lc                IN CNAME mailgun.org.
+mx._domainkey.lc        IN TXT   "k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQD2WxCuk69IdiArB8Z2TDP+row7KyNZwIRl0PFnvwo1LntwnxKjBRR246g2ebgjakk5uDkrbgbvlG5MbQe7wj/LY1tIk2G8b7U0JJ6AgegjwAM5Tvt1w0KtY4zhNgsvB9uHYlYgkNTh0893c530hlJpoANfY6zp6ZjW0mVqhLu4HwIDAQAB"
+_dmarc.lc               IN TXT   "v=DMARC1;p=none;"
+
+; --- GoHighLevel white-label, funnels and client portal ---
+app                     IN CNAME whitelabel.ludicrous.cloud.
+go                      IN CNAME brand.ludicrous.cloud.
+portal                  IN CNAME clientportal.ludicrous.cloud.
+
+; --- Stripe hosted checkout ---
+pay                     IN CNAME hosted-checkout.stripecdn.com.
+_acme-challenge.pay     IN TXT   "EFi5ULnb5cCOgvTuz1StJmTkw7ebnWRn_HQot3qFiLw"
+
+; --- SiteGround server aliases (unused once hosting is cancelled) ---
+autoconfig              IN A     34.174.235.166
+ssh                     IN A     34.174.235.166
