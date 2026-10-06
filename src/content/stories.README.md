@@ -9,7 +9,9 @@ and `es/stories.json` (same `id`s, translated `quote`/`treatment`):
   "id": "story-1",
   "video": "/videos/stories/story-1.mp4",      // vertical 9:16, H.264, ≤ 8 MB, silent is fine (sound plays on tap)
   "poster": "story-1-poster.jpg",              // 9:16 frame in src/assets (goes through the image pipeline)
-  "quote": "I cried when I saw them. In a good way.",
+  "quote": "I cried when I saw them. In a good way.",  // the patient's own words; leave "" and use "title" for a clinic caption instead
+  "title": "",
+  "source": "https://www.instagram.com/p/…/",       // optional, where the clip came from
   "name": "Maria R.",                          // as the patient agreed to be shown
   "treatment": "20 veneers",
   "duration": "0:42",

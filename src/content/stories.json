@@ -1,1 +1,13 @@
-[]
+[
+  {
+    "id": "story-1",
+    "source": "https://www.instagram.com/p/DdHAEV1uBPW/",
+    "video": "/videos/stories/story-1.mp4",
+    "poster": "story-1-poster.jpg",
+    "quote": "",
+    "title": "The smile he always dreamed of, delivery day.",
+    "name": "Xiluet patient",
+    "treatment": "Delivery day",
+    "duration": "0:13"
+  }
+]

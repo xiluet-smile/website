@@ -105,7 +105,7 @@ type OutOfState = typeof outOfState;
 type Contact = typeof contact & { topicsLabels?: Labels; replyViaLabels?: Labels };
 type LeadForm = typeof leadForm & { concernsLabels?: Labels };
 type Referrals = typeof referrals;
-export type Story = { id: string; video: string; poster: string; quote: string; name: string; treatment: string; duration: string; doctor?: string };
+export type Story = { id: string; video: string; poster: string; quote: string; title?: string; name: string; treatment: string; duration: string; doctor?: string; source?: string };
 /** Short Spanish note shown above the (English) legal documents on /es, plus the Spanish document names. */
 export type LegalNotice = { notice: string; names: Record<string, string> };
 

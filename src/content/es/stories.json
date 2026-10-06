@@ -1,1 +1,13 @@
-[]
+[
+  {
+    "id": "story-1",
+    "source": "https://www.instagram.com/p/DdHAEV1uBPW/",
+    "video": "/videos/stories/story-1.mp4",
+    "poster": "story-1-poster.jpg",
+    "quote": "",
+    "title": "La sonrisa que siempre soñó, el día de la entrega.",
+    "name": "Paciente de Xiluet",
+    "treatment": "Día de entrega",
+    "duration": "0:13"
+  }
+]
