@@ -11,10 +11,13 @@ export type Story = {
   video: string;
   poster: string;
   quote: string;
+  /** Clinic caption shown when the patient has not given a quote yet. */
+  title?: string;
   name: string;
   treatment: string;
   duration: string;
   doctor?: string;
+  source?: string;
 };
 
 /**
@@ -139,7 +142,7 @@ export default function PatientStories({
                   </button>
                   <figcaption className="absolute right-4 bottom-4 left-4 flex flex-col gap-1 text-on-dark">
                     <span className="font-serif text-[20px] leading-[1.25] text-pretty">
-                      “{s.quote}”
+                      {s.quote ? `“${s.quote}”` : s.title}
                     </span>
                     <span className="text-[13px] text-on-dark-muted">
                       {s.name} · {s.treatment} · {s.duration}
