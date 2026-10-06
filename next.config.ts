@@ -5,6 +5,8 @@ const nextConfig: NextConfig = {
   output: "export",
   turbopack: { root: __dirname },
   images: { unoptimized: true }, // images are pre-built by scripts/build-images.mjs
+  // Two root layouts (app/(en) and app/es), so the 404 page is app/global-not-found.tsx.
+  experimental: { globalNotFound: true },
 };
 
 export default nextConfig;

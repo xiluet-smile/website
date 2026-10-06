@@ -279,6 +279,8 @@
   .legal-prose li {
     margin-bottom: 6px;
   }
+  .legal-prose p,
+  .legal-prose li,
   .legal-prose a {
     overflow-wrap: anywhere;
   }
@@ -383,6 +385,10 @@
   }
   [data-hero-playing] .hero-callout {
     animation-play-state: running;
+  }
+  [data-hero-ended] .hero-callout {
+    opacity: 0 !important;
+    transition: opacity 0.8s ease;
   }
 
   .card-hover {

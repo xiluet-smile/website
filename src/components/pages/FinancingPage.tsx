@@ -60,7 +60,7 @@ export default function FinancingPage({ locale = "en" }: { locale?: Locale }) {
                   className="block h-auto max-h-10 w-auto max-w-[160px] object-contain"
                 />
               </div>
-              <span className="self-start rounded-full bg-[rgba(205,177,128,.16)] px-[11px] py-[5px] text-xs font-semibold text-gold-text">
+              <span className="self-start rounded-full bg-[#E3F3E8] px-[11px] py-[5px] text-xs font-semibold text-[#1F6B45]">
                 {l.tag}
               </span>
               <p className="m-0 text-[15px] leading-normal text-body">{l.note}</p>

@@ -43,6 +43,13 @@ Things the design files leave unresolved. Each is marked `TODO(clinic)` in the c
 - **Live Google reviews** need a Places API key and the practice Place ID (`GOOGLE_PLACES_API_KEY`, `GOOGLE_PLACE_ID`, and `google.placeId` in `site.json`). Until set, Home shows the stored reviews and the "Leave a review" button opens the Google Maps listing.
 - **Third-party scripts** (GTM `GTM-PSP4L6TC` and the LeadConnector chat widget) were copied from the previous site at the clinic's request; they lower Lighthouse performance scores somewhat and the CSP was widened to allow GTM-managed tags.
 
+## Spanish site (/es)
+- **Native review.** All Spanish copy (content in `src/content/es/` and interface strings in `src/lib/content-i18n.ts`) was translated for this build and should be read by a Spanish-speaking member of the team before launch, especially medical and financing wording.
+- **Legal documents stay in English** on `/es/politica-de-privacidad`, `/es/terminos`, `/es/aviso-de-practicas-de-privacidad` and `/es/reembolsos-y-cancelaciones`, with a Spanish note above them. A lawyer-reviewed Spanish version can replace the English text later.
+- **Google reviews** are shown as written (English) on both sites.
+- **404 page** is served in English for both sites (Cloudflare serves one static 404).
+- **Doctor names** keep "Dr." in Spanish structured fields (nav, headings, bylines); "Dra." would be the natural form for Dr. Puentes and Dr. Alonso. Change `name`/`shortName` in `src/content/es/doctors.json` and the FAQ `doc` fields together if wanted.
+
 ## Lender claims to confirm against merchant agreements (rendered verbatim)
 - **Cherry**: $200 to $30,000; 3 to 60 months; 0% APR options for qualified patients; "approving around 75 percent of applicants"; no early-payoff penalty; no hard pull.
 - **Sunbit**: "approves about 9 in 10 applicants" / "~90%"; decision in 30 sec / under a minute; no late, origination or prepayment fees; terms up to 72 months.

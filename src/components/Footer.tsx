@@ -124,7 +124,7 @@ export default function Footer({ locale = "en" }: { locale?: Locale }) {
           </span>
                     <div className="flex flex-wrap gap-3.5 lg:gap-[18px]">
             {nav.legal.map((l) => (
-              <Link key={l.label} href={localizeHref(l.href, locale)} className="text-on-dark-muted no-underline hover:text-gold">
+              <Link key={l.label} href={localizeHref(l.href, locale)} className="text-on-dark-muted no-underline hover:text-gold max-lg:py-1">
                 {l.label}
               </Link>
             ))}

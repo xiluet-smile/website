@@ -22,7 +22,7 @@ export default function CostPackages({ locale = "en" }: { locale?: Locale }) {
               <h2 className="m-0 font-serif text-[22px] leading-[1.15] font-normal lg:text-2xl">{p.name}</h2>
             </div>
             {p.badge && (
-              <span className="rounded-full bg-[rgba(205,177,128,.16)] px-3 py-1.5 text-xs font-semibold whitespace-nowrap text-gold-text">
+              <span className="rounded-full bg-[#E3F3E8] px-3 py-1.5 text-xs font-semibold whitespace-nowrap text-[#1F6B45]">
                 {p.badge}
               </span>
             )}

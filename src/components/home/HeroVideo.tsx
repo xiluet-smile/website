@@ -35,6 +35,8 @@ export default function HeroVideo({ src }: { src: string }) {
         },
         { once: true },
       );
+      // When the clip ends (it holds its last frame) the callouts fade out.
+      video.addEventListener("ended", () => (document.documentElement.dataset.heroEnded = "1"), { once: true });
       video.src = src;
       host.appendChild(video);
       video.play().catch(() => {});

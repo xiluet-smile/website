@@ -469,7 +469,7 @@ const uiEn = {
   },
   clinicPage: {
     lead: "{street}, {locality}. Fifteen minutes from Miami International Airport. The ceramist who makes your veneers works down the hall from your doctor.",
-    roomAlt: "Xiluet treatment room",
+    roomAlt: "Xiluet Smiles reception and waiting lounge with the gold Xiluet sign, leather armchairs and ring lights",
     findTitle: "What you will find here",
     findAside: "Everything your treatment needs, under one roof.",
     visitUs: "Visit us",
@@ -750,7 +750,7 @@ const uiEs: UiStrings = {
   },
   clinicPage: {
     lead: "{street}, {locality}. A quince minutos del Aeropuerto Internacional de Miami. El ceramista que hace tus carillas trabaja en el mismo pasillo que tu doctor.",
-    roomAlt: "Sala de tratamiento de Xiluet",
+    roomAlt: "Recepción y sala de espera de Xiluet Smiles, con el letrero dorado de Xiluet, sillones de cuero y lámparas de anillo",
     findTitle: "Lo que encontrarás aquí",
     findAside: "Todo lo que tu tratamiento necesita, bajo un mismo techo.",
     visitUs: "Visítanos",

@@ -8,6 +8,7 @@ import { langTag, type Locale } from "@/lib/i18n";
 export default function RootShell({ locale, children }: { locale: Locale; children: React.ReactNode }) {
   return (
     <html lang={langTag(locale)}>
+      {/* eslint-disable-next-line @next/next/no-head-element -- this is the App Router root layout's <head>, shared by both root layouts */}
       <head>
         {/* Only the two faces used by above-the-fold text are preloaded. */}
         <link rel="preload" href="/fonts/playfair-display-latin-400-normal.woff2" as="font" type="font/woff2" crossOrigin="" />

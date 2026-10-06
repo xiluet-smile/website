@@ -364,7 +364,7 @@ export default function TreatmentPage({ data, locale = "en" }: { data: Treatment
                 <h3 className="m-0 font-serif text-2xl leading-[1.15] font-normal lg:text-[28px]">{price.card.title}</h3>
                 <span className="text-[15px] text-muted">{price.card.sub}</span>
               </div>
-              <span className="rounded-full bg-[rgba(205,177,128,.16)] px-3.5 py-[7px] text-[13px] font-semibold whitespace-nowrap text-gold-text">
+              <span className="rounded-full bg-[#E3F3E8] px-3.5 py-[7px] text-[13px] font-semibold whitespace-nowrap text-[#1F6B45]">
                 {price.card.badge}
               </span>
             </div>

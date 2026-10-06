@@ -28,7 +28,7 @@ export default function ClinicPage({ locale = "en" }: { locale?: Locale }) {
           lead={tpl(t.clinicPage.lead, { street: address.street, locality: address.locality })}
           media={
             <Img
-              src="gen-clinic-room.jpg"
+              src="clinic-lobby.jpg"
               alt={t.clinicPage.roomAlt}
               sizes="(min-width: 1024px) 480px, calc(100vw - 40px)"
               className="block aspect-[4/3] h-auto w-full object-cover"

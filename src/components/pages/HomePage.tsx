@@ -110,7 +110,7 @@ export default function HomePage({ locale = "en" }: { locale?: Locale }) {
               { big: tpl(t.yearsShort, { years: site.warrantyYears }), small: t.warranty },
               { big: String(doctors.length), small: t.doctorsDmd },
             ].map((s, i) => (
-              <div key={s.small} className={`flex items-baseline gap-1.5 lg:gap-2.5 ${i ? "lg:border-l lg:border-[rgba(247,244,238,.18)] lg:px-6" : "lg:pr-6"}`}>
+              <div key={s.small} className={`flex items-baseline gap-1.5 lg:justify-center lg:gap-2.5 ${i ? "lg:border-l lg:border-[rgba(247,244,238,.18)] lg:px-6" : "lg:pr-6"}`}>
                 <dt className="order-2 m-0">
                   {s.gold ? (
                     <span className="text-sm text-gold lg:text-lg" role="img" aria-label={s.label}>
@@ -279,7 +279,7 @@ export default function HomePage({ locale = "en" }: { locale?: Locale }) {
                   </div>
                 </div>
                 {p.featured && (
-                  <span className="rounded-full bg-[rgba(205,177,128,.16)] px-2.5 py-[5px] text-[11px] font-semibold tracking-[.04em] text-gold-text">{p.badge}</span>
+                  <span className="rounded-full bg-[#E3F3E8] px-2.5 py-[5px] text-[11px] font-semibold tracking-[.04em] text-[#1F6B45]">{p.badge}</span>
                 )}
               </div>
               <div className="flex flex-col gap-[3px]">
@@ -332,7 +332,7 @@ export default function HomePage({ locale = "en" }: { locale?: Locale }) {
                 <div className="flex h-[34px] flex-none items-center">
                   <Img src={ln.logo} alt={ln.name} sizes="128px" className="block h-[26px] w-auto max-w-[128px] object-contain object-left" />
                 </div>
-                <span className="rounded-full bg-[rgba(205,177,128,.16)] px-2.5 py-1 text-xs font-semibold whitespace-nowrap text-gold-text xl:mt-3 xl:inline-block xl:px-[9px] xl:text-[11px]">
+                <span className="rounded-full bg-[#E3F3E8] px-2.5 py-1 text-xs font-semibold whitespace-nowrap text-[#1F6B45] xl:mt-3 xl:inline-block xl:px-[9px] xl:text-[11px]">
                   {ln.tag}
                 </span>
               </div>
@@ -451,7 +451,7 @@ export default function HomePage({ locale = "en" }: { locale?: Locale }) {
                     <span className="hidden h-px flex-1 bg-[rgba(247,244,238,.25)] lg:block" />
                   </div>
                   <div className="text-[11px] font-semibold tracking-[.08em] text-gold uppercase lg:text-xs lg:tracking-[.1em]">{d.short}</div>
-                  <div className="font-serif text-[15px] leading-[1.25] lg:pr-3 lg:text-[19px]">{d.title}</div>
+                  <div className="font-serif text-[15px] leading-[1.25] [overflow-wrap:anywhere] lg:pr-3 lg:text-[19px]">{d.title}</div>
                 </li>
               ))}
             </ol>

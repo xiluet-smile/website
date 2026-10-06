@@ -129,14 +129,16 @@ for (const [enPath, page] of Object.entries(esPages)) {
     ["es-US", `https://xiluetsmiledesign.com${path}`],
     ["x-default", `https://xiluetsmiledesign.com${enPath}`],
   ]) {
-    const re = new RegExp(`<link rel="alternate" hrefLang="${lang}" href="${target.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}/?"`);
+    const re = new RegExp(`<link rel="alternate" hrefLang="${lang}" href="${target.replace(/\/$/, "").replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}/?"`);
     if (!re.test(html)) fail(path, `no hreflang ${lang} link to ${target}`);
   }
   if (!/property="og:image"/.test(html)) fail(path, "no og:image");
 
+  // Inline spans (e.g. the sr-only ", " before "DMD") add whitespace before punctuation; ignore it.
+  const h1Text = (s) => strip(s).replace(/\s+([,.·])/g, "$1").trim();
   const h1s = [...html.matchAll(/<h1[\s>][\s\S]*?<\/h1>/g)];
   if (h1s.length !== 1) fail(path, `${h1s.length} <h1> elements`);
-  else if (strip(h1s[0][0]).trim() !== page.h1.replace(/\s+/g, " ").trim()) fail(path, `h1 is "${strip(h1s[0][0]).trim()}"`);
+  else if (h1Text(h1s[0][0]) !== h1Text(page.h1)) fail(path, `h1 is "${h1Text(h1s[0][0])}"`);
   if (/\[(Patient name|Credential line|Review text|Name as published|covered items|Mon YYYY|Treatment|placeholder|Confirm with clinic|Video:)/i.test(text)) fail(path, "design placeholder text in page");
   for (const img of html.match(/<img\b[^>]*>/g) || []) if (!/\balt=/.test(img)) fail(path, `img without alt: ${img.slice(0, 80)}`);
 
