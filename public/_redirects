@@ -1,5 +1,4 @@
 # One canonical host: www → apex (keeps path and query, e.g. the Google Business Profile link with utm parameters)
-https://www.xiluetsmiledesign.com/* https://xiluetsmiledesign.com/:splat 301
 
 # Old WordPress URLs -> new URLs (301). Generated from the handoff redirects.txt;
 # each rule is listed with and without the trailing slash.
