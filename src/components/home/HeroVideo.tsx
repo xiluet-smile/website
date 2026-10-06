@@ -27,7 +27,7 @@ export default function HeroVideo({ src, poster }: { src: string; poster?: React
       video.setAttribute("aria-hidden", "true");
       // 1 px smaller than the poster on every side, so the poster stays the LCP element and the
       // video's late first frame (deferred ~2 s after load) does not become a larger LCP candidate.
-      video.className = "absolute top-px left-px h-[calc(100%-2px)] w-[calc(100%-2px)] object-cover object-[62%_30%] opacity-0 transition-opacity duration-700 lg:object-[50%_40%] lg:origin-center lg:scale-150 lg:translate-x-[20%]";
+      video.className = "absolute top-px left-px h-[calc(100%-2px)] w-[calc(100%-2px)] object-cover object-[52%_30%] opacity-0 transition-opacity duration-700 lg:object-[50%_40%] lg:origin-center lg:scale-150 lg:translate-x-[20%]";
       video.addEventListener(
         "playing",
         () => {
@@ -53,7 +53,7 @@ export default function HeroVideo({ src, poster }: { src: string; poster?: React
     };
   }, [src]);
 
-  const fallback = `<video autoplay muted playsinline aria-hidden="true" tabindex="-1" class="absolute top-px left-px h-[calc(100%-2px)] w-[calc(100%-2px)] object-cover object-[62%_30%] lg:object-[50%_40%] lg:origin-center lg:scale-150 lg:translate-x-[20%]"><source src="${encodeURI(src)}" type="video/mp4"></video><style>.hero-callout{animation-play-state:running}</style>`;
+  const fallback = `<video autoplay muted playsinline aria-hidden="true" tabindex="-1" class="absolute top-px left-px h-[calc(100%-2px)] w-[calc(100%-2px)] object-cover object-[52%_30%] lg:object-[50%_40%] lg:origin-center lg:scale-150 lg:translate-x-[20%]"><source src="${encodeURI(src)}" type="video/mp4"></video><style>.hero-callout{animation-play-state:running}</style>`;
   return (
     <div ref={ref} className="absolute inset-0 bg-[#0A2624]">
       {/* Poster: the video's first frame, shown instantly; the video fades in over it. */}
