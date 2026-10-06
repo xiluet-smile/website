@@ -1,0 +1,56 @@
+{
+  "slug": "lendingclub",
+  "intro": "Un préstamo personal con tasa fija y plazo definido. Ideal para reconstrucción bucal completa y All-on-X, donde el monto es mayor.",
+  "site": {
+    "url": "https://www.lendingclub.com",
+    "label": "Revisa tus opciones con LendingClub →",
+    "note": "Consulta suave de crédito. No afecta tu puntaje."
+  },
+  "facts": [
+    {
+      "big": "Hasta $65k",
+      "sub": "Montos del préstamo"
+    },
+    {
+      "big": "Tasa fija",
+      "sub": "El mismo pago cada mes"
+    },
+    {
+      "big": "24 a 84 meses",
+      "sub": "Plazos disponibles"
+    },
+    {
+      "big": "Sin penalidad",
+      "sub": "Liquida antes de tiempo cuando quieras"
+    }
+  ],
+  "steps": [
+    {
+      "n": "01",
+      "t": "Revisa tu tasa en línea en minutos con una consulta suave"
+    },
+    {
+      "n": "02",
+      "t": "Elige tu plazo y ve el pago mensual exacto"
+    },
+    {
+      "n": "03",
+      "t": "Los fondos van a Xiluet. Tú le pagas a LendingClub cada mes"
+    }
+  ],
+  "faq": [
+    {
+      "q": "¿Revisar mi tasa afecta mi crédito?",
+      "a": "No. Revisar tu tasa es una consulta suave. Una consulta dura ocurre solo si aceptas un préstamo."
+    },
+    {
+      "q": "¿Hay cargo de originación?",
+      "a": "LendingClub cobra un cargo de originación que se descuenta del monto del préstamo. Tu coordinadora te mostrará la cifra neta."
+    },
+    {
+      "q": "¿Qué tan rápido llegan los fondos?",
+      "a": "Normalmente en unos pocos días hábiles después de la aprobación."
+    }
+  ],
+  "disclaimer": "LendingClub es un prestamista externo. El financiamiento está sujeto a aprobación de crédito. Los términos y tasas los establece LendingClub y pueden cambiar. Xiluet no toma decisiones de crédito."
+}

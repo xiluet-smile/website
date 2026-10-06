@@ -1,6 +1,8 @@
 // Shared building blocks for the Clinic, Out of State and 404 pages.
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { tpl, ui } from "@/lib/content-i18n";
+import { localizePath, type Locale } from "@/lib/i18n";
 import { site } from "@/lib/site";
 
 const facts: Record<string, string> = {
@@ -109,22 +111,23 @@ export const clinicDarkPanel =
   "dark-panel rounded-2xl shadow-[0_1px_0_rgba(247,244,238,.18)_inset,0_30px_80px_rgba(4,40,46,.32)] lg:rounded-[20px]";
 
 /** Closing call to action: free photo evaluation. */
-export function ClinicPhotoCta() {
+export function ClinicPhotoCta({ locale = "en" }: { locale?: Locale }) {
+  const t = ui(locale);
   return (
     <div className={`${clinicDarkPanel} grid items-center gap-8 px-5 py-8 lg:grid-cols-[minmax(0,1fr)_440px] lg:gap-16 lg:p-16`}>
       <div className="flex flex-col gap-4 lg:gap-5">
         <h2 className="m-0 font-serif text-[34px] leading-[1.2] font-normal text-pretty lg:text-[52px] lg:leading-[1.08]">
-          Start with photos. A doctor replies within {site.replyHours} hours.
+          {tpl(t.photoCta.heading, { hours: site.replyHours })}
         </h2>
         <p className="m-0 text-[17px] text-on-dark-muted lg:text-[19px]">
-          Free, no visit needed. Written estimate included.
+          {t.photoCta.body}
         </p>
       </div>
       <div className="flex flex-col gap-3 rounded-[14px] border border-[rgba(255,255,255,.8)] bg-[rgba(247,244,238,.9)] p-5 text-ink lg:rounded-2xl lg:p-8">
-        <h3 className="m-0 font-serif text-[22px] leading-[1.55] font-normal lg:text-2xl">Free photo evaluation</h3>
-        <p className="m-0 text-[15px] text-body">Photos of your smile, from your phone. Takes 2 minutes.</p>
-        <Link href="/free-photo-evaluation" className="btn btn-teal h-[52px] w-full px-[26px] text-[17px] lg:w-auto lg:self-start">
-          Start my evaluation
+        <h3 className="m-0 font-serif text-[22px] leading-[1.55] font-normal lg:text-2xl">{t.photoCta.cardTitle}</h3>
+        <p className="m-0 text-[15px] text-body">{t.photoCta.cardBody}</p>
+        <Link href={localizePath("/free-photo-evaluation", locale)} className="btn btn-teal h-[52px] w-full px-[26px] text-[17px] lg:w-auto lg:self-start">
+          {t.startMyEvaluation}
         </Link>
       </div>
     </div>

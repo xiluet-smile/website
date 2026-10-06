@@ -1,0 +1,18 @@
+[
+  {
+    "q": "¿Solicitar afecta mi puntaje de crédito?",
+    "a": "No. Los cinco socios te precalifican con una consulta suave. Una consulta dura ocurre solo si aceptas un préstamo de LendingClub."
+  },
+  {
+    "q": "¿Y si no me aprueban?",
+    "a": "Cada socio usa criterios distintos, así que los pacientes rechazados por uno suelen ser aprobados por otro. Nuestra coordinadora te ayuda a intentar con el siguiente."
+  },
+  {
+    "q": "¿Puedo dividir entre dos socios?",
+    "a": "Sí. Algunos pacientes combinan un plan al 0% para parte del costo con un préstamo a más largo plazo para el resto."
+  },
+  {
+    "q": "¿El depósito también se financia?",
+    "a": "El depósito de reserva de $250 se paga con tarjeta. El resto se puede financiar por completo."
+  }
+]

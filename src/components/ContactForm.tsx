@@ -13,8 +13,8 @@ import {
   submitForm,
   useSentParam,
 } from "./FormParts";
-import content from "@/content/contact.json";
-import { site } from "@/lib/site";
+import { getContent, labelOf, ui } from "@/lib/content-i18n";
+import type { Locale } from "@/lib/i18n";
 
 const ICONS = {
   person: (
@@ -65,21 +65,18 @@ const withIcon = `${inputClass} pl-[42px]`;
  * with JS it is sent as JSON and the confirmation replaces the form.
  */
 type Props = {
-  /** Fixed subject (hides the subject select), e.g. "Referral". */
+  /** Fixed subject (hides the subject select), e.g. "Referral". Always the English value from contact.json topics. */
   topic?: string;
   messageLabel?: string;
   messagePlaceholder?: string;
   heading?: string;
   intro?: string;
+  locale?: Locale;
 };
 
-export default function ContactForm({
-  topic,
-  messageLabel = "Message",
-  messagePlaceholder = "Type here . . .",
-  heading = "Send us a message",
-  intro = "Fill out the form and our team will get back to you within a few hours during office hours.",
-}: Props = {}) {
+export default function ContactForm({ topic, messageLabel, messagePlaceholder, heading, intro, locale = "en" }: Props = {}) {
+  const t = ui(locale).contactForm;
+  const { contact: content, site } = getContent(locale);
   const [status, setStatus] = useState<"idle" | "sending" | "sent">("idle");
   const [error, setError] = useState<string | null>(null);
   const [via, setVia] = useState("");
@@ -106,7 +103,8 @@ export default function ContactForm({
       return body;
     });
     if (result.ok) {
-      setVia(replyVia);
+      // The submitted value stays English (the server matches it); the confirmation shows the locale's label.
+      setVia(labelOf(content.replyVia, content.replyViaLabels, replyVia));
       setStatus("sent");
     } else {
       setError(errorMessage(content.errors, result.error));
@@ -126,52 +124,52 @@ export default function ContactForm({
         className={`relative flex flex-col gap-4 group-has-[#sent:target]:hidden ${sent ? "hidden" : ""}`}
       >
         <div className="mb-1 flex flex-col gap-3">
-          <h2 className="m-0 font-serif text-[34px] leading-[1.2] font-normal text-ink lg:text-[40px] lg:leading-[1.1]">{heading}</h2>
-          <p className="m-0 text-[17px] leading-[1.55] text-body">{intro}</p>
+          <h2 className="m-0 font-serif text-[34px] leading-[1.2] font-normal text-ink lg:text-[40px] lg:leading-[1.1]">{heading ?? t.heading}</h2>
+          <p className="m-0 text-[17px] leading-[1.55] text-body">{intro ?? t.intro}</p>
         </div>
         <div className="grid gap-3.5 sm:grid-cols-2">
-          <Field label="First name" icon="person">
+          <Field label={t.firstName} icon="person">
             <input
               type="text"
               name="first"
               required
               autoComplete="given-name"
-              placeholder="Enter first name"
+              placeholder={t.enterFirst}
               maxLength={120}
               className={withIcon}
             />
           </Field>
-          <Field label="Last name" icon="person">
+          <Field label={t.lastName} icon="person">
             <input
               type="text"
               name="last"
               required
               autoComplete="family-name"
-              placeholder="Enter last name"
+              placeholder={t.enterLast}
               maxLength={120}
               className={withIcon}
             />
           </Field>
         </div>
         <div className="grid gap-3.5 sm:grid-cols-2">
-          <Field label="Email" icon="mail">
+          <Field label={t.email} icon="mail">
             <input
               type="email"
               name="email"
               required
               autoComplete="email"
-              placeholder="Enter email"
+              placeholder={t.enterEmail}
               maxLength={254}
               className={withIcon}
             />
           </Field>
-          <Field label="Phone" icon="phone">
+          <Field label={t.phone} icon="phone">
             <input
               type="tel"
               name="phone"
               required
               autoComplete="tel"
-              placeholder="Enter phone"
+              placeholder={t.enterPhone}
               maxLength={40}
               className={withIcon}
             />
@@ -180,21 +178,27 @@ export default function ContactForm({
         {topic ? (
           <input type="hidden" name="topic" value={topic} />
         ) : (
-          <Field label="Subject" icon="tag">
+          <Field label={t.subject} icon="tag">
             <select name="topic" autoComplete="off" className={`${withIcon} appearance-none`}>
-              {content.topics.map((t) => (
-                <option key={t}>{t}</option>
-              ))}
+              {content.topics.map((value) =>
+                content.topicsLabels ? (
+                  <option key={value} value={value}>
+                    {labelOf(content.topics, content.topicsLabels, value)}
+                  </option>
+                ) : (
+                  <option key={value}>{value}</option>
+                ),
+              )}
             </select>
           </Field>
         )}
         <label className={labelClass}>
-          {messageLabel}
+          {messageLabel ?? t.message}
           <textarea
             name="message"
             rows={5}
             required
-            placeholder={messagePlaceholder}
+            placeholder={messagePlaceholder ?? t.typeHere}
             maxLength={5000}
             autoComplete="off"
             className="w-full resize-y rounded-[12px] border border-sand bg-card px-3.5 py-3 text-base font-normal text-ink placeholder:text-hint"
@@ -203,16 +207,16 @@ export default function ContactForm({
         <fieldset className="m-0 flex min-w-0 flex-col border-0 p-0">
           <legend className="mb-2 p-0 text-sm font-semibold text-body">{content.replyViaLabel}</legend>
           <div className="flex flex-wrap gap-2">
-            {content.replyVia.map((label, i) => (
-              <label key={label} className="relative inline-flex cursor-pointer">
-                <input type="radio" name="replyVia" value={label} defaultChecked={i === 0} className="peer sr-only" />
-                <span className={`${chipClass} h-11 lg:h-9`}>{label}</span>
+            {content.replyVia.map((value, i) => (
+              <label key={value} className="relative inline-flex cursor-pointer">
+                <input type="radio" name="replyVia" value={value} defaultChecked={i === 0} className="peer sr-only" />
+                <span className={`${chipClass} h-11 lg:h-9`}>{labelOf(content.replyVia, content.replyViaLabels, value)}</span>
               </label>
             ))}
           </div>
         </fieldset>
-        <ConsentField consent={content.consent} />
-        <FormGuards />
+        <ConsentField consent={content.consent} locale={locale} />
+        <FormGuards locale={locale} />
         <FormError generic={content.errors.generic} message={error} />
         <button
           type="submit"

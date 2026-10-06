@@ -1,0 +1,18 @@
+[
+  {
+    "q": "¿Y si mi vuelo se retrasa?",
+    "a": "Avísale a tu coordinadora. El calendario tiene margen, y en la mayoría de los casos la Visita 1 puede pasar al martes sin cambiar el día de entrega."
+  },
+  {
+    "q": "¿Puedo venir acompañado?",
+    "a": "Sí. Los acompañantes son bienvenidos en la sala de espera y en el consultorio privado de consulta."
+  },
+  {
+    "q": "¿De verdad alcanza con una semana?",
+    "a": "Para carillas y diseño de sonrisa, sí: nuestro laboratorio está en el edificio. La reconstrucción bucal completa toma dos semanas. All-on-X es un día más una semana unos meses después."
+  },
+  {
+    "q": "¿Y si algo necesita un ajuste cuando ya estoy en casa?",
+    "a": "Los ajustes pequeños están cubiertos por la garantía de {warrantyYears} años en cualquier dentista. Si es algo mayor, te traemos de vuelta."
+  }
+]

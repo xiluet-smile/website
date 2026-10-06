@@ -2,21 +2,25 @@
 
 import { useState } from "react";
 import CaseCard from "./CaseCard";
-import { cases, caseTypes } from "@/lib/content";
+import { caseTypeLabel, getContent, tpl, ui } from "@/lib/content-i18n";
+import type { Locale } from "@/lib/i18n";
 
-const filters = ["All", ...caseTypes];
+const ALL = "All";
 
 /**
  * Before/after gallery. All cases are always in the HTML; the filter only
  * toggles the `hidden` class, so without JS every case is visible.
  */
-export default function ResultsGallery() {
-  const [filter, setFilter] = useState("All");
-  const shown = cases.filter((c) => filter === "All" || c.type === filter).length;
+export default function ResultsGallery({ locale = "en" }: { locale?: Locale }) {
+  const t = ui(locale);
+  const { cases, types } = getContent(locale).cases;
+  const filters = [ALL, ...types];
+  const [filter, setFilter] = useState(ALL);
+  const shown = cases.filter((c) => filter === ALL || c.type === filter).length;
 
   return (
     <div data-filter={filter}>
-      <div role="group" aria-label="Filter by treatment" className="mb-6 flex flex-wrap gap-2 lg:mb-8">
+      <div role="group" aria-label={t.results.filterAria} className="mb-6 flex flex-wrap gap-2 lg:mb-8">
         {filters.map((f) => {
           const on = f === filter;
           return (
@@ -29,23 +33,24 @@ export default function ResultsGallery() {
                 on ? "border-teal bg-teal text-on-dark" : "border-sand bg-transparent text-ink hover:border-teal"
               }`}
             >
-              {f}
+              {f === ALL ? t.all : caseTypeLabel(locale, f)}
             </button>
           );
         })}
       </div>
       <p aria-live="polite" className="sr-only">
-        Showing {shown} of {cases.length}
+        {tpl(t.results.showing, { shown, total: cases.length })}
       </p>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {cases.map((c, i) => (
           <CaseCard
             key={c.id}
             c={c}
+            locale={locale}
             priority={i === 0}
             sizes="(min-width: 1440px) 384px, (min-width: 1024px) 28vw, (min-width: 640px) 46vw, 92vw"
             data-type={c.type}
-            className={filter === "All" || c.type === filter ? "" : "hidden"}
+            className={filter === ALL || c.type === filter ? "" : "hidden"}
           />
         ))}
       </div>

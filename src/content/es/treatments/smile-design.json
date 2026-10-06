@@ -1,0 +1,197 @@
+{
+  "path": "/smile-design-miami",
+  "packageId": "signature-veneers",
+  "breadcrumb": "Diseño de sonrisa",
+  "schema": {
+    "name": "Diseño de sonrisa digital",
+    "procedureType": "http://schema.org/NoninvasiveProcedure"
+  },
+  "hero": {
+    "definition": "El diseño de sonrisa es la etapa de planificación de la odontología estética: se fotografían y escanean tu cara, labios, tono de piel y mordida, y luego se diseña digitalmente una nueva sonrisa que se prueba en tu boca antes de cualquier trabajo permanente. En Xiluet Smiles en Miami está incluido en todos los casos de carillas.",
+    "lead": "Fotografiamos y escaneamos tu cara y tus dientes, diseñamos tu nueva sonrisa digitalmente y te la mostramos en tu propia boca. Nada permanente ocurre hasta que digas que sí.",
+    "secondaryCta": "Mira cómo funciona el diseño",
+    "stats": [
+      {
+        "kind": "price",
+        "label": "20 carillas de porcelana"
+      },
+      {
+        "kind": "text",
+        "value": "1 semana",
+        "label": "del diseño a la entrega"
+      },
+      {
+        "kind": "text",
+        "value": "5 años",
+        "label": "de garantía, por escrito"
+      },
+      {
+        "kind": "rating",
+        "label": "Reseñas de Google"
+      }
+    ],
+    "image": {
+      "caseId": "BA4",
+      "caption": "Diseño de sonrisa, 20 carillas · Paciente real de Xiluet"
+    }
+  },
+  "candidates": {
+    "title": "Diseñada para la persona, no sacada de un catálogo",
+    "intro": "Cinco cosas que tomamos en cuenta en el diseño antes de tocar un solo diente.",
+    "items": [
+      {
+        "t": "Tu cara",
+        "d": "La línea del labio, la forma de la cara y la simetría definen el largo y el ancho de cada diente."
+      },
+      {
+        "t": "Tu tono de piel",
+        "d": "El tono se elige según tu piel y tus ojos, no según una tabla de blancura."
+      },
+      {
+        "t": "Tu edad",
+        "d": "Cuánto diente se ve cuando hablas y sonríes. Lo adaptamos a lo que te favorece."
+      },
+      {
+        "t": "Tus encías",
+        "d": "Una línea de encía pareja enmarca el diseño. Se contornea primero si hace falta."
+      },
+      {
+        "t": "Tu mordida",
+        "d": "Los bordes se moldean para que hables y mastiques con comodidad desde el primer día."
+      }
+    ]
+  },
+  "why": {
+    "eyebrow": "Por qué diseñar primero",
+    "title": "Velo en tu boca antes de comprometerte.",
+    "body": "La vista previa del diseño no es una foto en una pantalla. Son provisionales con la forma exacta de tu sonrisa final. Vives con ellos dos días, pides cambios y solo entonces se termina la porcelana.",
+    "image": {
+      "src": "gen-design-tablet.jpg",
+      "alt": "Doctor mostrando un diseño de sonrisa digital en una tableta"
+    },
+    "facts": [
+      {
+        "label": "Vista previa",
+        "big": "En tu boca",
+        "sub": "Provisionales con la forma del diseño final, que usas durante dos días."
+      },
+      {
+        "label": "Cambios",
+        "big": "Ilimitados",
+        "sub": "Más largos, más cortos, más redondeados, más blancos. Se ajustan antes de fabricar la porcelana."
+      },
+      {
+        "label": "Tono",
+        "big": "Igualado en persona",
+        "sub": "El ceramista verifica el color contra tu piel y tus ojos."
+      },
+      {
+        "label": "Aspecto natural",
+        "big": "Ninguno igual a otro",
+        "sub": "Cada diente se moldea individualmente, nunca un juego plano y uniforme."
+      }
+    ]
+  },
+  "week": {
+    "title": "Tu semana de diseño en Miami",
+    "intro": "Fotos y presupuesto desde casa. Luego diseño, vista previa y entrega en tres visitas en una semana.",
+    "linkLabel": "Elige una fecha y mira el calendario completo →",
+    "visits": [
+      {
+        "k": "Desde casa",
+        "t": "Fotos, presupuesto, fechas",
+        "d": "Envía fotos, recibe tu presupuesto por escrito en menos de 6 horas, elige un plan de pago y reserva con un depósito de $250.",
+        "time": "Cualquier día, unos 2 minutos de tu tiempo"
+      },
+      {
+        "k": "Visita 1 · Lunes",
+        "t": "Examen, escaneos y sesión de diseño",
+        "d": "Limpieza, radiografías, escaneos 3D y fotos faciales. Tú y tu doctor deciden juntos la forma, el largo y el tono.",
+        "time": "Unas 2 horas"
+      },
+      {
+        "k": "Visita 2 · Martes",
+        "t": "Vista previa en tu boca",
+        "d": "Preparación mínima y luego provisionales con tu diseño aprobado. Vive con ellos y pide cualquier cambio.",
+        "time": "Unas 3 horas"
+      },
+      {
+        "k": "Visita 3 · Jueves",
+        "t": "Entrega y ajustes finales",
+        "d": "Se cementa la porcelana final, se revisa la mordida y recibes la garantía de 5 años por escrito.",
+        "time": "Unas 2 horas. Vuelas a casa esa misma tarde."
+      }
+    ]
+  },
+  "results": {
+    "title": "Resultados de diseño de sonrisa",
+    "linkLabel": "Todos los casos →",
+    "label": "Diseño de sonrisa",
+    "caseIds": [
+      "BA8",
+      "BA4",
+      "BA3"
+    ]
+  },
+  "price": {
+    "eyebrow": "Costo",
+    "title": "Diseño, vista previa y 20 carillas. Un solo precio por escrito.",
+    "body": "Envía fotos y un doctor redacta tu presupuesto en menos de 6 horas. La vista previa del diseño y cualquier cambio están incluidos, nunca se cobran como extras.",
+    "lendersLabel": "Paga a plazos con",
+    "compareLabel": "Compara todos los paquetes →",
+    "card": {
+      "title": "20 carillas de porcelana",
+      "sub": "Paquete de diseño de sonrisa",
+      "badge": "El más elegido",
+      "pricePrefix": "20 carillas",
+      "priceSuffix": null,
+      "included": [
+        "Análisis facial y diseño de sonrisa digital",
+        "Vista previa en tu boca, con cambios incluidos",
+        "20 carillas de porcelana, preparación mínima de 0.3 mm",
+        "Limpieza profesional y radiografías",
+        "Garantía de 5 años por escrito"
+      ],
+      "cta": "Quiero mi presupuesto por escrito"
+    },
+    "footnote": "Los precios mostrados son tarifas mínimas. Tu precio final se confirma por escrito después de la evaluación de un doctor."
+  },
+  "faq": {
+    "title": "Preguntas sobre diseño de sonrisa, respondidas por los doctores",
+    "linkLabel": "Todas las respuestas →",
+    "items": [
+      {
+        "q": "¿Cuál es la diferencia entre diseño de sonrisa y carillas?",
+        "a": "Las carillas son el material. El diseño de sonrisa es la planificación que decide su forma, largo y tono según tu cara. Todos los casos de carillas aquí empiezan con un diseño.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "¿Puedo elegir qué tan blancas?",
+        "a": "Sí. Te recomendamos un tono que vaya con tu piel y tus ojos, y tú tomas la decisión final durante la vista previa.",
+        "doc": "Dr. Gretell Alonso Fiel, DMD"
+      },
+      {
+        "q": "¿Y si no me gusta la vista previa?",
+        "a": "La cambiamos. Los provisionales se ajustan en el sillón hasta que los apruebes, y solo entonces se termina la porcelana.",
+        "doc": "Dr. Marta Puentes Marrero, DMD"
+      },
+      {
+        "q": "¿Necesito los 20 dientes?",
+        "a": "No siempre. Algunas sonrisas necesitan 8 o 10. Tu doctor te lo indica en el presupuesto por escrito y el precio cambia en consecuencia.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "¿Cuánto tarda el diseño?",
+        "a": "La sesión de diseño es parte de la Visita 1. El proceso completo, del diseño a la entrega, es una semana.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Empieza con fotos. Un doctor te responde en menos de 6 horas.",
+    "body": "Gratis, sin necesidad de visita. Presupuesto por escrito incluido.",
+    "cardTitle": "Evaluación gratuita por fotos",
+    "cardBody": "Dos fotos de tu sonrisa, desde tu celular. Toma 2 minutos.",
+    "button": "Empezar mi evaluación"
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "path": "/full-mouth-reconstruction-miami",
+  "packageId": "full-mouth-reconstruction",
+  "breadcrumb": "Reconstrucción bucal completa",
+  "schema": {
+    "name": "Reconstrucción bucal completa",
+    "procedureType": "http://schema.org/NoninvasiveProcedure"
+  },
+  "hero": {
+    "definition": "La reconstrucción bucal completa reconstruye todos tus dientes con coronas, puentes y carillas planificados como un solo caso, para que la mordida funcione y la sonrisa se vea natural. En Xiluet Smiles en Miami cuesta $10,000, toma 7 días hábiles en cuatro visitas e incluye garantía de 5 años por escrito.",
+    "lead": "Coronas, puentes y carillas planificados en conjunto para que tu mordida funcione y tu sonrisa se vea natural. Entregado en 7 días hábiles en Miami, con garantía de 5 años por escrito.",
+    "secondaryCta": "Mira el plan de dos semanas",
+    "stats": [
+      {
+        "kind": "price",
+        "label": "reconstrucción bucal completa"
+      },
+      {
+        "kind": "text",
+        "value": "7 días",
+        "label": "hábiles hasta la entrega"
+      },
+      {
+        "kind": "text",
+        "value": "5 años",
+        "label": "de garantía, por escrito"
+      },
+      {
+        "kind": "rating",
+        "label": "Reseñas de Google"
+      }
+    ],
+    "image": {
+      "caseId": "BA11",
+      "caption": "Reconstrucción bucal completa · Paciente real de Xiluet"
+    }
+  },
+  "candidates": {
+    "title": "Para dientes desgastados, rotos o que fallan todos a la vez",
+    "intro": "La reconstrucción trata toda la boca como un solo plan, no diente por diente.",
+    "items": [
+      {
+        "t": "Dientes desgastados",
+        "d": "Años de bruxismo han acortado tus dientes y envejecido tu cara."
+      },
+      {
+        "t": "Muchos dientes que fallan",
+        "d": "Empastes y coronas viejas que se rompen uno tras otro."
+      },
+      {
+        "t": "Una mordida que duele",
+        "d": "Dolor de mandíbula, dolores de cabeza o dientes que ya no encajan bien."
+      },
+      {
+        "t": "Dientes faltantes",
+        "d": "Espacios cerrados con puentes, para que vuelvas a masticar por ambos lados."
+      },
+      {
+        "t": "Trabajos dentales antiguos",
+        "d": "Márgenes metálicos oscuros y colores disparejos reemplazados en un solo plan."
+      }
+    ]
+  },
+  "why": {
+    "eyebrow": "Por qué reconstruir aquí",
+    "title": "Un plan, un laboratorio, dos semanas de visitas.",
+    "body": "La mayoría de las clínicas reconstruyen una boca a lo largo de meses de citas separadas. Nuestro laboratorio está en el edificio, así que cada corona, puente y carilla se diseña, se iguala y se entrega en conjunto.",
+    "image": {
+      "src": "gen-ceramist-hands.jpg",
+      "alt": "Ceramista terminando a mano una restauración en el laboratorio propio"
+    },
+    "facts": [
+      {
+        "label": "Tiempo",
+        "big": "7 días hábiles",
+        "sub": "Del primer examen a la entrega final. Dos viajes cortos, o quédate las dos semanas."
+      },
+      {
+        "label": "Materiales",
+        "big": "Zirconia y porcelana",
+        "sub": "Resistente donde masticas, translúcido donde se ve."
+      },
+      {
+        "label": "Duración",
+        "big": "10 a 30 años",
+        "sub": "Con un cuidado normal y una guarda nocturna si rechinas los dientes."
+      },
+      {
+        "label": "Garantía",
+        "big": "5 años",
+        "sub": "Por escrito, en cada restauración."
+      }
+    ]
+  },
+  "week": {
+    "title": "Tus dos semanas en Miami",
+    "intro": "Fotos, presupuesto y plan desde casa. Luego cuatro visitas en 7 días hábiles.",
+    "linkLabel": "Elige una fecha y mira el calendario completo →",
+    "visits": [
+      {
+        "k": "Desde casa",
+        "t": "Fotos, presupuesto, plan",
+        "d": "Envía fotos, recibe tu presupuesto por escrito en menos de 6 horas, elige un plan de pago y reserva con un depósito de $250.",
+        "time": "Cualquier día, unos 2 minutos de tu tiempo"
+      },
+      {
+        "k": "Visita 1 · Lunes",
+        "t": "Examen, escaneos y análisis de mordida",
+        "d": "Radiografías, escaneos 3D y fotos. Tu doctor planifica cada diente contigo y confirma el diseño.",
+        "time": "Unas 2 horas"
+      },
+      {
+        "k": "Visita 2 · Martes",
+        "t": "Preparación y provisionales",
+        "d": "Se preparan los dientes y se colocan provisionales con la forma de tu diseño final. Masticas y hablas con ellos durante una semana.",
+        "time": "Medio día"
+      },
+      {
+        "k": "Visitas 3 y 4 · Semana 2",
+        "t": "Prueba y luego entrega",
+        "d": "Ajuste y mordida revisados el lunes. Coronas, puentes y carillas finales cementados el miércoles, con tu garantía por escrito.",
+        "time": "Unas 2 horas cada una"
+      }
+    ]
+  },
+  "results": {
+    "title": "Resultados de reconstrucción",
+    "linkLabel": "Todos los casos →",
+    "label": "Reconstrucción bucal completa",
+    "caseIds": [
+      "BA11",
+      "BA9",
+      "BA13"
+    ]
+  },
+  "price": {
+    "eyebrow": "Costo",
+    "title": "Un solo precio por toda la boca, por escrito",
+    "body": "Envía fotos y un doctor redacta tu presupuesto en menos de 6 horas. Si el examen encuentra algo que deba tratarse primero, también lo recibes por escrito, antes de que empiece cualquier cosa.",
+    "lendersLabel": "Paga a plazos con",
+    "compareLabel": "Compara todos los paquetes →",
+    "card": {
+      "title": "20 restauraciones dentales",
+      "sub": "Reconstrucción bucal completa",
+      "badge": "Completo",
+      "pricePrefix": null,
+      "priceSuffix": null,
+      "included": [
+        "Hasta 20 coronas, puentes y carillas",
+        "Análisis de mordida y escaneos 3D",
+        "Provisionales con la forma de tu diseño final",
+        "Entrega en 7 días hábiles",
+        "Garantía de 5 años por escrito"
+      ],
+      "cta": "Quiero mi presupuesto por escrito"
+    },
+    "footnote": "Los precios mostrados son tarifas mínimas. Tu precio final se confirma por escrito después de la evaluación de un doctor."
+  },
+  "faq": {
+    "title": "Preguntas sobre reconstrucción, respondidas por los doctores",
+    "linkLabel": "Todas las respuestas →",
+    "items": [
+      {
+        "q": "¿Es doloroso?",
+        "a": "La preparación se hace con anestesia local. Espera molestias durante unos días, que se controlan con analgésicos de venta libre.",
+        "doc": "Dr. Marta Puentes Marrero, DMD"
+      },
+      {
+        "q": "¿Lo cubre el seguro?",
+        "a": "Las coronas y los puentes suelen clasificarse como trabajo restaurador mayor y pueden estar cubiertos entre un 50 y un 80 por ciento según tu plan. Te damos los códigos para tu reclamo.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "¿Necesito implantes?",
+        "a": "No para este paquete. Los dientes faltantes se reemplazan con puentes. Si los implantes te convienen más, tu doctor te lo indica en el presupuesto.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "¿Cuánto durará?",
+        "a": "Las restauraciones de porcelana y zirconia suelen durar de 10 a 30 años con buen cuidado. Las nuestras tienen garantía de 5 años por escrito.",
+        "doc": "Dr. Gretell Alonso Fiel, DMD"
+      },
+      {
+        "q": "¿Podré comer normalmente después?",
+        "a": "Comida blanda los primeros dos días y luego de todo. Volver a masticar por ambos lados suele ser lo primero que notan los pacientes.",
+        "doc": "Dr. Marta Puentes Marrero, DMD"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Empieza con fotos. Un doctor te responde en menos de 6 horas.",
+    "body": "Gratis, sin necesidad de visita. Presupuesto por escrito incluido.",
+    "cardTitle": "Evaluación gratuita por fotos",
+    "cardBody": "Dos fotos de tu sonrisa, desde tu celular. Toma 2 minutos.",
+    "button": "Empezar mi evaluación"
+  }
+}

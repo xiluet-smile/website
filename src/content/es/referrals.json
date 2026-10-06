@@ -1,0 +1,56 @@
+{
+  "_note": "TODO(clinic): the $500 referral bonus is confirmed; the conditions (when it is paid, e.g. after the referred patient's treatment, and how) are not. Partnership types and copy also need confirmation.",
+  "referrals": {
+    "eyebrow": "Referidos",
+    "intro": "La mayoría de nuestros pacientes llegan por alguien que ya se hizo la sonrisa aquí. Si un amigo o familiar está pensando en carillas, un diseño de sonrisa o una reconstrucción bucal completa, envíanos su nombre y nosotros nos encargamos: una evaluación gratuita por fotos, un presupuesto por escrito en menos de 6 horas y un bono de $500 para ti por cada referido.",
+    "formTitle": "Refiere a alguien",
+    "formIntro": "Dinos a quién contactar y cómo. Solo nos comunicamos una vez, y solo con la persona que refieres.",
+    "messageLabel": "¿A quién refieres?",
+    "messagePlaceholder": "Su nombre, cómo contactarlo y qué le interesa.",
+    "points": [
+      {
+        "t": "Bono de $500 por referido",
+        "d": "Por cada persona que refieras, recibes un bono de $500. Escribe tu propio nombre en el formulario para que sepamos quién la envió."
+      },
+      {
+        "t": "Evaluación gratuita por fotos",
+        "d": "Tu amigo envía dos fotos; un doctor responde con un plan y un presupuesto por escrito en menos de 6 horas."
+      },
+      {
+        "t": "Los mismos doctores, la misma lista de precios",
+        "d": "Los pacientes referidos reciben los paquetes publicados y la garantía de 5 años por escrito, como todos."
+      },
+      {
+        "t": "Amigos de otros estados bienvenidos",
+        "d": "Tres visitas en una semana en Miami, con hoteles, recogida en el aeropuerto y transporte a cargo de la coordinadora."
+      }
+    ],
+    "bonus": {
+      "amount": "$500",
+      "title": "Bono de $500 por referido",
+      "text": "Por cada persona que refieras, recibes un bono de $500. Escribe tu nombre y tus datos de contacto en el formulario para que sepamos quién la envió."
+    }
+  },
+  "partnerships": {
+    "eyebrow": "Alianzas",
+    "intro": "Xiluet Smiles trabaja con dentistas generales, especialistas, clínicas en el extranjero y empresas de turismo y hospitalidad en Miami. Si tus pacientes o clientes podrían necesitar un diseño de sonrisa, carillas de porcelana, una reconstrucción bucal completa o All-on-X, cuéntanos sobre tu consultorio o negocio y un doctor te contactará.",
+    "formTitle": "Cuéntanos sobre tu consultorio o negocio",
+    "formIntro": "Con un mensaje corto basta. Respondemos en pocas horas durante el horario de oficina, en inglés o español.",
+    "messageLabel": "Sobre tu consultorio o negocio",
+    "messagePlaceholder": "Quién eres, dónde estás y cómo te gustaría que trabajemos juntos.",
+    "points": [
+      {
+        "t": "Dentistas y especialistas",
+        "d": "Refiere casos cosméticos y de arcada completa a un equipo con laboratorio propio; tu paciente vuelve contigo para su cuidado continuo."
+      },
+      {
+        "t": "Clínicas fuera de EE. UU.",
+        "d": "Los pacientes llegan el lunes y vuelven a casa el jueves con sus carillas definitivas. La planificación se hace desde casa antes del viaje."
+      },
+      {
+        "t": "Turismo y hospitalidad",
+        "d": "Hoteles, conserjes y agencias de turismo médico: nuestra coordinadora se encarga de las fechas, la recogida y el transporte de cada paciente de otro estado."
+      }
+    ]
+  }
+}

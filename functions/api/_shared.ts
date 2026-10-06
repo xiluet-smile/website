@@ -29,6 +29,23 @@ export const site = siteJson as {
 };
 
 export type FormPage = "/free-photo-evaluation" | "/contact";
+export type Locale = "en" | "es";
+
+/**
+ * Spanish URLs of the two form pages. Duplicated from src/lib/i18n.ts (esPaths)
+ * because that module pulls in the site's `@/` imports, which the functions
+ * tsconfig cannot resolve. Keep both in sync.
+ */
+const ES_PAGES: Record<FormPage, string> = {
+  "/free-photo-evaluation": "/es/evaluacion-gratuita-por-fotos",
+  "/contact": "/es/contacto",
+};
+
+/** Value of the form's hidden `locale` field, defaulting to English. */
+export const localeOf = (value: unknown): Locale => (value === "es" ? "es" : "en");
+
+/** The form page's URL path in the given language (no-JS redirects land back on the same-language page). */
+export const pagePath = (page: FormPage, locale: Locale) => (locale === "es" ? ES_PAGES[page] : page);
 export type ErrorCode = "invalid" | "photos" | "turnstile" | "rate" | "origin" | "too_large" | "server";
 export type Result = { ok: true } | { ok: false; error: ErrorCode };
 
@@ -57,7 +74,7 @@ export function wantsJson(request: Request): boolean {
  * JSON `{ok:true}` / `{ok:false,error}` for fetch clients, or a 303 back to the
  * page for native form posts: `?sent=1#sent` or `?error=<code>#form-error`.
  */
-export function respond(request: Request, page: FormPage, result: Result): Response {
+export function respond(request: Request, page: FormPage, result: Result, locale: Locale = "en"): Response {
   if (wantsJson(request)) {
     return new Response(JSON.stringify(result), {
       status: result.ok ? 200 : STATUS[result.error],
@@ -65,7 +82,7 @@ export function respond(request: Request, page: FormPage, result: Result): Respo
     });
   }
   // Relative to the request so preview deployments redirect to themselves.
-  const target = new URL(page, request.url);
+  const target = new URL(pagePath(page, locale), request.url);
   if (result.ok) {
     target.searchParams.set("sent", "1");
     target.hash = "sent";
@@ -175,16 +192,30 @@ export interface ConsentContent {
 /** The full sentence the visitor ticks (the checkbox value on the page is built the same way). */
 export const consentString = (c: ConsentContent) => `${c.text} ${c.privacyLabel}.`;
 
-/** TCPA consent record: wording, time, IP, user agent and the page it was given on. */
-export function consentRecord(request: Request, env: Env, page: FormPage, submitted: string, current: ConsentContent): ConsentRecord {
+/**
+ * TCPA consent record: wording, time, IP, user agent and the page it was given on.
+ * `current` lists the published wordings (English and Spanish); the version is
+ * taken from whichever one the submitted text matches, suffixed with the
+ * language when it is not the English one.
+ */
+export function consentRecord(
+  request: Request,
+  env: Env,
+  page: FormPage,
+  submitted: string,
+  current: ConsentContent | Partial<Record<Locale, ConsentContent>>,
+): ConsentRecord {
   const referer = clean(request.headers.get("Referer"), LIMITS.url);
+  const published: [Locale, ConsentContent][] =
+    "version" in current ? [["en", current as ConsentContent]] : (Object.entries(current) as [Locale, ConsentContent][]);
+  const match = published.find(([, c]) => submitted === consentString(c));
   return {
     text: submitted,
-    version: submitted === consentString(current) ? current.version : "unrecognized",
+    version: match ? (match[0] === "en" ? match[1].version : `${match[1].version}-${match[0]}`) : "unrecognized",
     timestamp: new Date().toISOString(),
     ip: clientIp(request),
     userAgent: clean(request.headers.get("User-Agent"), LIMITS.userAgent),
-    pageUrl: referer || siteUrl(env) + page,
+    pageUrl: referer || siteUrl(env) + pagePath(page, match?.[0] ?? "en"),
   };
 }
 

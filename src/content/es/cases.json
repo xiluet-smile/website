@@ -1,0 +1,105 @@
+{
+  "disclaimer": "Paciente real de Xiluet. Los resultados individuales varían.",
+  "types": [
+    "Veneers",
+    "Restorations",
+    "Full mouth"
+  ],
+  "typeLabels": {
+    "Veneers": "Carillas",
+    "Restorations": "Restauraciones",
+    "Full mouth": "Boca completa"
+  },
+  "cases": [
+    {
+      "id": "BA8",
+      "image": "BA8.jpg",
+      "type": "Veneers",
+      "alt": "Antes y después de carillas de porcelana, paciente de Xiluet, Miami"
+    },
+    {
+      "id": "BA4",
+      "image": "BA4.jpg",
+      "type": "Veneers",
+      "alt": "Antes y después de carillas de porcelana, paciente de Xiluet, Miami"
+    },
+    {
+      "id": "BA11",
+      "image": "BA11.jpg",
+      "type": "Full mouth",
+      "alt": "Antes y después de reconstrucción bucal completa, paciente de Xiluet, Miami"
+    },
+    {
+      "id": "BA9",
+      "image": "BA9.jpg",
+      "type": "Restorations",
+      "alt": "Antes y después de restauraciones dentales, paciente de Xiluet, Miami"
+    },
+    {
+      "id": "BA1",
+      "image": "BA1.jpg",
+      "type": "Veneers",
+      "alt": "Antes y después de carillas de porcelana, paciente de Xiluet, Miami"
+    },
+    {
+      "id": "BA2",
+      "image": "BA2.jpg",
+      "type": "Veneers",
+      "alt": "Antes y después de carillas de porcelana, paciente de Xiluet, Miami"
+    },
+    {
+      "id": "BA5",
+      "image": "BA5.jpg",
+      "type": "Veneers",
+      "alt": "Antes y después de carillas de porcelana, paciente de Xiluet, Miami"
+    },
+    {
+      "id": "BA7",
+      "image": "BA7.jpg",
+      "type": "Veneers",
+      "alt": "Antes y después de carillas de porcelana, paciente de Xiluet, Miami"
+    },
+    {
+      "id": "BA6",
+      "image": "BA6.jpg",
+      "type": "Veneers",
+      "alt": "Antes y después de carillas de porcelana, paciente de Xiluet, Miami"
+    },
+    {
+      "id": "BA13",
+      "image": "BA13.jpg",
+      "type": "Veneers",
+      "alt": "Antes y después de carillas de porcelana, paciente de Xiluet, Miami"
+    },
+    {
+      "id": "BA14",
+      "image": "BA14.jpg",
+      "type": "Restorations",
+      "alt": "Antes y después de restauraciones dentales, paciente de Xiluet, Miami"
+    },
+    {
+      "id": "BA15",
+      "image": "BA15.jpg",
+      "type": "Veneers",
+      "alt": "Antes y después de carillas de porcelana, paciente de Xiluet, Miami"
+    },
+    {
+      "id": "BA10",
+      "image": "BA10.jpg",
+      "type": "Veneers",
+      "alt": "Antes y después de carillas de porcelana, paciente de Xiluet, Miami"
+    },
+    {
+      "id": "BA12",
+      "image": "BA12.jpg",
+      "type": "Veneers",
+      "alt": "Antes y después de carillas de porcelana, paciente de Xiluet, Miami"
+    },
+    {
+      "id": "BA3",
+      "image": "BA3.jpg",
+      "type": "Veneers",
+      "alt": "Antes y después de carillas de porcelana, paciente de Xiluet, Miami"
+    }
+  ]
+}

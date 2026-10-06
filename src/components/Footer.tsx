@@ -1,20 +1,23 @@
 import Link from "next/link";
 import Img from "./Img";
 import { CameraIcon, FacebookIcon, InstagramIcon, PhoneIcon, TikTokIcon, YouTubeIcon } from "./Icons";
-import { isExternal, nav, resolveHref, site } from "@/lib/site";
-
-const socials = [
-  { label: "Instagram", href: site.social.instagram, Icon: InstagramIcon },
-  { label: "TikTok", href: site.social.tiktok, Icon: TikTokIcon },
-  { label: "Facebook", href: site.social.facebook, Icon: FacebookIcon },
-  { label: "YouTube", href: site.social.youtube, Icon: YouTubeIcon },
-];
+import { getContent, tpl, ui } from "@/lib/content-i18n";
+import { localizeHref, localizePath, type Locale } from "@/lib/i18n";
+import { isExternal, resolveHref } from "@/lib/site";
 
 const linkCls = "text-on-dark no-underline hover:text-gold";
 // Footer column links get a little vertical padding on mobile for a comfortable tap target.
 const navLinkCls = `${linkCls} max-lg:py-0.5`;
 
-export default function Footer() {
+export default function Footer({ locale = "en" }: { locale?: Locale }) {
+  const t = ui(locale);
+  const { site, nav } = getContent(locale);
+  const socials = [
+    { label: "Instagram", href: site.social.instagram, Icon: InstagramIcon },
+    { label: "TikTok", href: site.social.tiktok, Icon: TikTokIcon },
+    { label: "Facebook", href: site.social.facebook, Icon: FacebookIcon },
+    { label: "YouTube", href: site.social.youtube, Icon: YouTubeIcon },
+  ];
   return (
     <footer className="relative overflow-hidden border-t border-[rgba(247,244,238,.14)] bg-teal text-[15px] leading-normal text-on-dark">
       <Img
@@ -32,19 +35,19 @@ export default function Footer() {
         <div className="flex flex-col gap-3 border-b border-[rgba(247,244,238,.12)] pb-6 lg:grid lg:grid-cols-[1.4fr_minmax(0,1fr)] lg:items-center lg:gap-16 lg:pb-10">
           <div className="flex flex-col gap-3">
             <span className="font-serif text-[26px] leading-[1.15] text-pretty lg:text-[34px]">
-              Start with photos. A doctor replies within {site.replyHours} hours.
+              {tpl(t.footer.heading, { hours: site.replyHours })}
             </span>
             <span className="hidden text-base text-on-dark-muted lg:block">
-              Free, no visit needed. Written estimate and financing options included.
+              {t.footer.body}
             </span>
           </div>
           <div className="flex flex-wrap gap-2.5 lg:justify-end lg:gap-3">
             <Link
-              href="/free-photo-evaluation"
+              href={localizePath("/free-photo-evaluation", locale)}
               className="inline-flex h-[46px] items-center gap-2 rounded-full bg-gold pr-[18px] pl-4 text-[15px] font-semibold text-teal no-underline hover:text-teal lg:h-[50px] lg:gap-[9px] lg:pr-[22px] lg:pl-[18px] lg:text-base"
             >
               <CameraIcon />
-              Free photo evaluation
+              {t.freePhotoEvaluation}
             </Link>
             <a
               href={site.phone.href}
@@ -93,7 +96,7 @@ export default function Footer() {
               ))}
             </div>
           </div>
-          <nav id="footer-nav" aria-label="Footer" className="contents">
+          <nav id="footer-nav" aria-label={t.footer.nav} className="contents">
             {nav.footer.map((col) => (
               <div key={col.title} className="flex flex-col gap-2">
                 <div className="mb-1 text-xs font-semibold tracking-[.12em] text-gold uppercase lg:mb-2">{col.title}</div>
@@ -104,7 +107,7 @@ export default function Footer() {
                       {l.label}
                     </a>
                   ) : (
-                    <Link key={l.label} href={href} className={navLinkCls}>
+                    <Link key={l.label} href={localizeHref(href, locale)} className={navLinkCls}>
                       {l.label}
                     </Link>
                   );
@@ -117,11 +120,11 @@ export default function Footer() {
         {/* Legal */}
         <div className="flex flex-col-reverse gap-2 text-xs text-on-dark-muted lg:flex-row lg:flex-wrap lg:items-center lg:justify-between lg:gap-4 lg:border-t lg:border-[rgba(247,244,238,.12)] lg:pt-[22px] lg:text-[13px]">
           <span>
-            © {site.copyrightYear} {site.name} · Miami, FL · Individual results vary. Financing subject to credit approval.
+            © {site.copyrightYear} {site.name} · Miami, FL · {t.footer.legal}
           </span>
                     <div className="flex flex-wrap gap-3.5 lg:gap-[18px]">
             {nav.legal.map((l) => (
-              <Link key={l.label} href={l.href} className="text-on-dark-muted no-underline hover:text-gold">
+              <Link key={l.label} href={localizeHref(l.href, locale)} className="text-on-dark-muted no-underline hover:text-gold">
                 {l.label}
               </Link>
             ))}

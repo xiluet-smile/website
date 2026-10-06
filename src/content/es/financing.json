@@ -1,0 +1,20 @@
+{
+  "steps": [
+    {
+      "n": "01",
+      "t": "Tu presupuesto llega con opciones",
+      "d": "En las 6 horas siguientes a tus fotos recibes un precio por escrito y los dos o tres socios con más probabilidad de aprobarte."
+    },
+    {
+      "n": "02",
+      "t": "Solicita con una consulta suave",
+      "d": "Cada socio te precalifica sin afectar tu puntaje de crédito. Solicita a uno, o a varios, desde tu teléfono."
+    },
+    {
+      "n": "03",
+      "t": "Compara y luego reserva",
+      "d": "Tu coordinadora pone las ofertas aprobadas una al lado de la otra: pago mensual, plazo, costo total. Tú eliges. Después fijamos tus fechas."
+    }
+  ],
+  "disclaimer": "El financiamiento lo ofrecen prestamistas externos, sujeto a aprobación de crédito. Los términos varían según el socio."
+}

@@ -15,13 +15,8 @@ import {
   useHydrated,
   useSentParam,
 } from "./FormParts";
-import content from "@/content/lead-form.json";
-import { site } from "@/lib/site";
-
-const PAGE = "/free-photo-evaluation";
-const { maxPhotos, maxPhotoMb } = content.limits;
-const vars = { max: String(maxPhotos), mb: String(maxPhotoMb) };
-const fill = (s: string, v: Record<string, string>) => s.replace(/\{(\w+)\}/g, (m, k: string) => v[k] ?? m);
+import { getContent, labelOf, tpl, ui } from "@/lib/content-i18n";
+import { localizePath, type Locale } from "@/lib/i18n";
 
 type Photo = { file: File; url: string };
 
@@ -32,7 +27,12 @@ const isImage = (f: File) => (f.type ? f.type.startsWith("image/") && !f.type.in
  * posts to /api/lead; with JS it is sent with fetch, photos are previewed and
  * the confirmation replaces the form.
  */
-export default function LeadForm() {
+export default function LeadForm({ locale = "en" }: { locale?: Locale }) {
+  const t = ui(locale).leadForm;
+  const { leadForm: content, site } = getContent(locale);
+  const page = localizePath("/free-photo-evaluation", locale);
+  const { maxPhotos, maxPhotoMb } = content.limits;
+  const vars = { max: String(maxPhotos), mb: String(maxPhotoMb) };
   const [photos, setPhotos] = useState<Photo[]>([]);
   const [status, setStatus] = useState<"idle" | "sending" | "sent">("idle");
   const [error, setError] = useState<string | null>(null);
@@ -48,13 +48,13 @@ export default function LeadForm() {
   useEffect(() => {
     try {
       const ref = new URL(document.referrer);
-      if (originRef.current && ref.origin === window.location.origin && ref.pathname !== PAGE) {
+      if (originRef.current && ref.origin === window.location.origin && ref.pathname !== page) {
         originRef.current.value = ref.pathname;
       }
     } catch {
       // no referrer
     }
-  }, []);
+  }, [page]);
 
   useEffect(() => {
     if (status === "sent") sentRef.current?.focus();
@@ -67,8 +67,8 @@ export default function LeadForm() {
     const ok: Photo[] = [];
     for (const file of picked) {
       if (!isImage(file)) problem = content.errors.not_image;
-      else if (file.size > maxPhotoMb * 1024 * 1024) problem = fill(content.errors.too_big, vars);
-      else if (count + ok.length >= maxPhotos) problem = fill(content.errors.too_many, vars);
+      else if (file.size > maxPhotoMb * 1024 * 1024) problem = tpl(content.errors.too_big, vars);
+      else if (count + ok.length >= maxPhotos) problem = tpl(content.errors.too_many, vars);
       else ok.push({ file, url: URL.createObjectURL(file) });
     }
     setPhotoError(problem);
@@ -91,20 +91,21 @@ export default function LeadForm() {
     const result = await submitForm(form, (data) => {
       data.delete("photos");
       for (const p of photos) data.append("photos", p.file, p.file.name);
-      concerns = data.getAll("concerns").map(String);
+      // Submitted values stay English (the server matches them); the summary shows the locale's labels.
+      concerns = data.getAll("concerns").map((v) => labelOf(content.concerns, content.concernsLabels, String(v)));
       return data;
     });
     if (result.ok) {
       const c = content.confirmation;
       setSummary(
         count
-          ? fill(count === 1 ? c.receivedOne : c.receivedMany, { count: String(count) }) +
-              (concerns.length ? fill(c.noted, { concerns: concerns.join(", ").toLowerCase() }) : ".")
+          ? tpl(count === 1 ? c.receivedOne : c.receivedMany, { count: String(count) }) +
+              (concerns.length ? tpl(c.noted, { concerns: concerns.join(", ").toLowerCase() }) : ".")
           : "",
       );
       setStatus("sent");
     } else {
-      setError(fill(errorMessage(content.errors, result.error), vars));
+      setError(tpl(errorMessage(content.errors, result.error), vars));
       setStatus("idle");
     }
   }
@@ -121,7 +122,7 @@ export default function LeadForm() {
         className={`glass-card relative grid items-start gap-8 rounded-[16px] p-5 group-has-[#sent:target]:hidden lg:grid-cols-2 lg:gap-10 lg:rounded-[18px] lg:p-10 ${sent ? "hidden" : ""}`}
       >
         <div className="flex flex-col gap-3.5">
-          <h2 className="m-0 font-serif text-[24px] leading-[1.15] font-normal text-teal lg:text-[28px]">Add your photos</h2>
+          <h2 className="m-0 font-serif text-[24px] leading-[1.15] font-normal text-teal lg:text-[28px]">{t.addPhotos}</h2>
           <label
             className={`relative flex min-h-[200px] cursor-pointer flex-col items-center justify-center gap-2.5 rounded-[16px] border-[1.5px] border-dashed p-7 text-center transition-colors duration-200 has-focus-visible:outline-2 has-focus-visible:outline-offset-2 has-focus-visible:outline-gold ${count ? "border-gold bg-gold/10" : "border-teal/35 bg-card"}`}
           >
@@ -138,9 +139,9 @@ export default function LeadForm() {
               </svg>
             </span>
             <span className="text-[17px] font-semibold text-teal" aria-live="polite">
-              {count === 0 ? content.drop.empty : fill(count === 1 ? content.drop.one : content.drop.many, { count: String(count) })}
+              {count === 0 ? content.drop.empty : tpl(count === 1 ? content.drop.one : content.drop.many, { count: String(count) })}
             </span>
-            <span className="text-sm text-muted">{count === 0 ? content.drop.emptyHint : fill(content.drop.limitHint, vars)}</span>
+            <span className="text-sm text-muted">{count === 0 ? content.drop.emptyHint : tpl(content.drop.limitHint, vars)}</span>
             {/* Visible until hydration so, without JS, the browser's own file list shows what was picked. */}
             <input
               type="file"
@@ -174,7 +175,7 @@ export default function LeadForm() {
                   <button
                     type="button"
                     onClick={() => remove(i)}
-                    aria-label={`Remove photo ${p.file.name}`}
+                    aria-label={tpl(t.removePhoto, { name: p.file.name })}
                     className="absolute top-0 right-0 grid h-11 w-11 cursor-pointer place-items-start justify-items-end border-0 bg-transparent p-1"
                   >
                     <span className="grid h-[22px] w-[22px] place-items-center rounded-full bg-teal/85 text-[13px] leading-none text-on-dark">×</span>
@@ -193,22 +194,22 @@ export default function LeadForm() {
 
         <div className="flex flex-col gap-3.5">
           <h2 className="m-0 font-serif text-[24px] leading-[1.15] font-normal text-teal lg:text-[28px]">
-            Where should the doctor reply?
+            {t.whereReply}
           </h2>
           {/* Both inputs post as `name`; /api/lead joins them. */}
           <div className="grid gap-3 sm:grid-cols-2">
             <label className={labelClass}>
-              First name
+              {t.firstName}
               <input type="text" name="name" required autoComplete="given-name" maxLength={60} className={inputClass} />
             </label>
             <label className={labelClass}>
-              Last name
+              {t.lastName}
               <input type="text" name="name" required autoComplete="family-name" maxLength={60} className={inputClass} />
             </label>
           </div>
           <div className="grid gap-3 sm:grid-cols-2">
             <label className={labelClass}>
-              Mobile phone
+              {t.mobile}
               <input
                 type="tel"
                 name="phone"
@@ -220,24 +221,24 @@ export default function LeadForm() {
               />
             </label>
             <label className={labelClass}>
-              Email
+              {t.email}
               <input type="email" name="email" required autoComplete="email" maxLength={254} className={inputClass} />
             </label>
           </div>
           <fieldset className="m-0 flex min-w-0 flex-col gap-2 border-0 p-0">
             <legend className="mb-2 p-0 text-sm font-semibold text-body">{content.concernsLabel}</legend>
             <div className="flex flex-wrap gap-2">
-              {content.concerns.map((label) => (
-                <label key={label} className="relative inline-flex cursor-pointer">
-                  <input type="checkbox" name="concerns" value={label} className="peer sr-only" />
-                  <span className={`${chipClass} h-11 lg:h-[38px]`}>{label}</span>
+              {content.concerns.map((value) => (
+                <label key={value} className="relative inline-flex cursor-pointer">
+                  <input type="checkbox" name="concerns" value={value} className="peer sr-only" />
+                  <span className={`${chipClass} h-11 lg:h-[38px]`}>{labelOf(content.concerns, content.concernsLabels, value)}</span>
                 </label>
               ))}
             </div>
           </fieldset>
           {/* TODO(clinic): the design has no notes field; STACK.md lists `notes`. Label wording needs sign-off. */}
           <label className={labelClass}>
-            Notes (optional)
+            {t.notes}
             <textarea
               name="notes"
               rows={3}
@@ -246,9 +247,9 @@ export default function LeadForm() {
               className="w-full resize-y rounded-[12px] border border-sand bg-card px-3.5 py-3 text-base font-normal text-ink"
             />
           </label>
-          <input ref={originRef} type="hidden" name="origin" defaultValue={PAGE} />
-          <ConsentField consent={content.consent} />
-          <FormGuards />
+          <input ref={originRef} type="hidden" name="origin" defaultValue={page} />
+          <ConsentField consent={content.consent} locale={locale} />
+          <FormGuards locale={locale} />
           <FormError generic={content.errors.generic} message={error} />
           <button
             type="submit"
@@ -272,9 +273,9 @@ export default function LeadForm() {
           <h2 className="m-0 font-serif text-[34px] leading-[1.2] font-normal lg:text-[44px] lg:leading-[1.08]">{c.heading}</h2>
           <p className="m-0 text-[17px] leading-[1.55] text-on-dark-muted">
             {summary && `${summary} `}
-            {fill(c.body, { replyHours: String(site.replyHours), officeHours: site.hours.display })}
+            {tpl(c.body, { replyHours: String(site.replyHours), officeHours: site.hours.display })}
           </p>
-          <Link href="/before-and-after" className="font-semibold text-gold no-underline hover:text-gold">
+          <Link href={localizePath("/before-and-after", locale)} className="font-semibold text-gold no-underline hover:text-gold">
             {c.link}
           </Link>
         </div>

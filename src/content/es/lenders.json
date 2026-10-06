@@ -1,0 +1,47 @@
+[
+  {
+    "slug": "cherry",
+    "href": "/financing/cherry",
+    "name": "Cherry",
+    "logo": "logo-cherry.webp",
+    "tag": "Consulta de crédito suave",
+    "note": "Precalifica en 60 segundos sin afectar tu puntaje. Planes de 3 a 60 meses.",
+    "short": "Precalifica en 60 segundos. Planes de 3 a 60 meses."
+  },
+  {
+    "slug": "sunbit",
+    "href": "/financing/sunbit",
+    "name": "Sunbit",
+    "logo": "logo-sunbit.svg",
+    "tag": "Alta tasa de aprobación",
+    "note": "Hecho para odontología. La mayoría de los solicitantes son aprobados, con decisión en menos de un minuto.",
+    "short": "Hecho para odontología. La mayoría de los solicitantes son aprobados en menos de un minuto."
+  },
+  {
+    "slug": "carecredit",
+    "href": "/financing/carecredit",
+    "name": "CareCredit",
+    "logo": "logo-carecredit.webp",
+    "tag": "Tarjeta para salud",
+    "note": "Financiamiento promocional en compras de más de $200 con la tarjeta de salud más aceptada.",
+    "short": "Financiamiento promocional en compras de más de $200."
+  },
+  {
+    "slug": "lendingclub",
+    "href": "/financing/lendingclub",
+    "name": "LendingClub",
+    "logo": "logo-lendingclub.svg",
+    "tag": "Pagos mensuales fijos",
+    "note": "Préstamos personales de hasta $65,000 con tasa fija y sin penalidad por pago anticipado.",
+    "short": "Préstamos de hasta $65,000, tasa fija, sin penalidad por pago anticipado."
+  },
+  {
+    "slug": "affirm",
+    "href": "/financing/affirm",
+    "name": "Affirm",
+    "logo": "logo-affirm.webp",
+    "tag": "Sin cargos por mora",
+    "note": "Paga a plazos con términos transparentes. Verifica si calificas en segundos sin afectar tu puntaje de crédito.",
+    "short": "Términos transparentes. Verifica si calificas sin afectar tu puntaje de crédito."
+  }
+]

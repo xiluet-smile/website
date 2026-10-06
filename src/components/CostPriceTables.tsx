@@ -1,10 +1,13 @@
-import { prices } from "@/lib/content";
+import { getContent, ui } from "@/lib/content-i18n";
+import type { Locale } from "@/lib/i18n";
 
 // Row rule inset 22px from the card edges, drawn per cell so the table stays a plain <table>.
 const rule = "bg-[linear-gradient(rgba(222,213,194,.7),rgba(222,213,194,.7))] bg-no-repeat bg-[length:100%_1px]";
 
 /** The published fee schedule: one real <table> per group from prices.json. */
-export default function CostPriceTables() {
+export default function CostPriceTables({ locale = "en" }: { locale?: Locale }) {
+  const t = ui(locale).cost;
+  const { prices } = getContent(locale);
   return (
     <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
       {prices.groups.map((g) => (
@@ -26,8 +29,8 @@ export default function CostPriceTables() {
             </caption>
             <thead className="sr-only">
               <tr>
-                <th scope="col">Treatment</th>
-                <th scope="col">Price</th>
+                <th scope="col">{t.treatmentCol}</th>
+                <th scope="col">{t.priceCol}</th>
               </tr>
             </thead>
             <tbody className="[&>tr:first-child>*]:pt-[18px]">

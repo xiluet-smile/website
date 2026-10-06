@@ -1,0 +1,16 @@
+{
+  "features": [
+    { "t": "Laboratorio dental propio", "d": "Tu ceramista está en el edificio. El color se iguala en persona y los ajustes se hacen el mismo día." },
+    { "t": "Escaneo 3D y diseño digital", "d": "Los escáneres intraorales y la fotografía facial reemplazan las impresiones. Ves el diseño antes de preparar cualquier diente." },
+    { "t": "Consultorios privados", "d": "Un paciente por consultorio, con ventana. Tu coordinadora te acompaña entre cada paso." },
+    { "t": "Radiografías digitales y tomografía", "d": "Imágenes de baja dosis en el mismo lugar, revisadas por tu doctor durante la Visita 1." },
+    { "t": "Esterilización a la vista", "d": "Esterilización de grado hospitalario, con los paquetes de instrumentos abiertos frente a ti." },
+    { "t": "Equipo bilingüe", "d": "Inglés y español en cada paso, desde el primer mensaje hasta la entrega." }
+  ],
+  "travel": [
+    "A 15 minutos del Aeropuerto Internacional de Miami (MIA)",
+    "Estacionamiento gratuito en el lugar",
+    "Hoteles a menos de 10 minutos: te enviamos una lista corta con tu presupuesto",
+    "Uber y Lyft te recogen en la puerta"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "slug": "cherry",
+  "intro": "Cherry divide tu tratamiento en pagos mensuales, desde $200 hasta $30,000. La aprobación no afecta tu puntaje de crédito.",
+  "site": {
+    "url": "https://withcherry.com",
+    "label": "Revisa tus opciones con Cherry →",
+    "note": "Consulta suave de crédito. No afecta tu puntaje."
+  },
+  "facts": [
+    {
+      "big": "60 seg",
+      "sub": "Solicitud, desde tu teléfono"
+    },
+    {
+      "big": "Sin consulta dura",
+      "sub": "Revisar no afecta tu puntaje"
+    },
+    {
+      "big": "0% APR",
+      "sub": "Opciones disponibles para pacientes que califican"
+    },
+    {
+      "big": "3 a 60 meses",
+      "sub": "Elige el plazo que te convenga"
+    }
+  ],
+  "steps": [
+    {
+      "n": "01",
+      "t": "Solicita desde tu teléfono antes o después de tu presupuesto"
+    },
+    {
+      "n": "02",
+      "t": "Elige el plan mensual que prefieras entre las opciones aprobadas"
+    },
+    {
+      "n": "03",
+      "t": "Cherry le paga a Xiluet directamente. Tú le pagas a Cherry cada mes"
+    }
+  ],
+  "faq": [
+    {
+      "q": "¿Solicitar afecta mi crédito?",
+      "a": "No. Cherry hace una consulta suave para precalificarte, lo cual no afecta tu puntaje."
+    },
+    {
+      "q": "¿Cuál es la tasa de aprobación?",
+      "a": "Cherry reporta que aprueba alrededor del 75 por ciento de los solicitantes. Si no te aprueban, nuestra coordinadora te ayuda a intentar con otro socio."
+    },
+    {
+      "q": "¿Puedo pagarlo antes de tiempo?",
+      "a": "Sí. No hay penalidad por liquidar tu plan antes de tiempo."
+    }
+  ],
+  "disclaimer": "Cherry es un prestamista externo. El financiamiento está sujeto a aprobación de crédito. Los términos y tasas los establece Cherry y pueden cambiar. Xiluet no toma decisiones de crédito."
+}

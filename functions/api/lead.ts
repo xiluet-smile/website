@@ -2,9 +2,11 @@
 // Stores photos + the lead record (with TCPA consent) in R2, emails the clinic
 // signed photo links, pushes to the CRM webhook and sends the patient autoresponder.
 import leadFormJson from "../../src/content/lead-form.json";
+import leadFormEsJson from "../../src/content/es/lead-form.json";
 import {
   type ConsentContent,
   type Env,
+  type Locale,
   LIMITS,
   PHOTO_LINK_TTL_SEC,
   clean,
@@ -16,6 +18,7 @@ import {
   isEmail,
   isPhone,
   isSameOrigin,
+  localeOf,
   methodNotAllowed,
   postWebhook,
   renderRows,
@@ -29,13 +32,18 @@ import {
 
 const PAGE = "/free-photo-evaluation" as const;
 
-const content = leadFormJson as {
+type LeadContent = {
   limits: { maxPhotos: number; maxPhotoMb: number };
   concerns: string[];
   consent: ConsentContent;
   confirmation: { receivedOne: string; receivedMany: string };
   autoresponder: { subject: string; photosLine: string; body: string };
 };
+/** English copy; `concerns` values are the same English strings on the Spanish form. */
+const content = leadFormJson as LeadContent;
+/** Per-language copy for the consent check and the patient autoresponder. */
+const byLocale: Record<Locale, LeadContent> = { en: content, es: leadFormEsJson as LeadContent };
+const consents: Record<Locale, ConsentContent> = { en: content.consent, es: byLocale.es.consent };
 
 const MAX_PHOTOS = content.limits.maxPhotos;
 const MAX_PHOTO_BYTES = content.limits.maxPhotoMb * 1024 * 1024;
@@ -69,6 +77,7 @@ function mimeAllowed(type: string): boolean {
 }
 
 export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
+  let locale: Locale = "en";
   try {
     if (!isSameOrigin(request, env)) return respond(request, PAGE, { ok: false, error: "origin" });
 
@@ -82,13 +91,14 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
       return respond(request, PAGE, { ok: false, error: "invalid" });
     }
     const field = (name: string, max: number, multiline = false) => clean(form.get(name), max, multiline);
+    locale = localeOf(field("locale", 2));
 
     const checked = await guard(request, env, "lead", {
       token: field("cf-turnstile-response", 4096),
       honeypot: field("company", 200),
       nojs: field("nojs", 4) === "1",
     });
-    if (!checked.pass) return respond(request, PAGE, checked.result);
+    if (!checked.pass) return respond(request, PAGE, checked.result, locale);
 
     // The page has first/last inputs that share the field name "name".
     const name = clean(
@@ -104,7 +114,7 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
     const email = field("email", LIMITS.email);
     const consentText = field("consent", LIMITS.consent);
     if (!name || !isPhone(phone) || !isEmail(email) || !consentText) {
-      return respond(request, PAGE, { ok: false, error: "invalid" });
+      return respond(request, PAGE, { ok: false, error: "invalid" }, locale);
     }
     const submittedConcerns = new Set(form.getAll("concerns").filter((v): v is string => typeof v === "string"));
     const concerns = content.concerns.filter((c) => submittedConcerns.has(c)).slice(0, LIMITS.concerns);
@@ -113,24 +123,24 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
 
     // Photos are optional. An untouched file input submits one empty file.
     const files = form.getAll("photos").filter((v): v is File => typeof v !== "string" && v.size > 0);
-    if (files.length > MAX_PHOTOS) return respond(request, PAGE, { ok: false, error: "photos" });
+    if (files.length > MAX_PHOTOS) return respond(request, PAGE, { ok: false, error: "photos" }, locale);
     const sniffed: Sniffed[] = [];
     for (const file of files) {
-      if (file.size > MAX_PHOTO_BYTES || !mimeAllowed(file.type)) return respond(request, PAGE, { ok: false, error: "photos" });
+      if (file.size > MAX_PHOTO_BYTES || !mimeAllowed(file.type)) return respond(request, PAGE, { ok: false, error: "photos" }, locale);
       const kind = await sniffImage(file);
-      if (!kind) return respond(request, PAGE, { ok: false, error: "photos" });
+      if (!kind) return respond(request, PAGE, { ok: false, error: "photos" }, locale);
       sniffed.push(kind);
     }
 
     if (!env.R2_PHOTOS) {
       console.error("R2_PHOTOS binding is missing");
-      return respond(request, PAGE, { ok: false, error: "server" });
+      return respond(request, PAGE, { ok: false, error: "server" }, locale);
     }
 
     const id = crypto.randomUUID();
     const now = new Date();
     const prefix = `leads/${now.getUTCFullYear()}/${id}`;
-    const consent = consentRecord(request, env, PAGE, consentText, content.consent);
+    const consent = consentRecord(request, env, PAGE, consentText, consents);
 
     const photos: { key: string; contentType: string; size: number; originalName: string }[] = [];
     try {
@@ -152,7 +162,7 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
       console.error("lead storage failed", err);
       // Best effort: do not leave orphaned photos behind.
       if (photos.length) await settle("orphan cleanup", env.R2_PHOTOS.delete(photos.map((p) => p.key)));
-      return respond(request, PAGE, { ok: false, error: "server" });
+      return respond(request, PAGE, { ok: false, error: "server" }, locale);
     }
 
     // The lead is stored. Nothing below may fail the request.
@@ -172,6 +182,7 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
       ["Concerns", concerns.join(", ")],
       ["Notes", notes],
       ["Origin", origin],
+      ["Language", locale],
       ["Lead ID", id],
       ["Received", now.toISOString()],
       ...consentRows(consent),
@@ -210,6 +221,7 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
         concerns,
         origin,
         notes,
+        locale,
         photos: photos.map((p, i) => ({
           url: links[i] ?? null,
           expiresAt: links[i] ? expiresAt : null,
@@ -219,27 +231,28 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
         consent,
         source: siteUrl(env) + PAGE,
       }),
-      settle("autoresponder", sendEmail(env, autoresponder(email, photos.length))),
+      settle("autoresponder", sendEmail(env, autoresponder(email, photos.length, locale))),
     ];
     // TODO(clinic): SMS autoresponder provider
     await Promise.all(tasks);
 
-    return respond(request, PAGE, { ok: true });
+    return respond(request, PAGE, { ok: true }, locale);
   } catch (err) {
     console.error("lead handler failed", err);
-    return respond(request, PAGE, { ok: false, error: "server" });
+    return respond(request, PAGE, { ok: false, error: "server" }, locale);
   }
 };
 
 /**
  * Patient autoresponder. The wording is the page's own hero and confirmation
- * copy (src/content/lead-form.json); nothing the visitor typed is echoed back.
+ * copy (src/content/lead-form.json, or the Spanish twin for /es leads); nothing the visitor typed is echoed back.
  */
-function autoresponder(to: string, photoCount: number) {
-  const a = content.autoresponder;
+function autoresponder(to: string, photoCount: number, locale: Locale) {
+  const copy = byLocale[locale];
+  const a = copy.autoresponder;
   const lines: string[] = [];
   if (photoCount > 0) {
-    const received = photoCount === 1 ? content.confirmation.receivedOne : content.confirmation.receivedMany;
+    const received = photoCount === 1 ? copy.confirmation.receivedOne : copy.confirmation.receivedMany;
     lines.push(`${fill(received, { count: photoCount })}. ${a.photosLine}`);
   }
   lines.push(fill(a.body, { replyHours: site.replyHours, officeHours: site.hours.display }));

@@ -39,7 +39,7 @@ Things the design files leave unresolved. Each is marked `TODO(clinic)` in the c
 - **Contact page JSON-LD** keeps the site-wide Dentist/WebPage/WebSite nodes; the design's contact block used a slightly different Dentist node (`$$$`, extra `contactPoint`/`hasMap`) that contradicts the other 23 pages.
 
 ## Added after launch review (need clinic input)
-- **Referrals and Partnerships pages** (`/referrals`, `/partnerships`): no design or copy existed. The text in `src/content/referrals.json` is a neutral placeholder built only from facts already on the site; confirm whether referrals carry a reward and which partner types to list.
+- **Referrals and Partnerships pages** (`/referrals`, `/partnerships`): no design or copy existed. The text in `src/content/referrals.json` is a neutral placeholder built only from facts already on the site; the $500 bonus per completed treatment is confirmed; how it is paid (credit toward treatment, check, other) is not stated. Partner types to list still need confirming.
 - **Live Google reviews** need a Places API key and the practice Place ID (`GOOGLE_PLACES_API_KEY`, `GOOGLE_PLACE_ID`, and `google.placeId` in `site.json`). Until set, Home shows the stored reviews and the "Leave a review" button opens the Google Maps listing.
 - **Third-party scripts** (GTM `GTM-PSP4L6TC` and the LeadConnector chat widget) were copied from the previous site at the clinic's request; they lower Lighthouse performance scores somewhat and the CSP was widened to allow GTM-managed tags.
 

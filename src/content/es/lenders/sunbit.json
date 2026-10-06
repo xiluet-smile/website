@@ -1,0 +1,56 @@
+{
+  "slug": "sunbit",
+  "intro": "Sunbit fue creado para consultorios dentales. Tasas justas, sin cargos por mora, sin cargos de originación y sin penalidades.",
+  "site": {
+    "url": "https://sunbit.com",
+    "label": "Revisa tus opciones con Sunbit →",
+    "note": "Consulta suave de crédito. No afecta tu puntaje."
+  },
+  "facts": [
+    {
+      "big": "~90%",
+      "sub": "De los solicitantes aprobados"
+    },
+    {
+      "big": "30 seg",
+      "sub": "Tiempo de decisión"
+    },
+    {
+      "big": "Sin cargos por mora",
+      "sub": "Sin cargos de originación ni penalidades"
+    },
+    {
+      "big": "Hasta 72 meses",
+      "sub": "Plazos en montos mayores"
+    }
+  ],
+  "steps": [
+    {
+      "n": "01",
+      "t": "Solicita con tu coordinadora en el sillón o por enlace de texto"
+    },
+    {
+      "n": "02",
+      "t": "Ve tu monto aprobado y tus opciones mensuales al instante"
+    },
+    {
+      "n": "03",
+      "t": "Sunbit le paga a Xiluet. Tú le pagas a Sunbit cada mes"
+    }
+  ],
+  "faq": [
+    {
+      "q": "¿Sunbit revisa el crédito?",
+      "a": "Una consulta suave para precalificarte, que no afecta tu puntaje."
+    },
+    {
+      "q": "¿Para quién es Sunbit?",
+      "a": "Los pacientes rechazados en otros lugares suelen calificar con Sunbit. Está diseñado para gastos cotidianos como la atención dental."
+    },
+    {
+      "q": "¿Hay cargos ocultos?",
+      "a": "No. Sunbit no cobra cargos por mora, cargos de originación ni penalidades por pago anticipado."
+    }
+  ],
+  "disclaimer": "Sunbit es un prestamista externo. El financiamiento está sujeto a aprobación de crédito. Los términos y tasas los establece Sunbit y pueden cambiar. Xiluet no toma decisiones de crédito."
+}

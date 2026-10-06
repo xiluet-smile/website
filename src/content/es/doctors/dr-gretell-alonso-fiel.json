@@ -1,0 +1,77 @@
+{
+  "slug": "dr-gretell-alonso-fiel",
+  "display": "Dr. Alonso",
+  "quote": "Brillante, pero natural. Las mejores carillas son las que nadie puede señalar.",
+  "stats": [
+    {
+      "big": "2",
+      "sub": "continentes de formación"
+    },
+    {
+      "big": "AAFE",
+      "sub": "certificada en estética facial"
+    },
+    {
+      "big": "Digital",
+      "sub": "flujo de diseño de sonrisa"
+    }
+  ],
+  "focus": [
+    {
+      "n": "01",
+      "t": "Carillas de porcelana",
+      "d": "E.max y zirconia, preparación conservadora, color elegido en persona según tu piel y tus ojos."
+    },
+    {
+      "n": "02",
+      "t": "Diseño de sonrisa digital",
+      "d": "Escaneo intraoral Medit y fotografía facial. Ves el resultado antes de tocar un solo diente."
+    },
+    {
+      "n": "03",
+      "t": "Restauraciones sobre implantes",
+      "d": "Coronas y puentes sobre implantes planificados digitalmente para ajuste, comodidad y estabilidad."
+    },
+    {
+      "n": "04",
+      "t": "Estética facial",
+      "d": "Certificada por la AAFE en Botox y rellenos dérmicos para cuando los tejidos blandos deben complementar la sonrisa."
+    }
+  ],
+  "education": [
+    {
+      "t": "Doctora en Medicina Dental (DMD)",
+      "i": "Rutgers School of Dental Medicine",
+      "c": "Estados Unidos"
+    },
+    {
+      "t": "Licenciatura en Odontología",
+      "i": "Universidad Europea de Madrid",
+      "c": "España"
+    },
+    {
+      "t": "Certificación en estética facial",
+      "i": "American Academy of Facial Esthetics (AAFE)",
+      "c": "Estados Unidos"
+    },
+    {
+      "t": "Formación especializada en implantes y odontología cosmética",
+      "i": "Educación continua",
+      "c": ""
+    }
+  ],
+  "certs": [
+    "American Dental Association",
+    "Florida Dental Association",
+    "Academy of General Dentistry",
+    "American Academy of Cosmetic Dentistry",
+    "AAFE Botox y rellenos dérmicos",
+    "Licencia dental de Florida",
+    "Certificada en CPR y BLS"
+  ],
+  "caseIds": [
+    "BA8",
+    "BA4",
+    "BA2"
+  ]
+}

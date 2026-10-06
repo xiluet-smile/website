@@ -1,0 +1,77 @@
+{
+  "slug": "dr-marta-puentes-marrero",
+  "display": "Dr. Puentes",
+  "quote": "La odontología excepcional empieza por escuchar. El plan se construye alrededor de tus objetivos y tu mordida, no de un catálogo.",
+  "stats": [
+    {
+      "big": "3",
+      "sub": "países de práctica clínica"
+    },
+    {
+      "big": "AACD",
+      "sub": "miembro de Odontología Cosmética"
+    },
+    {
+      "big": "10+",
+      "sub": "años de experiencia"
+    }
+  ],
+  "focus": [
+    {
+      "n": "01",
+      "t": "Odontología adhesiva y estética",
+      "d": "Carillas de composite, restauraciones estéticas y adhesión mínimamente invasiva que conserva el esmalte."
+    },
+    {
+      "n": "02",
+      "t": "Restauraciones sobre implantes y prostodoncia",
+      "d": "Coronas, puentes y dientes sobre implantes evaluados para la armonía de la mordida y la estabilidad a largo plazo."
+    },
+    {
+      "n": "03",
+      "t": "Endodoncia y cirugía oral menor",
+      "d": "Tratamientos de conducto y extracciones cuando conservar el diente ya no es una opción."
+    },
+    {
+      "n": "04",
+      "t": "Tratamiento con alineadores transparentes",
+      "d": "Primero la alineación, cuando una sonrisa más derecha importa más que cubrir los dientes."
+    }
+  ],
+  "education": [
+    {
+      "t": "Doctora en Medicina Dental (DMD)",
+      "i": "Rutgers School of Dental Medicine",
+      "c": "Estados Unidos"
+    },
+    {
+      "t": "Licenciatura en Odontología",
+      "i": "España",
+      "c": "España"
+    },
+    {
+      "t": "Formación avanzada en rehabilitación estética y odontología adhesiva",
+      "i": "Estados Unidos y Europa",
+      "c": ""
+    },
+    {
+      "t": "Especialización continua en oclusión, función y salud de los tejidos",
+      "i": "Educación continua",
+      "c": ""
+    }
+  ],
+  "certs": [
+    "American Dental Association",
+    "Florida Dental Association",
+    "American Academy of Cosmetic Dentistry",
+    "Academy of General Dentistry",
+    "Licencia dental de Florida",
+    "Certificada en CPR y BLS",
+    "Credenciales DEA"
+  ],
+  "caseIds": [
+    "BA13",
+    "BA6",
+    "BA5"
+  ]
+}

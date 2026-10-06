@@ -1,0 +1,222 @@
+{
+  "hero": {
+    "eyebrow": "Diseño de sonrisa en Miami 🏝️",
+    "lead": "Consigue la sonrisa de tus sueños en solo 3 visitas. Procedimientos seguros, cero dolor y un equipo de doctores expertos dedicados a cambiar vidas.",
+    "promise": "Apruebas tu nueva sonrisa antes de que toquemos un solo diente.",
+    "callouts": [
+      {
+        "delay": 2.2,
+        "text": "Carillas de aspecto natural",
+        "pos": "tl"
+      },
+      {
+        "delay": 4.2,
+        "text": "Porcelana translúcida",
+        "pos": "tr"
+      },
+      {
+        "delay": 6.0,
+        "text": "Corrige espacios e imperfecciones",
+        "pos": "br"
+      }
+    ]
+  },
+  "problems": [
+    {
+      "icon": "hideSmile",
+      "q": "Llevo años escondiendo mi sonrisa.",
+      "link": "Lo que cambia un diseño de sonrisa",
+      "href": "/smile-design-miami",
+      "a": "Un diseño de sonrisa se planifica alrededor de tu rostro, no solo de tus dientes. La mayoría de los pacientes nos cuentan que lo primero que cambia es cuántas veces sonríen en las fotos."
+    },
+    {
+      "icon": "quote",
+      "q": "En otro lugar me cotizaron más de $15,000.",
+      "link": "Lo que cuesta aquí, por escrito",
+      "href": "/veneers-cost-miami",
+      "a": "Aquí los diseños de sonrisa completos empiezan muy por debajo de esa cifra, y recibes el número por escrito antes de reservar nada. Sin cargos sorpresa en el sillón."
+    },
+    {
+      "icon": "fakeNatural",
+      "q": "Me da miedo que se vea falso.",
+      "link": "Cómo funciona la vista previa del diseño",
+      "href": "/smile-design-miami",
+      "a": "Apruebas una vista previa del diseño en tu propia boca antes de que empiece cualquier trabajo permanente. El tono, el largo y la forma se ajustan contigo, no por ti."
+    },
+    {
+      "icon": "noTime",
+      "q": "No puedo tomarme meses libres para ir a citas.",
+      "link": "Listo en una semana en Miami",
+      "href": "/out-of-state-patients",
+      "a": "Todo lo previo a tu viaje se hace desde casa. En Miami son tres visitas en una semana: examen, preparación y entrega."
+    },
+    {
+      "icon": "needle",
+      "q": "Me aterra el taladro.",
+      "link": "Cómo funcionan las carillas de 0.3 mm",
+      "href": "/porcelain-veneers-miami",
+      "a": "Nuestras carillas son tan finas como 0.3 mm, así que la mayoría de los casos necesitan poco o ningún desgaste. Tu diente natural queda casi completamente intacto."
+    },
+    {
+      "icon": "chair",
+      "q": "No sé a quién confiarle mi rostro.",
+      "link": "Conoce a los doctores y mira casos reales",
+      "href": "/doctors",
+      "a": "Cada caso en este sitio es un paciente real tratado por los doctores que vas a conocer. Mira las fotos de antes y después y juzga el trabajo tú mismo."
+    },
+    {
+      "icon": "veneer",
+      "q": "Tengo los dientes manchados y el blanqueamiento no hace nada.",
+      "link": "Las carillas corrigen lo que el blanqueamiento no puede",
+      "href": "/porcelain-veneers-miami",
+      "a": "La tetraciclina, la fluorosis y la decoloración interna profunda no se quitan con blanqueamiento. Las carillas de porcelana cubren la mancha con un tono elegido en persona, con luz de día, y apruebas el diseño antes de preparar cualquier diente."
+    },
+    {
+      "icon": "toothBuild",
+      "q": "Tengo espacios y bordes astillados, no solo un problema de color.",
+      "link": "Espacios y astillados corregidos en una semana",
+      "href": "/smile-makeover-miami",
+      "a": "Los espacios se cierran y los bordes astillados o desgastados se reconstruyen en el mismo diseño, en una semana, sin años de alineadores. Forma, largo y tono se planifican juntos alrededor de tu rostro."
+    },
+    {
+      "icon": "plane",
+      "q": "Vivo en otro estado. ¿Cómo funcionaría esto?",
+      "link": "Llega el lunes, vuelve a casa el jueves",
+      "href": "/out-of-state-patients",
+      "a": "Fotos, presupuesto, plan de pago y fechas: todo se hace desde casa. En Miami son tres visitas en una semana, con una lista corta de hoteles, recogida en el aeropuerto y transporte a cada visita, todo coordinado por tu coordinadora."
+    }
+  ],
+  "caseIds": [
+    "BA8",
+    "BA1",
+    "BA4",
+    "BA2",
+    "BA5",
+    "BA7",
+    "BA6",
+    "BA13",
+    "BA14",
+    "BA15",
+    "BA10",
+    "BA11",
+    "BA9",
+    "BA12"
+  ],
+  "steps": [
+    {
+      "icon": "photo",
+      "title": "Envía dos fotos de tus dientes",
+      "time": "2 minutos"
+    },
+    {
+      "icon": "estimate",
+      "title": "Un doctor evalúa y redacta tu presupuesto",
+      "time": "en menos de 12 horas"
+    },
+    {
+      "icon": "pay",
+      "title": "Elige cómo pagar, con ayuda para conseguir la aprobación",
+      "time": "5 socios de financiamiento"
+    },
+    {
+      "icon": "calendar",
+      "title": "Reserva tus fechas",
+      "time": "Depósito de $250, se aplica al tratamiento"
+    },
+    {
+      "icon": "design",
+      "title": "Visitas 1 y 2: examen, escaneos, vista previa del diseño, preparación",
+      "time": "días 1–2"
+    },
+    {
+      "icon": "delivery",
+      "title": "Visita 3: entrega, luego garantía de 5 años y seguimiento",
+      "time": "días 4–5"
+    }
+  ],
+  "timelineBars": [
+    {
+      "icon": "photo",
+      "title": "Comparte fotos de tu sonrisa",
+      "time": "Desde tu celular"
+    },
+    {
+      "icon": "estimate",
+      "title": "Recibe tu presupuesto por escrito",
+      "time": "Revisado por un doctor"
+    },
+    {
+      "icon": "pay",
+      "title": "Elige tu plan de pago",
+      "time": "Guía para la aprobación"
+    },
+    {
+      "icon": "calendar",
+      "title": "Asegura tus fechas en Miami",
+      "time": "Depósito de $250"
+    },
+    {
+      "icon": "design",
+      "title": "Examen y revisión del plan de tratamiento",
+      "visit": 1
+    },
+    {
+      "icon": "veneer",
+      "title": "Preparación dental y provisionales",
+      "visit": 2
+    },
+    {
+      "icon": "delivery",
+      "title": "Entrega y ajustes finales",
+      "visit": 3
+    }
+  ],
+  "lab": {
+    "image": "gen-ceramist-hands.jpg",
+    "bullets": [
+      "El doctor y el ceramista revisan tu diseño juntos antes de cualquier preparación.",
+      "El tono y la forma se ajustan en persona, en tu visita, no por correo.",
+      "Tener el laboratorio en el mismo edificio es lo que hace posibles los 4 días."
+    ]
+  },
+  "itinerary": [
+    {
+      "short": "Lun",
+      "title": "Llegada, Visita 1"
+    },
+    {
+      "short": "Mar",
+      "title": "Visita 2"
+    },
+    {
+      "short": "Mié",
+      "title": "Día de laboratorio"
+    },
+    {
+      "short": "Jue",
+      "title": "Entrega, vuelo a casa"
+    }
+  ],
+  "directions": [
+    {
+      "icon": "plane",
+      "title": "Desde el aeropuerto",
+      "body": "Unos 20 minutos en carro. Toma la SR-836 West hasta la 87th Ave y luego hacia el sur hasta la SW 8th St. La recogida de rideshare es en el nivel de llegadas de MIA."
+    },
+    {
+      "icon": "car",
+      "title": "Estacionamiento",
+      "body": "Estacionamiento gratis en el lugar. La entrada está en la SW 8th St (Calle Ocho); sube por las escaleras o el elevador al 2.º piso."
+    },
+    {
+      "icon": "bus",
+      "title": "Transporte público",
+      "body": "La ruta 8 del Metrobus para en SW 8th St y 84th Ave, a 2 minutos a pie. Tamiami Station es la conexión de Metrorail más cercana."
+    },
+    {
+      "icon": "clock",
+      "title": "Horario",
+      "body": "Lunes a viernes, de 9am a 5pm. Los pacientes de otros estados pueden pedir citas temprano o en días consecutivos."
+    }
+  ]
+}

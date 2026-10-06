@@ -1,6 +1,8 @@
 "use client";
 
 import { useRef } from "react";
+import { ui } from "@/lib/content-i18n";
+import type { Locale } from "@/lib/i18n";
 
 /**
  * Horizontal scroll-snap row with previous/next arrows. The row itself is
@@ -11,12 +13,15 @@ export default function ScrollRow({
   className = "",
   ariaLabel,
   caption,
+  locale = "en",
 }: {
   children: React.ReactNode;
   className?: string;
   ariaLabel: string;
   caption?: string;
+  locale?: Locale;
 }) {
+  const t = ui(locale);
   const row = useRef<HTMLUListElement>(null);
   const scroll = (dir: number) => {
     const el = row.current;
@@ -31,10 +36,10 @@ export default function ScrollRow({
       <div className="mt-5 hidden items-center justify-between lg:flex">
         <span className="text-sm text-muted">{caption}</span>
         <div className="flex gap-2.5">
-          <button type="button" onClick={() => scroll(-1)} aria-label="Previous" className={`${btn} bg-transparent text-teal hover:bg-teal hover:text-on-dark`}>
+          <button type="button" onClick={() => scroll(-1)} aria-label={t.previous} className={`${btn} bg-transparent text-teal hover:bg-teal hover:text-on-dark`}>
             ←
           </button>
-          <button type="button" onClick={() => scroll(1)} aria-label="Next" className={`${btn} bg-teal text-on-dark hover:bg-[#0A3A40]`}>
+          <button type="button" onClick={() => scroll(1)} aria-label={t.next} className={`${btn} bg-teal text-on-dark hover:bg-[#0A3A40]`}>
             →
           </button>
         </div>

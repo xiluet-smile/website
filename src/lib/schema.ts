@@ -1,6 +1,9 @@
 // JSON-LD builders. Everything is derived from src/content so schema and
-// visible copy cannot drift apart.
-import { abs, pages, site, type PagePath } from "./site";
+// visible copy cannot drift apart. Page-level nodes take the locale so /es
+// pages get localized URLs, names and language tags.
+import { abs, site, type PagePath } from "./site";
+import { getContent, ui } from "./content-i18n";
+import { langTag, localizePath, type Locale } from "./i18n";
 import { ogImagePath } from "./images";
 
 type Node = Record<string, unknown>;
@@ -8,6 +11,9 @@ export type Faq = { q: string; a: string };
 
 const DENTIST_ID = `${site.url}/#dentist`;
 const WEBSITE_ID = `${site.url}/#website`;
+
+/** Absolute URL of an English route in the given locale. */
+const absL = (path: PagePath, locale: Locale) => abs(localizePath(path, locale));
 
 export const dentistRef = () => ({ "@id": DENTIST_ID });
 
@@ -48,34 +54,37 @@ export function webSite(): Node {
   return { "@type": "WebSite", "@id": WEBSITE_ID, url: site.url, name: site.name, publisher: dentistRef() };
 }
 
-export function webPage(path: PagePath): Node {
-  const page = pages[path];
+export function webPage(path: PagePath, locale: Locale = "en"): Node {
+  const page = getContent(locale).pages[path];
+  const url = absL(path, locale);
   return {
     "@type": "WebPage",
-    "@id": `${abs(path)}#webpage`,
-    url: abs(path),
+    "@id": `${url}#webpage`,
+    url,
     name: page.title,
     description: page.description,
     isPartOf: { "@id": WEBSITE_ID },
-    inLanguage: "en-US",
+    inLanguage: langTag(locale),
   };
 }
 
 /** Home → …parents → this page, using each page's breadcrumb label. */
-export function breadcrumb(path: PagePath): Node {
+export function breadcrumb(path: PagePath, locale: Locale = "en"): Node {
+  const { pages } = getContent(locale);
+  const t = ui(locale);
   const parts = path.split("/").filter(Boolean);
   const trail = parts.map((_, i) => `/${parts.slice(0, i + 1).join("/")}` as PagePath);
   // Parents use their short nav name (e.g. "Doctors"), the leaf uses its own label.
-  const parentNames: Record<string, string> = { "/doctors": "Doctors", "/financing": "Financing" };
+  const parentNames: Record<string, string> = { "/doctors": t.breadcrumb.doctors, "/financing": t.breadcrumb.financing };
   return {
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: abs("/") },
+      { "@type": "ListItem", position: 1, name: t.home, item: absL("/", locale) },
       ...trail.map((p, i) => ({
         "@type": "ListItem",
         position: i + 2,
         name: i < trail.length - 1 ? (parentNames[p] ?? pages[p].breadcrumb) : pages[p].breadcrumb,
-        item: abs(p),
+        item: absL(p, locale),
       })),
     ],
   };
@@ -95,6 +104,7 @@ export function faqPage(faqs: Faq[]): Node {
 export function medicalProcedure(
   path: PagePath,
   p: { name: string; definition: string; procedureType: string; priceUsd?: number | null },
+  locale: Locale = "en",
 ): Node {
   return {
     "@type": "MedicalProcedure",
@@ -110,14 +120,14 @@ export function medicalProcedure(
             price: String(p.priceUsd),
             priceCurrency: "USD",
             availability: "https://schema.org/InStock",
-            url: abs(path),
+            url: absL(path, locale),
           },
         }
       : {}),
   };
 }
 
-export function physician(path: PagePath, d: { name: string; image: string }): Node {
+export function physician(path: PagePath, d: { name: string; image: string }, locale: Locale = "en"): Node {
   return {
     "@type": "Physician",
     name: d.name,
@@ -126,11 +136,11 @@ export function physician(path: PagePath, d: { name: string; image: string }): N
     image: site.url + ogImagePath(d.image),
     worksFor: dentistRef(),
     knowsLanguage: site.languages.codes,
-    url: abs(path),
+    url: absL(path, locale),
   };
 }
 
-export function offerCatalog(name: string, offers: { name: string; priceUsd: number; url: string }[]): Node {
+export function offerCatalog(name: string, offers: { name: string; priceUsd: number; url: string }[], locale: Locale = "en"): Node {
   return {
     "@type": "OfferCatalog",
     name,
@@ -139,29 +149,29 @@ export function offerCatalog(name: string, offers: { name: string; priceUsd: num
       name: o.name,
       price: String(o.priceUsd),
       priceCurrency: "USD",
-      url: abs(o.url),
+      url: absL(o.url as PagePath, locale),
       seller: dentistRef(),
     })),
   };
 }
 
-export function imageGallery(path: PagePath, name: string, images: { url: string; caption: string }[]): Node {
+export function imageGallery(path: PagePath, name: string, images: { url: string; caption: string }[], locale: Locale = "en"): Node {
   return {
     "@type": "ImageGallery",
     name,
-    url: abs(path),
+    url: absL(path, locale),
     image: images.map((i) => ({ "@type": "ImageObject", contentUrl: site.url + i.url, caption: i.caption })),
   };
 }
 
-export function contactPage(path: PagePath, name?: string): Node {
-  return { "@type": "ContactPage", url: abs(path), name: name ?? pages[path].title };
+export function contactPage(path: PagePath, locale: Locale = "en", name?: string): Node {
+  return { "@type": "ContactPage", url: absL(path, locale), name: name ?? getContent(locale).pages[path].title };
 }
 
 /** Standard graph for a page: Dentist, WebPage, WebSite, BreadcrumbList (non-home) + extras. */
-export function pageGraph(path: PagePath, ...extra: Node[]) {
+export function pageGraph(path: PagePath, locale: Locale, ...extra: Node[]) {
   return {
     "@context": "https://schema.org",
-    "@graph": [dentist(), webPage(path), webSite(), ...(path === "/" ? [] : [breadcrumb(path)]), ...extra],
+    "@graph": [dentist(), webPage(path, locale), webSite(), ...(path === "/" ? [] : [breadcrumb(path, locale)]), ...extra],
   };
 }

@@ -1,0 +1,273 @@
+{
+  "menus": [
+    {
+      "key": "treatments",
+      "label": "Tratamientos",
+      "href": "/porcelain-veneers-miami",
+      "items": [
+        {
+          "t": "Carillas Signature",
+          "d": "20 carillas de porcelana, $6,000",
+          "href": "/porcelain-veneers-miami"
+        },
+        {
+          "t": "Restauración completa",
+          "d": "20 coronas, puentes o carillas, $7,000",
+          "href": "/veneers-cost-miami#complete-restoration"
+        },
+        {
+          "t": "Reconstrucción bucal completa",
+          "d": "Cada diente planificado en conjunto, $10,000",
+          "href": "/full-mouth-reconstruction-miami"
+        },
+        {
+          "t": "Arcada fija All-on-X",
+          "d": "Hasta 6 implantes por arcada, $10,000",
+          "href": "/all-on-x-dental-implants-miami"
+        }
+      ]
+    },
+    {
+      "key": "doctors",
+      "label": "Doctores",
+      "href": "/doctors",
+      "items": [
+        {
+          "t": "Dr. Roger Ramos Navarro, DMD",
+          "d": "Implantología, endodoncia, boca completa",
+          "href": "/doctors/dr-roger-ramos-navarro"
+        },
+        {
+          "t": "Dr. Marta Puentes Marrero, DMD",
+          "d": "Estética restauradora y adhesiva",
+          "href": "/doctors/dr-marta-puentes-marrero"
+        },
+        {
+          "t": "Dr. Gretell Alonso Fiel, DMD",
+          "d": "Carillas, diseño digital de sonrisa",
+          "href": "/doctors/dr-gretell-alonso-fiel"
+        },
+        {
+          "t": "Todos los doctores",
+          "d": "Conoce al equipo",
+          "href": "/doctors"
+        }
+      ]
+    },
+    {
+      "key": "results",
+      "label": "Resultados",
+      "href": "/before-and-after"
+    },
+    {
+      "key": "financing",
+      "label": "Financiamiento",
+      "href": "/financing",
+      "items": [
+        {
+          "t": "Cherry",
+          "d": "Consulta de crédito suave, de 3 a 60 meses",
+          "href": "/financing/cherry"
+        },
+        {
+          "t": "Sunbit",
+          "d": "Alta tasa de aprobación, hecho para odontología",
+          "href": "/financing/sunbit"
+        },
+        {
+          "t": "CareCredit",
+          "d": "Tarjeta de crédito para salud",
+          "href": "/financing/carecredit"
+        },
+        {
+          "t": "LendingClub",
+          "d": "Préstamos personales a tasa fija",
+          "href": "/financing/lendingclub"
+        },
+        {
+          "t": "Affirm",
+          "d": "Términos transparentes, sin cargos por mora",
+          "href": "/financing/affirm"
+        }
+      ]
+    },
+    {
+      "key": "about",
+      "label": "Nosotros",
+      "href": "/clinic",
+      "items": [
+        {
+          "t": "Clínica",
+          "d": "Nuestra oficina en Miami",
+          "href": "/clinic"
+        },
+        {
+          "t": "Contacto",
+          "d": "Llama, escribe, WhatsApp o email",
+          "href": "/contact"
+        },
+        {
+          "t": "Otros estados",
+          "d": "Llega el lunes, vuelve a casa el jueves",
+          "href": "/out-of-state-patients"
+        },
+        {
+          "t": "Precios",
+          "d": "Paquetes y lista de precios completa",
+          "href": "/veneers-cost-miami"
+        },
+        {
+          "t": "Blog",
+          "d": "Respuestas directas de los doctores",
+          "href": "/blog"
+        },
+        {
+          "t": "Referidos",
+          "d": "Refiere a un amigo",
+          "href": "/referrals"
+        },
+        {
+          "t": "Alianzas",
+          "d": "Trabaja con nosotros",
+          "href": "/partnerships"
+        }
+      ]
+    }
+  ],
+  "footer": [
+    {
+      "title": "Tratamientos",
+      "links": [
+        {
+          "label": "Carillas Signature",
+          "href": "/porcelain-veneers-miami"
+        },
+        {
+          "label": "Restauración completa",
+          "href": "/veneers-cost-miami#complete-restoration"
+        },
+        {
+          "label": "Reconstrucción bucal completa",
+          "href": "/full-mouth-reconstruction-miami"
+        },
+        {
+          "label": "Arcada fija All-on-X",
+          "href": "/all-on-x-dental-implants-miami"
+        },
+        {
+          "label": "Costo y lista de precios",
+          "href": "/veneers-cost-miami"
+        }
+      ]
+    },
+    {
+      "title": "Doctores",
+      "links": [
+        {
+          "label": "Dr. Roger Ramos Navarro",
+          "href": "/doctors/dr-roger-ramos-navarro"
+        },
+        {
+          "label": "Dr. Marta Puentes Marrero",
+          "href": "/doctors/dr-marta-puentes-marrero"
+        },
+        {
+          "label": "Dr. Gretell Alonso Fiel",
+          "href": "/doctors/dr-gretell-alonso-fiel"
+        },
+        {
+          "label": "Todos los doctores",
+          "href": "/doctors"
+        },
+        {
+          "label": "Antes y después",
+          "href": "/before-and-after"
+        }
+      ]
+    },
+    {
+      "title": "Financiamiento",
+      "links": [
+        {
+          "label": "Cómo funciona el financiamiento",
+          "href": "/financing"
+        },
+        {
+          "label": "Cherry",
+          "href": "/financing/cherry"
+        },
+        {
+          "label": "Sunbit",
+          "href": "/financing/sunbit"
+        },
+        {
+          "label": "CareCredit",
+          "href": "/financing/carecredit"
+        },
+        {
+          "label": "LendingClub",
+          "href": "/financing/lendingclub"
+        },
+        {
+          "label": "Affirm",
+          "href": "/financing/affirm"
+        }
+      ]
+    },
+    {
+      "title": "Nosotros",
+      "links": [
+        {
+          "label": "Clínica",
+          "href": "/clinic"
+        },
+        {
+          "label": "Contacto",
+          "href": "/contact"
+        },
+        {
+          "label": "Pacientes de otros estados",
+          "href": "/out-of-state-patients"
+        },
+        {
+          "label": "Referidos",
+          "href": "/referrals"
+        },
+        {
+          "label": "Alianzas",
+          "href": "/partnerships"
+        },
+        {
+          "label": "Evaluación gratuita por fotos",
+          "href": "/free-photo-evaluation"
+        },
+        {
+          "label": "Blog",
+          "href": "/blog"
+        },
+        {
+          "label": "Cómo llegar",
+          "href": "maps:place"
+        }
+      ]
+    }
+  ],
+  "legal": [
+    {
+      "label": "Política de privacidad",
+      "href": "/privacy-policy"
+    },
+    {
+      "label": "Términos",
+      "href": "/terms"
+    },
+    {
+      "label": "Aviso de prácticas de privacidad",
+      "href": "/notice-of-privacy-practices"
+    },
+    {
+      "label": "Reembolsos y cancelaciones",
+      "href": "/refund-and-cancellation"
+    }
+  ]
+}

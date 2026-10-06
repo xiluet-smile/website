@@ -1,0 +1,56 @@
+{
+  "guide": [
+    { "n": 1, "title": "Sonrisa de frente", "hint": "Sonrisa natural, dientes juntos", "img": "guide-front-smile.jpg", "zoom": false },
+    { "n": 2, "title": "Lado derecho", "hint": "Mordida del lado derecho", "img": "guide-right-side.jpg", "zoom": false },
+    { "n": 3, "title": "Lado izquierdo", "hint": "Mordida del lado izquierdo", "img": "guide-left-side.jpg", "zoom": false },
+    { "n": 4, "title": "Arcada superior", "hint": "Desde abajo, con la cámara hacia arriba", "img": "guide-upper-arch.jpg", "zoom": true },
+    { "n": 5, "title": "Arcada inferior", "hint": "Desde arriba, con la cámara hacia abajo", "img": "guide-lower-arch.jpg", "zoom": true }
+  ],
+  "limits": { "maxPhotos": 8, "maxPhotoMb": 10 },
+  "drop": {
+    "empty": "Toca para agregar tus fotos",
+    "emptyHint": "Selecciona las cinco a la vez, o empieza con la sonrisa de frente. JPG, PNG o HEIC.",
+    "one": "{count} foto agregada · agrega más",
+    "many": "{count} fotos agregadas · agrega más",
+    "limitHint": "Hasta {max} fotos"
+  },
+  "privacyNote": "Tus fotos son privadas y solo las ve tu equipo dental de Xiluet.",
+  "concernsLabel": "¿Qué es lo que más te molesta?",
+  "concerns": ["Color", "Chips or wear", "Gaps", "Crooked", "Missing teeth", "Old dental work", "Gummy smile"],
+  "concernsLabels": ["Color", "Astillados o desgaste", "Espacios", "Dientes torcidos", "Dientes faltantes", "Trabajo dental viejo", "Sonrisa gingival"],
+  "consent": {
+    "version": "lead-2026-10",
+    "text": "Acepto que Xiluet Smiles me contacte sobre mi evaluación por mensaje de texto, llamada o correo electrónico. Pueden aplicarse tarifas de mensajes y datos. Responde STOP para cancelar.",
+    "privacyLabel": "Política de privacidad"
+  },
+  "submit": { "idle": "Enviar al doctor", "sent": "Enviado" },
+  "confirmation": {
+    "heading": "Enviado. Un doctor está revisando tu sonrisa.",
+    "receivedOne": "{count} foto recibida",
+    "receivedMany": "{count} fotos recibidas",
+    "noted": ", anotamos: {concerns}.",
+    "body": "Te escribiremos primero por mensaje de texto y luego por correo electrónico, en menos de {replyHours} horas durante el horario de oficina ({officeHours} ET).",
+    "link": "Mira resultados mientras esperas →"
+  },
+  "autoresponder": {
+    "subject": "Enviado. Un doctor está revisando tu sonrisa.",
+    "photosLine": "Tus fotos van directo al doctor que diseñará tu caso.",
+    "body": "Te escribiremos primero por mensaje de texto y luego por correo electrónico, en menos de {replyHours} horas durante el horario de oficina ({officeHours} ET)."
+  },
+  "after": [
+    { "n": "01", "t": "Te revisa un doctor, no un vendedor", "d": "Tus fotos llegan a uno de los tres doctores. Ellos revisan si eres candidato y qué tratamiento te conviene." },
+    { "n": "02", "t": "Presupuesto por escrito en menos de {replyHours} horas", "d": "Tratamiento, número de dientes, precio y tiempos. Por escrito, durante el horario de oficina." },
+    { "n": "03", "t": "Opciones de financiamiento incluidas", "d": "Los dos o tres socios con más probabilidad de aprobarte, con ejemplos de pagos mensuales." },
+    { "n": "04", "t": "Tú decides. Sin presión después", "d": "Reserva tus fechas con un depósito de ${depositUsd} cuando estés listo. Un solo mensaje de seguimiento de nuestra parte y luego te dejamos tranquilo." }
+  ],
+  "errors": {
+    "generic": "Tus fotos no se enviaron. Inténtalo de nuevo o llámanos.",
+    "invalid": "Completa tu nombre, teléfono y correo electrónico, y marca la casilla de consentimiento.",
+    "photos": "Las fotos deben ser imágenes (JPG, PNG, WebP, GIF o HEIC), hasta {max} fotos de {mb} MB cada una.",
+    "too_many": "Puedes enviar hasta {max} fotos.",
+    "too_big": "Cada foto debe pesar {mb} MB o menos.",
+    "not_image": "Solo se pueden agregar archivos de imagen.",
+    "rate": "Demasiados intentos. Espera unos minutos e inténtalo de nuevo, o llámanos.",
+    "turnstile": "No pudimos verificar tu navegador. Recarga la página e inténtalo de nuevo, o llámanos."
+  }
+}

@@ -1,0 +1,341 @@
+{
+  "packages": [
+    {
+      "id": "signature-veneers",
+      "kicker": "Diseño de sonrisa",
+      "name": "Carillas Signature",
+      "price": "$6,000",
+      "sub": "20 carillas de porcelana",
+      "badge": "La más elegida",
+      "features": [
+        "20 carillas de porcelana",
+        "Limpieza profesional y radiografías",
+        "Vista previa del diseño que apruebas primero",
+        "Entrega en 5 días hábiles",
+        "Garantía de 5 años, por escrito"
+      ],
+      "note": "Solo carillas. La limpieza profunda y otros procedimientos se cotizan por separado.",
+      "priceUsd": 6000,
+      "featured": true,
+      "href": "/porcelain-veneers-miami",
+      "home": {
+        "sub": "20 carillas",
+        "features": [
+          "20 carillas de porcelana, 0.3 mm",
+          "Vista previa del diseño que apruebas primero",
+          "Entrega en 5 días hábiles",
+          "Garantía de 5 años, por escrito"
+        ]
+      }
+    },
+    {
+      "id": "complete-restoration",
+      "kicker": "Coronas y puentes",
+      "name": "Restauración completa",
+      "price": "$7,000",
+      "sub": "20 restauraciones dentales",
+      "badge": "",
+      "features": [
+        "20 coronas, puentes o carillas",
+        "Limpieza profesional y radiografías",
+        "Entrega en 5 días hábiles",
+        "Entrega urgente en 3 días hábiles: $10,000",
+        "Garantía de 5 años, por escrito"
+      ],
+      "note": "La limpieza profunda y otros procedimientos se cotizan por separado.",
+      "priceUsd": 7000,
+      "featured": false,
+      "href": "/full-mouth-reconstruction-miami",
+      "home": {
+        "sub": "20 restauraciones",
+        "features": [
+          "20 coronas, puentes o carillas",
+          "Entrega en 5 días hábiles",
+          "Urgente en 3 días: $10,000",
+          "Garantía de 5 años, por escrito"
+        ]
+      }
+    },
+    {
+      "id": "full-mouth-reconstruction",
+      "kicker": "Boca completa",
+      "name": "Reconstrucción bucal completa",
+      "price": "$10,000",
+      "sub": "rehabilitación completa",
+      "badge": "",
+      "features": [
+        "Cada diente planificado en conjunto",
+        "Análisis de mordida y escaneos 3D",
+        "Limpieza profesional y radiografías",
+        "Entrega en 7 días hábiles",
+        "Garantía de 5 años, por escrito"
+      ],
+      "note": "La limpieza profunda y otros procedimientos se cotizan por separado.",
+      "priceUsd": 10000,
+      "featured": false,
+      "href": "/full-mouth-reconstruction-miami",
+      "home": {
+        "sub": "completa",
+        "features": [
+          "Cada diente planificado en conjunto",
+          "Análisis de mordida y escaneos 3D",
+          "Entrega en 7 días hábiles",
+          "Garantía de 5 años, por escrito"
+        ]
+      }
+    },
+    {
+      "id": "all-on-x-fixed-arch",
+      "kicker": "Implantes",
+      "name": "Arcada fija All-on-X",
+      "price": "$10,000",
+      "sub": "por arcada · $9,000 en efectivo",
+      "badge": "Precio en efectivo",
+      "features": [
+        "Hasta 6 implantes por arcada",
+        "Puente fijo híbrido",
+        "Limpieza profesional y radiografías",
+        "Revisión de la tomografía antes de la cirugía"
+      ],
+      "note": "No incluye extracciones, injerto de hueso, elevación de seno ni membranas. Se cotizan según la lista de precios si hacen falta.",
+      "priceUsd": 10000,
+      "featured": false,
+      "href": "/all-on-x-dental-implants-miami",
+      "home": {
+        "sub": "por arcada · $9,000 en efectivo",
+        "features": [
+          "Hasta 6 implantes por arcada",
+          "Puente fijo híbrido",
+          "Revisión de la tomografía antes de la cirugía",
+          "Extracciones e injertos se cotizan por separado"
+        ]
+      }
+    }
+  ],
+  "groups": [
+    {
+      "n": "01",
+      "title": "Limpieza",
+      "sub": "Antes de cualquier trabajo cosmético",
+      "note": "La limpieza regular está incluida en todos los paquetes. La limpieza profunda se agrega solo si tus encías la necesitan.",
+      "items": [
+        {
+          "name": "Limpieza regular",
+          "price": "$100",
+          "priceUsd": 100,
+          "unit": "",
+          "was": "",
+          "note": ""
+        },
+        {
+          "name": "Limpieza profunda",
+          "price": "$700",
+          "priceUsd": 700,
+          "unit": "",
+          "was": "",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "n": "02",
+      "title": "Restauradora",
+      "sub": "Dientes individuales",
+      "note": "Las coronas y los puentes tienen 50% de descuento ($500) cuando se hacen junto con tu diseño de sonrisa. El paquete de $6,000 cubre un juego completo de 20 carillas.",
+      "items": [
+        {
+          "name": "Empaste",
+          "price": "$300",
+          "priceUsd": 300,
+          "unit": "",
+          "was": "",
+          "note": ""
+        },
+        {
+          "name": "Corona de porcelana",
+          "price": "$500",
+          "priceUsd": 500,
+          "unit": "",
+          "was": "$1,000",
+          "note": "50% de descuento con tu diseño de sonrisa"
+        },
+        {
+          "name": "Puente",
+          "price": "$500",
+          "priceUsd": 500,
+          "unit": "por unidad",
+          "was": "$1,000",
+          "note": "50% de descuento con tu diseño de sonrisa"
+        },
+        {
+          "name": "Carilla",
+          "price": "$1,000",
+          "priceUsd": 1000,
+          "unit": "",
+          "was": "",
+          "note": ""
+        },
+        {
+          "name": "Endodoncia",
+          "price": "$1,000",
+          "priceUsd": 1000,
+          "unit": "",
+          "was": "",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "n": "03",
+      "title": "Implantes y dentaduras",
+      "sub": "Reemplazo de dientes perdidos",
+      "note": "Para una arcada completa, el paquete All-on-X suele ser la mejor opción en valor.",
+      "items": [
+        {
+          "name": "Corona sobre implante",
+          "price": "$1,500",
+          "priceUsd": 1500,
+          "unit": "",
+          "was": "",
+          "note": ""
+        },
+        {
+          "name": "Implante dental completo con corona",
+          "price": "$2,500",
+          "priceUsd": 2500,
+          "unit": "",
+          "was": "",
+          "note": ""
+        },
+        {
+          "name": "Dentadura inmediata",
+          "price": "$1,000",
+          "priceUsd": 1000,
+          "unit": "",
+          "was": "",
+          "note": ""
+        },
+        {
+          "name": "Dentadura permanente",
+          "price": "$2,000",
+          "priceUsd": 2000,
+          "unit": "",
+          "was": "",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "n": "04",
+      "title": "Alineación y protección",
+      "sub": "Alinear y proteger",
+      "note": "Se recomienda un protector nocturno después de las carillas si rechinas los dientes.",
+      "items": [
+        {
+          "name": "Invisalign",
+          "price": "$4,000",
+          "priceUsd": 4000,
+          "unit": "",
+          "was": "",
+          "note": ""
+        },
+        {
+          "name": "Retenedor",
+          "price": "$400",
+          "priceUsd": 400,
+          "unit": "",
+          "was": "",
+          "note": ""
+        },
+        {
+          "name": "Protector nocturno",
+          "price": "$400",
+          "priceUsd": 400,
+          "unit": "",
+          "was": "",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "n": "05",
+      "title": "Cirugía y encías",
+      "sub": "Cuando se necesita antes del diseño",
+      "note": "La gingivectomía empareja la línea de las encías antes de las carillas. El retiro de un diseño de sonrisa anterior aplica a carillas o coronas previas.",
+      "items": [
+        {
+          "name": "Gingivectomía",
+          "price": "$500",
+          "priceUsd": 500,
+          "unit": "por arcada",
+          "was": "",
+          "note": ""
+        },
+        {
+          "name": "Extracción dental",
+          "price": "$400",
+          "priceUsd": 400,
+          "unit": "",
+          "was": "",
+          "note": ""
+        },
+        {
+          "name": "Extracción de muela del juicio",
+          "price": "$1,000",
+          "priceUsd": 1000,
+          "unit": "",
+          "was": "",
+          "note": ""
+        },
+        {
+          "name": "Retiro de diseño de sonrisa anterior",
+          "price": "$500",
+          "priceUsd": 500,
+          "unit": "",
+          "was": "",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "n": "06",
+      "title": "Extras All-on-X",
+      "sub": "Se cotizan tras revisar la tomografía",
+      "note": "No incluidos en el paquete All-on-X de $10,000. Solo si tu escaneo muestra que son necesarios.",
+      "items": [
+        {
+          "name": "Extracción dental",
+          "price": "$400",
+          "priceUsd": 400,
+          "unit": "cada una",
+          "was": "",
+          "note": ""
+        },
+        {
+          "name": "Injerto de hueso",
+          "price": "A cotizar",
+          "priceUsd": null,
+          "unit": "",
+          "was": "",
+          "note": ""
+        },
+        {
+          "name": "Elevación de seno",
+          "price": "A cotizar",
+          "priceUsd": null,
+          "unit": "",
+          "was": "",
+          "note": ""
+        },
+        {
+          "name": "Membranas",
+          "price": "A cotizar",
+          "priceUsd": null,
+          "unit": "",
+          "was": "",
+          "note": ""
+        }
+      ]
+    }
+  ]
+}

@@ -3,7 +3,8 @@
 // Pieces shared by LeadForm and ContactForm.
 import { useSyncExternalStore } from "react";
 import Turnstile, { resetTurnstile, waitForTurnstile } from "./Turnstile";
-import { nav, site } from "@/lib/site";
+import { localizePath, type Locale } from "@/lib/i18n";
+import { site } from "@/lib/site";
 
 export const inputClass =
   "h-[50px] w-full rounded-[12px] border border-sand bg-card px-3.5 text-base font-normal text-ink placeholder:text-hint";
@@ -18,9 +19,9 @@ export type Consent = { version: string; text: string; privacyLabel: string };
 export const consentValue = (c: Consent) => `${c.text} ${c.privacyLabel}.`;
 
 /** Required consent checkbox. Its value is the wording itself, which the server logs for TCPA. */
-export function ConsentField({ consent }: { consent: Consent }) {
-  // TODO(clinic): Privacy Policy page does not exist yet; the link follows nav.json → legal.
-  const privacyHref = nav.legal.find((l) => l.label === consent.privacyLabel)?.href ?? "#";
+export function ConsentField({ consent, locale = "en" }: { consent: Consent; locale?: Locale }) {
+  // The label is the locale's name for the Privacy Policy page (nav.json → legal); the link is the localized route.
+  const privacyHref = localizePath("/privacy-policy", locale);
   return (
     <label className="grid grid-cols-[20px_minmax(0,1fr)] items-start gap-2.5 text-[13px] leading-[1.45] text-muted">
       <input type="checkbox" name="consent" value={consentValue(consent)} required className="mt-0.5 h-[18px] w-[18px]" />
@@ -35,8 +36,8 @@ export function ConsentField({ consent }: { consent: Consent }) {
   );
 }
 
-/** Honeypot, the no-JS marker and the Turnstile widget. Place inside the <form>. */
-export function FormGuards() {
+/** Honeypot, the no-JS marker, the form's locale and the Turnstile widget. Place inside the <form>. */
+export function FormGuards({ locale = "en" }: { locale?: Locale }) {
   return (
     <>
       {/* visibility:hidden (not just off-screen) so browser autofill never fills it for a real visitor. */}
@@ -49,6 +50,8 @@ export function FormGuards() {
       <noscript>
         <input type="hidden" name="nojs" value="1" />
       </noscript>
+      {/* Tells /api/* which language the form was on, so no-JS redirects land on the same-language page. */}
+      <input type="hidden" name="locale" value={locale} />
       <Turnstile />
     </>
   );

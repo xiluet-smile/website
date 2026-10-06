@@ -4,9 +4,10 @@ import { CameraIcon } from "@/components/Icons";
 import Img from "@/components/Img";
 import JsonLd from "@/components/JsonLd";
 import PageHero from "@/components/PageHero";
-import { caseById, caseDisclaimer, lenders, packageById, type Faq } from "@/lib/content";
+import { caseById, getContent, packageById, ui, type Faq } from "@/lib/content-i18n";
+import { localizeHref, localizePath, type Locale } from "@/lib/i18n";
 import { faqPage, medicalProcedure, pageGraph } from "@/lib/schema";
-import { pages, site, type PagePath } from "@/lib/site";
+import { site, type PagePath } from "@/lib/site";
 
 /** Shape of src/content/treatments/*.json. */
 export type Treatment = {
@@ -63,43 +64,50 @@ export type Treatment = {
   cta: { title: string; body: string; cardTitle: string; cardBody: string; button: string };
 };
 
-const EVALUATION = "/free-photo-evaluation";
 const h2 = "m-0 font-serif text-[34px] leading-[1.2] font-normal text-pretty lg:text-[48px] lg:leading-[1.1]";
 const sectionHead = "flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between lg:gap-8";
 const photoLabel =
   "absolute text-[11px] font-semibold tracking-[.14em] text-on-dark uppercase [text-shadow:0_1px_8px_rgba(0,0,0,.5)]";
 const panelShadow = "shadow-[inset_0_1px_0_rgba(247,244,238,.18),0_30px_80px_rgba(4,40,46,.32)]";
 
-export default function TreatmentPage({ data }: { data: Treatment }) {
+export default function TreatmentPage({ data, locale = "en" }: { data: Treatment; locale?: Locale }) {
+  const t = ui(locale);
+  const { pages, lenders, cases } = getContent(locale);
   const path = data.path as PagePath;
-  const pkg = packageById(data.packageId);
+  const pkg = packageById(locale, data.packageId);
   const { hero, candidates, why, week, results, price, faq, cta } = data;
-  const heroCase = hero.image.caseId ? caseById(hero.image.caseId) : null;
+  const heroCase = hero.image.caseId ? caseById(locale, hero.image.caseId) : null;
+  const evaluation = localizePath("/free-photo-evaluation", locale);
 
   return (
     <main id="main">
       <JsonLd
         data={pageGraph(
           path,
-          medicalProcedure(path, {
-            name: data.schema.name,
-            definition: hero.definition,
-            procedureType: data.schema.procedureType,
-            priceUsd: pkg.priceUsd,
-          }),
+          locale,
+          medicalProcedure(
+            path,
+            {
+              name: data.schema.name,
+              definition: hero.definition,
+              procedureType: data.schema.procedureType,
+              priceUsd: pkg.priceUsd,
+            },
+            locale,
+          ),
           faqPage(faq.items),
         )}
       />
 
-      <PageHero>
+      <PageHero locale={locale}>
         <div className="wrap relative z-[2] grid gap-10 pt-8 pb-12 lg:grid-cols-[minmax(0,1fr)_480px] lg:items-center lg:gap-14 lg:pt-14 lg:pb-20">
           <div className="flex flex-col gap-5 lg:gap-[26px]">
             <nav aria-label="Breadcrumb" className="flex flex-wrap gap-2 text-[13px] text-on-dark-muted">
-              <Link href="/" className="text-on-dark-muted no-underline hover:text-gold">
-                Home
+              <Link href={localizePath("/", locale)} className="text-on-dark-muted no-underline hover:text-gold">
+                {t.home}
               </Link>
               <span aria-hidden="true">/</span>
-              <span>Treatments</span>
+              <span>{t.breadcrumb.treatments}</span>
               <span aria-hidden="true">/</span>
               <span aria-current="page" className="text-gold">
                 {data.breadcrumb}
@@ -118,9 +126,9 @@ export default function TreatmentPage({ data }: { data: Treatment }) {
               {hero.lead}
             </p>
             <div className="flex flex-col gap-3 lg:flex-row lg:flex-wrap lg:items-center lg:gap-3.5">
-              <Link href={EVALUATION} className="btn btn-gold h-[52px] pr-6 pl-5 text-[17px]">
+              <Link href={evaluation} className="btn btn-gold h-[52px] pr-6 pl-5 text-[17px]">
                 <CameraIcon />
-                Free photo evaluation
+                {t.freePhotoEvaluation}
               </Link>
               <a
                 href="#week"
@@ -163,8 +171,8 @@ export default function TreatmentPage({ data }: { data: Treatment }) {
                   className="block h-auto w-full"
                   priority
                 />
-                <div className={`${photoLabel} top-4 left-4`}>Before</div>
-                <div className={`${photoLabel} top-4 right-4`}>After</div>
+                <div className={`${photoLabel} top-4 left-4`}>{t.before}</div>
+                <div className={`${photoLabel} top-4 right-4`}>{t.after}</div>
               </>
             ) : (
               <Img
@@ -251,7 +259,7 @@ export default function TreatmentPage({ data }: { data: Treatment }) {
             <h2 className={`${h2} mb-3`}>{week.title}</h2>
             <p className="m-0 max-w-[52ch] text-[17px] text-body lg:text-lg">{week.intro}</p>
           </div>
-          <Link href="/out-of-state-patients" className="inline-flex min-h-11 items-center font-semibold lg:min-h-0 lg:whitespace-nowrap">
+          <Link href={localizePath("/out-of-state-patients", locale)} className="inline-flex min-h-11 items-center font-semibold lg:min-h-0 lg:whitespace-nowrap">
             {week.linkLabel}
           </Link>
         </div>
@@ -281,21 +289,21 @@ export default function TreatmentPage({ data }: { data: Treatment }) {
       <section className="wrap pt-16 lg:pt-28">
         <div className={`${sectionHead} mb-7`}>
           <h2 className={h2}>{results.title}</h2>
-          <Link href="/before-and-after" className="inline-flex min-h-11 items-center font-semibold lg:min-h-0">
+          <Link href={localizePath("/before-and-after", locale)} className="inline-flex min-h-11 items-center font-semibold lg:min-h-0">
             {results.linkLabel}
           </Link>
         </div>
         <div className="grid gap-6 lg:grid-cols-3">
-          {(results.caseIds ?? []).map(caseById).map((c) => (
+          {(results.caseIds ?? []).map((id) => caseById(locale, id)).map((c) => (
             <figure key={c.id} className="m-0 flex flex-col gap-2.5">
               <div className="relative overflow-hidden rounded-2xl shadow-[0_12px_32px_rgba(26,26,26,.1)]">
                 <Img src={c.image} alt={c.alt} sizes="(min-width: 1024px) 33vw, 100vw" className="block h-auto w-full" />
-                <span className={`${photoLabel} top-3 left-3.5`}>Before</span>
-                <span className={`${photoLabel} top-3 right-3.5`}>After</span>
+                <span className={`${photoLabel} top-3 left-3.5`}>{t.before}</span>
+                <span className={`${photoLabel} top-3 right-3.5`}>{t.after}</span>
               </div>
               <figcaption className="flex justify-between gap-3 text-sm text-muted">
                 <span>{results.label}</span>
-                <span className="text-right">{caseDisclaimer}</span>
+                <span className="text-right">{cases.disclaimer}</span>
               </figcaption>
             </figure>
           ))}
@@ -327,7 +335,7 @@ export default function TreatmentPage({ data }: { data: Treatment }) {
             <p className="m-0 text-[17px] leading-[1.55] text-pretty text-body lg:text-lg">{price.body}</p>
             <div className="mt-1.5 flex flex-col gap-2.5">
               <Link
-                href="/financing"
+                href={localizePath("/financing", locale)}
                 className="self-start text-[13px] font-semibold tracking-[.1em] text-muted uppercase no-underline hover:text-gold-text"
               >
                 {price.lendersLabel}
@@ -336,7 +344,7 @@ export default function TreatmentPage({ data }: { data: Treatment }) {
                 {lenders.map((l) => (
                   <li key={l.slug}>
                     <Link
-                      href={l.href}
+                      href={localizeHref(l.href, locale)}
                       className="inline-flex min-h-11 items-center rounded-full border border-sand bg-[rgba(255,253,248,.7)] px-3.5 text-sm font-semibold text-teal no-underline hover:border-gold lg:min-h-0 lg:py-2"
                     >
                       {l.name}
@@ -345,7 +353,7 @@ export default function TreatmentPage({ data }: { data: Treatment }) {
                 ))}
               </ul>
             </div>
-            <Link href="/veneers-cost-miami" className="inline-flex min-h-11 items-center self-start font-semibold lg:min-h-0">
+            <Link href={localizePath("/veneers-cost-miami", locale)} className="inline-flex min-h-11 items-center self-start font-semibold lg:min-h-0">
               {price.compareLabel}
             </Link>
           </div>
@@ -383,7 +391,7 @@ export default function TreatmentPage({ data }: { data: Treatment }) {
                   </li>
                 ))}
               </ul>
-              <Link href={EVALUATION} className="btn btn-teal h-[52px] text-base">
+              <Link href={evaluation} className="btn btn-teal h-[52px] text-base">
                 {price.card.cta}
               </Link>
             </div>
@@ -397,11 +405,11 @@ export default function TreatmentPage({ data }: { data: Treatment }) {
         <div className="grid items-start gap-7 lg:grid-cols-[minmax(0,.8fr)_minmax(0,1.4fr)] lg:gap-16">
           <div className="flex flex-col gap-3 lg:sticky lg:top-8 lg:gap-4">
             <h2 className={h2}>{faq.title}</h2>
-            <Link href="/contact" className="inline-flex min-h-11 items-center self-start font-semibold lg:min-h-0">
+            <Link href={localizePath("/contact", locale)} className="inline-flex min-h-11 items-center self-start font-semibold lg:min-h-0">
               {faq.linkLabel}
             </Link>
           </div>
-          <FaqAccordion faqs={faq.items} className="flex flex-col gap-3" />
+          <FaqAccordion faqs={faq.items} className="flex flex-col gap-3" locale={locale} />
         </div>
       </section>
 
@@ -417,7 +425,7 @@ export default function TreatmentPage({ data }: { data: Treatment }) {
           <div className="flex flex-col gap-3 rounded-2xl border border-[rgba(255,255,255,.8)] bg-[rgba(247,244,238,.9)] p-6 text-ink lg:p-8">
             <h3 className="m-0 font-serif text-2xl font-normal">{cta.cardTitle}</h3>
             <p className="m-0 text-[15px] text-body">{cta.cardBody}</p>
-            <Link href={EVALUATION} className="btn btn-teal mt-2 h-[52px] text-[17px]">
+            <Link href={evaluation} className="btn btn-teal mt-2 h-[52px] text-[17px]">
               {cta.button}
             </Link>
           </div>

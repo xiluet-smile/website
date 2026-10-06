@@ -4,7 +4,8 @@ import FinancingCta from "./FinancingCta";
 import FinancingSteps from "./FinancingSteps";
 import Img from "./Img";
 import PageHero from "./PageHero";
-import { lenders, type Faq, type Lender } from "@/lib/content";
+import { getContent, tpl, ui, type Faq, type Lender } from "@/lib/content-i18n";
+import { localizeHref, localizePath, type Locale } from "@/lib/i18n";
 
 export type LenderContent = {
   slug: string;
@@ -17,20 +18,22 @@ export type LenderContent = {
 };
 
 /** Shared template for /financing/{partner}. `h1` comes from pages.json. */
-export default function LenderPage({ lender, content, h1 }: { lender: Lender; content: LenderContent; h1: string }) {
+export default function LenderPage({ lender, content, h1, locale = "en" }: { lender: Lender; content: LenderContent; h1: string; locale?: Locale }) {
+  const t = ui(locale);
+  const { lenders } = getContent(locale);
   const others = lenders.filter((l) => l.slug !== lender.slug);
   return (
     <>
-      <PageHero>
+      <PageHero locale={locale}>
         <div className="wrap relative z-[2] grid items-center gap-8 pt-8 pb-12 lg:grid-cols-[minmax(0,1fr)_480px] lg:gap-14 lg:pt-14 lg:pb-20">
           <div className="flex flex-col gap-5 lg:gap-[26px]">
             <nav aria-label="Breadcrumb" className="flex flex-wrap gap-2 text-[13px] text-on-dark-muted">
-              <Link href="/" className="text-on-dark-muted no-underline hover:text-gold">
-                Home
+              <Link href={localizePath("/", locale)} className="text-on-dark-muted no-underline hover:text-gold">
+                {t.home}
               </Link>
               <span aria-hidden="true">/</span>
-              <Link href="/financing" className="text-on-dark-muted no-underline hover:text-gold">
-                Financing
+              <Link href={localizePath("/financing", locale)} className="text-on-dark-muted no-underline hover:text-gold">
+                {t.breadcrumb.financing}
               </Link>
               <span aria-hidden="true">/</span>
               <span aria-current="page" className="text-gold">
@@ -81,17 +84,17 @@ export default function LenderPage({ lender, content, h1 }: { lender: Lender; co
 
       <section className="wrap pt-16 lg:pt-28">
         <h2 className="m-0 mb-6 font-serif text-[34px] leading-[1.2] font-normal lg:mb-10 lg:max-w-[18ch] lg:text-5xl lg:leading-[1.1]">
-          How it works with {lender.name}
+          {tpl(t.lender.howItWorks, { name: lender.name })}
         </h2>
         <FinancingSteps steps={content.steps} />
-        <nav aria-label="Other financing partners" className="mt-8 flex flex-wrap items-center gap-2.5 lg:mt-10">
+        <nav aria-label={t.lender.othersAria} className="mt-8 flex flex-wrap items-center gap-2.5 lg:mt-10">
           <span className="mr-1.5 w-full text-[13px] font-semibold tracking-widest text-muted uppercase lg:w-auto">
-            Other partners
+            {t.lender.others}
           </span>
           {others.map((o) => (
             <Link
               key={o.slug}
-              href={o.href}
+              href={localizeHref(o.href, locale)}
               className="inline-flex min-h-11 items-center rounded-full border border-sand bg-[rgba(255,253,248,.7)] px-3.5 text-sm font-semibold text-teal no-underline lg:min-h-0 lg:py-2"
             >
               {o.name}
@@ -104,13 +107,13 @@ export default function LenderPage({ lender, content, h1 }: { lender: Lender; co
       <section className="wrap pt-16 lg:pt-28">
         <div className="grid items-start gap-6 lg:grid-cols-[minmax(0,.8fr)_minmax(0,1.4fr)] lg:gap-16">
           <h2 className="m-0 font-serif text-[34px] leading-[1.2] font-normal lg:sticky lg:top-8 lg:text-5xl lg:leading-[1.1]">
-            {lender.name} questions
+            {tpl(t.lender.questions, { name: lender.name })}
           </h2>
-          <FaqAccordion faqs={content.faq} className="flex flex-col gap-3" />
+          <FaqAccordion faqs={content.faq} className="flex flex-col gap-3" locale={locale} />
         </div>
       </section>
 
-      <FinancingCta />
+      <FinancingCta locale={locale} />
     </>
   );
 }

@@ -1,0 +1,210 @@
+{
+  "path": "/all-on-x-dental-implants-miami",
+  "packageId": "all-on-x-fixed-arch",
+  "breadcrumb": "Implantes All-on-X",
+  "schema": {
+    "name": "Implantes dentales All-on-X",
+    "procedureType": "http://schema.org/NoninvasiveProcedure"
+  },
+  "hero": {
+    "definition": "Los implantes All-on-X reemplazan toda una arcada de dientes perdidos o en mal estado con un puente fijo sostenido por 4 a 6 implantes dentales. En Xiluet Smiles en Miami el paquete cuesta $10,000 por arcada ($9,000 en efectivo) por hasta 6 implantes y un puente híbrido; extracciones, injertos y elevaciones de seno se cotizan aparte tras una tomografía.",
+    "lead": "Para toda una mandíbula de dientes perdidos o en mal estado. Implantes colocados y un puente provisional fijo en una sola visita, y dientes finales de zirconia después de la cicatrización. Nada removible.",
+    "secondaryCta": "Mira el cronograma",
+    "stats": [
+      {
+        "kind": "text",
+        "value": "El mismo día",
+        "label": "dientes provisionales fijos"
+      },
+      {
+        "kind": "text",
+        "value": "4 a 6",
+        "label": "implantes por arcada"
+      },
+      {
+        "kind": "text",
+        "value": "94–98%",
+        "label": "de supervivencia de los implantes a 10 años"
+      },
+      {
+        "kind": "rating",
+        "label": "Reseñas de Google"
+      }
+    ],
+    "image": {
+      "src": "gen-zirconia-bridge.jpg",
+      "alt": "Puente de zirconia de arcada completa",
+      "caption": "Puente final de zirconia, fijo sobre 4 a 6 implantes"
+    }
+  },
+  "candidates": {
+    "title": "Para toda una mandíbula, no unos pocos dientes",
+    "intro": "Si alguno de estos es tu caso, All-on-X es la conversación que debes tener.",
+    "items": [
+      {
+        "t": "Dientes flojos o en mal estado",
+        "d": "La mayor parte de la arcada ya no se puede salvar con coronas ni endodoncias."
+      },
+      {
+        "t": "Dentaduras que se mueven",
+        "d": "Los dientes fijos nunca se quitan, nunca se deslizan y no necesitan adhesivo."
+      },
+      {
+        "t": "Pérdida de hueso",
+        "d": "Los implantes angulados aprovechan el hueso que tienes, muchas veces sin injerto."
+      },
+      {
+        "t": "Evitar comidas",
+        "d": "Bistec, manzanas y nueces otra vez, con dientes que se quedan en su lugar."
+      },
+      {
+        "t": "Un aspecto hundido",
+        "d": "Los dientes fijos sostienen tus labios y mejillas desde adentro."
+      }
+    ]
+  },
+  "why": {
+    "eyebrow": "Por qué All-on-X aquí",
+    "title": "Cirugía, laboratorio y dientes finales bajo un mismo techo.",
+    "body": "Tu cirujano, tu doctor restaurador y tu ceramista trabajan en el mismo edificio. Por eso tu puente provisional se coloca el mismo día de la cirugía y tus dientes finales se moldean y se igualan de tono en persona.",
+    "image": null,
+    "facts": [
+      {
+        "label": "Evidencia",
+        "big": "94–98%",
+        "sub": "Supervivencia de los implantes a 10 años en estudios a largo plazo del concepto All-on-4."
+      },
+      {
+        "label": "Puente fijo",
+        "big": "99%",
+        "sub": "De las prótesis siguen en su lugar a los 10 años en los mismos estudios."
+      },
+      {
+        "label": "Injerto",
+        "big": "A menudo se evita",
+        "sub": "Los implantes posteriores se angulan para aprovechar el hueso existente."
+      },
+      {
+        "label": "Dientes finales",
+        "big": "Zirconia",
+        "sub": "Fijos, resistentes a las manchas y moldeados para tu cara."
+      }
+    ]
+  },
+  "week": {
+    "title": "Tu cronograma All-on-X",
+    "intro": "Una visita para la cirugía y los dientes el mismo día, cicatrización en casa y luego una semana en Miami para tu puente final.",
+    "linkLabel": "Pregunta por fechas de cirugía →",
+    "visits": [
+      {
+        "k": "Desde casa",
+        "t": "Fotos, radiografías, presupuesto",
+        "d": "Envía fotos y las radiografías que tengas. Un doctor redacta tu presupuesto en menos de 6 horas y te dice si primero hace falta una tomografía.",
+        "time": "Cualquier día"
+      },
+      {
+        "k": "Visita 1 · Día de la cirugía",
+        "t": "Implantes y dientes provisionales fijos",
+        "d": "Extracciones si hacen falta, colocación de 4 a 6 implantes y un puente provisional fijo atornillado el mismo día. Anestesia local.",
+        "time": "Un día. Dieta blanda durante 2 semanas."
+      },
+      {
+        "k": "En casa · 3 a 4 meses",
+        "t": "Cicatrización",
+        "d": "Los implantes se integran al hueso mientras usas los dientes provisionales fijos. Seguimiento por video.",
+        "time": "Sin necesidad de viajar"
+      },
+      {
+        "k": "Visitas 2 y 3 · Una semana",
+        "t": "Puente final de zirconia",
+        "d": "Escaneos, prueba y entrega de tus dientes fijos finales a lo largo de una semana en Miami.",
+        "time": "Unas 2 horas cada una"
+      }
+    ]
+  },
+  "results": {
+    "title": "La vida con dientes fijos",
+    "linkLabel": "Todos los casos →",
+    "editorial": [
+      {
+        "src": "gen-aox-man.jpg",
+        "label": "Come lo que quieras",
+        "cap": "Los dientes fijos nunca se deslizan",
+        "alt": "Hombre riendo al aire libre en Miami"
+      },
+      {
+        "src": "gen-aox-woman-apple.jpg",
+        "label": "Muerde lo que sea",
+        "cap": "Fuerza de masticación completa",
+        "alt": "Mujer mordiendo una manzana"
+      },
+      {
+        "src": "gen-implant-guide.jpg",
+        "label": "Cirugía guiada",
+        "cap": "Planificada sobre tu tomografía",
+        "alt": "Guía quirúrgica y tomografía"
+      }
+    ]
+  },
+  "price": {
+    "eyebrow": "Costo",
+    "title": "$10,000 por arcada. $9,000 en efectivo.",
+    "body": "$10,000 por arcada, o $9,000 en efectivo, por hasta 6 implantes y un puente fijo híbrido. Extracciones, injerto de hueso, elevación de seno y membranas se cotizan aparte según la lista de precios si tu tomografía muestra que son necesarios.",
+    "lendersLabel": "Paga a plazos con",
+    "compareLabel": "Compara todos los paquetes →",
+    "card": {
+      "title": "All-on-X, por arcada",
+      "sub": "Dientes fijos de arcada completa",
+      "badge": "$9,000 en efectivo",
+      "pricePrefix": "por arcada",
+      "priceSuffix": "$9,000 en efectivo",
+      "included": [
+        "Hasta 6 implantes por arcada",
+        "Puente fijo híbrido",
+        "Limpieza profesional y radiografías",
+        "Revisión de la tomografía antes de la cirugía",
+        "Extracciones, injertos, elevación de seno y membranas cotizados aparte"
+      ],
+      "cta": "Quiero mi presupuesto por escrito"
+    },
+    "footnote": "Precio final confirmado por escrito después de la evaluación de un doctor y la revisión de la tomografía."
+  },
+  "faq": {
+    "title": "Preguntas sobre All-on-X, respondidas por los doctores",
+    "linkLabel": "Todas las respuestas →",
+    "items": [
+      {
+        "q": "¿All-on-4 o All-on-6?",
+        "a": "Cuatro implantes es el protocolo estándar. Seis añaden soporte para una mordida fuerte o un hueso más blando. Lo decide tu tomografía, no el precio.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "¿Me quedaré sin dientes?",
+        "a": "No. Un puente provisional fijo se coloca el mismo día de la cirugía. Sales con dientes.",
+        "doc": "Dr. Marta Puentes Marrero, DMD"
+      },
+      {
+        "q": "¿Necesito injerto de hueso?",
+        "a": "Normalmente no. Los implantes posteriores se angulan para aprovechar el hueso que tienes. Si hace falta injerto, aparece en tu presupuesto por escrito.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "¿Cuánto duran?",
+        "a": "Los estudios a largo plazo reportan que entre el 94 y el 98 por ciento de los implantes y cerca del 99 por ciento de los puentes siguen en función a los 10 años. Los puentes de zirconia suelen durar de 10 a 20 años.",
+        "doc": "Dr. Gretell Alonso Fiel, DMD"
+      },
+      {
+        "q": "¿La cirugía se hace despierto?",
+        "a": "Con anestesia local. La mayoría de los pacientes describen presión más que dolor y se van a casa esa misma tarde.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Empieza con fotos. Un doctor te responde en menos de 6 horas.",
+    "body": "Gratis, sin necesidad de visita. Presupuesto por escrito incluido.",
+    "cardTitle": "Evaluación gratuita por fotos",
+    "cardBody": "Dos fotos de tu sonrisa, desde tu celular. Toma 2 minutos.",
+    "button": "Empezar mi evaluación"
+  }
+}

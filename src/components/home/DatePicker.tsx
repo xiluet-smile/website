@@ -1,9 +1,8 @@
 "use client";
 
 import { useEffect, useId, useRef, useState } from "react";
-
-const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-const DOW = ["S", "M", "T", "W", "T", "F", "S"];
+import { ui } from "@/lib/content-i18n";
+import { langTag, type Locale } from "@/lib/i18n";
 
 const iso = (d: Date) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
 const parseIso = (s: string) => {
@@ -20,13 +19,16 @@ type Props = {
   min: Date;
   onChange: (iso: string) => void;
   label: string;
+  locale?: Locale;
 };
 
 /**
  * Brand-styled date picker: a button showing the chosen date and a popover
  * calendar (keyboard: arrows move, Enter/Space pick, Esc closes).
  */
-export default function DatePicker({ value, defaultDate, min, onChange, label }: Props) {
+export default function DatePicker({ value, defaultDate, min, onChange, label, locale = "en" }: Props) {
+  const t = ui(locale).datePicker;
+  const lang = langTag(locale);
   const [open, setOpen] = useState(false);
   const shown = value ? parseIso(value) : defaultDate;
   const [view, setView] = useState(() => new Date(shown.getFullYear(), shown.getMonth(), 1));
@@ -88,7 +90,7 @@ export default function DatePicker({ value, defaultDate, min, onChange, label }:
         onClick={() => (open ? setOpen(false) : openCal())}
         className="inline-flex min-h-8 cursor-pointer items-center gap-2 border-0 border-b-[1.5px] border-gold bg-transparent py-0.5 font-semibold text-teal outline-none focus-visible:outline-2 focus-visible:outline-gold"
       >
-        <span>{shown.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" })}</span>
+        <span>{shown.toLocaleDateString(lang, { weekday: "short", month: "short", day: "numeric" })}</span>
         <svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" className="text-gold-text">
           <rect x="2.5" y="4" width="15" height="13" rx="2.5" fill="none" stroke="currentColor" strokeWidth="1.6" />
           <path d="M2.5 8h15M6.5 2.5v3M13.5 2.5v3" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
@@ -100,7 +102,7 @@ export default function DatePicker({ value, defaultDate, min, onChange, label }:
         <div
           id={id}
           role="dialog"
-          aria-label="Choose a date"
+          aria-label={t.dialog}
           onKeyDown={(e) => {
             if (e.key === "Escape") {
               setOpen(false);
@@ -111,12 +113,12 @@ export default function DatePicker({ value, defaultDate, min, onChange, label }:
         >
           <div className="mb-3 flex items-center justify-between">
             <div className="font-serif text-[19px] text-teal" aria-live="polite">
-              {MONTHS[view.getMonth()]} {view.getFullYear()}
+              {t.months[view.getMonth()]} {view.getFullYear()}
             </div>
             <div className="flex gap-1.5">
               {[
-                { n: -1, label: "Previous month", d: "M12.5 5l-5 5 5 5", ok: canGoBack },
-                { n: 1, label: "Next month", d: "M7.5 5l5 5-5 5", ok: true },
+                { n: -1, label: t.prevMonth, d: "M12.5 5l-5 5 5 5", ok: canGoBack },
+                { n: 1, label: t.nextMonth, d: "M7.5 5l5 5-5 5", ok: true },
               ].map((b) => (
                 <button
                   key={b.n}
@@ -134,7 +136,7 @@ export default function DatePicker({ value, defaultDate, min, onChange, label }:
             </div>
           </div>
           <div className="mb-1 grid grid-cols-7 text-center text-[11px] font-semibold tracking-[.1em] text-muted uppercase">
-            {DOW.map((d, i) => (
+            {t.dow.map((d, i) => (
               <span key={i} className="py-1">
                 {d}
               </span>
@@ -162,7 +164,7 @@ export default function DatePicker({ value, defaultDate, min, onChange, label }:
                   tabIndex={sameDay(d, focusDay) ? 0 : -1}
                   data-focus={sameDay(d, focusDay) || undefined}
                   aria-pressed={sameDay(d, shown)}
-                  aria-label={d.toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric" })}
+                  aria-label={d.toLocaleDateString(lang, { weekday: "long", month: "long", day: "numeric" })}
                   onClick={() => pick(d)}
                   onFocus={() => setFocusDay(d)}
                   className={`mx-auto grid h-9 w-9 cursor-pointer place-items-center rounded-full border-[1.5px] text-sm font-medium transition-colors duration-150 disabled:cursor-default disabled:text-hint ${
@@ -182,9 +184,9 @@ export default function DatePicker({ value, defaultDate, min, onChange, label }:
           </div>
           <div className="mt-3 flex items-center justify-between border-t border-sand pt-3 text-[13px] font-semibold">
             <button type="button" onClick={() => pick(today < min ? min : today)} className="cursor-pointer border-0 bg-transparent p-0 text-gold-text hover:text-teal">
-              Today
+              {t.today}
             </button>
-            <span className="text-xs font-normal text-muted">Weekends count as rest days</span>
+            <span className="text-xs font-normal text-muted">{t.weekends}</span>
           </div>
         </div>
       )}

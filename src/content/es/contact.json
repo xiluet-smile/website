@@ -1,0 +1,61 @@
+{
+  "schemaName": "Contacta a Xiluet Smiles, dentista cosmético en Miami",
+  "addressNote": "Westchester, en la Calle Ocho · 15 min del Aeropuerto Internacional de Miami · Estacionamiento gratuito en el lugar",
+  "hours": "Lunes – Viernes, 9:00 AM – 5:00 PM (EST)",
+  "topics": [
+    "Porcelain veneers",
+    "Smile design",
+    "Full mouth reconstruction",
+    "Implants All-on-X",
+    "Financing",
+    "Existing patient",
+    "Referral",
+    "Partnership",
+    "Something else"
+  ],
+  "topicsLabels": [
+    "Carillas de porcelana",
+    "Diseño de sonrisa",
+    "Reconstrucción bucal completa",
+    "Implantes All-on-X",
+    "Financiamiento",
+    "Ya soy paciente",
+    "Referido",
+    "Alianza",
+    "Otro tema"
+  ],
+  "replyViaLabel": "¿Cómo prefieres que te respondamos?",
+  "replyVia": [
+    "Text",
+    "Call",
+    "WhatsApp",
+    "Email"
+  ],
+  "replyViaLabels": [
+    "Mensaje de texto",
+    "Llamada",
+    "WhatsApp",
+    "Correo electrónico"
+  ],
+  "consent": {
+    "version": "contact-2026-10",
+    "text": "Acepto que Xiluet Smiles me contacte por mensaje de texto, llamada o correo electrónico. Pueden aplicarse tarifas de mensajes y datos. Responde STOP para cancelar.",
+    "privacyLabel": "Política de privacidad"
+  },
+  "submit": {
+    "idle": "Enviar mensaje",
+    "sent": "Enviado"
+  },
+  "confirmation": {
+    "heading": "Mensaje recibido.",
+    "body": "Respondemos en pocas horas durante el horario de oficina",
+    "by": ", por {via}",
+    "urgent": "Para algo urgente, llama al"
+  },
+  "errors": {
+    "generic": "Tu mensaje no se envió. Inténtalo de nuevo o llámanos.",
+    "invalid": "Completa tu nombre, correo electrónico y mensaje, y marca la casilla de consentimiento.",
+    "rate": "Demasiados intentos. Espera unos minutos e inténtalo de nuevo, o llámanos.",
+    "turnstile": "No pudimos verificar tu navegador. Recarga la página e inténtalo de nuevo, o llámanos."
+  }
+}

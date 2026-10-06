@@ -62,7 +62,7 @@
   "replyHours": 6,
   "depositUsd": 250,
   "logo": "xiluet-logo-transparent.png",
-  "defaultOgImage": "gen-clinic-room.jpg",
+  "defaultOgImage": "clinic-lobby.jpg",
   "videos": {
     "hero": "https://d8j0ntlcm91z4.cloudfront.net/user_3HSeu3MiZbD5rZqN4nnQHGTvdYd/hf_20260909_154013_a9630b1f-a81e-4194-9781-309168ed49c0.mp4",
     "miamiArrival": null

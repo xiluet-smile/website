@@ -1,0 +1,18 @@
+[
+  {
+    "q": "¿Qué tan rápido responde Xiluet Smiles?",
+    "a": "En pocas horas durante el horario de oficina, de lunes a viernes de 9 AM a 5 PM EST. Los mensajes enviados de noche o en fin de semana se responden la siguiente mañana hábil."
+  },
+  {
+    "q": "¿Dónde queda Xiluet Smiles?",
+    "a": "En 8396 SW 8th St (Calle Ocho), segundo piso, Miami, FL 33144, en Westchester. A unos 15 minutos del Aeropuerto Internacional de Miami, con estacionamiento gratuito en el lugar."
+  },
+  {
+    "q": "¿Hablan español?",
+    "a": "Sí. Nuestros doctores y coordinadoras hablan inglés y español, por teléfono, WhatsApp, correo electrónico y en la oficina."
+  },
+  {
+    "q": "¿Puedo enviar fotos en lugar de agendar una visita?",
+    "a": "Sí. Usa la evaluación gratuita por fotos: envía fotos de tu sonrisa y un doctor te responde con un presupuesto por escrito en menos de {replyHours} horas."
+  }
+]

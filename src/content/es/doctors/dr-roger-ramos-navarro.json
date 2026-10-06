@@ -1,0 +1,86 @@
+{
+  "slug": "dr-roger-ramos-navarro",
+  "display": "Dr. Ramos Navarro",
+  "quote": "Cada paciente merece entender exactamente lo que va a pasar antes de que pase. Primero explico, después trato.",
+  "stats": [
+    {
+      "big": "4",
+      "sub": "países de formación"
+    },
+    {
+      "big": "AAE",
+      "sub": "miembro de Endodoncia"
+    },
+    {
+      "big": "10+",
+      "sub": "años de experiencia"
+    }
+  ],
+  "focus": [
+    {
+      "n": "01",
+      "t": "Implantes dentales y All-on-X",
+      "d": "Cirugía de implantes de simple a compleja, dientes fijos de arcada completa, guiada por tomografía (CT)."
+    },
+    {
+      "n": "02",
+      "t": "Tratamiento de conducto",
+      "d": "Miembro de la American Association of Endodontics. Conserva los dientes naturales siempre que es posible."
+    },
+    {
+      "n": "03",
+      "t": "Rehabilitación bucal completa",
+      "d": "Coronas, puentes, prótesis y carillas planificados en conjunto para que la mordida funcione y la sonrisa se vea natural."
+    },
+    {
+      "n": "04",
+      "t": "Planificación del tratamiento",
+      "d": "Redacta y revisa los presupuestos. El número que recibes es el número que él respalda."
+    }
+  ],
+  "education": [
+    {
+      "t": "Doctor en Estomatología",
+      "i": "Instituto Superior de Ciencias Médicas de La Habana",
+      "c": "Cuba"
+    },
+    {
+      "t": "Doctor en Medicina Dental (DMD)",
+      "i": "University of Chicago",
+      "c": "Estados Unidos"
+    },
+    {
+      "t": "Implantología y rehabilitación bucal completa",
+      "i": "Universidad de Puerto Rico",
+      "c": "Puerto Rico"
+    },
+    {
+      "t": "Maestría en Implantología",
+      "i": "Universidad Tecnológica, Santa Cruz de Tenerife",
+      "c": "España"
+    },
+    {
+      "t": "Certificación de especialista en Endodoncia",
+      "i": "Universidad de Lima",
+      "c": "Perú"
+    },
+    {
+      "t": "Cirugía de implantes de simple a compleja",
+      "i": "Salama Education Institute",
+      "c": "Estados Unidos"
+    }
+  ],
+  "certs": [
+    "American Association of Endodontics",
+    "Especialista de Primer Grado en Odontología General (Cuba)",
+    "Certificación en leyes y normas de Florida (Florida Laws and Rules)",
+    "Radiografía dental, condado de Dade, FL",
+    "Certificación de Asistente Dental de Funciones Expandidas",
+    "Certificaciones en Implantología, España y Perú"
+  ],
+  "caseIds": [
+    "BA11",
+    "BA9",
+    "BA14"
+  ]
+}

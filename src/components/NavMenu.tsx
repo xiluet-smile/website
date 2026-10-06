@@ -12,7 +12,7 @@ type Menu = { key: string; label: string; href: string; items?: Item[] };
  * focus-within, so the menu works without JS; the script adds aria-expanded,
  * Esc to close and arrow-key movement.
  */
-export function DesktopNav({ menus }: { menus: Menu[] }) {
+export function DesktopNav({ menus, ariaLabel = "Main" }: { menus: Menu[]; ariaLabel?: string }) {
   const [open, setOpen] = useState<string | null>(null);
   const [dismissed, setDismissed] = useState<string | null>(null);
 
@@ -34,7 +34,7 @@ export function DesktopNav({ menus }: { menus: Menu[] }) {
   };
 
   return (
-    <nav aria-label="Main" className="flex h-[88px] items-center justify-center gap-1 px-6 text-[15px] font-medium whitespace-nowrap">
+    <nav aria-label={ariaLabel} className="flex h-[88px] items-center justify-center gap-1 px-6 text-[15px] font-medium whitespace-nowrap">
       {menus.map((m) => {
         const isOpen = open === m.key && dismissed !== m.key;
         return (
@@ -89,7 +89,15 @@ export function DesktopNav({ menus }: { menus: Menu[] }) {
  * Mobile menu. Without JS the button is a plain link to the footer navigation;
  * with JS it opens a modal <dialog> (native focus trap and Esc).
  */
-export function MobileMenu({ menus, children }: { menus: Menu[]; children?: React.ReactNode }) {
+export function MobileMenu({
+  menus,
+  labels = { menu: "Menu", close: "Close menu" },
+  children,
+}: {
+  menus: Menu[];
+  labels?: { menu: string; close: string };
+  children?: React.ReactNode;
+}) {
   const ref = useRef<HTMLDialogElement>(null);
   // False during SSR and hydration, true once scripts run.
   const ready = useSyncExternalStore(
@@ -104,7 +112,7 @@ export function MobileMenu({ menus, children }: { menus: Menu[]; children?: Reac
       <a
         href="#footer-nav"
         role={ready ? "button" : undefined}
-        aria-label="Menu"
+        aria-label={labels.menu}
         aria-haspopup={ready ? "dialog" : undefined}
         onClick={(e) => {
           e.preventDefault();
@@ -116,7 +124,7 @@ export function MobileMenu({ menus, children }: { menus: Menu[]; children?: Reac
       </a>
       <dialog
         ref={ref}
-        aria-label="Menu"
+        aria-label={labels.menu}
         onClick={(e) => {
           // Close after following a link, or when the backdrop is tapped.
           if ((e.target as HTMLElement).closest("a") || e.target === ref.current) close();
@@ -124,11 +132,11 @@ export function MobileMenu({ menus, children }: { menus: Menu[]; children?: Reac
         className="m-0 h-dvh max-h-none w-full max-w-none overflow-y-auto bg-[rgba(4,40,46,.97)] p-0 text-on-dark backdrop:bg-transparent"
       >
         <div className="flex h-16 items-center justify-between px-4">
-          <span className="font-serif text-[22px]">Menu</span>
+          <span className="font-serif text-[22px]">{labels.menu}</span>
           <button
             type="button"
             onClick={close}
-            aria-label="Close menu"
+            aria-label={labels.close}
             className="grid h-11 w-11 cursor-pointer place-items-center rounded-full border-[1.5px] border-[rgba(247,244,238,.5)] bg-[rgba(247,244,238,.12)] text-[22px] leading-none"
           >
             ×

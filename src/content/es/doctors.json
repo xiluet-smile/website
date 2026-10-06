@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "dr-roger-ramos-navarro",
+    "href": "/doctors/dr-roger-ramos-navarro",
+    "name": "Dr. Roger Ramos Navarro, DMD",
+    "shortName": "Dr. Roger Ramos Navarro",
+    "role": "Implantología, endodoncia y rehabilitación bucal completa",
+    "bio": "El Dr. Ramos Navarro planifica los casos complejos: rehabilitación bucal completa, implantes dentales y endodoncias. Formado en Cuba, Estados Unidos, España y Perú, revisa cada presupuesto de Xiluet antes de que se envíe.",
+    "langs": "Inglés y español",
+    "image": "dr-roger-ramos-navarro.webp"
+  },
+  {
+    "slug": "dr-marta-puentes-marrero",
+    "href": "/doctors/dr-marta-puentes-marrero",
+    "name": "Dr. Marta Puentes Marrero, DMD",
+    "shortName": "Dr. Marta Puentes Marrero",
+    "role": "Odontología restauradora y estética adhesiva",
+    "bio": "La Dra. Puentes ha ejercido en España, el Reino Unido y Estados Unidos. Su trabajo es conservador por diseño: preservar el diente natural, restaurar la función y lograr que el resultado se vea como si siempre hubiera estado ahí.",
+    "langs": "Inglés y español",
+    "image": "dr-marta-puentes-marrero.webp"
+  },
+  {
+    "slug": "dr-gretell-alonso-fiel",
+    "href": "/doctors/dr-gretell-alonso-fiel",
+    "name": "Dr. Gretell Alonso Fiel, DMD",
+    "shortName": "Dr. Gretell Alonso Fiel",
+    "role": "Carillas de porcelana, diseño digital de sonrisa y estética facial",
+    "bio": "La Dra. Alonso diseña sonrisas para el rostro. Formada en Madrid y en Rutgers, combina carillas de porcelana, diseño digital de sonrisa y estética facial para que el resultado sea armonioso desde todos los ángulos, no solo en los dientes.",
+    "langs": "Inglés y español",
+    "image": "dr-gretell-alonso-fiel.webp"
+  }
+]

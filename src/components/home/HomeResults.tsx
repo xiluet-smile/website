@@ -2,16 +2,20 @@
 
 import { useRef, useState } from "react";
 import CaseCard from "@/components/CaseCard";
-import type { Case } from "@/lib/content";
+import { caseTypeLabel, tpl, ui, type Case } from "@/lib/content-i18n";
+import type { Locale } from "@/lib/i18n";
+
+const ALL = "All";
 
 /**
  * Home results carousel. All cases are always in the HTML; the filter only
  * hides non-matching cards, and without JS the row is a plain swipeable list.
  */
-export default function HomeResults({ cases, types }: { cases: Case[]; types: string[] }) {
-  const [type, setType] = useState("All");
+export default function HomeResults({ cases, types, locale = "en" }: { cases: Case[]; types: string[]; locale?: Locale }) {
+  const t = ui(locale);
+  const [type, setType] = useState(ALL);
   const row = useRef<HTMLDivElement>(null);
-  const shown = cases.filter((c) => type === "All" || c.type === type).length;
+  const shown = cases.filter((c) => type === ALL || c.type === type).length;
   const scroll = (dir: number) => {
     const el = row.current;
     if (el) el.scrollBy({ left: dir * el.clientWidth, behavior: "smooth" });
@@ -19,23 +23,23 @@ export default function HomeResults({ cases, types }: { cases: Case[]; types: st
 
   return (
     <>
-      <div className="mb-4 flex gap-2 overflow-x-auto pb-1 lg:mb-6 lg:flex-wrap" role="group" aria-label="Filter by case type">
-        {["All", ...types].map((t) => {
-          const on = t === type;
+      <div className="mb-4 flex gap-2 overflow-x-auto pb-1 lg:mb-6 lg:flex-wrap" role="group" aria-label={t.results.caseFilterAria}>
+        {[ALL, ...types].map((x) => {
+          const on = x === type;
           return (
             <button
-              key={t}
+              key={x}
               type="button"
               aria-pressed={on}
               onClick={() => {
-                setType(t);
+                setType(x);
                 row.current?.scrollTo({ left: 0 });
               }}
               className={`h-11 flex-none cursor-pointer rounded-full border-[1.5px] px-4 text-[15px] font-medium lg:px-[18px] ${
                 on ? "border-teal bg-teal text-on-dark" : "border-sand bg-transparent text-ink"
               }`}
             >
-              {t}
+              {x === ALL ? t.all : caseTypeLabel(locale, x)}
             </button>
           );
         })}
@@ -48,22 +52,23 @@ export default function HomeResults({ cases, types }: { cases: Case[]; types: st
           <CaseCard
             key={c.id}
             c={c}
+            locale={locale}
             sizes="(min-width: 1024px) 380px, 78vw"
             className={`flex-[0_0_78%] snap-start lg:flex-[0_0_calc((100%-48px)/3)] ${
-              type === "All" || c.type === type ? "" : "hidden"
+              type === ALL || c.type === type ? "" : "hidden"
             }`}
           />
         ))}
       </div>
       <div className="mt-5 hidden items-center justify-between lg:flex">
         <span className="text-sm text-muted" aria-live="polite">
-          {shown} cases · swipe or use the arrows
+          {tpl(t.results.casesCaption, { shown })}
         </span>
         <div className="flex gap-2.5">
           <button
             type="button"
             onClick={() => scroll(-1)}
-            aria-label="Previous cases"
+            aria-label={t.results.previousCases}
             className="grid h-12 w-12 cursor-pointer place-items-center rounded-full border-[1.5px] border-teal bg-transparent text-xl text-teal hover:bg-teal hover:text-on-dark"
           >
             ←
@@ -71,7 +76,7 @@ export default function HomeResults({ cases, types }: { cases: Case[]; types: st
           <button
             type="button"
             onClick={() => scroll(1)}
-            aria-label="Next cases"
+            aria-label={t.results.nextCases}
             className="grid h-12 w-12 cursor-pointer place-items-center rounded-full border-[1.5px] border-teal bg-teal text-xl text-on-dark hover:bg-[#0A3A40]"
           >
             →

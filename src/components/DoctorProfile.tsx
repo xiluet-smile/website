@@ -3,7 +3,8 @@ import DoctorCta from "@/components/DoctorCta";
 import { PhoneIcon } from "@/components/Icons";
 import Img from "@/components/Img";
 import PageHero from "@/components/PageHero";
-import { doctors, type Doctor } from "@/lib/content";
+import { getContent, tpl, ui, type Doctor } from "@/lib/content-i18n";
+import { localizeHref, localizePath, type Locale } from "@/lib/i18n";
 import { site } from "@/lib/site";
 
 /** Shape of src/content/doctors/{slug}.json (profile-only data; the rest comes from doctors.json). */
@@ -25,21 +26,22 @@ const h2 = "m-0 font-serif font-normal text-[34px] leading-[1.2] lg:leading-[1.1
 const sectionHead = "mb-7 flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between lg:gap-8";
 const panelShadow = "shadow-[inset_0_1px_0_rgba(247,244,238,.18),0_30px_80px_rgba(4,40,46,.32)]";
 
-function Hero({ doctor, profile }: { doctor: Doctor; profile: DoctorProfileData }) {
+function Hero({ doctor, profile, locale }: { doctor: Doctor; profile: DoctorProfileData; locale: Locale }) {
+  const t = ui(locale);
   const stat = "flex flex-col gap-0.5";
   const statBig = "font-serif text-[26px] leading-none whitespace-nowrap lg:text-[28px]";
   const statSub = "text-sm text-on-dark-muted";
   return (
-    <PageHero>
+    <PageHero locale={locale}>
       <div className="wrap relative z-[2] grid items-center gap-10 pt-8 pb-14 lg:grid-cols-[minmax(0,1fr)_460px] lg:gap-[72px] lg:pt-12 lg:pb-[88px]">
         <div className="flex flex-col gap-6">
           <nav aria-label="Breadcrumb" className="flex flex-wrap gap-2 text-[13px] text-on-dark-muted">
-            <Link href="/" className="text-on-dark-muted no-underline hover:text-gold">
-              Home
+            <Link href={localizePath("/", locale)} className="text-on-dark-muted no-underline hover:text-gold">
+              {t.home}
             </Link>
             <span aria-hidden="true">/</span>
-            <Link href="/doctors" className="text-on-dark-muted no-underline hover:text-gold">
-              Doctors
+            <Link href={localizePath("/doctors", locale)} className="text-on-dark-muted no-underline hover:text-gold">
+              {t.breadcrumb.doctors}
             </Link>
             <span aria-hidden="true">/</span>
             <span aria-current="page" className="text-gold">
@@ -56,8 +58,8 @@ function Hero({ doctor, profile }: { doctor: Doctor; profile: DoctorProfileData 
             {doctor.bio}
           </p>
           <div className="flex flex-col gap-3 lg:flex-row lg:flex-wrap lg:items-center lg:gap-3.5">
-            <Link href="/free-photo-evaluation" className="btn btn-gold h-[52px] px-[26px] text-[17px]">
-              Send photos to {profile.display}
+            <Link href={localizePath("/free-photo-evaluation", locale)} className="btn btn-gold h-[52px] px-[26px] text-[17px]">
+              {tpl(t.doctor.sendPhotosTo, { name: profile.display })}
             </Link>
             <a
               href={site.phone.href}
@@ -109,20 +111,22 @@ function Hero({ doctor, profile }: { doctor: Doctor; profile: DoctorProfileData 
 }
 
 /** Full doctor profile: hero, focus, education, credentials, results, other doctors, CTA. */
-export default function DoctorProfile({ doctor, profile }: { doctor: Doctor; profile: DoctorProfileData }) {
+export default function DoctorProfile({ doctor, profile, locale = "en" }: { doctor: Doctor; profile: DoctorProfileData; locale?: Locale }) {
+  const t = ui(locale);
+  const { doctors } = getContent(locale);
   const name = profile.display;
   const others = doctors.filter((d) => d.slug !== doctor.slug);
 
   return (
     <>
-      <Hero doctor={doctor} profile={profile} />
+      <Hero doctor={doctor} profile={profile} locale={locale} />
 
       {/* Focus */}
       <section className="wrap pt-16 lg:pt-28">
         <div className="mb-7 flex flex-col gap-3 lg:mb-10 lg:flex-row lg:items-end lg:justify-between lg:gap-8">
-          <h2 className={`${h2} lg:max-w-[18ch] lg:text-[48px]`}>What {name} does best</h2>
-          <Link href="/before-and-after" className="font-semibold whitespace-nowrap">
-            See results →
+          <h2 className={`${h2} lg:max-w-[18ch] lg:text-[48px]`}>{tpl(t.doctor.doesBest, { name })}</h2>
+          <Link href={localizePath("/before-and-after", locale)} className="font-semibold whitespace-nowrap">
+            {t.doctor.seeResults}
           </Link>
         </div>
         <ul className="m-0 grid list-none gap-4 p-0 sm:grid-cols-2 lg:grid-cols-4">
@@ -142,8 +146,8 @@ export default function DoctorProfile({ doctor, profile }: { doctor: Doctor; pro
       <section className="wrap pt-16 lg:pt-28">
         <div className={`dark-panel grid items-start gap-8 rounded-2xl p-6 lg:grid-cols-[minmax(0,.8fr)_minmax(0,1.3fr)] lg:gap-16 lg:rounded-[20px] lg:p-16 ${panelShadow}`}>
           <div className="flex flex-col gap-[18px] lg:sticky lg:top-8">
-            <p className="eyebrow m-0 text-gold">Education and training</p>
-            <h2 className={`${h2} text-pretty lg:text-[44px] lg:leading-[1.08]`}>International degrees. Florida licensed.</h2>
+            <p className="eyebrow m-0 text-gold">{t.doctor.educationEyebrow}</p>
+            <h2 className={`${h2} text-pretty lg:text-[44px] lg:leading-[1.08]`}>{t.doctor.educationTitle}</h2>
             <blockquote className="m-0 mt-3 border-l-2 border-gold pl-[18px] font-serif text-[19px] leading-[1.4] text-on-dark italic lg:text-[22px]">
               “{profile.quote}”
             </blockquote>
@@ -174,10 +178,10 @@ export default function DoctorProfile({ doctor, profile }: { doctor: Doctor; pro
       <section className="wrap pt-16 lg:pt-28">
         <div className="grid items-start gap-7 lg:grid-cols-[minmax(0,.8fr)_minmax(0,1.4fr)] lg:gap-16">
           <div className="flex flex-col gap-3.5">
-            <p className="eyebrow m-0 text-gold-text">Certifications and memberships</p>
-            <h2 className={`${h2} lg:text-[40px]`}>Credentials you can verify</h2>
+            <p className="eyebrow m-0 text-gold-text">{t.doctor.certsEyebrow}</p>
+            <h2 className={`${h2} lg:text-[40px]`}>{t.doctor.certsTitle}</h2>
             <p className="m-0 text-base leading-[1.55] text-body">
-              Licenses and certificates are available on request at your first visit.
+              {t.doctor.certsBody}
             </p>
           </div>
           <ul className="m-0 flex list-none flex-wrap gap-2.5 p-0">
@@ -200,16 +204,16 @@ export default function DoctorProfile({ doctor, profile }: { doctor: Doctor; pro
       {/* Other doctors */}
       <section className="wrap pt-16 lg:pt-28">
         <div className={sectionHead}>
-          <h2 className={`${h2} lg:text-[40px]`}>Also on the team</h2>
-          <Link href="/doctors" className="font-semibold whitespace-nowrap">
-            All doctors →
+          <h2 className={`${h2} lg:text-[40px]`}>{t.doctor.alsoOnTeam}</h2>
+          <Link href={localizePath("/doctors", locale)} className="font-semibold whitespace-nowrap">
+            {t.doctor.allDoctors}
           </Link>
         </div>
         <div className="grid gap-4 lg:grid-cols-2 lg:gap-5">
           {others.map((d) => (
             <Link
               key={d.slug}
-              href={d.href}
+              href={localizeHref(d.href, locale)}
               className="glass-card card-hover grid grid-cols-[100px_minmax(0,1fr)] items-center gap-4 rounded-2xl p-4 text-ink no-underline hover:text-ink lg:grid-cols-[140px_minmax(0,1fr)] lg:gap-[22px] lg:rounded-[18px] lg:p-[18px]"
             >
               <Img
@@ -221,7 +225,7 @@ export default function DoctorProfile({ doctor, profile }: { doctor: Doctor; pro
               <div className="flex flex-col gap-1.5">
                 <h3 className="m-0 font-serif text-[20px] leading-[1.15] font-normal text-teal lg:text-2xl lg:leading-[1.15]">{d.name}</h3>
                 <span className="text-[13px] leading-[1.4] font-semibold tracking-[.1em] text-gold-text uppercase">{d.role}</span>
-                <span className="mt-1.5 text-sm font-semibold text-gold-text">View profile →</span>
+                <span className="mt-1.5 text-sm font-semibold text-gold-text">{t.viewProfile}</span>
               </div>
             </Link>
           ))}
@@ -230,8 +234,9 @@ export default function DoctorProfile({ doctor, profile }: { doctor: Doctor; pro
 
       <DoctorCta
         wideButton
-        heading={`Want ${name} to look at your smile?`}
-        text={`Send photos and ask for ${name} by name. Written estimate within ${site.replyHours} hours.`}
+        locale={locale}
+        heading={tpl(t.doctor.ctaHeading, { name })}
+        text={tpl(t.doctor.ctaText, { name, hours: site.replyHours })}
       />
     </>
   );

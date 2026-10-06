@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Img from "./Img";
-import { doctorByName, type Faq } from "@/lib/content";
+import { doctorByName, type Faq } from "@/lib/content-i18n";
+import { localizeHref, type Locale } from "@/lib/i18n";
 
 /**
  * FAQ accordion. Native <details name> gives one-open-at-a-time with no JS and
@@ -12,18 +13,20 @@ export default function FaqAccordion({
   name = "faq",
   className = "grid items-start gap-3 lg:grid-cols-2",
   variant = "page",
+  locale = "en",
 }: {
   faqs: Faq[];
   name?: string;
   className?: string;
   /** "home": 21px questions with doctor avatar (Home design). "page": 22px questions with a gold byline (all other pages). */
   variant?: "home" | "page";
+  locale?: Locale;
 }) {
   const page = variant === "page";
   return (
     <div className={className}>
       {faqs.map((f, i) => {
-        const doc = f.doc ? doctorByName(f.doc) : undefined;
+        const doc = f.doc ? doctorByName(locale, f.doc) : undefined;
         return (
           <details key={f.q} name={name} open={i === 0} className="faq-item glass-card rounded-2xl">
             <summary
@@ -45,7 +48,7 @@ export default function FaqAccordion({
                     <Img src={doc.image} alt="" sizes="28px" className="h-7 w-7 rounded-full object-cover object-[50%_20%]" />
                   )}
                   {doc ? (
-                    <Link href={doc.href} className={`no-underline ${page ? "text-gold-text hover:text-teal" : "text-muted hover:text-gold-text"}`}>
+                    <Link href={localizeHref(doc.href, locale)} className={`no-underline ${page ? "text-gold-text hover:text-teal" : "text-muted hover:text-gold-text"}`}>
                       {f.doc}
                     </Link>
                   ) : (

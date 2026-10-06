@@ -3,6 +3,8 @@
 import { useState, useSyncExternalStore } from "react";
 import LineIcon, { type LineIconName } from "@/components/LineIcon";
 import DatePicker from "./DatePicker";
+import { tpl, ui } from "@/lib/content-i18n";
+import { langTag, type Locale } from "@/lib/i18n";
 
 type Step = { icon: string; title: string; time: string };
 type Bar = { icon: string; title: string; time?: string; visit?: number };
@@ -21,7 +23,6 @@ const addBiz = (d: Date, n: number) => {
   }
   return r;
 };
-const fmt = (d: Date) => d.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" });
 const parseIso = (s: string) => {
   const [y, m, d] = s.split("-").map(Number);
   return new Date(y, m - 1, d);
@@ -46,7 +47,10 @@ const subscribe = () => () => {};
  * their generic timings; once hydrated it adds real dates, and on desktop the
  * day-by-day timeline, recomputed when the visitor picks a start date.
  */
-export default function WeekPlanner({ steps, bars }: { steps: Step[]; bars: Bar[] }) {
+export default function WeekPlanner({ steps, bars, locale = "en" }: { steps: Step[]; bars: Bar[]; locale?: Locale }) {
+  const t = ui(locale).planner;
+  const lang = langTag(locale);
+  const fmt = (d: Date) => d.toLocaleDateString(lang, { weekday: "short", month: "short", day: "numeric" });
   const hydrated = useSyncExternalStore(
     subscribe,
     () => true,
@@ -62,7 +66,14 @@ export default function WeekPlanner({ steps, bars }: { steps: Step[]; bars: Bar[
   const pct = (x: number) => `${((x / n) * 100).toFixed(3)}%`;
   const cols = `repeat(${n}, minmax(0,1fr))`;
   const times = sc
-    ? [fmt(sc.start), `same day, ${fmt(sc.start)}`, `same day, ${fmt(sc.start)}`, `same day, ${fmt(sc.start)}`, `Visit 1 ${fmt(sc.v1)} · Visit 2 ${fmt(sc.v2)}`, `Visit 3 ${fmt(sc.v3)}`]
+    ? [
+        fmt(sc.start),
+        tpl(t.sameDay, { date: fmt(sc.start) }),
+        tpl(t.sameDay, { date: fmt(sc.start) }),
+        tpl(t.sameDay, { date: fmt(sc.start) }),
+        tpl(t.visits12, { v1: fmt(sc.v1), v2: fmt(sc.v2) }),
+        tpl(t.visit3, { v3: fmt(sc.v3) }),
+      ]
     : steps.map((s) => s.time);
   const visitDates = sc ? [sc.v1, sc.v2, sc.v3] : [];
   const barDays = sc ? [sc.start, sc.start, sc.start, sc.start, sc.v1, sc.v2, sc.v3] : [];
@@ -72,9 +83,9 @@ export default function WeekPlanner({ steps, bars }: { steps: Step[]; bars: Bar[
   return (
     <div>
       <div className="relative mb-5 flex flex-wrap items-center gap-2.5 rounded-[14px] border border-[rgba(205,177,128,.45)] bg-[rgba(255,253,248,.6)] px-3.5 py-2.5 text-sm text-body lg:absolute lg:top-[42px] lg:right-0 lg:mb-0 lg:flex-nowrap lg:gap-3 lg:rounded-full lg:py-2.5 lg:pr-3.5 lg:pl-[18px] lg:whitespace-nowrap lg:shadow-[inset_0_1px_0_rgba(255,255,255,.7),0_8px_20px_rgba(26,26,26,.05)]">
-        <span>If I send my photos on</span>
+        <span>{t.sendOn}</span>
         {hydrated ? (
-          <DatePicker value={picked} defaultDate={fallback} min={now} onChange={setPicked} label="Choose the day you send your photos" />
+          <DatePicker value={picked} defaultDate={fallback} min={now} onChange={setPicked} label={t.pickLabel} locale={locale} />
         ) : (
           <input
             type="date"
@@ -84,8 +95,8 @@ export default function WeekPlanner({ steps, bars }: { steps: Step[]; bars: Bar[
           />
         )}
         {picked && (
-          <button type="button" onClick={() => setPicked("")} aria-label="Clear date" className="ml-auto cursor-pointer border-0 bg-transparent px-1 py-0.5 text-xs text-gold-text lg:ml-0">
-            Reset
+          <button type="button" onClick={() => setPicked("")} aria-label={t.clear} className="ml-auto cursor-pointer border-0 bg-transparent px-1 py-0.5 text-xs text-gold-text lg:ml-0">
+            {t.reset}
           </button>
         )}
       </div>
@@ -109,19 +120,19 @@ export default function WeekPlanner({ steps, bars }: { steps: Step[]; bars: Bar[
           <div className="relative mb-2 h-7 text-xs font-semibold tracking-[.1em] whitespace-nowrap text-gold-text uppercase">
             <span className="absolute top-0 flex items-center gap-2.5 pl-1" style={{ left: 0, width: pct(sc.off(sc.start) + 1) }}>
               <span className="h-2 w-2 rounded-full bg-gold" />
-              From home · steps 1–4
+              {t.fromHome}
             </span>
             <span className="absolute top-0 flex items-center gap-2.5 pl-1 text-teal" style={{ left: pct(sc.off(sc.v1)), width: pct(sc.off(sc.v3) - sc.off(sc.v1) + 1) }}>
               <span className="h-2 w-2 rounded-full border-[1.5px] border-teal" />
-              In Miami · {fmt(sc.v1)} – {fmt(sc.v3)}
+              {tpl(t.inMiami, { from: fmt(sc.v1), to: fmt(sc.v3) })}
             </span>
           </div>
           <div className="relative overflow-hidden rounded-[20px] border border-[rgba(255,255,255,.7)] bg-[rgba(255,253,248,.45)] shadow-[inset_0_1px_0_rgba(255,255,255,.6),0_12px_32px_rgba(26,26,26,.06)] backdrop-blur-[18px] backdrop-saturate-[1.2]">
             <div className="grid border-b border-sand" style={{ gridTemplateColumns: cols }}>
               {sc.days.map((d) => (
                 <div key={d.toDateString()} className="border-l border-[rgba(222,213,194,.6)] px-1.5 pt-3.5 pb-3 text-center text-body">
-                  <div className="text-[11px] tracking-[.08em] uppercase">{d.toLocaleDateString("en-US", { weekday: "short" })}</div>
-                  <div className="mt-0.5 text-sm font-semibold">{d.toLocaleDateString("en-US", { month: "short", day: "numeric" })}</div>
+                  <div className="text-[11px] tracking-[.08em] uppercase">{d.toLocaleDateString(lang, { weekday: "short" })}</div>
+                  <div className="mt-0.5 text-sm font-semibold">{d.toLocaleDateString(lang, { month: "short", day: "numeric" })}</div>
                 </div>
               ))}
             </div>
@@ -133,7 +144,7 @@ export default function WeekPlanner({ steps, bars }: { steps: Step[]; bars: Bar[
               </div>
               <div aria-hidden="true" className="absolute top-0 bottom-0 z-0 w-[1.5px] -translate-x-1/2 bg-gold" style={{ left: pct(0.5) }} />
               <div className="absolute top-2.5 z-[3] ml-2 rounded-full bg-gold px-3 py-[5px] text-xs font-semibold whitespace-nowrap text-teal shadow-[0_6px_16px_rgba(205,177,128,.35)]" style={{ left: pct(0.5) }}>
-                You send photos · {fmt(sc.start)}
+                {tpl(t.youSend, { date: fmt(sc.start) })}
               </div>
               <ol className="relative z-[1] m-0 grid list-none auto-rows-[68px] gap-y-3.5 px-0 pt-12 pb-7" style={{ gridTemplateColumns: cols }}>
                 {bars.map((b, i) => (
@@ -151,7 +162,7 @@ export default function WeekPlanner({ steps, bars }: { steps: Step[]; bars: Bar[
                     <span className="flex min-w-0 flex-col gap-0.5">
                       <span className="text-[15px] leading-[1.25] font-semibold text-pretty text-teal">{b.title}</span>
                       <span className="overflow-hidden text-xs text-ellipsis whitespace-nowrap text-muted">
-                        {b.visit ? `Visit ${b.visit} · ${fmt(visitDates[b.visit - 1])}` : b.time}
+                        {b.visit ? tpl(t.visitN, { n: b.visit, date: fmt(visitDates[b.visit - 1]) }) : b.time}
                       </span>
                     </span>
                   </li>
@@ -161,7 +172,7 @@ export default function WeekPlanner({ steps, bars }: { steps: Step[]; bars: Bar[
           </div>
         </div>
       )}
-      {sc && <p className="mt-5 mb-0 font-serif text-[22px] lg:mt-8 lg:text-center lg:text-[26px]">Your new smile by {fmt(sc.v3)}.</p>}
+      {sc && <p className="mt-5 mb-0 font-serif text-[22px] lg:mt-8 lg:text-center lg:text-[26px]">{tpl(t.newSmile, { date: fmt(sc.v3) })}</p>}
     </div>
   );
 }

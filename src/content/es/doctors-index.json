@@ -1,0 +1,20 @@
+{
+  "facts": [
+    {
+      "big": "10+",
+      "sub": "Años de experiencia, cada doctor"
+    },
+    {
+      "big": "3",
+      "sub": "Doctores revisan cada plan de tratamiento"
+    },
+    {
+      "big": "{rating}",
+      "sub": "Calificación en Google con {count} reseñas"
+    },
+    {
+      "big": "1 lab",
+      "sub": "Ceramista en el mismo edificio"
+    }
+  ]
+}

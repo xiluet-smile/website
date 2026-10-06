@@ -1,9 +1,11 @@
 // POST /api/contact: Contact form. JSON from the client script, or a native
 // form post (urlencoded / multipart) when JS is off.
 import contactJson from "../../src/content/contact.json";
+import contactEsJson from "../../src/content/es/contact.json";
 import {
   type ConsentContent,
   type Env,
+  type Locale,
   LIMITS,
   clean,
   consentRecord,
@@ -11,6 +13,7 @@ import {
   guard,
   isEmail,
   isSameOrigin,
+  localeOf,
   methodNotAllowed,
   postWebhook,
   renderRows,
@@ -22,11 +25,14 @@ import {
 const PAGE = "/contact" as const;
 const MAX_BODY_BYTES = 64 * 1024;
 
-const content = contactJson as {
+type ContactContent = {
   topics: string[];
   replyVia: string[];
   consent: ConsentContent;
 };
+/** Option values (`topics`, `replyVia`) are the same English strings on both language versions of the form. */
+const content = contactJson as ContactContent;
+const consents: Record<Locale, ConsentContent> = { en: content.consent, es: (contactEsJson as ContactContent).consent };
 
 async function readBody(
   request: Request,
@@ -53,6 +59,7 @@ async function readBody(
 }
 
 export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
+  let locale: Locale = "en";
   try {
     if (!isSameOrigin(request, env))
       return respond(request, PAGE, { ok: false, error: "origin" });
@@ -65,13 +72,14 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
     if (!body) return respond(request, PAGE, { ok: false, error: "invalid" });
     const field = (name: string, max: number, multiline = false) =>
       clean(body[name], max, multiline);
+    locale = localeOf(field("locale", 2));
 
     const checked = await guard(request, env, "contact", {
       token: field("cf-turnstile-response", 4096),
       honeypot: field("company", 200),
       nojs: field("nojs", 4) === "1",
     });
-    if (!checked.pass) return respond(request, PAGE, checked.result);
+    if (!checked.pass) return respond(request, PAGE, checked.result, locale);
 
     const first = field("first", LIMITS.name);
     const last = field("last", LIMITS.name);
@@ -80,7 +88,7 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
     const message = field("message", LIMITS.message, true);
     const consentText = field("consent", LIMITS.consent);
     if (!first || !last || !isEmail(email) || !message || !consentText) {
-      return respond(request, PAGE, { ok: false, error: "invalid" });
+      return respond(request, PAGE, { ok: false, error: "invalid" }, locale);
     }
     // Only the options offered on the page are kept.
     const topicIn = field("topic", LIMITS.short);
@@ -95,7 +103,7 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
       env,
       PAGE,
       consentText,
-      content.consent,
+      consents,
     );
 
     const rows = renderRows([
@@ -105,6 +113,7 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
       ["Subject", topic],
       ["Reply by", replyVia],
       ["Message", message],
+      ["Language", locale],
       ["Message ID", id],
       ["Received", createdAt],
       ...consentRows(consent),
@@ -132,6 +141,7 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
       topic,
       message,
       replyVia,
+      locale,
       consent,
       source: siteUrl(env) + PAGE,
     });
@@ -140,11 +150,11 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
     // Contact messages are not stored anywhere else: if the email did not go
     // out and there is no CRM to catch it, the visitor must be told.
     if (!delivered && !env.CRM_WEBHOOK_URL)
-      return respond(request, PAGE, { ok: false, error: "server" });
-    return respond(request, PAGE, { ok: true });
+      return respond(request, PAGE, { ok: false, error: "server" }, locale);
+    return respond(request, PAGE, { ok: true }, locale);
   } catch (err) {
     console.error("contact handler failed", err);
-    return respond(request, PAGE, { ok: false, error: "server" });
+    return respond(request, PAGE, { ok: false, error: "server" }, locale);
   }
 };
 

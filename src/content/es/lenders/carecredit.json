@@ -1,0 +1,56 @@
+{
+  "slug": "carecredit",
+  "intro": "Una tarjeta de crédito reutilizable para salud, odontología y bienestar. Financiamiento promocional en compras de $200 o más, y puedes volver a usarla para tratamientos futuros.",
+  "site": {
+    "url": "https://www.carecredit.com",
+    "label": "Revisa tus opciones con CareCredit →",
+    "note": "Consulta suave de crédito. No afecta tu puntaje."
+  },
+  "facts": [
+    {
+      "big": "$200+",
+      "sub": "Mínimo para financiamiento promocional"
+    },
+    {
+      "big": "6 a 24 meses",
+      "sub": "Periodos promocionales sin interés si pagas el total"
+    },
+    {
+      "big": "Reutilizable",
+      "sub": "Úsala de nuevo para atención dental futura"
+    },
+    {
+      "big": "200,000+",
+      "sub": "Lugares la aceptan"
+    }
+  ],
+  "steps": [
+    {
+      "n": "01",
+      "t": "Solicita en línea o por teléfono y recibe una decisión en minutos"
+    },
+    {
+      "n": "02",
+      "t": "Elige un plan promocional que se ajuste a tu presupuesto"
+    },
+    {
+      "n": "03",
+      "t": "Paga a CareCredit cada mes. Paga el total dentro del periodo promocional para evitar intereses"
+    }
+  ],
+  "faq": [
+    {
+      "q": "¿De verdad es sin interés?",
+      "a": "Sí, si pagas el saldo completo dentro del periodo promocional. Si no lo haces, se cobran intereses desde la fecha de compra."
+    },
+    {
+      "q": "¿Puedo usar CareCredit para las dos visitas?",
+      "a": "Sí. Es una tarjeta de crédito rotativo, así que cubre todo tu tratamiento y las visitas futuras."
+    },
+    {
+      "q": "¿Qué puntaje de crédito necesito?",
+      "a": "CareCredit no publica un mínimo. Nuestra coordinadora puede ayudarte a comparar con Cherry o Sunbit si no te aprueban."
+    }
+  ],
+  "disclaimer": "CareCredit es un prestamista externo. El financiamiento está sujeto a aprobación de crédito. Los términos y tasas los establece CareCredit y pueden cambiar. Xiluet no toma decisiones de crédito."
+}

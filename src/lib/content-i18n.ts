@@ -1,0 +1,819 @@
+// Locale-aware content registry. Every English JSON in src/content has a Spanish
+// twin in src/content/es with the same name and shape (see I18N spec); the
+// Spanish files are cast to the English types so components stay typed once.
+// `ui()` holds the small UI strings that live in TSX rather than in JSON.
+import type { Locale } from "./i18n";
+import type { Treatment } from "@/components/TreatmentPage";
+import type { DoctorProfileData } from "@/components/DoctorProfile";
+import type { LenderContent } from "@/components/LenderPage";
+
+// ---------- English ----------
+import site from "@/content/site.json";
+import nav from "@/content/nav.json";
+import pages from "@/content/pages.json";
+import home from "@/content/home.json";
+import cases from "@/content/cases.json";
+import prices from "@/content/prices.json";
+import doctors from "@/content/doctors.json";
+import doctorsIndex from "@/content/doctors-index.json";
+import lenders from "@/content/lenders.json";
+import financing from "@/content/financing.json";
+import clinic from "@/content/clinic.json";
+import outOfState from "@/content/out-of-state.json";
+import contact from "@/content/contact.json";
+import leadForm from "@/content/lead-form.json";
+import referrals from "@/content/referrals.json";
+import blog from "@/content/blog.json";
+import reviews from "@/content/reviews.json";
+import legal from "@/content/legal.json";
+import faqHome from "@/content/faq/home.json";
+import faqContact from "@/content/faq/contact.json";
+import faqCost from "@/content/faq/cost.json";
+import faqDoctors from "@/content/faq/doctors.json";
+import faqFinancing from "@/content/faq/financing.json";
+import faqOutOfState from "@/content/faq/out-of-state.json";
+import trVeneers from "@/content/treatments/porcelain-veneers.json";
+import trSmileDesign from "@/content/treatments/smile-design.json";
+import trFullMouth from "@/content/treatments/full-mouth-reconstruction.json";
+import trAllOnX from "@/content/treatments/all-on-x.json";
+import trMakeover from "@/content/treatments/smile-makeover.json";
+import docRamos from "@/content/doctors/dr-roger-ramos-navarro.json";
+import docPuentes from "@/content/doctors/dr-marta-puentes-marrero.json";
+import docAlonso from "@/content/doctors/dr-gretell-alonso-fiel.json";
+import lnCherry from "@/content/lenders/cherry.json";
+import lnSunbit from "@/content/lenders/sunbit.json";
+import lnCarecredit from "@/content/lenders/carecredit.json";
+import lnLendingclub from "@/content/lenders/lendingclub.json";
+import lnAffirm from "@/content/lenders/affirm.json";
+
+// ---------- Spanish ----------
+import esSite from "@/content/es/site.json";
+import esNav from "@/content/es/nav.json";
+import esPages from "@/content/es/pages.json";
+import esHome from "@/content/es/home.json";
+import esCases from "@/content/es/cases.json";
+import esPrices from "@/content/es/prices.json";
+import esDoctors from "@/content/es/doctors.json";
+import esDoctorsIndex from "@/content/es/doctors-index.json";
+import esLenders from "@/content/es/lenders.json";
+import esFinancing from "@/content/es/financing.json";
+import esClinic from "@/content/es/clinic.json";
+import esOutOfState from "@/content/es/out-of-state.json";
+import esContact from "@/content/es/contact.json";
+import esLeadForm from "@/content/es/lead-form.json";
+import esReferrals from "@/content/es/referrals.json";
+import esBlog from "@/content/es/blog.json";
+import esLegalNotice from "@/content/es/legal-notice.json";
+import esFaqHome from "@/content/es/faq/home.json";
+import esFaqContact from "@/content/es/faq/contact.json";
+import esFaqCost from "@/content/es/faq/cost.json";
+import esFaqDoctors from "@/content/es/faq/doctors.json";
+import esFaqFinancing from "@/content/es/faq/financing.json";
+import esFaqOutOfState from "@/content/es/faq/out-of-state.json";
+import esTrVeneers from "@/content/es/treatments/porcelain-veneers.json";
+import esTrSmileDesign from "@/content/es/treatments/smile-design.json";
+import esTrFullMouth from "@/content/es/treatments/full-mouth-reconstruction.json";
+import esTrAllOnX from "@/content/es/treatments/all-on-x.json";
+import esTrMakeover from "@/content/es/treatments/smile-makeover.json";
+import esDocRamos from "@/content/es/doctors/dr-roger-ramos-navarro.json";
+import esDocPuentes from "@/content/es/doctors/dr-marta-puentes-marrero.json";
+import esDocAlonso from "@/content/es/doctors/dr-gretell-alonso-fiel.json";
+import esLnCherry from "@/content/es/lenders/cherry.json";
+import esLnSunbit from "@/content/es/lenders/sunbit.json";
+import esLnCarecredit from "@/content/es/lenders/carecredit.json";
+import esLnLendingclub from "@/content/es/lenders/lendingclub.json";
+import esLnAffirm from "@/content/es/lenders/affirm.json";
+
+export type Faq = { q: string; a: string; doc?: string };
+/** Spanish display labels for values that must stay English for server lookups (same order as the values). */
+type Labels = string[] | Record<string, string>;
+
+type Site = typeof site;
+type Nav = typeof nav;
+type Pages = typeof pages;
+type Home = typeof home;
+type Cases = typeof cases & { typeLabels?: Record<string, string> };
+type Prices = typeof prices;
+type Doctors = typeof doctors;
+type DoctorsIndex = typeof doctorsIndex;
+type Lenders = typeof lenders;
+type Financing = typeof financing;
+type Clinic = typeof clinic;
+type OutOfState = typeof outOfState;
+type Contact = typeof contact & { topicsLabels?: Labels; replyViaLabels?: Labels };
+type LeadForm = typeof leadForm & { concernsLabels?: Labels };
+type Referrals = typeof referrals;
+type Blog = typeof blog;
+/** Short Spanish note shown above the (English) legal documents on /es, plus the Spanish document names. */
+export type LegalNotice = { notice: string; names: Record<string, string> };
+
+export type TreatmentKey = "porcelain-veneers" | "smile-design" | "full-mouth-reconstruction" | "all-on-x" | "smile-makeover";
+
+const content = (l: {
+  site: Site;
+  nav: Nav;
+  pages: Pages;
+  home: Home;
+  cases: Cases;
+  prices: Prices;
+  doctors: Doctors;
+  doctorsIndex: DoctorsIndex;
+  lenders: Lenders;
+  financing: Financing;
+  clinic: Clinic;
+  outOfState: OutOfState;
+  contact: Contact;
+  leadForm: LeadForm;
+  referrals: Referrals;
+  blog: Blog;
+  legalNotice: LegalNotice | null;
+  faq: { home: Faq[]; contact: Faq[]; cost: Faq[]; doctors: Faq[]; financing: Faq[]; outOfState: Faq[] };
+  treatments: Record<TreatmentKey, Treatment>;
+  doctorProfiles: DoctorProfileData[];
+  lenderContent: Record<string, LenderContent>;
+}) => ({
+  ...l,
+  /** Not translated: real reviews stay as written. */
+  reviews,
+  /** Not translated: legal documents stay in English until a lawyer-reviewed translation exists. */
+  legal,
+});
+
+const en = content({
+  site,
+  nav,
+  pages,
+  home,
+  cases,
+  prices,
+  doctors,
+  doctorsIndex,
+  lenders,
+  financing,
+  clinic,
+  outOfState,
+  contact,
+  leadForm,
+  referrals,
+  blog,
+  legalNotice: null,
+  faq: { home: faqHome, contact: faqContact, cost: faqCost, doctors: faqDoctors, financing: faqFinancing, outOfState: faqOutOfState },
+  treatments: {
+    "porcelain-veneers": trVeneers as Treatment,
+    "smile-design": trSmileDesign as Treatment,
+    "full-mouth-reconstruction": trFullMouth as Treatment,
+    "all-on-x": trAllOnX as Treatment,
+    "smile-makeover": trMakeover as Treatment,
+  },
+  doctorProfiles: [docRamos, docPuentes, docAlonso],
+  lenderContent: { cherry: lnCherry, sunbit: lnSunbit, carecredit: lnCarecredit, lendingclub: lnLendingclub, affirm: lnAffirm },
+});
+
+const es = content({
+  site: esSite as Site,
+  nav: esNav as Nav,
+  pages: esPages as Pages,
+  home: esHome as Home,
+  cases: esCases as Cases,
+  prices: esPrices as Prices,
+  doctors: esDoctors as Doctors,
+  doctorsIndex: esDoctorsIndex as DoctorsIndex,
+  lenders: esLenders as Lenders,
+  financing: esFinancing as Financing,
+  clinic: esClinic as Clinic,
+  outOfState: esOutOfState as OutOfState,
+  contact: esContact as Contact,
+  leadForm: esLeadForm as LeadForm,
+  referrals: esReferrals as Referrals,
+  blog: esBlog as Blog,
+  legalNotice: esLegalNotice as LegalNotice,
+  faq: {
+    home: esFaqHome as Faq[],
+    contact: esFaqContact as Faq[],
+    cost: esFaqCost as Faq[],
+    doctors: esFaqDoctors as Faq[],
+    financing: esFaqFinancing as Faq[],
+    outOfState: esFaqOutOfState as Faq[],
+  },
+  treatments: {
+    "porcelain-veneers": esTrVeneers as Treatment,
+    "smile-design": esTrSmileDesign as Treatment,
+    "full-mouth-reconstruction": esTrFullMouth as Treatment,
+    "all-on-x": esTrAllOnX as Treatment,
+    "smile-makeover": esTrMakeover as Treatment,
+  },
+  doctorProfiles: [esDocRamos as DoctorProfileData, esDocPuentes as DoctorProfileData, esDocAlonso as DoctorProfileData],
+  lenderContent: {
+    cherry: esLnCherry as LenderContent,
+    sunbit: esLnSunbit as LenderContent,
+    carecredit: esLnCarecredit as LenderContent,
+    lendingclub: esLnLendingclub as LenderContent,
+    affirm: esLnAffirm as LenderContent,
+  },
+});
+
+export type Content = typeof en;
+
+/** All content for a locale, typed like the English files. */
+export const getContent = (locale: Locale): Content => (locale === "es" ? es : en);
+
+export type Case = Content["cases"]["cases"][number];
+export type Doctor = Content["doctors"][number];
+export type Lender = Content["lenders"][number];
+
+export const caseById = (locale: Locale, id: string): Case => {
+  const c = getContent(locale).cases.cases.find((x) => x.id === id);
+  if (!c) throw new Error(`Unknown case ${id}`);
+  return c;
+};
+export const packageById = (locale: Locale, id: string) => {
+  const p = getContent(locale).prices.packages.find((x) => x.id === id);
+  if (!p) throw new Error(`Unknown package ${id}`);
+  return p;
+};
+/** Doctor by full name (FAQ `doc` values are the English names in both locales). */
+export const doctorByName = (locale: Locale, name: string) => {
+  const i = doctors.findIndex((d) => d.name === name);
+  return i >= 0 ? getContent(locale).doctors[i] : undefined;
+};
+/** Display label for a case type ("Veneers" → "Carillas" on /es). */
+export const caseTypeLabel = (locale: Locale, type: string) => getContent(locale).cases.typeLabels?.[type] ?? type;
+
+/** Display label for a value that stays English for server lookups (`concerns`, `topics`, `replyVia`, case `type`). */
+export function labelOf(values: readonly string[], labels: Labels | undefined, value: string): string {
+  if (!labels) return value;
+  if (Array.isArray(labels)) {
+    const i = values.indexOf(value);
+    return i >= 0 && labels[i] ? labels[i] : value;
+  }
+  return labels[value] ?? value;
+}
+
+/** Fills `{key}` placeholders. */
+export const tpl = (s: string, vars: Record<string, string | number>) =>
+  s.replace(/\{(\w+)\}/g, (m, k: string) => (k in vars ? String(vars[k]) : m));
+
+// ---------- UI strings that live in TSX ----------
+
+const uiEn = {
+  skipToContent: "Skip to content",
+  home: "Home",
+  freePhotoEvaluation: "Free photo evaluation",
+  startMyEvaluation: "Start my evaluation",
+  before: "Before",
+  after: "After",
+  all: "All",
+  previous: "Previous",
+  next: "Next",
+  learnMore: "Learn more →",
+  viewProfile: "View profile →",
+  profile: "Profile →",
+  allCases: "All cases →",
+  getDirections: "Get directions →",
+  preferToTalk: "Prefer to talk?",
+  /** Shared closing panel (Cost, Results, Blog, Financing, Clinic, Out of state, Doctors). */
+  photoCta: {
+    heading: "Start with photos. A doctor replies within {hours} hours.",
+    body: "Free, no visit needed. Written estimate included.",
+    cardTitle: "Free photo evaluation",
+    cardBody: "Photos of your smile, from your phone. Takes 2 minutes.",
+  },
+  header: {
+    homeAria: "Xiluet Smiles, home",
+    mainNav: "Main",
+    menu: "Menu",
+    closeMenu: "Close menu",
+    switchTo: "Español",
+  },
+  footer: {
+    heading: "Start with photos. A doctor replies within {hours} hours.",
+    body: "Free, no visit needed. Written estimate and financing options included.",
+    nav: "Footer",
+    legal: "Individual results vary. Financing subject to credit approval.",
+  },
+  mobileBar: { call: "Call", whatsapp: "WhatsApp", evaluation: "Free evaluation" },
+  breadcrumb: { treatments: "Treatments", doctors: "Doctors", financing: "Financing", aboutUs: "About Us", clinic: "Clinic", outOfState: "Out of State", cost: "Cost", results: "Results", blog: "Blog" },
+  notFound: {
+    title: "Page not found",
+    lead: "This address does not match a page on our site.",
+    linksAria: "Helpful links",
+    links: ["Home", "Porcelain Veneers", "Before and after", "Free photo evaluation", "Contact"],
+  },
+  homePage: {
+    heroCta: "Get your free photo evaluation",
+    whatsapp: "Chat on WhatsApp",
+    reviewsLine: "{count} five-star Google reviews",
+    stars: "stars",
+    starsAria: "{rating} out of 5 stars",
+    googleReviews: "Google reviews",
+    yearsShort: "{years}-year",
+    warranty: "warranty",
+    doctorsDmd: "doctors, DMD",
+    familiar: "Sound familiar?",
+    familiarLead1: "Nine things we hear on almost every first call.",
+    familiarLead2: "Tap a card to see our answer.",
+    concernsAria: "Common concerns",
+    concernsCaption: "{count} questions · swipe or use the arrows",
+    showAnswer: "Show our answer to: {q}",
+    ourAnswer: "Our answer",
+    realResults: "Real results",
+    doctorsTitle: "The doctors who design your smile",
+    meetTeam: "Meet the team →",
+    howItWorks: "How it works",
+    howItWorksLead: "Six steps from your phone to your follow-up. Most of it happens before you ever visit.",
+    fullProcess: "See the full process →",
+    costTitle: "What it costs",
+    costLead: "One written price before you book. Every package includes a professional cleaning and X-rays.",
+    fullPriceList: "Full price list →",
+    getEstimate: "Get your free estimate",
+    aboutPackage: "About this package",
+    costFootnote:
+      "Deep cleaning and other procedures are quoted separately, in writing, before anything starts. Final estimate may vary if additional corrections are required beyond the smile design.",
+    financing: "Financing",
+    financingTitle: "Five ways to pay over time",
+    financingLead: "Our coordinator helps you apply and compares offers with you before you commit.",
+    approvalGuidance: "How approval guidance works →",
+    financingNote: "Financing is provided by third-party lenders, subject to credit approval. Terms vary by partner.",
+    trustEyebrow: "Why patients trust us",
+    trustTitle: "Results you can check before you commit",
+    trustLead: "You see your design before any tooth is touched, the planning happens in-house, and the warranty runs five times longer than the usual one year.",
+    trust: {
+      warranty: "Warranty",
+      years: "years",
+      usual: "{years}× the usual one year",
+      rating: "Google rating",
+      reviews: "{count} reviews",
+      doctors: "Doctors",
+      experience: "Experience and international degrees",
+      planning: "In-house planning",
+      oneBuilding: "One building",
+      sideBySide: "Doctor and ceramist side by side",
+    },
+    labAlt: "Ceramist shaping a porcelain veneer by hand under a magnifying lamp",
+    labEyebrow: "Our in-house lab",
+    labTitle: "Made in our lab, designed for your face.",
+    labBody:
+      "Your veneers are not ordered from a catalog. Our master ceramists work in the same building as your doctor and design each smile to your face: lip line, proportions, skin tone, and the way you speak and smile.",
+    smileDesignLink: "How a smile design works →",
+    outOfStateEyebrow: "Out-of-state patients",
+    outOfStateTitle: "Flying in from Atlanta, Houston or New York?",
+    outOfStateLead: "Estimate first, flight second. Four business days in Miami, 20 minutes from MIA.",
+    planVisit: "Plan your visit, day by day →",
+    faqTitle: "Questions patients ask first",
+    officeTitle: "Our office",
+    officeLead: "Calle Ocho, West Miami. 20 minutes from MIA, on-site lab upstairs.",
+    openMaps: "Open in Google Maps →",
+    mapTitle: "Map to Xiluet Smiles",
+    whatsappUs: "WhatsApp us",
+    ctaTitle: "Start with photos. A doctor replies within 12 hours.",
+    ctaBody:
+      "Free, no visit needed. You get a doctor's plan and a written estimate. Your dates are only reserved once you decide, with a ${deposit} deposit applied to treatment.",
+    ctaCardBody: "5 short questions and 2 photos of your teeth. About 2 minutes.",
+    ctaPrivacy: "Only our doctors see your photos.",
+  },
+  results: {
+    filterAria: "Filter by treatment",
+    showing: "Showing {shown} of {total}",
+    caseFilterAria: "Filter by case type",
+    casesCaption: "{shown} cases · swipe or use the arrows",
+    previousCases: "Previous cases",
+    nextCases: "Next cases",
+    pageLead: "Every photo is a Xiluet patient, unretouched. Filter by treatment. Individual results vary.",
+    photosAria: "Before and after photos",
+    galleryName: "Before and after, Xiluet Smiles patients",
+  },
+  planner: {
+    sendOn: "If I send my photos on",
+    pickLabel: "Choose the day you send your photos",
+    clear: "Clear date",
+    reset: "Reset",
+    sameDay: "same day, {date}",
+    visits12: "Visit 1 {v1} · Visit 2 {v2}",
+    visit3: "Visit 3 {v3}",
+    fromHome: "From home · steps 1–4",
+    inMiami: "In Miami · {from} – {to}",
+    youSend: "You send photos · {date}",
+    visitN: "Visit {n} · {date}",
+    newSmile: "Your new smile by {date}.",
+  },
+  datePicker: {
+    months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+    dow: ["S", "M", "T", "W", "T", "F", "S"],
+    dialog: "Choose a date",
+    prevMonth: "Previous month",
+    nextMonth: "Next month",
+    today: "Today",
+    weekends: "Weekends count as rest days",
+  },
+  reviews: {
+    title: "What patients say on Google",
+    starsAria: "{rating} out of 5 stars",
+    count: "{count} reviews",
+    leave: "Leave a review",
+    readAll: "Read all on Google →",
+  },
+  treatment: { sendPhotos: "Free photo evaluation" },
+  doctor: {
+    sendPhotosTo: "Send photos to {name}",
+    doesBest: "What {name} does best",
+    seeResults: "See results →",
+    educationEyebrow: "Education and training",
+    educationTitle: "International degrees. Florida licensed.",
+    certsEyebrow: "Certifications and memberships",
+    certsTitle: "Credentials you can verify",
+    certsBody: "Licenses and certificates are available on request at your first visit.",
+    alsoOnTeam: "Also on the team",
+    allDoctors: "All doctors →",
+    ctaHeading: "Want {name} to look at your smile?",
+    ctaText: "Send photos and ask for {name} by name. Written estimate within {hours} hours.",
+  },
+  doctorsPage: {
+    lead: "Every case is planned by the doctor who treats you, and reviewed by the team. You meet them before anything permanent happens.",
+    faqTitle: "Questions patients ask about the doctors",
+  },
+  lender: {
+    howItWorks: "How it works with {name}",
+    othersAria: "Other financing partners",
+    others: "Other partners",
+    questions: "{name} questions",
+  },
+  financingPage: {
+    lead: "Most patients qualify with at least one partner. Our coordinator helps you apply, compares the offers with you, and nothing is charged until you are approved and happy with the plan.",
+    partners: "Financing partners",
+    learnAbout: "Learn about {name} →",
+    notSure: "Not sure which one?",
+    notSureBody: "Send your photos. Your estimate comes with a side-by-side of the plans you are likely to qualify for.",
+    guidanceTitle: "How approval guidance works",
+    guidanceAside: "Three steps, all before you book a flight.",
+    faqTitle: "Financing questions",
+  },
+  cost: {
+    lead: "Package prices and the full fee schedule, published. Send photos and a doctor confirms your exact number in writing within 6 hours.",
+    packagesAria: "Packages",
+    packagesNote:
+      "All packages include a professional dental cleaning and X-rays. Deep cleaning and any other procedure are not included; if your exam finds something that needs treating first, it is quoted from the price list below, in writing, before anything starts. Final estimate may vary if additional corrections are required beyond the smile design.",
+    aboutTreatmentAria: "About this treatment: {name}",
+    aboutTreatment: "About this treatment →",
+    treatmentCol: "Treatment",
+    priceCol: "Price",
+    listEyebrow: "Price list",
+    listTitle: "Every individual fee, published",
+    listAside: "The same list your doctor uses when something outside a package needs treating. No hidden line items.",
+    listNote: "Fees per tooth unless stated. Included in your written estimate only when your exam shows they are needed.",
+    payEyebrow: "Pay over time",
+    payTitle: "From about $149 a month for 20 veneers",
+    payBody: "Example: $6,000 over 60 months with Cherry at 0% APR for qualified patients. Your coordinator shows you real offers from five partners before you decide.",
+    allFinancing: "See all financing options →",
+    faqTitle: "Cost questions",
+    catalogName: "Xiluet Smiles packages",
+  },
+  clinicPage: {
+    lead: "{street}, {locality}. Fifteen minutes from Miami International Airport. The ceramist who makes your veneers works down the hall from your doctor.",
+    roomAlt: "Xiluet treatment room",
+    findTitle: "What you will find here",
+    findAside: "Everything your treatment needs, under one roof.",
+    visitUs: "Visit us",
+    closedWeekends: "Closed weekends",
+    gettingHere: "Getting here",
+  },
+  outOfStatePage: {
+    lead: "Everything before the trip happens from home: photos, written estimate, payment plan and dates. Then one week in Miami, three visits, and a {years}-year warranty in writing.",
+    mediaAlt: "Miami at golden hour",
+    weekTitle: "Your week, day by day",
+    weekAside: "The same schedule for every veneer and smile design patient.",
+    handleTitle: "What we handle for you",
+    faqTitle: "Travel questions",
+  },
+  blogPage: { lead: "Written by the doctors. No filler.", articles: "Articles", drafts: "Articles are drafts pending doctor review." },
+  contactPage: {
+    lead: "{name} is a cosmetic dentistry practice at {address}, open Monday to Friday 9 AM to 5 PM. Call or WhatsApp {phone}, email {email}, or use the form. We reply within a few hours in {languages}.",
+    /** site.languages.display with the conjunction swapped ("English and Spanish" → "English or Spanish"). */
+    languagesOr: [" and ", " or "] as [string, string],
+    infoTitle: "Contact information",
+    infoBody: "Call, text, WhatsApp or email. {languages}. Outside office hours, leave a message and we reply the next business morning.",
+    whatsapp: "WhatsApp +1 {phone}",
+    mapTitle: "Map to {name}",
+    largerMap: "View larger map →",
+    faqTitle: "Before you call",
+  },
+  evaluationPage: {
+    lead1: "Your photos go straight to the doctor who will design your case.",
+    leadStrong: "Don't worry about how your teeth look right now.",
+    lead2: "That is exactly what we are here to change.",
+    hint: "Photos 2 to 5 are what the dental team uses. Do your best with your phone and send what you can.",
+    examplesAria: "Example photos",
+    exampleAlt: "Example: {title}",
+    afterTitle: "What happens after you press send",
+    talkBody: "Call or text. {languages}. {hours} ET.",
+  },
+  leadForm: {
+    addPhotos: "Add your photos",
+    removePhoto: "Remove photo {name}",
+    whereReply: "Where should the doctor reply?",
+    firstName: "First name",
+    lastName: "Last name",
+    mobile: "Mobile phone",
+    email: "Email",
+    notes: "Notes (optional)",
+  },
+  contactForm: {
+    message: "Message",
+    typeHere: "Type here . . .",
+    heading: "Send us a message",
+    intro: "Fill out the form and our team will get back to you within a few hours during office hours.",
+    firstName: "First name",
+    lastName: "Last name",
+    email: "Email",
+    phone: "Phone",
+    enterFirst: "Enter first name",
+    enterLast: "Enter last name",
+    enterEmail: "Enter email",
+    enterPhone: "Enter phone",
+    subject: "Subject",
+  },
+  referral: { bonusPer: "per completed treatment" },
+  legal: { effective: "Effective date: {date}" },
+};
+
+export type UiStrings = typeof uiEn;
+
+const uiEs: UiStrings = {
+  skipToContent: "Ir al contenido",
+  home: "Inicio",
+  freePhotoEvaluation: "Evaluación gratuita por fotos",
+  startMyEvaluation: "Empezar mi evaluación",
+  before: "Antes",
+  after: "Después",
+  all: "Todos",
+  previous: "Anterior",
+  next: "Siguiente",
+  learnMore: "Más información →",
+  viewProfile: "Ver perfil →",
+  profile: "Perfil →",
+  allCases: "Todos los casos →",
+  getDirections: "Cómo llegar →",
+  preferToTalk: "¿Prefieres hablar?",
+  photoCta: {
+    heading: "Empieza con fotos. Un doctor responde en menos de {hours} horas.",
+    body: "Gratis, sin visita. Incluye presupuesto por escrito.",
+    cardTitle: "Evaluación gratuita por fotos",
+    cardBody: "Fotos de tu sonrisa, desde tu teléfono. Toma 2 minutos.",
+  },
+  header: {
+    homeAria: "Xiluet Smiles, inicio",
+    mainNav: "Principal",
+    menu: "Menú",
+    closeMenu: "Cerrar menú",
+    switchTo: "English",
+  },
+  footer: {
+    heading: "Empieza con fotos. Un doctor responde en menos de {hours} horas.",
+    body: "Gratis, sin visita. Incluye presupuesto por escrito y opciones de financiamiento.",
+    nav: "Pie de página",
+    legal: "Los resultados individuales varían. Financiamiento sujeto a aprobación de crédito.",
+  },
+  mobileBar: { call: "Llamar", whatsapp: "WhatsApp", evaluation: "Evaluación gratis" },
+  breadcrumb: { treatments: "Tratamientos", doctors: "Doctores", financing: "Financiamiento", aboutUs: "Nosotros", clinic: "Clínica", outOfState: "Otros estados", cost: "Precios", results: "Resultados", blog: "Blog" },
+  notFound: {
+    title: "Página no encontrada",
+    lead: "Esta dirección no corresponde a ninguna página de nuestro sitio.",
+    linksAria: "Enlaces útiles",
+    links: ["Inicio", "Carillas de porcelana", "Antes y después", "Evaluación gratuita por fotos", "Contacto"],
+  },
+  homePage: {
+    heroCta: "Obtén tu evaluación gratuita por fotos",
+    whatsapp: "Escríbenos por WhatsApp",
+    reviewsLine: "{count} reseñas de cinco estrellas en Google",
+    stars: "estrellas",
+    starsAria: "{rating} de 5 estrellas",
+    googleReviews: "reseñas en Google",
+    yearsShort: "{years} años",
+    warranty: "de garantía",
+    doctorsDmd: "doctores, DMD",
+    familiar: "¿Te suena familiar?",
+    familiarLead1: "Nueve cosas que escuchamos en casi cada primera llamada.",
+    familiarLead2: "Toca una tarjeta para ver nuestra respuesta.",
+    concernsAria: "Dudas frecuentes",
+    concernsCaption: "{count} preguntas · desliza o usa las flechas",
+    showAnswer: "Ver nuestra respuesta a: {q}",
+    ourAnswer: "Nuestra respuesta",
+    realResults: "Resultados reales",
+    doctorsTitle: "Los doctores que diseñan tu sonrisa",
+    meetTeam: "Conoce al equipo →",
+    howItWorks: "Cómo funciona",
+    howItWorksLead: "Seis pasos desde tu teléfono hasta tu seguimiento. Casi todo ocurre antes de tu visita.",
+    fullProcess: "Ver el proceso completo →",
+    costTitle: "Cuánto cuesta",
+    costLead: "Un precio por escrito antes de reservar. Cada paquete incluye limpieza profesional y radiografías.",
+    fullPriceList: "Lista de precios completa →",
+    getEstimate: "Obtén tu presupuesto gratis",
+    aboutPackage: "Sobre este paquete",
+    costFootnote:
+      "La limpieza profunda y otros procedimientos se cotizan aparte, por escrito, antes de empezar. El presupuesto final puede variar si se requieren correcciones adicionales más allá del diseño de sonrisa.",
+    financing: "Financiamiento",
+    financingTitle: "Cinco formas de pagar a plazos",
+    financingLead: "Nuestra coordinadora te ayuda a aplicar y compara las ofertas contigo antes de que te comprometas.",
+    approvalGuidance: "Cómo funciona la guía de aprobación →",
+    financingNote: "El financiamiento lo ofrecen prestamistas externos, sujeto a aprobación de crédito. Los términos varían según el socio.",
+    trustEyebrow: "Por qué los pacientes confían en nosotros",
+    trustTitle: "Resultados que puedes comprobar antes de comprometerte",
+    trustLead: "Ves tu diseño antes de tocar un solo diente, la planificación se hace en casa y la garantía dura cinco veces más que el año habitual.",
+    trust: {
+      warranty: "Garantía",
+      years: "años",
+      usual: "{years}× el año habitual",
+      rating: "Calificación en Google",
+      reviews: "{count} reseñas",
+      doctors: "Doctores",
+      experience: "Experiencia y títulos internacionales",
+      planning: "Planificación en casa",
+      oneBuilding: "Un solo edificio",
+      sideBySide: "Doctor y ceramista lado a lado",
+    },
+    labAlt: "Ceramista moldeando a mano una carilla de porcelana bajo una lupa",
+    labEyebrow: "Nuestro laboratorio propio",
+    labTitle: "Hecho en nuestro laboratorio, diseñado para tu rostro.",
+    labBody:
+      "Tus carillas no se piden de un catálogo. Nuestros maestros ceramistas trabajan en el mismo edificio que tu doctor y diseñan cada sonrisa para tu rostro: línea del labio, proporciones, tono de piel y la forma en que hablas y sonríes.",
+    smileDesignLink: "Cómo funciona un diseño de sonrisa →",
+    outOfStateEyebrow: "Pacientes de otros estados",
+    outOfStateTitle: "¿Vienes de Atlanta, Houston o Nueva York?",
+    outOfStateLead: "Primero el presupuesto, después el vuelo. Cuatro días hábiles en Miami, a 20 minutos del MIA.",
+    planVisit: "Planifica tu visita, día por día →",
+    faqTitle: "Las preguntas que los pacientes hacen primero",
+    officeTitle: "Nuestra oficina",
+    officeLead: "Calle Ocho, West Miami. A 20 minutos del MIA, laboratorio propio en el piso de arriba.",
+    openMaps: "Abrir en Google Maps →",
+    mapTitle: "Mapa a Xiluet Smiles",
+    whatsappUs: "Escríbenos por WhatsApp",
+    ctaTitle: "Empieza con fotos. Un doctor responde en menos de 12 horas.",
+    ctaBody:
+      "Gratis, sin visita. Recibes el plan de un doctor y un presupuesto por escrito. Tus fechas solo se reservan cuando tú decidas, con un depósito de ${deposit} que se aplica al tratamiento.",
+    ctaCardBody: "5 preguntas cortas y 2 fotos de tus dientes. Unos 2 minutos.",
+    ctaPrivacy: "Solo nuestros doctores ven tus fotos.",
+  },
+  results: {
+    filterAria: "Filtrar por tratamiento",
+    showing: "Mostrando {shown} de {total}",
+    caseFilterAria: "Filtrar por tipo de caso",
+    casesCaption: "{shown} casos · desliza o usa las flechas",
+    previousCases: "Casos anteriores",
+    nextCases: "Casos siguientes",
+    pageLead: "Cada foto es un paciente de Xiluet, sin retoques. Filtra por tratamiento. Los resultados individuales varían.",
+    photosAria: "Fotos de antes y después",
+    galleryName: "Antes y después, pacientes de Xiluet Smiles",
+  },
+  planner: {
+    sendOn: "Si envío mis fotos el",
+    pickLabel: "Elige el día en que envías tus fotos",
+    clear: "Borrar fecha",
+    reset: "Restablecer",
+    sameDay: "el mismo día, {date}",
+    visits12: "Visita 1 {v1} · Visita 2 {v2}",
+    visit3: "Visita 3 {v3}",
+    fromHome: "Desde casa · pasos 1–4",
+    inMiami: "En Miami · {from} – {to}",
+    youSend: "Envías tus fotos · {date}",
+    visitN: "Visita {n} · {date}",
+    newSmile: "Tu nueva sonrisa para el {date}.",
+  },
+  datePicker: {
+    months: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
+    dow: ["D", "L", "M", "M", "J", "V", "S"],
+    dialog: "Elige una fecha",
+    prevMonth: "Mes anterior",
+    nextMonth: "Mes siguiente",
+    today: "Hoy",
+    weekends: "Los fines de semana son días de descanso",
+  },
+  reviews: {
+    title: "Lo que dicen los pacientes en Google",
+    starsAria: "{rating} de 5 estrellas",
+    count: "{count} reseñas",
+    leave: "Dejar una reseña",
+    readAll: "Leer todas en Google →",
+  },
+  treatment: { sendPhotos: "Evaluación gratuita por fotos" },
+  doctor: {
+    sendPhotosTo: "Envía tus fotos a {name}",
+    doesBest: "Lo que mejor hace {name}",
+    seeResults: "Ver resultados →",
+    educationEyebrow: "Formación y estudios",
+    educationTitle: "Títulos internacionales. Licencia de Florida.",
+    certsEyebrow: "Certificaciones y membresías",
+    certsTitle: "Credenciales que puedes verificar",
+    certsBody: "Licencias y certificados disponibles a solicitud en tu primera visita.",
+    alsoOnTeam: "También en el equipo",
+    allDoctors: "Todos los doctores →",
+    ctaHeading: "¿Quieres que {name} vea tu sonrisa?",
+    ctaText: "Envía tus fotos y pide a {name} por nombre. Presupuesto por escrito en menos de {hours} horas.",
+  },
+  doctorsPage: {
+    lead: "Cada caso lo planifica el doctor que te trata y lo revisa el equipo. Los conoces antes de que ocurra algo permanente.",
+    faqTitle: "Preguntas que los pacientes hacen sobre los doctores",
+  },
+  lender: {
+    howItWorks: "Cómo funciona con {name}",
+    othersAria: "Otros socios de financiamiento",
+    others: "Otros socios",
+    questions: "Preguntas sobre {name}",
+  },
+  financingPage: {
+    lead: "La mayoría de los pacientes califica con al menos un socio. Nuestra coordinadora te ayuda a aplicar, compara las ofertas contigo y no se cobra nada hasta que estés aprobado y conforme con el plan.",
+    partners: "Socios de financiamiento",
+    learnAbout: "Conoce {name} →",
+    notSure: "¿No sabes cuál elegir?",
+    notSureBody: "Envía tus fotos. Tu presupuesto llega con una comparación de los planes para los que probablemente califiques.",
+    guidanceTitle: "Cómo funciona la guía de aprobación",
+    guidanceAside: "Tres pasos, todos antes de reservar un vuelo.",
+    faqTitle: "Preguntas sobre financiamiento",
+  },
+  cost: {
+    lead: "Precios de paquetes y la lista completa de tarifas, publicados. Envía fotos y un doctor confirma tu cifra exacta por escrito en menos de 6 horas.",
+    packagesAria: "Paquetes",
+    packagesNote:
+      "Todos los paquetes incluyen limpieza dental profesional y radiografías. La limpieza profunda y cualquier otro procedimiento no están incluidos; si tu examen encuentra algo que debe tratarse primero, se cotiza según la lista de precios de abajo, por escrito, antes de empezar. El presupuesto final puede variar si se requieren correcciones adicionales más allá del diseño de sonrisa.",
+    aboutTreatmentAria: "Sobre este tratamiento: {name}",
+    aboutTreatment: "Sobre este tratamiento →",
+    treatmentCol: "Tratamiento",
+    priceCol: "Precio",
+    listEyebrow: "Lista de precios",
+    listTitle: "Cada tarifa individual, publicada",
+    listAside: "La misma lista que usa tu doctor cuando algo fuera del paquete necesita tratamiento. Sin cargos ocultos.",
+    listNote: "Tarifas por diente salvo que se indique lo contrario. Se incluyen en tu presupuesto por escrito solo cuando tu examen muestra que son necesarias.",
+    payEyebrow: "Paga a plazos",
+    payTitle: "Desde unos $149 al mes por 20 carillas",
+    payBody: "Ejemplo: $6,000 en 60 meses con Cherry al 0% APR para pacientes que califiquen. Tu coordinadora te muestra ofertas reales de cinco socios antes de decidir.",
+    allFinancing: "Ver todas las opciones de financiamiento →",
+    faqTitle: "Preguntas sobre precios",
+    catalogName: "Paquetes de Xiluet Smiles",
+  },
+  clinicPage: {
+    lead: "{street}, {locality}. A quince minutos del Aeropuerto Internacional de Miami. El ceramista que hace tus carillas trabaja en el mismo pasillo que tu doctor.",
+    roomAlt: "Sala de tratamiento de Xiluet",
+    findTitle: "Lo que encontrarás aquí",
+    findAside: "Todo lo que tu tratamiento necesita, bajo un mismo techo.",
+    visitUs: "Visítanos",
+    closedWeekends: "Cerrado fines de semana",
+    gettingHere: "Cómo llegar",
+  },
+  outOfStatePage: {
+    lead: "Todo lo previo al viaje se hace desde casa: fotos, presupuesto por escrito, plan de pago y fechas. Después, una semana en Miami, tres visitas y una garantía de {years} años por escrito.",
+    mediaAlt: "Miami al atardecer",
+    weekTitle: "Tu semana, día por día",
+    weekAside: "El mismo calendario para cada paciente de carillas y diseño de sonrisa.",
+    handleTitle: "Lo que gestionamos por ti",
+    faqTitle: "Preguntas sobre el viaje",
+  },
+  blogPage: { lead: "Escrito por los doctores. Sin relleno.", articles: "Artículos", drafts: "Los artículos son borradores pendientes de revisión por los doctores." },
+  contactPage: {
+    lead: "{name} es una práctica de odontología cosmética en {address}, abierta de lunes a viernes de 9 AM a 5 PM. Llama o escribe por WhatsApp al {phone}, envía un correo a {email} o usa el formulario. Respondemos en unas horas en {languages}.",
+    languagesOr: [" y ", " o "],
+    infoTitle: "Información de contacto",
+    infoBody: "Llama, escribe, WhatsApp o correo. {languages}. Fuera del horario de oficina, deja un mensaje y respondemos la siguiente mañana hábil.",
+    whatsapp: "WhatsApp +1 {phone}",
+    mapTitle: "Mapa a {name}",
+    largerMap: "Ver mapa más grande →",
+    faqTitle: "Antes de llamar",
+  },
+  evaluationPage: {
+    lead1: "Tus fotos van directo al doctor que diseñará tu caso.",
+    leadStrong: "No te preocupes por cómo se ven tus dientes ahora.",
+    lead2: "Eso es exactamente lo que venimos a cambiar.",
+    hint: "Las fotos 2 a 5 son las que usa el equipo dental. Haz lo que puedas con tu teléfono y envía lo que tengas.",
+    examplesAria: "Fotos de ejemplo",
+    exampleAlt: "Ejemplo: {title}",
+    afterTitle: "Qué pasa después de enviar",
+    talkBody: "Llama o escribe. {languages}. {hours} ET.",
+  },
+  leadForm: {
+    addPhotos: "Agrega tus fotos",
+    removePhoto: "Quitar foto {name}",
+    whereReply: "¿A dónde debe responder el doctor?",
+    firstName: "Nombre",
+    lastName: "Apellido",
+    mobile: "Celular",
+    email: "Correo electrónico",
+    notes: "Notas (opcional)",
+  },
+  contactForm: {
+    message: "Mensaje",
+    typeHere: "Escribe aquí . . .",
+    heading: "Envíanos un mensaje",
+    intro: "Completa el formulario y nuestro equipo te responde en unas horas durante el horario de oficina.",
+    firstName: "Nombre",
+    lastName: "Apellido",
+    email: "Correo electrónico",
+    phone: "Teléfono",
+    enterFirst: "Escribe tu nombre",
+    enterLast: "Escribe tu apellido",
+    enterEmail: "Escribe tu correo",
+    enterPhone: "Escribe tu teléfono",
+    subject: "Asunto",
+  },
+  referral: { bonusPer: "por tratamiento completado" },
+  legal: { effective: "Fecha de vigencia: {date}" },
+};
+
+/** UI strings for a locale (the small copy that lives in components, not in content JSON). */
+export const ui = (locale: Locale): UiStrings => (locale === "es" ? uiEs : uiEn);
