@@ -9,81 +9,183 @@
   "author": "Dr. Marta Puentes Marrero, DMD",
   "reviewedBy": "Dr. Gretell Alonso Fiel, DMD",
   "datePublished": "2026-10-06",
-  "image": "gen-veneer-macro.jpg",
-  "imageAlt": "Ultra-thin 0.3 mm porcelain veneer held in tweezers",
+  "image": "blog-enamel-exam.jpg",
+  "imageAlt": "Dentist examining natural front teeth with a mirror before veneer planning",
   "readMinutes": 7,
-  "treatments": ["porcelain-veneers", "smile-design"],
-  "related": ["/porcelain-veneers-miami", "/smile-design-miami", "/blog/how-long-do-porcelain-veneers-last", "/free-photo-evaluation"],
+  "treatments": [
+    "porcelain-veneers",
+    "smile-design"
+  ],
+  "related": [
+    "/porcelain-veneers-miami",
+    "/smile-design-miami",
+    "/blog/how-long-do-porcelain-veneers-last",
+    "/free-photo-evaluation"
+  ],
   "answer": "No. A porcelain veneer removes **0.3 to 0.7 mm** from the front of the tooth, and sometimes nothing at all. The teeth filed to pegs in 'Turkey teeth' videos were prepared for crowns, which remove **60 to 70%** of the tooth. At Xiluet Smiles, veneers are **0.3 mm**, your doctor confirms at Visit 1 how much enamel, if any, will be removed, and you approve the design first.",
   "sections": [
     {
       "h2": "The short answer: veneers do not ruin teeth. Over-preparation does.",
       "blocks": [
-        { "p": "A porcelain veneer is a thin shell bonded to the front of a tooth. To make room for it, the dentist removes a thin layer of enamel from the front surface: usually [0.5 to 0.7 mm for a traditional veneer and 0.3 to 0.5 mm for a minimal-prep veneer](https://acedntl.com/minimal-prep-veneers). Enamel on the front of a tooth is roughly 1 to 2 mm thick, so a correctly prepared tooth keeps most of its enamel, and the veneer is bonded to enamel, which is where the bond is strongest." },
-        { "p": "That is not what you see in the videos. The teeth filed down to small pegs, cut on every side, were prepared for crowns. A crown wraps the entire tooth and needs [60 to 70% of the tooth removed](https://www.theperfectsmile.co.uk/news/why-you-should-avoid-turkey-teeth-like-the-plague) to fit. That preparation is irreversible and much closer to the nerve. Many of the people in those videos were told they were getting veneers." },
-        { "p": "So the honest answer has two parts. A veneer prepared in enamel by an experienced dentist does not ruin your tooth. A crown sold as a veneer, or a veneer cut too deep, can." }
+        {
+          "p": "A porcelain veneer is a thin shell bonded to the front of a tooth. To make room for it, the dentist removes a thin layer of enamel from the front surface: usually [0.5 to 0.7 mm for a traditional veneer and 0.3 to 0.5 mm for a minimal-prep veneer](https://acedntl.com/minimal-prep-veneers). Enamel on the front of a tooth is roughly 1 to 2 mm thick, so a correctly prepared tooth keeps most of its enamel, and the veneer is bonded to enamel, which is where the bond is strongest."
+        },
+        {
+          "p": "That is not what you see in the videos. The teeth filed down to small pegs, cut on every side, were prepared for crowns. A crown wraps the entire tooth and needs [60 to 70% of the tooth removed](https://www.theperfectsmile.co.uk/news/why-you-should-avoid-turkey-teeth-like-the-plague) to fit. That preparation is irreversible and much closer to the nerve. Many of the people in those videos were told they were getting veneers."
+        },
+        {
+          "p": "So the honest answer has two parts. A veneer prepared in enamel by an experienced dentist does not ruin your tooth. A crown sold as a veneer, or a veneer cut too deep, can."
+        }
       ]
     },
     {
       "h2": "What the 'Turkey teeth' videos actually show",
       "blocks": [
-        { "p": "The phrase comes from UK patients who travelled abroad for a 'Hollywood smile' and came home with full crowns on teeth that had been healthy. The British Dental Association surveyed 1,000 UK dentists: [86% had treated complications](https://www.bda.org/media-centre/uk-dentists-picking-up-the-pieces-from-dental-tourism-boom/) from dental work done abroad, and crowns were the treatment most often involved." },
-        { "p": "Three things go wrong in those cases. First, the wrong restoration: a crown on a tooth that only needed a veneer, or nothing. Second, too much drilling, which brings the preparation close to the nerve; some of those teeth later need root canals or extraction. Third, no preview: the patient saw the result only when it was already bonded." },
-        { "p": "None of the three is a property of veneers. They are the result of a clinic choosing the fastest, cheapest restoration instead of the most conservative one. Choosing Miami over Istanbul does not remove the risk by itself. The questions further down do." }
+        {
+          "p": "The phrase comes from UK patients who travelled abroad for a 'Hollywood smile' and came home with full crowns on teeth that had been healthy. The British Dental Association surveyed 1,000 UK dentists: [86% had treated complications](https://www.bda.org/media-centre/uk-dentists-picking-up-the-pieces-from-dental-tourism-boom/) from dental work done abroad, and crowns were the treatment most often involved."
+        },
+        {
+          "p": "Three things go wrong in those cases. First, the wrong restoration: a crown on a tooth that only needed a veneer, or nothing. Second, too much drilling, which brings the preparation close to the nerve; some of those teeth later need root canals or extraction. Third, no preview: the patient saw the result only when it was already bonded."
+        },
+        {
+          "p": "None of the three is a property of veneers. They are the result of a clinic choosing the fastest, cheapest restoration instead of the most conservative one. Choosing Miami over Istanbul does not remove the risk by itself. The questions further down do."
+        }
       ]
     },
     {
       "h2": "The enamel data: depth matters more than the word 'veneer'",
       "blocks": [
-        { "p": "The strongest evidence on this is a 15-year study of [672 veneers in 189 patients](https://onlinelibrary.wiley.com/doi/10.1111/jerd.70016), published in the Journal of Esthetic and Restorative Dentistry. Teeth were grouped by how much dentin, the softer layer under the enamel, was exposed during preparation. Veneers bonded entirely to enamel had an estimated survival of 96.7%. When more than 30% of the bonded surface was dentin, survival fell to 93.9%, and dentin exposure raised the odds of failure about 3.5 times." },
-        { "p": "A separate pooled analysis of [6,500 veneers across 25 studies](https://pmc.ncbi.nlm.nih.gov/articles/PMC7961608/) found a 10-year survival of 95.5%. Read together, the message is simple: the less tooth removed, the longer the veneer lasts. Conservative preparation is not only kinder to the tooth. It is better engineering." },
-        { "p": "This is why our standard veneer is 0.3 mm. At that thickness the preparation stays in enamel, and on some teeth, usually small or slightly inward-set ones, no preparation is needed at all. Your doctor confirms this tooth by tooth at Visit 1, after the scans, before anything starts." }
+        {
+          "p": "The strongest evidence on this is a 15-year study of [672 veneers in 189 patients](https://onlinelibrary.wiley.com/doi/10.1111/jerd.70016), published in the Journal of Esthetic and Restorative Dentistry. Teeth were grouped by how much dentin, the softer layer under the enamel, was exposed during preparation. Veneers bonded entirely to enamel had an estimated survival of 96.7%. When more than 30% of the bonded surface was dentin, survival fell to 93.9%, and dentin exposure raised the odds of failure about 3.5 times."
+        },
+        {
+          "p": "A separate pooled analysis of [6,500 veneers across 25 studies](https://pmc.ncbi.nlm.nih.gov/articles/PMC7961608/) found a 10-year survival of 95.5%. Read together, the message is simple: the less tooth removed, the longer the veneer lasts. Conservative preparation is not only kinder to the tooth. It is better engineering."
+        },
+        {
+          "p": "This is why our standard veneer is 0.3 mm. At that thickness the preparation stays in enamel, and on some teeth, usually small or slightly inward-set ones, no preparation is needed at all. Your doctor confirms this tooth by tooth at Visit 1, after the scans, before anything starts."
+        }
       ]
     },
     {
       "h2": "Veneer vs crown: how much tooth each one removes",
       "blocks": [
-        { "table": { "head": ["", "0.3 mm minimal-prep veneer", "Traditional veneer", "Crown"], "rows": [
-          ["Tooth removed", "0 to 0.3 mm, front surface only", "0.5 to 0.7 mm, front surface and edge", "60 to 70% of the tooth, all sides"],
-          ["Bonded to", "Enamel", "Mostly enamel", "Dentin"],
-          ["Reversible", "Sometimes, if no enamel was removed", "No", "No"],
-          ["Honest reason to use it", "Color, shape, small gaps, worn edges on healthy teeth", "Deeper stains, larger shape changes", "Broken, root-canalled or heavily filled teeth"],
-          ["Risk to the nerve", "Very low", "Low", "Higher; some crowned teeth later need root canals"]
-        ] } },
-        { "p": "Ranges come from published preparation guidelines; the exact amount depends on your tooth and the shade change you want. A crown is the right choice for a tooth that is broken, root-canalled or mostly filling. It is the wrong choice for a healthy front tooth that only needs a change of color or shape." }
+        {
+          "table": {
+            "head": [
+              "",
+              "0.3 mm minimal-prep veneer",
+              "Traditional veneer",
+              "Crown"
+            ],
+            "rows": [
+              [
+                "Tooth removed",
+                "0 to 0.3 mm, front surface only",
+                "0.5 to 0.7 mm, front surface and edge",
+                "60 to 70% of the tooth, all sides"
+              ],
+              [
+                "Bonded to",
+                "Enamel",
+                "Mostly enamel",
+                "Dentin"
+              ],
+              [
+                "Reversible",
+                "Sometimes, if no enamel was removed",
+                "No",
+                "No"
+              ],
+              [
+                "Honest reason to use it",
+                "Color, shape, small gaps, worn edges on healthy teeth",
+                "Deeper stains, larger shape changes",
+                "Broken, root-canalled or heavily filled teeth"
+              ],
+              [
+                "Risk to the nerve",
+                "Very low",
+                "Low",
+                "Higher; some crowned teeth later need root canals"
+              ]
+            ]
+          }
+        },
+        {
+          "p": "Ranges come from published preparation guidelines; the exact amount depends on your tooth and the shade change you want. A crown is the right choice for a tooth that is broken, root-canalled or mostly filling. It is the wrong choice for a healthy front tooth that only needs a change of color or shape."
+        }
       ]
     },
     {
       "h2": "How to tell if you are being sold crowns",
       "blocks": [
-        { "p": "You do not need to be a dentist to spot the difference. Ask these questions before you pay a deposit, and expect clear answers." },
-        { "list": [
-          "**How many millimetres will you remove from each tooth, and where?** A veneer answer is a fraction of a millimetre from the front surface. A crown answer is 'all around' or 'enough to fit'.",
-          "**Will the preparation stay in enamel?** If the answer is 'it depends', ask which teeth might go into dentin and why.",
-          "**Can I see my prepared teeth before the final restoration is made?** You should be able to look at them and photograph them. Pegs are obvious.",
-          "**Can I see the design in my mouth before any drilling?** A mock-up costs a clinic very little to show you. A clinic that will not show it is deciding for you.",
-          "**What material, and who makes it?** Ask for the porcelain type and whether the ceramist is in the building or in another country.",
-          "**What is in writing?** The number of teeth, the restoration type for each one, the price and the warranty."
-        ] },
-        { "p": "One more signal. If a clinic recommends 20 crowns for a healthy mouth, or will not say which teeth are getting which restoration, walk away. Price is a reason to compare. It is not a reason to give up tooth structure you can never get back." }
+        {
+          "p": "You do not need to be a dentist to spot the difference. Ask these questions before you pay a deposit, and expect clear answers."
+        },
+        {
+          "list": [
+            "**How many millimetres will you remove from each tooth, and where?** A veneer answer is a fraction of a millimetre from the front surface. A crown answer is 'all around' or 'enough to fit'.",
+            "**Will the preparation stay in enamel?** If the answer is 'it depends', ask which teeth might go into dentin and why.",
+            "**Can I see my prepared teeth before the final restoration is made?** You should be able to look at them and photograph them. Pegs are obvious.",
+            "**Can I see the design in my mouth before any drilling?** A mock-up costs a clinic very little to show you. A clinic that will not show it is deciding for you.",
+            "**What material, and who makes it?** Ask for the porcelain type and whether the ceramist is in the building or in another country.",
+            "**What is in writing?** The number of teeth, the restoration type for each one, the price and the warranty."
+          ]
+        },
+        {
+          "p": "One more signal. If a clinic recommends 20 crowns for a healthy mouth, or will not say which teeth are getting which restoration, walk away. Price is a reason to compare. It is not a reason to give up tooth structure you can never get back."
+        }
       ]
     },
     {
       "h2": "What happens at Visit 1 at Xiluet Smiles",
       "blocks": [
-        { "p": "Before you travel, you send photos and a doctor writes your estimate within 6 hours. Visit 1 is Monday: exam, cleaning, X-rays and 3D scans, about 2 hours. Your doctor looks at each tooth and tells you which ones need 0.3 mm of preparation and which need none. You see the design in your mouth and approve it. No tooth is touched on Monday." },
-        { "p": "Visit 2 on Tuesday is the preparation itself, under local anaesthetic, followed by temporaries shaped like the final design so you can live with it for two days. Visit 3 on Thursday is delivery, bite check and your 5-year warranty in writing. Our ceramist works in the same building, which is what makes the thin preparation and the one-week timeline possible. See the [full week](/porcelain-veneers-miami) and the [smile design process](/smile-design-miami)." },
-        { "quote": "If I cannot explain to you, tooth by tooth, why I am removing enamel, I should not be removing it.", "by": "Dr. Marta Puentes Marrero, DMD" },
-        { "p": "If you are still deciding, send photos through the [free photo evaluation](/free-photo-evaluation). A doctor will tell you whether veneers, bonding or no treatment at all is the honest answer for your teeth. And if you want to know what happens after year one, read [how long porcelain veneers last](/blog/how-long-do-porcelain-veneers-last)." }
+        {
+          "p": "Before you travel, you send photos and a doctor writes your estimate within 6 hours. Visit 1 is Monday: exam, cleaning, X-rays and 3D scans, about 2 hours. Your doctor looks at each tooth and tells you which ones need 0.3 mm of preparation and which need none. You see the design in your mouth and approve it. No tooth is touched on Monday."
+        },
+        {
+          "p": "Visit 2 on Tuesday is the preparation itself, under local anaesthetic, followed by temporaries shaped like the final design so you can live with it for two days. Visit 3 on Thursday is delivery, bite check and your 5-year warranty in writing. Our ceramist works in the same building, which is what makes the thin preparation and the one-week timeline possible. See the [full week](/porcelain-veneers-miami) and the [smile design process](/smile-design-miami)."
+        },
+        {
+          "quote": "If I cannot explain to you, tooth by tooth, why I am removing enamel, I should not be removing it.",
+          "by": "Dr. Marta Puentes Marrero, DMD"
+        },
+        {
+          "p": "If you are still deciding, send photos through the [free photo evaluation](/free-photo-evaluation). A doctor will tell you whether veneers, bonding or no treatment at all is the honest answer for your teeth. And if you want to know what happens after year one, read [how long porcelain veneers last](/blog/how-long-do-porcelain-veneers-last)."
+        }
       ]
     }
   ],
   "faq": [
-    { "q": "Do veneers damage your natural teeth?", "a": "Not when the preparation stays in enamel and the veneer is bonded properly. The damage stories almost always involve over-preparation or crowns sold as veneers. A 0.3 mm veneer removes very little tooth, and sometimes none.", "doc": "Dr. Marta Puentes Marrero, DMD" },
-    { "q": "How much enamel is removed for veneers?", "a": "Traditional veneers remove 0.5 to 0.7 mm from the front surface. Our 0.3 mm veneers remove up to 0.3 mm, and on some teeth nothing. Your doctor confirms the amount for each tooth at Visit 1 after the scans.", "doc": "Dr. Marta Puentes Marrero, DMD" },
-    { "q": "Are 'Turkey teeth' veneers?", "a": "Usually not. The teeth ground down to pegs in those videos were prepared for crowns, which remove 60 to 70% of the tooth. Many patients were told they were getting veneers. Always ask which restoration is going on which tooth.", "doc": "Dr. Gretell Alonso Fiel, DMD" },
-    { "q": "Can veneers be removed later?", "a": "Once enamel has been removed, the tooth will always need a veneer or another restoration, so veneers are replaced rather than simply removed. If no enamel was removed, removal is possible in principle, but plan for veneers as a long-term decision.", "doc": "Dr. Marta Puentes Marrero, DMD" },
-    { "q": "Do teeth rot under veneers?", "a": "Rarely. In pooled data on 6,500 veneers, 99.3% were free of decay at 10 years. Decay happens at the margin, on tooth that is not covered, so brushing, flossing and six-month cleanings still matter.", "doc": "Dr. Roger Ramos Navarro, DMD" },
-    { "q": "Will I need a root canal after veneers?", "a": "Very unlikely with a shallow preparation. In the same 6,500-veneer data, 16 teeth needed root canal treatment over 10 years. The risk rises with deep preparation, which is the crown problem, not the veneer problem.", "doc": "Dr. Roger Ramos Navarro, DMD" }
+    {
+      "q": "Do veneers damage your natural teeth?",
+      "a": "Not when the preparation stays in enamel and the veneer is bonded properly. The damage stories almost always involve over-preparation or crowns sold as veneers. A 0.3 mm veneer removes very little tooth, and sometimes none.",
+      "doc": "Dr. Marta Puentes Marrero, DMD"
+    },
+    {
+      "q": "How much enamel is removed for veneers?",
+      "a": "Traditional veneers remove 0.5 to 0.7 mm from the front surface. Our 0.3 mm veneers remove up to 0.3 mm, and on some teeth nothing. Your doctor confirms the amount for each tooth at Visit 1 after the scans.",
+      "doc": "Dr. Marta Puentes Marrero, DMD"
+    },
+    {
+      "q": "Are 'Turkey teeth' veneers?",
+      "a": "Usually not. The teeth ground down to pegs in those videos were prepared for crowns, which remove 60 to 70% of the tooth. Many patients were told they were getting veneers. Always ask which restoration is going on which tooth.",
+      "doc": "Dr. Gretell Alonso Fiel, DMD"
+    },
+    {
+      "q": "Can veneers be removed later?",
+      "a": "Once enamel has been removed, the tooth will always need a veneer or another restoration, so veneers are replaced rather than simply removed. If no enamel was removed, removal is possible in principle, but plan for veneers as a long-term decision.",
+      "doc": "Dr. Marta Puentes Marrero, DMD"
+    },
+    {
+      "q": "Do teeth rot under veneers?",
+      "a": "Rarely. In pooled data on 6,500 veneers, 99.3% were free of decay at 10 years. Decay happens at the margin, on tooth that is not covered, so brushing, flossing and six-month cleanings still matter.",
+      "doc": "Dr. Roger Ramos Navarro, DMD"
+    },
+    {
+      "q": "Will I need a root canal after veneers?",
+      "a": "Very unlikely with a shallow preparation. In the same 6,500-veneer data, 16 teeth needed root canal treatment over 10 years. The risk rises with deep preparation, which is the crown problem, not the veneer problem.",
+      "doc": "Dr. Roger Ramos Navarro, DMD"
+    }
   ]
 }
