@@ -64,13 +64,27 @@ On the `*.pages.dev` URL:
 - [ ] Google Rich Results Test passes on one page per template (home, treatment, doctor, cost, results, financing partner, contact).
 - [ ] Resolve or accept the items in `OPEN_ITEMS.md`.
 
-## 4. DNS cutover (DNS currently at SiteGround)
-The Cloudflare zone for xiluetsmiledesign.com already holds the records. The switch is a nameserver change at the domain registrar:
-1. In Cloudflare → the zone → Overview, copy the two Cloudflare nameservers.
-2. Before changing anything, make sure the Cloudflare zone still has the SiteGround A/CNAME records for the apex and `www` (so the old site keeps serving while nameservers propagate), and that `pages.dev` is reachable with the final build.
-3. At the registrar (where the domain was bought), replace SiteGround's nameservers with Cloudflare's. Propagation takes minutes to 24 hours; the old site keeps serving from the records in the Cloudflare zone meanwhile.
-4. Once Cloudflare reports the zone as active: Pages project → Custom domains → add `xiluetsmiledesign.com` and `www.xiluetsmiledesign.com`. Cloudflare replaces the apex/`www` records with the Pages ones (two clicks). The old site is now unreachable on the domain; it is still available on its SiteGround IP for rollback (switch the records back).
-5. `public/_redirects` already sends `www` to the apex with path and query preserved, so the Google Business Profile link (`www…/?utm_source=google…`) lands on the new home page.
+## 4. DNS cutover (DNS currently at SiteGround; email on Microsoft 365)
+State on 2026-10-06: the Pages project `website` auto-deploys `main` to https://website-f53.pages.dev. The Cloudflare account has **no zone** for xiluetsmiledesign.com yet. Nameservers are SiteGround's; mail (MX, SPF, DKIM, autodiscover) is Microsoft 365 and must keep working through the switch. Every current record is captured in `dns/xiluetsmiledesign.com.zone`.
+
+1. **Create the zone** — Cloudflare dashboard → Add a domain → `xiluetsmiledesign.com` → Free plan. Skip the quick scan or accept it, then DNS → Records → *Import and Export* → import `dns/xiluetsmiledesign.com.zone`. Check that the apex and `www` A records (34.174.235.166) are there with the orange cloud **off** (DNS only) for now, and that the MX, SPF, both `selector*._domainkey` CNAMEs, `autodiscover` and `_dmarc` are present.
+2. **Switch nameservers at SiteGround** (Site Tools → Domain → DNS Zone Editor is not it; it is the registrar panel: Services → Domains → Manage → Nameservers) to the two names Cloudflare shows on the zone Overview. Propagation: minutes to 24 h. The old site keeps serving from the imported A records meanwhile; mail is unaffected.
+3. **When the zone shows "Active"**: Pages project `website` → Custom domains → add `xiluetsmiledesign.com`, then `www.xiluetsmiledesign.com`. Cloudflare replaces the two A records with Pages CNAMEs and issues the certificate (a few minutes). `public/_redirects` sends `www` to the apex, so the Google Business Profile link (`www…/?utm_source=google…`) lands on the new home page.
+4. **Same day, after the domain resolves to Pages**: set `gtmId` to `GTM-PSP4L6TC` in `src/content/site.json` and `src/content/es/site.json` and push (re-enables GA4, Google Ads and the Facebook pixel). Enable Cloudflare Web Analytics on the Pages project.
+5. **Search Console**: the `google-site-verification` TXT is in the zone file, so the existing property stays verified. Add a *Domain* property for `xiluetsmiledesign.com` as well (DNS TXT, Cloudflare offers one-click), submit `https://xiluetsmiledesign.com/sitemap.xml`, and request indexing for the home page and the six treatment pages. Then Google Business Profile → edit → Website → `https://xiluetsmiledesign.com/?utm_source=google&utm_medium=organic&utm_campaign=gbp`.
+6. **Rollback**: point the apex/`www` records back at 34.174.235.166 (SiteGround keeps serving until the hosting is cancelled).
+
+### Already configured on the Pages project (via API, 2026-10-06)
+`NODE_VERSION=22`, `NOTIFY_EMAIL`, `FROM_EMAIL`, `GOOGLE_PLACE_ID`, `LINK_SIGNING_SECRET` (random, encrypted) and the `RATE_LIMIT` KV binding (`xiluet-website-rate-limit`), on Production and Preview.
+
+### Still needed from the clinic (external accounts)
+| Item | Where | Why |
+|---|---|---|
+| Enable R2 on the account, then create bucket `xiluet-lead-photos` and bind it as `R2_PHOTOS` | Cloudflare → R2 | Photo-evaluation uploads have nowhere to go until this exists; the form falls back to email-only. |
+| Turnstile widget for `xiluetsmiledesign.com` + `*.pages.dev` → `NEXT_PUBLIC_TURNSTILE_SITE_KEY` (plain) and `TURNSTILE_SECRET` (encrypted) | Cloudflare → Turnstile | Bot protection on the forms. |
+| Resend account, verify `xiluetsmiledesign.com` (adds DKIM/SPF records to the zone), create API key → `RESEND_API_KEY` | resend.com | Lead and contact emails. Until set, functions store the lead and return success without sending. |
+| Google Cloud API key with Places API (New) → `GOOGLE_PLACES_API_KEY` | console.cloud.google.com | Live Google reviews on Home. |
+| `CRM_WEBHOOK_URL` (GoHighLevel inbound webhook) | GHL → Automations → Inbound Webhook | Leads land in the CRM. |
 
 ### Previous checklist
 

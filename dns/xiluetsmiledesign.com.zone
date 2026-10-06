@@ -1,0 +1,27 @@
+; xiluetsmiledesign.com — records captured from the live SiteGround zone on 2026-10-06.
+; Import in Cloudflare: zone → DNS → Records → Import and Export → Import DNS records (this file).
+; The apex and www A records point at the current SiteGround server so the old site keeps serving
+; during propagation; the Pages custom domain step replaces them afterwards.
+$ORIGIN xiluetsmiledesign.com.
+$TTL 300
+
+; --- Web (old site, replaced by Cloudflare Pages at cutover) ---
+@                       IN A     34.174.235.166
+www                     IN A     34.174.235.166
+
+; --- Email: Microsoft 365 ---
+@                       IN MX 0  xiluetsmiledesign-com.mail.protection.outlook.com.
+@                       IN TXT   "v=spf1 include:spf.protection.outlook.com -all"
+@                       IN TXT   "MS=ms92957257"
+autodiscover            IN CNAME autodiscover.outlook.com.
+selector1._domainkey    IN CNAME selector1-xiluetsmiledesign-com._domainkey.xiluetsmiles.n-v1.dkim.mail.microsoft.
+selector2._domainkey    IN CNAME selector2-xiluetsmiledesign-com._domainkey.xiluetsmiles.n-v1.dkim.mail.microsoft.
+_dmarc                  IN TXT   "v=DMARC1; p=none; aspf=r; adkim=r;"
+
+; --- Google Search Console verification (keep) ---
+@                       IN TXT   "google-site-verification=RjWfUgmM5e48FRgXA5qL9qR6fw-aSsDF2my4jRJaUYw"
+
+; --- SiteGround leftovers (harmless; delete once the old hosting is cancelled) ---
+mail                    IN A     34.174.235.166
+ftp                     IN A     34.174.235.166
+default._domainkey      IN CNAME xiluetsmiledesign.com.default.dkim.auto.dnssmarthost.net.
