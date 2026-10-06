@@ -111,7 +111,7 @@
     {
       "icon": "estimate",
       "title": "A doctor evaluates and writes your estimate",
-      "time": "within 12 hours"
+      "time": "within 6 hours"
     },
     {
       "icon": "pay",
@@ -201,7 +201,7 @@
     {
       "icon": "plane",
       "title": "From the airport",
-      "body": "About 20 minutes by car. Take SR-836 West to 87th Ave, then south to SW 8th St. Rideshare pickup is at MIA arrivals level."
+      "body": "About 15 minutes by car. Take SR-836 West to 87th Ave, then south to SW 8th St. Rideshare pickup is at MIA arrivals level."
     },
     {
       "icon": "car",

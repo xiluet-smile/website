@@ -3,11 +3,11 @@
 Things the design files leave unresolved. Each is marked `TODO(clinic)` in the code or content where it applies. Nothing here was invented to fill a gap; placeholders were left out instead.
 
 ## Facts that contradict each other in the designs (pick one)
-- **Google rating and review count.** Site uses the design's 5.0 · 236 (`src/content/site.json` → `rating`); the live site says 4.9 · 500+.
-- **Reply-time promise.** Footer, Free Photo Evaluation, Financing, Cost and SEO copy say "within 6 hours" (`site.json` → `replyHours`); the Home how-it-works step and Home final CTA say "within 12 hours". Kept verbatim.
-- **Airport distance.** Home says "20 minutes from MIA"; Clinic and the SEO description say "15 minutes".
+- **Google rating and review count:** resolved — 5.0 · 248 (`site.json` → `rating`). Update the count when it changes, or connect the live reviews.
+- **Reply-time promise:** resolved — 6 hours everywhere.
+- **Airport distance:** resolved — 15 minutes from MIA everywhere.
 - **Days in Miami.** Home copy mixes "4 business days", "3 visits", "one week" and package cards say "Delivery in 5 business days".
-- **Cost financing band.** Heading "From about $149 a month for 20 veneers" vs the example beneath it "$6,000 over 60 months … at 0% APR" (= $100 a month).
+- **Cost financing band:** resolved — "From about $149 a month for 20 veneers" stays; the example beneath it no longer quotes a term or APR (the previous "$6,000 over 60 months at 0% APR" did not equal $149). If you want the example to show a term, give me the Cherry term/APR that produces $149.
 - **Reviews footnote.** "Reviews from Google, Healthgrades and RealSelf." vs the hero's "Reviews as published on Google".
 - **Schema `priceRange`.** Design JSON-LD says `$$`, SEO.md says `$$$`. Using `$$`.
 - **Sunbit.** "30 sec" decision time in the facts vs "under a minute" in the H1.

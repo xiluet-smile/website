@@ -554,7 +554,6 @@ export default function HomePage({ locale = "en" }: { locale?: Locale }) {
       <section className="wrap py-16 lg:py-28">
         <div className="dark-panel flex flex-col gap-4 rounded-[20px] px-6 py-8 lg:grid lg:grid-cols-[minmax(0,1fr)_440px] lg:items-center lg:gap-16 lg:px-16 lg:py-[72px]">
           <div className="flex flex-col gap-4 lg:gap-5">
-            {/* TODO(clinic): design says 12 hours here and 6 hours in the footer; kept verbatim. */}
             <h2 className="m-0 font-serif text-[32px] leading-[1.12] font-normal text-pretty lg:text-[52px] lg:leading-[1.08]">{t.ctaTitle}</h2>
             <p className="m-0 text-base text-on-dark-muted lg:text-[19px]">
               {tpl(t.ctaBody, { deposit: site.depositUsd })}
