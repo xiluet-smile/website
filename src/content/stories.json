@@ -10,5 +10,38 @@
     "treatment": "Delivery day",
     "duration": "0:13",
     "doctor": "Dr. Gretell Alonso Fiel, DMD"
+  },
+  {
+    "id": "story-2",
+    "source": "https://www.instagram.com/p/Dc_RtT6PgUg/",
+    "video": "/videos/stories/story-2.mp4",
+    "poster": "story-2-poster.jpg",
+    "quote": "In the end, I really got an amazing smile.",
+    "name": "Xiluet patient",
+    "treatment": "20 crowns",
+    "duration": "0:22",
+    "doctor": "Dr. Gretell Alonso Fiel, DMD"
+  },
+  {
+    "id": "story-3",
+    "source": "https://www.instagram.com/p/Dc_Rp7BhZ5r/",
+    "video": "/videos/stories/story-3.mp4",
+    "poster": "story-3-poster.jpg",
+    "quote": "Oh my goodness. That's beautiful!",
+    "name": "Xiluet patient",
+    "treatment": "Delivery day",
+    "duration": "0:23",
+    "doctor": "Dr. Marta Puentes Marrero, DMD"
+  },
+  {
+    "id": "story-4",
+    "source": "https://www.instagram.com/p/Dba8FiLRS0k/",
+    "video": "/videos/stories/story-4.mp4",
+    "poster": "story-4-poster.jpg",
+    "quote": "I recommend her one hundred percent, and the whole team.",
+    "name": "Xiluet patient",
+    "treatment": "Smile design · in Spanish",
+    "duration": "0:24",
+    "doctor": "Dr. Gretell Alonso Fiel, DMD"
   }
 ]

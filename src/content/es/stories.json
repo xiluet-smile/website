@@ -10,5 +10,38 @@
     "treatment": "Día de entrega",
     "duration": "0:13",
     "doctor": "Dr. Gretell Alonso Fiel, DMD"
+  },
+  {
+    "id": "story-2",
+    "source": "https://www.instagram.com/p/Dc_RtT6PgUg/",
+    "video": "/videos/stories/story-2.mp4",
+    "poster": "story-2-poster.jpg",
+    "quote": "Al final, de verdad conseguí una sonrisa increíble.",
+    "name": "Paciente de Xiluet",
+    "treatment": "20 coronas · en inglés",
+    "duration": "0:22",
+    "doctor": "Dr. Gretell Alonso Fiel, DMD"
+  },
+  {
+    "id": "story-3",
+    "source": "https://www.instagram.com/p/Dc_Rp7BhZ5r/",
+    "video": "/videos/stories/story-3.mp4",
+    "poster": "story-3-poster.jpg",
+    "quote": "Dios mío. ¡Qué bonito!",
+    "name": "Paciente de Xiluet",
+    "treatment": "Día de entrega · en inglés",
+    "duration": "0:23",
+    "doctor": "Dr. Marta Puentes Marrero, DMD"
+  },
+  {
+    "id": "story-4",
+    "source": "https://www.instagram.com/p/Dba8FiLRS0k/",
+    "video": "/videos/stories/story-4.mp4",
+    "poster": "story-4-poster.jpg",
+    "quote": "La recomiendo al cien por ciento, como a todo el personal.",
+    "name": "Paciente de Xiluet",
+    "treatment": "Diseño de sonrisa",
+    "duration": "0:24",
+    "doctor": "Dr. Gretell Alonso Fiel, DMD"
   }
 ]
