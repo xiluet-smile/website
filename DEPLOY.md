@@ -64,7 +64,16 @@ On the `*.pages.dev` URL:
 - [ ] Google Rich Results Test passes on one page per template (home, treatment, doctor, cost, results, financing partner, contact).
 - [ ] Resolve or accept the items in `OPEN_ITEMS.md`.
 
-## 4. DNS cutover
+## 4. DNS cutover (DNS currently at SiteGround)
+The Cloudflare zone for xiluetsmiledesign.com already holds the records. The switch is a nameserver change at the domain registrar:
+1. In Cloudflare → the zone → Overview, copy the two Cloudflare nameservers.
+2. Before changing anything, make sure the Cloudflare zone still has the SiteGround A/CNAME records for the apex and `www` (so the old site keeps serving while nameservers propagate), and that `pages.dev` is reachable with the final build.
+3. At the registrar (where the domain was bought), replace SiteGround's nameservers with Cloudflare's. Propagation takes minutes to 24 hours; the old site keeps serving from the records in the Cloudflare zone meanwhile.
+4. Once Cloudflare reports the zone as active: Pages project → Custom domains → add `xiluetsmiledesign.com` and `www.xiluetsmiledesign.com`. Cloudflare replaces the apex/`www` records with the Pages ones (two clicks). The old site is now unreachable on the domain; it is still available on its SiteGround IP for rollback (switch the records back).
+5. `public/_redirects` already sends `www` to the apex with path and query preserved, so the Google Business Profile link (`www…/?utm_source=google…`) lands on the new home page.
+
+### Previous checklist
+
 Keep the WordPress site live until section 3 passes.
 1. Pages project → **Custom domains** → add `xiluetsmiledesign.com` and `www.xiluetsmiledesign.com`. With DNS already on Cloudflare the records are created for you; remove the old A/CNAME records that point to the WordPress host.
 2. Add a redirect rule from `www` to the apex (Rules → Redirect Rules) so there is one canonical host.

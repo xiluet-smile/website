@@ -52,7 +52,9 @@ Things the design files leave unresolved. Each is marked `TODO(clinic)` in the c
 
 ## Migration
 - **Old service pages without an equivalent** (gum lightening, orthodontics, dentures, crowns, root canals, oral surgery, etc.) 301 to the closest new page (`public/_redirects`). Search Console shows real demand for **gum depigmentation / gum lightening in Miami**; a dedicated page (with the clinic's price and copy) would keep that traffic instead of redirecting it to Smile Makeover.
-- **Dr. Adriana Hernandez's** old profile redirects to /doctors (no photo or bio supplied).
+- **Dr. Adriana Hernandez's** old profile redirects to /doctors. Search Console shows her page getting 11 clicks in 3 months (people search her name); a profile page needs her photo and bio.
+- **Frenectomy**: the old `/frenectomy/` page ranks #2 for "frenectomy miami" (472 impressions); it currently redirects to /contact. A dedicated page (price and copy from the clinic) would keep that ranking.
+- **Live reviews**: the Place ID is set in `site.json`; the Pages project still needs `GOOGLE_PLACES_API_KEY` and `GOOGLE_PLACE_ID` for the live feed.
 
 ## Lender claims to confirm against merchant agreements (rendered verbatim)
 - **Cherry**: $200 to $30,000; 3 to 60 months; 0% APR options for qualified patients; "approving around 75 percent of applicants"; no early-payoff penalty; no hard pull.

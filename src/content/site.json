@@ -69,8 +69,7 @@
   },
   "copyrightYear": 2026,
   "google": {
-    "placeId": "",
-    "note": "TODO(clinic): Google Business Profile Place ID (Google Maps → share → or Places API). Powers live reviews and the write-a-review link."
+    "placeId": "ChIJ--ECvsq52YgRG2Y2kpDGBOM"
   },
   "gtmId": "",
   "ghlChatWidgetId": "6a5e5161c40835bdcd31af14"
