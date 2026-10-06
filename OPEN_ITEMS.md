@@ -38,6 +38,11 @@ Things the design files leave unresolved. Each is marked `TODO(clinic)` in the c
 - **Bot protection vs no-JavaScript.** Turnstile cannot run without JavaScript. Submissions without a token are accepted only from the no-JS form path, with an empty honeypot and a stricter rate limit. Set `REQUIRE_TURNSTILE=1` to refuse them (the no-JS form then stops working).
 - **Contact page JSON-LD** keeps the site-wide Dentist/WebPage/WebSite nodes; the design's contact block used a slightly different Dentist node (`$$$`, extra `contactPoint`/`hasMap`) that contradicts the other 23 pages.
 
+## Added after launch review (need clinic input)
+- **Referrals and Partnerships pages** (`/referrals`, `/partnerships`): no design or copy existed. The text in `src/content/referrals.json` is a neutral placeholder built only from facts already on the site; confirm whether referrals carry a reward and which partner types to list.
+- **Live Google reviews** need a Places API key and the practice Place ID (`GOOGLE_PLACES_API_KEY`, `GOOGLE_PLACE_ID`, and `google.placeId` in `site.json`). Until set, Home shows the stored reviews and the "Leave a review" button opens the Google Maps listing.
+- **Third-party scripts** (GTM `GTM-PSP4L6TC` and the LeadConnector chat widget) were copied from the previous site at the clinic's request; they lower Lighthouse performance scores somewhat and the CSP was widened to allow GTM-managed tags.
+
 ## Lender claims to confirm against merchant agreements (rendered verbatim)
 - **Cherry**: $200 to $30,000; 3 to 60 months; 0% APR options for qualified patients; "approving around 75 percent of applicants"; no early-payoff penalty; no hard pull.
 - **Sunbit**: "approves about 9 in 10 applicants" / "~90%"; decision in 30 sec / under a minute; no late, origination or prepayment fees; terms up to 72 months.

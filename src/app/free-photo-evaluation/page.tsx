@@ -1,3 +1,4 @@
+import { PhoneIcon } from "@/components/Icons";
 import JsonLd from "@/components/JsonLd";
 import PageHero from "@/components/PageHero";
 import Img from "@/components/Img";
@@ -88,7 +89,10 @@ export default function Page() {
               Call or text. {site.languages.display}. {site.hours.display} ET.
             </p>
           </div>
-          <a href={site.phone.href} className="font-serif text-[30px] text-gold no-underline hover:text-gold lg:text-[36px]">
+          <a href={site.phone.href} className="inline-flex items-center gap-3 font-serif text-[30px] text-gold no-underline hover:text-gold lg:gap-4 lg:text-[36px]">
+            <span className="grid h-12 w-12 flex-none place-items-center rounded-full border-[1.5px] border-[rgba(205,177,128,.5)] bg-[rgba(205,177,128,.12)] lg:h-14 lg:w-14">
+              <PhoneIcon size={22} />
+            </span>
             {site.phone.display}
           </a>
         </div>

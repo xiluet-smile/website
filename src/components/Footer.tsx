@@ -119,12 +119,11 @@ export default function Footer() {
           <span>
             © {site.copyrightYear} {site.name} · Miami, FL · Individual results vary. Financing subject to credit approval.
           </span>
-          {/* TODO(clinic): legal pages are not in the design package; links pending. */}
-          <div className="flex flex-wrap gap-3.5 lg:gap-[18px]">
+                    <div className="flex flex-wrap gap-3.5 lg:gap-[18px]">
             {nav.legal.map((l) => (
-              <a key={l.label} href={l.href} className="text-on-dark-muted no-underline hover:text-gold">
+              <Link key={l.label} href={l.href} className="text-on-dark-muted no-underline hover:text-gold">
                 {l.label}
-              </a>
+              </Link>
             ))}
           </div>
         </div>

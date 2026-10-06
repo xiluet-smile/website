@@ -5,7 +5,8 @@
     "name": "Cherry",
     "logo": "logo-cherry.webp",
     "tag": "Soft credit check",
-    "note": "Pre-qualify in 60 seconds without affecting your score. Plans from 3 to 60 months."
+    "note": "Pre-qualify in 60 seconds without affecting your score. Plans from 3 to 60 months.",
+    "short": "Pre-qualify in 60 seconds. Plans from 3 to 60 months."
   },
   {
     "slug": "sunbit",
@@ -13,7 +14,8 @@
     "name": "Sunbit",
     "logo": "logo-sunbit.svg",
     "tag": "High approval rate",
-    "note": "Built for dental. Most applicants approved, decision in under a minute."
+    "note": "Built for dental. Most applicants approved, decision in under a minute.",
+    "short": "Built for dental. Most applicants approved in under a minute."
   },
   {
     "slug": "carecredit",
@@ -21,7 +23,8 @@
     "name": "CareCredit",
     "logo": "logo-carecredit.webp",
     "tag": "Health care card",
-    "note": "Promotional financing on purchases over $200 with the most widely accepted health card."
+    "note": "Promotional financing on purchases over $200 with the most widely accepted health card.",
+    "short": "Promotional financing on purchases over $200."
   },
   {
     "slug": "lendingclub",
@@ -29,7 +32,8 @@
     "name": "LendingClub",
     "logo": "logo-lendingclub.svg",
     "tag": "Fixed monthly payments",
-    "note": "Personal loans up to $65,000 with a fixed rate and no prepayment penalty."
+    "note": "Personal loans up to $65,000 with a fixed rate and no prepayment penalty.",
+    "short": "Loans up to $65,000, fixed rate, no prepayment penalty."
   },
   {
     "slug": "affirm",
@@ -37,6 +41,7 @@
     "name": "Affirm",
     "logo": "logo-affirm.webp",
     "tag": "No late fees",
-    "note": "Pay over time with transparent terms. Check eligibility in seconds without affecting your credit score."
+    "note": "Pay over time with transparent terms. Check eligibility in seconds without affecting your credit score.",
+    "short": "Transparent terms. Check eligibility without affecting your credit score."
   }
 ]

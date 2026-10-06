@@ -248,6 +248,44 @@
     font-weight: 600;
   }
 
+  /* Legal documents (HTML copied from the clinic's policy pages) */
+  .legal-prose {
+    color: var(--color-body);
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  .legal-prose h2 {
+    margin: 40px 0 12px;
+    font-family: var(--font-serif);
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.2;
+    color: var(--color-ink);
+  }
+  .legal-prose h3 {
+    margin: 28px 0 8px;
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--color-ink);
+  }
+  .legal-prose p {
+    margin: 0 0 14px;
+  }
+  .legal-prose ul,
+  .legal-prose ol {
+    margin: 0 0 14px;
+    padding-left: 24px;
+  }
+  .legal-prose li {
+    margin-bottom: 6px;
+  }
+  .legal-prose a {
+    overflow-wrap: anywhere;
+  }
+  .legal-prose > :first-child {
+    margin-top: 0;
+  }
+
   /* FAQ accordion (native details) */
   .faq-item {
     transition: border-color 200ms;

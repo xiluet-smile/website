@@ -1,7 +1,11 @@
 {
   "name": "Xiluet Smiles",
   "url": "https://xiluetsmiledesign.com",
-  "phone": { "display": "(305) 615-5500", "href": "tel:+13056155500", "schema": "+1-305-615-5500" },
+  "phone": {
+    "display": "(305) 615-5500",
+    "href": "tel:+13056155500",
+    "schema": "+1-305-615-5500"
+  },
   "whatsapp": "https://wa.me/13056155500",
   "email": "hello@xiluetsmiledesign.com",
   "address": {
@@ -11,16 +15,34 @@
     "postalCode": "33144",
     "country": "US"
   },
-  "geo": { "latitude": 25.7616318, "longitude": -80.3312765 },
+  "geo": {
+    "latitude": 25.7616318,
+    "longitude": -80.3312765
+  },
   "hours": {
     "display": "Mon–Fri 9am–5pm",
-    "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "days": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
     "opens": "09:00",
     "closes": "17:00"
   },
-  "languages": { "display": "English and Spanish", "codes": ["en", "es"] },
+  "languages": {
+    "display": "English and Spanish",
+    "codes": [
+      "en",
+      "es"
+    ]
+  },
   "priceRange": "$$",
-  "areaServed": ["Miami, FL", "United States"],
+  "areaServed": [
+    "Miami, FL",
+    "United States"
+  ],
   "social": {
     "instagram": "https://www.instagram.com/xiluetsmiles",
     "tiktok": "https://www.tiktok.com/@xiluetsmiles",
@@ -32,7 +54,10 @@
     "directions": "https://www.google.com/maps/dir/?api=1&destination=8396+SW+8th+St+Miami+FL+33144",
     "embed": "https://www.google.com/maps?q=8396+SW+8th+St,+Miami,+FL+33144&output=embed"
   },
-  "rating": { "value": "5.0", "count": 236 },
+  "rating": {
+    "value": "5.0",
+    "count": 236
+  },
   "warrantyYears": 5,
   "replyHours": 6,
   "depositUsd": 250,
@@ -42,5 +67,11 @@
     "hero": "https://d8j0ntlcm91z4.cloudfront.net/user_3HSeu3MiZbD5rZqN4nnQHGTvdYd/hf_20260909_154013_a9630b1f-a81e-4194-9781-309168ed49c0.mp4",
     "miamiArrival": null
   },
-  "copyrightYear": 2026
+  "copyrightYear": 2026,
+  "google": {
+    "placeId": "",
+    "note": "TODO(clinic): Google Business Profile Place ID (Google Maps → share → or Places API). Powers live reviews and the write-a-review link."
+  },
+  "gtmId": "GTM-PSP4L6TC",
+  "ghlChatWidgetId": "6a5e5161c40835bdcd31af14"
 }

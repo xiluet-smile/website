@@ -5,8 +5,10 @@ import { CameraIcon, PhoneIcon, Stars, WhatsAppIcon } from "@/components/Icons";
 import Img from "@/components/Img";
 import JsonLd from "@/components/JsonLd";
 import LineIcon, { type LineIconName } from "@/components/LineIcon";
+import GoogleReviews from "@/components/home/GoogleReviews";
 import HeroVideo from "@/components/home/HeroVideo";
 import HomeResults from "@/components/home/HomeResults";
+import ScrollRow from "@/components/ScrollRow";
 import WeekPlanner from "@/components/home/WeekPlanner";
 import home from "@/content/home.json";
 import faqs from "@/content/faq/home.json";
@@ -19,7 +21,7 @@ export const metadata = pageMetadata("/");
 
 const h2 = "m-0 font-serif text-[34px] leading-[1.2] font-normal lg:text-[48px] lg:leading-[1.1]";
 const headRow = "mb-4 flex flex-col gap-3 lg:mb-10 lg:flex-row lg:items-end lg:justify-between lg:gap-8";
-const calloutPos = { tl: "top-4 left-4", tr: "top-4 right-4", br: "right-4 bottom-4" } as const;
+const calloutPos = { tl: "top-[46%] left-0", tr: "top-[30%] right-4", br: "right-[18%] bottom-[14%]" } as const;
 
 const packageIcons: Record<string, LineIconName> = {
   "signature-veneers": "veneer",
@@ -132,19 +134,19 @@ export default function Home() {
       <section className="defer-render wrap pt-16 lg:pt-28">
         <div className={headRow}>
           <h2 className={`${h2} lg:leading-[1.55]`}>Sound familiar?</h2>
-          <p className="m-0 max-w-[420px] text-[17px] leading-normal text-pretty text-body lg:mb-2 lg:text-right">
+          <p className="m-0 max-w-[420px] text-[17px] leading-normal text-balance text-body lg:mb-2 lg:text-right">
             Six things we hear on almost every first call. Tap a card to see our answer.
           </p>
         </div>
-        <ul className="m-0 grid list-none gap-4 p-0 lg:grid-cols-3 lg:gap-5">
+        <ScrollRow ariaLabel="Common concerns" caption={`${home.problems.length} questions · swipe or use the arrows`}>
           {home.problems.map((p, i) => {
             const n = String(i + 1).padStart(2, "0");
             return (
-              <li key={p.q}>
-                <label className="group relative block cursor-pointer rounded-[18px] max-lg:glass-card max-lg:p-4 lg:min-h-[320px] lg:rounded-[20px] lg:[perspective:1600px] has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-4 has-[:focus-visible]:outline-gold">
+              <li key={p.q} className="w-[82%] flex-none snap-start lg:w-[380px]">
+                <label className="group relative block cursor-pointer rounded-[18px] max-lg:glass-card max-lg:p-4 lg:min-h-[250px] lg:rounded-[20px] lg:[perspective:1600px] has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-4 has-[:focus-visible]:outline-gold">
                   <input type="checkbox" className="sr-only" aria-label={`Show our answer to: ${p.q}`} />
-                  <div className="lg:relative lg:h-full lg:min-h-[320px] lg:transition-transform lg:duration-[640ms] lg:ease-[cubic-bezier(.4,0,.2,1)] lg:[transform-style:preserve-3d] lg:group-has-[:checked]:[transform:rotateY(180deg)]">
-                    <div className="grid grid-cols-[56px_minmax(0,1fr)] items-center gap-3.5 lg:absolute lg:inset-0 lg:flex lg:flex-col lg:items-stretch lg:gap-6 lg:rounded-[20px] lg:px-7 lg:pt-7 lg:pb-[26px] lg:glass-card lg:[backface-visibility:hidden] lg:hover:shadow-[inset_0_1px_0_rgba(255,255,255,.6),0_24px_48px_rgba(26,26,26,.12)]">
+                  <div className="lg:relative lg:h-full lg:min-h-[250px] lg:transition-transform lg:duration-[640ms] lg:ease-[cubic-bezier(.4,0,.2,1)] lg:[transform-style:preserve-3d] lg:group-has-[:checked]:[transform:rotateY(180deg)]">
+                    <div className="grid grid-cols-[56px_minmax(0,1fr)] items-center gap-3.5 lg:absolute lg:inset-0 lg:flex lg:flex-col lg:items-stretch lg:gap-5 lg:rounded-[20px] lg:px-6 lg:pt-6 lg:pb-5 lg:glass-card lg:[backface-visibility:hidden] lg:hover:shadow-[inset_0_1px_0_rgba(255,255,255,.6),0_24px_48px_rgba(26,26,26,.12)]">
                       <div className="lg:flex lg:items-start lg:justify-between">
                         <div className="grid h-14 w-14 place-items-center rounded-[14px] bg-[rgba(205,177,128,.1)] lg:h-16 lg:w-16 lg:rounded-2xl">
                           <div className="h-[34px] w-[34px] lg:h-10 lg:w-10">
@@ -156,21 +158,21 @@ export default function Home() {
                         </span>
                       </div>
                       <div className="flex flex-col gap-1.5 lg:contents">
-                        <p className="m-0 font-serif text-[19px] leading-[1.3] text-pretty lg:text-[26px] lg:leading-[1.25]">“{p.q}”</p>
+                        <p className="m-0 font-serif text-[19px] leading-[1.3] text-pretty lg:text-[23px] lg:leading-[1.25]">“{p.q}”</p>
                         <span className="text-[13px] font-semibold text-gold-text lg:mt-auto lg:flex lg:items-center lg:gap-2 lg:text-[15px]">
                           Our answer <span aria-hidden="true" className="lg:hidden">↓</span>
                           <span aria-hidden="true" className="hidden lg:inline">↻</span>
                         </span>
                       </div>
                     </div>
-                    <div className="mt-3.5 hidden flex-col gap-2.5 rounded-xl bg-[rgba(4,40,46,.94)] p-4 text-on-dark group-has-[:checked]:flex lg:absolute lg:inset-0 lg:mt-0 lg:flex lg:gap-5 lg:rounded-[20px] lg:border lg:border-[rgba(255,255,255,.12)] lg:bg-[linear-gradient(150deg,rgba(10,62,68,.96)_0%,rgba(4,40,46,.94)_100%)] lg:px-7 lg:pt-7 lg:pb-[26px] lg:shadow-[0_12px_32px_rgba(26,26,26,.14)] lg:[transform:rotateY(180deg)] lg:[backface-visibility:hidden]">
+                    <div className="mt-3.5 hidden flex-col gap-2.5 rounded-xl bg-[rgba(4,40,46,.94)] p-4 text-on-dark group-has-[:checked]:flex lg:absolute lg:inset-0 lg:mt-0 lg:flex lg:gap-4 lg:rounded-[20px] lg:border lg:border-[rgba(255,255,255,.12)] lg:bg-[linear-gradient(150deg,rgba(10,62,68,.96)_0%,rgba(4,40,46,.94)_100%)] lg:px-6 lg:pt-6 lg:pb-5 lg:shadow-[0_12px_32px_rgba(26,26,26,.14)] lg:[transform:rotateY(180deg)] lg:[backface-visibility:hidden]">
                       <div className="hidden items-center justify-between lg:flex">
                         <span className="eyebrow text-gold">Our answer</span>
                         <span className="text-xs font-semibold tracking-[.14em] text-[rgba(247,244,238,.55)]" aria-hidden="true">
                           {n}
                         </span>
                       </div>
-                      <p className="m-0 text-[15px] leading-normal text-pretty lg:text-[17px] lg:leading-[1.55]">{p.a}</p>
+                      <p className="m-0 text-[15px] leading-normal text-pretty lg:text-base lg:leading-[1.5]">{p.a}</p>
                       <Link href={p.href} className="flex min-h-11 items-center gap-2 text-sm font-semibold text-gold no-underline hover:text-gold lg:mt-auto lg:min-h-0 lg:text-[15px]">
                         {p.link} <span aria-hidden="true">→</span>
                       </Link>
@@ -180,7 +182,7 @@ export default function Home() {
               </li>
             );
           })}
-        </ul>
+        </ScrollRow>
       </section>
 
       {/* Real results */}
@@ -338,7 +340,7 @@ export default function Home() {
                   {l.tag}
                 </span>
               </div>
-              <p className="m-0 text-sm leading-normal text-body xl:text-[13px] xl:leading-[1.45]">{l.note}</p>
+              <p className="m-0 text-sm leading-normal text-body xl:text-[13px] xl:leading-[1.45]">{l.short}</p>
               <span className="mt-auto text-[13px] font-semibold text-gold-text">Learn more →</span>
             </Link>
           ))}
@@ -356,7 +358,7 @@ export default function Home() {
               You see your design before any tooth is touched, the planning happens in-house, and the warranty runs five times longer than the usual one year.
             </p>
           </div>
-          <ul className="m-0 grid list-none grid-cols-2 gap-2.5 p-0 xl:grid-cols-4">
+          <ul className="m-0 grid list-none grid-cols-2 gap-3 p-0 lg:gap-3.5">
             {[
               { icon: "shield", label: "Warranty", big: String(site.warrantyYears), unit: "years", gold: `${site.warrantyYears}× the usual one year` },
               { icon: "approve", label: "Google rating", big: rating.value, gold: `${rating.count} reviews`, stars: true },
@@ -365,17 +367,17 @@ export default function Home() {
             ].map((t) => (
               <li
                 key={t.label}
-                className="relative flex flex-col gap-3.5 overflow-hidden rounded-2xl border border-[rgba(255,255,255,.28)] bg-[linear-gradient(160deg,rgba(255,253,248,.22)_0%,rgba(255,253,248,.1)_100%)] px-4 pt-4 pb-[18px] shadow-[inset_0_1px_0_rgba(255,255,255,.35),inset_0_-1px_0_rgba(255,255,255,.08),0_16px_40px_rgba(0,0,0,.25)] backdrop-blur-[22px] backdrop-saturate-[1.4]"
+                className="relative flex min-h-[150px] flex-col gap-4 overflow-hidden rounded-2xl border border-[rgba(255,255,255,.28)] bg-[linear-gradient(160deg,rgba(255,253,248,.22)_0%,rgba(255,253,248,.1)_100%)] px-5 pt-[18px] pb-5 shadow-[inset_0_1px_0_rgba(255,255,255,.35),inset_0_-1px_0_rgba(255,255,255,.08),0_16px_40px_rgba(0,0,0,.25)] backdrop-blur-[22px] backdrop-saturate-[1.4] lg:min-h-[164px]"
               >
                 <span aria-hidden="true" className="absolute inset-x-0 top-0 h-0.5 bg-[linear-gradient(90deg,rgba(205,177,128,0)_0%,#CDB180_40%,rgba(247,244,238,.9)_70%,rgba(247,244,238,0)_100%)]" />
-                <span className="flex items-center gap-2.5 text-[13px] text-on-dark-muted">
+                <span className="flex items-center gap-2.5 text-[13px] font-semibold tracking-[.04em] text-on-dark-muted uppercase">
                   <span className="block h-[18px] w-[18px]">
                     <LineIcon name={t.icon as LineIconName} tone="gold" />
                   </span>
                   {t.label}
                 </span>
                 <span className="mt-auto flex min-w-0 flex-col gap-1.5">
-                  <span className={`flex items-baseline gap-2 font-serif text-on-dark ${t.small ? "text-[22px] leading-[1.1]" : "text-[30px] leading-none tracking-[-.02em]"}`}>
+                  <span className={`flex flex-wrap items-baseline gap-x-2 font-serif text-on-dark ${t.small ? "text-[24px] leading-[1.1] lg:text-[26px]" : "text-[34px] leading-none tracking-[-.02em] lg:text-[38px]"}`}>
                     {t.big}
                     {t.unit && <span className="font-sans text-sm tracking-normal text-on-dark-muted">{t.unit}</span>}
                   </span>
@@ -475,38 +477,14 @@ export default function Home() {
         <FaqAccordion faqs={faqs} variant="home" />
       </section>
 
-      {/* Reviews */}
+      {/* Reviews: stored reviews in the HTML, live Google data once loaded */}
       <section className="defer-render wrap pt-16 lg:pt-28">
-        <div className={headRow}>
-          <div>
-            <h2 className={`${h2} mb-1.5 lg:mb-2`}>What patients say on Google</h2>
-            <div className="flex items-baseline gap-2 lg:gap-2.5">
-              <span className="font-serif text-2xl lg:text-[28px]">{rating.value}</span>
-              <span className="text-sm text-gold-text lg:text-base" role="img" aria-label={`${rating.value} out of 5 stars`}>
-                <Stars />
-              </span>
-              <span className="text-[15px] text-body lg:text-lg">{rating.count} reviews</span>
-            </div>
-          </div>
-          <Link href="/reviews" className="link-strong">
-            All reviews →
-          </Link>
-        </div>
-        {/* TODO(clinic): Home review cards in the design are placeholders; showing the reviews from the
-            Reviews page until the Google Business Profile feed is connected. */}
-        <div className="-mx-5 flex gap-3 overflow-x-auto px-5 pb-1 lg:mx-0 lg:grid lg:grid-cols-4 lg:gap-6 lg:overflow-visible lg:px-0 lg:pb-0">
-          {reviews.reviews.slice(0, 4).map((r) => (
-            <article key={r.name} className="glass-card flex w-[280px] flex-none flex-col gap-3 rounded-2xl p-[22px] lg:min-h-[240px] lg:w-auto lg:gap-3.5 lg:p-7">
-              <div className="text-sm text-gold-text lg:text-[15px]">
-                <Stars />
-              </div>
-              <p className="m-0 text-base leading-normal text-pretty lg:text-[17px]">{r.text}</p>
-              <div className="mt-auto text-[13px] text-muted lg:text-sm">
-                <strong className="font-semibold text-ink">{r.name}</strong> · {r.treatment} · {reviews.source}
-              </div>
-            </article>
-          ))}
-        </div>
+        <GoogleReviews
+          initial={{ rating: rating.value, count: rating.count, reviews: reviews.reviews }}
+          mapsUrl={site.maps.place}
+          writeReviewUrl={site.google.placeId ? `https://search.google.com/local/writereview?placeid=${site.google.placeId}` : site.maps.place}
+          source={reviews.source}
+        />
       </section>
 
       {/* Our office */}

@@ -11,6 +11,10 @@ RESEND_API_KEY=re_dummy_xxxxxxxxxxxxxxxxxxxxxxxx
 # Signs the 7-day photo links in the clinic email. Any long random string.
 LINK_SIGNING_SECRET=dummy-change-me-to-a-long-random-string
 
+# Google Places API (New) key and the practice Place ID, for live reviews on the Home page.
+GOOGLE_PLACES_API_KEY=
+GOOGLE_PLACE_ID=
+
 # --- Variables ---
 # Clinic inbox that receives leads and contact messages.
 NOTIFY_EMAIL=frontdesk@example.com

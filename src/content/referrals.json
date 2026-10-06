@@ -1,0 +1,29 @@
+{
+  "_note": "TODO(clinic): no design or copy exists for these pages. Text below is a neutral placeholder; confirm whether referrals carry a reward and what partnership types to list.",
+  "referrals": {
+    "eyebrow": "Referrals",
+    "intro": "Most of our patients come from someone who already had their smile done here. If a friend or family member is thinking about veneers, a smile design or full mouth reconstruction, send us their name and we take it from there: a free photo evaluation, a written estimate within 6 hours, and your name on the file.",
+    "formTitle": "Refer someone",
+    "formIntro": "Tell us who to contact and how. We only reach out once, and only to the person you refer.",
+    "messageLabel": "Who are you referring?",
+    "messagePlaceholder": "Their name, how to reach them, and what they are interested in.",
+    "points": [
+      { "t": "Free photo evaluation", "d": "Your friend sends two photos; a doctor replies with a plan and a written estimate within 6 hours." },
+      { "t": "Same doctors, same price list", "d": "Referred patients get the published packages and the 5-year written warranty like everyone else." },
+      { "t": "Out-of-state friends welcome", "d": "Three visits in one week in Miami, with hotels, airport pickup and rides handled by the coordinator." }
+    ]
+  },
+  "partnerships": {
+    "eyebrow": "Partnerships",
+    "intro": "Xiluet Smiles works with general dentists, specialists, clinics abroad, and travel and hospitality businesses in Miami. If your patients or clients could use a smile design, porcelain veneers, full mouth reconstruction or All-on-X, tell us about your practice or business and a doctor will follow up.",
+    "formTitle": "Tell us about your practice or business",
+    "formIntro": "A short message is enough. We reply within a few hours during office hours, in English or Spanish.",
+    "messageLabel": "About your practice or business",
+    "messagePlaceholder": "Who you are, where you are based, and how you would like to work together.",
+    "points": [
+      { "t": "Dentists and specialists", "d": "Refer cosmetic and full-arch cases to a team with an in-house lab; your patient returns to you for ongoing care." },
+      { "t": "Clinics outside the US", "d": "Patients fly in Monday and fly home Thursday with their final veneers. Planning happens from home before the trip." },
+      { "t": "Travel and hospitality", "d": "Hotels, concierges and medical travel agencies: our coordinator handles dates, pickup and rides for every out-of-state patient." }
+    ]
+  }
+}

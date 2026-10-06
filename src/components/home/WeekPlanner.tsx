@@ -2,6 +2,7 @@
 
 import { useState, useSyncExternalStore } from "react";
 import LineIcon, { type LineIconName } from "@/components/LineIcon";
+import DatePicker from "./DatePicker";
 
 type Step = { icon: string; title: string; time: string };
 type Bar = { icon: string; title: string; time?: string; visit?: number };
@@ -21,7 +22,6 @@ const addBiz = (d: Date, n: number) => {
   return r;
 };
 const fmt = (d: Date) => d.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" });
-const iso = (d: Date) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
 const parseIso = (s: string) => {
   const [y, m, d] = s.split("-").map(Number);
   return new Date(y, m - 1, d);
@@ -65,29 +65,30 @@ export default function WeekPlanner({ steps, bars }: { steps: Step[]; bars: Bar[
     ? [fmt(sc.start), `same day, ${fmt(sc.start)}`, `same day, ${fmt(sc.start)}`, `same day, ${fmt(sc.start)}`, `Visit 1 ${fmt(sc.v1)} · Visit 2 ${fmt(sc.v2)}`, `Visit 3 ${fmt(sc.v3)}`]
     : steps.map((s) => s.time);
   const visitDates = sc ? [sc.v1, sc.v2, sc.v3] : [];
-  const barCols = sc
-    ? [[sc.start, sc.start], [sc.start, sc.start], [sc.start, sc.start], [sc.start, sc.start], [sc.v1, sc.v1], [sc.v2, sc.v2], [sc.v3, sc.v3]].map(
-        ([a, b]) => `${sc.off(a) + 1} / ${sc.off(b) + 2}`,
-      )
-    : [];
+  const barDays = sc ? [sc.start, sc.start, sc.start, sc.start, sc.v1, sc.v2, sc.v3] : [];
+  const barCols = barDays.map((d) => `${sc!.off(d) + 1} / ${sc!.off(d) + 2}`);
+  const barEnd = barDays.map((d) => sc!.off(d) + 1);
 
   return (
     <div>
-      <label className="mb-5 flex flex-wrap items-center gap-2.5 rounded-[14px] border border-[rgba(205,177,128,.45)] bg-[rgba(255,253,248,.6)] px-3.5 py-2.5 text-sm text-body lg:absolute lg:top-[42px] lg:right-0 lg:mb-0 lg:flex-nowrap lg:gap-3 lg:rounded-full lg:py-2.5 lg:pr-3.5 lg:pl-[18px] lg:whitespace-nowrap lg:shadow-[inset_0_1px_0_rgba(255,255,255,.7),0_8px_20px_rgba(26,26,26,.05)]">
+      <div className="relative mb-5 flex flex-wrap items-center gap-2.5 rounded-[14px] border border-[rgba(205,177,128,.45)] bg-[rgba(255,253,248,.6)] px-3.5 py-2.5 text-sm text-body lg:absolute lg:top-[42px] lg:right-0 lg:mb-0 lg:flex-nowrap lg:gap-3 lg:rounded-full lg:py-2.5 lg:pr-3.5 lg:pl-[18px] lg:whitespace-nowrap lg:shadow-[inset_0_1px_0_rgba(255,255,255,.7),0_8px_20px_rgba(26,26,26,.05)]">
         <span>If I send my photos on</span>
-        <input
-          type="date"
-          value={picked}
-          min={hydrated ? iso(now) : undefined}
-          onChange={(e) => setPicked(e.target.value)}
-          className="min-h-8 cursor-pointer border-0 border-b-[1.5px] border-gold bg-transparent py-0.5 font-semibold text-teal outline-none focus-visible:outline-2 focus-visible:outline-gold"
-        />
+        {hydrated ? (
+          <DatePicker value={picked} defaultDate={fallback} min={now} onChange={setPicked} label="Choose the day you send your photos" />
+        ) : (
+          <input
+            type="date"
+            value={picked}
+            onChange={(e) => setPicked(e.target.value)}
+            className="min-h-8 border-0 border-b-[1.5px] border-gold bg-transparent py-0.5 font-semibold text-teal outline-none"
+          />
+        )}
         {picked && (
           <button type="button" onClick={() => setPicked("")} aria-label="Clear date" className="ml-auto cursor-pointer border-0 bg-transparent px-1 py-0.5 text-xs text-gold-text lg:ml-0">
             Reset
           </button>
         )}
-      </label>
+      </div>
 
       {/* Step list: always on mobile; on desktop until the timeline is ready. */}
       <ol className={`m-0 list-none p-0 ${sc ? "lg:hidden" : "lg:grid lg:grid-cols-3 lg:gap-x-8"}`}>
@@ -138,7 +139,9 @@ export default function WeekPlanner({ steps, bars }: { steps: Step[]; bars: Bar[
                 {bars.map((b, i) => (
                   <li
                     key={b.title}
-                    className="mx-1.5 flex items-center gap-3.5 overflow-hidden rounded-[14px] border border-[rgba(255,255,255,.9)] bg-[rgba(255,253,248,.92)] py-0 pr-[18px] pl-1.5 shadow-[inset_0_1px_0_rgba(255,255,255,.8),0_10px_24px_rgba(26,26,26,.08)]"
+                    className={`mx-1.5 flex min-w-[250px] items-center gap-3.5 rounded-[14px] border border-[rgba(255,255,255,.9)] bg-[rgba(255,253,248,.92)] py-0 pr-[18px] pl-1.5 shadow-[inset_0_1px_0_rgba(255,255,255,.8),0_10px_24px_rgba(26,26,26,.08)] ${
+                      barEnd[i] >= n ? "justify-self-end" : "justify-self-start"
+                    }`}
                     style={{ gridColumn: barCols[i], gridRow: i + 1 }}
                   >
                     <span className={`my-3 w-1 flex-none self-stretch rounded ${i >= 4 ? "bg-teal" : "bg-gold"}`} />

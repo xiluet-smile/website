@@ -76,13 +76,6 @@
     "h1": "One building. Doctors, lab and your whole treatment.",
     "breadcrumb": "Our Clinic"
   },
-  "/reviews": {
-    "title": "Patient Reviews | Xiluet Smiles Miami",
-    "description": "Reviews as published on Google. See what patients say after their week at Xiluet Smiles in Miami.",
-    "ogImage": "gen-clinic-room.jpg",
-    "h1": "What patients say after the week is over.",
-    "breadcrumb": "Patient Reviews"
-  },
   "/financing": {
     "title": "Dental Financing Miami | Cherry, Sunbit, CareCredit, LendingClub, Affirm",
     "description": "Five financing partners, soft credit checks and approval guidance from one coordinator. Pay for veneers or implants over time at Xiluet Smiles, Miami.",
@@ -166,5 +159,51 @@
     "ogImage": "gen-clinic-room.jpg",
     "h1": "Contact Us · Cosmetic Dentist in Miami, FL",
     "breadcrumb": "Contact Us"
+  },
+  "/referrals": {
+    "title": "Refer a Friend | Xiluet Smiles Miami",
+    "description": "Know someone thinking about veneers or a smile design? Send us their name and we take it from there. Xiluet Smiles, Miami.",
+    "ogImage": "gen-clinic-room.jpg",
+    "h1": "Refer a friend to Xiluet Smiles.",
+    "breadcrumb": "Referrals"
+  },
+  "/partnerships": {
+    "title": "Partnerships | Xiluet Smiles Miami",
+    "description": "Dentists, clinics, travel and hospitality partners: work with Xiluet Smiles in Miami. Tell us about your practice or business.",
+    "ogImage": "gen-clinic-room.jpg",
+    "h1": "Partner with Xiluet Smiles.",
+    "breadcrumb": "Partnerships"
+  },
+  "/privacy-policy": {
+    "title": "Privacy Policy | Xiluet Smiles",
+    "description": "How Xiluet Smiles collects, uses and protects information from visitors to xiluetsmiledesign.com.",
+    "ogImage": "gen-clinic-room.jpg",
+    "h1": "Privacy Policy",
+    "breadcrumb": "Privacy Policy",
+    "noindex": false
+  },
+  "/terms": {
+    "title": "Terms and Conditions | Xiluet Smiles",
+    "description": "Terms and conditions of use for the Xiluet Smiles website.",
+    "ogImage": "gen-clinic-room.jpg",
+    "h1": "Terms and Conditions",
+    "breadcrumb": "Terms and Conditions",
+    "noindex": false
+  },
+  "/notice-of-privacy-practices": {
+    "title": "Notice of Privacy Practices | Xiluet Smiles",
+    "description": "How medical information about you may be used and disclosed, and how you can get access to it (HIPAA notice).",
+    "ogImage": "gen-clinic-room.jpg",
+    "h1": "Notice of Privacy Practices",
+    "breadcrumb": "Notice of Privacy Practices",
+    "noindex": false
+  },
+  "/refund-and-cancellation": {
+    "title": "Refund and Cancellation Policy | Xiluet Smiles",
+    "description": "Terms of the non-refundable appointment deposit, rescheduling and cancellation at Xiluet Smiles, Miami.",
+    "ogImage": "gen-clinic-room.jpg",
+    "h1": "Refund and Cancellation Policy",
+    "breadcrumb": "Refund and Cancellation",
+    "noindex": false
   }
 }

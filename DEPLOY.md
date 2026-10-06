@@ -37,6 +37,8 @@ Set under **Pages project → Settings**. Add each to Production and Preview. A 
 | `LINK_SIGNING_SECRET` | Long random string; signs the 7-day photo links in clinic emails. |
 | `CRM_WEBHOOK_URL` | Optional. Leads and contact messages are POSTed here as JSON. |
 | `REQUIRE_TURNSTILE` | Optional. Set to `1` to reject submissions without a Turnstile token (this disables the no-JavaScript form path). |
+| `GOOGLE_PLACES_API_KEY` | Google Cloud API key with Places API (New) enabled; powers the live reviews on Home (`/api/reviews`). |
+| `GOOGLE_PLACE_ID` | The practice's Google Business Profile Place ID. Also set `google.placeId` in `src/content/site.json` for the "Leave a review" link. |
 | `SITE_URL` | Optional. Defaults to `https://xiluetsmiledesign.com`; set to the preview URL when testing photo links on a preview. |
 
 ### Bindings (Settings → Functions → Bindings)

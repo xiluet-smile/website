@@ -64,7 +64,22 @@ const withIcon = `${inputClass} pl-[42px]`;
  * Contact form. Server-rendered as a plain form that posts to /api/contact;
  * with JS it is sent as JSON and the confirmation replaces the form.
  */
-export default function ContactForm() {
+type Props = {
+  /** Fixed subject (hides the subject select), e.g. "Referral". */
+  topic?: string;
+  messageLabel?: string;
+  messagePlaceholder?: string;
+  heading?: string;
+  intro?: string;
+};
+
+export default function ContactForm({
+  topic,
+  messageLabel = "Message",
+  messagePlaceholder = "Type here . . .",
+  heading = "Send us a message",
+  intro = "Fill out the form and our team will get back to you within a few hours during office hours.",
+}: Props = {}) {
   const [status, setStatus] = useState<"idle" | "sending" | "sent">("idle");
   const [error, setError] = useState<string | null>(null);
   const [via, setVia] = useState("");
@@ -111,12 +126,8 @@ export default function ContactForm() {
         className={`relative flex flex-col gap-4 group-has-[#sent:target]:hidden ${sent ? "hidden" : ""}`}
       >
         <div className="mb-1 flex flex-col gap-3">
-          <h2 className="m-0 font-serif text-[34px] leading-[1.2] font-normal text-ink lg:text-[40px] lg:leading-[1.1]">
-            Send us a message
-          </h2>
-          <p className="m-0 text-[17px] leading-[1.55] text-body">
-            Fill out the form and our team will get back to you within a few hours during office hours.
-          </p>
+          <h2 className="m-0 font-serif text-[34px] leading-[1.2] font-normal text-ink lg:text-[40px] lg:leading-[1.1]">{heading}</h2>
+          <p className="m-0 text-[17px] leading-[1.55] text-body">{intro}</p>
         </div>
         <div className="grid gap-3.5 sm:grid-cols-2">
           <Field label="First name" icon="person">
@@ -166,20 +177,24 @@ export default function ContactForm() {
             />
           </Field>
         </div>
-        <Field label="Subject" icon="tag">
-          <select name="topic" autoComplete="off" className={`${withIcon} appearance-none`}>
-            {content.topics.map((t) => (
-              <option key={t}>{t}</option>
-            ))}
-          </select>
-        </Field>
+        {topic ? (
+          <input type="hidden" name="topic" value={topic} />
+        ) : (
+          <Field label="Subject" icon="tag">
+            <select name="topic" autoComplete="off" className={`${withIcon} appearance-none`}>
+              {content.topics.map((t) => (
+                <option key={t}>{t}</option>
+              ))}
+            </select>
+          </Field>
+        )}
         <label className={labelClass}>
-          Message
+          {messageLabel}
           <textarea
             name="message"
             rows={5}
             required
-            placeholder="Type here . . ."
+            placeholder={messagePlaceholder}
             maxLength={5000}
             autoComplete="off"
             className="w-full resize-y rounded-[12px] border border-sand bg-card px-3.5 py-3 text-base font-normal text-ink placeholder:text-hint"

@@ -9,16 +9,26 @@
     "Implants All-on-X",
     "Financing",
     "Existing patient",
+    "Referral",
+    "Partnership",
     "Something else"
   ],
   "replyViaLabel": "How should we reply?",
-  "replyVia": ["Text", "Call", "WhatsApp", "Email"],
+  "replyVia": [
+    "Text",
+    "Call",
+    "WhatsApp",
+    "Email"
+  ],
   "consent": {
     "version": "contact-2026-10",
     "text": "I agree to be contacted by Xiluet Smiles by text, call or email. Message and data rates may apply. Reply STOP to opt out.",
     "privacyLabel": "Privacy Policy"
   },
-  "submit": { "idle": "Send message", "sent": "Sent" },
+  "submit": {
+    "idle": "Send message",
+    "sent": "Sent"
+  },
   "confirmation": {
     "heading": "Message received.",
     "body": "We reply within a few hours during office hours",

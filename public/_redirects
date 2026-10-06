@@ -29,3 +29,11 @@
 /gallery/ /before-and-after 301
 /contact-us /free-photo-evaluation 301
 /contact-us/ /free-photo-evaluation 301
+
+# Legal pages (old WordPress slugs)
+/terms-and-conditions /terms 301
+/terms-and-conditions/ /terms 301
+/refund-and-cancellation-policy /refund-and-cancellation 301
+/refund-and-cancellation-policy/ /refund-and-cancellation 301
+/privacy-policy/ /privacy-policy 301
+/notice-of-privacy-practices/ /notice-of-privacy-practices 301

@@ -397,7 +397,7 @@ export default function TreatmentPage({ data }: { data: Treatment }) {
         <div className="grid items-start gap-7 lg:grid-cols-[minmax(0,.8fr)_minmax(0,1.4fr)] lg:gap-16">
           <div className="flex flex-col gap-3 lg:sticky lg:top-8 lg:gap-4">
             <h2 className={h2}>{faq.title}</h2>
-            <Link href="/reviews" className="inline-flex min-h-11 items-center self-start font-semibold lg:min-h-0">
+            <Link href="/contact" className="inline-flex min-h-11 items-center self-start font-semibold lg:min-h-0">
               {faq.linkLabel}
             </Link>
           </div>
