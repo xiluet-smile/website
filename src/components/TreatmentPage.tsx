@@ -120,12 +120,7 @@ export default function TreatmentPage({ data, locale = "en" }: { data: Treatment
             <h1 className="m-0 font-serif text-[38px] leading-[1.1] font-normal tracking-[-.01em] text-pretty lg:text-[64px] lg:leading-[1.04]">
               {pages[path].h1}
             </h1>
-            <p
-              data-aeo-definition="1"
-              className="m-0 max-w-[66ch] rounded-r-xl border-l-2 border-gold bg-[rgba(247,244,238,.05)] px-4 py-3 text-[17px] leading-[1.55] text-pretty text-on-dark-muted"
-            >
-              {hero.definition}
-            </p>
+            {/* hero.definition feeds the MedicalProcedure schema only; the visible box was removed at the clinic's request. */}
             <p className="m-0 max-w-[54ch] text-[17px] leading-[1.5] text-pretty text-on-dark-muted lg:text-xl">
               {hero.lead}
             </p>
