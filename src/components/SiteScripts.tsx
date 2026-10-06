@@ -22,13 +22,15 @@ export default function SiteScripts() {
       w.__xiluetScripts = true;
       events.forEach((e) => removeEventListener(e, load));
       clearTimeout(timer);
-      // Google Tag Manager (pixels are managed inside the container).
-      w.dataLayer = w.dataLayer || [];
-      w.dataLayer.push({ "gtm.start": Date.now(), event: "gtm.js" });
-      const gtm = document.createElement("script");
-      gtm.async = true;
-      gtm.src = GTM_SRC;
-      document.head.appendChild(gtm);
+      // Google Tag Manager (pixels are managed inside the container). Off while gtmId is empty.
+      if (site.gtmId) {
+        w.dataLayer = w.dataLayer || [];
+        w.dataLayer.push({ "gtm.start": Date.now(), event: "gtm.js" });
+        const gtm = document.createElement("script");
+        gtm.async = true;
+        gtm.src = GTM_SRC;
+        document.head.appendChild(gtm);
+      }
       // LeadConnector (GoHighLevel) chat widget.
       const chat = document.createElement("script");
       chat.src = "https://widgets.leadconnectorhq.com/loader.js";
@@ -50,6 +52,7 @@ export default function SiteScripts() {
     };
   }, []);
 
+  if (!site.gtmId) return null;
   return (
     <noscript>
       <iframe src={`https://www.googletagmanager.com/ns.html?id=${site.gtmId}`} height="0" width="0" style={{ display: "none", visibility: "hidden" }} title="Google Tag Manager" />

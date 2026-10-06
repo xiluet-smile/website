@@ -7,7 +7,7 @@ Things the design files leave unresolved. Each is marked `TODO(clinic)` in the c
 - **Reply-time promise:** resolved — 6 hours everywhere.
 - **Airport distance:** resolved — 15 minutes from MIA everywhere.
 - **Days in Miami.** Home copy mixes "4 business days", "3 visits", "one week" and package cards say "Delivery in 5 business days".
-- **Cost financing band:** resolved — "From about $149 a month for 20 veneers" stays; the example beneath it no longer quotes a term or APR (the previous "$6,000 over 60 months at 0% APR" did not equal $149). If you want the example to show a term, give me the Cherry term/APR that produces $149.
+- **Cost financing band:** "From about $149 a month for 20 veneers" with the example "$6,000 over 48 months at 9% APR" (the arithmetic matches: $149.31). The 9% APR is illustrative; replace with a real partner rate if the clinic prefers.
 - **Reviews footnote.** "Reviews from Google, Healthgrades and RealSelf." vs the hero's "Reviews as published on Google".
 - **Schema `priceRange`.** Design JSON-LD says `$$`, SEO.md says `$$$`. Using `$$`.
 - **Sunbit.** "30 sec" decision time in the facts vs "under a minute" in the H1.
@@ -41,10 +41,10 @@ Things the design files leave unresolved. Each is marked `TODO(clinic)` in the c
 ## Added after launch review (need clinic input)
 - **Referrals and Partnerships pages** (`/referrals`, `/partnerships`): no design or copy existed. The text in `src/content/referrals.json` is a neutral placeholder built only from facts already on the site; the $500 bonus per completed treatment is confirmed; how it is paid (credit toward treatment, check, other) is not stated. Partner types to list still need confirming.
 - **Live Google reviews** need a Places API key and the practice Place ID (`GOOGLE_PLACES_API_KEY`, `GOOGLE_PLACE_ID`, and `google.placeId` in `site.json`). Until set, Home shows the stored reviews and the "Leave a review" button opens the Google Maps listing.
-- **Third-party scripts** (GTM `GTM-PSP4L6TC` and the LeadConnector chat widget) were copied from the previous site at the clinic's request; they lower Lighthouse performance scores somewhat and the CSP was widened to allow GTM-managed tags.
+- **Google Tag Manager** is switched off until launch (`site.json` → `gtmId` is empty; set it to `GTM-PSP4L6TC` in both `site.json` and `es/site.json` to re-enable; the loader and CSP are already in place). The LeadConnector chat widget stays on. The container loads GA4, Google Ads and the Facebook pixel, which cost 1.5–2 s of main-thread time on a throttled phone.
 
 ## Spanish site (/es)
-- **Native review.** All Spanish copy (content in `src/content/es/` and interface strings in `src/lib/content-i18n.ts`) was translated for this build and should be read by a Spanish-speaking member of the team before launch, especially medical and financing wording.
+- **Native review:** done by the clinic (October 2026). Interface strings live in `src/lib/ui-i18n.ts`, content in `src/content/es/`.
 - **Legal documents stay in English** on `/es/politica-de-privacidad`, `/es/terminos`, `/es/aviso-de-practicas-de-privacidad` and `/es/reembolsos-y-cancelaciones`, with a Spanish note above them. A lawyer-reviewed Spanish version can replace the English text later.
 - **Google reviews** are shown as written (English) on both sites.
 - **404 page** is served in English for both sites (Cloudflare serves one static 404).
