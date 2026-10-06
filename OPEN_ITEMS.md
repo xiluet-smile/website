@@ -50,6 +50,10 @@ Things the design files leave unresolved. Each is marked `TODO(clinic)` in the c
 - **404 page** is served in English for both sites (Cloudflare serves one static 404).
 - **Doctor names** keep "Dr." in Spanish structured fields (nav, headings, bylines); "Dra." would be the natural form for Dr. Puentes and Dr. Alonso. Change `name`/`shortName` in `src/content/es/doctors.json` and the FAQ `doc` fields together if wanted.
 
+## Migration
+- **Old service pages without an equivalent** (gum lightening, orthodontics, dentures, crowns, root canals, oral surgery, etc.) 301 to the closest new page (`public/_redirects`). Search Console shows real demand for **gum depigmentation / gum lightening in Miami**; a dedicated page (with the clinic's price and copy) would keep that traffic instead of redirecting it to Smile Makeover.
+- **Dr. Adriana Hernandez's** old profile redirects to /doctors (no photo or bio supplied).
+
 ## Lender claims to confirm against merchant agreements (rendered verbatim)
 - **Cherry**: $200 to $30,000; 3 to 60 months; 0% APR options for qualified patients; "approving around 75 percent of applicants"; no early-payoff penalty; no hard pull.
 - **Sunbit**: "approves about 9 in 10 applicants" / "~90%"; decision in 30 sec / under a minute; no late, origination or prepayment fees; terms up to 72 months.
