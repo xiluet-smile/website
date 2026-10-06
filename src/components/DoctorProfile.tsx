@@ -1,10 +1,9 @@
 import Link from "next/link";
-import CaseCard from "@/components/CaseCard";
 import DoctorCta from "@/components/DoctorCta";
 import { PhoneIcon } from "@/components/Icons";
 import Img from "@/components/Img";
 import PageHero from "@/components/PageHero";
-import { caseById, doctors, type Doctor } from "@/lib/content";
+import { doctors, type Doctor } from "@/lib/content";
 import { site } from "@/lib/site";
 
 /** Shape of src/content/doctors/{slug}.json (profile-only data; the rest comes from doctors.json). */
@@ -113,7 +112,6 @@ function Hero({ doctor, profile }: { doctor: Doctor; profile: DoctorProfileData 
 export default function DoctorProfile({ doctor, profile }: { doctor: Doctor; profile: DoctorProfileData }) {
   const name = profile.display;
   const others = doctors.filter((d) => d.slug !== doctor.slug);
-  const cases = profile.caseIds.map(caseById);
 
   return (
     <>
@@ -198,26 +196,6 @@ export default function DoctorProfile({ doctor, profile }: { doctor: Doctor; pro
       {/* TODO(clinic): "Patient stories" video strip ("{name}'s patients, in their own words") is not rendered:
           every story in the design is a placeholder ([Patient name], no video src). Needs real patient
           names, consented quotes and video files before it can be built. */}
-
-      {/* Results */}
-      <section className="wrap pt-16 lg:pt-28">
-        <div className={sectionHead}>
-          <h2 className={`${h2} lg:text-[48px]`}>{`${name}'s before and after`}</h2>
-          <Link href="/before-and-after" className="font-semibold whitespace-nowrap">
-            All cases →
-          </Link>
-        </div>
-        <div className="-mx-5 flex snap-x scroll-px-5 snap-mandatory gap-4 overflow-x-auto px-5 pb-2 lg:mx-0 lg:grid lg:grid-cols-3 lg:gap-6 lg:overflow-visible lg:px-0 lg:pb-0">
-          {cases.map((c) => (
-            <CaseCard
-              key={c.id}
-              c={c}
-              sizes="(min-width: 1024px) 30vw, 80vw"
-              className="w-[80%] flex-none snap-start scroll-ml-5 lg:w-auto"
-            />
-          ))}
-        </div>
-      </section>
 
       {/* Other doctors */}
       <section className="wrap pt-16 lg:pt-28">

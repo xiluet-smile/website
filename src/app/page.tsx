@@ -21,7 +21,8 @@ export const metadata = pageMetadata("/");
 
 const h2 = "m-0 font-serif text-[34px] leading-[1.2] font-normal lg:text-[48px] lg:leading-[1.1]";
 const headRow = "mb-4 flex flex-col gap-3 lg:mb-10 lg:flex-row lg:items-end lg:justify-between lg:gap-8";
-const calloutPos = { tl: "top-[46%] left-0", tr: "top-[30%] right-4", br: "right-[18%] bottom-[14%]" } as const;
+// Around the mouth in the video frame: one on the left, two sharing the same right edge.
+const calloutPos = { tl: "top-[46%] left-0", tr: "top-[30%] right-4", br: "right-4 bottom-[16%]" } as const;
 
 const packageIcons: Record<string, LineIconName> = {
   "signature-veneers": "veneer",
@@ -87,15 +88,11 @@ export default function Home() {
             </div>
           </div>
           <div className="relative hidden h-full min-h-[420px] lg:block">
-            <div className="absolute bottom-0 left-0 flex items-center gap-2.5 rounded-full border border-[rgba(247,244,238,.2)] bg-[rgba(4,30,36,.55)] py-2 pr-3.5 pl-2.5 text-[13px] font-semibold backdrop-blur-[12px]">
-              <span className="h-2 w-2 rounded-full bg-gold shadow-[0_0_0_4px_rgba(205,177,128,.25)]" />
-              Smile design preview
-            </div>
             <ul className="pointer-events-none absolute inset-0 m-0 list-none p-0">
               {home.hero.callouts.map((c) => (
                 <li
                   key={c.text}
-                  className={`hero-callout absolute flex items-center gap-2.5 rounded-xl border border-[rgba(247,244,238,.28)] bg-[rgba(247,244,238,.14)] px-4 py-2.5 font-serif text-[17px] tracking-[.005em] whitespace-nowrap shadow-[inset_0_1px_0_rgba(247,244,238,.2),0_10px_30px_rgba(0,0,0,.25)] backdrop-blur-[16px] backdrop-saturate-[1.2] ${calloutPos[c.pos as keyof typeof calloutPos]}`}
+                  className={`hero-callout absolute flex items-center gap-2.5 rounded-xl border border-[rgba(247,244,238,.28)] bg-[rgba(247,244,238,.14)] px-3.5 py-2 font-serif text-[15px] tracking-[.005em] whitespace-nowrap shadow-[inset_0_1px_0_rgba(247,244,238,.2),0_10px_30px_rgba(0,0,0,.25)] backdrop-blur-[16px] backdrop-saturate-[1.2] ${calloutPos[c.pos as keyof typeof calloutPos]}`}
                   style={{ animationDelay: `${c.delay}s` }}
                 >
                   <span className="h-1.5 w-1.5 flex-none rounded-full bg-gold" />
@@ -134,8 +131,8 @@ export default function Home() {
       <section className="defer-render wrap pt-16 lg:pt-28">
         <div className={headRow}>
           <h2 className={`${h2} lg:leading-[1.55]`}>Sound familiar?</h2>
-          <p className="m-0 max-w-[420px] text-[17px] leading-normal text-balance text-body lg:mb-2 lg:text-right">
-            Six things we hear on almost every first call. Tap a card to see our answer.
+          <p className="m-0 max-w-[420px] text-[17px] leading-normal text-body lg:mb-2 lg:max-w-none lg:text-right">
+            <span className="lg:block">Nine things we hear on almost every first call.</span> <span className="lg:block">Tap a card to see our answer.</span>
           </p>
         </div>
         <ScrollRow ariaLabel="Common concerns" caption={`${home.problems.length} questions · swipe or use the arrows`}>

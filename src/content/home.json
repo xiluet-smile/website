@@ -4,36 +4,172 @@
     "lead": "Get the smile of your dreams in just 3 visits. Safe procedures, zero pain, and a team of expert doctors dedicated to changing lives.",
     "promise": "You approve your new smile before we ever touch a tooth.",
     "callouts": [
-      { "delay": 2.2, "text": "Natural-looking veneers", "pos": "tl" },
-      { "delay": 4.2, "text": "Translucent porcelain", "pos": "tr" },
-      { "delay": 6.0, "text": "Fixes gaps and imperfections", "pos": "br" }
+      {
+        "delay": 2.2,
+        "text": "Natural-looking veneers",
+        "pos": "tl"
+      },
+      {
+        "delay": 4.2,
+        "text": "Translucent porcelain",
+        "pos": "tr"
+      },
+      {
+        "delay": 6.0,
+        "text": "Fixes gaps and imperfections",
+        "pos": "br"
+      }
     ]
   },
   "problems": [
-    { "icon": "hideSmile", "q": "I’ve hidden my smile for years.", "link": "What a smile design changes", "href": "/smile-design-miami", "a": "A smile design is planned around your face, not just your teeth. Most patients tell us the first thing that changes is how often they smile in photos." },
-    { "icon": "quote", "q": "I was quoted more than $15,000 somewhere else.", "link": "What it costs here, in writing", "href": "/veneers-cost-miami", "a": "Full smile designs here start well below that, and you get the number in writing before you book anything. No surprise add-ons at the chair." },
-    { "icon": "fakeNatural", "q": "I’m afraid it will look fake.", "link": "How the design preview works", "href": "/smile-design-miami", "a": "You approve a preview of the design in your own mouth before any permanent work starts. Shade, length and shape are adjusted with you, not for you." },
-    { "icon": "noTime", "q": "I can’t take months off for appointments.", "link": "Done in one week in Miami", "href": "/out-of-state-patients", "a": "Everything before your trip happens from home. In Miami it takes three visits across one week: exam, preparation, delivery." },
-    { "icon": "needle", "q": "I’m terrified of the drill.", "link": "How 0.3 mm veneers work", "href": "/porcelain-veneers-miami", "a": "Our veneers are as thin as 0.3 mm, so most cases need little to no drilling. Your natural tooth stays almost entirely intact." },
-    { "icon": "chair", "q": "I don’t know who to trust with my face.", "link": "Meet the doctors and see real cases", "href": "/doctors", "a": "Every case on this site is a real patient treated by the doctors you will meet. Look at the before and after photos and judge the work yourself." }
+    {
+      "icon": "hideSmile",
+      "q": "I’ve hidden my smile for years.",
+      "link": "What a smile design changes",
+      "href": "/smile-design-miami",
+      "a": "A smile design is planned around your face, not just your teeth. Most patients tell us the first thing that changes is how often they smile in photos."
+    },
+    {
+      "icon": "quote",
+      "q": "I was quoted more than $15,000 somewhere else.",
+      "link": "What it costs here, in writing",
+      "href": "/veneers-cost-miami",
+      "a": "Full smile designs here start well below that, and you get the number in writing before you book anything. No surprise add-ons at the chair."
+    },
+    {
+      "icon": "fakeNatural",
+      "q": "I’m afraid it will look fake.",
+      "link": "How the design preview works",
+      "href": "/smile-design-miami",
+      "a": "You approve a preview of the design in your own mouth before any permanent work starts. Shade, length and shape are adjusted with you, not for you."
+    },
+    {
+      "icon": "noTime",
+      "q": "I can’t take months off for appointments.",
+      "link": "Done in one week in Miami",
+      "href": "/out-of-state-patients",
+      "a": "Everything before your trip happens from home. In Miami it takes three visits across one week: exam, preparation, delivery."
+    },
+    {
+      "icon": "needle",
+      "q": "I’m terrified of the drill.",
+      "link": "How 0.3 mm veneers work",
+      "href": "/porcelain-veneers-miami",
+      "a": "Our veneers are as thin as 0.3 mm, so most cases need little to no drilling. Your natural tooth stays almost entirely intact."
+    },
+    {
+      "icon": "chair",
+      "q": "I don’t know who to trust with my face.",
+      "link": "Meet the doctors and see real cases",
+      "href": "/doctors",
+      "a": "Every case on this site is a real patient treated by the doctors you will meet. Look at the before and after photos and judge the work yourself."
+    },
+    {
+      "icon": "veneer",
+      "q": "My teeth are stained and whitening does nothing.",
+      "link": "Veneers fix what whitening cannot",
+      "href": "/porcelain-veneers-miami",
+      "a": "Tetracycline, fluorosis and deep internal discoloration do not lift with whitening. Porcelain veneers cover the stain with a shade matched in person, in daylight, and you approve the design before any tooth is prepared."
+    },
+    {
+      "icon": "toothBuild",
+      "q": "I have gaps and chipped edges, not just color.",
+      "link": "Gaps and chips closed in one week",
+      "href": "/smile-makeover-miami",
+      "a": "Gaps are closed and chipped or worn edges are rebuilt in the same design, in one week, without years of aligners. Shape, length and shade are planned together around your face."
+    },
+    {
+      "icon": "plane",
+      "q": "I live out of state. How would this even work?",
+      "link": "Fly in Monday, home Thursday",
+      "href": "/out-of-state-patients",
+      "a": "Photos, estimate, payment plan and dates all happen from home. In Miami it is three visits in one week, with a hotel shortlist, airport pickup and rides to every visit handled by your coordinator."
+    }
   ],
-  "caseIds": ["BA8", "BA1", "BA4", "BA2", "BA5", "BA7", "BA6", "BA13", "BA14", "BA15", "BA10", "BA11", "BA9", "BA12"],
+  "caseIds": [
+    "BA8",
+    "BA1",
+    "BA4",
+    "BA2",
+    "BA5",
+    "BA7",
+    "BA6",
+    "BA13",
+    "BA14",
+    "BA15",
+    "BA10",
+    "BA11",
+    "BA9",
+    "BA12"
+  ],
   "steps": [
-    { "icon": "photo", "title": "Send two photos of your teeth", "time": "2 minutes" },
-    { "icon": "estimate", "title": "A doctor evaluates and writes your estimate", "time": "within 12 hours" },
-    { "icon": "pay", "title": "Choose how to pay, with help getting approved", "time": "5 financing partners" },
-    { "icon": "calendar", "title": "Reserve your dates", "time": "$250 deposit, applied to treatment" },
-    { "icon": "design", "title": "Visit 1 and 2: exam, scans, design preview, preparation", "time": "days 1–2" },
-    { "icon": "delivery", "title": "Visit 3: delivery, then 5-year warranty and follow-up", "time": "day 4–5" }
+    {
+      "icon": "photo",
+      "title": "Send two photos of your teeth",
+      "time": "2 minutes"
+    },
+    {
+      "icon": "estimate",
+      "title": "A doctor evaluates and writes your estimate",
+      "time": "within 12 hours"
+    },
+    {
+      "icon": "pay",
+      "title": "Choose how to pay, with help getting approved",
+      "time": "5 financing partners"
+    },
+    {
+      "icon": "calendar",
+      "title": "Reserve your dates",
+      "time": "$250 deposit, applied to treatment"
+    },
+    {
+      "icon": "design",
+      "title": "Visit 1 and 2: exam, scans, design preview, preparation",
+      "time": "days 1–2"
+    },
+    {
+      "icon": "delivery",
+      "title": "Visit 3: delivery, then 5-year warranty and follow-up",
+      "time": "day 4–5"
+    }
   ],
   "timelineBars": [
-    { "icon": "photo", "title": "Share photos of your smile", "time": "From your phone" },
-    { "icon": "estimate", "title": "Receive your written estimate", "time": "Reviewed by a doctor" },
-    { "icon": "pay", "title": "Select your payment plan", "time": "Approval guidance" },
-    { "icon": "calendar", "title": "Secure your Miami dates", "time": "$250 deposit" },
-    { "icon": "design", "title": "Exam & treatment plan review", "visit": 1 },
-    { "icon": "veneer", "title": "Tooth preparation & temporaries", "visit": 2 },
-    { "icon": "delivery", "title": "Delivery & final adjustments", "visit": 3 }
+    {
+      "icon": "photo",
+      "title": "Share photos of your smile",
+      "time": "From your phone"
+    },
+    {
+      "icon": "estimate",
+      "title": "Receive your written estimate",
+      "time": "Reviewed by a doctor"
+    },
+    {
+      "icon": "pay",
+      "title": "Select your payment plan",
+      "time": "Approval guidance"
+    },
+    {
+      "icon": "calendar",
+      "title": "Secure your Miami dates",
+      "time": "$250 deposit"
+    },
+    {
+      "icon": "design",
+      "title": "Exam & treatment plan review",
+      "visit": 1
+    },
+    {
+      "icon": "veneer",
+      "title": "Tooth preparation & temporaries",
+      "visit": 2
+    },
+    {
+      "icon": "delivery",
+      "title": "Delivery & final adjustments",
+      "visit": 3
+    }
   ],
   "lab": {
     "image": "gen-ceramist-hands.jpg",
@@ -44,15 +180,43 @@
     ]
   },
   "itinerary": [
-    { "short": "Mon", "title": "Arrive, Visit 1" },
-    { "short": "Tue", "title": "Visit 2" },
-    { "short": "Wed", "title": "Lab day" },
-    { "short": "Thu", "title": "Delivery, fly home" }
+    {
+      "short": "Mon",
+      "title": "Arrive, Visit 1"
+    },
+    {
+      "short": "Tue",
+      "title": "Visit 2"
+    },
+    {
+      "short": "Wed",
+      "title": "Lab day"
+    },
+    {
+      "short": "Thu",
+      "title": "Delivery, fly home"
+    }
   ],
   "directions": [
-    { "icon": "plane", "title": "From the airport", "body": "About 20 minutes by car. Take SR-836 West to 87th Ave, then south to SW 8th St. Rideshare pickup is at MIA arrivals level." },
-    { "icon": "car", "title": "Parking", "body": "Free parking on site. The entrance is on SW 8th St (Calle Ocho); take the stairs or elevator to the 2nd floor." },
-    { "icon": "bus", "title": "Public transit", "body": "Metrobus Route 8 stops at SW 8th St and 84th Ave, a 2-minute walk. Tamiami Station is the nearest Metrorail connection." },
-    { "icon": "clock", "title": "Hours", "body": "Monday to Friday, 9am to 5pm. Out-of-state patients can request early or consecutive-day appointments." }
+    {
+      "icon": "plane",
+      "title": "From the airport",
+      "body": "About 20 minutes by car. Take SR-836 West to 87th Ave, then south to SW 8th St. Rideshare pickup is at MIA arrivals level."
+    },
+    {
+      "icon": "car",
+      "title": "Parking",
+      "body": "Free parking on site. The entrance is on SW 8th St (Calle Ocho); take the stairs or elevator to the 2nd floor."
+    },
+    {
+      "icon": "bus",
+      "title": "Public transit",
+      "body": "Metrobus Route 8 stops at SW 8th St and 84th Ave, a 2-minute walk. Tamiami Station is the nearest Metrorail connection."
+    },
+    {
+      "icon": "clock",
+      "title": "Hours",
+      "body": "Monday to Friday, 9am to 5pm. Out-of-state patients can request early or consecutive-day appointments."
+    }
   ]
 }
