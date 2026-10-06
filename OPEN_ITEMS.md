@@ -22,7 +22,6 @@ Things the design files leave unresolved. Each is marked `TODO(clinic)` in the c
 - **Home doctor cards** show `[Credential line]`; using each doctor's focus line from the Doctors page.
 - **Home in-house lab photo** is an empty slot in the design; using the supplied AI editorial image `gen-ceramist-hands.jpg`. Replace with a real lab photo.
 - **Dr. Marta Puentes Marrero's education**: "Degree in Dentistry" lists the institution as just "Spain".
-- **Dr. Adriana Hernandez**: no photo or bio supplied; not on the site.
 - **Blog**: six draft titles with no articles. Cards are shown without links; no `Article` schema.
 - **Legal pages**: Privacy Policy, Terms, Notice of Privacy Practices, Refund and Cancellation have no designs or copy; footer links point to `#` (`src/content/nav.json` → `legal`).
 - **Spanish**: the EN | ES switch is in the design but /es/ is phase 2; the ES link points to `#`.
@@ -52,7 +51,7 @@ Things the design files leave unresolved. Each is marked `TODO(clinic)` in the c
 
 ## Migration
 - **Old service pages without an equivalent** (gum lightening, orthodontics, dentures, crowns, root canals, oral surgery, etc.) 301 to the closest new page (`public/_redirects`). Search Console shows real demand for **gum depigmentation / gum lightening in Miami**; a dedicated page (with the clinic's price and copy) would keep that traffic instead of redirecting it to Smile Makeover.
-- **Dr. Adriana Hernandez's** old profile redirects to /doctors. Search Console shows her page getting 11 clicks in 3 months (people search her name); a profile page needs her photo and bio.
+- **Dr. Adriana Hernandez** is no longer with the practice (clinic, October 2026); her old profile URL redirects to /doctors.
 - **Frenectomy**: the old `/frenectomy/` page ranks #2 for "frenectomy miami" (472 impressions); it currently redirects to /contact. A dedicated page (price and copy from the clinic) would keep that ranking.
 - **Live reviews**: the Place ID is set in `site.json`; the Pages project still needs `GOOGLE_PLACES_API_KEY` and `GOOGLE_PLACE_ID` for the live feed.
 
