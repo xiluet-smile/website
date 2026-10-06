@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import { tpl, ui } from "@/lib/content-i18n";
 import { localizePath, type Locale } from "@/lib/i18n";
+import FeatureIcon from "./FeatureIcons";
 import { site } from "@/lib/site";
 
 const facts: Record<string, string> = {
@@ -93,12 +94,13 @@ export function ClinicSectionHead({ title, aside }: { title: string; aside?: str
   );
 }
 
-/** Three-column grid of glass cards (title + description). */
-export function ClinicFeatureGrid({ items }: { items: { t: string; d: string }[] }) {
+/** Three-column grid of glass cards (optional icon + title + description). */
+export function ClinicFeatureGrid({ items }: { items: { t: string; d: string; icon?: string }[] }) {
   return (
     <ul className="m-0 grid list-none gap-3 p-0 lg:grid-cols-3 lg:gap-4">
       {items.map((f) => (
         <li key={f.t} className="glass-card flex flex-col gap-2.5 rounded-2xl p-5 lg:min-h-[150px] lg:rounded-[18px] lg:p-6">
+          {f.icon && <FeatureIcon name={f.icon} className="mb-1" />}
           <h3 className="m-0 font-serif text-xl leading-[1.2] font-normal text-teal lg:text-[22px]">{f.t}</h3>
           <p className="m-0 text-[15px] leading-[1.5] text-body">{f.d}</p>
         </li>

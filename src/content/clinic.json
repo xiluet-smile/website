@@ -1,11 +1,35 @@
 {
   "features": [
-    { "t": "In-house dental lab", "d": "Your ceramist is in the building. Shade is matched in person and adjustments happen the same day." },
-    { "t": "3D scanning and digital design", "d": "Intraoral scanners and facial photography replace impressions. You see the design before any tooth is prepared." },
-    { "t": "Private treatment rooms", "d": "One patient per room, with a window. Your coordinator stays with you between steps." },
-    { "t": "Digital X-rays and CT", "d": "Low-dose imaging on site, read by your doctor during Visit 1." },
-    { "t": "Sterilization you can see", "d": "Hospital-grade sterilization, with instrument pouches opened in front of you." },
-    { "t": "Bilingual team", "d": "English and Spanish at every step, from the first message to delivery." }
+    {
+      "t": "In-house dental lab",
+      "d": "Your ceramist is in the building. Shade is matched in person and adjustments happen the same day.",
+      "icon": "lab"
+    },
+    {
+      "t": "3D scanning and digital design",
+      "d": "Intraoral scanners and facial photography replace impressions. You see the design before any tooth is prepared.",
+      "icon": "scan"
+    },
+    {
+      "t": "Private treatment rooms",
+      "d": "One patient per room, with a window. Your coordinator stays with you between steps.",
+      "icon": "room"
+    },
+    {
+      "t": "Digital X-rays and CT",
+      "d": "Low-dose imaging on site, read by your doctor during Visit 1.",
+      "icon": "xray"
+    },
+    {
+      "t": "Sterilization you can see",
+      "d": "Hospital-grade sterilization, with instrument pouches opened in front of you.",
+      "icon": "sterile"
+    },
+    {
+      "t": "Bilingual team",
+      "d": "English and Spanish at every step, from the first message to delivery.",
+      "icon": "bilingual"
+    }
   ],
   "travel": [
     "15 minutes from Miami International Airport (MIA)",
