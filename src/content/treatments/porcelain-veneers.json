@@ -31,8 +31,9 @@
       }
     ],
     "image": {
-      "caseId": "BA8",
-      "caption": "20 veneers · Actual Xiluet patient"
+      "src": "treatment-porcelain-veneers.jpg",
+      "alt": "Woman smiling with natural-looking porcelain veneers",
+      "caption": "20 porcelain veneers · 0.3 mm · 5-year written warranty"
     }
   },
   "candidates": {

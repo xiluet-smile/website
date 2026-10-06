@@ -31,8 +31,9 @@
       }
     ],
     "image": {
-      "caseId": "BA2",
-      "caption": "Smile makeover · Actual Xiluet patient"
+      "src": "treatment-smile-makeover.jpg",
+      "alt": "Woman in her forties with a relaxed, natural smile after her makeover",
+      "caption": "Smile makeover · Designed for your face, delivered in one week"
     }
   },
   "candidates": {

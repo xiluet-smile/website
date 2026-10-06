@@ -31,8 +31,9 @@
       }
     ],
     "image": {
-      "caseId": "BA11",
-      "caption": "Reconstrucción bucal completa · Paciente real de Xiluet"
+      "src": "treatment-full-mouth.jpg",
+      "alt": "Hombre riendo libremente tras una reconstrucción bucal completa",
+      "caption": "Reconstrucción bucal completa · Cada diente planificado en conjunto · 7 días hábiles"
     }
   },
   "candidates": {

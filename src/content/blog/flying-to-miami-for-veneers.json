@@ -9,90 +9,184 @@
   "author": "Dr. Gretell Alonso Fiel, DMD",
   "reviewedBy": "Dr. Roger Ramos Navarro, DMD",
   "datePublished": "2026-10-06",
-  "image": "gen-miami-aerial.jpg",
-  "imageAlt": "Aerial view of the Miami skyline, 15 minutes from the clinic",
+  "image": "blog-airport-arrival.jpg",
+  "imageAlt": "Patient arriving at Miami airport with a carry-on for her veneer week",
   "readMinutes": 8,
-  "treatments": ["porcelain-veneers", "smile-design", "complete-restoration"],
-  "related": ["/out-of-state-patients", "/porcelain-veneers-miami", "/smile-design-miami", "/complete-restoration-miami", "/blog/porcelain-veneers-cost-miami"],
+  "treatments": [
+    "porcelain-veneers",
+    "smile-design",
+    "complete-restoration"
+  ],
+  "related": [
+    "/out-of-state-patients",
+    "/porcelain-veneers-miami",
+    "/smile-design-miami",
+    "/complete-restoration-miami",
+    "/blog/porcelain-veneers-cost-miami"
+  ],
   "answer": "Out-of-state patients get 20 porcelain veneers at Xiluet Smiles in **three visits in one week**: exam and design on Monday, preparation and temporaries on Tuesday, delivery on Thursday, with an evening flight home. Our ceramist works in the same building, which makes one week possible. Before you book a flight, you send photos, get a written estimate within **6 hours** and reserve with a **$250 deposit**.",
   "sections": [
     {
       "h2": "Why one week, when most practices need three or four",
       "blocks": [
-        { "p": "A typical veneer case takes two or three visits spread over two to four weeks, as [Miami guides to the process](https://sharpdentistry.com/post/veneers-miami-hollywood-smile-guide/) describe, because the veneers are made by an outside laboratory. Impressions are shipped out, porcelain is shipped back, and you wear temporaries in between. For a patient who lives in Miami that is an inconvenience. For a patient flying in, it means two trips or a very long hotel bill." },
-        { "p": "Our ceramist works in the same building as our doctors. The scans from Monday go upstairs, not to a courier. Shade is matched with you in the chair, not from a photo. If an edge needs softening on Wednesday, the ceramist adjusts it that afternoon. That is the whole reason the week is possible, and it is also why the price is $6,000 for 20 veneers: there is no outside lab fee in the chain. The same week applies to [Complete Restoration](/complete-restoration-miami) cases with crowns and bridges, which are delivered in 5 business days." },
-        { "table": { "head": ["", "Outside lab (typical)", "Xiluet Smiles, lab in the building"], "rows": [
-          ["Calendar time", "2 to 4 weeks", "1 week, Monday to Thursday"],
-          ["Trips for an out-of-state patient", "2, or one long stay", "1"],
-          ["Days in temporaries", "1 to 3 weeks", "2 (Tuesday to Thursday)"],
-          ["Shade matched", "From photos sent to the lab", "In person, with the ceramist"],
-          ["Warranty", "None, or 1 year", "5 years, in writing"]
-        ] } },
-        { "p": "The temporaries range comes from [Healthline](https://www.healthline.com/health/dental-veneers); the warranty comparison is based on ranges published by Miami practices in October 2026. Read our [cost breakdown](/blog/porcelain-veneers-cost-miami) for the price side of the comparison." }
+        {
+          "p": "A typical veneer case takes two or three visits spread over two to four weeks, as [Miami guides to the process](https://sharpdentistry.com/post/veneers-miami-hollywood-smile-guide/) describe, because the veneers are made by an outside laboratory. Impressions are shipped out, porcelain is shipped back, and you wear temporaries in between. For a patient who lives in Miami that is an inconvenience. For a patient flying in, it means two trips or a very long hotel bill."
+        },
+        {
+          "p": "Our ceramist works in the same building as our doctors. The scans from Monday go upstairs, not to a courier. Shade is matched with you in the chair, not from a photo. If an edge needs softening on Wednesday, the ceramist adjusts it that afternoon. That is the whole reason the week is possible, and it is also why the price is $6,000 for 20 veneers: there is no outside lab fee in the chain. The same week applies to [Complete Restoration](/complete-restoration-miami) cases with crowns and bridges, which are delivered in 5 business days."
+        },
+        {
+          "table": {
+            "head": [
+              "",
+              "Outside lab (typical)",
+              "Xiluet Smiles, lab in the building"
+            ],
+            "rows": [
+              [
+                "Calendar time",
+                "2 to 4 weeks",
+                "1 week, Monday to Thursday"
+              ],
+              [
+                "Trips for an out-of-state patient",
+                "2, or one long stay",
+                "1"
+              ],
+              [
+                "Days in temporaries",
+                "1 to 3 weeks",
+                "2 (Tuesday to Thursday)"
+              ],
+              [
+                "Shade matched",
+                "From photos sent to the lab",
+                "In person, with the ceramist"
+              ],
+              [
+                "Warranty",
+                "None, or 1 year",
+                "5 years, in writing"
+              ]
+            ]
+          }
+        },
+        {
+          "p": "The temporaries range comes from [Healthline](https://www.healthline.com/health/dental-veneers); the warranty comparison is based on ranges published by Miami practices in October 2026. Read our [cost breakdown](/blog/porcelain-veneers-cost-miami) for the price side of the comparison."
+        }
       ]
     },
     {
       "h2": "Before you book a flight: photos first",
       "blocks": [
-        { "p": "Nobody should buy a plane ticket on the strength of a phone call. The sequence at Xiluet is designed so that you have a written price, a written timeline and a payment plan before you commit to anything." },
-        { "steps": [
-          "**Send three photos.** Front smile, left side, right side, taken on your phone, through the [free photo evaluation](/free-photo-evaluation). About two minutes of your time.",
-          "**Written estimate within 6 hours.** A doctor reviews your photos and writes your price, with the two or three financing partners most likely to approve you. The number you receive is the number you pay, unless the exam on Monday finds something that needs treating first, and we tell you that in writing too.",
-          "**Pick a payment plan.** Pay in full or pre-qualify with a soft check that does not affect your credit score. Your coordinator shows you the approved offers side by side.",
-          "**Reserve with a $250 deposit.** Your Monday, Tuesday and Thursday are booked, and your coordinator sends a shortlist of three vetted hotels within 10 minutes of the clinic at different price points.",
-          "**Book flights.** Arrive Sunday or early Monday. Book the return for Thursday evening; Visit 3 takes about 2 hours. From the first message to the flight home, one coordinator is your contact by text."
-        ] }
+        {
+          "p": "Nobody should buy a plane ticket on the strength of a phone call. The sequence at Xiluet is designed so that you have a written price, a written timeline and a payment plan before you commit to anything."
+        },
+        {
+          "steps": [
+            "**Send three photos.** Front smile, left side, right side, taken on your phone, through the [free photo evaluation](/free-photo-evaluation). About two minutes of your time.",
+            "**Written estimate within 6 hours.** A doctor reviews your photos and writes your price, with the two or three financing partners most likely to approve you. The number you receive is the number you pay, unless the exam on Monday finds something that needs treating first, and we tell you that in writing too.",
+            "**Pick a payment plan.** Pay in full or pre-qualify with a soft check that does not affect your credit score. Your coordinator shows you the approved offers side by side.",
+            "**Reserve with a $250 deposit.** Your Monday, Tuesday and Thursday are booked, and your coordinator sends a shortlist of three vetted hotels within 10 minutes of the clinic at different price points.",
+            "**Book flights.** Arrive Sunday or early Monday. Book the return for Thursday evening; Visit 3 takes about 2 hours. From the first message to the flight home, one coordinator is your contact by text."
+          ]
+        }
       ]
     },
     {
       "h2": "Day by day in Miami",
       "blocks": [
-        { "p": "The clinic is at 8396 SW 8th St, Miami, FL 33144, 15 minutes from Miami International Airport. We arrange your ride from the airport for Visit 1 if you want it, and an Uber or Lyft to and from the clinic on each treatment day is on us." },
-        { "steps": [
-          "**Monday, Visit 1, about 2 hours.** Exam, professional cleaning, X-rays, scans and photos. You see the design in your mouth and confirm it with your doctor. Nothing is drilled until you approve it. Rest of the day is free.",
-          "**Tuesday, Visit 2, about 3 hours.** Minimal preparation under local anaesthetic, then temporaries shaped like your approved design. You leave with a preview of your final smile.",
-          "**Wednesday, free day.** Live with the temporaries. Beach, Wynwood or rest. If you want a tooth slightly shorter or an edge softened, text your coordinator and the ceramist adjusts the porcelain before Thursday.",
-          "**Thursday, Visit 3, about 2 hours.** Temporaries off, veneers tried in, bonded, bite checked. The 5-year warranty is handed to you in writing. Fly home the same evening."
-        ] },
-        { "p": "Our article on [what veneers feel like day by day](/blog/do-veneers-hurt) covers the sensitivity side of the same week." }
+        {
+          "p": "The clinic is at 8396 SW 8th St, Miami, FL 33144, 15 minutes from Miami International Airport. We arrange your ride from the airport for Visit 1 if you want it, and an Uber or Lyft to and from the clinic on each treatment day is on us."
+        },
+        {
+          "steps": [
+            "**Monday, Visit 1, about 2 hours.** Exam, professional cleaning, X-rays, scans and photos. You see the design in your mouth and confirm it with your doctor. Nothing is drilled until you approve it. Rest of the day is free.",
+            "**Tuesday, Visit 2, about 3 hours.** Minimal preparation under local anaesthetic, then temporaries shaped like your approved design. You leave with a preview of your final smile.",
+            "**Wednesday, free day.** Live with the temporaries. Beach, Wynwood or rest. If you want a tooth slightly shorter or an edge softened, text your coordinator and the ceramist adjusts the porcelain before Thursday.",
+            "**Thursday, Visit 3, about 2 hours.** Temporaries off, veneers tried in, bonded, bite checked. The 5-year warranty is handed to you in writing. Fly home the same evening."
+          ]
+        },
+        {
+          "p": "Our article on [what veneers feel like day by day](/blog/do-veneers-hurt) covers the sensitivity side of the same week."
+        }
       ]
     },
     {
       "h2": "What to pack, and whether you can fly home the same day",
       "blocks": [
-        { "p": "You can fly home on the day your veneers are delivered. Dental guidance on [flying after treatment](https://serenitydentalclinic.com/flying-after-dental-surgery-how-soon-is-safe/) draws the line at surgery: implants and grafts need a day or two on the ground, veneers do not. Bonded porcelain does not care about cabin pressure. Eat something soft at the airport and you are fine." },
-        { "list": [
-          "**Photo ID** and your confirmation from your coordinator.",
-          "**A list of any medication you take**, so your doctor chooses the anaesthetic accordingly.",
-          "**Your night guard**, if you already have one. If you grind, tell us; we recommend a guard with your veneers.",
-          "**Photos of smiles you like**, and of your own smile from years ago if the goal is to get it back. Design starts from your face, not a catalogue.",
-          "**Comfortable clothes and a book.** Visits are 2 to 3 hours, and Wednesday is yours.",
-          "**Nothing for the ride.** Rides to every visit are arranged by us."
-        ] }
+        {
+          "p": "You can fly home on the day your veneers are delivered. Dental guidance on [flying after treatment](https://serenitydentalclinic.com/flying-after-dental-surgery-how-soon-is-safe/) draws the line at surgery: implants and grafts need a day or two on the ground, veneers do not. Bonded porcelain does not care about cabin pressure. Eat something soft at the airport and you are fine."
+        },
+        {
+          "list": [
+            "**Photo ID** and your confirmation from your coordinator.",
+            "**A list of any medication you take**, so your doctor chooses the anaesthetic accordingly.",
+            "**Your night guard**, if you already have one. If you grind, tell us; we recommend a guard with your veneers.",
+            "**Photos of smiles you like**, and of your own smile from years ago if the goal is to get it back. Design starts from your face, not a catalogue.",
+            "**Comfortable clothes and a book.** Visits are 2 to 3 hours, and Wednesday is yours.",
+            "**Nothing for the ride.** Rides to every visit are arranged by us."
+          ]
+        }
       ]
     },
     {
       "h2": "What happens if something needs adjusting once you are home",
       "blocks": [
-        { "p": "This is the question that stops most people from travelling for dental work, and it deserves a straight answer. Two weeks after delivery you have a video check-in with your doctor. Small adjustments, such as a spot that feels high in the bite, are covered by your warranty and can be done by any dentist near you. Anything bigger is handled by the doctor who placed your veneers, 15 minutes from MIA, in the building where they were made. Ask for the written warranty terms at Visit 3; the warranty covers the veneer, and normal care plus a night guard if you grind are expected." },
-        { "p": "Compare that with treatment abroad. A British Dental Association survey found that [86% of UK dentists had treated complications](https://www.bda.org/media-centre/uk-dentists-picking-up-the-pieces-from-dental-tourism-boom/) from dental work done overseas, and the most common problem was crowns sold as veneers. The clinic that did the work was a long flight away, and local dentists are often reluctant to touch it. Miami is a domestic flight, the warranty is in writing, and the doctor who answers your video call is the one who bonded your veneers." },
-        { "quote": "The design is approved before any tooth is touched, and the person who made your veneers is upstairs. That is what lets us promise a week, and it is what makes the warranty real for someone who lives in another state.", "by": "Dr. Gretell Alonso Fiel, DMD" }
+        {
+          "p": "This is the question that stops most people from travelling for dental work, and it deserves a straight answer. Two weeks after delivery you have a video check-in with your doctor. Small adjustments, such as a spot that feels high in the bite, are covered by your warranty and can be done by any dentist near you. Anything bigger is handled by the doctor who placed your veneers, 15 minutes from MIA, in the building where they were made. Ask for the written warranty terms at Visit 3; the warranty covers the veneer, and normal care plus a night guard if you grind are expected."
+        },
+        {
+          "p": "Compare that with treatment abroad. A British Dental Association survey found that [86% of UK dentists had treated complications](https://www.bda.org/media-centre/uk-dentists-picking-up-the-pieces-from-dental-tourism-boom/) from dental work done overseas, and the most common problem was crowns sold as veneers. The clinic that did the work was a long flight away, and local dentists are often reluctant to touch it. Miami is a domestic flight, the warranty is in writing, and the doctor who answers your video call is the one who bonded your veneers."
+        },
+        {
+          "quote": "The design is approved before any tooth is touched, and the person who made your veneers is upstairs. That is what lets us promise a week, and it is what makes the warranty real for someone who lives in another state.",
+          "by": "Dr. Gretell Alonso Fiel, DMD"
+        }
       ]
     },
     {
       "h2": "Spanish, hours, and what the clinic is like",
       "blocks": [
-        { "p": "The whole team, doctors and coordinators, is bilingual in English and Spanish. Your estimate, your warranty and your check-in can all be in Spanish if you prefer. The clinic is open Monday to Friday, 9 to 5, and holds a 5.0 rating on Google with 248 reviews. You can see the rooms on the [clinic page](/clinic) and read about the [doctors](/doctors) before you decide." },
-        { "p": "Prices shown on the site are minimum fees; your final fee is confirmed in writing after a doctor's evaluation. If you want to know what your own week would look like, start with the photos. Full details, including hotels and the deposit, are on the [out-of-state patients page](/out-of-state-patients)." }
+        {
+          "p": "The whole team, doctors and coordinators, is bilingual in English and Spanish. Your estimate, your warranty and your check-in can all be in Spanish if you prefer. The clinic is open Monday to Friday, 9 to 5, and holds a 5.0 rating on Google with 248 reviews. You can see the rooms on the [clinic page](/clinic) and read about the [doctors](/doctors) before you decide."
+        },
+        {
+          "p": "Prices shown on the site are minimum fees; your final fee is confirmed in writing after a doctor's evaluation. If you want to know what your own week would look like, start with the photos. Full details, including hotels and the deposit, are on the [out-of-state patients page](/out-of-state-patients)."
+        }
       ]
     }
   ],
   "faq": [
-    { "q": "How many trips to Miami do I need for veneers?", "a": "One. Three visits between Monday and Thursday, then a video check-in from home two weeks later. The lab is in the building, which is what removes the second trip.", "doc": "Dr. Gretell Alonso Fiel, DMD" },
-    { "q": "Can I fly home the same day my veneers are delivered?", "a": "Yes. Visit 3 takes about 2 hours and most patients book an evening flight. Veneers involve no surgery, so there is no waiting period before flying.", "doc": "Dr. Roger Ramos Navarro, DMD" },
-    { "q": "What if I need crowns or a full mouth reconstruction, not just veneers?", "a": "Complete Restoration cases, with 20 crowns, bridges or veneers, are delivered in 5 business days on the same week. Full mouth reconstruction is delivered in 7 business days, so your coordinator plans a slightly longer stay and tells you before you book.", "doc": "Dr. Roger Ramos Navarro, DMD" },
-    { "q": "Do you help with hotels and transport?", "a": "Yes. A shortlist of three vetted hotels within 10 minutes arrives with your estimate, we arrange your airport pickup for Visit 1, and rides to and from the clinic on treatment days are on us.", "doc": "Dr. Marta Puentes Marrero, DMD" },
-    { "q": "What if I do not like the design?", "a": "You approve it at Visit 1 before any tooth is prepared, and you live with temporaries in that exact design on Wednesday. Changes are made by the ceramist before Thursday. Nothing is bonded until you are happy.", "doc": "Dr. Gretell Alonso Fiel, DMD" },
-    { "q": "Does the team speak Spanish?", "a": "Yes. Every doctor and coordinator is bilingual in English and Spanish, and your estimate and warranty can be written in either language.", "doc": "Dr. Marta Puentes Marrero, DMD" }
+    {
+      "q": "How many trips to Miami do I need for veneers?",
+      "a": "One. Three visits between Monday and Thursday, then a video check-in from home two weeks later. The lab is in the building, which is what removes the second trip.",
+      "doc": "Dr. Gretell Alonso Fiel, DMD"
+    },
+    {
+      "q": "Can I fly home the same day my veneers are delivered?",
+      "a": "Yes. Visit 3 takes about 2 hours and most patients book an evening flight. Veneers involve no surgery, so there is no waiting period before flying.",
+      "doc": "Dr. Roger Ramos Navarro, DMD"
+    },
+    {
+      "q": "What if I need crowns or a full mouth reconstruction, not just veneers?",
+      "a": "Complete Restoration cases, with 20 crowns, bridges or veneers, are delivered in 5 business days on the same week. Full mouth reconstruction is delivered in 7 business days, so your coordinator plans a slightly longer stay and tells you before you book.",
+      "doc": "Dr. Roger Ramos Navarro, DMD"
+    },
+    {
+      "q": "Do you help with hotels and transport?",
+      "a": "Yes. A shortlist of three vetted hotels within 10 minutes arrives with your estimate, we arrange your airport pickup for Visit 1, and rides to and from the clinic on treatment days are on us.",
+      "doc": "Dr. Marta Puentes Marrero, DMD"
+    },
+    {
+      "q": "What if I do not like the design?",
+      "a": "You approve it at Visit 1 before any tooth is prepared, and you live with temporaries in that exact design on Wednesday. Changes are made by the ceramist before Thursday. Nothing is bonded until you are happy.",
+      "doc": "Dr. Gretell Alonso Fiel, DMD"
+    },
+    {
+      "q": "Does the team speak Spanish?",
+      "a": "Yes. Every doctor and coordinator is bilingual in English and Spanish, and your estimate and warranty can be written in either language.",
+      "doc": "Dr. Marta Puentes Marrero, DMD"
+    }
   ]
 }

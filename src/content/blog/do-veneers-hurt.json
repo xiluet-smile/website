@@ -9,82 +9,163 @@
   "author": "Dr. Marta Puentes Marrero, DMD",
   "reviewedBy": "Dr. Roger Ramos Navarro, DMD",
   "datePublished": "2026-10-06",
-  "image": "gen-veneer-macro.jpg",
-  "imageAlt": "Ultra-thin 0.3 mm porcelain veneer held in tweezers",
+  "image": "blog-chairside-talk.jpg",
+  "imageAlt": "Dentist talking a patient through the veneer visit in the treatment chair",
   "readMinutes": 7,
-  "treatments": ["porcelain-veneers"],
-  "related": ["/porcelain-veneers-miami", "/out-of-state-patients", "/blog/do-veneers-ruin-your-teeth", "/free-photo-evaluation"],
+  "treatments": [
+    "porcelain-veneers"
+  ],
+  "related": [
+    "/porcelain-veneers-miami",
+    "/out-of-state-patients",
+    "/blog/do-veneers-ruin-your-teeth",
+    "/free-photo-evaluation"
+  ],
   "answer": "Veneers should not hurt. The area is numbed before preparation, and with 0.3 mm veneers most of the work stays in enamel, which has no nerve endings, so most patients feel **pressure, not pain**. Mild sensitivity peaks in the first **48 to 72 hours** and usually settles within a few days. At Xiluet Smiles, three visits in one week means two days in temporaries, not three weeks.",
   "sections": [
     {
       "h2": "Why the appointment itself does not hurt",
       "blocks": [
-        { "p": "Three things stand between you and pain during veneer preparation. The first is local anaesthetic. Your doctor numbs the area before touching a tooth, and you stay numb for the whole appointment. The second is anatomy. Enamel, the outer layer of the tooth, has no nerve endings. The nerve sits in the pulp at the centre of the tooth, with a layer of dentin in between. Preparation for a 0.3 mm veneer removes a fraction of the enamel, sometimes none at all, so the nerve is never close to the work." },
-        { "p": "The third is the design. You approve the design at Visit 1, and the ceramist works from it, so the doctor knows exactly how much surface each veneer needs before picking up a handpiece. There is no improvising on the tooth. What you feel is pressure, vibration and the sound of the drill, which is the part most patients say they liked least. [Cleveland Clinic](https://my.clevelandclinic.org/health/treatments/23522-dental-veneers) describes the procedure the same way: the area is numbed for preparation, and some temporary sensitivity afterwards is common." },
-        { "p": "If you are anxious about dental work, say so when you send your photos. Knowing what is coming at each visit, and how long it takes, is most of what calms people down." }
+        {
+          "p": "Three things stand between you and pain during veneer preparation. The first is local anaesthetic. Your doctor numbs the area before touching a tooth, and you stay numb for the whole appointment. The second is anatomy. Enamel, the outer layer of the tooth, has no nerve endings. The nerve sits in the pulp at the centre of the tooth, with a layer of dentin in between. Preparation for a 0.3 mm veneer removes a fraction of the enamel, sometimes none at all, so the nerve is never close to the work."
+        },
+        {
+          "p": "The third is the design. You approve the design at Visit 1, and the ceramist works from it, so the doctor knows exactly how much surface each veneer needs before picking up a handpiece. There is no improvising on the tooth. What you feel is pressure, vibration and the sound of the drill, which is the part most patients say they liked least. [Cleveland Clinic](https://my.clevelandclinic.org/health/treatments/23522-dental-veneers) describes the procedure the same way: the area is numbed for preparation, and some temporary sensitivity afterwards is common."
+        },
+        {
+          "p": "If you are anxious about dental work, say so when you send your photos. Knowing what is coming at each visit, and how long it takes, is most of what calms people down."
+        }
       ]
     },
     {
       "h2": "Day by day: what you feel during the veneer week",
       "blocks": [
-        { "p": "At Xiluet Smiles the whole process takes three visits in one week, because our lab is in the same building. Here is what each day feels like." },
-        { "steps": [
-          "**Monday, Visit 1 (about 2 hours).** Exam, professional cleaning, X-rays and scans. Nothing is drilled. You see the design and confirm it with your doctor. If your gums were inflamed, the cleaning can leave them tender for a day. That is normal.",
-          "**Tuesday, Visit 2 (about 3 hours).** The area is numbed. Minimal preparation, then temporaries shaped like your approved design. You feel pressure and vibration, not pain. The numbness wears off over two to three hours. Eat soft food that evening and be careful not to bite your lip or cheek while you cannot feel it.",
-          "**Tuesday night to Wednesday.** This is the window where sensitivity to cold peaks. Dentists who track it put the [peak at 48 to 72 hours after preparation](https://www.southkenmd.co.uk/blog/sensitivity-after-veneer-prep-normal-duration). Temporaries are resin and bonded lightly, so cold air and drinks reach the tooth more easily than the final porcelain will. Wednesday is your free day. Most patients spend it at the beach without trouble.",
-          "**Thursday, Visit 3 (about 2 hours).** The temporaries come off, which feels odd but not painful. The veneers are tried in, you check them in a mirror, and then they are bonded one by one. Bonding involves cleaning and etching the surface, not drilling. Your bite is checked, the 5-year warranty is handed to you in writing, and you can fly home the same evening.",
-          "**Days 1 to 3 after delivery.** Bonded porcelain seals the tooth, and sensitivity drops quickly. The most common complaint in this window is a spot that feels slightly high when you bite. Call us. It is a two-minute adjustment.",
-          "**Week 2.** Gums settle around the new margins and the veneers start to feel like your own teeth. Out-of-state patients get a video check-in with their doctor two weeks after delivery to confirm everything has calmed down."
-        ] }
+        {
+          "p": "At Xiluet Smiles the whole process takes three visits in one week, because our lab is in the same building. Here is what each day feels like."
+        },
+        {
+          "steps": [
+            "**Monday, Visit 1 (about 2 hours).** Exam, professional cleaning, X-rays and scans. Nothing is drilled. You see the design and confirm it with your doctor. If your gums were inflamed, the cleaning can leave them tender for a day. That is normal.",
+            "**Tuesday, Visit 2 (about 3 hours).** The area is numbed. Minimal preparation, then temporaries shaped like your approved design. You feel pressure and vibration, not pain. The numbness wears off over two to three hours. Eat soft food that evening and be careful not to bite your lip or cheek while you cannot feel it.",
+            "**Tuesday night to Wednesday.** This is the window where sensitivity to cold peaks. Dentists who track it put the [peak at 48 to 72 hours after preparation](https://www.southkenmd.co.uk/blog/sensitivity-after-veneer-prep-normal-duration). Temporaries are resin and bonded lightly, so cold air and drinks reach the tooth more easily than the final porcelain will. Wednesday is your free day. Most patients spend it at the beach without trouble.",
+            "**Thursday, Visit 3 (about 2 hours).** The temporaries come off, which feels odd but not painful. The veneers are tried in, you check them in a mirror, and then they are bonded one by one. Bonding involves cleaning and etching the surface, not drilling. Your bite is checked, the 5-year warranty is handed to you in writing, and you can fly home the same evening.",
+            "**Days 1 to 3 after delivery.** Bonded porcelain seals the tooth, and sensitivity drops quickly. The most common complaint in this window is a spot that feels slightly high when you bite. Call us. It is a two-minute adjustment.",
+            "**Week 2.** Gums settle around the new margins and the veneers start to feel like your own teeth. Out-of-state patients get a video check-in with their doctor two weeks after delivery to confirm everything has calmed down."
+          ]
+        }
       ]
     },
     {
       "h2": "Where sensitivity comes from, and why 0.3 mm matters",
       "blocks": [
-        { "p": "Sensitivity after dental work comes from dentin. Dentin is full of tiny tubules that lead to the nerve, so when it is exposed, cold and sweet reach the nerve faster. Enamel blocks them. The less enamel removed, the less likely your preparation reaches dentin, and the less you feel afterwards. That is the practical reason to care about how much tooth your dentist plans to remove." },
-        { "table": { "head": ["Restoration", "Tooth removed", "What it means for sensitivity"], "rows": [
-          ["Minimal-prep veneer (Xiluet, 0.3 mm)", "Very little, sometimes none; enamel only", "Nerve untouched; sensitivity brief or absent"],
-          ["Conventional veneer", "0.5 to 0.7 mm", "Usually stays in enamel; mild sensitivity for a few days"],
-          ["Crown", "60 to 70% of the tooth", "Often reaches dentin; sensitivity more likely and longer"]
-        ] } },
-        { "p": "The ranges for conventional veneers come from [published minimal-prep guidance](https://acedntl.com/minimal-prep-veneers), and the crown figure from [dentists warning about crowns sold as veneers](https://www.theperfectsmile.co.uk/news/why-you-should-avoid-turkey-teeth-like-the-plague). Staying in enamel matters for the long term too. In a 15-year study of 672 veneers published in the [Journal of Esthetic and Restorative Dentistry](https://onlinelibrary.wiley.com/doi/10.1111/jerd.70016), veneers bonded to enamel survived 96.7% of the time, against 93.9% when more than 30% of the bonding surface was dentin, and dentin exposure raised the odds of failure 3.5 times." },
-        { "p": "At Visit 1, after the scans, your doctor tells you exactly how much enamel each tooth needs, tooth by tooth. With 0.3 mm veneers the answer is usually very little, and sometimes none. If you are being quoted a veneer that needs a lot of reduction, ask whether you are actually being sold a crown. Our article on [whether veneers ruin your teeth](/blog/do-veneers-ruin-your-teeth) covers how to tell." }
+        {
+          "p": "Sensitivity after dental work comes from dentin. Dentin is full of tiny tubules that lead to the nerve, so when it is exposed, cold and sweet reach the nerve faster. Enamel blocks them. The less enamel removed, the less likely your preparation reaches dentin, and the less you feel afterwards. That is the practical reason to care about how much tooth your dentist plans to remove."
+        },
+        {
+          "table": {
+            "head": [
+              "Restoration",
+              "Tooth removed",
+              "What it means for sensitivity"
+            ],
+            "rows": [
+              [
+                "Minimal-prep veneer (Xiluet, 0.3 mm)",
+                "Very little, sometimes none; enamel only",
+                "Nerve untouched; sensitivity brief or absent"
+              ],
+              [
+                "Conventional veneer",
+                "0.5 to 0.7 mm",
+                "Usually stays in enamel; mild sensitivity for a few days"
+              ],
+              [
+                "Crown",
+                "60 to 70% of the tooth",
+                "Often reaches dentin; sensitivity more likely and longer"
+              ]
+            ]
+          }
+        },
+        {
+          "p": "The ranges for conventional veneers come from [published minimal-prep guidance](https://acedntl.com/minimal-prep-veneers), and the crown figure from [dentists warning about crowns sold as veneers](https://www.theperfectsmile.co.uk/news/why-you-should-avoid-turkey-teeth-like-the-plague). Staying in enamel matters for the long term too. In a 15-year study of 672 veneers published in the [Journal of Esthetic and Restorative Dentistry](https://onlinelibrary.wiley.com/doi/10.1111/jerd.70016), veneers bonded to enamel survived 96.7% of the time, against 93.9% when more than 30% of the bonding surface was dentin, and dentin exposure raised the odds of failure 3.5 times."
+        },
+        {
+          "p": "At Visit 1, after the scans, your doctor tells you exactly how much enamel each tooth needs, tooth by tooth. With 0.3 mm veneers the answer is usually very little, and sometimes none. If you are being quoted a veneer that needs a lot of reduction, ask whether you are actually being sold a crown. Our article on [whether veneers ruin your teeth](/blog/do-veneers-ruin-your-teeth) covers how to tell."
+        }
       ]
     },
     {
       "h2": "Temporaries: the part nobody warns you about",
       "blocks": [
-        { "p": "Most of the discomfort people describe online is not from the preparation. It is from the temporaries. [Healthline](https://www.healthline.com/health/dental-veneers) notes that temporary veneers are usually worn for one to three weeks while an outside lab makes the final ones, and in that time they can feel bulky, trap food at the gumline and occasionally pop off. Three weeks of that is a long time." },
-        { "p": "Our ceramist works in the same building as the doctors, so your temporaries go on Tuesday and come off Thursday. Two days. They are shaped like the design you approved, so they also serve as a live preview: if you want a tooth slightly shorter or an edge softened, you tell your doctor on Wednesday and the change is made before the porcelain is finished." },
-        { "list": [
-          "Eat soft food and chew on your back teeth while you wear temporaries.",
-          "Skip very hot, very cold and sticky food for those two days.",
-          "Brush gently and floss by pulling the floss out sideways rather than snapping it up.",
-          "If a temporary comes loose, keep it and call your coordinator. Do not glue it yourself."
-        ] }
+        {
+          "p": "Most of the discomfort people describe online is not from the preparation. It is from the temporaries. [Healthline](https://www.healthline.com/health/dental-veneers) notes that temporary veneers are usually worn for one to three weeks while an outside lab makes the final ones, and in that time they can feel bulky, trap food at the gumline and occasionally pop off. Three weeks of that is a long time."
+        },
+        {
+          "p": "Our ceramist works in the same building as the doctors, so your temporaries go on Tuesday and come off Thursday. Two days. They are shaped like the design you approved, so they also serve as a live preview: if you want a tooth slightly shorter or an edge softened, you tell your doctor on Wednesday and the change is made before the porcelain is finished."
+        },
+        {
+          "list": [
+            "Eat soft food and chew on your back teeth while you wear temporaries.",
+            "Skip very hot, very cold and sticky food for those two days.",
+            "Brush gently and floss by pulling the floss out sideways rather than snapping it up.",
+            "If a temporary comes loose, keep it and call your coordinator. Do not glue it yourself."
+          ]
+        }
       ]
     },
     {
       "h2": "What is normal, and when to call",
       "blocks": [
-        { "p": "Normal in the first few days after preparation or delivery: a short, sharp reaction to cold that fades in seconds, tender gums where the margins sit, a slightly strange feeling when you close your teeth, and a lisp that disappears within a day or two as your tongue learns the new shape." },
-        { "p": "Not normal, and worth a call the same day: pain that keeps you awake or that starts without a trigger, pain when you bite on one specific tooth, sensitivity that is getting worse instead of better after three days, a chip or crack, or a veneer or temporary that moves. None of these are emergencies in the medical sense, but all of them are easier to fix early. If you are back home, the first step is a video call with your doctor." },
-        { "quote": "Patients expect the drilling to be the hard part. It is not. It is the two days in temporaries, and we have made those as short as a lab in the building allows.", "by": "Dr. Marta Puentes Marrero, DMD" }
+        {
+          "p": "Normal in the first few days after preparation or delivery: a short, sharp reaction to cold that fades in seconds, tender gums where the margins sit, a slightly strange feeling when you close your teeth, and a lisp that disappears within a day or two as your tongue learns the new shape."
+        },
+        {
+          "p": "Not normal, and worth a call the same day: pain that keeps you awake or that starts without a trigger, pain when you bite on one specific tooth, sensitivity that is getting worse instead of better after three days, a chip or crack, or a veneer or temporary that moves. None of these are emergencies in the medical sense, but all of them are easier to fix early. If you are back home, the first step is a video call with your doctor."
+        },
+        {
+          "quote": "Patients expect the drilling to be the hard part. It is not. It is the two days in temporaries, and we have made those as short as a lab in the building allows.",
+          "by": "Dr. Marta Puentes Marrero, DMD"
+        }
       ]
     },
     {
       "h2": "How to make the week easier",
       "blocks": [
-        { "p": "A few habits make a measurable difference. Eat a proper meal before Visit 2, because you will not want to chew for a few hours afterwards. Bring a list of any medication you take so your doctor can choose the anaesthetic accordingly. If you grind your teeth, tell us, because we recommend a night guard with your veneers and it is better planned early. And if a sensitive-teeth toothpaste works for you at home, keep using it through the week." },
-        { "p": "Everything above is confirmed at Visit 1 before any tooth is touched. If you want to know how much preparation your own teeth would need, send three photos through our [free photo evaluation](/free-photo-evaluation) and a doctor replies in writing within 6 hours. Prices shown on our [porcelain veneers page](/porcelain-veneers-miami) are minimum fees; your final fee is confirmed in writing after a doctor's evaluation." }
+        {
+          "p": "A few habits make a measurable difference. Eat a proper meal before Visit 2, because you will not want to chew for a few hours afterwards. Bring a list of any medication you take so your doctor can choose the anaesthetic accordingly. If you grind your teeth, tell us, because we recommend a night guard with your veneers and it is better planned early. And if a sensitive-teeth toothpaste works for you at home, keep using it through the week."
+        },
+        {
+          "p": "Everything above is confirmed at Visit 1 before any tooth is touched. If you want to know how much preparation your own teeth would need, send three photos through our [free photo evaluation](/free-photo-evaluation) and a doctor replies in writing within 6 hours. Prices shown on our [porcelain veneers page](/porcelain-veneers-miami) are minimum fees; your final fee is confirmed in writing after a doctor's evaluation."
+        }
       ]
     }
   ],
   "faq": [
-    { "q": "Do they shave your teeth for veneers?", "a": "With 0.3 mm veneers, usually very little and sometimes none. The area is numbed, enamel has no nerve endings, and your doctor confirms the exact amount for each tooth at Visit 1 after the scans.", "doc": "Dr. Marta Puentes Marrero, DMD" },
-    { "q": "How long does sensitivity last after veneers?", "a": "It peaks in the first 48 to 72 hours after preparation and usually settles within a few days of the final bonding. If it is still there, or getting worse, two weeks after delivery, call your doctor.", "doc": "Dr. Roger Ramos Navarro, DMD" },
-    { "q": "Does the bonding appointment hurt?", "a": "No. Removing the temporaries feels odd but not painful, and bonding involves cleaning and etching the tooth surface, not drilling. Ask for numbing if you prefer it.", "doc": "Dr. Gretell Alonso Fiel, DMD" },
-    { "q": "Can I eat normally after veneers?", "a": "Soft food for the first evening after each visit, then normal eating. Cut hard fruit, avoid biting ice or opening packages with your teeth, and wear a night guard if you grind.", "doc": "Dr. Marta Puentes Marrero, DMD" },
-    { "q": "What if a temporary falls off while I am in Miami?", "a": "Keep it, do not glue it, and text your coordinator. The lab is in the building, so the fix is quick, and you are only in temporaries from Tuesday to Thursday anyway.", "doc": "Dr. Gretell Alonso Fiel, DMD" }
+    {
+      "q": "Do they shave your teeth for veneers?",
+      "a": "With 0.3 mm veneers, usually very little and sometimes none. The area is numbed, enamel has no nerve endings, and your doctor confirms the exact amount for each tooth at Visit 1 after the scans.",
+      "doc": "Dr. Marta Puentes Marrero, DMD"
+    },
+    {
+      "q": "How long does sensitivity last after veneers?",
+      "a": "It peaks in the first 48 to 72 hours after preparation and usually settles within a few days of the final bonding. If it is still there, or getting worse, two weeks after delivery, call your doctor.",
+      "doc": "Dr. Roger Ramos Navarro, DMD"
+    },
+    {
+      "q": "Does the bonding appointment hurt?",
+      "a": "No. Removing the temporaries feels odd but not painful, and bonding involves cleaning and etching the tooth surface, not drilling. Ask for numbing if you prefer it.",
+      "doc": "Dr. Gretell Alonso Fiel, DMD"
+    },
+    {
+      "q": "Can I eat normally after veneers?",
+      "a": "Soft food for the first evening after each visit, then normal eating. Cut hard fruit, avoid biting ice or opening packages with your teeth, and wear a night guard if you grind.",
+      "doc": "Dr. Marta Puentes Marrero, DMD"
+    },
+    {
+      "q": "What if a temporary falls off while I am in Miami?",
+      "a": "Keep it, do not glue it, and text your coordinator. The lab is in the building, so the fix is quick, and you are only in temporaries from Tuesday to Thursday anyway.",
+      "doc": "Dr. Gretell Alonso Fiel, DMD"
+    }
   ]
 }

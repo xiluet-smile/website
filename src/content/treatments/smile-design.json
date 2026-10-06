@@ -31,8 +31,9 @@
       }
     ],
     "image": {
-      "caseId": "BA4",
-      "caption": "Smile design, 20 veneers · Actual Xiluet patient"
+      "src": "treatment-smile-design.jpg",
+      "alt": "Young woman laughing with a smile designed for her face",
+      "caption": "Smile design · You approve the design before any tooth is touched"
     }
   },
   "candidates": {

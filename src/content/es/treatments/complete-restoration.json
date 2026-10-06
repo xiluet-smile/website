@@ -11,34 +11,86 @@
     "lead": "Hasta 20 coronas, puentes o carillas con un solo plan y un laboratorio propio. Entrega en 5 días hábiles en Miami, o en 3 con entrega urgente, con garantía de 5 años por escrito.",
     "secondaryCta": "Mira tu semana en Miami",
     "stats": [
-      { "kind": "price", "label": "20 restauraciones dentales" },
-      { "kind": "text", "value": "5 días", "label": "días hábiles hasta la entrega" },
-      { "kind": "text", "value": "5 años", "label": "de garantía, por escrito" },
-      { "kind": "rating", "label": "Reseñas de Google" }
+      {
+        "kind": "price",
+        "label": "20 restauraciones dentales"
+      },
+      {
+        "kind": "text",
+        "value": "5 días",
+        "label": "días hábiles hasta la entrega"
+      },
+      {
+        "kind": "text",
+        "value": "5 años",
+        "label": "de garantía, por escrito"
+      },
+      {
+        "kind": "rating",
+        "label": "Reseñas de Google"
+      }
     ],
-    "image": { "caseId": "BA9", "caption": "Restauraciones · Paciente real de Xiluet" }
+    "image": {
+      "src": "treatment-complete-restoration.jpg",
+      "alt": "Hombre de cuarenta y tantos sonriendo tras una restauración completa",
+      "caption": "Restauración Completa · 20 coronas, puentes o carillas · 5 días hábiles"
+    }
   },
   "candidates": {
     "title": "Para dientes que hay que reconstruir, no solo cubrir",
     "intro": "Coronas, puentes y carillas se eligen diente por diente y se diseñan como una sola sonrisa.",
     "items": [
-      { "t": "Muchos dientes fallando", "d": "Empastes y coronas viejas que se rompen uno tras otro." },
-      { "t": "Dientes rotos o fisurados", "d": "Los dientes demasiado dañados para una carilla se reconstruyen con una corona." },
-      { "t": "Algunos dientes faltantes", "d": "Espacios cerrados con puentes, para que vuelvas a masticar de ambos lados." },
-      { "t": "Trabajo dental viejo", "d": "Bordes metálicos oscuros y colores disparejos reemplazados en un solo plan." },
-      { "t": "Dientes desgastados", "d": "Años de bruxismo han acortado tus dientes y envejecido tu rostro." }
+      {
+        "t": "Muchos dientes fallando",
+        "d": "Empastes y coronas viejas que se rompen uno tras otro."
+      },
+      {
+        "t": "Dientes rotos o fisurados",
+        "d": "Los dientes demasiado dañados para una carilla se reconstruyen con una corona."
+      },
+      {
+        "t": "Algunos dientes faltantes",
+        "d": "Espacios cerrados con puentes, para que vuelvas a masticar de ambos lados."
+      },
+      {
+        "t": "Trabajo dental viejo",
+        "d": "Bordes metálicos oscuros y colores disparejos reemplazados en un solo plan."
+      },
+      {
+        "t": "Dientes desgastados",
+        "d": "Años de bruxismo han acortado tus dientes y envejecido tu rostro."
+      }
     ]
   },
   "why": {
     "eyebrow": "Por qué restaurar aquí",
     "title": "Cada restauración diseñada, igualada y entregada en conjunto.",
     "body": "La mayoría de las clínicas reconstruyen los dientes cita por cita. Nuestro laboratorio está en el edificio, así que coronas, puentes y carillas se diseñan como una sola sonrisa, se igualan en tono en persona y se entregan la misma semana.",
-    "image": { "src": "gen-zirconia-bridge.jpg", "alt": "Puente de zirconia terminado en el laboratorio propio" },
+    "image": {
+      "src": "gen-zirconia-bridge.jpg",
+      "alt": "Puente de zirconia terminado en el laboratorio propio"
+    },
     "facts": [
-      { "label": "Tiempo", "big": "5 días hábiles", "sub": "Desde el primer examen hasta la entrega final. Entrega urgente en 3 días hábiles: $10,000." },
-      { "label": "Materiales", "big": "Zirconia y porcelana", "sub": "Fuerte donde masticas, translúcida donde se ve." },
-      { "label": "Duración", "big": "10 a 30 años", "sub": "Con cuidado normal y una guarda nocturna si rechinas los dientes." },
-      { "label": "Garantía", "big": "5 años", "sub": "Por escrito, en cada restauración." }
+      {
+        "label": "Tiempo",
+        "big": "5 días hábiles",
+        "sub": "Desde el primer examen hasta la entrega final. Entrega urgente en 3 días hábiles: $10,000."
+      },
+      {
+        "label": "Materiales",
+        "big": "Zirconia y porcelana",
+        "sub": "Fuerte donde masticas, translúcida donde se ve."
+      },
+      {
+        "label": "Duración",
+        "big": "10 a 30 años",
+        "sub": "Con cuidado normal y una guarda nocturna si rechinas los dientes."
+      },
+      {
+        "label": "Garantía",
+        "big": "5 años",
+        "sub": "Por escrito, en cada restauración."
+      }
     ]
   },
   "week": {
@@ -46,17 +98,41 @@
     "intro": "Fotos, presupuesto y plan desde casa. Luego tres visitas en 5 días hábiles.",
     "linkLabel": "Elige una fecha y mira el calendario completo →",
     "visits": [
-      { "k": "Desde casa", "t": "Fotos, presupuesto, plan", "d": "Envía fotos, recibe tu presupuesto por escrito en menos de 6 horas, elige un plan de pago y reserva con un depósito de $250.", "time": "Cualquier día, unos 2 minutos de tu tiempo" },
-      { "k": "Visita 1 · Lunes", "t": "Examen, escaneos y diseño", "d": "Limpieza, radiografías, escaneos 3D y fotos. Tu doctor decide diente por diente si necesita corona, puente o carilla, y tú confirmas el diseño.", "time": "Unas 2 horas" },
-      { "k": "Visita 2 · Martes", "t": "Preparación y provisionales", "d": "Dientes preparados y provisionales con la forma de tu diseño final, para que mastiques y hables con ellos mientras el laboratorio trabaja.", "time": "Medio día" },
-      { "k": "Visita 3 · Viernes", "t": "Entrega y ajustes finales", "d": "Se cementan las coronas, puentes y carillas finales, se revisa la mordida y recibes tu garantía de 5 años por escrito.", "time": "Unas 2 horas. Vuelas a casa esa misma tarde." }
+      {
+        "k": "Desde casa",
+        "t": "Fotos, presupuesto, plan",
+        "d": "Envía fotos, recibe tu presupuesto por escrito en menos de 6 horas, elige un plan de pago y reserva con un depósito de $250.",
+        "time": "Cualquier día, unos 2 minutos de tu tiempo"
+      },
+      {
+        "k": "Visita 1 · Lunes",
+        "t": "Examen, escaneos y diseño",
+        "d": "Limpieza, radiografías, escaneos 3D y fotos. Tu doctor decide diente por diente si necesita corona, puente o carilla, y tú confirmas el diseño.",
+        "time": "Unas 2 horas"
+      },
+      {
+        "k": "Visita 2 · Martes",
+        "t": "Preparación y provisionales",
+        "d": "Dientes preparados y provisionales con la forma de tu diseño final, para que mastiques y hables con ellos mientras el laboratorio trabaja.",
+        "time": "Medio día"
+      },
+      {
+        "k": "Visita 3 · Viernes",
+        "t": "Entrega y ajustes finales",
+        "d": "Se cementan las coronas, puentes y carillas finales, se revisa la mordida y recibes tu garantía de 5 años por escrito.",
+        "time": "Unas 2 horas. Vuelas a casa esa misma tarde."
+      }
     ]
   },
   "results": {
     "title": "Resultados de restauraciones",
     "linkLabel": "Todos los casos →",
     "label": "Restauraciones",
-    "caseIds": ["BA9", "BA14", "BA11"]
+    "caseIds": [
+      "BA9",
+      "BA14",
+      "BA11"
+    ]
   },
   "price": {
     "eyebrow": "Costo",
@@ -85,11 +161,31 @@
     "title": "Preguntas sobre restauraciones, respondidas por los doctores",
     "linkLabel": "Todas las respuestas →",
     "items": [
-      { "q": "¿Corona, puente o carilla: quién decide?", "a": "Tu doctor, diente por diente, en la Visita 1. Una carilla cubre el frente de un diente sano; una corona reconstruye uno roto o muy empastado; un puente reemplaza un diente faltante apoyándose en los vecinos. Tú confirmas el plan antes de cualquier preparación.", "doc": "Dr. Marta Puentes Marrero, DMD" },
-      { "q": "¿Duele?", "a": "La preparación se hace con anestesia local. Espera molestias durante unos días, que se controlan con analgésicos de venta libre.", "doc": "Dr. Marta Puentes Marrero, DMD" },
-      { "q": "¿Lo cubre el seguro?", "a": "Las coronas y los puentes suelen clasificarse como trabajo restaurador mayor y pueden estar cubiertos entre un 50 y un 80 por ciento según tu plan. Te damos los códigos para tu reclamo.", "doc": "Dr. Roger Ramos Navarro, DMD" },
-      { "q": "¿Cuánto dura?", "a": "Las restauraciones de porcelana y zirconia suelen durar de 10 a 30 años con buen cuidado. Las nuestras tienen garantía de 5 años por escrito.", "doc": "Dr. Gretell Alonso Fiel, DMD" },
-      { "q": "¿Se puede hacer en 3 días?", "a": "Sí. La entrega urgente en 3 días hábiles cuesta $10,000 en lugar de $7,000, porque el laboratorio trabaja en tu caso de forma exclusiva. La mayoría de los pacientes elige el calendario estándar de 5 días.", "doc": "Dr. Roger Ramos Navarro, DMD" }
+      {
+        "q": "¿Corona, puente o carilla: quién decide?",
+        "a": "Tu doctor, diente por diente, en la Visita 1. Una carilla cubre el frente de un diente sano; una corona reconstruye uno roto o muy empastado; un puente reemplaza un diente faltante apoyándose en los vecinos. Tú confirmas el plan antes de cualquier preparación.",
+        "doc": "Dr. Marta Puentes Marrero, DMD"
+      },
+      {
+        "q": "¿Duele?",
+        "a": "La preparación se hace con anestesia local. Espera molestias durante unos días, que se controlan con analgésicos de venta libre.",
+        "doc": "Dr. Marta Puentes Marrero, DMD"
+      },
+      {
+        "q": "¿Lo cubre el seguro?",
+        "a": "Las coronas y los puentes suelen clasificarse como trabajo restaurador mayor y pueden estar cubiertos entre un 50 y un 80 por ciento según tu plan. Te damos los códigos para tu reclamo.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "¿Cuánto dura?",
+        "a": "Las restauraciones de porcelana y zirconia suelen durar de 10 a 30 años con buen cuidado. Las nuestras tienen garantía de 5 años por escrito.",
+        "doc": "Dr. Gretell Alonso Fiel, DMD"
+      },
+      {
+        "q": "¿Se puede hacer en 3 días?",
+        "a": "Sí. La entrega urgente en 3 días hábiles cuesta $10,000 en lugar de $7,000, porque el laboratorio trabaja en tu caso de forma exclusiva. La mayoría de los pacientes elige el calendario estándar de 5 días.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      }
     ]
   },
   "cta": {

@@ -31,8 +31,9 @@
       }
     ],
     "image": {
-      "caseId": "BA2",
-      "caption": "Transformación de sonrisa · Paciente real de Xiluet"
+      "src": "treatment-smile-makeover.jpg",
+      "alt": "Mujer de cuarenta y tantos con una sonrisa relajada y natural tras su transformación",
+      "caption": "Transformación de sonrisa · Diseñada para tu rostro, entregada en una semana"
     }
   },
   "candidates": {

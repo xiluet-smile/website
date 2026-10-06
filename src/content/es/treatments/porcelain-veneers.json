@@ -31,8 +31,9 @@
       }
     ],
     "image": {
-      "caseId": "BA8",
-      "caption": "20 carillas · Paciente real de Xiluet"
+      "src": "treatment-porcelain-veneers.jpg",
+      "alt": "Mujer sonriendo con carillas de porcelana de aspecto natural",
+      "caption": "20 carillas de porcelana · 0.3 mm · garantía de 5 años por escrito"
     }
   },
   "candidates": {

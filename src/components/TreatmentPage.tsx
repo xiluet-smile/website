@@ -183,7 +183,7 @@ export default function TreatmentPage({ data, locale = "en" }: { data: Treatment
                 src={hero.image.src!}
                 alt={hero.image.alt ?? ""}
                 sizes="(min-width: 1024px) 480px, 100vw"
-                className="block aspect-[4/3] w-full object-cover"
+                className="block aspect-[4/5] w-full object-cover object-[50%_30%] lg:aspect-[5/6]"
                 priority
               />
             )}
@@ -318,7 +318,7 @@ export default function TreatmentPage({ data, locale = "en" }: { data: Treatment
                   src={e.src}
                   alt={e.alt}
                   sizes="(min-width: 1024px) 33vw, 100vw"
-                  className="block aspect-[4/3] w-full object-cover"
+                  className="block aspect-[4/5] w-full object-cover object-[50%_30%] lg:aspect-[5/6]"
                 />
               </div>
               <figcaption className="flex justify-between gap-3 text-sm text-muted">

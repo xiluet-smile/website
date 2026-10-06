@@ -31,8 +31,9 @@
       }
     ],
     "image": {
-      "caseId": "BA11",
-      "caption": "Full mouth reconstruction · Actual Xiluet patient"
+      "src": "treatment-full-mouth.jpg",
+      "alt": "Man laughing freely after full mouth reconstruction",
+      "caption": "Full mouth reconstruction · Every tooth planned together · 7 business days"
     }
   },
   "candidates": {
