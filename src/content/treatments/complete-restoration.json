@@ -1,0 +1,102 @@
+{
+  "path": "/complete-restoration-miami",
+  "packageId": "complete-restoration",
+  "breadcrumb": "Complete Restoration",
+  "schema": {
+    "name": "Complete Restoration (crowns, bridges and veneers)",
+    "procedureType": "http://schema.org/NoninvasiveProcedure"
+  },
+  "hero": {
+    "definition": "Complete Restoration replaces or rebuilds up to 20 teeth with porcelain crowns, bridges or veneers, planned together so color, shape and bite match. At Xiluet Smiles in Miami the package costs $7,000, includes a professional cleaning and X-rays, is delivered in 5 business days and carries a 5-year written warranty.",
+    "lead": "Up to 20 crowns, bridges or veneers from one plan and one in-house lab. Delivered in 5 business days in Miami, or 3 with rush delivery, with a 5-year warranty in writing.",
+    "secondaryCta": "See your week in Miami",
+    "stats": [
+      { "kind": "price", "label": "20 dental restorations" },
+      { "kind": "text", "value": "5 days", "label": "business days to delivery" },
+      { "kind": "text", "value": "5 years", "label": "warranty, in writing" },
+      { "kind": "rating", "label": "Google reviews" }
+    ],
+    "image": { "caseId": "BA9", "caption": "Restorations · Actual Xiluet patient" }
+  },
+  "candidates": {
+    "title": "For teeth that need rebuilding, not just resurfacing",
+    "intro": "Crowns, bridges and veneers are chosen tooth by tooth, then designed as one smile.",
+    "items": [
+      { "t": "Many failing teeth", "d": "Old fillings and crowns breaking one after another." },
+      { "t": "Broken or cracked teeth", "d": "Teeth too damaged for a veneer are rebuilt with a crown." },
+      { "t": "A few missing teeth", "d": "Gaps closed with bridges, so you chew on both sides again." },
+      { "t": "Old dental work", "d": "Dark metal margins and mismatched colors replaced in one plan." },
+      { "t": "Worn-down teeth", "d": "Years of grinding have shortened your teeth and aged your face." }
+    ]
+  },
+  "why": {
+    "eyebrow": "Why restore here",
+    "title": "Every restoration designed, matched and delivered together.",
+    "body": "Most clinics rebuild teeth one appointment at a time. Our lab is in the building, so crowns, bridges and veneers are designed as one smile, shade-matched in person and delivered in the same week.",
+    "image": { "src": "gen-zirconia-bridge.jpg", "alt": "Zirconia bridge finished in the in-house lab" },
+    "facts": [
+      { "label": "Timeline", "big": "5 business days", "sub": "From first exam to final delivery. Rush delivery in 3 business days: $10,000." },
+      { "label": "Materials", "big": "Zirconia and porcelain", "sub": "Strong where you chew, translucent where it shows." },
+      { "label": "Lifespan", "big": "10 to 30 years", "sub": "With normal care and a night guard if you grind." },
+      { "label": "Warranty", "big": "5 years", "sub": "In writing, on every restoration." }
+    ]
+  },
+  "week": {
+    "title": "Your week in Miami",
+    "intro": "Photos, estimate and plan from home. Then three visits across 5 business days.",
+    "linkLabel": "Pick a date and see the full schedule →",
+    "visits": [
+      { "k": "From home", "t": "Photos, estimate, plan", "d": "Send photos, get your written estimate within 6 hours, pick a payment plan and reserve with a $250 deposit.", "time": "Any day, about 2 minutes of your time" },
+      { "k": "Visit 1 · Monday", "t": "Exam, scans and design", "d": "Cleaning, X-rays, 3D scans and photos. Your doctor decides tooth by tooth whether it needs a crown, a bridge or a veneer, and you confirm the design.", "time": "About 2 hours" },
+      { "k": "Visit 2 · Tuesday", "t": "Preparation and temporaries", "d": "Teeth prepared and fitted with temporaries shaped like your final design, so you can chew and speak with them while the lab works.", "time": "Half a day" },
+      { "k": "Visit 3 · Friday", "t": "Delivery and final adjustments", "d": "Final crowns, bridges and veneers bonded, bite checked, and your 5-year warranty handed over in writing.", "time": "About 2 hours. Fly home the same evening." }
+    ]
+  },
+  "results": {
+    "title": "Restoration results",
+    "linkLabel": "All cases →",
+    "label": "Restorations",
+    "caseIds": ["BA9", "BA14", "BA11"]
+  },
+  "price": {
+    "eyebrow": "Cost",
+    "title": "One price for 20 restorations, in writing",
+    "body": "Send photos and a doctor writes your estimate within 6 hours. Individual crowns and bridges are $500 each when done with your smile design, veneers $1,000; the $7,000 package covers a full set of 20. Deep cleaning and other procedures are quoted separately, in writing, before anything starts.",
+    "lendersLabel": "Pay over time with",
+    "compareLabel": "Compare all packages →",
+    "card": {
+      "title": "20 dental restorations",
+      "sub": "Crowns and bridges",
+      "badge": "Complete",
+      "pricePrefix": null,
+      "priceSuffix": null,
+      "included": [
+        "20 crowns, bridges or veneers",
+        "Professional cleaning and X-rays",
+        "Delivery in 5 business days",
+        "Rush delivery in 3 business days: $10,000",
+        "5-year warranty, in writing"
+      ],
+      "cta": "Get my written estimate"
+    },
+    "footnote": "Prices shown are minimum fees. Your final fee is confirmed in writing after a doctor's evaluation."
+  },
+  "faq": {
+    "title": "Restoration questions, answered by the doctors",
+    "linkLabel": "All answers →",
+    "items": [
+      { "q": "Crown, bridge or veneer: who decides?", "a": "Your doctor, tooth by tooth, at Visit 1. A veneer covers the front of a healthy tooth; a crown rebuilds a broken or heavily filled one; a bridge replaces a missing tooth using the neighbors. You confirm the plan before any preparation.", "doc": "Dr. Marta Puentes Marrero, DMD" },
+      { "q": "Is it painful?", "a": "Preparation is done under local anesthesia. Expect soreness for a few days, managed with over-the-counter pain relief.", "doc": "Dr. Marta Puentes Marrero, DMD" },
+      { "q": "Does insurance cover it?", "a": "Crowns and bridges are often classed as major restorative work and may be covered 50 to 80 percent depending on your plan. We give you the codes for your claim.", "doc": "Dr. Roger Ramos Navarro, DMD" },
+      { "q": "How long will it last?", "a": "Porcelain and zirconia restorations typically last 10 to 30 years with good care. Ours carry a 5-year written warranty.", "doc": "Dr. Gretell Alonso Fiel, DMD" },
+      { "q": "Can it be done in 3 days?", "a": "Yes. Rush delivery in 3 business days is $10,000 instead of $7,000, because the lab works on your case exclusively. Most patients choose the standard 5-day schedule.", "doc": "Dr. Roger Ramos Navarro, DMD" }
+    ]
+  },
+  "cta": {
+    "title": "Start with photos. A doctor replies within 6 hours.",
+    "body": "Free, no visit needed. Written estimate included.",
+    "cardTitle": "Free photo evaluation",
+    "cardBody": "Two photos of your smile, from your phone. Takes 2 minutes.",
+    "button": "Start my evaluation"
+  }
+}

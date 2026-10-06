@@ -23,6 +23,7 @@ import type { PagePath } from "@/lib/site";
 const TREATMENTS: Partial<Record<PagePath, TreatmentKey>> = {
   "/porcelain-veneers-miami": "porcelain-veneers",
   "/smile-design-miami": "smile-design",
+  "/complete-restoration-miami": "complete-restoration",
   "/full-mouth-reconstruction-miami": "full-mouth-reconstruction",
   "/all-on-x-dental-implants-miami": "all-on-x",
   "/smile-makeover-miami": "smile-makeover",

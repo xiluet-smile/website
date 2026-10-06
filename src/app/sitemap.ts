@@ -6,7 +6,7 @@ import { abs, pages, site, type PagePath } from "@/lib/site";
 
 export const dynamic = "force-static";
 
-const TREATMENTS = ["/porcelain-veneers-miami", "/smile-design-miami", "/full-mouth-reconstruction-miami", "/all-on-x-dental-implants-miami", "/smile-makeover-miami"];
+const TREATMENTS = ["/porcelain-veneers-miami", "/smile-design-miami", "/complete-restoration-miami", "/full-mouth-reconstruction-miami", "/all-on-x-dental-implants-miami", "/smile-makeover-miami"];
 const priority = (p: string) => (p === "/" ? 1 : TREATMENTS.includes(p) ? 0.9 : p === "/contact" ? 0.6 : 0.7);
 
 /** sitemap.xml: every route in pages.json in both languages (with hreflang alternates), plus image entries for the before/after gallery. */
