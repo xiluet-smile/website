@@ -72,88 +72,90 @@ export default function PatientStories({
         </div>
       </div>
 
-      <ul
-        ref={row}
-        className="wrap m-0 flex list-none snap-x snap-mandatory gap-4 overflow-x-auto pb-2 [scrollbar-width:none] lg:gap-5"
-      >
-        {stories.map((s, i) => {
-          const active = playing === s.id;
-          return (
-            <li
-              key={s.id}
-              className="relative aspect-[9/16] w-[260px] flex-none snap-start overflow-hidden rounded-[20px] border border-[rgba(255,255,255,.35)] bg-teal shadow-[0_16px_40px_rgba(26,26,26,.12)] lg:w-[280px]"
-            >
-              {active ? (
-                <video
-                  src={s.video}
-                  poster={imageInfo(s.poster).src}
-                  autoPlay
-                  playsInline
-                  controls
-                  onEnded={() => setPlaying(null)}
-                  className="absolute inset-0 h-full w-full object-cover"
-                />
-              ) : (
-                <>
-                  <Img
-                    src={s.poster}
-                    alt=""
-                    sizes="280px"
+      <div className="wrap">
+        <ul
+          ref={row}
+          className="-mx-5 flex list-none snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-2 [scrollbar-width:none] lg:-mx-2 lg:scroll-px-2 lg:gap-5 lg:px-2"
+        >
+          {stories.map((s, i) => {
+            const active = playing === s.id;
+            return (
+              <li
+                key={s.id}
+                className="relative aspect-[9/16] w-[260px] flex-none snap-start overflow-hidden rounded-[20px] border border-[rgba(255,255,255,.35)] bg-teal shadow-[0_16px_40px_rgba(26,26,26,.12)] lg:w-[280px]"
+              >
+                {active ? (
+                  <video
+                    src={s.video}
+                    poster={imageInfo(s.poster).src}
+                    autoPlay
+                    playsInline
+                    controls
+                    onEnded={() => setPlaying(null)}
                     className="absolute inset-0 h-full w-full object-cover"
                   />
-                  <div
-                    aria-hidden="true"
-                    className="absolute inset-0 bg-[linear-gradient(180deg,rgba(4,30,36,.35)_0%,rgba(4,30,36,0)_30%,rgba(4,30,36,0)_55%,rgba(4,30,36,.85)_100%)]"
-                  />
-                  <div
-                    aria-hidden="true"
-                    className="absolute top-3 right-3 left-3 flex gap-1"
-                  >
-                    {stories.map((_, j) => (
-                      <span
-                        key={j}
-                        className={`h-0.5 flex-1 rounded-full ${j === i ? "bg-on-dark" : "bg-[rgba(247,244,238,.35)]"}`}
-                      />
-                    ))}
-                  </div>
-                  <div className="absolute top-6 left-3.5 flex items-center gap-2 text-sm font-semibold text-on-dark">
+                ) : (
+                  <>
                     <Img
-                      src="xiluet-logo-gold-on-teal.jpg"
+                      src={s.poster}
                       alt=""
-                      sizes="28px"
-                      className="h-7 w-7 rounded-full border border-gold object-cover"
+                      sizes="280px"
+                      className="absolute inset-0 h-full w-full object-cover"
                     />
-                    xiluetsmiles
-                  </div>
-                  <button
-                    type="button"
-                    onClick={() => setPlaying(s.id)}
-                    aria-label={`${t.play}: ${s.name}`}
-                    className="absolute top-1/2 left-1/2 grid h-16 w-16 -translate-x-1/2 -translate-y-1/2 cursor-pointer place-items-center rounded-full border border-[rgba(247,244,238,.5)] bg-[rgba(247,244,238,.22)] text-on-dark backdrop-blur-md transition hover:bg-[rgba(247,244,238,.35)]"
-                  >
-                    <svg
-                      viewBox="0 0 24 24"
-                      width="22"
-                      height="22"
+                    <div
                       aria-hidden="true"
+                      className="absolute inset-0 bg-[linear-gradient(180deg,rgba(4,30,36,.35)_0%,rgba(4,30,36,0)_30%,rgba(4,30,36,0)_55%,rgba(4,30,36,.85)_100%)]"
+                    />
+                    <div
+                      aria-hidden="true"
+                      className="absolute top-3 right-3 left-3 flex gap-1"
                     >
-                      <path d="M8 5.5v13l11-6.5z" fill="currentColor" />
-                    </svg>
-                  </button>
-                  <figcaption className="absolute right-4 bottom-4 left-4 flex flex-col gap-1 text-on-dark">
-                    <span className="font-serif text-[20px] leading-[1.25] text-pretty">
-                      {s.quote ? `“${s.quote}”` : s.title}
-                    </span>
-                    <span className="text-[13px] text-on-dark-muted">
-                      {s.name} · {s.treatment} · {s.duration}
-                    </span>
-                  </figcaption>
-                </>
-              )}
-            </li>
-          );
-        })}
-      </ul>
+                      {stories.map((_, j) => (
+                        <span
+                          key={j}
+                          className={`h-0.5 flex-1 rounded-full ${j === i ? "bg-on-dark" : "bg-[rgba(247,244,238,.35)]"}`}
+                        />
+                      ))}
+                    </div>
+                    <div className="absolute top-6 left-3.5 flex items-center gap-2 text-sm font-semibold text-on-dark">
+                      <Img
+                        src="xiluet-logo-gold-on-teal.jpg"
+                        alt=""
+                        sizes="28px"
+                        className="h-7 w-7 rounded-full border border-gold object-cover"
+                      />
+                      xiluetsmiles
+                    </div>
+                    <button
+                      type="button"
+                      onClick={() => setPlaying(s.id)}
+                      aria-label={`${t.play}: ${s.name}`}
+                      className="absolute top-1/2 left-1/2 grid h-16 w-16 -translate-x-1/2 -translate-y-1/2 cursor-pointer place-items-center rounded-full border border-[rgba(247,244,238,.5)] bg-[rgba(247,244,238,.22)] text-on-dark backdrop-blur-md transition hover:bg-[rgba(247,244,238,.35)]"
+                    >
+                      <svg
+                        viewBox="0 0 24 24"
+                        width="22"
+                        height="22"
+                        aria-hidden="true"
+                      >
+                        <path d="M8 5.5v13l11-6.5z" fill="currentColor" />
+                      </svg>
+                    </button>
+                    <figcaption className="absolute right-4 bottom-4 left-4 flex flex-col gap-1 text-on-dark">
+                      <span className="font-serif text-[20px] leading-[1.25] text-pretty">
+                        {s.quote ? `“${s.quote}”` : s.title}
+                      </span>
+                      <span className="text-[13px] text-on-dark-muted">
+                        {s.name} · {s.treatment} · {s.duration}
+                      </span>
+                    </figcaption>
+                  </>
+                )}
+              </li>
+            );
+          })}
+        </ul>
+      </div>
       <p className="wrap mt-5 mb-0 text-[13px] text-muted">
         {t.storiesDisclaimer}
       </p>
