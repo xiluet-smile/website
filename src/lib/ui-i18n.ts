@@ -169,7 +169,7 @@ const uiEn = {
     pageLead: "Every photo is a Xiluet patient, unretouched. Filter by treatment. Individual results vary.",
     photosAria: "Before and after photos",
     galleryName: "Before and after, Xiluet Smiles patients",
-    videos: "Videos",
+    videos: "Testimonials",
     videosLead: "Patients in their own words, recorded on their delivery day. Tap a card to play with sound.",
   },
   planner: {
@@ -477,7 +477,7 @@ const uiEs: UiStrings = {
     pageLead: "Cada foto es un paciente de Xiluet, sin retoques. Filtra por tratamiento. Los resultados individuales varían.",
     photosAria: "Fotos de antes y después",
     galleryName: "Antes y después, pacientes de Xiluet Smiles",
-    videos: "Videos",
+    videos: "Testimonios",
     videosLead: "Pacientes con sus propias palabras, grabados el día de la entrega. Toca una tarjeta para reproducir con sonido.",
   },
   planner: {
