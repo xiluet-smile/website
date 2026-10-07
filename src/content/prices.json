@@ -30,13 +30,13 @@
     },
     {
       "id": "complete-restoration",
-      "kicker": "Crowns, Bridges and Veneers",
+      "kicker": "Crowns and Veneers",
       "name": "Smile Makeover",
       "price": "$6,999",
       "sub": "20 dental restorations",
       "badge": "",
       "features": [
-        "20 crowns, bridges or veneers",
+        "20 crowns or veneers",
         "Professional cleaning and X-rays",
         "Delivery in 5 business days",
         "Rush delivery in 3 business days: $10,000",
@@ -49,7 +49,7 @@
       "home": {
         "sub": "20 restorations",
         "features": [
-          "20 crowns, bridges or veneers",
+          "20 crowns or veneers",
           "Delivery in 5 business days",
           "3-day rush: $10,000",
           "5-year warranty, in writing"

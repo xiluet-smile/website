@@ -30,13 +30,13 @@
     },
     {
       "id": "complete-restoration",
-      "kicker": "Coronas, puentes y carillas",
+      "kicker": "Coronas y carillas",
       "name": "Transformación de sonrisa",
       "price": "$6,999",
       "sub": "20 restauraciones dentales",
       "badge": "",
       "features": [
-        "20 coronas, puentes o carillas",
+        "20 coronas o carillas",
         "Limpieza profesional y radiografías",
         "Entrega en 5 días hábiles",
         "Entrega urgente en 3 días hábiles: $10,000",
@@ -49,7 +49,7 @@
       "home": {
         "sub": "20 restauraciones",
         "features": [
-          "20 coronas, puentes o carillas",
+          "20 coronas o carillas",
           "Entrega en 5 días hábiles",
           "Urgente en 3 días: $10,000",
           "Garantía de 5 años, por escrito"
