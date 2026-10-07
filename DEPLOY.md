@@ -80,7 +80,7 @@ State on 2026-10-06: the Pages project `website` auto-deploys `main` to https://
 ### Still needed from the clinic (external accounts)
 | Item | Where | Why |
 |---|---|---|
-| Enable R2 on the account, then create bucket `xiluet-lead-photos` and bind it as `R2_PHOTOS` | Cloudflare → R2 | Photo-evaluation uploads have nowhere to go until this exists; the form falls back to email-only. |
+| ~~R2 bucket `xiluet-lead-photos` bound as `R2_PHOTOS`~~ done 2026-10-07 (production and preview) | done | Lead photos are stored and linked. |
 | Turnstile widget for `xiluetsmiledesign.com` + `*.pages.dev` → `NEXT_PUBLIC_TURNSTILE_SITE_KEY` (plain) and `TURNSTILE_SECRET` (encrypted) | Cloudflare → Turnstile | Bot protection on the forms. |
 | Resend account, verify `xiluetsmiledesign.com` (adds DKIM/SPF records to the zone), create API key → `RESEND_API_KEY` | resend.com | Lead and contact emails. Until set, functions store the lead and return success without sending. |
 | Google Cloud API key with Places API (New) → `GOOGLE_PLACES_API_KEY` | console.cloud.google.com | Live Google reviews on Home. |
