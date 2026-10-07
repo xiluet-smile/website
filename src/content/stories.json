@@ -43,5 +43,39 @@
     "treatment": "Smile design · in Spanish",
     "duration": "0:24",
     "doctor": "Dr. Gretell Alonso Fiel, DMD"
+  },
+  {
+    "id": "story-5",
+    "source": "https://www.instagram.com/p/DbJaODgRaHl/",
+    "video": "/videos/stories/story-5.mp4",
+    "poster": "story-5-poster.jpg",
+    "quote": "Oh my God, I want to cry. I am happy!",
+    "name": "Xiluet patient",
+    "treatment": "Delivery day",
+    "duration": "0:15",
+    "doctor": "Dr. Gretell Alonso Fiel, DMD"
+  },
+  {
+    "id": "story-6",
+    "source": "https://www.instagram.com/p/DaxwOJQRHxW/",
+    "video": "/videos/stories/story-6.mp4",
+    "poster": "story-6-poster.jpg",
+    "quote": "Oh my God, they look so nice!",
+    "name": "Xiluet patient",
+    "treatment": "Delivery day",
+    "duration": "0:25",
+    "doctor": "Dr. Roger Ramos Navarro, DMD"
+  },
+  {
+    "id": "story-7",
+    "source": "https://www.instagram.com/p/Dd_omdIRoCo/",
+    "video": "/videos/stories/story-7.mp4",
+    "poster": "story-7-poster.jpg",
+    "quote": "",
+    "title": "A natural transformation, designed to enhance, not change.",
+    "name": "Xiluet patient",
+    "treatment": "Smile makeover",
+    "duration": "0:13",
+    "doctor": "Dr. Marta Puentes Marrero, DMD"
   }
 ]

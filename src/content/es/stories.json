@@ -43,5 +43,39 @@
     "treatment": "Diseño de sonrisa",
     "duration": "0:24",
     "doctor": "Dr. Gretell Alonso Fiel, DMD"
+  },
+  {
+    "id": "story-5",
+    "source": "https://www.instagram.com/p/DbJaODgRaHl/",
+    "video": "/videos/stories/story-5.mp4",
+    "poster": "story-5-poster.jpg",
+    "quote": "Dios mío, quiero llorar. ¡Estoy feliz!",
+    "name": "Paciente de Xiluet",
+    "treatment": "Día de entrega · en inglés",
+    "duration": "0:15",
+    "doctor": "Dr. Gretell Alonso Fiel, DMD"
+  },
+  {
+    "id": "story-6",
+    "source": "https://www.instagram.com/p/DaxwOJQRHxW/",
+    "video": "/videos/stories/story-6.mp4",
+    "poster": "story-6-poster.jpg",
+    "quote": "Dios mío, ¡se ven tan bien!",
+    "name": "Paciente de Xiluet",
+    "treatment": "Día de entrega · en inglés",
+    "duration": "0:25",
+    "doctor": "Dr. Roger Ramos Navarro, DMD"
+  },
+  {
+    "id": "story-7",
+    "source": "https://www.instagram.com/p/Dd_omdIRoCo/",
+    "video": "/videos/stories/story-7.mp4",
+    "poster": "story-7-poster.jpg",
+    "quote": "",
+    "title": "Una transformación natural, diseñada para realzar, no cambiar.",
+    "name": "Paciente de Xiluet",
+    "treatment": "Transformación de sonrisa",
+    "duration": "0:13",
+    "doctor": "Dr. Marta Puentes Marrero, DMD"
   }
 ]

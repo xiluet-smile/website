@@ -151,7 +151,7 @@ export default function HomePage({ locale = "en" }: { locale?: Locale }) {
           </div>
         </div>
         <div className="relative z-[2] lg:border-t lg:border-[rgba(247,244,238,.18)] lg:bg-[rgba(4,30,36,.35)] lg:backdrop-blur-[10px]">
-          <dl className="wrap m-0 grid grid-cols-2 gap-x-5 gap-y-3 pb-6 text-[15px] text-on-dark-muted max-lg:[&>div:nth-child(-n+2)]:border-t max-lg:[&>div:nth-child(-n+2)]:border-[rgba(247,244,238,.18)] max-lg:[&>div:nth-child(-n+2)]:pt-4 lg:grid-cols-4 lg:gap-0 lg:pt-6 lg:pb-7 lg:text-lg">
+          <dl className="wrap m-0 grid grid-cols-2 gap-x-5 gap-y-3 pb-6 text-[15px] text-on-dark-muted max-lg:[&>div:nth-child(-n+2)]:border-t max-lg:[&>div:nth-child(-n+2)]:border-[rgba(247,244,238,.18)] max-lg:[&>div:nth-child(-n+2)]:pt-4 lg:flex lg:justify-center lg:gap-0 lg:pt-6 lg:pb-7 lg:text-lg">
             {[
               {
                 big: rating.value,
@@ -168,7 +168,7 @@ export default function HomePage({ locale = "en" }: { locale?: Locale }) {
             ].map((s, i) => (
               <div
                 key={s.small}
-                className={`flex items-baseline gap-1.5 lg:justify-center lg:gap-2.5 ${i ? "lg:border-l lg:border-[rgba(247,244,238,.18)] lg:px-6" : "lg:pr-6"}`}
+                className={`flex items-baseline gap-1.5 lg:justify-center lg:gap-2.5 ${i ? "lg:border-l lg:border-[rgba(247,244,238,.18)] lg:px-10" : "lg:pr-10"}`}
               >
                 <dt className="order-2 m-0">
                   {s.gold ? (
@@ -388,12 +388,12 @@ export default function HomePage({ locale = "en" }: { locale?: Locale }) {
             {t.fullPriceList}
           </Link>
         </div>
-        <div className="grid items-stretch gap-3 md:grid-cols-2 lg:gap-3.5 xl:grid-cols-4">
+        <div className="grid items-stretch gap-3 max-md:-mx-5 max-md:flex max-md:snap-x max-md:snap-mandatory max-md:overflow-x-auto max-md:px-5 max-md:pb-2 max-md:[scrollbar-width:none] md:grid-cols-2 lg:gap-3.5 xl:grid-cols-4">
           {prices.packages.map((p) => (
             <Link
               key={p.id}
               href={localizeHref(p.href, locale)}
-              className={`relative flex flex-col gap-3.5 rounded-[18px] border px-[22px] pt-[22px] pb-5 text-ink no-underline shadow-[inset_0_1px_0_rgba(255,255,255,.6),0_12px_32px_rgba(26,26,26,.06)] backdrop-blur-[18px] backdrop-saturate-[1.2] transition-[transform,box-shadow] duration-[240ms] ease-card hover:-translate-y-1 hover:text-ink hover:shadow-[inset_0_1px_0_rgba(255,255,255,.6),0_22px_44px_rgba(26,26,26,.12)] ${
+              className={`relative flex flex-col gap-3.5 rounded-[18px] border px-[22px] pt-[22px] pb-5 text-ink no-underline max-md:w-[84vw] max-md:flex-none max-md:snap-start shadow-[inset_0_1px_0_rgba(255,255,255,.6),0_12px_32px_rgba(26,26,26,.06)] backdrop-blur-[18px] backdrop-saturate-[1.2] transition-[transform,box-shadow] duration-[240ms] ease-card hover:-translate-y-1 hover:text-ink hover:shadow-[inset_0_1px_0_rgba(255,255,255,.6),0_22px_44px_rgba(26,26,26,.12)] ${
                 p.featured
                   ? "border-[rgba(205,177,128,.55)] bg-[linear-gradient(160deg,rgba(255,253,248,.82),rgba(255,253,248,.6))]"
                   : "border-[rgba(255,255,255,.7)] bg-[rgba(255,253,248,.55)]"
@@ -479,12 +479,12 @@ export default function HomePage({ locale = "en" }: { locale?: Locale }) {
             {t.approvalGuidance}
           </Link>
         </div>
-        <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+        <div className="grid gap-3 max-md:-mx-5 max-md:flex max-md:snap-x max-md:snap-mandatory max-md:overflow-x-auto max-md:px-5 max-md:pb-2 max-md:[scrollbar-width:none] md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           {lenders.map((ln) => (
             <Link
               key={ln.slug}
               href={localizeHref(ln.href, locale)}
-              className="glass-card flex flex-col gap-2.5 rounded-2xl p-[18px] text-ink no-underline transition-[transform,box-shadow] duration-[240ms] ease-card hover:-translate-y-[3px] hover:text-ink hover:shadow-[inset_0_1px_0_rgba(255,255,255,.6),0_18px_36px_rgba(26,26,26,.1)] lg:gap-3 lg:p-5"
+              className="glass-card flex flex-col gap-2.5 rounded-2xl p-[18px] text-ink no-underline max-md:w-[72vw] max-md:flex-none max-md:snap-start transition-[transform,box-shadow] duration-[240ms] ease-card hover:-translate-y-[3px] hover:text-ink hover:shadow-[inset_0_1px_0_rgba(255,255,255,.6),0_18px_36px_rgba(26,26,26,.1)] lg:gap-3 lg:p-5"
             >
               <div className="flex items-center justify-between gap-3 xl:block">
                 <div className="flex h-[34px] flex-none items-center">
