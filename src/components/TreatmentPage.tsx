@@ -1,10 +1,17 @@
 import Link from "next/link";
 import FaqAccordion from "@/components/FaqAccordion";
+import FeatureIcon from "@/components/FeatureIcons";
 import { CameraIcon } from "@/components/Icons";
 import Img from "@/components/Img";
 import JsonLd from "@/components/JsonLd";
 import PageHero from "@/components/PageHero";
-import { caseById, getContent, packageById, ui, type Faq } from "@/lib/content-i18n";
+import {
+  caseById,
+  getContent,
+  packageById,
+  ui,
+  type Faq,
+} from "@/lib/content-i18n";
 import { localizeHref, localizePath, type Locale } from "@/lib/i18n";
 import { postsForTreatment } from "@/lib/blog";
 import { PostCard } from "@/components/blog/BlogArticle";
@@ -27,7 +34,11 @@ export type Treatment = {
     /** Either a patient case (caseId) or an editorial image (src + alt). */
     image: { caseId?: string; src?: string; alt?: string; caption: string };
   };
-  candidates: { title: string; intro: string; items: { t: string; d: string }[] };
+  candidates: {
+    title: string;
+    intro: string;
+    items: { t: string; d: string }[];
+  };
   why: {
     eyebrow: string;
     title: string;
@@ -35,7 +46,12 @@ export type Treatment = {
     image: { src: string; alt: string } | null;
     facts: { label: string; big: string; sub: string }[];
   };
-  week: { title: string; intro: string; linkLabel: string; visits: { k: string; t: string; d: string; time: string }[] };
+  week: {
+    title: string;
+    intro: string;
+    linkLabel: string;
+    visits: { k: string; t: string; d: string; time: string }[];
+  };
   results: {
     title: string;
     linkLabel: string;
@@ -63,25 +79,48 @@ export type Treatment = {
     footnote: string;
   };
   faq: { title: string; linkLabel: string; items: Faq[] };
-  cta: { title: string; body: string; cardTitle: string; cardBody: string; button: string };
+  cta: {
+    title: string;
+    body: string;
+    cardTitle: string;
+    cardBody: string;
+    button: string;
+  };
 };
 
-const h2 = "m-0 font-serif text-[34px] leading-[1.2] font-normal text-pretty lg:text-[48px] lg:leading-[1.1]";
-const sectionHead = "flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between lg:gap-8";
+const h2 =
+  "m-0 font-serif text-[34px] leading-[1.2] font-normal text-pretty lg:text-[48px] lg:leading-[1.1]";
+const sectionHead =
+  "flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between lg:gap-8";
 const photoLabel =
   "absolute text-[11px] font-semibold tracking-[.14em] text-on-dark uppercase [text-shadow:0_1px_8px_rgba(0,0,0,.5)]";
-const panelShadow = "shadow-[inset_0_1px_0_rgba(247,244,238,.18),0_30px_80px_rgba(4,40,46,.32)]";
+const panelShadow =
+  "shadow-[inset_0_1px_0_rgba(247,244,238,.18),0_30px_80px_rgba(4,40,46,.32)]";
 
-export default function TreatmentPage({ data, locale = "en" }: { data: Treatment; locale?: Locale }) {
+// One icon per step of the week: from home, exam, preparation, then delivery for any later visit.
+const visitIcons = ["photo", "exam", "prep", "delivery"];
+
+export default function TreatmentPage({
+  data,
+  locale = "en",
+}: {
+  data: Treatment;
+  locale?: Locale;
+}) {
   const t = ui(locale);
   const { pages, lenders, cases } = getContent(locale);
   const path = data.path as PagePath;
   const pkg = packageById(locale, data.packageId);
   const { hero, candidates, why, week, results, price, faq, cta } = data;
-  const heroCase = hero.image.caseId ? caseById(locale, hero.image.caseId) : null;
+  const heroCase = hero.image.caseId
+    ? caseById(locale, hero.image.caseId)
+    : null;
   const evaluation = localizePath("/free-photo-evaluation", locale);
   // Articles tag treatments by route slug without the "-miami" suffix (e.g. "porcelain-veneers").
-  const guides = postsForTreatment(locale, data.path.replace(/^\//, "").replace(/-miami$/, "")).slice(0, 3);
+  const guides = postsForTreatment(
+    locale,
+    data.path.replace(/^\//, "").replace(/-miami$/, ""),
+  ).slice(0, 3);
 
   return (
     <main id="main">
@@ -106,8 +145,14 @@ export default function TreatmentPage({ data, locale = "en" }: { data: Treatment
       <PageHero locale={locale}>
         <div className="wrap relative z-[2] grid gap-10 pt-8 pb-12 lg:grid-cols-[minmax(0,1fr)_480px] lg:items-center lg:gap-14 lg:pt-14 lg:pb-20">
           <div className="flex flex-col gap-5 lg:gap-[26px]">
-            <nav aria-label="Breadcrumb" className="flex flex-wrap gap-2 text-[13px] text-on-dark-muted">
-              <Link href={localizePath("/", locale)} className="text-on-dark-muted no-underline hover:text-gold">
+            <nav
+              aria-label="Breadcrumb"
+              className="flex flex-wrap gap-2 text-[13px] text-on-dark-muted"
+            >
+              <Link
+                href={localizePath("/", locale)}
+                className="text-on-dark-muted no-underline hover:text-gold"
+              >
                 {t.home}
               </Link>
               <span aria-hidden="true">/</span>
@@ -125,7 +170,10 @@ export default function TreatmentPage({ data, locale = "en" }: { data: Treatment
               {hero.lead}
             </p>
             <div className="flex flex-col gap-3 lg:flex-row lg:flex-wrap lg:items-center lg:gap-3.5">
-              <Link href={evaluation} className="btn btn-gold h-[52px] pr-6 pl-5 text-[17px]">
+              <Link
+                href={evaluation}
+                className="btn btn-gold h-[52px] pr-6 pl-5 text-[17px]"
+              >
                 <CameraIcon />
                 {t.freePhotoEvaluation}
               </Link>
@@ -148,7 +196,9 @@ export default function TreatmentPage({ data, locale = "en" }: { data: Treatment
                     ) : s.kind === "rating" ? (
                       <>
                         {site.rating.value}{" "}
-                        <span className="font-sans text-base text-on-dark-muted">· {site.rating.count}</span>
+                        <span className="font-sans text-base text-on-dark-muted">
+                          · {site.rating.count}
+                        </span>
                       </>
                     ) : (
                       s.value
@@ -199,12 +249,22 @@ export default function TreatmentPage({ data, locale = "en" }: { data: Treatment
         </div>
         <ul className="m-0 grid list-none gap-4 p-0 lg:grid-cols-5">
           {candidates.items.map((c, i) => (
-            <li key={c.t} className="glass-card flex flex-col gap-3.5 rounded-2xl p-5 lg:min-h-[200px] lg:rounded-[18px] lg:px-[22px] lg:py-6">
-              <span aria-hidden="true" className="text-xs font-semibold tracking-[.14em] text-hint">
+            <li
+              key={c.t}
+              className="glass-card flex flex-col gap-3.5 rounded-2xl p-5 lg:min-h-[200px] lg:rounded-[18px] lg:px-[22px] lg:py-6"
+            >
+              <span
+                aria-hidden="true"
+                className="text-xs font-semibold tracking-[.14em] text-hint"
+              >
                 {String(i + 1).padStart(2, "0")}
               </span>
-              <h3 className="m-0 font-serif text-[22px] leading-[1.2] font-normal text-teal">{c.t}</h3>
-              <p className="m-0 mt-auto text-[15px] leading-[1.45] text-body">{c.d}</p>
+              <h3 className="m-0 font-serif text-[22px] leading-[1.2] font-normal text-teal">
+                {c.t}
+              </h3>
+              <p className="m-0 mt-auto text-[15px] leading-[1.45] text-body">
+                {c.d}
+              </p>
             </li>
           ))}
         </ul>
@@ -212,13 +272,17 @@ export default function TreatmentPage({ data, locale = "en" }: { data: Treatment
 
       {/* Why here */}
       <section className="wrap pt-16 lg:pt-28">
-        <div className={`dark-panel ${panelShadow} grid items-center gap-8 rounded-2xl p-6 lg:grid-cols-2 lg:gap-16 lg:rounded-[20px] lg:p-16`}>
+        <div
+          className={`dark-panel ${panelShadow} grid items-center gap-8 rounded-2xl p-6 lg:grid-cols-2 lg:gap-16 lg:rounded-[20px] lg:p-16`}
+        >
           <div className="flex max-w-[520px] flex-col gap-[22px]">
             <span className="eyebrow text-gold">{why.eyebrow}</span>
             <h2 className="m-0 font-serif text-[34px] leading-[1.2] font-normal text-pretty lg:text-[52px] lg:leading-[1.06]">
               {why.title}
             </h2>
-            <p className="m-0 text-[17px] leading-[1.55] text-pretty text-on-dark-muted lg:text-lg">{why.body}</p>
+            <p className="m-0 text-[17px] leading-[1.55] text-pretty text-on-dark-muted lg:text-lg">
+              {why.body}
+            </p>
             {why.image && (
               <Img
                 src={why.image.src}
@@ -243,7 +307,9 @@ export default function TreatmentPage({ data, locale = "en" }: { data: Treatment
                   <span className="font-serif text-[22px] leading-[1.1] tracking-[-.02em] lg:text-[38px] lg:leading-none">
                     {w.big}
                   </span>
-                  <span className="text-sm leading-[1.4] text-on-dark-muted">{w.sub}</span>
+                  <span className="text-sm leading-[1.4] text-on-dark-muted">
+                    {w.sub}
+                  </span>
                 </span>
               </li>
             ))}
@@ -256,9 +322,14 @@ export default function TreatmentPage({ data, locale = "en" }: { data: Treatment
         <div className={`${sectionHead} mb-7 lg:mb-10`}>
           <div>
             <h2 className={`${h2} mb-3`}>{week.title}</h2>
-            <p className="m-0 max-w-[52ch] text-[17px] text-body lg:text-lg">{week.intro}</p>
+            <p className="m-0 max-w-[52ch] text-[17px] text-body lg:text-lg">
+              {week.intro}
+            </p>
           </div>
-          <Link href={localizePath("/out-of-state-patients", locale)} className="inline-flex min-h-11 items-center font-semibold lg:min-h-0 lg:whitespace-nowrap">
+          <Link
+            href={localizePath("/out-of-state-patients", locale)}
+            className="inline-flex min-h-11 items-center font-semibold lg:min-h-0 lg:whitespace-nowrap"
+          >
             {week.linkLabel}
           </Link>
         </div>
@@ -274,10 +345,34 @@ export default function TreatmentPage({ data, locale = "en" }: { data: Treatment
                     : "glass-card text-ink"
                 }`}
               >
-                <span className={`eyebrow ${dark ? "text-gold" : "text-gold-text"}`}>{v.k}</span>
-                <h3 className="m-0 font-serif text-[22px] leading-[1.15] font-normal lg:text-[26px]">{v.t}</h3>
-                <p className={`m-0 text-[15px] leading-[1.5] ${dark ? "text-on-dark-muted" : "text-body"}`}>{v.d}</p>
-                <span className={`mt-auto text-[13px] ${dark ? "text-on-dark-muted" : "text-body"}`}>{v.time}</span>
+                <div className="flex items-start justify-between gap-3">
+                  <span
+                    className={`eyebrow ${dark ? "text-gold" : "text-gold-text"}`}
+                  >
+                    {v.k}
+                  </span>
+                  <span
+                    className={`grid h-10 w-10 flex-none place-items-center rounded-full ${dark ? "bg-[rgba(205,177,128,.16)] text-gold" : "bg-[rgba(205,177,128,.18)] text-teal"}`}
+                  >
+                    <FeatureIcon
+                      name={visitIcons[Math.min(i, visitIcons.length - 1)]}
+                      plain
+                    />
+                  </span>
+                </div>
+                <h3 className="m-0 font-serif text-[22px] leading-[1.15] font-normal lg:text-[26px]">
+                  {v.t}
+                </h3>
+                <p
+                  className={`m-0 text-[15px] leading-[1.5] ${dark ? "text-on-dark-muted" : "text-body"}`}
+                >
+                  {v.d}
+                </p>
+                <span
+                  className={`mt-auto text-[13px] ${dark ? "text-on-dark-muted" : "text-body"}`}
+                >
+                  {v.time}
+                </span>
               </li>
             );
           })}
@@ -288,24 +383,38 @@ export default function TreatmentPage({ data, locale = "en" }: { data: Treatment
       <section className="wrap pt-16 lg:pt-28">
         <div className={`${sectionHead} mb-7`}>
           <h2 className={h2}>{results.title}</h2>
-          <Link href={localizePath("/before-and-after", locale)} className="inline-flex min-h-11 items-center font-semibold lg:min-h-0">
+          <Link
+            href={localizePath("/before-and-after", locale)}
+            className="inline-flex min-h-11 items-center font-semibold lg:min-h-0"
+          >
             {results.linkLabel}
           </Link>
         </div>
         <div className="grid gap-6 lg:grid-cols-3">
-          {(results.caseIds ?? []).map((id) => caseById(locale, id)).map((c) => (
-            <figure key={c.id} className="m-0 flex flex-col gap-2.5">
-              <div className="relative overflow-hidden rounded-2xl shadow-[0_12px_32px_rgba(26,26,26,.1)]">
-                <Img src={c.image} alt={c.alt} sizes="(min-width: 1024px) 33vw, 100vw" className="block h-auto w-full" />
-                <span className={`${photoLabel} top-3 left-3.5`}>{t.before}</span>
-                <span className={`${photoLabel} top-3 right-3.5`}>{t.after}</span>
-              </div>
-              <figcaption className="flex justify-between gap-3 text-sm text-muted">
-                <span>{results.label}</span>
-                <span className="text-right">{cases.disclaimer}</span>
-              </figcaption>
-            </figure>
-          ))}
+          {(results.caseIds ?? [])
+            .map((id) => caseById(locale, id))
+            .map((c) => (
+              <figure key={c.id} className="m-0 flex flex-col gap-2.5">
+                <div className="relative overflow-hidden rounded-2xl shadow-[0_12px_32px_rgba(26,26,26,.1)]">
+                  <Img
+                    src={c.image}
+                    alt={c.alt}
+                    sizes="(min-width: 1024px) 33vw, 100vw"
+                    className="block h-auto w-full"
+                  />
+                  <span className={`${photoLabel} top-3 left-3.5`}>
+                    {t.before}
+                  </span>
+                  <span className={`${photoLabel} top-3 right-3.5`}>
+                    {t.after}
+                  </span>
+                </div>
+                <figcaption className="flex justify-between gap-3 text-sm text-muted">
+                  <span>{results.label}</span>
+                  <span className="text-right">{cases.disclaimer}</span>
+                </figcaption>
+              </figure>
+            ))}
           {(results.editorial ?? []).map((e) => (
             <figure key={e.src} className="m-0 flex flex-col gap-2.5">
               <div className="relative overflow-hidden rounded-2xl shadow-[0_12px_32px_rgba(26,26,26,.1)]">
@@ -331,7 +440,9 @@ export default function TreatmentPage({ data, locale = "en" }: { data: Treatment
           <div className="flex flex-col gap-5">
             <span className="eyebrow text-gold-text">{price.eyebrow}</span>
             <h2 className={h2}>{price.title}</h2>
-            <p className="m-0 text-[17px] leading-[1.55] text-pretty text-body lg:text-lg">{price.body}</p>
+            <p className="m-0 text-[17px] leading-[1.55] text-pretty text-body lg:text-lg">
+              {price.body}
+            </p>
             <div className="mt-1.5 flex flex-col gap-2.5">
               <Link
                 href={localizePath("/financing", locale)}
@@ -352,7 +463,10 @@ export default function TreatmentPage({ data, locale = "en" }: { data: Treatment
                 ))}
               </ul>
             </div>
-            <Link href={localizePath("/veneers-cost-miami", locale)} className="inline-flex min-h-11 items-center self-start font-semibold lg:min-h-0">
+            <Link
+              href={localizePath("/veneers-cost-miami", locale)}
+              className="inline-flex min-h-11 items-center self-start font-semibold lg:min-h-0"
+            >
               {price.compareLabel}
             </Link>
           </div>
@@ -360,7 +474,9 @@ export default function TreatmentPage({ data, locale = "en" }: { data: Treatment
           <div className="glass-card relative flex flex-col gap-6 rounded-[24px] border-[rgba(205,177,128,.5)] px-5 pt-6 pb-3 lg:px-7 lg:pt-7 lg:pb-4">
             <div className="flex items-start justify-between gap-4">
               <div className="flex flex-col gap-1.5">
-                <h3 className="m-0 font-serif text-2xl leading-[1.15] font-normal lg:text-[28px]">{price.card.title}</h3>
+                <h3 className="m-0 font-serif text-2xl leading-[1.15] font-normal lg:text-[28px]">
+                  {price.card.title}
+                </h3>
                 <span className="text-[15px] text-muted">{price.card.sub}</span>
               </div>
               <span className="rounded-full bg-[#E3F3E8] px-3.5 py-[7px] text-[13px] font-semibold whitespace-nowrap text-[#1F6B45]">
@@ -368,15 +484,34 @@ export default function TreatmentPage({ data, locale = "en" }: { data: Treatment
               </span>
             </div>
             <p className="m-0 flex flex-wrap items-baseline gap-2">
-              {price.card.pricePrefix && <span className="text-[15px] text-muted">{price.card.pricePrefix}</span>}
-              <span className="font-serif text-[54px] leading-none tracking-[-.02em]">{pkg.price}</span>
-              {price.card.priceSuffix && <span className="ml-2 text-[15px] text-muted">{price.card.priceSuffix}</span>}
+              {price.card.pricePrefix && (
+                <span className="text-[15px] text-muted">
+                  {price.card.pricePrefix}
+                </span>
+              )}
+              <span className="font-serif text-[54px] leading-none tracking-[-.02em]">
+                {pkg.price}
+              </span>
+              {price.card.priceSuffix && (
+                <span className="ml-2 text-[15px] text-muted">
+                  {price.card.priceSuffix}
+                </span>
+              )}
             </p>
             <div className="-mx-3 flex flex-col gap-[22px] rounded-[20px] border border-[rgba(255,255,255,.9)] bg-[rgba(255,253,248,.92)] px-5 pt-6 pb-5 shadow-[inset_0_1px_0_rgba(255,255,255,.8),0_8px_24px_rgba(26,26,26,.05)] lg:px-6 lg:pt-[26px]">
               <ul className="m-0 flex list-none flex-col gap-3.5 p-0 text-base leading-[1.4]">
                 {price.card.included.map((f) => (
-                  <li key={f} className="grid grid-cols-[18px_minmax(0,1fr)] items-start gap-3">
-                    <svg viewBox="0 0 18 18" width="18" height="18" className="mt-0.5" aria-hidden="true">
+                  <li
+                    key={f}
+                    className="grid grid-cols-[18px_minmax(0,1fr)] items-start gap-3"
+                  >
+                    <svg
+                      viewBox="0 0 18 18"
+                      width="18"
+                      height="18"
+                      className="mt-0.5"
+                      aria-hidden="true"
+                    >
                       <path
                         d="M3.5 9.5l3.5 3.5 7.5-8"
                         fill="none"
@@ -390,7 +525,10 @@ export default function TreatmentPage({ data, locale = "en" }: { data: Treatment
                   </li>
                 ))}
               </ul>
-              <Link href={evaluation} className="btn btn-teal h-[52px] text-base">
+              <Link
+                href={evaluation}
+                className="btn btn-teal h-[52px] text-base"
+              >
                 {price.card.cta}
               </Link>
             </div>
@@ -404,7 +542,10 @@ export default function TreatmentPage({ data, locale = "en" }: { data: Treatment
         <section className="wrap pt-16 lg:pt-28">
           <div className="mb-6 flex flex-wrap items-end justify-between gap-3 lg:mb-8">
             <h2 className={h2}>{t.blogPage.treatmentArticles}</h2>
-            <Link href={localizePath("/blog", locale)} className="inline-flex min-h-11 items-center font-semibold lg:min-h-0">
+            <Link
+              href={localizePath("/blog", locale)}
+              className="inline-flex min-h-11 items-center font-semibold lg:min-h-0"
+            >
               {t.blogPage.treatmentArticlesLink}
             </Link>
           </div>
@@ -421,27 +562,43 @@ export default function TreatmentPage({ data, locale = "en" }: { data: Treatment
         <div className="grid items-start gap-7 lg:grid-cols-[minmax(0,.8fr)_minmax(0,1.4fr)] lg:gap-16">
           <div className="flex flex-col gap-3 lg:sticky lg:top-8 lg:gap-4">
             <h2 className={h2}>{faq.title}</h2>
-            <Link href={localizePath("/contact", locale)} className="inline-flex min-h-11 items-center self-start font-semibold lg:min-h-0">
+            <Link
+              href={localizePath("/contact", locale)}
+              className="inline-flex min-h-11 items-center self-start font-semibold lg:min-h-0"
+            >
               {faq.linkLabel}
             </Link>
           </div>
-          <FaqAccordion faqs={faq.items} className="flex flex-col gap-3" locale={locale} />
+          <FaqAccordion
+            faqs={faq.items}
+            className="flex flex-col gap-3"
+            locale={locale}
+          />
         </div>
       </section>
 
       {/* CTA */}
       <section className="wrap pt-16 pb-16 lg:pt-28 lg:pb-28">
-        <div className={`dark-panel ${panelShadow} grid items-center gap-8 rounded-2xl p-6 lg:grid-cols-[minmax(0,1fr)_440px] lg:gap-16 lg:rounded-[20px] lg:p-16`}>
+        <div
+          className={`dark-panel ${panelShadow} grid items-center gap-8 rounded-2xl p-6 lg:grid-cols-[minmax(0,1fr)_440px] lg:gap-16 lg:rounded-[20px] lg:p-16`}
+        >
           <div className="flex flex-col gap-5">
             <h2 className="m-0 font-serif text-[34px] leading-[1.2] font-normal text-pretty lg:text-[52px] lg:leading-[1.08]">
               {cta.title}
             </h2>
-            <p className="m-0 text-[17px] text-on-dark-muted lg:text-[19px]">{cta.body}</p>
+            <p className="m-0 text-[17px] text-on-dark-muted lg:text-[19px]">
+              {cta.body}
+            </p>
           </div>
           <div className="flex flex-col gap-3 rounded-2xl border border-[rgba(255,255,255,.8)] bg-[rgba(247,244,238,.9)] p-6 text-ink lg:p-8">
-            <h3 className="m-0 font-serif text-2xl font-normal">{cta.cardTitle}</h3>
+            <h3 className="m-0 font-serif text-2xl font-normal">
+              {cta.cardTitle}
+            </h3>
             <p className="m-0 text-[15px] text-body">{cta.cardBody}</p>
-            <Link href={evaluation} className="btn btn-teal mt-2 h-[52px] text-[17px]">
+            <Link
+              href={evaluation}
+              className="btn btn-teal mt-2 h-[52px] text-[17px]"
+            >
               {cta.button}
             </Link>
           </div>
