@@ -36,7 +36,7 @@ Set under **Pages project → Settings**. Add each to Production and Preview. A 
 | `FROM_EMAIL` | Sender, e.g. `Xiluet Smiles <hello@xiluetsmiledesign.com>`. The domain must be verified in Resend. |
 | `LINK_SIGNING_SECRET` | Long random string; signs the 7-day photo links in clinic emails. |
 | `CRM_WEBHOOK_URL` | Optional. Leads and contact messages are POSTed here as JSON. |
-| `GHL_API_TOKEN`, `GHL_LOCATION_ID`, `GHL_PHOTO_FIELD_ID` | Optional. With these set, leads are upserted directly into GoHighLevel with a note, and the smile photos are attached to the File Upload custom field (contact documents). Token: Settings → Private Integrations, scopes contacts.readonly, contacts.write, forms.write. |
+| `GHL_API_TOKEN`, `GHL_LOCATION_ID`, `GHL_PHOTO_FIELD_ID` | Set 2026-10-07 (token = private integration "Website Forms"; field = contact.smile_photo). Optional. With these set, leads are upserted directly into GoHighLevel with a note, and the smile photos are attached to the File Upload custom field (contact documents). Token: Settings → Private Integrations, scopes contacts.readonly, contacts.write, forms.write. |
 | `REQUIRE_TURNSTILE` | Optional. Set to `1` to reject submissions without a Turnstile token (this disables the no-JavaScript form path). |
 | `GOOGLE_PLACES_API_KEY` | Google Cloud API key with Places API (New) enabled; powers the live reviews on Home (`/api/reviews`). |
 | `GOOGLE_PLACE_ID` | The practice's Google Business Profile Place ID. Also set `google.placeId` in `src/content/site.json` for the "Leave a review" link. |
