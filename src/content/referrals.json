@@ -2,33 +2,33 @@
   "_note": "TODO(clinic): partner types for the Partnerships page still need confirming.",
   "referrals": {
     "eyebrow": "Referrals",
-    "intro": "Most of our patients come from someone who already had their smile done here. If a friend or family member is thinking about veneers, a smile design or full mouth reconstruction, send us their name and we take it from there: a free photo evaluation, a written estimate within 6 hours, and a $500 credit toward your own treatment once theirs is completed.",
+    "intro": "Send us a friend's name. They get a free photo evaluation; you get a $500 credit toward your own treatment once theirs is completed.",
     "formTitle": "Refer someone",
-    "formIntro": "Tell us who to contact and how. We only reach out once, and only to the person you refer.",
+    "formIntro": "Tell us who to contact. We reach out once, only to them.",
     "messageLabel": "Who are you referring?",
     "messagePlaceholder": "Their name, how to reach them, and what they are interested in.",
     "points": [
       {
         "t": "$500 per completed treatment",
-        "d": "For every person you refer who completes their treatment, you receive a $500 credit toward your own treatment. Add your own name in the form so we know who sent them."
+        "d": "A credit toward your own treatment, for every person you refer who completes theirs."
       },
       {
         "t": "Free photo evaluation",
-        "d": "Your friend sends two photos; a doctor replies with a treatment plan within 6 hours, and the written estimate comes with it."
+        "d": "Two photos, a doctor's treatment plan within 6 hours, written estimate included."
       },
       {
         "t": "Same doctors, same price list",
-        "d": "Referred patients get the published packages and the 5-year written warranty like everyone else."
+        "d": "Published packages and the 5-year written warranty, like every patient."
       },
       {
         "t": "Out-of-state friends welcome",
-        "d": "Three visits in one week in Miami, with hotels, airport pickup and rides handled by the coordinator."
+        "d": "Three visits in one week in Miami. Hotel, pickup and rides handled by the coordinator."
       }
     ],
     "bonus": {
       "amount": "$500",
       "title": "$500 per completed treatment",
-      "text": "For every person you refer who completes their treatment, you receive a $500 credit toward your own treatment. Add your name and contact details in the form so we know who sent them."
+      "text": "Add your own name in the form so we know who sent them."
     }
   },
   "partnerships": {

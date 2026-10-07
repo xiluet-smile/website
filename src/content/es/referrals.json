@@ -2,33 +2,33 @@
   "_note": "TODO(clinic): the $500 referral bonus is confirmed; the conditions (when it is paid, e.g. after the referred patient's treatment, and how) are not. Partnership types and copy also need confirmation.",
   "referrals": {
     "eyebrow": "Referidos",
-    "intro": "La mayoría de nuestros pacientes llegan por alguien que ya se hizo la sonrisa aquí. Si un amigo o familiar está pensando en carillas, un diseño de sonrisa o una reconstrucción bucal completa, envíanos su nombre y nosotros nos encargamos: una evaluación gratuita por fotos, un presupuesto por escrito en menos de 6 horas y un crédito de $500 para tu propio tratamiento cuando el suyo se complete.",
+    "intro": "Envíanos el nombre de un amigo. Él recibe una evaluación gratuita por fotos; tú, un crédito de $500 para tu propio tratamiento cuando el suyo se complete.",
     "formTitle": "Refiere a alguien",
-    "formIntro": "Dinos a quién contactar y cómo. Solo nos comunicamos una vez, y solo con la persona que refieres.",
+    "formIntro": "Dinos a quién contactar. Nos comunicamos una sola vez, solo con esa persona.",
     "messageLabel": "¿A quién refieres?",
     "messagePlaceholder": "Su nombre, cómo contactarlo y qué le interesa.",
     "points": [
       {
         "t": "$500 por tratamiento completado",
-        "d": "Por cada persona que refieras y complete su tratamiento, recibes un crédito de $500 para tu propio tratamiento. Escribe tu propio nombre en el formulario para que sepamos quién la envió."
+        "d": "Un crédito para tu propio tratamiento, por cada persona que refieras y complete el suyo."
       },
       {
         "t": "Evaluación gratuita por fotos",
-        "d": "Tu amigo envía dos fotos; un doctor responde con un plan de tratamiento en menos de 6 horas, y el presupuesto por escrito llega con él."
+        "d": "Dos fotos, el plan de tratamiento de un doctor en menos de 6 horas, presupuesto por escrito incluido."
       },
       {
         "t": "Los mismos doctores, la misma lista de precios",
-        "d": "Los pacientes referidos reciben los paquetes publicados y la garantía de 5 años por escrito, como todos."
+        "d": "Paquetes publicados y garantía de 5 años por escrito, como todos los pacientes."
       },
       {
         "t": "Amigos de otros estados bienvenidos",
-        "d": "Tres visitas en una semana en Miami, con hoteles, recogida en el aeropuerto y transporte a cargo de la coordinadora."
+        "d": "Tres visitas en una semana en Miami. Hotel, recogida y transporte a cargo de la coordinadora."
       }
     ],
     "bonus": {
       "amount": "$500",
       "title": "$500 por tratamiento completado",
-      "text": "Por cada persona que refieras y complete su tratamiento, recibes un crédito de $500 para tu propio tratamiento. Escribe tu nombre y tus datos de contacto en el formulario para que sepamos quién la envió."
+      "text": "Escribe tu propio nombre en el formulario para que sepamos quién lo envió."
     }
   },
   "partnerships": {
