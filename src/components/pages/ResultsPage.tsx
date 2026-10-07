@@ -11,7 +11,7 @@ const PATH = "/before-and-after" as const;
 
 export default function ResultsPage({ locale = "en" }: { locale?: Locale }) {
   const t = ui(locale);
-  const { pages, cases } = getContent(locale);
+  const { pages, cases, stories } = getContent(locale);
   const images = cases.cases.map((c) => ({ url: imageInfo(c.image).src, caption: c.alt }));
   return (
     <main id="main">
@@ -23,7 +23,7 @@ export default function ResultsPage({ locale = "en" }: { locale?: Locale }) {
         lead={t.results.pageLead}
       />
       <section className="wrap pt-12 lg:pt-20" aria-label={t.results.photosAria}>
-        <ResultsGallery locale={locale} />
+        <ResultsGallery locale={locale} stories={stories} />
       </section>
       <CostPhotoCta locale={locale} />
     </main>

@@ -129,6 +129,8 @@
     "linkLabel": "Todos los casos →",
     "label": "Diseño de sonrisa",
     "caseIds": [
+      "BA19",
+      "BA16",
       "BA8",
       "BA4",
       "BA3"

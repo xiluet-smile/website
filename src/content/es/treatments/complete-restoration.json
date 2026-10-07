@@ -129,6 +129,7 @@
     "linkLabel": "Todos los casos →",
     "label": "Restauraciones",
     "caseIds": [
+      "BA18",
       "BA9",
       "BA14",
       "BA11"

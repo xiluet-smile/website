@@ -1,10 +1,11 @@
 import Link from "next/link";
+import CaseCard from "@/components/CaseCard";
 import DoctorCta from "@/components/DoctorCta";
 import { PhoneIcon } from "@/components/Icons";
 import Img from "@/components/Img";
 import PageHero from "@/components/PageHero";
 import PatientStories from "@/components/home/PatientStories";
-import { getContent, tpl, ui, type Doctor } from "@/lib/content-i18n";
+import { caseById, getContent, tpl, ui, type Doctor } from "@/lib/content-i18n";
 import { localizeHref, localizePath, type Locale } from "@/lib/i18n";
 import { site } from "@/lib/site";
 
@@ -303,6 +304,34 @@ export default function DoctorProfile({
           </ul>
         </div>
       </section>
+
+      {/* Before and after: cases from cases.json tagged to this doctor (profile.caseIds). */}
+      {profile.caseIds.length > 0 && (
+        <section className="wrap pt-16 lg:pt-28" aria-label={tpl(t.doctor.resultsTitle, { name })}>
+          <div className={sectionHead}>
+            <div>
+              <h2 className={`${h2} lg:text-[40px]`}>{tpl(t.doctor.resultsTitle, { name })}</h2>
+              <p className="m-0 mt-2 text-base text-muted lg:text-lg">{tpl(t.doctor.resultsLead, { name })}</p>
+            </div>
+            <Link
+              href={localizePath("/before-and-after", locale)}
+              className="font-semibold whitespace-nowrap"
+            >
+              {t.doctor.allResults}
+            </Link>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {profile.caseIds.map((id) => caseById(locale, id)).map((c) => (
+              <CaseCard
+                key={c.id}
+                c={c}
+                locale={locale}
+                sizes="(min-width: 1440px) 384px, (min-width: 1024px) 28vw, (min-width: 640px) 46vw, 92vw"
+              />
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* Patient stories for this doctor: rendered once src/content/stories.json has consented clips tagged with the doctor. */}
       {doctorStories.length > 0 && (

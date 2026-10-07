@@ -3,14 +3,44 @@
   "types": [
     "Veneers",
     "Restorations",
-    "Full mouth"
+    "Full mouth",
+    "All-on-X"
   ],
   "typeLabels": {
     "Veneers": "Carillas",
     "Restorations": "Restauraciones",
-    "Full mouth": "Boca completa"
+    "Full mouth": "Boca completa",
+    "All-on-X": "All-on-X"
   },
   "cases": [
+    {
+      "id": "BA16",
+      "image": "BA16.jpg",
+      "type": "Veneers",
+      "alt": "Antes y después: carillas de resina reemplazadas por carillas de porcelana, paciente de Xiluet, Miami",
+      "source": "https://www.instagram.com/p/Dd_8l3fxVGC/"
+    },
+    {
+      "id": "BA17",
+      "image": "BA17.jpg",
+      "type": "All-on-X",
+      "alt": "Antes y después de arcada fija All-on-X sobre implantes, paciente de Xiluet, Miami",
+      "source": "https://www.instagram.com/p/Dd9oCr8xTO8/"
+    },
+    {
+      "id": "BA18",
+      "image": "BA18.jpg",
+      "type": "Restorations",
+      "alt": "Antes y después de restauración de sonrisa con coronas y carillas de porcelana, paciente de Xiluet, Miami",
+      "source": "https://www.instagram.com/p/DeHpu28nGXJ/"
+    },
+    {
+      "id": "BA19",
+      "image": "BA19.jpg",
+      "type": "Veneers",
+      "alt": "Antes y después de transformación de sonrisa con carillas de porcelana, paciente de Xiluet, Miami",
+      "source": "https://www.instagram.com/p/Dd2LW_VRsiN/"
+    },
     {
       "id": "BA8",
       "image": "BA8.jpg",

@@ -144,6 +144,9 @@
         "cap": "Planned on your CT scan",
         "alt": "Surgical guide and CT scan"
       }
+    ],
+    "caseIds": [
+      "BA17"
     ]
   },
   "price": {

@@ -87,3 +87,5 @@ Things the design files leave unresolved. Each is marked `TODO(clinic)` in the c
 - Web fonts use `font-display: swap` with metric-matched fallback fonts. On a slow first visit text can still re-wrap slightly when the fonts arrive; switching the body font to `font-display: optional` in `src/app/globals.css` would remove that entirely at the cost of some first visits seeing the fallback font.
 - FAQ accordions use the native `<details>` element (one open at a time, all answers in the HTML, no JavaScript).
 - The Home financing section is a grid (as drawn in the design), not a carousel.
+
+- **Before/after photos BA16–BA19 (added 2026-10-07)** come from the clinic's public Instagram posts (Dd_8l3fxVGC, Dd9oCr8xTO8, DeHpu28nGXJ slide 2, Dd2LW_VRsiN). Confirm each patient's written photo release covers the website, and tell us if any case should be reassigned to another doctor or treatment type (currently: Alonso → BA16, BA19 Veneers; Ramos → BA17 All-on-X; Puentes → BA18 Restorations).

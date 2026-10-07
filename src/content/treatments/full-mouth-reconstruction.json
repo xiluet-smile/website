@@ -129,6 +129,7 @@
     "linkLabel": "All cases →",
     "label": "Full mouth reconstruction",
     "caseIds": [
+      "BA18",
       "BA11",
       "BA9",
       "BA13"

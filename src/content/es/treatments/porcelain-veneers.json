@@ -129,6 +129,8 @@
     "linkLabel": "Todos los casos →",
     "label": "Carillas",
     "caseIds": [
+      "BA16",
+      "BA19",
       "BA4",
       "BA1",
       "BA2"

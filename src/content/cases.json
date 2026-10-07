@@ -3,9 +3,38 @@
   "types": [
     "Veneers",
     "Restorations",
-    "Full mouth"
+    "Full mouth",
+    "All-on-X"
   ],
   "cases": [
+    {
+      "id": "BA16",
+      "image": "BA16.jpg",
+      "type": "Veneers",
+      "alt": "Before and after: composite veneers replaced with porcelain veneers, Xiluet patient, Miami",
+      "source": "https://www.instagram.com/p/Dd_8l3fxVGC/"
+    },
+    {
+      "id": "BA17",
+      "image": "BA17.jpg",
+      "type": "All-on-X",
+      "alt": "Before and after All-on-X fixed arch on dental implants, Xiluet patient, Miami",
+      "source": "https://www.instagram.com/p/Dd9oCr8xTO8/"
+    },
+    {
+      "id": "BA18",
+      "image": "BA18.jpg",
+      "type": "Restorations",
+      "alt": "Before and after smile restoration with porcelain crowns and veneers, Xiluet patient, Miami",
+      "source": "https://www.instagram.com/p/DeHpu28nGXJ/"
+    },
+    {
+      "id": "BA19",
+      "image": "BA19.jpg",
+      "type": "Veneers",
+      "alt": "Before and after porcelain veneers smile transformation, Xiluet patient, Miami",
+      "source": "https://www.instagram.com/p/Dd2LW_VRsiN/"
+    },
     {
       "id": "BA8",
       "image": "BA8.jpg",

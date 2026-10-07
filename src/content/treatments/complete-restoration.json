@@ -129,6 +129,7 @@
     "linkLabel": "All cases →",
     "label": "Restorations",
     "caseIds": [
+      "BA18",
       "BA9",
       "BA14",
       "BA11"

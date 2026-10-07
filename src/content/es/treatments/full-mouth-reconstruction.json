@@ -129,6 +129,7 @@
     "linkLabel": "Todos los casos →",
     "label": "Reconstrucción bucal completa",
     "caseIds": [
+      "BA18",
       "BA11",
       "BA9",
       "BA13"

@@ -144,6 +144,9 @@
         "cap": "Planificada sobre tu tomografía",
         "alt": "Guía quirúrgica y tomografía"
       }
+    ],
+    "caseIds": [
+      "BA17"
     ]
   },
   "price": {

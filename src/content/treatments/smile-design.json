@@ -129,6 +129,8 @@
     "linkLabel": "All cases →",
     "label": "Smile design",
     "caseIds": [
+      "BA19",
+      "BA16",
       "BA8",
       "BA4",
       "BA3"

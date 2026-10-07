@@ -129,6 +129,7 @@
     "linkLabel": "Todos los casos →",
     "label": "Transformación de sonrisa",
     "caseIds": [
+      "BA16",
       "BA2",
       "BA6",
       "BA7"
