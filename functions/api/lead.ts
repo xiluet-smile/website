@@ -131,9 +131,15 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
       sniffed.push(kind);
     }
 
-    if (!env.R2_PHOTOS) {
-      console.error("R2_PHOTOS binding is missing");
-      return respond(request, PAGE, { ok: false, error: "server" }, locale);
+    // Photos need the R2 bucket. Without it the lead is still delivered (CRM webhook / email) so no
+    // patient is lost; the photos are counted but cannot be stored. With neither storage nor a
+    // delivery channel there is nothing we can do with the submission.
+    const storage = env.R2_PHOTOS ?? null;
+    if (!storage) {
+      console.error("R2_PHOTOS binding is missing; delivering the lead without photo storage");
+      if (!env.CRM_WEBHOOK_URL && !(env.RESEND_API_KEY && env.FROM_EMAIL && env.NOTIFY_EMAIL)) {
+        return respond(request, PAGE, { ok: false, error: "server" }, locale);
+      }
     }
 
     const id = crypto.randomUUID();
@@ -142,26 +148,29 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
     const consent = consentRecord(request, env, PAGE, consentText, consents);
 
     const photos: { key: string; contentType: string; size: number; originalName: string }[] = [];
-    try {
-      for (let i = 0; i < files.length; i++) {
-        const key = `${prefix}/${i + 1}.${sniffed[i].ext}`;
-        await env.R2_PHOTOS.put(key, files[i], { httpMetadata: { contentType: sniffed[i].contentType } });
-        photos.push({
-          key,
-          contentType: sniffed[i].contentType,
-          size: files[i].size,
-          originalName: clean(files[i].name, LIMITS.short),
+    const unstoredPhotos = storage ? 0 : files.length;
+    if (storage) {
+      try {
+        for (let i = 0; i < files.length; i++) {
+          const key = `${prefix}/${i + 1}.${sniffed[i].ext}`;
+          await storage.put(key, files[i], { httpMetadata: { contentType: sniffed[i].contentType } });
+          photos.push({
+            key,
+            contentType: sniffed[i].contentType,
+            size: files[i].size,
+            originalName: clean(files[i].name, LIMITS.short),
+          });
+        }
+        const record = { id, createdAt: now.toISOString(), name, phone, email, concerns, origin, notes, photos, consent };
+        await storage.put(`${prefix}/lead.json`, JSON.stringify(record, null, 2), {
+          httpMetadata: { contentType: "application/json" },
         });
+      } catch (err) {
+        console.error("lead storage failed", err);
+        // Best effort: do not leave orphaned photos behind.
+        if (photos.length) await settle("orphan cleanup", storage.delete(photos.map((p) => p.key)));
+        return respond(request, PAGE, { ok: false, error: "server" }, locale);
       }
-      const record = { id, createdAt: now.toISOString(), name, phone, email, concerns, origin, notes, photos, consent };
-      await env.R2_PHOTOS.put(`${prefix}/lead.json`, JSON.stringify(record, null, 2), {
-        httpMetadata: { contentType: "application/json" },
-      });
-    } catch (err) {
-      console.error("lead storage failed", err);
-      // Best effort: do not leave orphaned photos behind.
-      if (photos.length) await settle("orphan cleanup", env.R2_PHOTOS.delete(photos.map((p) => p.key)));
-      return respond(request, PAGE, { ok: false, error: "server" }, locale);
     }
 
     // The lead is stored. Nothing below may fail the request.
@@ -192,12 +201,16 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
             .map((url, i) => `<li><a href="${escapeHtml(url)}">Photo ${i + 1}</a> (${escapeHtml(photos[i].contentType)})</li>`)
             .join("")}</ol>`
         : `<p style="font:15px/1.5 Arial,sans-serif"><strong>Photos</strong>: ${photos.length} stored in R2 under ${escapeHtml(prefix)}/ (links could not be signed)</p>`
-      : `<p style="font:15px/1.5 Arial,sans-serif"><strong>Photos</strong>: none sent</p>`;
+      : unstoredPhotos
+        ? `<p style="font:15px/1.5 Arial,sans-serif"><strong>Photos</strong>: ${unstoredPhotos} attached but NOT stored (photo storage is not configured). Ask the patient to resend them by text.</p>`
+        : `<p style="font:15px/1.5 Arial,sans-serif"><strong>Photos</strong>: none sent</p>`;
     const photoText = photos.length
       ? links.length
         ? `Photos (links expire ${expiresAt}):\n${links.map((url, i) => `${i + 1}. ${url}`).join("\n")}`
         : `Photos: ${photos.length} stored in R2 under ${prefix}/ (links could not be signed)`
-      : "Photos: none sent";
+      : unstoredPhotos
+        ? `Photos: ${unstoredPhotos} attached but NOT stored (photo storage is not configured). Ask the patient to resend them by text.`
+        : "Photos: none sent";
 
     const tasks: Promise<void>[] = [
       settle(
@@ -223,7 +236,8 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
         message: notes,
         concerns_text: concerns.join(", "),
         photo_links: links.join("\n"),
-        photo_count: photos.length,
+        photo_count: photos.length + unstoredPhotos,
+        photos_stored: unstoredPhotos === 0,
         form: "Free photo evaluation",
         name,
         concerns,
