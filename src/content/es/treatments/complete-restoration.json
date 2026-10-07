@@ -1,9 +1,9 @@
 {
   "path": "/complete-restoration-miami",
   "packageId": "complete-restoration",
-  "breadcrumb": "Restauración completa",
+  "breadcrumb": "Coronas, puentes y carillas",
   "schema": {
-    "name": "Restauración completa (coronas, puentes y carillas)",
+    "name": "Diseño de sonrisa con coronas, puentes y carillas",
     "procedureType": "http://schema.org/NoninvasiveProcedure"
   },
   "hero": {
@@ -33,7 +33,7 @@
     "image": {
       "src": "treatment-complete-restoration.jpg",
       "alt": "Hombre de cuarenta y tantos sonriendo tras una restauración completa",
-      "caption": "Restauración Completa · 20 coronas, puentes o carillas · 5 días hábiles"
+      "caption": "Diseño de sonrisa · 20 coronas, puentes o carillas · 5 días hábiles"
     }
   },
   "candidates": {
@@ -142,7 +142,7 @@
     "compareLabel": "Compara todos los paquetes →",
     "card": {
       "title": "20 restauraciones dentales",
-      "sub": "Coronas y puentes",
+      "sub": "Coronas, puentes y carillas",
       "badge": "Completo",
       "pricePrefix": null,
       "priceSuffix": null,

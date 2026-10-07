@@ -1,13 +1,13 @@
 {
   "path": "/complete-restoration-miami",
   "packageId": "complete-restoration",
-  "breadcrumb": "Complete Restoration",
+  "breadcrumb": "Crowns, Bridges and Veneers",
   "schema": {
-    "name": "Complete Restoration (crowns, bridges and veneers)",
+    "name": "Smile Design with crowns, bridges and veneers",
     "procedureType": "http://schema.org/NoninvasiveProcedure"
   },
   "hero": {
-    "definition": "Complete Restoration replaces or rebuilds up to 20 teeth with porcelain crowns, bridges or veneers, planned together so color, shape and bite match. At Xiluet Smiles in Miami the package costs $7,000, includes a professional cleaning and X-rays, is delivered in 5 business days and carries a 5-year written warranty.",
+    "definition": "Smile Design with crowns, bridges and veneers replaces or rebuilds up to 20 teeth with porcelain crowns, bridges or veneers, planned together so color, shape and bite match. At Xiluet Smiles in Miami the package costs $7,000, includes a professional cleaning and X-rays, is delivered in 5 business days and carries a 5-year written warranty.",
     "lead": "Up to 20 crowns, bridges or veneers from one plan and one in-house lab. Delivered in 5 business days in Miami, or 3 with rush delivery, with a 5-year warranty in writing.",
     "secondaryCta": "See your week in Miami",
     "stats": [
@@ -33,7 +33,7 @@
     "image": {
       "src": "treatment-complete-restoration.jpg",
       "alt": "Man in his forties smiling after complete restoration",
-      "caption": "Complete Restoration · 20 crowns, bridges or veneers · 5 business days"
+      "caption": "Smile Design · 20 crowns, bridges or veneers · 5 business days"
     }
   },
   "candidates": {
@@ -142,7 +142,7 @@
     "compareLabel": "Compare all packages →",
     "card": {
       "title": "20 dental restorations",
-      "sub": "Crowns and bridges",
+      "sub": "Crowns, bridges and veneers",
       "badge": "Complete",
       "pricePrefix": null,
       "priceSuffix": null,
