@@ -413,11 +413,29 @@ export const PHOTO_LINK_TTL_SEC = 7 * 24 * 60 * 60;
 /** Photo objects only: leads/{yyyy}/{uuid}/{n}.{ext}. lead.json is never served. */
 export const PHOTO_KEY = /^leads\/\d{4}\/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\/\d{1,2}\.(jpg|png|webp|heic|gif)$/;
 
+/** Short signature: the first 24 hex chars (96 bits) of sign(). Used by the compact link format. */
+export async function signShort(secret: string, key: string, exp: number): Promise<string> {
+  return (await sign(secret, key, exp)).slice(0, 24);
+}
+
+/** Constant-time check of a signature made by signShort(). Does not check expiry. */
+export async function verifyShort(secret: string, key: string, exp: number, sig: string): Promise<boolean> {
+  if (!/^[0-9a-f]{24}$/.test(sig)) return false;
+  const expected = await signShort(secret, key, exp);
+  let diff = 0;
+  for (let i = 0; i < 24; i++) diff |= expected.charCodeAt(i) ^ sig.charCodeAt(i);
+  return diff === 0;
+}
+
+/**
+ * Compact photo link: /api/photo/{yyyy}/{uuid}/{n}.{ext}?e={exp}&s={sig}. About 130 characters,
+ * with no encoded slashes, so CRM notes and SMS clients keep it in one piece. Served by
+ * functions/api/photo/[[path]].ts; the older ?key=&exp=&sig= links stay valid in photo.ts.
+ */
 export async function signedPhotoUrl(env: Env, key: string, exp: number): Promise<string> {
   if (!env.LINK_SIGNING_SECRET) throw new Error("LINK_SIGNING_SECRET is not set");
-  const sig = await sign(env.LINK_SIGNING_SECRET, key, exp);
-  const qs = new URLSearchParams({ key, exp: String(exp), sig });
-  return `${siteUrl(env)}/api/photo?${qs}`;
+  const sig = await signShort(env.LINK_SIGNING_SECRET, key, exp);
+  return `${siteUrl(env)}/api/photo/${key.replace(/^leads\//, "")}?e=${exp}&s=${sig}`;
 }
 
 // ---------- GoHighLevel API (direct) ----------
