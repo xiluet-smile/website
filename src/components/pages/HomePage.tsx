@@ -151,7 +151,7 @@ export default function HomePage({ locale = "en" }: { locale?: Locale }) {
           </div>
         </div>
         <div className="relative z-[2] lg:border-t lg:border-[rgba(247,244,238,.18)] lg:bg-[rgba(4,30,36,.35)] lg:backdrop-blur-[10px]">
-          <dl className="wrap m-0 grid grid-cols-2 gap-x-5 gap-y-3 pb-6 text-[15px] text-on-dark-muted max-lg:[&>div:nth-child(-n+2)]:border-t max-lg:[&>div:nth-child(-n+2)]:border-[rgba(247,244,238,.18)] max-lg:[&>div:nth-child(-n+2)]:pt-4 lg:flex lg:justify-center lg:gap-0 lg:pt-6 lg:pb-7 lg:text-lg">
+          <dl className="wrap my-0 grid grid-cols-2 gap-x-5 gap-y-3 pb-6 text-[15px] text-on-dark-muted max-lg:[&>div:nth-child(-n+2)]:border-t max-lg:[&>div:nth-child(-n+2)]:border-[rgba(247,244,238,.18)] max-lg:[&>div:nth-child(-n+2)]:pt-4 lg:flex lg:justify-center lg:gap-0 lg:pt-6 lg:pb-7 lg:text-lg">
             {[
               {
                 big: rating.value,
