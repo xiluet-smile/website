@@ -174,9 +174,9 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
     );
     await Promise.all([clinicEmail, webhook, crm]);
 
-    // Contact messages are not stored anywhere else: if the email did not go
-    // out and there is no CRM to catch it, the visitor must be told.
-    if (!delivered && !env.CRM_WEBHOOK_URL)
+    // Contact messages are not stored anywhere else: if neither email nor a CRM
+    // (webhook or direct API) is configured, the visitor must be told.
+    if (!delivered && !env.CRM_WEBHOOK_URL && !env.GHL_API_TOKEN)
       return respond(request, PAGE, { ok: false, error: "server" }, locale);
     return respond(request, PAGE, { ok: true }, locale);
   } catch (err) {

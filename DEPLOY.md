@@ -31,7 +31,7 @@ Set under **Pages project → Settings**. Add each to Production and Preview. A 
 | Name | Purpose |
 |---|---|
 | `TURNSTILE_SECRET` | Turnstile secret key; verifies form tokens. |
-| `RESEND_API_KEY` | Sends clinic notifications and the patient autoresponder. |
+| `RESEND_API_KEY` | Optional, not used. Email is handled by GoHighLevel notifications; without this key the site sends no email. |
 | `NOTIFY_EMAIL` | Clinic inbox that receives leads and contact messages. |
 | `FROM_EMAIL` | Sender, e.g. `Xiluet Smiles <hello@xiluetsmiledesign.com>`. The domain must be verified in Resend. |
 | `LINK_SIGNING_SECRET` | Long random string; signs the 7-day photo links in clinic emails. |
@@ -50,7 +50,7 @@ Set under **Pages project → Settings**. Add each to Production and Preview. A 
 
 ### Related setup
 - **Turnstile**: dashboard → Turnstile → add a widget for `xiluetsmiledesign.com` and the `*.pages.dev` hostname, mode *Managed* or *Invisible*.
-- **Resend**: verify `xiluetsmiledesign.com` (SPF/DKIM records go in Cloudflare DNS).
+- **Resend**: not used. Clinic notifications and patient messages come from GoHighLevel.
 - **Rate limiting**: in addition to the KV binding, add a WAF rate-limiting rule for `/api/*` (for example 10 requests per minute per IP).
 - **R2 retention**: decide how long lead photos are kept and add a lifecycle rule on the bucket.
 - **Analytics**: enable Cloudflare Web Analytics on the Pages project (no cookie banner needed). The CSP in `public/_headers` already allows it.
@@ -83,7 +83,7 @@ State on 2026-10-06: the Pages project `website` auto-deploys `main` to https://
 |---|---|---|
 | ~~R2 bucket `xiluet-lead-photos` bound as `R2_PHOTOS`~~ done 2026-10-07 (production and preview) | done | Lead photos are stored and linked. |
 | Turnstile widget for `xiluetsmiledesign.com` + `*.pages.dev` → `NEXT_PUBLIC_TURNSTILE_SITE_KEY` (plain) and `TURNSTILE_SECRET` (encrypted) | Cloudflare → Turnstile | Bot protection on the forms. |
-| Resend account, verify `xiluetsmiledesign.com` (adds DKIM/SPF records to the zone), create API key → `RESEND_API_KEY` | resend.com | Lead and contact emails. Until set, functions store the lead and return success without sending. |
+| ~~Resend~~ dropped 2026-10-07: notifications come from GoHighLevel (Internal Notification steps email the clinic inbox). | n/a | |
 | Google Cloud API key with Places API (New) → `GOOGLE_PLACES_API_KEY` | console.cloud.google.com | Live Google reviews on Home. |
 | ~~`CRM_WEBHOOK_URL`~~ set 2026-10-07 to the GHL "Website Contact Form" inbound webhook | done | Re-map the GHL Create contact step to the new keys: `first_name`, `last_name`, `email`, `phone`, `message`, `concerns_text`, `photo_links`, `form`. |
 

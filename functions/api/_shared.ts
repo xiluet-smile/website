@@ -334,7 +334,9 @@ export interface Email {
 
 /** Sends through the Resend REST API. Throws on any failure so callers can log it. */
 export async function sendEmail(env: Env, email: Email): Promise<void> {
-  if (!env.RESEND_API_KEY || !env.FROM_EMAIL) throw new Error("RESEND_API_KEY or FROM_EMAIL is not set");
+  // Email is optional: the clinic works from the CRM (GoHighLevel), which sends its own
+  // notifications. Without a Resend key this is a quiet no-op rather than an error.
+  if (!env.RESEND_API_KEY || !env.FROM_EMAIL) return;
   if (!email.to) throw new Error("email recipient is empty");
   const res = await fetch("https://api.resend.com/emails", {
     method: "POST",

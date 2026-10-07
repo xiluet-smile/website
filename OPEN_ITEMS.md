@@ -89,3 +89,4 @@ Things the design files leave unresolved. Each is marked `TODO(clinic)` in the c
 - The Home financing section is a grid (as drawn in the design), not a carousel.
 
 - **Before/after photos BA16–BA19 (added 2026-10-07)** come from the clinic's public Instagram posts (Dd_8l3fxVGC, Dd9oCr8xTO8, DeHpu28nGXJ slide 2, Dd2LW_VRsiN). Confirm each patient's written photo release covers the website, and tell us if any case should be reassigned to another doctor or treatment type (currently: Alonso → BA16, BA19 Veneers; Ramos → BA17 All-on-X; Puentes → BA18 Restorations).
+- **Email from the website: dropped (2026-10-07).** Leads go to GoHighLevel (webhook + direct API: contact, note, photos). GHL sends the clinic notifications and patient SMS. The Resend integration stays in the code but is inactive without `RESEND_API_KEY`.
