@@ -13,8 +13,7 @@ import {
   labelClass,
   submitForm,
   useHydrated,
-  useSentParam,
-} from "./FormParts";
+  useSentParam, trackFormSubmit } from "./FormParts";
 import { formContent, labelOf, tpl, ui } from "@/lib/ui-i18n";
 import { localizePath, type Locale } from "@/lib/i18n";
 
@@ -103,6 +102,7 @@ export default function LeadForm({ locale = "en" }: { locale?: Locale }) {
               (concerns.length ? tpl(c.noted, { concerns: concerns.join(", ").toLowerCase() }) : ".")
           : "",
       );
+      trackFormSubmit("photo_evaluation", { photo_count: count, concerns: concerns.join(", ") });
       setStatus("sent");
     } else {
       setError(tpl(errorMessage(content.errors, result.error), vars));

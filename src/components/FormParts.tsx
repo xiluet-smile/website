@@ -141,3 +141,17 @@ export function CheckBadge({ size }: { size: number }) {
     </span>
   );
 }
+
+/**
+ * Tells Google Tag Manager that a form was delivered, so GA4 / Google Ads / Meta tags in the
+ * container can count the conversion. `form` is "contact" or "photo_evaluation".
+ * No-op without GTM (dataLayer missing) and never throws.
+ */
+export function trackFormSubmit(form: "contact" | "photo_evaluation", extra: Record<string, string | number> = {}) {
+  try {
+    const w = window as Window & { dataLayer?: unknown[] };
+    (w.dataLayer = w.dataLayer || []).push({ event: "form_submit", form_name: form, ...extra });
+  } catch {
+    // analytics must never break the form
+  }
+}

@@ -11,8 +11,7 @@ import {
   inputClass,
   labelClass,
   submitForm,
-  useSentParam,
-} from "./FormParts";
+  useSentParam, trackFormSubmit } from "./FormParts";
 import { formContent, labelOf, ui } from "@/lib/ui-i18n";
 import type { Locale } from "@/lib/i18n";
 
@@ -105,6 +104,7 @@ export default function ContactForm({ topic, messageLabel, messagePlaceholder, h
     if (result.ok) {
       // The submitted value stays English (the server matches it); the confirmation shows the locale's label.
       setVia(labelOf(content.replyVia, content.replyViaLabels, replyVia));
+      trackFormSubmit("contact", { reply_via: replyVia });
       setStatus("sent");
     } else {
       setError(errorMessage(content.errors, result.error));
