@@ -28,6 +28,7 @@ import {
   signedPhotoUrl,
   site,
   siteUrl,
+  ghlPushLead,
 } from "./_shared";
 
 const PAGE = "/free-photo-evaluation" as const;
@@ -213,6 +214,33 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
         : "Photos: none sent";
 
     const tasks: Promise<void>[] = [
+      settle(
+        "GHL contact",
+        ghlPushLead(
+          env,
+          {
+            firstName,
+            lastName,
+            email,
+            phone,
+            source: "Website: free photo evaluation",
+            tags: ["website", "photo evaluation"],
+            note: [
+              "Free photo evaluation from the website",
+              concerns.length ? `Concerns: ${concerns.join(", ")}` : "",
+              notes ? `Notes: ${notes}` : "",
+              origin ? `Came from: ${origin}` : "",
+              `Language: ${locale}`,
+              `Photos: ${files.length}${unstoredPhotos ? " (not stored on the website side)" : ""}`,
+              links.length ? `Links (expire ${expiresAt}):\n${links.join("\n")}` : "",
+              `Lead ID: ${id}`,
+            ]
+              .filter(Boolean)
+              .join("\n"),
+          },
+          files,
+        ),
+      ),
       settle(
         "clinic email",
         sendEmail(env, {

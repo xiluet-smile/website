@@ -20,6 +20,8 @@ import {
   respond,
   sendEmail,
   siteUrl,
+  ghlPushLead,
+  settle,
 } from "./_shared";
 
 const PAGE = "/contact" as const;
@@ -150,7 +152,27 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
       consent,
       source: siteUrl(env) + PAGE,
     });
-    await Promise.all([clinicEmail, webhook]);
+    const crm = settle(
+      "GHL contact",
+      ghlPushLead(env, {
+        firstName: first,
+        lastName: last,
+        email,
+        phone,
+        source: `Website: ${topic || "contact"}`,
+        tags: ["website", "contact form", ...(topic ? [topic.toLowerCase()] : [])],
+        note: [
+          `Contact form${topic ? ` (${topic})` : ""} from the website`,
+          message ? `Message: ${message}` : "",
+          replyVia ? `Preferred reply: ${replyVia}` : "",
+          `Language: ${locale}`,
+          `Message ID: ${id}`,
+        ]
+          .filter(Boolean)
+          .join("\n"),
+      }),
+    );
+    await Promise.all([clinicEmail, webhook, crm]);
 
     // Contact messages are not stored anywhere else: if the email did not go
     // out and there is no CRM to catch it, the visitor must be told.

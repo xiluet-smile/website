@@ -11,6 +11,12 @@ export interface Env {
   /** e.g. `Xiluet Smiles <hello@xiluetsmiledesign.com>` */
   FROM_EMAIL?: string;
   CRM_WEBHOOK_URL?: string;
+  /** GoHighLevel private-integration token (scopes: contacts.readonly, contacts.write, forms.write). */
+  GHL_API_TOKEN?: string;
+  /** GoHighLevel sub-account (location) id. */
+  GHL_LOCATION_ID?: string;
+  /** Id of the contact custom field of type "File Upload" that receives the smile photos. */
+  GHL_PHOTO_FIELD_ID?: string;
   LINK_SIGNING_SECRET?: string;
   /** Optional KV namespace; rate limiting is skipped without it. */
   RATE_LIMIT?: KVNamespace;
@@ -412,4 +418,91 @@ export async function signedPhotoUrl(env: Env, key: string, exp: number): Promis
   const sig = await sign(env.LINK_SIGNING_SECRET, key, exp);
   const qs = new URLSearchParams({ key, exp: String(exp), sig });
   return `${siteUrl(env)}/api/photo?${qs}`;
+}
+
+// ---------- GoHighLevel API (direct) ----------
+
+const GHL_API = "https://services.leadconnectorhq.com";
+
+export type GhlLead = {
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone: string;
+  /** Shown as the contact's lead source. */
+  source: string;
+  tags: string[];
+  /** Written as a note on the contact. */
+  note: string;
+};
+
+/**
+ * Pushes a lead straight into GoHighLevel: upserts the contact (deduped by email/phone),
+ * writes a note, and attaches the photos to the file-upload custom field so they appear
+ * in the contact's documents. No-op without GHL_API_TOKEN + GHL_LOCATION_ID. Never throws;
+ * returns the contact id when the upsert succeeded.
+ */
+export async function ghlPushLead(env: Env, lead: GhlLead, files: File[] = []): Promise<string | undefined> {
+  if (!env.GHL_API_TOKEN || !env.GHL_LOCATION_ID) return undefined;
+  const headers = { Authorization: `Bearer ${env.GHL_API_TOKEN}`, Version: "2021-07-28" };
+  try {
+    const up = await fetch(`${GHL_API}/contacts/upsert`, {
+      method: "POST",
+      headers: { ...headers, "Content-Type": "application/json" },
+      body: JSON.stringify({
+        locationId: env.GHL_LOCATION_ID,
+        firstName: lead.firstName,
+        lastName: lead.lastName,
+        email: lead.email || undefined,
+        phone: lead.phone || undefined,
+        source: lead.source,
+        tags: lead.tags,
+      }),
+      signal: AbortSignal.timeout(10000),
+    });
+    if (!up.ok) {
+      console.error(`GHL upsert responded ${up.status}: ${(await up.text()).slice(0, 300)}`);
+      return undefined;
+    }
+    const contactId: string | undefined = ((await up.json()) as { contact?: { id?: string } }).contact?.id;
+    if (!contactId) return undefined;
+
+    if (lead.note) {
+      await settle(
+        "GHL note",
+        fetch(`${GHL_API}/contacts/${contactId}/notes`, {
+          method: "POST",
+          headers: { ...headers, "Content-Type": "application/json" },
+          body: JSON.stringify({ body: lead.note }),
+          signal: AbortSignal.timeout(10000),
+        }).then(async (r) => {
+          if (!r.ok) throw new Error(`${r.status}: ${(await r.text()).slice(0, 300)}`);
+        }),
+      );
+    }
+
+    if (files.length && env.GHL_PHOTO_FIELD_ID) {
+      const form = new FormData();
+      files.forEach((f, i) => {
+        const ext = (f.type.split("/")[1] || "jpg").replace("jpeg", "jpg");
+        form.append(`${env.GHL_PHOTO_FIELD_ID}_${crypto.randomUUID()}`, f, `smile-${i + 1}.${ext}`);
+      });
+      const q = new URLSearchParams({ contactId, locationId: env.GHL_LOCATION_ID });
+      await settle(
+        "GHL photo upload",
+        fetch(`${GHL_API}/forms/upload-custom-files?${q}`, {
+          method: "POST",
+          headers,
+          body: form,
+          signal: AbortSignal.timeout(30000),
+        }).then(async (r) => {
+          if (!r.ok) throw new Error(`${r.status}: ${(await r.text()).slice(0, 300)}`);
+        }),
+      );
+    }
+    return contactId;
+  } catch (err) {
+    console.error("GHL push failed", err);
+    return undefined;
+  }
 }
