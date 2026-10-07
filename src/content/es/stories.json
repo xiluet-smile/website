@@ -1,5 +1,17 @@
 [
   {
+    "id": "story-20",
+    "source": "https://www.instagram.com/p/DYC_g-JxGtO/",
+    "video": "/videos/stories/story-20.mp4",
+    "poster": "story-20-poster.jpg",
+    "quote": "",
+    "name": "Yesenia",
+    "treatment": "Rehabilitación bucal completa",
+    "duration": "1:13",
+    "doctor": "Dr. Gretell Alonso Fiel, DMD",
+    "title": "Yesenia ve su nueva sonrisa antes de la cementación final."
+  },
+  {
     "id": "story-1",
     "source": "https://www.instagram.com/p/DdHAEV1uBPW/",
     "video": "/videos/stories/story-1.mp4",
@@ -12,14 +24,14 @@
     "doctor": "Dr. Gretell Alonso Fiel, DMD"
   },
   {
-    "id": "story-2",
-    "source": "https://www.instagram.com/p/Dc_RtT6PgUg/",
-    "video": "/videos/stories/story-2.mp4",
-    "poster": "story-2-poster.jpg",
-    "quote": "Al final, de verdad conseguí una sonrisa increíble.",
+    "id": "story-16",
+    "source": "https://www.instagram.com/p/DalAzsBR3AK/",
+    "video": "/videos/stories/story-16.mp4",
+    "poster": "story-16-poster.jpg",
+    "quote": "Es increíble. No lo puedo creer.",
     "name": "Paciente de Xiluet",
-    "treatment": "20 coronas · en inglés",
-    "duration": "0:22",
+    "treatment": "Día de entrega · en inglés",
+    "duration": "0:15",
     "doctor": "Dr. Gretell Alonso Fiel, DMD"
   },
   {
@@ -145,5 +157,152 @@
     "treatment": "Día de entrega",
     "duration": "0:21",
     "doctor": "Dr. Marta Puentes Marrero, DMD"
+  },
+  {
+    "id": "story-14",
+    "source": "https://www.instagram.com/p/Ddb0hMfRssE/",
+    "video": "/videos/stories/story-14.mp4",
+    "poster": "story-14-poster.jpg",
+    "quote": "Siempre estaba con la mano en la boca, tapándome. Ahora enseño mi sonrisa brillante.",
+    "name": "Paciente de Xiluet",
+    "treatment": "Diseño de sonrisa",
+    "duration": "0:30",
+    "doctor": "Dr. Roger Ramos Navarro, DMD"
+  },
+  {
+    "id": "story-15",
+    "source": "https://www.instagram.com/p/DcbWeMMxggs/",
+    "video": "/videos/stories/story-15.mp4",
+    "poster": "story-15-poster.jpg",
+    "quote": "Fue un procedimiento buenísimo. No podía estar más feliz.",
+    "name": "Paciente de Xiluet",
+    "treatment": "Diseño de sonrisa",
+    "duration": "0:25",
+    "doctor": "Dr. Marta Puentes Marrero, DMD"
+  },
+  {
+    "id": "story-17",
+    "source": "https://www.instagram.com/p/DaVWLQ1x7y3/",
+    "video": "/videos/stories/story-17.mp4",
+    "poster": "story-17-poster.jpg",
+    "quote": "Cambia el juego por completo. Mi confianza está al máximo.",
+    "name": "Paciente de Xiluet, Atlanta",
+    "treatment": "Diseño de sonrisa · en inglés",
+    "duration": "2:11",
+    "doctor": "Dr. Roger Ramos Navarro, DMD"
+  },
+  {
+    "id": "story-18",
+    "source": "https://www.instagram.com/p/DaLLY3pRxnB/",
+    "video": "/videos/stories/story-18.mp4",
+    "poster": "story-18-poster.jpg",
+    "quote": "Ya me puedo reír sin pena. Siento que soy otra persona.",
+    "name": "Paciente de Xiluet",
+    "treatment": "Diseño de sonrisa",
+    "duration": "0:20",
+    "doctor": "Dr. Marta Puentes Marrero, DMD"
+  },
+  {
+    "id": "story-19",
+    "source": "https://www.instagram.com/p/DYnGxz0x-eT/",
+    "video": "/videos/stories/story-19.mp4",
+    "poster": "story-19-poster.jpg",
+    "quote": "",
+    "name": "Paciente de Xiluet",
+    "treatment": "Día de entrega",
+    "duration": "0:18",
+    "doctor": "Dr. Gretell Alonso Fiel, DMD",
+    "title": "No podía dejar de sonreír al ver su nueva sonrisa por primera vez."
+  },
+  {
+    "id": "story-21",
+    "source": "https://www.instagram.com/p/DX6_qL_xDLA/",
+    "video": "/videos/stories/story-21.mp4",
+    "poster": "story-21-poster.jpg",
+    "quote": "Yo tengo una sonrisa bonita y quería que la de él fuera igual.",
+    "name": "Yolanda y Erick, Fort Worth",
+    "treatment": "Diseño de sonrisa · en inglés",
+    "duration": "0:30",
+    "doctor": "Dr. Roger Ramos Navarro, DMD"
+  },
+  {
+    "id": "story-22",
+    "source": "https://www.instagram.com/p/DXzbPX6x9Ro/",
+    "video": "/videos/stories/story-22.mp4",
+    "poster": "story-22-poster.jpg",
+    "quote": "Mi rostro demuestra lo feliz que me siento.",
+    "name": "Paciente de Xiluet",
+    "treatment": "Diseño de sonrisa",
+    "duration": "0:24",
+    "doctor": "Dr. Marta Puentes Marrero, DMD"
+  },
+  {
+    "id": "story-23",
+    "source": "https://www.instagram.com/p/DYALiDyxJ_x/",
+    "video": "/videos/stories/story-23.mp4",
+    "poster": "story-23-poster.jpg",
+    "quote": "Iba a volar a Turquía. En cambio, al día siguiente volé a Miami.",
+    "name": "Arron",
+    "treatment": "Diseño de sonrisa · en inglés",
+    "duration": "0:34",
+    "doctor": "Dr. Marta Puentes Marrero, DMD"
+  },
+  {
+    "id": "story-24",
+    "source": "https://www.instagram.com/p/DXepiNBEUhU/",
+    "video": "/videos/stories/story-24.mp4",
+    "poster": "story-24-poster.jpg",
+    "quote": "Creo que ha sido la mejor decisión de mi vida.",
+    "name": "Jesús, Texas",
+    "treatment": "Diseño de sonrisa",
+    "duration": "0:28",
+    "doctor": "Dr. Gretell Alonso Fiel, DMD"
+  },
+  {
+    "id": "story-25",
+    "source": "https://www.instagram.com/p/DXWztfnEV6d/",
+    "video": "/videos/stories/story-25.mp4",
+    "poster": "story-25-poster.jpg",
+    "quote": "Lo mejor de todo es que siento que quedó natural.",
+    "name": "Elisa, Orlando",
+    "treatment": "Diseño de sonrisa",
+    "duration": "0:29",
+    "doctor": "Dr. Roger Ramos Navarro, DMD"
+  },
+  {
+    "id": "story-26",
+    "source": "https://www.instagram.com/p/DWOtmmBjYkY/",
+    "video": "/videos/stories/story-26.mp4",
+    "poster": "story-26-poster.jpg",
+    "quote": "",
+    "name": "Paciente de Xiluet",
+    "treatment": "Diseño de sonrisa",
+    "duration": "0:18",
+    "doctor": "Dr. Roger Ramos Navarro, DMD",
+    "title": "Diseño de sonrisa natural, color impecable y forma perfecta."
+  },
+  {
+    "id": "story-27",
+    "source": "https://www.instagram.com/p/DVrNoRJEar8/",
+    "video": "/videos/stories/story-27.mp4",
+    "poster": "story-27-poster.jpg",
+    "quote": "",
+    "name": "Paciente de Xiluet",
+    "treatment": "Diseño de sonrisa",
+    "duration": "0:19",
+    "doctor": "Dr. Marta Puentes Marrero, DMD",
+    "title": "Es más que una sonrisa; es tu confianza, renovada."
+  },
+  {
+    "id": "story-28",
+    "source": "https://www.instagram.com/p/DVOqeRqEf2b/",
+    "video": "/videos/stories/story-28.mp4",
+    "poster": "story-28-poster.jpg",
+    "quote": "",
+    "name": "Franklin, Pensilvania",
+    "treatment": "Diseño de sonrisa",
+    "duration": "0:23",
+    "doctor": "Dr. Roger Ramos Navarro, DMD",
+    "title": "Franklin vino desde Pensilvania por su diseño de sonrisa."
   }
 ]
