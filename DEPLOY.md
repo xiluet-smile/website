@@ -84,7 +84,7 @@ State on 2026-10-06: the Pages project `website` auto-deploys `main` to https://
 | Turnstile widget for `xiluetsmiledesign.com` + `*.pages.dev` → `NEXT_PUBLIC_TURNSTILE_SITE_KEY` (plain) and `TURNSTILE_SECRET` (encrypted) | Cloudflare → Turnstile | Bot protection on the forms. |
 | Resend account, verify `xiluetsmiledesign.com` (adds DKIM/SPF records to the zone), create API key → `RESEND_API_KEY` | resend.com | Lead and contact emails. Until set, functions store the lead and return success without sending. |
 | Google Cloud API key with Places API (New) → `GOOGLE_PLACES_API_KEY` | console.cloud.google.com | Live Google reviews on Home. |
-| `CRM_WEBHOOK_URL` (GoHighLevel inbound webhook) | GHL → Automations → Inbound Webhook | Leads land in the CRM. |
+| ~~`CRM_WEBHOOK_URL`~~ set 2026-10-07 to the GHL "Website Contact Form" inbound webhook | done | Re-map the GHL Create contact step to the new keys: `first_name`, `last_name`, `email`, `phone`, `message`, `concerns_text`, `photo_links`, `form`. |
 
 ### Previous checklist
 

@@ -130,10 +130,15 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
       delivered = false;
       console.error("clinic email failed", err);
     });
+    // Flat snake_case keys first: they are what the CRM (GoHighLevel inbound webhook) maps onto contact fields.
     const webhook = postWebhook(env, {
       type: "contact",
       id,
       createdAt,
+      first_name: first,
+      last_name: last,
+      full_name: `${first} ${last}`.trim(),
+      form: "Contact",
       first,
       last,
       email,

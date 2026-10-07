@@ -101,15 +101,14 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
     if (!checked.pass) return respond(request, PAGE, checked.result, locale);
 
     // The page has first/last inputs that share the field name "name".
-    const name = clean(
-      form
-        .getAll("name")
-        .filter((v): v is string => typeof v === "string")
-        .map((v) => v.trim())
-        .filter(Boolean)
-        .join(" "),
-      LIMITS.name,
-    );
+    const nameParts = form
+      .getAll("name")
+      .filter((v): v is string => typeof v === "string")
+      .map((v) => v.trim())
+      .filter(Boolean);
+    const name = clean(nameParts.join(" "), LIMITS.name);
+    const firstName = clean(nameParts[0] ?? "", LIMITS.name);
+    const lastName = clean(nameParts.slice(1).join(" "), LIMITS.name);
     const phone = field("phone", LIMITS.phone);
     const email = field("email", LIMITS.email);
     const consentText = field("consent", LIMITS.consent);
@@ -211,13 +210,22 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
           text: `${rows.text}\n\n${photoText}`,
         }),
       ),
+      // Flat snake_case keys first: they are what the CRM (GoHighLevel inbound webhook) maps onto contact fields.
       postWebhook(env, {
         type: "lead",
         id,
         createdAt: now.toISOString(),
-        name,
+        first_name: firstName,
+        last_name: lastName,
+        full_name: name,
         phone,
         email,
+        message: notes,
+        concerns_text: concerns.join(", "),
+        photo_links: links.join("\n"),
+        photo_count: photos.length,
+        form: "Free photo evaluation",
+        name,
         concerns,
         origin,
         notes,
