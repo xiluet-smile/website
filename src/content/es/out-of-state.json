@@ -1,16 +1,64 @@
 {
   "visits": [
-    { "k": "Desde casa", "t": "Fotos, presupuesto, fechas", "d": "Envía tus fotos, recibe tu presupuesto por escrito en menos de {replyHours} horas, elige un plan de pago y reserva con un depósito de ${depositUsd}.", "time": "Cualquier día, unos 2 minutos de tu tiempo" },
-    { "k": "Visita 1 · Lunes", "t": "Examen y revisión del plan de tratamiento", "d": "Limpieza, radiografías, escaneos y fotos. Confirmas el diseño con tu doctor.", "time": "Unas 2 horas. El resto del día libre." },
-    { "k": "Visita 2 · Martes", "t": "Preparación y vista previa", "d": "Preparación mínima y luego provisionales con el diseño que aprobaste. Vive con ellos el miércoles.", "time": "Unas 3 horas" },
-    { "k": "Visita 3 · Jueves", "t": "Entrega y ajustes finales", "d": "Carillas cementadas, mordida revisada y garantía de {warrantyYears} años entregada por escrito.", "time": "Unas 2 horas. Vuelas a casa esa misma tarde." }
+    {
+      "k": "Desde casa",
+      "t": "Fotos, presupuesto, fechas",
+      "d": "Envía tus fotos, recibe tu presupuesto por escrito en menos de {replyHours} horas, elige un plan de pago y reserva con un depósito de ${depositUsd}.",
+      "time": "Cualquier día, unos 2 minutos de tu tiempo",
+      "icon": "photo"
+    },
+    {
+      "k": "Visita 1 · Lunes",
+      "t": "Examen y revisión del plan de tratamiento",
+      "d": "Limpieza, radiografías, escaneos y fotos. Confirmas el diseño con tu doctor.",
+      "time": "Unas 2 horas. El resto del día libre.",
+      "icon": "exam"
+    },
+    {
+      "k": "Visita 2 · Martes",
+      "t": "Preparación y vista previa",
+      "d": "Preparación mínima y luego provisionales con el diseño que aprobaste. Vive con ellos el miércoles.",
+      "time": "Unas 3 horas",
+      "icon": "prep"
+    },
+    {
+      "k": "Visita 3 · Jueves",
+      "t": "Entrega y ajustes finales",
+      "d": "Carillas cementadas, mordida revisada y garantía de {warrantyYears} años entregada por escrito.",
+      "time": "Unas 2 horas. Vuelas a casa esa misma tarde.",
+      "icon": "delivery"
+    }
   ],
   "perks": [
-    { "t": "Lista corta de hoteles", "d": "Tres hoteles verificados a menos de 10 minutos, en distintos rangos de precio, enviados con tu presupuesto." },
-    { "t": "Recogida en el aeropuerto", "d": "MIA está a 15 minutos. Organizamos tu transporte para la Visita 1 si lo deseas." },
-    { "t": "Transporte a cada visita", "d": "Uber o Lyft de ida y vuelta a la clínica cada día de tratamiento, por nuestra cuenta." },
-    { "t": "Tu coordinadora", "d": "Una sola persona, por mensaje de texto, desde el primer mensaje hasta el vuelo de regreso." },
-    { "t": "Cuidado posterior desde casa", "d": "Videollamada de seguimiento dos semanas después de la entrega. Cualquier dentista honra tu garantía para ajustes pequeños." },
-    { "t": "Miércoles libre", "d": "Un día libre entre la preparación y la entrega. Playa, Wynwood o simplemente descansar." }
+    {
+      "t": "Lista corta de hoteles",
+      "d": "Tres hoteles verificados a menos de 10 minutos, en distintos rangos de precio, enviados con tu presupuesto.",
+      "icon": "bed"
+    },
+    {
+      "t": "Recogida en el aeropuerto",
+      "d": "MIA está a 15 minutos. Organizamos tu transporte para la Visita 1 si lo deseas.",
+      "icon": "plane"
+    },
+    {
+      "t": "Transporte a cada visita",
+      "d": "Uber o Lyft de ida y vuelta a la clínica cada día de tratamiento, por nuestra cuenta.",
+      "icon": "car"
+    },
+    {
+      "t": "Tu coordinadora",
+      "d": "Una sola persona, por mensaje de texto, desde el primer mensaje hasta el vuelo de regreso.",
+      "icon": "bilingual"
+    },
+    {
+      "t": "Cuidado posterior desde casa",
+      "d": "Videollamada de seguimiento dos semanas después de la entrega. Cualquier dentista honra tu garantía para ajustes pequeños.",
+      "icon": "video"
+    },
+    {
+      "t": "Miércoles libre",
+      "d": "Un día libre entre la preparación y la entrega. Playa, Wynwood o simplemente descansar.",
+      "icon": "sun"
+    }
   ]
 }

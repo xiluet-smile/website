@@ -130,6 +130,42 @@ const icons: Record<string, (p: P) => React.JSX.Element> = {
       <path d="M9.3 15l2 2 3.6-3.8" />
     </Svg>
   ),
+  /** Bed: hotel shortlist. */
+  bed: (p) => (
+    <Svg {...p}>
+      <path d="M3 18V8M3 14h18v4M21 14v-3a2 2 0 00-2-2h-8v5" />
+      <path d="M3 11h4a2 2 0 012 2v1" />
+    </Svg>
+  ),
+  /** Plane: airport pickup. */
+  plane: (p) => (
+    <Svg {...p}>
+      <path d="M10.5 13.5L3.5 11l1.2-1.2 7.2 1.4 5.3-5.3a1.6 1.6 0 012.3 2.3l-5.3 5.3 1.4 7.2L14.4 22l-2.5-7" />
+      <path d="M7 17l-2.5 2.5" />
+    </Svg>
+  ),
+  /** Car: rides to every visit. */
+  car: (p) => (
+    <Svg {...p}>
+      <path d="M4 13l1.6-4.2A2 2 0 017.5 7.5h9a2 2 0 011.9 1.3L20 13" />
+      <path d="M3.5 13h17v4.5a1 1 0 01-1 1h-1.5a1 1 0 01-1-1V17h-10v.5a1 1 0 01-1 1H4.5a1 1 0 01-1-1z" />
+      <path d="M7 15.5h.5M16.5 15.5h.5" />
+    </Svg>
+  ),
+  /** Camera on a screen: video check-in. */
+  video: (p) => (
+    <Svg {...p}>
+      <rect x="3" y="6" width="13" height="12" rx="2" />
+      <path d="M16 10l5-2.5v9L16 14" />
+    </Svg>
+  ),
+  /** Sun: the free day. */
+  sun: (p) => (
+    <Svg {...p}>
+      <circle cx="12" cy="12" r="4" />
+      <path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6l1.4 1.4M17 17l1.4 1.4M5.6 18.4L7 17M17 7l1.4-1.4" />
+    </Svg>
+  ),
   /** Two speech bubbles: bilingual team. */
   bilingual: (p) => (
     <Svg {...p}>
