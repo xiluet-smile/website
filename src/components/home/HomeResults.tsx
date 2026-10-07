@@ -12,6 +12,8 @@ const ALL = "All";
  * hides non-matching cards, and without JS the row is a plain swipeable list.
  */
 export default function HomeResults({ cases, types, locale = "en" }: { cases: Case[]; types: string[]; locale?: Locale }) {
+  // Filters only make sense when there is more than one type to switch between (doctor pages pass their own subset).
+  const showFilters = types.length > 1;
   const t = ui(locale);
   const [type, setType] = useState(ALL);
   const row = useRef<HTMLDivElement>(null);
@@ -23,6 +25,7 @@ export default function HomeResults({ cases, types, locale = "en" }: { cases: Ca
 
   return (
     <>
+      {showFilters && (
       <div className="mb-4 flex gap-2 overflow-x-auto pb-1 lg:mb-6 lg:flex-wrap" role="group" aria-label={t.results.caseFilterAria}>
         {[ALL, ...types].map((x) => {
           const on = x === type;
@@ -44,6 +47,7 @@ export default function HomeResults({ cases, types, locale = "en" }: { cases: Ca
           );
         })}
       </div>
+      )}
       <div
         ref={row}
         className="-mx-5 flex snap-x scroll-px-5 snap-mandatory gap-2.5 overflow-x-auto px-5 pb-1 [scrollbar-width:none] lg:-mx-2 lg:gap-6 lg:px-2"

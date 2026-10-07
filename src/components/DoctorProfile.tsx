@@ -1,9 +1,9 @@
 import Link from "next/link";
-import CaseCard from "@/components/CaseCard";
 import DoctorCta from "@/components/DoctorCta";
 import { PhoneIcon } from "@/components/Icons";
 import Img from "@/components/Img";
 import PageHero from "@/components/PageHero";
+import HomeResults from "@/components/home/HomeResults";
 import PatientStories from "@/components/home/PatientStories";
 import { caseById, getContent, tpl, ui, type Doctor } from "@/lib/content-i18n";
 import { localizeHref, localizePath, type Locale } from "@/lib/i18n";
@@ -167,8 +167,9 @@ export default function DoctorProfile({
   locale?: Locale;
 }) {
   const t = ui(locale);
-  const { doctors, stories } = getContent(locale);
+  const { doctors, stories, cases } = getContent(locale);
   const doctorStories = stories.filter((s) => s.doctor === doctor.name);
+  const doctorCases = profile.caseIds.map((id) => caseById(locale, id));
   const name = profile.display;
   const others = doctors.filter((d) => d.slug !== doctor.slug);
 
@@ -323,16 +324,11 @@ export default function DoctorProfile({
               {t.doctor.allResults}
             </Link>
           </div>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {profile.caseIds.map((id) => caseById(locale, id)).map((c) => (
-              <CaseCard
-                key={c.id}
-                c={c}
-                locale={locale}
-                sizes="(min-width: 1440px) 384px, (min-width: 1024px) 28vw, (min-width: 640px) 46vw, 92vw"
-              />
-            ))}
-          </div>
+          <HomeResults
+            cases={doctorCases}
+            types={cases.types.filter((ty) => doctorCases.some((c) => c.type === ty))}
+            locale={locale}
+          />
         </section>
       )}
 
