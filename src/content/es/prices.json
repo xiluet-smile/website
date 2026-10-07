@@ -4,7 +4,7 @@
       "id": "signature-veneers",
       "kicker": "Carillas de porcelana",
       "name": "Diseño de sonrisa",
-      "price": "$6,000",
+      "price": "$5,999",
       "sub": "20 carillas de porcelana",
       "badge": "La más elegida",
       "features": [
@@ -32,7 +32,7 @@
       "id": "complete-restoration",
       "kicker": "Coronas, puentes y carillas",
       "name": "Transformación de sonrisa",
-      "price": "$7,000",
+      "price": "$6,999",
       "sub": "20 restauraciones dentales",
       "badge": "",
       "features": [
@@ -59,7 +59,7 @@
     {
       "id": "full-mouth-reconstruction",
       "kicker": "Boca completa",
-      "name": "Restauración bucal completa",
+      "name": "Reconstrucción bucal completa",
       "price": "$10,000",
       "sub": "rehabilitación completa",
       "badge": "",
@@ -87,7 +87,7 @@
     {
       "id": "all-on-x-fixed-arch",
       "kicker": "Implantes",
-      "name": "Arcada fija All-on-X",
+      "name": "Arcadas fijas All-on-X",
       "price": "$10,000",
       "sub": "por arcada · $9,000 en efectivo",
       "badge": "Precio en efectivo",
@@ -141,7 +141,7 @@
       "n": "02",
       "title": "Restauradora",
       "sub": "Dientes individuales",
-      "note": "Las coronas y los puentes tienen 50% de descuento ($500) cuando se hacen junto con tu diseño de sonrisa. El paquete de $6,000 cubre un juego completo de 20 carillas.",
+      "note": "Las coronas y los puentes tienen 50% de descuento ($500) cuando se hacen junto con tu diseño de sonrisa. El paquete de $5,999 cubre un juego completo de 20 carillas.",
       "items": [
         {
           "name": "Empaste",

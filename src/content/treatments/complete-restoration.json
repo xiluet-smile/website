@@ -7,7 +7,7 @@
     "procedureType": "http://schema.org/NoninvasiveProcedure"
   },
   "hero": {
-    "definition": "Smile Makeover with crowns, bridges and veneers replaces or rebuilds up to 20 teeth with porcelain crowns, bridges or veneers, planned together so color, shape and bite match. At Xiluet Smiles in Miami the package costs $7,000, includes a professional cleaning and X-rays, is delivered in 5 business days and carries a 5-year written warranty.",
+    "definition": "Smile Makeover with crowns, bridges and veneers replaces or rebuilds up to 20 teeth with porcelain crowns, bridges or veneers, planned together so color, shape and bite match. At Xiluet Smiles in Miami the package costs $6,999, includes a professional cleaning and X-rays, is delivered in 5 business days and carries a 5-year written warranty.",
     "lead": "Up to 20 crowns, bridges or veneers from one plan and one in-house lab. Delivered in 5 business days in Miami, or 3 with rush delivery, with a 5-year warranty in writing.",
     "secondaryCta": "See your week in Miami",
     "stats": [
@@ -138,7 +138,7 @@
   "price": {
     "eyebrow": "Cost",
     "title": "One price for 20 restorations, in writing",
-    "body": "Send photos and a doctor writes your estimate within 6 hours. Individual crowns and bridges are $500 each when done with your smile design, veneers $1,000; the $7,000 package covers a full set of 20. Deep cleaning and other procedures are quoted separately, in writing, before anything starts.",
+    "body": "Send photos and a doctor writes your estimate within 6 hours. Individual crowns and bridges are $500 each when done with your smile design, veneers $1,000; the $6,999 package covers a full set of 20. Deep cleaning and other procedures are quoted separately, in writing, before anything starts.",
     "lendersLabel": "Pay over time with",
     "compareLabel": "Compare all packages →",
     "card": {
@@ -184,7 +184,7 @@
       },
       {
         "q": "Can it be done in 3 days?",
-        "a": "Yes. Rush delivery in 3 business days is $10,000 instead of $7,000, because the lab works on your case exclusively. Most patients choose the standard 5-day schedule.",
+        "a": "Yes. Rush delivery in 3 business days is $10,000 instead of $6,999, because the lab works on your case exclusively. Most patients choose the standard 5-day schedule.",
         "doc": "Dr. Roger Ramos Navarro, DMD"
       }
     ]

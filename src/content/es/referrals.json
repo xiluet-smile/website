@@ -2,7 +2,7 @@
   "_note": "TODO(clinic): the $500 referral bonus is confirmed; the conditions (when it is paid, e.g. after the referred patient's treatment, and how) are not. Partnership types and copy also need confirmation.",
   "referrals": {
     "eyebrow": "Referidos",
-    "intro": "La mayoría de nuestros pacientes llegan por alguien que ya se hizo la sonrisa aquí. Si un amigo o familiar está pensando en carillas, un diseño de sonrisa o una restauración bucal completa, envíanos su nombre y nosotros nos encargamos: una evaluación gratuita por fotos, un presupuesto por escrito en menos de 6 horas y un crédito de $500 para tu propio tratamiento cuando el suyo se complete.",
+    "intro": "La mayoría de nuestros pacientes llegan por alguien que ya se hizo la sonrisa aquí. Si un amigo o familiar está pensando en carillas, un diseño de sonrisa o una reconstrucción bucal completa, envíanos su nombre y nosotros nos encargamos: una evaluación gratuita por fotos, un presupuesto por escrito en menos de 6 horas y un crédito de $500 para tu propio tratamiento cuando el suyo se complete.",
     "formTitle": "Refiere a alguien",
     "formIntro": "Dinos a quién contactar y cómo. Solo nos comunicamos una vez, y solo con la persona que refieres.",
     "messageLabel": "¿A quién refieres?",
@@ -33,7 +33,7 @@
   },
   "partnerships": {
     "eyebrow": "Alianzas",
-    "intro": "Xiluet Smiles trabaja con dentistas generales, especialistas, clínicas en el extranjero y empresas de turismo y hospitalidad en Miami. Si tus pacientes o clientes podrían necesitar un diseño de sonrisa, carillas de porcelana, una restauración bucal completa o All-on-X, cuéntanos sobre tu consultorio o negocio y un doctor te contactará.",
+    "intro": "Xiluet Smiles trabaja con dentistas generales, especialistas, clínicas en el extranjero y empresas de turismo y hospitalidad en Miami. Si tus pacientes o clientes podrían necesitar un diseño de sonrisa, carillas de porcelana, una reconstrucción bucal completa o All-on-X, cuéntanos sobre tu consultorio o negocio y un doctor te contactará.",
     "formTitle": "Cuéntanos sobre tu consultorio o negocio",
     "formIntro": "Con un mensaje corto basta. Respondemos en pocas horas durante el horario de oficina, en inglés o español.",
     "messageLabel": "Sobre tu consultorio o negocio",

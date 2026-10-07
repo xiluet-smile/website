@@ -7,21 +7,21 @@
       "items": [
         {
           "t": "Smile Design",
-          "d": "20 porcelain veneers, $6,000",
+          "d": "20 porcelain veneers, $5,999",
           "href": "/porcelain-veneers-miami"
         },
         {
           "t": "Smile Makeover",
-          "d": "Crowns, bridges and veneers, $7,000",
+          "d": "20 porcelain veneers, crowns & bridges, $6,999",
           "href": "/complete-restoration-miami"
         },
         {
-          "t": "Full Mouth Restoration",
+          "t": "Full Mouth Reconstruction",
           "d": "Every tooth planned together, $10,000",
           "href": "/full-mouth-reconstruction-miami"
         },
         {
-          "t": "All-on-X Fixed Arch",
+          "t": "All-on-X Fixed Arches",
           "d": "Up to 6 implants per arch, $10,000",
           "href": "/all-on-x-dental-implants-miami"
         }
@@ -147,11 +147,11 @@
           "href": "/complete-restoration-miami"
         },
         {
-          "label": "Full Mouth Restoration",
+          "label": "Full Mouth Reconstruction",
           "href": "/full-mouth-reconstruction-miami"
         },
         {
-          "label": "All-on-X Fixed Arch",
+          "label": "All-on-X Fixed Arches",
           "href": "/all-on-x-dental-implants-miami"
         },
         {

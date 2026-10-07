@@ -1,19 +1,19 @@
 {
   "path": "/full-mouth-reconstruction-miami",
   "packageId": "full-mouth-reconstruction",
-  "breadcrumb": "Full Mouth Restoration",
+  "breadcrumb": "Full Mouth Reconstruction",
   "schema": {
-    "name": "Full Mouth Restoration",
+    "name": "Full Mouth Reconstruction",
     "procedureType": "http://schema.org/NoninvasiveProcedure"
   },
   "hero": {
-    "definition": "Full mouth restoration rebuilds all of your teeth with crowns, bridges and veneers planned as one case, so the bite works and the smile looks natural. At Xiluet Smiles in Miami it costs $10,000, takes 7 business days across four visits, and includes a 5-year written warranty.",
+    "definition": "Full mouth reconstruction rebuilds all of your teeth with crowns, bridges and veneers planned as one case, so the bite works and the smile looks natural. At Xiluet Smiles in Miami it costs $10,000, takes 7 business days across four visits, and includes a 5-year written warranty.",
     "lead": "Crowns, bridges and veneers planned together so your bite works and your smile looks natural. Delivered in 7 business days in Miami, with a 5-year warranty in writing.",
     "secondaryCta": "See the two-week plan",
     "stats": [
       {
         "kind": "price",
-        "label": "full mouth restoration"
+        "label": "full mouth reconstruction"
       },
       {
         "kind": "text",
@@ -32,8 +32,8 @@
     ],
     "image": {
       "src": "treatment-full-mouth.jpg",
-      "alt": "Man laughing freely after full mouth restoration",
-      "caption": "Full mouth restoration · Every tooth planned together · 7 business days"
+      "alt": "Man laughing freely after full mouth reconstruction",
+      "caption": "Full mouth reconstruction · Every tooth planned together · 7 business days"
     }
   },
   "candidates": {
@@ -127,7 +127,7 @@
   "results": {
     "title": "Reconstruction results",
     "linkLabel": "All cases →",
-    "label": "Full mouth restoration",
+    "label": "Full mouth reconstruction",
     "caseIds": [
       "BA18",
       "BA11",
@@ -143,7 +143,7 @@
     "compareLabel": "Compare all packages →",
     "card": {
       "title": "20 dental restorations",
-      "sub": "Full mouth restoration",
+      "sub": "Full mouth reconstruction",
       "badge": "Complete",
       "pricePrefix": null,
       "priceSuffix": null,
