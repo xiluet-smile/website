@@ -62,7 +62,7 @@ const uiEn = {
   preferToTalk: "Prefer to talk?",
   /** Shared closing panel (Cost, Results, Blog, Financing, Clinic, Out of state, Doctors). */
   photoCta: {
-    heading: "Start with photos. A doctor replies within {hours} hours.",
+    heading: "Start with photos.",
     body: "Free, no visit needed. Written estimate included.",
     cardTitle: "Free photo evaluation",
     cardBody: "Photos of your smile, from your phone. Takes 2 minutes.",
@@ -75,7 +75,7 @@ const uiEn = {
     switchTo: "Español",
   },
   footer: {
-    heading: "Start with photos. A doctor replies within {hours} hours.",
+    heading: "Start with photos.",
     body: "Free, no visit needed. Written estimate and financing options included.",
     nav: "Footer",
     legal: "Individual results vary. Financing subject to credit approval.",
@@ -85,7 +85,7 @@ const uiEn = {
     title: "Page not found",
     lead: "This address does not match a page on our site.",
     linksAria: "Helpful links",
-    links: ["Home", "Porcelain Veneers", "Before and after", "Free photo evaluation", "Contact"],
+    links: ["Home", "Smile Design", "Before and after", "Free photo evaluation", "Contact"],
   },
   homePage: {
     heroCta: "Get your free photo evaluation",
@@ -153,7 +153,7 @@ const uiEn = {
     openMaps: "Open in Google Maps →",
     mapTitle: "Map to Xiluet Smiles",
     whatsappUs: "WhatsApp us",
-    ctaTitle: "Start with photos. A doctor replies within 6 hours.",
+    ctaTitle: "Start with photos.",
     ctaBody:
       "Free, no visit needed. You get a doctor's plan and a written estimate. Your dates are only reserved once you decide, with a ${deposit} deposit applied to treatment.",
     ctaCardBody: "5 short questions and 2 photos of your teeth. About 2 minutes.",
@@ -370,7 +370,7 @@ const uiEs: UiStrings = {
   getDirections: "Cómo llegar →",
   preferToTalk: "¿Prefieres hablar?",
   photoCta: {
-    heading: "Empieza con fotos. Un doctor responde en menos de {hours} horas.",
+    heading: "Empieza con fotos.",
     body: "Gratis, sin visita. Incluye presupuesto por escrito.",
     cardTitle: "Evaluación gratuita por fotos",
     cardBody: "Fotos de tu sonrisa, desde tu teléfono. Toma 2 minutos.",
@@ -383,7 +383,7 @@ const uiEs: UiStrings = {
     switchTo: "English",
   },
   footer: {
-    heading: "Empieza con fotos. Un doctor responde en menos de {hours} horas.",
+    heading: "Empieza con fotos.",
     body: "Gratis, sin visita. Incluye presupuesto por escrito y opciones de financiamiento.",
     nav: "Pie de página",
     legal: "Los resultados individuales varían. Financiamiento sujeto a aprobación de crédito.",
@@ -393,7 +393,7 @@ const uiEs: UiStrings = {
     title: "Página no encontrada",
     lead: "Esta dirección no corresponde a ninguna página de nuestro sitio.",
     linksAria: "Enlaces útiles",
-    links: ["Inicio", "Carillas de porcelana", "Antes y después", "Evaluación gratuita por fotos", "Contacto"],
+    links: ["Inicio", "Diseño de sonrisa", "Antes y después", "Evaluación gratuita por fotos", "Contacto"],
   },
   homePage: {
     heroCta: "Obtén tu evaluación gratuita por fotos",
@@ -461,7 +461,7 @@ const uiEs: UiStrings = {
     openMaps: "Abrir en Google Maps →",
     mapTitle: "Mapa a Xiluet Smiles",
     whatsappUs: "Escríbenos por WhatsApp",
-    ctaTitle: "Empieza con fotos. Un doctor responde en menos de 6 horas.",
+    ctaTitle: "Empieza con fotos.",
     ctaBody:
       "Gratis, sin visita. Recibes el plan de un doctor y un presupuesto por escrito. Tus fechas solo se reservan cuando tú decidas, con un depósito de ${deposit} que se aplica al tratamiento.",
     ctaCardBody: "5 preguntas cortas y 2 fotos de tus dientes. Unos 2 minutos.",

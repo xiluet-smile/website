@@ -7,11 +7,11 @@
     "breadcrumb": null
   },
   "/porcelain-veneers-miami": {
-    "title": "Porcelain Veneers Miami $6,000 | 20 Veneers, 0.3 mm, 1 Week",
+    "title": "Smile Design Miami $6,000 | 20 Porcelain Veneers, 0.3 mm, 1 Week",
     "description": "20 porcelain veneers for $6,000 in Miami. Minimal prep, design you approve first, delivered in one week. 5-year written warranty.",
     "ogImage": "clinic-lobby.jpg",
     "h1": "Porcelain veneers as thin as 0.3 mm, designed around your face.",
-    "breadcrumb": "Porcelain Veneers Miami $6,000"
+    "breadcrumb": "Smile Design Miami $6,000"
   },
   "/smile-design-miami": {
     "title": "Smile Design Miami | Designed for Your Face | Xiluet Smiles",
@@ -21,18 +21,18 @@
     "breadcrumb": "Smile Design Miami"
   },
   "/complete-restoration-miami": {
-    "title": "Smile Design with Crowns, Bridges & Veneers Miami | $7,000",
+    "title": "Smile Makeover with Crowns, Bridges & Veneers Miami | $7,000",
     "description": "Up to 20 porcelain crowns, bridges or veneers planned as one smile, delivered in 5 business days in Miami. $7,000 with cleaning and X-rays, 5-year written warranty.",
     "ogImage": "clinic-lobby.jpg",
     "h1": "Crowns, bridges and veneers, rebuilt as one smile.",
     "breadcrumb": "Crowns, Bridges and Veneers"
   },
   "/full-mouth-reconstruction-miami": {
-    "title": "Full Mouth Reconstruction Miami | $10,000, 7 Business Days",
+    "title": "Full Mouth Restoration Miami | $10,000, 7 Business Days",
     "description": "Rebuild every tooth with crowns, bridges and veneers planned together. 7 business days in Miami, one written price of $10,000, 5-year warranty.",
     "ogImage": "clinic-lobby.jpg",
     "h1": "Rebuild every tooth. Eat, speak and smile without thinking about it.",
-    "breadcrumb": "Full Mouth Reconstruction Miami"
+    "breadcrumb": "Full Mouth Restoration Miami"
   },
   "/all-on-x-dental-implants-miami": {
     "title": "All-on-X Dental Implants Miami | $10,000 per Arch, Same-Day Teeth",
@@ -113,7 +113,7 @@
   },
   "/financing/lendingclub": {
     "title": "LendingClub Dental Loans | Xiluet Smiles Miami",
-    "description": "Fixed-rate personal loans up to $65,000 for full mouth reconstruction and All-on-X at Xiluet Smiles, Miami.",
+    "description": "Fixed-rate personal loans up to $65,000 for full mouth restoration and All-on-X at Xiluet Smiles, Miami.",
     "ogImage": "clinic-lobby.jpg",
     "h1": "LendingClub. One fixed payment, no surprises, up to $65,000.",
     "breadcrumb": "LendingClub Dental Loans"
@@ -127,7 +127,7 @@
   },
   "/before-and-after": {
     "title": "Veneers Before and After | Real Miami Patients | Xiluet Smiles",
-    "description": "Forty real Xiluet patients, unretouched, plus video stories. Filter by veneers, restorations, full mouth reconstruction or All-on-X.",
+    "description": "Forty real Xiluet patients, unretouched, plus video stories. Filter by veneers, restorations, full mouth restoration or All-on-X.",
     "ogImage": "clinic-lobby.jpg",
     "h1": "Forty real patients. Before and after.",
     "breadcrumb": "Veneers Before and After"
@@ -214,10 +214,10 @@
     "noindex": false
   },
   "/blog/all-on-4-vs-all-on-6-vs-full-mouth-reconstruction": {
-    "title": "All-on-4 vs All-on-6 vs Full Mouth Reconstruction: Cost and Data",
-    "description": "Survival data for All-on-4 and All-on-6, when full mouth reconstruction is the better plan, what Miami practices charge per arch, and how Xiluet does it from $10,000.",
+    "title": "All-on-4 vs All-on-6 vs Full Mouth Restoration: Cost and Data",
+    "description": "Survival data for All-on-4 and All-on-6, when full mouth restoration is the better plan, what Miami practices charge per arch, and how Xiluet does it from $10,000.",
     "ogImage": "blog-senior-laugh.jpg",
-    "h1": "All-on-4 vs All-on-6 vs full mouth reconstruction: cost and what the data shows",
+    "h1": "All-on-4 vs All-on-6 vs full mouth restoration: cost and what the data shows",
     "breadcrumb": "All-on-4 vs All-on-6 vs reconstruction"
   },
   "/blog/composite-vs-porcelain-veneers-vs-lumineers": {

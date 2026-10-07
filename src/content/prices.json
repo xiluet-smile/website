@@ -2,8 +2,8 @@
   "packages": [
     {
       "id": "signature-veneers",
-      "kicker": "Smile design",
-      "name": "Porcelain Veneers",
+      "kicker": "Porcelain Veneers",
+      "name": "Smile Design",
       "price": "$6,000",
       "sub": "20 porcelain veneers",
       "badge": "Most chosen",
@@ -31,7 +31,7 @@
     {
       "id": "complete-restoration",
       "kicker": "Crowns, Bridges and Veneers",
-      "name": "Smile Design",
+      "name": "Smile Makeover",
       "price": "$7,000",
       "sub": "20 dental restorations",
       "badge": "",
@@ -59,7 +59,7 @@
     {
       "id": "full-mouth-reconstruction",
       "kicker": "Full mouth",
-      "name": "Full Mouth Reconstruction",
+      "name": "Full Mouth Restoration",
       "price": "$10,000",
       "sub": "complete rehabilitation",
       "badge": "",

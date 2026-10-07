@@ -2,7 +2,7 @@
   "_note": "TODO(clinic): partner types for the Partnerships page still need confirming.",
   "referrals": {
     "eyebrow": "Referrals",
-    "intro": "Most of our patients come from someone who already had their smile done here. If a friend or family member is thinking about veneers, a smile design or full mouth reconstruction, send us their name and we take it from there: a free photo evaluation, a written estimate within 6 hours, and a $500 credit toward your own treatment once theirs is completed.",
+    "intro": "Most of our patients come from someone who already had their smile done here. If a friend or family member is thinking about veneers, a smile design or full mouth restoration, send us their name and we take it from there: a free photo evaluation, a written estimate within 6 hours, and a $500 credit toward your own treatment once theirs is completed.",
     "formTitle": "Refer someone",
     "formIntro": "Tell us who to contact and how. We only reach out once, and only to the person you refer.",
     "messageLabel": "Who are you referring?",
@@ -33,7 +33,7 @@
   },
   "partnerships": {
     "eyebrow": "Partnerships",
-    "intro": "Xiluet Smiles works with general dentists, specialists, clinics abroad, and travel and hospitality businesses in Miami. If your patients or clients could use a smile design, porcelain veneers, full mouth reconstruction or All-on-X, tell us about your practice or business and a doctor will follow up.",
+    "intro": "Xiluet Smiles works with general dentists, specialists, clinics abroad, and travel and hospitality businesses in Miami. If your patients or clients could use a smile design, porcelain veneers, full mouth restoration or All-on-X, tell us about your practice or business and a doctor will follow up.",
     "formTitle": "Tell us about your practice or business",
     "formIntro": "A short message is enough. We reply within a few hours during office hours, in English or Spanish.",
     "messageLabel": "About your practice or business",

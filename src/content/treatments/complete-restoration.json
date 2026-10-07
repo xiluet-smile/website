@@ -3,11 +3,11 @@
   "packageId": "complete-restoration",
   "breadcrumb": "Crowns, Bridges and Veneers",
   "schema": {
-    "name": "Smile Design with crowns, bridges and veneers",
+    "name": "Smile Makeover with crowns, bridges and veneers",
     "procedureType": "http://schema.org/NoninvasiveProcedure"
   },
   "hero": {
-    "definition": "Smile Design with crowns, bridges and veneers replaces or rebuilds up to 20 teeth with porcelain crowns, bridges or veneers, planned together so color, shape and bite match. At Xiluet Smiles in Miami the package costs $7,000, includes a professional cleaning and X-rays, is delivered in 5 business days and carries a 5-year written warranty.",
+    "definition": "Smile Makeover with crowns, bridges and veneers replaces or rebuilds up to 20 teeth with porcelain crowns, bridges or veneers, planned together so color, shape and bite match. At Xiluet Smiles in Miami the package costs $7,000, includes a professional cleaning and X-rays, is delivered in 5 business days and carries a 5-year written warranty.",
     "lead": "Up to 20 crowns, bridges or veneers from one plan and one in-house lab. Delivered in 5 business days in Miami, or 3 with rush delivery, with a 5-year warranty in writing.",
     "secondaryCta": "See your week in Miami",
     "stats": [
@@ -190,7 +190,7 @@
     ]
   },
   "cta": {
-    "title": "Start with photos. A doctor replies within 6 hours.",
+    "title": "Start with photos.",
     "body": "Free, no visit needed. Written estimate included.",
     "cardTitle": "Free photo evaluation",
     "cardBody": "Two photos of your smile, from your phone. Takes 2 minutes.",

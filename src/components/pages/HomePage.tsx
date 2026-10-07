@@ -513,17 +513,23 @@ export default function HomePage({ locale = "en" }: { locale?: Locale }) {
 
       {/* Why trust */}
       <section className="defer-render wrap pt-16 lg:pt-24">
-        <div className="dark-panel flex flex-col gap-5 rounded-[20px] px-6 py-8 lg:grid lg:grid-cols-[minmax(0,.9fr)_minmax(0,1.1fr)] lg:items-center lg:gap-10 lg:px-11 lg:py-10">
-          <div className="flex max-w-[460px] flex-col gap-3.5">
+        <div className="dark-panel flex flex-col gap-7 rounded-[20px] px-6 py-8 lg:grid lg:grid-cols-[minmax(0,.85fr)_minmax(0,1.15fr)] lg:items-center lg:gap-14 lg:px-12 lg:py-12">
+          <div className="flex max-w-[460px] flex-col gap-4">
             <span className="eyebrow text-gold">{t.trustEyebrow}</span>
             <h2 className="m-0 font-serif text-[32px] leading-[1.15] font-normal text-pretty lg:text-[38px] lg:leading-[1.08]">
               {t.trustTitle}
             </h2>
-            <p className="m-0 text-base leading-normal text-pretty text-on-dark-muted">
+            <p className="m-0 text-base leading-normal text-pretty text-on-dark-muted lg:text-lg">
               {t.trustLead}
             </p>
+            <Link
+              href={localizePath("/before-and-after", locale)}
+              className="mt-1 inline-flex min-h-11 items-center gap-2 self-start font-semibold text-gold lg:min-h-0"
+            >
+              {u.doctor.seeResults}
+            </Link>
           </div>
-          <ul className="m-0 grid list-none grid-cols-2 gap-3 p-0 lg:gap-3.5">
+          <ul className="m-0 grid list-none grid-cols-2 gap-3 p-0 lg:gap-4">
             {[
               {
                 icon: "shield",
@@ -556,21 +562,25 @@ export default function HomePage({ locale = "en" }: { locale?: Locale }) {
             ].map((x) => (
               <li
                 key={x.label}
-                className="relative flex min-h-[150px] flex-col gap-4 overflow-hidden rounded-2xl border border-[rgba(255,255,255,.28)] bg-[linear-gradient(160deg,rgba(255,253,248,.22)_0%,rgba(255,253,248,.1)_100%)] px-5 pt-[18px] pb-5 shadow-[inset_0_1px_0_rgba(255,255,255,.35),inset_0_-1px_0_rgba(255,255,255,.08),0_16px_40px_rgba(0,0,0,.25)] backdrop-blur-[22px] backdrop-saturate-[1.4] lg:min-h-[164px]"
+                className="relative flex flex-col gap-4 overflow-hidden rounded-2xl border border-[rgba(255,255,255,.28)] bg-[linear-gradient(160deg,rgba(255,253,248,.22)_0%,rgba(255,253,248,.1)_100%)] p-5 shadow-[inset_0_1px_0_rgba(255,255,255,.35),inset_0_-1px_0_rgba(255,255,255,.08),0_16px_40px_rgba(0,0,0,.25)] backdrop-blur-[22px] backdrop-saturate-[1.4] lg:gap-5 lg:p-6"
               >
                 <span
                   aria-hidden="true"
                   className="absolute inset-x-0 top-0 h-0.5 bg-[linear-gradient(90deg,rgba(205,177,128,0)_0%,#CDB180_40%,rgba(247,244,238,.9)_70%,rgba(247,244,238,0)_100%)]"
                 />
-                <span className="flex items-center gap-2.5 text-[13px] font-semibold tracking-[.04em] text-on-dark-muted uppercase">
-                  <span className="block h-[18px] w-[18px]">
-                    <LineIcon name={x.icon as LineIconName} tone="gold" />
+                <span className="flex items-center gap-3">
+                  <span className="grid h-9 w-9 flex-none place-items-center rounded-full border border-[rgba(205,177,128,.45)] bg-[rgba(205,177,128,.14)]">
+                    <span className="block h-[18px] w-[18px]">
+                      <LineIcon name={x.icon as LineIconName} tone="gold" />
+                    </span>
                   </span>
-                  {x.label}
+                  <span className="text-[12px] leading-tight font-semibold tracking-[.08em] text-on-dark-muted uppercase">
+                    {x.label}
+                  </span>
                 </span>
-                <span className="mt-auto flex min-w-0 flex-col gap-1.5">
+                <span className="flex min-w-0 flex-col gap-2">
                   <span
-                    className={`flex flex-wrap items-baseline gap-x-2 font-serif text-on-dark ${x.small ? "text-[24px] leading-[1.1] lg:text-[26px]" : "text-[34px] leading-none tracking-[-.02em] lg:text-[38px]"}`}
+                    className={`flex flex-wrap items-baseline gap-x-2 gap-y-1 font-serif text-on-dark ${x.small ? "text-[26px] leading-[1.1] lg:text-[30px]" : "text-[36px] leading-none tracking-[-.02em] lg:text-[44px]"}`}
                   >
                     {x.big}
                     {x.unit && (
@@ -578,16 +588,16 @@ export default function HomePage({ locale = "en" }: { locale?: Locale }) {
                         {x.unit}
                       </span>
                     )}
+                    {x.stars && <Stars className="text-[12px] text-gold" />}
                   </span>
                   {x.gold && (
-                    <span className="flex items-center gap-1.5 text-xs font-semibold text-gold">
-                      <span className="inline-block h-[3px] w-2.5 flex-none rounded-sm bg-gold" />
+                    <span className="flex items-center gap-2 text-[13px] font-semibold text-gold">
+                      <span className="inline-block h-[3px] w-3 flex-none rounded-sm bg-gold" />
                       {x.gold}
                     </span>
                   )}
-                  {x.stars && <Stars className="text-[11px] text-gold" />}
                   {x.sub && (
-                    <span className="text-xs text-on-dark-muted">{x.sub}</span>
+                    <span className="text-[13px] leading-snug text-on-dark-muted">{x.sub}</span>
                   )}
                 </span>
               </li>

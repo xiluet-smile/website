@@ -6,17 +6,17 @@
       "href": "/porcelain-veneers-miami",
       "items": [
         {
-          "t": "Porcelain Veneers",
+          "t": "Smile Design",
           "d": "20 porcelain veneers, $6,000",
           "href": "/porcelain-veneers-miami"
         },
         {
-          "t": "Smile Design",
-          "d": "You approve the design first, $6,000",
-          "href": "/smile-design-miami"
+          "t": "Smile Makeover",
+          "d": "Crowns, bridges and veneers, $7,000",
+          "href": "/complete-restoration-miami"
         },
         {
-          "t": "Full Mouth Reconstruction",
+          "t": "Full Mouth Restoration",
           "d": "Every tooth planned together, $10,000",
           "href": "/full-mouth-reconstruction-miami"
         },
@@ -139,15 +139,15 @@
       "title": "Treatments",
       "links": [
         {
-          "label": "Porcelain Veneers",
+          "label": "Smile Design",
           "href": "/porcelain-veneers-miami"
         },
         {
-          "label": "Smile Design",
-          "href": "/smile-design-miami"
+          "label": "Smile Makeover",
+          "href": "/complete-restoration-miami"
         },
         {
-          "label": "Full Mouth Reconstruction",
+          "label": "Full Mouth Restoration",
           "href": "/full-mouth-reconstruction-miami"
         },
         {

@@ -3,11 +3,11 @@
   "packageId": "complete-restoration",
   "breadcrumb": "Coronas, puentes y carillas",
   "schema": {
-    "name": "Diseño de sonrisa con coronas, puentes y carillas",
+    "name": "Transformación de sonrisa con coronas, puentes y carillas",
     "procedureType": "http://schema.org/NoninvasiveProcedure"
   },
   "hero": {
-    "definition": "El Diseño de sonrisa con coronas, puentes y carillas reemplaza o reconstruye hasta 20 dientes con coronas, puentes o carillas de porcelana, planificados en conjunto para que el color, la forma y la mordida coincidan. En Xiluet Smiles en Miami el paquete cuesta $7,000, incluye limpieza profesional y radiografías, se entrega en 5 días hábiles y tiene garantía de 5 años por escrito.",
+    "definition": "El Transformación de sonrisa con coronas, puentes y carillas reemplaza o reconstruye hasta 20 dientes con coronas, puentes o carillas de porcelana, planificados en conjunto para que el color, la forma y la mordida coincidan. En Xiluet Smiles en Miami el paquete cuesta $7,000, incluye limpieza profesional y radiografías, se entrega en 5 días hábiles y tiene garantía de 5 años por escrito.",
     "lead": "Hasta 20 coronas, puentes o carillas con un solo plan y un laboratorio propio. Entrega en 5 días hábiles en Miami, o en 3 con entrega urgente, con garantía de 5 años por escrito.",
     "secondaryCta": "Mira tu semana en Miami",
     "stats": [
@@ -190,7 +190,7 @@
     ]
   },
   "cta": {
-    "title": "Empieza con fotos. Un doctor te responde en menos de 6 horas.",
+    "title": "Empieza con fotos.",
     "body": "Gratis, sin necesidad de visita. Presupuesto por escrito incluido.",
     "cardTitle": "Evaluación gratuita por fotos",
     "cardBody": "Dos fotos de tu sonrisa, desde tu celular. Toma 2 minutos.",

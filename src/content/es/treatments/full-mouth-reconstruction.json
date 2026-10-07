@@ -1,19 +1,19 @@
 {
   "path": "/full-mouth-reconstruction-miami",
   "packageId": "full-mouth-reconstruction",
-  "breadcrumb": "Reconstrucción bucal completa",
+  "breadcrumb": "Restauración bucal completa",
   "schema": {
-    "name": "Reconstrucción bucal completa",
+    "name": "Restauración bucal completa",
     "procedureType": "http://schema.org/NoninvasiveProcedure"
   },
   "hero": {
-    "definition": "La reconstrucción bucal completa reconstruye todos tus dientes con coronas, puentes y carillas planificados como un solo caso, para que la mordida funcione y la sonrisa se vea natural. En Xiluet Smiles en Miami cuesta $10,000, toma 7 días hábiles en cuatro visitas e incluye garantía de 5 años por escrito.",
+    "definition": "La restauración bucal completa reconstruye todos tus dientes con coronas, puentes y carillas planificados como un solo caso, para que la mordida funcione y la sonrisa se vea natural. En Xiluet Smiles en Miami cuesta $10,000, toma 7 días hábiles en cuatro visitas e incluye garantía de 5 años por escrito.",
     "lead": "Coronas, puentes y carillas planificados en conjunto para que tu mordida funcione y tu sonrisa se vea natural. Entregado en 7 días hábiles en Miami, con garantía de 5 años por escrito.",
     "secondaryCta": "Mira el plan de dos semanas",
     "stats": [
       {
         "kind": "price",
-        "label": "reconstrucción bucal completa"
+        "label": "restauración bucal completa"
       },
       {
         "kind": "text",
@@ -32,8 +32,8 @@
     ],
     "image": {
       "src": "treatment-full-mouth.jpg",
-      "alt": "Hombre riendo libremente tras una reconstrucción bucal completa",
-      "caption": "Reconstrucción bucal completa · Cada diente planificado en conjunto · 7 días hábiles"
+      "alt": "Hombre riendo libremente tras una restauración bucal completa",
+      "caption": "Restauración bucal completa · Cada diente planificado en conjunto · 7 días hábiles"
     }
   },
   "candidates": {
@@ -127,7 +127,7 @@
   "results": {
     "title": "Resultados de reconstrucción",
     "linkLabel": "Todos los casos →",
-    "label": "Reconstrucción bucal completa",
+    "label": "Restauración bucal completa",
     "caseIds": [
       "BA18",
       "BA11",
@@ -143,7 +143,7 @@
     "compareLabel": "Compara todos los paquetes →",
     "card": {
       "title": "20 restauraciones dentales",
-      "sub": "Reconstrucción bucal completa",
+      "sub": "Restauración bucal completa",
       "badge": "Completo",
       "pricePrefix": null,
       "priceSuffix": null,
@@ -190,7 +190,7 @@
     ]
   },
   "cta": {
-    "title": "Empieza con fotos. Un doctor te responde en menos de 6 horas.",
+    "title": "Empieza con fotos.",
     "body": "Gratis, sin necesidad de visita. Presupuesto por escrito incluido.",
     "cardTitle": "Evaluación gratuita por fotos",
     "cardBody": "Dos fotos de tu sonrisa, desde tu celular. Toma 2 minutos.",
