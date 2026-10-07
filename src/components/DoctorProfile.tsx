@@ -151,6 +151,9 @@ const certLogos: Record<string, string> = {
   "American Dental Association": "logo-ada.svg",
   "Florida Dental Association": "logo-fda.png",
   "Academy of General Dentistry": "logo-agd.svg",
+  "American Association of Endodontists": "logo-aae.png",
+  "AAFE Botox and dermal fillers": "logo-aafe.png",
+  "AAFE Botox y rellenos dérmicos": "logo-aafe.png",
 };
 
 /** Full doctor profile: hero, focus, education, credentials, results, other doctors, CTA. */
