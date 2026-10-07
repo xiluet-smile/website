@@ -100,5 +100,50 @@
     "treatment": "Transformación de sonrisa",
     "duration": "0:19",
     "doctor": "Dr. Roger Ramos Navarro, DMD"
+  },
+  {
+    "id": "story-10",
+    "source": "https://www.instagram.com/p/DcRDhOkRUqk/",
+    "video": "/videos/stories/story-10.mp4",
+    "poster": "story-10-poster.jpg",
+    "quote": "Si quieres que tus dientes se vean así, ven a Xiluet Smiles.",
+    "name": "Paciente de Xiluet",
+    "treatment": "Transformación de sonrisa · en inglés",
+    "duration": "0:14",
+    "doctor": "Dr. Marta Puentes Marrero, DMD"
+  },
+  {
+    "id": "story-11",
+    "source": "https://www.instagram.com/p/DZ-PDvXRKJ9/",
+    "video": "/videos/stories/story-11.mp4",
+    "poster": "story-11-poster.jpg",
+    "quote": "Se parecen a tus propios dientes. Se va a ver muy bien. Gracias.",
+    "name": "Madre de un paciente de Xiluet",
+    "treatment": "Día de entrega · en inglés",
+    "duration": "0:26",
+    "doctor": "Dr. Gretell Alonso Fiel, DMD"
+  },
+  {
+    "id": "story-12",
+    "source": "https://www.instagram.com/p/DZxXe2Yx6-j/",
+    "video": "/videos/stories/story-12.mp4",
+    "poster": "story-12-poster.jpg",
+    "quote": "Me hiciste ver 100% más hermoso.",
+    "name": "Paciente de Xiluet",
+    "treatment": "Día de entrega · en inglés",
+    "duration": "0:24",
+    "doctor": "Dr. Gretell Alonso Fiel, DMD"
+  },
+  {
+    "id": "story-13",
+    "source": "https://www.instagram.com/p/DZN1daURMek/",
+    "video": "/videos/stories/story-13.mp4",
+    "poster": "story-13-poster.jpg",
+    "quote": "",
+    "title": "Mira cuando se da cuenta. Por esto hacemos lo que hacemos.",
+    "name": "Paciente de Xiluet",
+    "treatment": "Día de entrega",
+    "duration": "0:21",
+    "doctor": "Dr. Marta Puentes Marrero, DMD"
   }
 ]

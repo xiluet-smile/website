@@ -100,5 +100,50 @@
     "treatment": "Smile makeover",
     "duration": "0:19",
     "doctor": "Dr. Roger Ramos Navarro, DMD"
+  },
+  {
+    "id": "story-10",
+    "source": "https://www.instagram.com/p/DcRDhOkRUqk/",
+    "video": "/videos/stories/story-10.mp4",
+    "poster": "story-10-poster.jpg",
+    "quote": "If you want your teeth to look like this, come to Xiluet Smiles.",
+    "name": "Xiluet patient",
+    "treatment": "Smile makeover",
+    "duration": "0:14",
+    "doctor": "Dr. Marta Puentes Marrero, DMD"
+  },
+  {
+    "id": "story-11",
+    "source": "https://www.instagram.com/p/DZ-PDvXRKJ9/",
+    "video": "/videos/stories/story-11.mp4",
+    "poster": "story-11-poster.jpg",
+    "quote": "They look like your own teeth. It's going to look so good. Thank you.",
+    "name": "Xiluet patient's mother",
+    "treatment": "Delivery day",
+    "duration": "0:26",
+    "doctor": "Dr. Gretell Alonso Fiel, DMD"
+  },
+  {
+    "id": "story-12",
+    "source": "https://www.instagram.com/p/DZxXe2Yx6-j/",
+    "video": "/videos/stories/story-12.mp4",
+    "poster": "story-12-poster.jpg",
+    "quote": "You made me look 100% more handsome.",
+    "name": "Xiluet patient",
+    "treatment": "Delivery day",
+    "duration": "0:24",
+    "doctor": "Dr. Gretell Alonso Fiel, DMD"
+  },
+  {
+    "id": "story-13",
+    "source": "https://www.instagram.com/p/DZN1daURMek/",
+    "video": "/videos/stories/story-13.mp4",
+    "poster": "story-13-poster.jpg",
+    "quote": "",
+    "title": "Watch when he realizes. This is what we do it for.",
+    "name": "Xiluet patient",
+    "treatment": "Delivery day",
+    "duration": "0:21",
+    "doctor": "Dr. Marta Puentes Marrero, DMD"
   }
 ]
