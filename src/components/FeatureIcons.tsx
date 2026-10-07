@@ -97,6 +97,39 @@ const icons: Record<string, (p: P) => React.JSX.Element> = {
       <path d="M9.6 11.6l1.7 1.7 3.4-3.6" />
     </Svg>
   ),
+  /** Doctor with a magnifier: a doctor reviews your photos. */
+  review: (p) => (
+    <Svg {...p}>
+      <circle cx="10" cy="9" r="3.2" />
+      <path d="M4.5 19.5c.4-3.2 2.7-5 5.5-5 .9 0 1.7.2 2.4.5" />
+      <circle cx="16.5" cy="15.5" r="3" />
+      <path d="M18.7 17.7l2.3 2.3" />
+    </Svg>
+  ),
+  /** Document with a tooth and lines: the written treatment plan. */
+  plan: (p) => (
+    <Svg {...p}>
+      <path d="M7 3h7l4 4v12.5A1.5 1.5 0 0116.5 21h-9A1.5 1.5 0 016 19.5V4.5A1.5 1.5 0 017.5 3z" />
+      <path d="M14 3v4h4" />
+      <path d="M9 12h6M9 15h6M9 18h4" />
+    </Svg>
+  ),
+  /** Card with coins: financing options. */
+  card: (p) => (
+    <Svg {...p}>
+      <rect x="3" y="6" width="18" height="12" rx="2" />
+      <path d="M3 10h18" />
+      <path d="M7 14.5h3M15 14.5h2" />
+    </Svg>
+  ),
+  /** Calendar with a check: you pick the dates. */
+  calendar: (p) => (
+    <Svg {...p}>
+      <rect x="3.5" y="5" width="17" height="15.5" rx="2" />
+      <path d="M3.5 9.5h17M8 3v4M16 3v4" />
+      <path d="M9.3 15l2 2 3.6-3.8" />
+    </Svg>
+  ),
   /** Two speech bubbles: bilingual team. */
   bilingual: (p) => (
     <Svg {...p}>

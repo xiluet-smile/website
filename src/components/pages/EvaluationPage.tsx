@@ -1,4 +1,5 @@
 import { PhoneIcon } from "@/components/Icons";
+import FeatureIcon from "@/components/FeatureIcons";
 import JsonLd from "@/components/JsonLd";
 import PageHero from "@/components/PageHero";
 import Img from "@/components/Img";
@@ -70,8 +71,13 @@ export default function EvaluationPage({ locale = "en" }: { locale?: Locale }) {
         </h2>
         <ol className="m-0 grid list-none gap-4 p-0 sm:grid-cols-2 lg:grid-cols-4">
           {content.after.map((st) => (
-            <li key={st.n} className="glass-card flex flex-col gap-3.5 rounded-[16px] p-6 lg:min-h-[200px] lg:rounded-[18px] lg:p-7">
-              <span className="text-xs font-semibold tracking-[.14em] text-muted">{st.n}</span>
+            <li key={st.n} className="glass-card flex flex-col gap-3.5 rounded-[16px] p-6 lg:min-h-[220px] lg:rounded-[18px] lg:p-7">
+              <div className="flex items-center justify-between gap-3">
+                <span className="grid h-11 w-11 flex-none place-items-center rounded-full bg-teal text-gold">
+                  <FeatureIcon name={st.icon} plain />
+                </span>
+                <span className="text-xs font-semibold tracking-[.14em] text-muted">{st.n}</span>
+              </div>
               <h3 className="m-0 font-serif text-[21px] leading-[1.2] font-normal text-teal lg:text-[22px]">{tpl(st.t, vars)}</h3>
               <p className="m-0 text-[15px] leading-[1.5] text-body">{tpl(st.d, vars)}</p>
             </li>
