@@ -138,7 +138,7 @@
   "price": {
     "eyebrow": "Cost",
     "title": "One price for the whole mouth, in writing",
-    "body": "Send photos and a doctor writes your estimate within 6 hours. If the exam finds something that must be treated first, you get that in writing too, before anything starts.",
+    "body": "Send photos and a doctor replies with your treatment plan within 6 hours. If the exam finds something that must be treated first, you get that in writing too, before anything starts.",
     "lendersLabel": "Pay over time with",
     "compareLabel": "Compare all packages →",
     "card": {
@@ -174,7 +174,7 @@
       },
       {
         "q": "Do I need implants?",
-        "a": "Not for this package. Missing teeth are replaced with bridges. If implants would serve you better, your doctor says so in the estimate.",
+        "a": "Not for this package. Missing teeth are replaced with bridges. If implants would serve you better, your doctor says so in the treatment plan.",
         "doc": "Dr. Roger Ramos Navarro, DMD"
       },
       {

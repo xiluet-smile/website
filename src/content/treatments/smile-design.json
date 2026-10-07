@@ -139,7 +139,7 @@
   "price": {
     "eyebrow": "Cost",
     "title": "Design, preview and 20 veneers. One written price.",
-    "body": "Send photos and a doctor writes your estimate within 6 hours. The design preview and any changes are included, never billed as extras.",
+    "body": "Send photos and a doctor replies with your treatment plan within 6 hours. The design preview and any changes are included, never billed as extras.",
     "lendersLabel": "Pay over time with",
     "compareLabel": "Compare all packages →",
     "card": {
@@ -180,7 +180,7 @@
       },
       {
         "q": "Do I need all 20 teeth?",
-        "a": "Not always. Some smiles need 8 or 10. Your doctor tells you in the written estimate, and the price changes accordingly.",
+        "a": "Not always. Some smiles need 8 or 10. Your doctor tells you in the treatment plan, and the written estimate changes accordingly.",
         "doc": "Dr. Roger Ramos Navarro, DMD"
       },
       {
