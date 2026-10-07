@@ -38,6 +38,20 @@ export default function PatientStories({
   const t = ui(locale);
   const row = useRef<HTMLUListElement>(null);
   const [playing, setPlaying] = useState<string | null>(null);
+  const videos = useRef<Record<string, HTMLVideoElement | null>>({});
+  const play = (id: string) => {
+    for (const [k, v] of Object.entries(videos.current))
+      if (k !== id && v && !v.paused) v.pause();
+    const v = videos.current[id];
+    if (!v) return;
+    setPlaying(id);
+    v.muted = false;
+    v.play().catch(() => {
+      // Autoplay with sound refused (some mobile browsers): start muted, the controls let the user unmute.
+      v.muted = true;
+      v.play().catch(() => setPlaying(null));
+    });
+  };
   const scroll = (dir: number) =>
     row.current?.scrollBy({ left: dir * 300, behavior: "smooth" });
   const btn =
@@ -84,17 +98,26 @@ export default function PatientStories({
                 key={s.id}
                 className="relative aspect-[9/16] w-[260px] flex-none snap-start overflow-hidden rounded-[20px] border border-[rgba(255,255,255,.35)] bg-teal shadow-[0_16px_40px_rgba(26,26,26,.12)] lg:w-[280px]"
               >
-                {active ? (
-                  <video
-                    src={s.video}
-                    poster={imageInfo(s.poster).src}
-                    autoPlay
-                    playsInline
-                    controls
-                    onEnded={() => setPlaying(null)}
-                    className="absolute inset-0 h-full w-full object-cover"
-                  />
-                ) : (
+                <video
+                  ref={(el) => {
+                    videos.current[s.id] = el;
+                  }}
+                  src={s.video}
+                  poster={imageInfo(s.poster).src}
+                  preload="none"
+                  playsInline
+                  controls={active}
+                  onEnded={() => setPlaying(null)}
+                  onPause={(e) => {
+                    if (
+                      e.currentTarget.ended ||
+                      e.currentTarget.currentTime === 0
+                    )
+                      setPlaying(null);
+                  }}
+                  className={`absolute inset-0 h-full w-full object-cover ${active ? "" : "pointer-events-none opacity-0"}`}
+                />
+                {!active && (
                   <>
                     <Img
                       src={s.poster}
@@ -128,7 +151,7 @@ export default function PatientStories({
                     </div>
                     <button
                       type="button"
-                      onClick={() => setPlaying(s.id)}
+                      onClick={() => play(s.id)}
                       aria-label={`${t.play}: ${s.name}`}
                       className="absolute top-1/2 left-1/2 grid h-16 w-16 -translate-x-1/2 -translate-y-1/2 cursor-pointer place-items-center rounded-full border border-[rgba(247,244,238,.5)] bg-[rgba(247,244,238,.22)] text-on-dark backdrop-blur-md transition hover:bg-[rgba(247,244,238,.35)]"
                     >
