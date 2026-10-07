@@ -77,5 +77,28 @@
     "treatment": "Transformación de sonrisa",
     "duration": "0:13",
     "doctor": "Dr. Marta Puentes Marrero, DMD"
+  },
+  {
+    "id": "story-8",
+    "source": "https://www.instagram.com/p/DduACzDR29y/",
+    "video": "/videos/stories/story-8.mp4",
+    "poster": "story-8-poster.jpg",
+    "quote": "Mira tu sonrisa, es increíble.",
+    "name": "Esposa de un paciente de Xiluet",
+    "treatment": "Día de entrega · en inglés",
+    "duration": "0:12",
+    "doctor": "Dr. Roger Ramos Navarro, DMD"
+  },
+  {
+    "id": "story-9",
+    "source": "https://www.instagram.com/p/DcjB3EUx_aM/",
+    "video": "/videos/stories/story-9.mp4",
+    "poster": "story-9-poster.jpg",
+    "quote": "",
+    "title": "Una sonrisa nueva, una confianza nueva y un momento que nunca olvidará.",
+    "name": "Paciente de Xiluet",
+    "treatment": "Transformación de sonrisa",
+    "duration": "0:19",
+    "doctor": "Dr. Roger Ramos Navarro, DMD"
   }
 ]

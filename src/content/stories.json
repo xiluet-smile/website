@@ -77,5 +77,28 @@
     "treatment": "Smile makeover",
     "duration": "0:13",
     "doctor": "Dr. Marta Puentes Marrero, DMD"
+  },
+  {
+    "id": "story-8",
+    "source": "https://www.instagram.com/p/DduACzDR29y/",
+    "video": "/videos/stories/story-8.mp4",
+    "poster": "story-8-poster.jpg",
+    "quote": "Look at your smile, it's amazing.",
+    "name": "Xiluet patient's wife",
+    "treatment": "Delivery day",
+    "duration": "0:12",
+    "doctor": "Dr. Roger Ramos Navarro, DMD"
+  },
+  {
+    "id": "story-9",
+    "source": "https://www.instagram.com/p/DcjB3EUx_aM/",
+    "video": "/videos/stories/story-9.mp4",
+    "poster": "story-9-poster.jpg",
+    "quote": "",
+    "title": "A new smile, a new confidence, and a moment she'll never forget.",
+    "name": "Xiluet patient",
+    "treatment": "Smile makeover",
+    "duration": "0:19",
+    "doctor": "Dr. Roger Ramos Navarro, DMD"
   }
 ]
