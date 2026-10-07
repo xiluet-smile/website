@@ -145,6 +145,13 @@ function Hero({
   );
 }
 
+/** Official logos shown instead of text for the associations that publish one (keyed by the cert string in doctors/*.json). */
+const certLogos: Record<string, string> = {
+  "American Dental Association": "logo-ada.svg",
+  "Florida Dental Association": "logo-fda.png",
+  "Academy of General Dentistry": "logo-agd.svg",
+};
+
 /** Full doctor profile: hero, focus, education, credentials, results, other doctors, CTA. */
 export default function DoctorProfile({
   doctor,
@@ -255,30 +262,44 @@ export default function DoctorProfile({
             </p>
           </div>
           <ul className="m-0 flex list-none flex-wrap gap-2.5 p-0">
-            {profile.certs.map((c) => (
-              <li
-                key={c}
-                className="glass-card inline-flex items-center gap-2.5 rounded-[18px] px-[18px] py-3 text-[15px] font-semibold text-teal"
-              >
-                <svg
-                  viewBox="0 0 18 18"
-                  width="16"
-                  height="16"
-                  aria-hidden="true"
-                  className="flex-none"
+            {profile.certs.map((c) => {
+              const logo = certLogos[c];
+              return (
+                <li
+                  key={c}
+                  className={`glass-card inline-flex items-center gap-2.5 rounded-[18px] px-[18px] text-[15px] font-semibold text-teal ${logo ? "h-[58px]" : "py-3"}`}
                 >
-                  <path
-                    d="M3.5 9.5l3.5 3.5 7.5-8"
-                    fill="none"
-                    stroke="#CDB180"
-                    strokeWidth="2.2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-                {c}
-              </li>
-            ))}
+                  {logo ? (
+                    <Img
+                      src={logo}
+                      alt={c}
+                      sizes="160px"
+                      className="block h-8 w-auto max-w-[180px] object-contain"
+                    />
+                  ) : (
+                    <>
+                      <svg
+                        viewBox="0 0 18 18"
+                        width="16"
+                        height="16"
+                        aria-hidden="true"
+                        className="flex-none"
+                      >
+                        <path
+                          d="M3.5 9.5l3.5 3.5 7.5-8"
+                          fill="none"
+                          stroke="#CDB180"
+                          strokeWidth="2.2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                      {c}
+                    </>
+                  )}
+                </li>
+              );
+            })}
           </ul>
         </div>
       </section>
