@@ -36,12 +36,12 @@
     "short": "Préstamos de hasta $65,000, tasa fija, sin penalidad por pago anticipado."
   },
   {
-    "slug": "affirm",
-    "href": "/financing/affirm",
-    "name": "Affirm",
-    "logo": "logo-affirm.webp",
-    "tag": "Sin cargos por mora",
-    "note": "Paga a plazos con términos transparentes. Verifica si calificas en segundos sin afectar tu puntaje de crédito.",
-    "short": "Términos transparentes. Verifica si calificas sin afectar tu puntaje de crédito."
+    "slug": "alphaeon",
+    "href": "/financing/alphaeon",
+    "name": "Alphaeon Credit",
+    "logo": "logo-alphaeon.webp",
+    "tag": "Consulta blanda",
+    "note": "Una tarjeta de crédito para salud con líneas de hasta $25,000. Precalifica con una consulta blanda que no afecta tu puntaje.",
+    "short": "Tarjeta de crédito para salud, líneas de hasta $25,000. Precalifica sin afectar tu puntaje."
   }
 ]

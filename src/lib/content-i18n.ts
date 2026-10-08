@@ -45,7 +45,7 @@ import lnCherry from "@/content/lenders/cherry.json";
 import lnSunbit from "@/content/lenders/sunbit.json";
 import lnCarecredit from "@/content/lenders/carecredit.json";
 import lnLendingclub from "@/content/lenders/lendingclub.json";
-import lnAffirm from "@/content/lenders/affirm.json";
+import lnAlphaeon from "@/content/lenders/alphaeon.json";
 
 // ---------- Spanish ----------
 import esSite from "@/content/es/site.json";
@@ -84,7 +84,7 @@ import esLnCherry from "@/content/es/lenders/cherry.json";
 import esLnSunbit from "@/content/es/lenders/sunbit.json";
 import esLnCarecredit from "@/content/es/lenders/carecredit.json";
 import esLnLendingclub from "@/content/es/lenders/lendingclub.json";
-import esLnAffirm from "@/content/es/lenders/affirm.json";
+import esLnAlphaeon from "@/content/es/lenders/alphaeon.json";
 
 export type Faq = { q: string; a: string; doc?: string };
 /** Spanish display labels for values that must stay English for server lookups (same order as the values). */
@@ -169,7 +169,7 @@ const en = content({
     "smile-makeover": trMakeover as Treatment,
   },
   doctorProfiles: [docRamos, docPuentes, docAlonso],
-  lenderContent: { cherry: lnCherry, sunbit: lnSunbit, carecredit: lnCarecredit, lendingclub: lnLendingclub, affirm: lnAffirm },
+  lenderContent: { cherry: lnCherry, sunbit: lnSunbit, carecredit: lnCarecredit, lendingclub: lnLendingclub, alphaeon: lnAlphaeon },
 });
 
 const es = content({
@@ -212,7 +212,7 @@ const es = content({
     sunbit: esLnSunbit as LenderContent,
     carecredit: esLnCarecredit as LenderContent,
     lendingclub: esLnLendingclub as LenderContent,
-    affirm: esLnAffirm as LenderContent,
+    alphaeon: esLnAlphaeon as LenderContent,
   },
 });
 

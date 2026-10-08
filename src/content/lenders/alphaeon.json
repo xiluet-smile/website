@@ -1,0 +1,56 @@
+{
+  "slug": "alphaeon",
+  "intro": "A healthcare credit card for dental treatment, issued by Comenity Capital Bank. Pre-qualify with a soft inquiry that does not affect your credit score, with credit lines up to $25,000 and promotional financing on purchases over $250.",
+  "site": {
+    "url": "https://goalphaeon.com/prequalify-me",
+    "label": "Pre-qualify with Alphaeon →",
+    "note": "Soft inquiry. Does not affect your score."
+  },
+  "facts": [
+    {
+      "big": "Soft check",
+      "sub": "Pre-qualify without affecting your score"
+    },
+    {
+      "big": "Up to $25,000",
+      "sub": "Credit line, subject to approval"
+    },
+    {
+      "big": "$250+",
+      "sub": "Promotional financing on purchases over $250"
+    },
+    {
+      "big": "Online",
+      "sub": "Pre-qualify in minutes"
+    }
+  ],
+  "steps": [
+    {
+      "n": "01",
+      "t": "Pre-qualify online with a soft inquiry"
+    },
+    {
+      "n": "02",
+      "t": "Choose a credit plan. Terms are shown before you accept"
+    },
+    {
+      "n": "03",
+      "t": "Alphaeon pays Xiluet. You make monthly payments to Alphaeon"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is Alphaeon Credit a loan or a card?",
+      "a": "A credit card for healthcare expenses, issued by Comenity Capital Bank. You can use it for your treatment at Xiluet and for future visits."
+    },
+    {
+      "q": "Does pre-qualifying affect my credit?",
+      "a": "No. Alphaeon uses a soft inquiry to check eligibility, which does not affect your credit score. A full application is subject to credit approval."
+    },
+    {
+      "q": "Are there promotional plans?",
+      "a": "Yes, on purchases over $250. The plan options and their terms are shown to you before you accept. Minimum monthly payments are required on every plan."
+    }
+  ],
+  "disclaimer": "Alphaeon Credit card accounts are issued by Comenity Capital Bank. Credit card offers are subject to credit approval. Terms are set by the issuer and may change. Xiluet does not make credit decisions."
+}

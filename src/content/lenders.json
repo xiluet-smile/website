@@ -36,12 +36,12 @@
     "short": "Loans up to $65,000, fixed rate, no prepayment penalty."
   },
   {
-    "slug": "affirm",
-    "href": "/financing/affirm",
-    "name": "Affirm",
-    "logo": "logo-affirm.webp",
-    "tag": "No late fees",
-    "note": "Pay over time with transparent terms. Check eligibility in seconds without affecting your credit score.",
-    "short": "Transparent terms. Check eligibility without affecting your credit score."
+    "slug": "alphaeon",
+    "href": "/financing/alphaeon",
+    "name": "Alphaeon Credit",
+    "logo": "logo-alphaeon.webp",
+    "tag": "Soft credit check",
+    "note": "A healthcare credit card with lines up to $25,000. Pre-qualify with a soft inquiry that does not affect your credit score.",
+    "short": "Healthcare credit card, lines up to $25,000. Pre-qualify without affecting your score."
   }
 ]

@@ -1,0 +1,56 @@
+{
+  "slug": "alphaeon",
+  "intro": "Una tarjeta de crédito para tratamientos de salud, emitida por Comenity Capital Bank. Precalifica con una consulta blanda que no afecta tu puntaje de crédito, con líneas de crédito de hasta $25,000 y financiamiento promocional en compras mayores a $250.",
+  "site": {
+    "url": "https://goalphaeon.com/prequalify-me",
+    "label": "Precalifica con Alphaeon →",
+    "note": "Consulta blanda. No afecta tu puntaje."
+  },
+  "facts": [
+    {
+      "big": "Consulta blanda",
+      "sub": "Precalifica sin afectar tu puntaje"
+    },
+    {
+      "big": "Hasta $25,000",
+      "sub": "Línea de crédito, sujeta a aprobación"
+    },
+    {
+      "big": "$250+",
+      "sub": "Financiamiento promocional en compras mayores a $250"
+    },
+    {
+      "big": "En línea",
+      "sub": "Precalifica en minutos"
+    }
+  ],
+  "steps": [
+    {
+      "n": "01",
+      "t": "Precalifica en línea con una consulta blanda"
+    },
+    {
+      "n": "02",
+      "t": "Elige un plan de crédito. Los términos se muestran antes de aceptar"
+    },
+    {
+      "n": "03",
+      "t": "Alphaeon le paga a Xiluet. Tú pagas a Alphaeon mensualmente"
+    }
+  ],
+  "faq": [
+    {
+      "q": "¿Alphaeon Credit es un préstamo o una tarjeta?",
+      "a": "Es una tarjeta de crédito para gastos de salud, emitida por Comenity Capital Bank. Puedes usarla para tu tratamiento en Xiluet y para visitas futuras."
+    },
+    {
+      "q": "¿Precalificar afecta mi crédito?",
+      "a": "No. Alphaeon usa una consulta blanda para verificar tu elegibilidad, que no afecta tu puntaje. La solicitud completa está sujeta a aprobación de crédito."
+    },
+    {
+      "q": "¿Hay planes promocionales?",
+      "a": "Sí, en compras mayores a $250. Las opciones y sus términos se te muestran antes de aceptar. Todos los planes requieren pagos mínimos mensuales."
+    }
+  ],
+  "disclaimer": "Las cuentas de la tarjeta Alphaeon Credit son emitidas por Comenity Capital Bank. Las ofertas de crédito están sujetas a aprobación. Los términos los fija el emisor y pueden cambiar. Xiluet no toma decisiones de crédito."
+}

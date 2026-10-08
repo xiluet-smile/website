@@ -68,7 +68,7 @@ Things the design files leave unresolved. Each is marked `TODO(clinic)` in the c
 - **Sunbit**: "approves about 9 in 10 applicants" / "~90%"; decision in 30 sec / under a minute; no late, origination or prepayment fees; terms up to 72 months.
 - **CareCredit**: accepted at over 200,000 locations; promotional financing from $200; 6 to 24 month no-interest periods if paid in full; deferred-interest wording.
 - **LendingClub**: loans up to $65,000; fixed rate; 24 to 84 months; no prepayment penalty; origination fee deducted from the loan; hard inquiry only on acceptance.
-- **Affirm**: 0 to 36 percent APR; 3 to 36 months; no late or hidden fees.
+- **Alphaeon Credit** (replaced Affirm 2026-10-08): facts taken from goalphaeon.com only (Comenity Capital Bank issuer, soft inquiry, lines up to $25,000, promotional financing over $250). Confirm the clinic's enrolled promo plans (e.g. months at 0%) before quoting them.
 - **Financing index**: "All five partners pre-qualify with a soft check"; "Most patients qualify with at least one partner".
 - **All-on-X**: price per arch ($10,000, $9,000 cash) and whether surgery is in-house (README open item).
 

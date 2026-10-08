@@ -85,9 +85,9 @@
           "href": "/financing/lendingclub"
         },
         {
-          "t": "Affirm",
-          "d": "Términos transparentes, sin cargos por mora",
-          "href": "/financing/affirm"
+          "t": "Alphaeon Credit",
+          "d": "Tarjeta de crédito para salud, consulta blanda",
+          "href": "/financing/alphaeon"
         }
       ]
     },
@@ -209,8 +209,8 @@
           "href": "/financing/lendingclub"
         },
         {
-          "label": "Affirm",
-          "href": "/financing/affirm"
+          "label": "Alphaeon Credit",
+          "href": "/financing/alphaeon"
         }
       ]
     },

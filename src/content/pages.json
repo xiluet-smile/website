@@ -84,7 +84,7 @@
     "breadcrumb": "Our Clinic"
   },
   "/financing": {
-    "title": "Dental Financing Miami | Cherry, Sunbit, CareCredit, LendingClub, Affirm",
+    "title": "Dental Financing Miami | Cherry, Sunbit, CareCredit, LendingClub, Alphaeon",
     "description": "Five financing partners, soft credit checks and approval guidance from one coordinator. Pay for veneers or implants over time at Xiluet Smiles, Miami.",
     "ogImage": "clinic-lobby.jpg",
     "h1": "Five ways to pay over time. One coordinator who helps you choose.",
@@ -118,12 +118,12 @@
     "h1": "LendingClub. One fixed payment, no surprises, up to $65,000.",
     "breadcrumb": "LendingClub Dental Loans"
   },
-  "/financing/affirm": {
-    "title": "Affirm Dental Financing | Xiluet Smiles Miami",
-    "description": "Pay over time with Affirm: total cost shown upfront, no late fees. Accepted at Xiluet Smiles, Miami.",
+  "/financing/alphaeon": {
+    "title": "Alphaeon Credit Dental Financing | Xiluet Smiles Miami",
+    "description": "Alphaeon Credit at Xiluet Smiles, Miami: a healthcare credit card with lines up to $25,000. Pre-qualify with a soft inquiry that does not affect your credit score.",
     "ogImage": "clinic-lobby.jpg",
-    "h1": "Affirm. Know your exact monthly payment before you commit.",
-    "breadcrumb": "Affirm Dental Financing"
+    "h1": "Alphaeon Credit. Pre-qualify without touching your credit score.",
+    "breadcrumb": "Alphaeon Credit Dental Financing"
   },
   "/before-and-after": {
     "title": "Veneers Before and After | Real Miami Patients | Xiluet Smiles",
