@@ -11,6 +11,22 @@ const GTM_SRC = `https://www.googletagmanager.com/gtm.js?id=${site.gtmId}`;
  * so analytics tags and the chat never compete with the page's own rendering.
  */
 export default function SiteScripts() {
+  // Contact-intent clicks for the GTM container: `whatsapp_click` and `phone_click`
+  // (the Meta "Contact" and GA4 tags in the container listen for whatsapp_click).
+  useEffect(() => {
+    const onClick = (e: MouseEvent) => {
+      const a = (e.target as Element | null)?.closest?.("a[href]") as HTMLAnchorElement | null;
+      if (!a) return;
+      const href = a.getAttribute("href") ?? "";
+      const event = /wa\.me|whatsapp/i.test(href) ? "whatsapp_click" : href.startsWith("tel:") ? "phone_click" : null;
+      if (!event) return;
+      const w = window as Window & { dataLayer?: unknown[] };
+      (w.dataLayer = w.dataLayer || []).push({ event, link_url: href, page_path: location.pathname });
+    };
+    document.addEventListener("click", onClick, { capture: true, passive: true });
+    return () => document.removeEventListener("click", onClick, { capture: true });
+  }, []);
+
   useEffect(() => {
     if ((window as Window & { __xiluetScripts?: boolean }).__xiluetScripts) return;
     const w = window as Window & { dataLayer?: unknown[]; __xiluetScripts?: boolean };
