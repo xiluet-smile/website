@@ -3,13 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "npm run images && npm run blog && next dev",
+    "dev": "npm run images && npm run blog && npm run redirects && next dev",
     "images": "node scripts/build-images.mjs",
-    "build": "npm run images && npm run blog && next build",
+    "build": "npm run images && npm run blog && npm run redirects && next build",
     "preview": "npx wrangler pages dev out",
     "lint": "eslint",
     "check": "node scripts/check-site.mjs",
-    "blog": "node scripts/sync-blog.mjs"
+    "blog": "node scripts/sync-blog.mjs",
+    "redirects": "node scripts/build-redirects.mjs"
   },
   "dependencies": {
     "next": "16.3.8",

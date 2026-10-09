@@ -1,7 +1,7 @@
 // JSON-LD builders. Everything is derived from src/content so schema and
 // visible copy cannot drift apart. Page-level nodes take the locale so /es
 // pages get localized URLs, names and language tags.
-import { abs, site, type PagePath } from "./site";
+import { abs, isLegalPath, site, type PagePath } from "./site";
 import { getContent, ui } from "./content-i18n";
 import { langTag, localizePath, type Locale } from "./i18n";
 import { ogImagePath } from "./images";
@@ -46,7 +46,7 @@ export function dentist(): Node {
     ],
     sameAs: [site.social.instagram, site.social.facebook, site.social.tiktok, site.social.youtube],
     areaServed: site.areaServed,
-    availableLanguage: site.languages.codes,
+    knowsLanguage: site.languages.codes,
   };
 }
 
@@ -64,7 +64,7 @@ export function webPage(path: PagePath, locale: Locale = "en"): Node {
     name: page.title,
     description: page.description,
     isPartOf: { "@id": WEBSITE_ID },
-    inLanguage: langTag(locale),
+    inLanguage: isLegalPath(path) ? langTag("en") : langTag(locale),
   };
 }
 
@@ -108,31 +108,38 @@ export function medicalProcedure(
 ): Node {
   return {
     "@type": "MedicalProcedure",
+    "@id": `${absL(path, locale)}#procedure`,
     name: p.name,
     description: p.definition,
     procedureType: p.procedureType,
     bodyLocation: "Teeth",
-    provider: dentistRef(),
-    ...(p.priceUsd
-      ? {
-          offers: {
-            "@type": "Offer",
-            price: String(p.priceUsd),
-            priceCurrency: "USD",
-            availability: "https://schema.org/InStock",
-            url: absL(path, locale),
-          },
-        }
-      : {}),
+    relevantSpecialty: "https://schema.org/Dentistry",
   };
+}
+
+/** The practice's offer for a procedure (price lives here, not on the MedicalProcedure, which has no offers property). */
+export function procedureOffer(path: PagePath, p: { name: string; priceUsd?: number | null }, locale: Locale = "en"): Node[] {
+  if (!p.priceUsd) return [];
+  return [
+    {
+      "@type": "Offer",
+      name: p.name,
+      price: String(p.priceUsd),
+      priceCurrency: "USD",
+      availability: "https://schema.org/InStock",
+      url: absL(path, locale),
+      itemOffered: { "@id": `${absL(path, locale)}#procedure` },
+      offeredBy: dentistRef(),
+    },
+  ];
 }
 
 export function physician(path: PagePath, d: { name: string; image: string }, locale: Locale = "en"): Node {
   return {
-    "@type": "Physician",
+    "@type": "Person",
+    "@id": `${absL(path, locale)}#person`,
     name: d.name,
     jobTitle: "Dentist",
-    medicalSpecialty: "Dentistry",
     image: site.url + ogImagePath(d.image),
     worksFor: dentistRef(),
     knowsLanguage: site.languages.codes,

@@ -7,6 +7,8 @@ import { existsSync, readFileSync } from "node:fs";
 
 const pages = JSON.parse(readFileSync("src/content/pages.json", "utf8"));
 const esPages = JSON.parse(readFileSync("src/content/es/pages.json", "utf8"));
+// English-only legal documents: the /es copy canonicalises to the English page, no hreflang on either side (see src/lib/site.ts).
+const LEGAL = ["/terms", "/privacy-policy", "/notice-of-privacy-practices", "/refund-and-cancellation"];
 // English route → Spanish route, read from the source of truth in src/lib/i18n.ts.
 const esPaths = Object.fromEntries([
   ...[...readFileSync("src/lib/i18n.ts", "utf8").matchAll(/^\s*"(\/[^"]*)": "(\/es[^"]*)",?$/gm)].map((m) => [m[1], m[2]]),
@@ -124,9 +126,11 @@ for (const [enPath, page] of Object.entries(esPages)) {
   esTitles.add(title);
   const desc = decode((html.match(/<meta name="description" content="([^"]*)"/) || [])[1] ?? "");
   if (desc !== page.description) fail(path, "meta description mismatch");
+  const legal = LEGAL.includes(enPath);
   const canonical = (html.match(/<link rel="canonical" href="([^"]*)"/) || [])[1] ?? "";
-  if (canonical.replace(/\/$/, "") !== `https://xiluetsmiledesign.com${path}`) fail(path, `canonical is "${canonical}"`);
-  for (const [lang, target] of [
+  if (canonical.replace(/\/$/, "") !== `https://xiluetsmiledesign.com${legal ? enPath : path}`) fail(path, `canonical is "${canonical}"`);
+  if (legal && /<link rel="alternate" hrefLang=/.test(html)) fail(path, "legal page must not declare hreflang");
+  for (const [lang, target] of legal ? [] : [
     ["en-US", `https://xiluetsmiledesign.com${enPath}`],
     ["es-US", `https://xiluetsmiledesign.com${path}`],
     ["x-default", `https://xiluetsmiledesign.com${enPath}`],
@@ -137,7 +141,8 @@ for (const [enPath, page] of Object.entries(esPages)) {
   if (!/property="og:image"/.test(html)) fail(path, "no og:image");
 
   // Inline spans (e.g. the sr-only ", " before "DMD") add whitespace before punctuation; ignore it.
-  const h1Text = (s) => strip(s).replace(/\s+([,.·])/g, "$1").trim();
+  // The home H1 renders "Keyword: tagline" as two lines without the colon.
+  const h1Text = (s) => strip(s).replace(/\s+([,.·])/g, "$1").replace(/:\s/g, " ").trim();
   const h1s = [...html.matchAll(/<h1[\s>][\s\S]*?<\/h1>/g)];
   if (h1s.length !== 1) fail(path, `${h1s.length} <h1> elements`);
   else if (h1Text(h1s[0][0]) !== h1Text(page.h1)) fail(path, `h1 is "${h1Text(h1s[0][0])}"`);
@@ -160,7 +165,7 @@ for (const [enPath, page] of Object.entries(esPages)) {
   if (!types.includes("Dentist")) fail(path, "no Dentist node");
   if (enPath !== "/" && !types.includes("BreadcrumbList")) fail(path, "no BreadcrumbList");
   const webPage = graph.find((n) => n["@type"] === "WebPage");
-  if (webPage?.inLanguage !== "es-US") fail(path, `WebPage inLanguage is ${webPage?.inLanguage}`);
+  if (webPage?.inLanguage !== (legal ? "en-US" : "es-US")) fail(path, `WebPage inLanguage is ${webPage?.inLanguage}`);
   if (webPage?.url !== `https://xiluetsmiledesign.com${path}`) fail(path, `WebPage url is ${webPage?.url}`);
   for (const q of graph.find((n) => n["@type"] === "FAQPage")?.mainEntity ?? []) {
     if (!text.includes(q.name)) fail(path, `FAQ question not in HTML: ${q.name}`);

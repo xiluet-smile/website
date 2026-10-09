@@ -1,7 +1,7 @@
 {
   "hero": {
-    "eyebrow": "Diseño de sonrisa en Miami 🏝️",
-    "lead": "Consigue la sonrisa de tus sueños en solo 3 visitas. Procedimientos seguros, cero dolor y un equipo de doctores expertos dedicados a cambiar vidas.",
+    "eyebrow": "Carillas de porcelana · Miami, FL 🏝️",
+    "lead": "Consigue la sonrisa de tus sueños en solo 3 visitas. Procedimientos seguros y cómodos, y un equipo de doctores expertos dedicados a cambiar vidas.",
     "promise": "Apruebas tu nueva sonrisa antes de que toquemos un solo diente.",
     "callouts": [
       {
@@ -15,7 +15,7 @@
         "pos": "tr"
       },
       {
-        "delay": 6.0,
+        "delay": 6,
         "text": "Corrige espacios e imperfecciones",
         "pos": "br"
       }

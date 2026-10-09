@@ -1,19 +1,19 @@
 {
-  "path": "/complete-restoration-miami",
+  "path": "/smile-makeover-miami",
   "packageId": "complete-restoration",
-  "breadcrumb": "Crowns, Bridges and Veneers",
+  "breadcrumb": "Smile Makeover",
   "schema": {
-    "name": "Smile Makeover with crowns, bridges and veneers",
+    "name": "Smile Makeover",
     "procedureType": "http://schema.org/NoninvasiveProcedure"
   },
   "hero": {
-    "definition": "Smile Makeover with crowns, bridges and veneers replaces or rebuilds up to 20 teeth with porcelain crowns, bridges or veneers, planned together so color, shape and bite match. At Xiluet Smiles in Miami the package costs $7,999, includes a professional cleaning and X-rays, is delivered in 5 business days and carries a 5-year written warranty.",
-    "lead": "Up to 20 crowns, bridges or veneers from one plan and one in-house lab. Delivered in 5 business days in Miami, or 3 with rush delivery, with a 5-year warranty in writing.",
+    "definition": "A smile makeover rebuilds or resurfaces up to 20 teeth with porcelain crowns, bridges or veneers, planned together so color, shape and bite match. Whitening and gum contouring are added when the design calls for them. At Xiluet Smiles in Miami the package costs $7,999, includes a professional cleaning and X-rays, is delivered in 5 business days and carries a 5-year written warranty.",
+    "lead": "Up to 20 crowns, bridges or veneers from one plan and one in-house lab, with whitening and gum contouring when your smile needs them. Delivered in 5 business days in Miami, with a 5-year warranty in writing.",
     "secondaryCta": "See your week in Miami",
     "stats": [
       {
         "kind": "price",
-        "label": "20 dental restorations"
+        "label": "20 crowns or veneers"
       },
       {
         "kind": "text",
@@ -33,12 +33,12 @@
     "image": {
       "src": "treatment-complete-restoration.jpg",
       "alt": "Man in his forties smiling in the clinic lounge after his smile makeover",
-      "caption": "Smile Makeover · 20 crowns, bridges or veneers · 5 business days"
+      "caption": "Smile Makeover · 20 crowns or veneers · 5 business days"
     }
   },
   "candidates": {
-    "title": "For teeth that need rebuilding, not just resurfacing",
-    "intro": "Crowns, bridges and veneers are chosen tooth by tooth, then designed as one smile.",
+    "title": "For smiles with more than one thing to fix",
+    "intro": "Crowns, bridges and veneers are chosen tooth by tooth, then designed as one smile. Whitening and gum contouring join the plan when needed.",
     "items": [
       {
         "t": "Many failing teeth",
@@ -49,8 +49,8 @@
         "d": "Teeth too damaged for a veneer are rebuilt with a crown."
       },
       {
-        "t": "A few missing teeth",
-        "d": "Gaps closed with bridges, so you chew on both sides again."
+        "t": "Whitening and gum contouring",
+        "d": "Whitening first so the porcelain is matched to your final shade; the gum line evened to frame the teeth."
       },
       {
         "t": "Old dental work",
@@ -94,7 +94,7 @@
     ]
   },
   "week": {
-    "title": "Your week in Miami",
+    "title": "Your makeover week in Miami",
     "intro": "Photos, estimate and plan from home. Then three visits across 5 business days.",
     "linkLabel": "Pick a date and see the full schedule →",
     "visits": [
@@ -107,13 +107,13 @@
       {
         "k": "Visit 1 · Monday",
         "t": "Exam, scans and design",
-        "d": "Cleaning, X-rays, 3D scans and photos. Your doctor decides tooth by tooth whether it needs a crown, a bridge or a veneer, and you confirm the design.",
+        "d": "Cleaning, X-rays, 3D scans and photos. Your doctor decides tooth by tooth whether it needs a crown, a bridge or a veneer, whitening is done the same day if planned, and you confirm the design.",
         "time": "About 2 hours"
       },
       {
         "k": "Visit 2 · Tuesday",
         "t": "Preparation and temporaries",
-        "d": "Teeth prepared and fitted with temporaries shaped like your final design, so you can chew and speak with them while the lab works.",
+        "d": "Gum line evened if planned, teeth prepared and fitted with temporaries shaped like your final design, so you can chew and speak with them while the lab works.",
         "time": "Half a day"
       },
       {
@@ -125,9 +125,9 @@
     ]
   },
   "results": {
-    "title": "Restoration results",
+    "title": "Smile makeover results",
     "linkLabel": "All cases →",
-    "label": "Restorations",
+    "label": "Smile makeover",
     "caseIds": [
       "BA18",
       "BA9",
@@ -137,18 +137,18 @@
   },
   "price": {
     "eyebrow": "Cost",
-    "title": "One price for 20 restorations, in writing",
-    "body": "Send photos and a doctor replies with your treatment plan within 6 hours. Individual crowns and bridges are $500 each when done with your smile design, veneers $1,000; the $7,999 package covers a full set of 20. Deep cleaning and other procedures are quoted separately, in writing, before anything starts.",
+    "title": "One price for 20 crowns or veneers, in writing",
+    "body": "Send photos and a doctor replies with your treatment plan within 6 hours. Individual crowns and bridges are $500 each when done with your smile design, veneers $1,000; the $7,999 package covers a full set of 20. Whitening, gum contouring, deep cleaning and other procedures are itemised separately, in writing, before anything starts.",
     "lendersLabel": "Pay over time with",
     "compareLabel": "Compare all packages →",
     "card": {
-      "title": "20 dental restorations",
-      "sub": "Crowns, bridges and veneers",
+      "title": "20 crowns or veneers",
+      "sub": "Smile makeover",
       "badge": "Complete",
       "pricePrefix": null,
       "priceSuffix": null,
       "included": [
-        "20 crowns, bridges or veneers",
+        "20 porcelain crowns, bridges or veneers",
         "Professional cleaning and X-rays",
         "Delivery in 5 business days",
         "Rush delivery in 3 business days: $10,000",
@@ -159,7 +159,7 @@
     "footnote": "Prices shown are minimum fees. Your final fee is confirmed in writing after a doctor's evaluation."
   },
   "faq": {
-    "title": "Restoration questions, answered by the doctors",
+    "title": "Makeover questions, answered by the doctors",
     "linkLabel": "All answers →",
     "items": [
       {
@@ -170,6 +170,16 @@
       {
         "q": "Is it painful?",
         "a": "Preparation is done under local anesthesia. Expect soreness for a few days, managed with over-the-counter pain relief.",
+        "doc": "Dr. Marta Puentes Marrero, DMD"
+      },
+      {
+        "q": "Does whitening affect the veneers?",
+        "a": "Porcelain does not whiten, which is why we whiten first and match the veneers and crowns to the result.",
+        "doc": "Dr. Gretell Alonso Fiel, DMD"
+      },
+      {
+        "q": "Is gum contouring painful?",
+        "a": "Done under local anesthesia. Expect mild tenderness for a few days.",
         "doc": "Dr. Marta Puentes Marrero, DMD"
       },
       {
@@ -185,6 +195,11 @@
       {
         "q": "Can it be done in 3 days?",
         "a": "Yes. Rush delivery in 3 business days is $10,000 instead of $7,999, because the lab works on your case exclusively. Most patients choose the standard 5-day schedule.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "Can crooked teeth be included?",
+        "a": "Mild crowding is handled by the veneers and crowns. Severe misalignment needs aligners first, which adds months to the plan.",
         "doc": "Dr. Roger Ramos Navarro, DMD"
       }
     ]

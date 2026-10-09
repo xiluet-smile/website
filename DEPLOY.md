@@ -16,7 +16,7 @@ Static Next.js export served by Cloudflare Pages, with two Pages Functions for t
 4. Environment variables (Production **and** Preview) → add `NODE_VERSION` = `22`.
 5. **Save and Deploy.** Every push to `main` deploys production; every pull request gets a preview URL.
 
-`npm run build` first runs `scripts/build-images.mjs` (AVIF/WebP variants and Open Graph images into `public/images` and `public/og`), then `next build`, which writes the site to `out/`. `functions/` is picked up automatically, and `public/_headers`, `public/_redirects` and `public/robots.txt` are copied into the output.
+`npm run build` first runs `scripts/build-images.mjs` (AVIF/WebP variants and Open Graph images into `public/images` and `public/og`), `scripts/sync-blog.mjs` and `scripts/build-redirects.mjs` (writes `public/_redirects` from `scripts/redirects.txt` plus a trailing-slash 301 for every route), then `next build`, which writes the site to `out/`. `functions/` is picked up automatically, and `public/_headers`, `public/_redirects` and `public/robots.txt` are copied into the output.
 
 ## 2. Environment variables and bindings
 Set under **Pages project → Settings**. Add each to Production and Preview. A template is in `.dev.vars.example`.

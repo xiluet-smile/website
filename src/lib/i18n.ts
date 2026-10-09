@@ -14,7 +14,6 @@ export const esPaths: Record<PagePath, string> = {
   "/": "/es",
   "/porcelain-veneers-miami": "/es/carillas-de-porcelana-miami",
   "/smile-design-miami": "/es/diseno-de-sonrisa-miami",
-  "/complete-restoration-miami": "/es/restauracion-completa-miami",
   "/full-mouth-reconstruction-miami": "/es/reconstruccion-bucal-completa-miami",
   "/all-on-x-dental-implants-miami": "/es/implantes-dentales-all-on-x-miami",
   "/smile-makeover-miami": "/es/transformacion-de-sonrisa-miami",

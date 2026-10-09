@@ -7,13 +7,18 @@
       "items": [
         {
           "t": "Diseño de sonrisa",
+          "d": "Diseñada para tu rostro, aprobada antes de empezar",
+          "href": "/smile-design-miami"
+        },
+        {
+          "t": "Carillas de porcelana",
           "d": "20 carillas de porcelana, $6,999",
           "href": "/porcelain-veneers-miami"
         },
         {
           "t": "Transformación de sonrisa",
           "d": "20 carillas de porcelana y coronas, $7,999",
-          "href": "/complete-restoration-miami"
+          "href": "/smile-makeover-miami"
         },
         {
           "t": "Reconstrucción bucal completa",
@@ -140,11 +145,15 @@
       "links": [
         {
           "label": "Diseño de sonrisa",
+          "href": "/smile-design-miami"
+        },
+        {
+          "label": "Carillas de porcelana",
           "href": "/porcelain-veneers-miami"
         },
         {
           "label": "Transformación de sonrisa",
-          "href": "/complete-restoration-miami"
+          "href": "/smile-makeover-miami"
         },
         {
           "label": "Reconstrucción bucal completa",

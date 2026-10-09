@@ -37,7 +37,6 @@ import trSmileDesign from "@/content/treatments/smile-design.json";
 import trFullMouth from "@/content/treatments/full-mouth-reconstruction.json";
 import trCompleteRestoration from "@/content/treatments/complete-restoration.json";
 import trAllOnX from "@/content/treatments/all-on-x.json";
-import trMakeover from "@/content/treatments/smile-makeover.json";
 import docRamos from "@/content/doctors/dr-roger-ramos-navarro.json";
 import docPuentes from "@/content/doctors/dr-marta-puentes-marrero.json";
 import docAlonso from "@/content/doctors/dr-gretell-alonso-fiel.json";
@@ -76,7 +75,6 @@ import esTrSmileDesign from "@/content/es/treatments/smile-design.json";
 import esTrFullMouth from "@/content/es/treatments/full-mouth-reconstruction.json";
 import esTrCompleteRestoration from "@/content/es/treatments/complete-restoration.json";
 import esTrAllOnX from "@/content/es/treatments/all-on-x.json";
-import esTrMakeover from "@/content/es/treatments/smile-makeover.json";
 import esDocRamos from "@/content/es/doctors/dr-roger-ramos-navarro.json";
 import esDocPuentes from "@/content/es/doctors/dr-marta-puentes-marrero.json";
 import esDocAlonso from "@/content/es/doctors/dr-gretell-alonso-fiel.json";
@@ -109,7 +107,7 @@ export type Story = { id: string; video: string; poster: string; quote: string; 
 /** Short Spanish note shown above the (English) legal documents on /es, plus the Spanish document names. */
 export type LegalNotice = { notice: string; names: Record<string, string> };
 
-export type TreatmentKey = "porcelain-veneers" | "smile-design" | "complete-restoration" | "full-mouth-reconstruction" | "all-on-x" | "smile-makeover";
+export type TreatmentKey = "porcelain-veneers" | "smile-design" | "complete-restoration" | "full-mouth-reconstruction" | "all-on-x";
 
 const content = (l: {
   site: Site;
@@ -166,7 +164,6 @@ const en = content({
     "complete-restoration": trCompleteRestoration as Treatment,
     "full-mouth-reconstruction": trFullMouth as Treatment,
     "all-on-x": trAllOnX as Treatment,
-    "smile-makeover": trMakeover as Treatment,
   },
   doctorProfiles: [docRamos, docPuentes, docAlonso],
   lenderContent: { cherry: lnCherry, sunbit: lnSunbit, carecredit: lnCarecredit, lendingclub: lnLendingclub, alphaeon: lnAlphaeon },
@@ -204,7 +201,6 @@ const es = content({
     "complete-restoration": esTrCompleteRestoration as Treatment,
     "full-mouth-reconstruction": esTrFullMouth as Treatment,
     "all-on-x": esTrAllOnX as Treatment,
-    "smile-makeover": esTrMakeover as Treatment,
   },
   doctorProfiles: [esDocRamos as DoctorProfileData, esDocPuentes as DoctorProfileData, esDocAlonso as DoctorProfileData],
   lenderContent: {

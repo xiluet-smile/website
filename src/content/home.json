@@ -1,7 +1,7 @@
 {
   "hero": {
-    "eyebrow": "Smile Design in Miami 🏝️",
-    "lead": "Get the smile of your dreams in just 3 visits. Safe procedures, zero pain, and a team of expert doctors dedicated to changing lives.",
+    "eyebrow": "Porcelain veneers · Miami, FL 🏝️",
+    "lead": "Get the smile of your dreams in just 3 visits. Safe, comfortable procedures and a team of expert doctors dedicated to changing lives.",
     "promise": "You approve your new smile before we ever touch a tooth.",
     "callouts": [
       {
@@ -15,7 +15,7 @@
         "pos": "tr"
       },
       {
-        "delay": 6.0,
+        "delay": 6,
         "text": "Fixes gaps and imperfections",
         "pos": "br"
       }

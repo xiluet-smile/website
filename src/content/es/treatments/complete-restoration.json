@@ -1,19 +1,19 @@
 {
-  "path": "/complete-restoration-miami",
+  "path": "/smile-makeover-miami",
   "packageId": "complete-restoration",
-  "breadcrumb": "Coronas, puentes y carillas",
+  "breadcrumb": "Transformación de sonrisa",
   "schema": {
-    "name": "Transformación de sonrisa con coronas, puentes y carillas",
+    "name": "Transformación de sonrisa",
     "procedureType": "http://schema.org/NoninvasiveProcedure"
   },
   "hero": {
-    "definition": "El Transformación de sonrisa con coronas, puentes y carillas reemplaza o reconstruye hasta 20 dientes con coronas, puentes o carillas de porcelana, planificados en conjunto para que el color, la forma y la mordida coincidan. En Xiluet Smiles en Miami el paquete cuesta $7,999, incluye limpieza profesional y radiografías, se entrega en 5 días hábiles y tiene garantía de 5 años por escrito.",
-    "lead": "Hasta 20 coronas, puentes o carillas con un solo plan y un laboratorio propio. Entrega en 5 días hábiles en Miami, o en 3 con entrega urgente, con garantía de 5 años por escrito.",
+    "definition": "La transformación de sonrisa reconstruye o cubre hasta 20 dientes con coronas, puentes o carillas de porcelana, planificados en conjunto para que el color, la forma y la mordida coincidan. El blanqueamiento y el contorneado de encías se añaden cuando el diseño lo requiere. En Xiluet Smiles en Miami el paquete cuesta $7,999, incluye limpieza profesional y radiografías, se entrega en 5 días hábiles y tiene garantía de 5 años por escrito.",
+    "lead": "Hasta 20 coronas, puentes o carillas con un solo plan y un laboratorio propio, con blanqueamiento y contorneado de encías cuando tu sonrisa lo necesita. Entrega en 5 días hábiles en Miami, con garantía de 5 años por escrito.",
     "secondaryCta": "Mira tu semana en Miami",
     "stats": [
       {
         "kind": "price",
-        "label": "20 restauraciones dentales"
+        "label": "20 coronas o carillas"
       },
       {
         "kind": "text",
@@ -33,12 +33,12 @@
     "image": {
       "src": "treatment-complete-restoration.jpg",
       "alt": "Hombre de cuarenta y tantos sonriendo en la sala de la clínica tras su transformación de sonrisa",
-      "caption": "Transformación de sonrisa · 20 coronas, puentes o carillas · 5 días hábiles"
+      "caption": "Transformación de sonrisa · 20 coronas o carillas · 5 días hábiles"
     }
   },
   "candidates": {
-    "title": "Para dientes que hay que reconstruir, no solo cubrir",
-    "intro": "Coronas, puentes y carillas se eligen diente por diente y se diseñan como una sola sonrisa.",
+    "title": "Para sonrisas con más de una cosa que corregir",
+    "intro": "Coronas, puentes y carillas se eligen diente por diente y se diseñan como una sola sonrisa. El blanqueamiento y el contorneado de encías se suman al plan cuando hacen falta.",
     "items": [
       {
         "t": "Muchos dientes fallando",
@@ -49,8 +49,8 @@
         "d": "Los dientes demasiado dañados para una carilla se reconstruyen con una corona."
       },
       {
-        "t": "Algunos dientes faltantes",
-        "d": "Espacios cerrados con puentes, para que vuelvas a masticar de ambos lados."
+        "t": "Blanqueamiento y contorneado de encías",
+        "d": "Primero el blanqueamiento, para igualar la porcelana a tu tono final; la línea de encía se empareja para enmarcar los dientes."
       },
       {
         "t": "Trabajo dental viejo",
@@ -94,7 +94,7 @@
     ]
   },
   "week": {
-    "title": "Tu semana en Miami",
+    "title": "Tu semana de transformación en Miami",
     "intro": "Fotos, presupuesto y plan desde casa. Luego tres visitas en 5 días hábiles.",
     "linkLabel": "Elige una fecha y mira el calendario completo →",
     "visits": [
@@ -107,13 +107,13 @@
       {
         "k": "Visita 1 · Lunes",
         "t": "Examen, escaneos y diseño",
-        "d": "Limpieza, radiografías, escaneos 3D y fotos. Tu doctor decide diente por diente si necesita corona, puente o carilla, y tú confirmas el diseño.",
+        "d": "Limpieza, radiografías, escaneos 3D y fotos. Tu doctor decide diente por diente si necesita corona, puente o carilla, el blanqueamiento se hace el mismo día si está planificado, y tú confirmas el diseño.",
         "time": "Unas 2 horas"
       },
       {
         "k": "Visita 2 · Martes",
         "t": "Preparación y provisionales",
-        "d": "Dientes preparados y provisionales con la forma de tu diseño final, para que mastiques y hables con ellos mientras el laboratorio trabaja.",
+        "d": "Línea de encía emparejada si está planificado, dientes preparados y provisionales con la forma de tu diseño final, para que mastiques y hables con ellos mientras el laboratorio trabaja.",
         "time": "Medio día"
       },
       {
@@ -125,9 +125,9 @@
     ]
   },
   "results": {
-    "title": "Resultados de restauraciones",
+    "title": "Resultados de transformación de sonrisa",
     "linkLabel": "Todos los casos →",
-    "label": "Restauraciones",
+    "label": "Transformación de sonrisa",
     "caseIds": [
       "BA18",
       "BA9",
@@ -137,18 +137,18 @@
   },
   "price": {
     "eyebrow": "Costo",
-    "title": "Un solo precio por 20 restauraciones, por escrito",
-    "body": "Envía fotos y un doctor te responde con tu plan de tratamiento en menos de 6 horas. Las coronas y puentes individuales cuestan $500 cada uno cuando se hacen con tu diseño de sonrisa, y las carillas $1,000; el paquete de $7,999 cubre un juego completo de 20. La limpieza profunda y otros procedimientos se cotizan aparte, por escrito, antes de empezar.",
+    "title": "Un solo precio por 20 coronas o carillas, por escrito",
+    "body": "Envía fotos y un doctor te responde con tu plan de tratamiento en menos de 6 horas. Las coronas y puentes individuales cuestan $500 cada uno cuando se hacen con tu diseño de sonrisa, y las carillas $1,000; el paquete de $7,999 cubre un juego completo de 20. Blanqueamiento, contorneado de encías, limpieza profunda y otros procedimientos se detallan aparte, por escrito, antes de empezar.",
     "lendersLabel": "Paga a plazos con",
     "compareLabel": "Compara todos los paquetes →",
     "card": {
-      "title": "20 restauraciones dentales",
-      "sub": "Coronas, puentes y carillas",
+      "title": "20 coronas o carillas",
+      "sub": "Transformación de sonrisa",
       "badge": "Completo",
       "pricePrefix": null,
       "priceSuffix": null,
       "included": [
-        "20 coronas, puentes o carillas",
+        "20 coronas, puentes o carillas de porcelana",
         "Limpieza profesional y radiografías",
         "Entrega en 5 días hábiles",
         "Entrega urgente en 3 días hábiles: $10,000",
@@ -159,7 +159,7 @@
     "footnote": "Los precios mostrados son tarifas mínimas. Tu precio final se confirma por escrito después de la evaluación de un doctor."
   },
   "faq": {
-    "title": "Preguntas sobre restauraciones, respondidas por los doctores",
+    "title": "Preguntas sobre la transformación, respondidas por los doctores",
     "linkLabel": "Todas las respuestas →",
     "items": [
       {
@@ -170,6 +170,16 @@
       {
         "q": "¿Duele?",
         "a": "La preparación se hace con anestesia local. Espera molestias durante unos días, que se controlan con analgésicos de venta libre.",
+        "doc": "Dr. Marta Puentes Marrero, DMD"
+      },
+      {
+        "q": "¿El blanqueamiento afecta las carillas?",
+        "a": "La porcelana no se blanquea, por eso blanqueamos primero e igualamos las carillas y coronas al resultado.",
+        "doc": "Dr. Gretell Alonso Fiel, DMD"
+      },
+      {
+        "q": "¿El contorneado de encías duele?",
+        "a": "Se hace con anestesia local. Espera una sensibilidad leve durante unos días.",
         "doc": "Dr. Marta Puentes Marrero, DMD"
       },
       {
@@ -185,6 +195,11 @@
       {
         "q": "¿Se puede hacer en 3 días?",
         "a": "Sí. La entrega urgente en 3 días hábiles cuesta $10,000 en lugar de $7,999, porque el laboratorio trabaja en tu caso de forma exclusiva. La mayoría de los pacientes elige el calendario estándar de 5 días.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "¿Se pueden incluir dientes torcidos?",
+        "a": "El apiñamiento leve se resuelve con las carillas y coronas. Una desalineación severa necesita alineadores primero, lo que añade meses al plan.",
         "doc": "Dr. Roger Ramos Navarro, DMD"
       }
     ]

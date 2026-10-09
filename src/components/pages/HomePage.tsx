@@ -50,6 +50,7 @@ export default function HomePage({ locale = "en" }: { locale?: Locale }) {
     faq,
     stories,
   } = getContent(locale);
+  const h1Parts = pages["/"].h1.includes(": ") ? pages["/"].h1.split(/: (.+)/).slice(0, 2) : null;
   const faqs = faq.home;
   const homeCases = home.caseIds.map((id) => caseById(locale, id));
   const { rating } = site;
@@ -86,11 +87,21 @@ export default function HomePage({ locale = "en" }: { locale?: Locale }) {
         </div>
         <div className="wrap relative z-[2] -mt-12 flex flex-1 flex-col gap-4 pb-8 lg:mt-0 lg:grid lg:grid-cols-[minmax(0,1fr)_600px] lg:items-center lg:gap-14 lg:pt-14 lg:pb-16">
           <div className="flex flex-col gap-4 lg:max-w-[560px] lg:gap-5">
-            <div className="text-[13px] font-semibold tracking-[.12em] text-gold uppercase lg:text-sm">
-              {home.hero.eyebrow}
-            </div>
+            {!h1Parts && (
+              <div className="text-[13px] font-semibold tracking-[.12em] text-gold uppercase lg:text-sm">
+                {home.hero.eyebrow}
+              </div>
+            )}
             <h1 className="-mt-1.5 mb-0 font-serif text-[38px] leading-[1.1] font-normal text-pretty lg:-mt-2 lg:text-[60px] lg:leading-[1.05] lg:tracking-[-.01em]">
-              {pages["/"].h1}
+              {/* "Keyword: tagline" renders the keyword as a smaller first line so the H1 keeps both without a third 60px line. */}
+              {h1Parts ? (
+                <>
+                  <span className="mb-3 block font-sans text-[13px] leading-normal font-semibold tracking-[.12em] text-gold uppercase lg:mb-4 lg:text-sm">{h1Parts[0]}</span>
+                  {h1Parts[1]}
+                </>
+              ) : (
+                pages["/"].h1
+              )}
             </h1>
             <p className="m-0 text-[17px] leading-normal text-pretty text-[#E3DDD0] lg:max-w-[56ch] lg:text-xl">
               {home.hero.lead}

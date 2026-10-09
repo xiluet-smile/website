@@ -15,7 +15,7 @@ import {
 import { localizeHref, localizePath, type Locale } from "@/lib/i18n";
 import { postsForTreatment } from "@/lib/blog";
 import { PostCard } from "@/components/blog/BlogArticle";
-import { faqPage, medicalProcedure, pageGraph } from "@/lib/schema";
+import { faqPage, medicalProcedure, pageGraph, procedureOffer } from "@/lib/schema";
 import { site, type PagePath } from "@/lib/site";
 
 /** Shape of src/content/treatments/*.json. */
@@ -138,6 +138,7 @@ export default function TreatmentPage({
             },
             locale,
           ),
+          ...procedureOffer(path, { name: data.schema.name, priceUsd: pkg.priceUsd }, locale),
           faqPage(faq.items),
         )}
       />

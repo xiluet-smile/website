@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { abs, site, type PagePath } from "./site";
+import { abs, isLegalPath, site, type PagePath } from "./site";
 import { getContent } from "./content-i18n";
 import { localizePath, type Locale } from "./i18n";
 import { ogImagePath } from "./images";
@@ -10,10 +10,12 @@ export function pageMetadata(path: PagePath, locale: Locale = "en"): Metadata {
   const enUrl = abs(path);
   const esUrl = abs(localizePath(path, "es"));
   const url = locale === "es" ? esUrl : enUrl;
+  // English-only legal documents: the /es copy canonicalises to the English page and neither side declares hreflang.
+  const legal = isLegalPath(path);
   return {
     title: { absolute: page.title },
     description: page.description,
-    alternates: { canonical: url, languages: { "en-US": enUrl, "es-US": esUrl, "x-default": enUrl } },
+    alternates: legal ? { canonical: enUrl } : { canonical: url, languages: { "en-US": enUrl, "es-US": esUrl, "x-default": enUrl } },
     openGraph: {
       type: "website",
       siteName: site.name,
