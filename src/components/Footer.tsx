@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Img from "./Img";
-import { CameraIcon, FacebookIcon, InstagramIcon, PhoneIcon, TikTokIcon, YouTubeIcon } from "./Icons";
+import { FacebookIcon, InstagramIcon, PhoneIcon, TikTokIcon, WhatsAppIcon, YouTubeIcon } from "./Icons";
 import { getContent, tpl, ui } from "@/lib/content-i18n";
-import { localizeHref, localizePath, type Locale } from "@/lib/i18n";
+import { localizeHref, type Locale } from "@/lib/i18n";
 import { isExternal, resolveHref } from "@/lib/site";
 
 const linkCls = "text-on-dark no-underline hover:text-gold";
@@ -42,13 +42,14 @@ export default function Footer({ locale = "en" }: { locale?: Locale }) {
             </span>
           </div>
           <div className="flex flex-wrap gap-2.5 lg:justify-end lg:gap-3">
-            <Link
-              href={localizePath("/free-photo-evaluation", locale)}
+            <a
+              href={site.whatsapp}
+              rel="noopener"
               className="inline-flex h-[46px] items-center gap-2 rounded-full bg-gold pr-[18px] pl-4 text-[15px] font-semibold text-teal no-underline hover:text-teal lg:h-[50px] lg:gap-[9px] lg:pr-[22px] lg:pl-[18px] lg:text-base"
             >
-              <CameraIcon />
-              {t.freePhotoEvaluation}
-            </Link>
+              <WhatsAppIcon size={18} />
+              {t.bookConsultation}
+            </a>
             <a
               href={site.phone.href}
               className="inline-flex h-[46px] items-center gap-2 rounded-full border-[1.5px] border-[rgba(247,244,238,.4)] pr-[18px] pl-4 text-[15px] font-semibold whitespace-nowrap text-on-dark no-underline hover:text-gold lg:h-[50px] lg:gap-[9px] lg:pr-[22px] lg:pl-[18px] lg:text-base"

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import FaqAccordion from "@/components/FaqAccordion";
 import Header from "@/components/Header";
-import { CameraIcon, PhoneIcon, Stars, WhatsAppIcon } from "@/components/Icons";
+import { PhoneIcon, Stars, WhatsAppIcon } from "@/components/Icons";
 import Img from "@/components/Img";
 import JsonLd from "@/components/JsonLd";
 import LineIcon, { type LineIconName } from "@/components/LineIcon";
@@ -96,13 +96,14 @@ export default function HomePage({ locale = "en" }: { locale?: Locale }) {
               {home.hero.lead}
             </p>
             <div className="flex flex-col gap-4 lg:flex-row lg:flex-wrap lg:gap-3">
-              <Link
-                href={l("/free-photo-evaluation")}
+              <a
+                href={site.whatsapp}
+                rel="noopener"
                 className="btn btn-gold h-[52px] text-[17px] shadow-[0_8px_24px_rgba(0,0,0,.25)] lg:h-12 lg:px-6 lg:text-base"
               >
-                <CameraIcon size={18} />
+                <WhatsAppIcon size={18} />
                 {t.heroCta}
-              </Link>
+              </a>
               <a
                 href={site.whatsapp}
                 rel="noopener"

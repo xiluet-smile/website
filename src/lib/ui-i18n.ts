@@ -43,6 +43,7 @@ const uiEn = {
   skipToContent: "Skip to content",
   home: "Home",
   freePhotoEvaluation: "Free photo evaluation",
+  bookConsultation: "Book your free consultation",
   startMyEvaluation: "Start my evaluation",
   before: "Before",
   after: "After",
@@ -88,7 +89,7 @@ const uiEn = {
     links: ["Home", "Smile Design", "Before and after", "Free photo evaluation", "Contact"],
   },
   homePage: {
-    heroCta: "Get your free photo evaluation",
+    heroCta: "Book your free consultation",
     whatsapp: "Chat on WhatsApp",
     reviewsLine: "{count} five-star Google reviews",
     stars: "stars",
@@ -352,6 +353,7 @@ const uiEs: UiStrings = {
   skipToContent: "Ir al contenido",
   home: "Inicio",
   freePhotoEvaluation: "Evaluación gratuita por fotos",
+  bookConsultation: "Reserva tu consulta gratis",
   startMyEvaluation: "Empezar mi evaluación",
   before: "Antes",
   after: "Después",
@@ -396,7 +398,7 @@ const uiEs: UiStrings = {
     links: ["Inicio", "Diseño de sonrisa", "Antes y después", "Evaluación gratuita por fotos", "Contacto"],
   },
   homePage: {
-    heroCta: "Obtén tu evaluación gratuita por fotos",
+    heroCta: "Reserva tu consulta gratis",
     whatsapp: "Escríbenos por WhatsApp",
     reviewsLine: "{count} reseñas de cinco estrellas en Google",
     stars: "estrellas",
