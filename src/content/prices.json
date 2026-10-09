@@ -4,7 +4,7 @@
       "id": "signature-veneers",
       "kicker": "Porcelain Veneers",
       "name": "Smile Design",
-      "price": "$5,999",
+      "price": "$6,999",
       "sub": "20 porcelain veneers",
       "badge": "Most chosen",
       "features": [
@@ -15,7 +15,7 @@
         "5-year warranty, in writing"
       ],
       "note": "Veneers only. Deep cleaning and other procedures quoted separately.",
-      "priceUsd": 5999,
+      "priceUsd": 6999,
       "featured": true,
       "href": "/porcelain-veneers-miami",
       "home": {
@@ -32,7 +32,7 @@
       "id": "complete-restoration",
       "kicker": "Crowns and Veneers",
       "name": "Smile Makeover",
-      "price": "$6,999",
+      "price": "$7,999",
       "sub": "20 dental restorations",
       "badge": "",
       "features": [
@@ -43,7 +43,7 @@
         "5-year warranty, in writing"
       ],
       "note": "Deep cleaning and other procedures quoted separately.",
-      "priceUsd": 6999,
+      "priceUsd": 7999,
       "featured": false,
       "href": "/complete-restoration-miami",
       "home": {
@@ -141,7 +141,7 @@
       "n": "02",
       "title": "Restorative",
       "sub": "Single teeth",
-      "note": "Crowns and bridges are 50% off ($500) when done with your smile design. The $5,999 package covers a full set of 20 veneers.",
+      "note": "Crowns and bridges are 50% off ($500) when done with your smile design. The $6,999 package covers a full set of 20 veneers.",
       "items": [
         {
           "name": "Filling",

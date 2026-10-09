@@ -4,7 +4,7 @@
       "id": "signature-veneers",
       "kicker": "Carillas de porcelana",
       "name": "Diseño de sonrisa",
-      "price": "$5,999",
+      "price": "$6,999",
       "sub": "20 carillas de porcelana",
       "badge": "La más elegida",
       "features": [
@@ -15,7 +15,7 @@
         "Garantía de 5 años, por escrito"
       ],
       "note": "Solo carillas. La limpieza profunda y otros procedimientos se cotizan por separado.",
-      "priceUsd": 5999,
+      "priceUsd": 6999,
       "featured": true,
       "href": "/porcelain-veneers-miami",
       "home": {
@@ -32,7 +32,7 @@
       "id": "complete-restoration",
       "kicker": "Coronas y carillas",
       "name": "Transformación de sonrisa",
-      "price": "$6,999",
+      "price": "$7,999",
       "sub": "20 restauraciones dentales",
       "badge": "",
       "features": [
@@ -43,7 +43,7 @@
         "Garantía de 5 años, por escrito"
       ],
       "note": "La limpieza profunda y otros procedimientos se cotizan por separado.",
-      "priceUsd": 6999,
+      "priceUsd": 7999,
       "featured": false,
       "href": "/complete-restoration-miami",
       "home": {
@@ -141,7 +141,7 @@
       "n": "02",
       "title": "Restauradora",
       "sub": "Dientes individuales",
-      "note": "Las coronas y los puentes tienen 50% de descuento ($500) cuando se hacen junto con tu diseño de sonrisa. El paquete de $5,999 cubre un juego completo de 20 carillas.",
+      "note": "Las coronas y los puentes tienen 50% de descuento ($500) cuando se hacen junto con tu diseño de sonrisa. El paquete de $6,999 cubre un juego completo de 20 carillas.",
       "items": [
         {
           "name": "Empaste",

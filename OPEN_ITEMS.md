@@ -7,7 +7,7 @@ Things the design files leave unresolved. Each is marked `TODO(clinic)` in the c
 - **Reply-time promise:** resolved — 6 hours everywhere.
 - **Airport distance:** resolved — 15 minutes from MIA everywhere.
 - **Days in Miami.** Home copy mixes "4 business days", "3 visits", "one week" and package cards say "Delivery in 5 business days".
-- **Cost financing band:** "From about $149 a month for 20 veneers" with the example "$5,999 over 48 months at 9% APR" (the arithmetic matches: $149.31). The 9% APR is illustrative; replace with a real partner rate if the clinic prefers.
+- **Cost financing band:** "From about $174 a month for 20 veneers" with the example "$6,999 over 48 months at 9% APR" (the arithmetic matches: $174.31). The 9% APR is illustrative; replace with a real partner rate if the clinic prefers.
 - **Reviews footnote.** "Reviews from Google, Healthgrades and RealSelf." vs the hero's "Reviews as published on Google".
 - **Schema `priceRange`.** Design JSON-LD says `$$`, SEO.md says `$$$`. Using `$$`.
 - **Sunbit.** "30 sec" decision time in the facts vs "under a minute" in the H1.
