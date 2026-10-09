@@ -67,7 +67,10 @@
     "eyebrow": "Why All-on-X here",
     "title": "Surgery, lab and final teeth under one roof.",
     "body": "Your surgeon, restorative doctor and ceramist work in the same building. That is why your temporary bridge is fitted the same day as surgery and your final teeth are shaped and shaded in person.",
-    "image": null,
+    "image": {
+      "src": "gen-all-on-x-bridge.jpg",
+      "alt": "All-on-X fixed full-arch bridge with titanium abutment sleeves"
+    },
     "facts": [
       {
         "label": "Evidence",

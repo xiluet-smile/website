@@ -67,7 +67,10 @@
     "eyebrow": "Por qué All-on-X aquí",
     "title": "Cirugía, laboratorio y dientes finales bajo un mismo techo.",
     "body": "Tu cirujano, tu doctor restaurador y tu ceramista trabajan en el mismo edificio. Por eso tu puente provisional se coloca el mismo día de la cirugía y tus dientes finales se moldean y se igualan de tono en persona.",
-    "image": null,
+    "image": {
+      "src": "gen-all-on-x-bridge.jpg",
+      "alt": "Puente fijo de arcada completa All-on-X con conexiones de titanio"
+    },
     "facts": [
       {
         "label": "Evidencia",
