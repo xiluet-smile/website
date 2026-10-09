@@ -33,7 +33,7 @@
     ],
     "image": {
       "src": "treatment-all-on-x.jpg",
-      "alt": "Man in his sixties laughing with a fixed All-on-X arch",
+      "alt": "Man in his sixties smiling broadly on a Miami porch with a fixed All-on-X arch",
       "caption": "All-on-X fixed arch · From $10,000 per arch · 5-year written warranty"
     }
   },
@@ -133,19 +133,19 @@
         "src": "gen-aox-man.jpg",
         "label": "Eat what you want",
         "cap": "Fixed teeth never slip",
-        "alt": "Man laughing outdoors in Miami"
+        "alt": "Man in his late sixties laughing at a café table in Little Havana"
       },
       {
         "src": "gen-aox-woman-apple.jpg",
         "label": "Bite into anything",
         "cap": "Full chewing strength",
-        "alt": "Woman biting an apple"
+        "alt": "Woman in her sixties biting into a whole apple in her kitchen"
       },
       {
         "src": "gen-implant-guide.jpg",
         "label": "Guided surgery",
         "cap": "Planned on your CT scan",
-        "alt": "Surgical guide and CT scan"
+        "alt": "3D-printed surgical guide beside a jaw model with four implant positions"
       }
     ],
     "caseIds": [

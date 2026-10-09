@@ -33,7 +33,7 @@
     ],
     "image": {
       "src": "treatment-all-on-x.jpg",
-      "alt": "Hombre de sesenta y tantos riendo con una arcada fija All-on-X",
+      "alt": "Hombre de sesenta y tantos sonriendo ampliamente en un porche de Miami con una arcada fija All-on-X",
       "caption": "Arcada fija All-on-X · Desde $10,000 por arcada · garantía de 5 años por escrito"
     }
   },
@@ -133,19 +133,19 @@
         "src": "gen-aox-man.jpg",
         "label": "Come lo que quieras",
         "cap": "Los dientes fijos nunca se deslizan",
-        "alt": "Hombre riendo al aire libre en Miami"
+        "alt": "Hombre de casi setenta años riendo en una mesa de café en la Pequeña Habana"
       },
       {
         "src": "gen-aox-woman-apple.jpg",
         "label": "Muerde lo que sea",
         "cap": "Fuerza de masticación completa",
-        "alt": "Mujer mordiendo una manzana"
+        "alt": "Mujer de sesenta y tantos mordiendo una manzana entera en su cocina"
       },
       {
         "src": "gen-implant-guide.jpg",
         "label": "Cirugía guiada",
         "cap": "Planificada sobre tu tomografía",
-        "alt": "Guía quirúrgica y tomografía"
+        "alt": "Guía quirúrgica impresa en 3D junto a un modelo de maxilar con cuatro posiciones de implante"
       }
     ],
     "caseIds": [
