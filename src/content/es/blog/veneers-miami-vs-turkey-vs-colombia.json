@@ -67,7 +67,7 @@
                 "Hotel",
                 "En el paquete; pregunta cuántas noches",
                 "En el paquete; pregunta cuántas noches",
-                "3 noches; lista de hoteles a menos de 10 minutos enviada con tu presupuesto, traslados a cada visita por nuestra cuenta"
+                "3 noches; lista de hoteles a menos de 10 minutos con tarifas de aliados Hilton y Marriott con 20% de descuento, traslados reservados por ti"
               ],
               [
                 "Días fuera de casa",
@@ -209,7 +209,7 @@
     },
     {
       "q": "¿Los $6,999 incluyen el hotel?",
-      "a": "No. Incluyen 20 carillas de porcelana, limpieza, radiografías, la vista previa del diseño, provisionales, entrega en 5 días hábiles y garantía de 5 años por escrito. Te enviamos una lista de tres hoteles a menos de 10 minutos con tu presupuesto y cubrimos tus traslados a cada visita.",
+      "a": "No. Incluyen 20 carillas de porcelana, limpieza, radiografías, la vista previa del diseño, provisionales, entrega en 5 días hábiles y garantía de 5 años por escrito. Te enviamos una lista de tres hoteles a menos de 10 minutos, con tarifas de aliados Hilton y Marriott con 20% de descuento; el hotel y los traslados los reservas tú directamente.",
       "doc": "Dr. Roger Ramos Navarro, DMD"
     }
   ]

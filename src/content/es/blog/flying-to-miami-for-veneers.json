@@ -97,7 +97,7 @@
       "h2": "Día a día en Miami",
       "blocks": [
         {
-          "p": "La clínica está en 8396 SW 8th St, Miami, FL 33144, a 15 minutos del Aeropuerto Internacional de Miami. Organizamos tu traslado desde el aeropuerto para la Visita 1 si lo quieres, y un Uber o Lyft de ida y vuelta a la clínica en cada día de tratamiento corre por nuestra cuenta."
+          "p": "La clínica está en 8396 SW 8th St, Miami, FL 33144, a 15 minutos del Aeropuerto Internacional de Miami. Te enviamos el punto de recogida de rideshare en llegadas de MIA y la dirección de la clínica para la Visita 1, y los datos de recogida para cada día de tratamiento. Tú reservas tu propio Uber o Lyft; cada viaje toma unos 15 minutos."
         },
         {
           "steps": [
@@ -125,7 +125,7 @@
             "**Tu protector nocturno**, si ya tienes uno. Si rechinas, dínoslo; recomendamos un protector con tus carillas.",
             "**Fotos de sonrisas que te gusten**, y de tu propia sonrisa de hace años si la meta es recuperarla. El diseño parte de tu cara, no de un catálogo.",
             "**Ropa cómoda y un libro.** Las visitas duran de 2 a 3 horas, y el miércoles es tuyo.",
-            "**Nada para el transporte.** Los traslados a cada visita los organizamos nosotros."
+            "**Nada para el transporte.** Te enviamos los datos de recogida para cada visita; los traslados los reservas tú."
           ]
         }
       ]
@@ -175,7 +175,7 @@
     },
     {
       "q": "¿Ayudan con hoteles y transporte?",
-      "a": "Sí. Una lista de tres hoteles verificados a menos de 10 minutos llega con tu presupuesto, organizamos tu traslado desde el aeropuerto para la Visita 1, y los viajes de ida y vuelta a la clínica en los días de tratamiento corren por nuestra cuenta.",
+      "a": "Sí. Una lista de tres hoteles verificados a menos de 10 minutos llega con tu presupuesto, con tarifas de aliados Hilton y Marriott con 20% de descuento. Te enviamos los datos de recogida para el aeropuerto y cada visita; el hotel y los traslados los reservas y pagas tú directamente.",
       "doc": "Dr. Marta Puentes Marrero, DMD"
     },
     {

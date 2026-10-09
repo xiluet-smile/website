@@ -274,7 +274,7 @@ const uiEn = {
     mediaAlt: "Miami at golden hour",
     weekTitle: "Your week, day by day",
     weekAside: "The same schedule for every veneer and smile design patient.",
-    handleTitle: "What we handle for you",
+    handleTitle: "How we help with the trip",
     faqTitle: "Travel questions",
   },
   blogPage: {
@@ -582,7 +582,7 @@ const uiEs: UiStrings = {
     mediaAlt: "Miami al atardecer",
     weekTitle: "Tu semana, día por día",
     weekAside: "El mismo calendario para cada paciente de carillas y diseño de sonrisa.",
-    handleTitle: "Lo que gestionamos por ti",
+    handleTitle: "Cómo te ayudamos con el viaje",
     faqTitle: "Preguntas sobre el viaje",
   },
   blogPage: {

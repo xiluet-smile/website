@@ -87,7 +87,7 @@
             "**Send three photos.** Front smile, left side, right side, taken on your phone, through the [free photo evaluation](/free-photo-evaluation). About two minutes of your time.",
             "**Written estimate within 6 hours.** A doctor reviews your photos and prepares your treatment plan; your coordinator sends the price, with the two or three financing partners most likely to approve you. The number you receive is the number you pay, unless the exam on Monday finds something that needs treating first, and we tell you that in writing too.",
             "**Pick a payment plan.** Pay in full or pre-qualify with a soft check that does not affect your credit score. Your coordinator shows you the approved offers side by side.",
-            "**Reserve with a $250 deposit.** Your Monday, Tuesday and Thursday are booked, and your coordinator sends a shortlist of three vetted hotels within 10 minutes of the clinic at different price points.",
+            "**Reserve with a $250 deposit.** Your Monday, Tuesday and Thursday are booked, and your coordinator sends a shortlist of three vetted hotels within 10 minutes of the clinic, including Hilton and Marriott partner rates at 20% off for Xiluet patients. You book directly.",
             "**Book flights.** Arrive Sunday or early Monday. Book the return for Thursday evening; Visit 3 takes about 2 hours. From the first message to the flight home, one coordinator is your contact by text."
           ]
         }
@@ -97,7 +97,7 @@
       "h2": "Day by day in Miami",
       "blocks": [
         {
-          "p": "The clinic is at 8396 SW 8th St, Miami, FL 33144, 15 minutes from Miami International Airport. We arrange your ride from the airport for Visit 1 if you want it, and an Uber or Lyft to and from the clinic on each treatment day is on us."
+          "p": "The clinic is at 8396 SW 8th St, Miami, FL 33144, 15 minutes from Miami International Airport. We send you the rideshare pickup spot at MIA arrivals and the clinic address for Visit 1, and the pickup details for each treatment day. You book your own Uber or Lyft; each ride is about 15 minutes."
         },
         {
           "steps": [
@@ -125,7 +125,7 @@
             "**Your night guard**, if you already have one. If you grind, tell us; we recommend a guard with your veneers.",
             "**Photos of smiles you like**, and of your own smile from years ago if the goal is to get it back. Design starts from your face, not a catalogue.",
             "**Comfortable clothes and a book.** Visits are 2 to 3 hours, and Wednesday is yours.",
-            "**Nothing for the ride.** Rides to every visit are arranged by us."
+            "**Nothing for the ride.** We send the pickup details for each visit; you book the rides."
           ]
         }
       ]
@@ -175,7 +175,7 @@
     },
     {
       "q": "Do you help with hotels and transport?",
-      "a": "Yes. A shortlist of three vetted hotels within 10 minutes arrives with your estimate, we arrange your airport pickup for Visit 1, and rides to and from the clinic on treatment days are on us.",
+      "a": "Yes. A shortlist of three vetted hotels within 10 minutes arrives with your estimate, with Hilton and Marriott partner rates at 20% off. We send pickup details for the airport and every visit; you book and pay for your hotel and rides directly.",
       "doc": "Dr. Marta Puentes Marrero, DMD"
     },
     {

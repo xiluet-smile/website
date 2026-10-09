@@ -31,18 +31,18 @@
   ],
   "perks": [
     {
-      "t": "Hotel shortlist",
-      "d": "Three vetted hotels within 10 minutes, at different price points, sent with your estimate.",
+      "t": "Partner hotel rates",
+      "d": "Three vetted hotels within 10 minutes, with Hilton and Marriott partner rates at 20% off for our patients. You book directly; we send the list with your estimate.",
       "icon": "bed"
     },
     {
-      "t": "Airport pickup",
-      "d": "MIA is 15 minutes away. We arrange your ride for Visit 1 if you want it.",
+      "t": "Getting from the airport",
+      "d": "MIA is 15 minutes away. We send you the rideshare pickup spot at arrivals and the clinic address for Visit 1; you book the ride.",
       "icon": "plane"
     },
     {
       "t": "Rides to every visit",
-      "d": "Uber or Lyft to and from the clinic on each treatment day, on us.",
+      "d": "Uber and Lyft pick up at our front door. We send the pickup details for each visit; rides are booked and paid by you.",
       "icon": "car"
     },
     {

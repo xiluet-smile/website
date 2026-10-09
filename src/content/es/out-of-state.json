@@ -31,18 +31,18 @@
   ],
   "perks": [
     {
-      "t": "Lista corta de hoteles",
-      "d": "Tres hoteles verificados a menos de 10 minutos, en distintos rangos de precio, enviados con tu presupuesto.",
+      "t": "Tarifas de hoteles aliados",
+      "d": "Tres hoteles verificados a menos de 10 minutos, con tarifas de aliados Hilton y Marriott con 20% de descuento para nuestros pacientes. Tú reservas directamente; te enviamos la lista con tu presupuesto.",
       "icon": "bed"
     },
     {
-      "t": "Recogida en el aeropuerto",
-      "d": "MIA está a 15 minutos. Organizamos tu transporte para la Visita 1 si lo deseas.",
+      "t": "Cómo llegar desde el aeropuerto",
+      "d": "MIA está a 15 minutos. Te enviamos el punto de recogida de rideshare en llegadas y la dirección de la clínica para la Visita 1; tú reservas el viaje.",
       "icon": "plane"
     },
     {
       "t": "Transporte a cada visita",
-      "d": "Uber o Lyft de ida y vuelta a la clínica cada día de tratamiento, por nuestra cuenta.",
+      "d": "Uber y Lyft te recogen en nuestra puerta. Te enviamos los datos de recogida para cada visita; los viajes los reservas y pagas tú.",
       "icon": "car"
     },
     {

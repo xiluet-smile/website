@@ -67,7 +67,7 @@
                 "Hotel",
                 "In the package; ask how many nights",
                 "In the package; ask how many nights",
-                "3 nights; shortlist within 10 minutes sent with your estimate, rides to every visit on us"
+                "3 nights; shortlist within 10 minutes with Hilton and Marriott partner rates at 20% off, rides booked by you"
               ],
               [
                 "Days away from home",
@@ -209,7 +209,7 @@
     },
     {
       "q": "Does the $6,999 include the hotel?",
-      "a": "No. It includes 20 porcelain veneers, cleaning, X-rays, the design preview, temporaries, delivery in 5 business days and a 5-year written warranty. We send a shortlist of three hotels within 10 minutes with your estimate and cover your rides to every visit.",
+      "a": "No. It includes 20 porcelain veneers, cleaning, X-rays, the design preview, temporaries, delivery in 5 business days and a 5-year written warranty. We send a shortlist of three hotels within 10 minutes, including Hilton and Marriott partner rates at 20% off; you book the hotel and your rides directly.",
       "doc": "Dr. Roger Ramos Navarro, DMD"
     }
   ]
