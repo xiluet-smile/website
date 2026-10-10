@@ -6,7 +6,7 @@ The starting point for measuring the new site (live since 2026-10-06 on xiluetsm
 
 - **Semrush position tracking** (project 31548069 "xiluetsmiledesign.com", campaign `31548069_5622989`: Google, Miami FL, phone, English, 36 keywords): https://www.semrush.com/position-tracking/?project_id=31548069. The API call for this campaign was refused on 2026-10-10 with "unable to charge units", so the campaign is read in the Semrush UI until the subscription's API units for Position Tracking are enabled. Add the Spanish set below to the campaign (same location, phone, language Spanish) so both sets are tracked daily.
 - **Semrush organic index**: `organic_research → resource_organic`, target `xiluetsmiledesign.com`, database `us`, sorted by position (990 API units per pull).
-- **Google Search Console** (needs a signed-in Google account; Claude's browsers were not signed in): Performance → Search results → filter last 28 days → Queries tab → export. Compare average position per query against the tables below. Sitemap status: Indexing → Sitemaps → `https://xiluetsmiledesign.com/sitemap.xml` (78 URLs, 200 OK, referenced from robots.txt).
+- **Google Search Console**: sitemap submitted and indexing requested on 2026-10-09 (clinic). Claude cannot sign in from this machine, so export Performance → Search results → last 28 days → Queries and save it in `seo/` to compare average position per query against the tables below.
 
 ## English keyword set (target page in parentheses)
 
@@ -44,8 +44,8 @@ The starting point for measuring the new site (live since 2026-10-06 on xiluetsm
 | does insurance cover veneers | 1,000 | 28 | /blog/how-to-pay-for-veneers | >100 |
 | all on 4 dental implants miami | — | — | /all-on-x-dental-implants-miami | >100 |
 | full mouth reconstruction miami | — | — | /full-mouth-reconstruction-miami | >100 |
-| frenectomy miami | — | — | (no page; /frenectomy 301s to /contact) | GSC: #2, 472 impressions (Sept 2026) |
-| gum bleaching miami | 40 | 1 | (no page; /gum-lightening 301s to /smile-makeover-miami) | 10 (old URL) |
+| frenectomy miami | — | — | no page (declined 2026-10-11); /frenectomy 301s to /contact | GSC: #2, 472 impressions (Sept 2026) |
+| gum bleaching miami | 40 | 1 | no page (declined 2026-10-11); /gum-lightening 301s to /smile-makeover-miami | 10 (old URL) |
 
 ## Spanish keyword set
 
@@ -78,4 +78,4 @@ Volumes marked "—" were not in the October study; pull them from Semrush Keywo
 
 Branded queries hold the only page-one positions: "xiluet smiles" (#1, 260/mo), "xiluet smiles miami" (#1), "xiluet smile" (#1), "xiluet smiles reviews" (#3), "xiluet" (#6). The rest of the 100 rows are legacy WordPress URLs that now 301 to the new site (gum lightening, sinus lift, fillings, dentures, braces, root canal, nightguards), all between #10 and #99 with near-zero traffic. None of the target keywords above appears in the top 100 yet; the new URLs were first crawlable on 2026-10-06, so this is the expected zero point.
 
-Watch: "gum bleaching miami" #10, "gum depigmentation near me" #51, "gum lightening" #53 and "prosthodontist miami" #34 are real demand hitting redirected URLs. A dedicated gum-lightening page would keep those positions instead of folding them into Smile Makeover (see OPEN_ITEMS.md → Migration).
+Note: "gum bleaching miami" #10, "gum depigmentation near me" #51, "gum lightening" #53 and the old frenectomy ranking (#2 in Search Console) all land on redirected legacy URLs. Decided 2026-10-11: no gum-lightening or frenectomy pages; both are off-positioning for a cosmetic smile-design practice, so expect these rows to drop out of the index and ignore them in later comparisons.
