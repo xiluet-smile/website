@@ -10,16 +10,6 @@
     "image": "dr-roger-ramos-navarro.webp"
   },
   {
-    "slug": "dr-marta-puentes-marrero",
-    "href": "/doctors/dr-marta-puentes-marrero",
-    "name": "Dr. Marta Puentes Marrero, DMD",
-    "shortName": "Dr. Marta Puentes Marrero",
-    "role": "Restorative and adhesive esthetic dentistry",
-    "bio": "Dr. Puentes has practiced in Spain, the United Kingdom and the United States. Her work is conservative by design: preserve the natural tooth, restore function, and make the result look like it was always there.",
-    "langs": "English and Spanish",
-    "image": "dr-marta-puentes-marrero.webp"
-  },
-  {
     "slug": "dr-gretell-alonso-fiel",
     "href": "/doctors/dr-gretell-alonso-fiel",
     "name": "Dr. Gretell Alonso Fiel, DMD",
@@ -28,5 +18,15 @@
     "bio": "Dr. Alonso designs smiles for the face. Trained in Madrid and at Rutgers, she combines porcelain veneers, digital smile design and facial aesthetics so the result is balanced from every angle, not just the teeth.",
     "langs": "English and Spanish",
     "image": "dr-gretell-alonso-fiel.webp"
+  },
+  {
+    "slug": "dr-marta-puentes-marrero",
+    "href": "/doctors/dr-marta-puentes-marrero",
+    "name": "Dr. Marta Puentes Marrero, DMD",
+    "shortName": "Dr. Marta Puentes Marrero",
+    "role": "Restorative and adhesive esthetic dentistry",
+    "bio": "Dr. Puentes has practiced in Spain, the United Kingdom and the United States. Her work is conservative by design: preserve the natural tooth, restore function, and make the result look like it was always there.",
+    "langs": "English and Spanish",
+    "image": "dr-marta-puentes-marrero.webp"
   }
 ]

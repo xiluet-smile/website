@@ -38,14 +38,14 @@
           "href": "/doctors/dr-roger-ramos-navarro"
         },
         {
-          "t": "Dr. Marta Puentes Marrero, DMD",
-          "d": "Estética restauradora y adhesiva",
-          "href": "/doctors/dr-marta-puentes-marrero"
-        },
-        {
           "t": "Dr. Gretell Alonso Fiel, DMD",
           "d": "Carillas, diseño digital de sonrisa",
           "href": "/doctors/dr-gretell-alonso-fiel"
+        },
+        {
+          "t": "Dr. Marta Puentes Marrero, DMD",
+          "d": "Estética restauradora y adhesiva",
+          "href": "/doctors/dr-marta-puentes-marrero"
         },
         {
           "t": "Todos los doctores",
@@ -168,12 +168,12 @@
           "href": "/doctors/dr-roger-ramos-navarro"
         },
         {
-          "label": "Dr. Marta Puentes Marrero",
-          "href": "/doctors/dr-marta-puentes-marrero"
-        },
-        {
           "label": "Dr. Gretell Alonso Fiel",
           "href": "/doctors/dr-gretell-alonso-fiel"
+        },
+        {
+          "label": "Dr. Marta Puentes Marrero",
+          "href": "/doctors/dr-marta-puentes-marrero"
         },
         {
           "label": "Todos los doctores",
