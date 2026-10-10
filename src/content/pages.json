@@ -269,6 +269,13 @@
     "h1": "How much do porcelain veneers cost in Miami in 2026?",
     "breadcrumb": "Veneers cost in Miami"
   },
+  "/blog/porcelain-veneers-miami-guide": {
+    "title": "Porcelain Veneers Miami: Material, 0.3 mm Prep, In-House Lab, Price",
+    "description": "What porcelain veneers are made of, how a 0.3 mm preparation differs from a crown, why the lab decides the result and the timeline, what they cost in Miami, and who they suit.",
+    "ogImage": "blog-veneer-translucent-tweezers.jpg",
+    "h1": "Porcelain veneers in Miami: the material, the preparation and the lab behind a Smile Design",
+    "breadcrumb": "Porcelain veneers in Miami"
+  },
   "/blog/veneer-warranty-what-it-covers": {
     "title": "Veneer Warranty: What It Covers, What to Ask, Why 1 Year Is Common",
     "description": "What a written veneer warranty should state, why most Miami practices offer one year or nothing, when veneers fail, and how Xiluet's 5-year warranty works out of town.",
@@ -283,12 +290,26 @@
     "h1": "Veneers in Miami vs Turkey vs Colombia: the true all-in cost",
     "breadcrumb": "Miami vs Turkey vs Colombia"
   },
+  "/blog/veneers-near-hialeah-doral-spanish-speaking-miami": {
+    "title": "Porcelain Veneers Miami: Hialeah, Doral and Kendall, Spanish-Speaking Clinic",
+    "description": "Drive times to the clinic from Hialeah, Doral, Kendall and Coral Gables, what 20 porcelain veneers cost, how the three-visit week works when you live nearby, why you do not need to fly to Colombia, and what to bring to the first visit. Care in Spanish or English.",
+    "ogImage": "blog-calle-ocho-morning.jpg",
+    "h1": "Porcelain veneers for Hialeah, Doral and Kendall patients: price, the week, and how to get here",
+    "breadcrumb": "Veneers for Hialeah and Doral"
+  },
   "/blog/veneers-vs-crowns-vs-invisalign": {
     "title": "Veneers vs Crowns vs Invisalign: Which Fixes Your Front Teeth?",
     "description": "Veneers, crowns or Invisalign for front teeth, decided problem by problem: how much tooth each removes, how long each takes, what each costs in Miami, when a crown is honest.",
     "ogImage": "blog-veneer-crown-aligner.jpg",
     "h1": "Veneers vs crowns vs Invisalign: what actually fixes your front teeth?",
     "breadcrumb": "Veneers vs crowns vs Invisalign"
+  },
+  "/blog/what-do-teeth-look-like-under-veneers": {
+    "title": "What Do Teeth Look Like Under Veneers? Prep, Years Later, Removal",
+    "description": "What a prepared tooth looks like under a 0.3 mm veneer versus a crown, what the enamel looks like ten years later, what happens when a veneer is removed or replaced, and how to keep the tooth underneath healthy.",
+    "ogImage": "blog-tooth-under-veneer-model.jpg",
+    "h1": "What do teeth look like under veneers? Before bonding, years later, and when a veneer comes off",
+    "breadcrumb": "Teeth under veneers"
   },
   "/blog/what-is-digital-smile-design": {
     "title": "Digital Smile Design in Miami: How a Smile Is Planned, Step by Step",
