@@ -32,7 +32,6 @@ import faqCost from "@/content/faq/cost.json";
 import faqDoctors from "@/content/faq/doctors.json";
 import faqFinancing from "@/content/faq/financing.json";
 import faqOutOfState from "@/content/faq/out-of-state.json";
-import trVeneers from "@/content/treatments/porcelain-veneers.json";
 import trSmileDesign from "@/content/treatments/smile-design.json";
 import trFullMouth from "@/content/treatments/full-mouth-reconstruction.json";
 import trCompleteRestoration from "@/content/treatments/complete-restoration.json";
@@ -70,7 +69,6 @@ import esFaqCost from "@/content/es/faq/cost.json";
 import esFaqDoctors from "@/content/es/faq/doctors.json";
 import esFaqFinancing from "@/content/es/faq/financing.json";
 import esFaqOutOfState from "@/content/es/faq/out-of-state.json";
-import esTrVeneers from "@/content/es/treatments/porcelain-veneers.json";
 import esTrSmileDesign from "@/content/es/treatments/smile-design.json";
 import esTrFullMouth from "@/content/es/treatments/full-mouth-reconstruction.json";
 import esTrCompleteRestoration from "@/content/es/treatments/complete-restoration.json";
@@ -107,7 +105,7 @@ export type Story = { id: string; video: string; poster: string; quote: string; 
 /** Short Spanish note shown above the (English) legal documents on /es, plus the Spanish document names. */
 export type LegalNotice = { notice: string; names: Record<string, string> };
 
-export type TreatmentKey = "porcelain-veneers" | "smile-design" | "complete-restoration" | "full-mouth-reconstruction" | "all-on-x";
+export type TreatmentKey = "smile-design" | "complete-restoration" | "full-mouth-reconstruction" | "all-on-x";
 
 const content = (l: {
   site: Site;
@@ -159,7 +157,6 @@ const en = content({
   legalNotice: null,
   faq: { home: faqHome, contact: faqContact, cost: faqCost, doctors: faqDoctors, financing: faqFinancing, outOfState: faqOutOfState },
   treatments: {
-    "porcelain-veneers": trVeneers as Treatment,
     "smile-design": trSmileDesign as Treatment,
     "complete-restoration": trCompleteRestoration as Treatment,
     "full-mouth-reconstruction": trFullMouth as Treatment,
@@ -196,7 +193,6 @@ const es = content({
     outOfState: esFaqOutOfState as Faq[],
   },
   treatments: {
-    "porcelain-veneers": esTrVeneers as Treatment,
     "smile-design": esTrSmileDesign as Treatment,
     "complete-restoration": esTrCompleteRestoration as Treatment,
     "full-mouth-reconstruction": esTrFullMouth as Treatment,

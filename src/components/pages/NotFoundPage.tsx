@@ -6,7 +6,7 @@ import { ui } from "@/lib/content-i18n";
 import { localizePath, type Locale } from "@/lib/i18n";
 import { site, type PagePath } from "@/lib/site";
 
-const LINKS: PagePath[] = ["/", "/porcelain-veneers-miami", "/before-and-after", "/free-photo-evaluation", "/contact"];
+const LINKS: PagePath[] = ["/", "/smile-design-miami", "/before-and-after", "/free-photo-evaluation", "/contact"];
 
 export default function NotFoundPage({ locale = "en" }: { locale?: Locale }) {
   const t = ui(locale);

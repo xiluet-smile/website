@@ -3,13 +3,13 @@
   "packageId": "signature-veneers",
   "breadcrumb": "Diseño de sonrisa",
   "schema": {
-    "name": "Diseño de sonrisa digital",
+    "name": "Diseño de sonrisa con carillas de porcelana",
     "procedureType": "http://schema.org/NoninvasiveProcedure"
   },
   "hero": {
-    "definition": "El diseño de sonrisa es la etapa de planificación de la odontología estética: se fotografían y escanean tu cara, labios, tono de piel y mordida, y luego se diseña digitalmente una nueva sonrisa que se prueba en tu boca antes de cualquier trabajo permanente. En Xiluet Smiles en Miami está incluido en todos los casos de carillas.",
-    "lead": "Fotografiamos y escaneamos tu cara y tus dientes, diseñamos tu nueva sonrisa digitalmente y te la mostramos en tu propia boca. Nada permanente ocurre hasta que digas que sí.",
-    "secondaryCta": "Mira cómo funciona el diseño",
+    "definition": "Diseño de sonrisa es nuestro paquete de 20 carillas de porcelana: láminas delgadas de cerámica, de apenas 0.3 mm, que se adhieren al frente de tus dientes para cambiar su forma, largo y color, diseñadas para tu rostro y probadas en tu boca antes de tocar un solo diente. En Xiluet Smiles en Miami cuesta $6,999, se hace en tres visitas en una semana e incluye garantía de 5 años por escrito.",
+    "lead": "Poco o nada de desgaste, un diseño que apruebas antes de tocar un solo diente y entrega en una semana en Miami. Con garantía de 5 años, por escrito.",
+    "secondaryCta": "Mira tu semana en Miami",
     "stats": [
       {
         "kind": "price",
@@ -17,8 +17,8 @@
       },
       {
         "kind": "text",
-        "value": "1 semana",
-        "label": "del diseño a la entrega"
+        "value": "3 visitas",
+        "label": "en una semana"
       },
       {
         "kind": "text",
@@ -31,71 +31,71 @@
       }
     ],
     "image": {
-      "src": "treatment-smile-design.jpg",
-      "alt": "Mujer joven sonriendo en una calle de Miami con una sonrisa diseñada para su rostro",
-      "caption": "Diseño de sonrisa · Apruebas el diseño antes de tocar ningún diente"
+      "src": "treatment-porcelain-veneers.jpg",
+      "alt": "Mujer de treinta y tantos riendo con carillas de porcelana de aspecto natural",
+      "caption": "Diseño de sonrisa · 20 carillas de porcelana · 0.3 mm · garantía de 5 años por escrito"
     }
   },
   "candidates": {
-    "title": "Diseñada para la persona, no sacada de un catálogo",
-    "intro": "Cinco cosas que tomamos en cuenta en el diseño antes de tocar un solo diente.",
+    "title": "Las carillas corrigen lo que el blanqueamiento y los alineadores no pueden",
+    "intro": "Si te reconoces en alguno de estos casos, es muy probable que seas candidato.",
     "items": [
       {
-        "t": "Tu cara",
-        "d": "La línea del labio, la forma de la cara y la simetría definen el largo y el ancho de cada diente."
+        "t": "Manchas que el blanqueamiento no quita",
+        "d": "Tetraciclina, fluorosis o decoloración interna profunda."
       },
       {
-        "t": "Tu tono de piel",
-        "d": "El tono se elige según tu piel y tus ojos, no según una tabla de blancura."
+        "t": "Dientes astillados y bordes desgastados",
+        "d": "Dientes acortados por el bruxismo o resinas viejas que se siguen rompiendo."
       },
       {
-        "t": "Tu edad",
-        "d": "Cuánto diente se ve cuando hablas y sonríes. Lo adaptamos a lo que te favorece."
+        "t": "Espacios entre los dientes",
+        "d": "Cerrados en una semana, sin años de alineadores."
       },
       {
-        "t": "Tus encías",
-        "d": "Una línea de encía pareja enmarca el diseño. Se contornea primero si hace falta."
+        "t": "Tamaño o forma desigual",
+        "d": "Dientes frontales pequeños, cónicos o disparejos."
       },
       {
-        "t": "Tu mordida",
-        "d": "Los bordes se moldean para que hables y mastiques con comodidad desde el primer día."
+        "t": "Apiñamiento o rotación leve",
+        "d": "Cuando importa más verse alineado que mover las raíces."
       }
     ]
   },
   "why": {
-    "eyebrow": "Por qué diseñar primero",
-    "title": "Velo en tu boca antes de comprometerte.",
-    "body": "La vista previa del diseño no es una foto en una pantalla. Son provisionales con la forma exacta de tu sonrisa final. Vives con ellos dos días, pides cambios y solo entonces se termina la porcelana.",
+    "eyebrow": "Por qué las carillas Xiluet",
+    "title": "Tan delgadas que conservas tus dientes. Tan fuertes que duran.",
+    "body": "Nuestras carillas las termina a mano un ceramista en el mismo edificio que tu doctor. Por eso podemos hacerlas más delgadas, igualar el tono en persona y entregarlas en días, no en semanas.",
     "image": {
-      "src": "gen-design-tablet.jpg",
-      "alt": "Doctor mostrando un diseño de sonrisa digital en una tableta"
+      "src": "gen-veneers-studio.jpg",
+      "alt": "Un juego completo de carillas de porcelana estratificadas a mano en el laboratorio interno"
     },
     "facts": [
       {
-        "label": "Vista previa",
-        "big": "En tu boca",
-        "sub": "Provisionales con la forma del diseño final, que usas durante dos días."
+        "label": "Grosor",
+        "big": "0.3 mm",
+        "sub": "Poco o nada de desgaste. Tu diente natural queda casi completamente intacto."
       },
       {
-        "label": "Cambios",
-        "big": "Ilimitados",
-        "sub": "Más largos, más cortos, más redondeados, más blancos. Se ajustan antes de fabricar la porcelana."
+        "label": "Laboratorio",
+        "big": "Propio",
+        "sub": "Doctor y ceramista en el mismo edificio. Tono igualado en persona."
       },
       {
-        "label": "Tono",
-        "big": "Igualado en persona",
-        "sub": "El ceramista verifica el color contra tu piel y tus ojos."
+        "label": "Vista previa del diseño",
+        "big": "Tú apruebas",
+        "sub": "Ves el diseño en tu boca antes de empezar cualquier trabajo permanente."
       },
       {
-        "label": "Aspecto natural",
-        "big": "Ninguno igual a otro",
-        "sub": "Cada diente se moldea individualmente, nunca un juego plano y uniforme."
+        "label": "Material",
+        "big": "Zirconia",
+        "sub": "Nuestra porcelana se estratifica sobre un núcleo de zirconia: una cerámica sin metal que resiste fracturas y manchas y conserva su color por años."
       }
     ]
   },
   "week": {
-    "title": "Tu semana de diseño en Miami",
-    "intro": "Fotos y presupuesto desde casa. Luego diseño, vista previa y entrega en tres visitas en una semana.",
+    "title": "Tu semana en Miami",
+    "intro": "Todo lo previo al viaje se hace desde casa: fotos, presupuesto por escrito, plan de pago y fechas. Luego, tres visitas en una semana.",
     "linkLabel": "Elige una fecha y mira el calendario completo →",
     "visits": [
       {
@@ -106,20 +106,20 @@
       },
       {
         "k": "Visita 1 · Lunes",
-        "t": "Examen, escaneos y sesión de diseño",
-        "d": "Limpieza, radiografías, escaneos 3D y fotos faciales. Tú y tu doctor deciden juntos la forma, el largo y el tono.",
+        "t": "Examen y revisión del plan de tratamiento",
+        "d": "Limpieza, radiografías, escaneos y fotos. Confirmas el diseño con tu doctor.",
         "time": "Unas 2 horas"
       },
       {
         "k": "Visita 2 · Martes",
-        "t": "Vista previa en tu boca",
-        "d": "Preparación mínima y luego provisionales con tu diseño aprobado. Vive con ellos y pide cualquier cambio.",
+        "t": "Preparación y vista previa",
+        "d": "Preparación mínima y luego provisionales con la forma de tu diseño final, para que vivas con él dos días.",
         "time": "Unas 3 horas"
       },
       {
         "k": "Visita 3 · Jueves",
         "t": "Entrega y ajustes finales",
-        "d": "Se cementa la porcelana final, se revisa la mordida y recibes la garantía de 5 años por escrito.",
+        "d": "Se cementan tus carillas, se revisa la mordida y recibes tu garantía de 5 años por escrito.",
         "time": "Unas 2 horas. Vuelas a casa esa misma tarde."
       }
     ]
@@ -129,30 +129,30 @@
     "linkLabel": "Todos los casos →",
     "label": "Diseño de sonrisa",
     "caseIds": [
-      "BA19",
       "BA16",
-      "BA8",
+      "BA19",
       "BA4",
-      "BA3"
+      "BA1",
+      "BA2"
     ]
   },
   "price": {
     "eyebrow": "Costo",
-    "title": "Diseño, vista previa y 20 carillas. Un solo precio por escrito.",
-    "body": "Envía fotos y un doctor te responde con tu plan de tratamiento en menos de 6 horas. La vista previa del diseño y cualquier cambio están incluidos, nunca se cobran como extras.",
+    "title": "Un solo precio por 20 carillas, confirmado por escrito antes de reservar",
+    "body": "Envía fotos y un doctor te responde con tu plan de tratamiento en menos de 6 horas. El número que ves es el número que pagas, salvo que el examen encuentre algo que haya que tratar primero, y eso también te lo decimos por escrito.",
     "lendersLabel": "Paga a plazos con",
     "compareLabel": "Compara todos los paquetes →",
     "card": {
-      "title": "20 carillas de porcelana",
-      "sub": "Paquete de diseño de sonrisa",
+      "title": "Diseño de sonrisa",
+      "sub": "20 carillas de porcelana",
       "badge": "El más elegido",
       "pricePrefix": "20 carillas",
       "priceSuffix": null,
       "included": [
-        "Análisis facial y diseño de sonrisa digital",
-        "Vista previa en tu boca, con cambios incluidos",
         "20 carillas de porcelana, preparación mínima de 0.3 mm",
         "Limpieza profesional y radiografías",
+        "Vista previa del diseño que apruebas primero",
+        "Entrega en 5 días hábiles",
         "Garantía de 5 años por escrito"
       ],
       "cta": "Quiero mi presupuesto por escrito"
@@ -160,32 +160,37 @@
     "footnote": "Los precios mostrados son tarifas mínimas. Tu precio final se confirma por escrito después de la evaluación de un doctor."
   },
   "faq": {
-    "title": "Preguntas sobre diseño de sonrisa, respondidas por los doctores",
+    "title": "Preguntas sobre diseño de sonrisa y carillas, respondidas por los doctores",
     "linkLabel": "Todas las respuestas →",
     "items": [
       {
         "q": "¿Cuál es la diferencia entre diseño de sonrisa y carillas?",
-        "a": "Las carillas son el material. El diseño de sonrisa es la planificación que decide su forma, largo y tono según tu cara. Todos los casos de carillas aquí empiezan con un diseño.",
+        "a": "Las carillas son el material. Diseño de sonrisa es nuestro paquete de 20 carillas de porcelana planificadas sobre tu rostro: el diseño digital, la vista previa que apruebas en tu boca, las carillas, la limpieza y las radiografías, y la garantía de 5 años, por un solo precio por escrito.",
         "doc": "Dr. Roger Ramos Navarro, DMD"
       },
       {
-        "q": "¿Puedo elegir qué tan blancas?",
-        "a": "Sí. Te recomendamos un tono que vaya con tu piel y tus ojos, y tú tomas la decisión final durante la vista previa.",
-        "doc": "Dr. Gretell Alonso Fiel, DMD"
+        "q": "¿Duelen las carillas?",
+        "a": "La mayoría de los pacientes sienten presión, no dolor. La zona se anestesia para la preparación y la sensibilidad leve suele desaparecer en pocos días.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
       },
       {
-        "q": "¿Y si no me gusta la vista previa?",
-        "a": "La cambiamos. Los provisionales se ajustan en el sillón hasta que los apruebes, y solo entonces se termina la porcelana.",
+        "q": "¿Cuánto de mi diente se desgasta?",
+        "a": "Con carillas de 0.3 mm, normalmente muy poco y a veces nada. Tu doctor lo confirma en la Visita 1 después de los escaneos.",
         "doc": "Dr. Marta Puentes Marrero, DMD"
       },
       {
-        "q": "¿Necesito los 20 dientes?",
-        "a": "No siempre. Algunas sonrisas necesitan 8 o 10. Tu doctor te lo indica en el plan de tratamiento y el presupuesto por escrito cambia en consecuencia.",
+        "q": "¿Se verán falsas?",
+        "a": "No si están diseñadas para tu cara. Ves y apruebas el diseño antes de preparar cualquier diente, y el tono se iguala en persona.",
+        "doc": "Dr. Gretell Alonso Fiel, DMD"
+      },
+      {
+        "q": "¿Cuánto duran las carillas de porcelana?",
+        "a": "Con un cuidado normal, lo típico es de 10 a 15 años. Las nuestras están cubiertas por 5 años por escrito, y se recomienda una guarda nocturna si rechinas los dientes.",
         "doc": "Dr. Roger Ramos Navarro, DMD"
       },
       {
-        "q": "¿Cuánto tarda el diseño?",
-        "a": "La sesión de diseño es parte de la Visita 1. El proceso completo, del diseño a la entrega, es una semana.",
+        "q": "¿De verdad puedo hacerlo en una semana?",
+        "a": "Sí. Nuestro laboratorio está en el mismo edificio, así que el diseño, la preparación y la entrega se hacen en 3 visitas en tan solo 4 días hábiles.",
         "doc": "Dr. Roger Ramos Navarro, DMD"
       }
     ]

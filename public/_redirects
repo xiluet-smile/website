@@ -2,10 +2,14 @@
 # Host canonicalisation (www -> apex) is in functions/_middleware.ts; Pages _redirects cannot match on host.
 
 # Old URLs -> final URLs (301), each with and without the trailing slash.
-/porcelain-veneers /porcelain-veneers-miami 301
-/porcelain-veneers/ /porcelain-veneers-miami 301
-/lumineers /porcelain-veneers-miami 301
-/lumineers/ /porcelain-veneers-miami 301
+/porcelain-veneers /smile-design-miami 301
+/porcelain-veneers/ /smile-design-miami 301
+/lumineers /smile-design-miami 301
+/lumineers/ /smile-design-miami 301
+/porcelain-veneers-miami /smile-design-miami 301
+/porcelain-veneers-miami/ /smile-design-miami 301
+/es/carillas-de-porcelana-miami /es/diseno-de-sonrisa-miami 301
+/es/carillas-de-porcelana-miami/ /es/diseno-de-sonrisa-miami 301
 /composite-veneers /blog/composite-vs-porcelain-veneers-vs-lumineers 301
 /composite-veneers/ /blog/composite-vs-porcelain-veneers-vs-lumineers 301
 /cosmetic-dentistry /smile-design-miami 301
@@ -177,7 +181,6 @@
 /es/blog/que-es-el-diseno-de-sonrisa-digital/ /es/blog/que-es-el-diseno-de-sonrisa-digital 301
 /es/blog/quien-es-candidato-para-carillas/ /es/blog/quien-es-candidato-para-carillas 301
 /es/blog/volar-a-miami-para-carillas/ /es/blog/volar-a-miami-para-carillas 301
-/es/carillas-de-porcelana-miami/ /es/carillas-de-porcelana-miami 301
 /es/clinica/ /es/clinica 301
 /es/contacto/ /es/contacto 301
 /es/diseno-de-sonrisa-miami/ /es/diseno-de-sonrisa-miami 301
@@ -210,7 +213,6 @@
 /full-mouth-reconstruction-miami/ /full-mouth-reconstruction-miami 301
 /out-of-state-patients/ /out-of-state-patients 301
 /partnerships/ /partnerships 301
-/porcelain-veneers-miami/ /porcelain-veneers-miami 301
 /referrals/ /referrals 301
 /refund-and-cancellation/ /refund-and-cancellation 301
 /smile-design-miami/ /smile-design-miami 301

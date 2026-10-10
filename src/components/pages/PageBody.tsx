@@ -22,7 +22,6 @@ import type { Locale } from "@/lib/i18n";
 import type { PagePath } from "@/lib/site";
 
 const TREATMENTS: Partial<Record<PagePath, TreatmentKey>> = {
-  "/porcelain-veneers-miami": "porcelain-veneers",
   "/smile-design-miami": "smile-design",
   "/full-mouth-reconstruction-miami": "full-mouth-reconstruction",
   "/all-on-x-dental-implants-miami": "all-on-x",

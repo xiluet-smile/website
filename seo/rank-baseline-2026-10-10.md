@@ -10,15 +10,17 @@ The starting point for measuring the new site (live since 2026-10-06 on xiluetsm
 
 ## English keyword set (target page in parentheses)
 
+Note 2026-10-11: the Porcelain Veneers page was merged into Smile Design, so every veneers keyword now targets /smile-design-miami (title "Smile Design Miami | 20 Porcelain Veneers $6,999, 0.3 mm, 1 Week"); /porcelain-veneers-miami 301s there.
+
 | Keyword | Volume | KD | Target page | Position 2026-10-10 |
 | --- | --- | --- | --- | --- |
-| veneers near me | 49,500 | 5 | /porcelain-veneers-miami + GBP | >100 |
-| porcelain veneers near me | 33,100 | 5 | /porcelain-veneers-miami + GBP | >100 |
-| veneers miami | 1,300 | 16 | /porcelain-veneers-miami | >100 |
+| veneers near me | 49,500 | 5 | /smile-design-miami + GBP | >100 |
+| porcelain veneers near me | 33,100 | 5 | /smile-design-miami + GBP | >100 |
+| veneers miami | 1,300 | 16 | /smile-design-miami | >100 |
 | smile design miami | 1,300 | 18 | /smile-design-miami | >100 |
-| best veneers near me | 1,000 | 13 | /porcelain-veneers-miami | >100 |
-| porcelain veneers miami | 590 | 34 | /porcelain-veneers-miami | >100 |
-| miami veneers | 590 | 32 | /porcelain-veneers-miami | >100 |
+| best veneers near me | 1,000 | 13 | /smile-design-miami | >100 |
+| porcelain veneers miami | 590 | 34 | /smile-design-miami | >100 |
+| miami veneers | 590 | 32 | /smile-design-miami | >100 |
 | cheap veneers near me | 590 | 1 | /veneers-cost-miami | >100 |
 | veneers cost miami | 210 | 0 | /veneers-cost-miami | >100 |
 | smile makeover miami | 170 | 4 | /smile-makeover-miami | >100 |
@@ -51,12 +53,12 @@ The starting point for measuring the new site (live since 2026-10-06 on xiluetsm
 
 | Keyword | Volume (US) | KD | Target page | Position 2026-10-10 |
 | --- | --- | --- | --- | --- |
-| carillas de porcelana miami | 110 | 0 | /es/carillas-de-porcelana-miami | >100 |
+| carillas de porcelana miami | 110 | 0 | /es/diseno-de-sonrisa-miami | >100 |
 | diseño de sonrisa miami | 50 | 0 | /es/diseno-de-sonrisa-miami | >100 |
 | diseño de sonrisa digital miami | — | — | /es/blog/que-es-el-diseno-de-sonrisa-digital | >100 |
 | cuanto cuesta un diseño de sonrisa en miami | — | — | /es/blog/que-es-el-diseno-de-sonrisa-digital | >100 |
 | sonrisa de hollywood miami | — | — | /es/blog/que-es-el-diseno-de-sonrisa-digital | >100 |
-| carillas miami | — | — | /es/carillas-de-porcelana-miami | >100 |
+| carillas miami | — | — | /es/diseno-de-sonrisa-miami | >100 |
 | precio carillas miami | — | — | /es/precio-carillas-miami | >100 |
 | carillas de porcelana precio | — | — | /es/blog/precio-carillas-de-porcelana-miami | >100 |
 | dientes separados solucion miami | — | — | /es/blog/quien-es-candidato-para-carillas | >100 |

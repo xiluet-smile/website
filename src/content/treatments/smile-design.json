@@ -3,13 +3,13 @@
   "packageId": "signature-veneers",
   "breadcrumb": "Smile Design",
   "schema": {
-    "name": "Digital Smile Design",
+    "name": "Smile Design with porcelain veneers",
     "procedureType": "http://schema.org/NoninvasiveProcedure"
   },
   "hero": {
-    "definition": "Smile design is the planning stage of cosmetic dentistry: your face, lips, skin tone and bite are photographed and scanned, then a new smile is designed digitally and previewed in your mouth before any permanent work. At Xiluet Smiles in Miami it is included with every veneer case.",
-    "lead": "We photograph and scan your face and teeth, design your new smile digitally, and show it to you in your own mouth. Nothing permanent happens until you say yes.",
-    "secondaryCta": "See how the design works",
+    "definition": "Smile Design is our package of 20 porcelain veneers: thin shells of ceramic, as thin as 0.3 mm, bonded to the front of your teeth to change their shape, length and color, designed around your face and previewed in your mouth before any tooth is touched. At Xiluet Smiles in Miami it costs $6,999, takes three visits in one week, and carries a 5-year written warranty.",
+    "lead": "Little to no drilling, a design you approve before any tooth is touched, and delivery in one week in Miami. Covered by a 5-year warranty, in writing.",
+    "secondaryCta": "See your week in Miami",
     "stats": [
       {
         "kind": "price",
@@ -17,8 +17,8 @@
       },
       {
         "kind": "text",
-        "value": "1 week",
-        "label": "design to delivery"
+        "value": "3 visits",
+        "label": "in one week"
       },
       {
         "kind": "text",
@@ -31,71 +31,71 @@
       }
     ],
     "image": {
-      "src": "treatment-smile-design.jpg",
-      "alt": "Young woman smiling on a Miami street with a smile designed for her face",
-      "caption": "Smile design · You approve the design before any tooth is touched"
+      "src": "treatment-porcelain-veneers.jpg",
+      "alt": "Woman in her thirties laughing with natural-looking porcelain veneers",
+      "caption": "Smile Design · 20 porcelain veneers · 0.3 mm · 5-year written warranty"
     }
   },
   "candidates": {
-    "title": "Designed for the person, not from a catalogue",
-    "intro": "Five things we design around before a single tooth is touched.",
+    "title": "Veneers fix what whitening and aligners cannot",
+    "intro": "If you recognise yourself in one of these, you are likely a candidate.",
     "items": [
       {
-        "t": "Your face",
-        "d": "Lip line, face shape and symmetry set the length and width of each tooth."
+        "t": "Stains whitening won’t lift",
+        "d": "Tetracycline, fluorosis or deep internal discoloration."
       },
       {
-        "t": "Your skin tone",
-        "d": "Shade is chosen against your skin and eyes, not a whiteness chart."
+        "t": "Chips and worn edges",
+        "d": "Teeth shortened by grinding or old bonding that keeps breaking."
       },
       {
-        "t": "Your age",
-        "d": "How much tooth shows when you talk and smile. We match what suits you."
+        "t": "Gaps between teeth",
+        "d": "Closed in one week, without years of aligners."
       },
       {
-        "t": "Your gums",
-        "d": "An even gum line frames the design. Contoured first if needed."
+        "t": "Uneven size or shape",
+        "d": "Small, peg-shaped or mismatched front teeth."
       },
       {
-        "t": "Your bite",
-        "d": "Edges are shaped so you speak and chew comfortably from day one."
+        "t": "Mild crowding or rotation",
+        "d": "When a straighter look matters more than moving roots."
       }
     ]
   },
   "why": {
-    "eyebrow": "Why design first",
-    "title": "See it in your mouth before you commit.",
-    "body": "The design preview is not a photo on a screen. It is temporaries shaped exactly like your final smile. You live with it for two days, ask for changes, and only then is the porcelain finished.",
+    "eyebrow": "Why Xiluet veneers",
+    "title": "Thin enough to keep your teeth. Strong enough to last.",
+    "body": "Our veneers are hand-finished by a ceramist in the same building as your doctor. That is why we can go thinner, match shade in person, and deliver in days instead of weeks.",
     "image": {
-      "src": "gen-design-tablet.jpg",
-      "alt": "Doctor showing a digital smile design on a tablet"
+      "src": "gen-veneers-studio.jpg",
+      "alt": "A full set of hand-layered porcelain veneers from the in-house lab"
     },
     "facts": [
       {
-        "label": "Preview",
-        "big": "In your mouth",
-        "sub": "Temporaries shaped like the final design, worn for two days."
+        "label": "Thickness",
+        "big": "0.3 mm",
+        "sub": "Little to no drilling. Your natural tooth stays almost entirely intact."
       },
       {
-        "label": "Changes",
-        "big": "Unlimited",
-        "sub": "Longer, shorter, rounder, whiter. Adjusted before porcelain is made."
+        "label": "Lab",
+        "big": "In-house",
+        "sub": "Doctor and ceramist in the same building. Shade matched in person."
       },
       {
-        "label": "Shade",
-        "big": "Matched in person",
-        "sub": "The ceramist checks color against your skin and eyes."
+        "label": "Design preview",
+        "big": "You approve",
+        "sub": "See the design in your mouth before any permanent work starts."
       },
       {
-        "label": "Natural look",
-        "big": "No two alike",
-        "sub": "Each tooth shaped individually, never a flat uniform set."
+        "label": "Material",
+        "big": "Zirconia",
+        "sub": "Our porcelain is layered over a zirconia core: a metal-free ceramic that resists chips and stains and keeps its color for years."
       }
     ]
   },
   "week": {
-    "title": "Your design week in Miami",
-    "intro": "Photos and estimate from home. Then design, preview and delivery across three visits in one week.",
+    "title": "Your week in Miami",
+    "intro": "Everything before the trip happens from home: photos, written estimate, payment plan and dates. Then three visits in one week.",
     "linkLabel": "Pick a date and see the full schedule →",
     "visits": [
       {
@@ -106,53 +106,53 @@
       },
       {
         "k": "Visit 1 · Monday",
-        "t": "Exam, scans and design session",
-        "d": "Cleaning, X-rays, 3D scans and facial photos. You and your doctor decide shape, length and shade together.",
+        "t": "Exam and treatment plan review",
+        "d": "Cleaning, X-rays, scans and photos. You confirm the design with your doctor.",
         "time": "About 2 hours"
       },
       {
         "k": "Visit 2 · Tuesday",
-        "t": "Preview in your mouth",
-        "d": "Minimal preparation, then temporaries in your approved design. Live with it, then ask for any change.",
+        "t": "Preparation and preview",
+        "d": "Minimal preparation, then temporaries shaped like your final design so you can live with it for two days.",
         "time": "About 3 hours"
       },
       {
         "k": "Visit 3 · Thursday",
         "t": "Delivery and final adjustments",
-        "d": "Final porcelain bonded, bite checked, 5-year warranty handed over in writing.",
+        "d": "Your veneers are bonded, bite checked, and your 5-year warranty is handed over in writing.",
         "time": "About 2 hours. Fly home the same evening."
       }
     ]
   },
   "results": {
-    "title": "Smile design results",
+    "title": "Smile Design results",
     "linkLabel": "All cases →",
-    "label": "Smile design",
+    "label": "Smile Design",
     "caseIds": [
-      "BA19",
       "BA16",
-      "BA8",
+      "BA19",
       "BA4",
-      "BA3"
+      "BA1",
+      "BA2"
     ]
   },
   "price": {
     "eyebrow": "Cost",
-    "title": "Design, preview and 20 veneers. One written price.",
-    "body": "Send photos and a doctor replies with your treatment plan within 6 hours. The design preview and any changes are included, never billed as extras.",
+    "title": "One price for 20 veneers, confirmed in writing before you book",
+    "body": "Send photos and a doctor replies with your treatment plan within 6 hours. The number you see is the number you pay, unless your exam finds something that needs treating first, and we tell you that in writing too.",
     "lendersLabel": "Pay over time with",
     "compareLabel": "Compare all packages →",
     "card": {
-      "title": "20 porcelain veneers",
-      "sub": "Smile design package",
+      "title": "Smile Design",
+      "sub": "20 porcelain veneers",
       "badge": "Most chosen",
       "pricePrefix": "20 veneers",
       "priceSuffix": null,
       "included": [
-        "Facial analysis and digital smile design",
-        "Preview in your mouth, with changes included",
         "20 porcelain veneers, 0.3 mm minimal prep",
         "Professional cleaning and X-rays",
+        "Design preview you approve first",
+        "Delivery in 5 business days",
         "5-year warranty, in writing"
       ],
       "cta": "Get my written estimate"
@@ -160,32 +160,37 @@
     "footnote": "Prices shown are minimum fees. Your final fee is confirmed in writing after a doctor's evaluation."
   },
   "faq": {
-    "title": "Smile design questions, answered by the doctors",
+    "title": "Smile Design and veneer questions, answered by the doctors",
     "linkLabel": "All answers →",
     "items": [
       {
-        "q": "What is the difference between smile design and veneers?",
-        "a": "Veneers are the material. Smile design is the planning that decides their shape, length and shade for your face. Every veneer case here starts with a design.",
+        "q": "What is the difference between Smile Design and veneers?",
+        "a": "Veneers are the material. Smile Design is our package of 20 porcelain veneers planned on your face: the digital design, the preview you approve in your mouth, the veneers, the cleaning and X-rays, and the 5-year warranty, for one written price.",
         "doc": "Dr. Roger Ramos Navarro, DMD"
       },
       {
-        "q": "Can I choose how white?",
-        "a": "Yes. We recommend a shade that suits your skin and eyes, and you make the final call during the preview.",
-        "doc": "Dr. Gretell Alonso Fiel, DMD"
+        "q": "Do veneers hurt?",
+        "a": "Most patients feel pressure, not pain. The area is numbed for preparation, and mild sensitivity usually settles within a few days.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
       },
       {
-        "q": "What if I do not like the preview?",
-        "a": "We change it. Temporaries are adjusted in the chair until you approve, and only then is the porcelain finished.",
+        "q": "How much of my tooth is removed?",
+        "a": "With 0.3 mm veneers, usually very little and sometimes none. Your doctor confirms this at Visit 1 after the scans.",
         "doc": "Dr. Marta Puentes Marrero, DMD"
       },
       {
-        "q": "Do I need all 20 teeth?",
-        "a": "Not always. Some smiles need 8 or 10. Your doctor tells you in the treatment plan, and the written estimate changes accordingly.",
+        "q": "Will they look fake?",
+        "a": "Not if they are designed for your face. You see and approve the design before any tooth is prepared, and shade is matched in person.",
+        "doc": "Dr. Gretell Alonso Fiel, DMD"
+      },
+      {
+        "q": "How long do porcelain veneers last?",
+        "a": "With normal care, 10 to 15 years is typical. Ours are covered for 5 years in writing, and a night guard is recommended if you grind.",
         "doc": "Dr. Roger Ramos Navarro, DMD"
       },
       {
-        "q": "How long does the design take?",
-        "a": "The design session is part of Visit 1. The whole process, design to delivery, is one week.",
+        "q": "Can I really do this in one week?",
+        "a": "Yes. Our lab is in the same building, so design, preparation and delivery happen across 3 visits in as little as 4 business days.",
         "doc": "Dr. Roger Ramos Navarro, DMD"
       }
     ]

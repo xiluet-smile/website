@@ -7,7 +7,7 @@ import { abs, isLegalPath, pages, site, type PagePath } from "@/lib/site";
 
 export const dynamic = "force-static";
 
-const TREATMENTS = ["/porcelain-veneers-miami", "/smile-design-miami", "/full-mouth-reconstruction-miami", "/all-on-x-dental-implants-miami", "/smile-makeover-miami"];
+const TREATMENTS = ["/smile-design-miami", "/full-mouth-reconstruction-miami", "/all-on-x-dental-implants-miami", "/smile-makeover-miami"];
 const lastModified = Object.fromEntries(blogPosts.map((p) => [`/blog/${p.slug}`, new Date(p.dateModified)]));
 const priority = (p: string) => (p === "/" ? 1 : TREATMENTS.includes(p) ? 0.9 : p === "/contact" ? 0.6 : 0.7);
 

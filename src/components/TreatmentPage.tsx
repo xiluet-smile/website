@@ -116,7 +116,7 @@ export default function TreatmentPage({
     ? caseById(locale, hero.image.caseId)
     : null;
   const evaluation = localizePath("/free-photo-evaluation", locale);
-  // Articles tag treatments by route slug without the "-miami" suffix (e.g. "porcelain-veneers").
+  // Articles tag treatments by route slug without the "-miami" suffix (e.g. "smile-design").
   const guides = postsForTreatment(
     locale,
     data.path.replace(/^\//, "").replace(/-miami$/, ""),

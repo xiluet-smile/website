@@ -2,8 +2,11 @@
 # Each rule is emitted with and without the trailing slash. No chains: every target is a final, live URL.
 
 # Old WordPress treatment and service pages
-/porcelain-veneers /porcelain-veneers-miami
-/lumineers /porcelain-veneers-miami
+/porcelain-veneers /smile-design-miami
+/lumineers /smile-design-miami
+# 2026-10-11: the Porcelain Veneers page was merged into Smile Design (one treatment, same 20-veneer package)
+/porcelain-veneers-miami /smile-design-miami
+/es/carillas-de-porcelana-miami /es/diseno-de-sonrisa-miami
 /composite-veneers /blog/composite-vs-porcelain-veneers-vs-lumineers
 /cosmetic-dentistry /smile-design-miami
 /smile-makeover /smile-makeover-miami

@@ -12,7 +12,6 @@ export const esPaths: Record<PagePath, string> = {
   // Blog articles are generated from src/content/blog by scripts/sync-blog.mjs.
   ...(Object.fromEntries(blogPosts.map((p) => [`/blog/${p.slug}`, `/es/blog/${p.esSlug}`])) as Record<PagePath, string>),
   "/": "/es",
-  "/porcelain-veneers-miami": "/es/carillas-de-porcelana-miami",
   "/smile-design-miami": "/es/diseno-de-sonrisa-miami",
   "/full-mouth-reconstruction-miami": "/es/reconstruccion-bucal-completa-miami",
   "/all-on-x-dental-implants-miami": "/es/implantes-dentales-all-on-x-miami",

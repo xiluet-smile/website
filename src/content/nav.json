@@ -3,17 +3,12 @@
     {
       "key": "treatments",
       "label": "Treatments",
-      "href": "/porcelain-veneers-miami",
+      "href": "/smile-design-miami",
       "items": [
         {
           "t": "Smile Design",
-          "d": "Designed for your face, approved before we start",
-          "href": "/smile-design-miami"
-        },
-        {
-          "t": "Porcelain Veneers",
           "d": "20 porcelain veneers, $6,999",
-          "href": "/porcelain-veneers-miami"
+          "href": "/smile-design-miami"
         },
         {
           "t": "Smile Makeover",
@@ -146,10 +141,6 @@
         {
           "label": "Smile Design",
           "href": "/smile-design-miami"
-        },
-        {
-          "label": "Porcelain Veneers",
-          "href": "/porcelain-veneers-miami"
         },
         {
           "label": "Smile Makeover",
