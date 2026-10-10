@@ -8,6 +8,24 @@
   ],
   "cases": [
     {
+      "id": "BA41",
+      "image": "BA41.jpg",
+      "type": "Veneers",
+      "alt": "Before and after porcelain veneers, Xiluet patient with a full beard, Miami"
+    },
+    {
+      "id": "BA43",
+      "image": "BA43.jpg",
+      "type": "Veneers",
+      "alt": "Before and after porcelain veneers replacing worn and discoloured front teeth, Xiluet patient, Miami"
+    },
+    {
+      "id": "BA44",
+      "image": "BA44.jpg",
+      "type": "Veneers",
+      "alt": "Before and after porcelain veneers repairing a chipped front tooth, Xiluet patient, Miami"
+    },
+    {
       "id": "BA16",
       "image": "BA16.jpg",
       "type": "Veneers",
@@ -256,12 +274,6 @@
     {
       "id": "BA12",
       "image": "BA12.jpg",
-      "type": "Veneers",
-      "alt": "Before and after porcelain veneers, Xiluet patient, Miami"
-    },
-    {
-      "id": "BA3",
-      "image": "BA3.jpg",
       "type": "Veneers",
       "alt": "Before and after porcelain veneers, Xiluet patient, Miami"
     }
