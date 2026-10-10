@@ -16,7 +16,16 @@ const WEBSITE_ID = `${site.url}/#website`;
 const absL = (path: PagePath, locale: Locale) => abs(localizePath(path, locale));
 
 // References carry @type, name and url next to the @id so validators that do not resolve @graph links (Semrush Site Audit) still see a complete object; Google merges them by @id.
-export const dentistRef = () => ({ "@type": "Dentist", "@id": DENTIST_ID, name: site.name, url: site.url });
+const postalAddress = () => ({
+  "@type": "PostalAddress",
+  streetAddress: site.address.street,
+  addressLocality: site.address.locality,
+  addressRegion: site.address.region,
+  postalCode: site.address.postalCode,
+  addressCountry: site.address.country,
+});
+// Semrush Site Audit requires `address` on every LocalBusiness object, references included, so the reference carries it too.
+export const dentistRef = () => ({ "@type": "Dentist", "@id": DENTIST_ID, name: site.name, url: site.url, address: postalAddress() });
 const webSiteRef = () => ({ "@type": "WebSite", "@id": WEBSITE_ID, name: site.name, url: site.url });
 
 /** Google wants ISO 8601 date-times with a timezone on Article dates; content stores plain dates, published at 9 AM Miami time. */
@@ -36,14 +45,7 @@ export function dentist(): Node {
     image: site.url + ogImagePath(site.defaultOgImage),
     telephone: site.phone.schema,
     priceRange: site.priceRange,
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: site.address.street,
-      addressLocality: site.address.locality,
-      addressRegion: site.address.region,
-      postalCode: site.address.postalCode,
-      addressCountry: site.address.country,
-    },
+    address: postalAddress(),
     geo: { "@type": "GeoCoordinates", latitude: site.geo.latitude, longitude: site.geo.longitude },
     openingHoursSpecification: [
       {
