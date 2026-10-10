@@ -3,9 +3,11 @@
 import { readFileSync, writeFileSync } from "node:fs";
 
 const pages = JSON.parse(readFileSync("src/content/pages.json", "utf8"));
-const esMap = Object.fromEntries(
-  [...readFileSync("src/lib/i18n.ts", "utf8").matchAll(/^\s*"(\/[^"]*)": "(\/es[^"]*)",?$/gm)].map((m) => [m[1], m[2]]),
-);
+const esMap = Object.fromEntries([
+  ...[...readFileSync("src/lib/i18n.ts", "utf8").matchAll(/^\s*"(\/[^"]*)": "(\/es[^"]*)",?$/gm)].map((m) => [m[1], m[2]]),
+  // Blog articles are registered by scripts/sync-blog.mjs with their own Spanish slugs.
+  ...JSON.parse(readFileSync("src/content/blog-posts.json", "utf8")).map((p) => [`/blog/${p.slug}`, `/es/blog/${p.esSlug}`]),
+]);
 const live = new Set();
 for (const p of Object.keys(pages)) {
   live.add(p);

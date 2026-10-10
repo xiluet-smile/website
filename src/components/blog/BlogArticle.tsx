@@ -74,6 +74,7 @@ function BlockView({ block, locale }: { block: Block; locale: Locale }) {
         {block.by && <footer className="mt-2 font-sans text-[13px] font-semibold tracking-[.06em] text-gold-text uppercase">{block.by}</footer>}
       </blockquote>
     );
+  if ("img" in block) return <Img src={block.img} alt={block.alt} sizes="(min-width: 1024px) 720px, 92vw" className="block aspect-[3/2] h-auto w-full rounded-2xl object-cover" />;
   return (
     <div className="-mx-1 overflow-x-auto px-1">
       <table className="w-full min-w-[520px] border-collapse text-[15px] leading-[1.45] lg:text-base">
@@ -112,7 +113,9 @@ export default function BlogArticle({ slug, locale = "en" }: { slug: string; loc
   const reviewer = post.reviewedBy ? doctorByName(locale, post.reviewedBy) : undefined;
   const others = posts(locale).filter((p) => p.slug !== slug);
   const related = (post.related ?? []).map((r) => ({ href: r as PagePath, label: pages[r as PagePath]?.breadcrumb ?? r })).filter((r) => r.label);
-  const next = others.slice(0, 3);
+  // "Read next": the article's own list when it has one, otherwise the three most recent other posts.
+  const chosen = (post.readNext ?? []).map((r) => others.find((p) => `/blog/${p.slug}` === r)).filter((p): p is BlogPost => !!p);
+  const next = (chosen.length ? chosen : others).slice(0, 3);
 
   return (
     <main id="main">

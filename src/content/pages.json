@@ -255,6 +255,13 @@
     "h1": "How to pay for veneers: financing, bad credit and monthly payments explained",
     "breadcrumb": "How to pay for veneers"
   },
+  "/blog/how-to-take-care-of-porcelain-veneers": {
+    "title": "How to Care for Porcelain Veneers: Stains, Whitening, Coffee, Night Guard",
+    "description": "The daily routine that keeps porcelain veneers looking new: toothpaste to avoid, whether veneers stain or whiten, what to eat in temporaries and the first 48 hours, night guards, cleanings, and what to do if one chips.",
+    "ogImage": "blog-veneer-care-flatlay.jpg",
+    "h1": "How to take care of porcelain veneers: stains, whitening, coffee and the first two days in temporaries",
+    "breadcrumb": "How to care for veneers"
+  },
   "/blog/porcelain-veneers-cost-miami": {
     "title": "Porcelain Veneers Cost in Miami 2026: Per Tooth, Full Set, Included",
     "description": "What Miami practices charge per veneer and per full set, the line items that are usually extra, how $6,999 for 20 veneers is possible, and what to ask before paying.",
@@ -282,6 +289,20 @@
     "ogImage": "blog-veneer-crown-aligner.jpg",
     "h1": "Veneers vs crowns vs Invisalign: what actually fixes your front teeth?",
     "breadcrumb": "Veneers vs crowns vs Invisalign"
+  },
+  "/blog/what-is-digital-smile-design": {
+    "title": "Digital Smile Design in Miami: How a Smile Is Planned, Step by Step",
+    "description": "What digital smile design is, the five facial measurements it starts from, how the wax-up and mock-up work, what it costs in Miami, and how to judge any design you are shown.",
+    "ogImage": "blog-digital-smile-design-desk.jpg",
+    "h1": "What is digital smile design? How a Miami smile is planned before any tooth is touched",
+    "breadcrumb": "What is digital smile design"
+  },
+  "/blog/who-is-a-candidate-for-veneers": {
+    "title": "Who Is a Candidate for Veneers? Crooked, Small, Gapped and Missing Teeth",
+    "description": "Which teeth veneers can fix (gaps, small teeth, mild crowding, worn edges), which they cannot (missing teeth, active gum disease, severe bite problems), what to do first in each case, and how a doctor decides from three photos.",
+    "ogImage": "blog-veneer-candidacy-models.jpg",
+    "h1": "Can you get veneers with crooked, small, gapped or missing teeth? Who is a candidate, and who is not",
+    "breadcrumb": "Who is a candidate for veneers"
   },
   "/blog/why-veneers-look-fake": {
     "title": "Why Veneers Look Fake: Shade, Shape and the 4-8-10 Rule",

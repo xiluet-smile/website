@@ -71,6 +71,15 @@
     "dateModified": "2026-10-06"
   },
   {
+    "slug": "how-to-take-care-of-porcelain-veneers",
+    "esSlug": "como-cuidar-las-carillas-de-porcelana",
+    "treatments": [
+      "porcelain-veneers"
+    ],
+    "datePublished": "2026-10-10",
+    "dateModified": "2026-10-10"
+  },
+  {
     "slug": "porcelain-veneers-cost-miami",
     "esSlug": "precio-carillas-de-porcelana-miami",
     "treatments": [
@@ -112,6 +121,28 @@
     ],
     "datePublished": "2026-10-06",
     "dateModified": "2026-10-06"
+  },
+  {
+    "slug": "what-is-digital-smile-design",
+    "esSlug": "que-es-el-diseno-de-sonrisa-digital",
+    "treatments": [
+      "smile-design",
+      "porcelain-veneers",
+      "smile-makeover"
+    ],
+    "datePublished": "2026-10-10",
+    "dateModified": "2026-10-10"
+  },
+  {
+    "slug": "who-is-a-candidate-for-veneers",
+    "esSlug": "quien-es-candidato-para-carillas",
+    "treatments": [
+      "porcelain-veneers",
+      "smile-makeover",
+      "all-on-x-dental-implants"
+    ],
+    "datePublished": "2026-10-10",
+    "dateModified": "2026-10-10"
   },
   {
     "slug": "why-veneers-look-fake",

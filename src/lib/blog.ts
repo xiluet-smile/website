@@ -9,7 +9,9 @@ export type Block =
   | { list: string[] }
   | { steps: string[] }
   | { table: { head: string[]; rows: string[][] } }
-  | { quote: string; by?: string };
+  | { quote: string; by?: string }
+  /** In-body image: a file name in src/assets, shown full-width inside the section. */
+  | { img: string; alt: string };
 
 export type BlogPost = {
   slug: string;
@@ -32,6 +34,8 @@ export type BlogPost = {
   faq?: { q: string; a: string }[];
   /** Internal links shown at the end, as English paths. */
   related?: string[];
+  /** Articles for the "Read next" grid, as English /blog paths; defaults to the three most recent other posts. */
+  readNext?: string[];
   /** Treatment keys this article supports; treatment pages link back to it. */
   treatments?: string[];
 };

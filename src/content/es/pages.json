@@ -255,6 +255,13 @@
     "h1": "Cómo pagar las carillas: financiamiento, mal crédito y pagos mensuales explicados",
     "breadcrumb": "Cómo pagar las carillas"
   },
+  "/blog/how-to-take-care-of-porcelain-veneers": {
+    "title": "Cómo Cuidar las Carillas de Porcelana: Manchas, Blanqueamiento, Café, Placa Nocturna",
+    "description": "La rutina diaria que mantiene las carillas de porcelana como nuevas: pastas que evitar, si las carillas se manchan o se blanquean, qué comer con provisionales y en las primeras 48 horas, placa nocturna, limpiezas y qué hacer si una se astilla.",
+    "ogImage": "blog-veneer-care-flatlay.jpg",
+    "h1": "Cómo cuidar las carillas de porcelana: manchas, blanqueamiento, café y los dos primeros días con provisionales",
+    "breadcrumb": "Cómo cuidar las carillas"
+  },
   "/blog/porcelain-veneers-cost-miami": {
     "title": "Precio de Carillas de Porcelana en Miami 2026: Por Diente y Set Completo",
     "description": "Lo que cobran las clínicas de Miami por carilla y por set completo, los cargos que suelen ir aparte, cómo es posible $6,999 por 20 carillas y qué preguntar antes de pagar.",
@@ -282,6 +289,20 @@
     "ogImage": "blog-veneer-crown-aligner.jpg",
     "h1": "Carillas vs coronas vs Invisalign: ¿qué arregla de verdad tus dientes frontales?",
     "breadcrumb": "Carillas vs coronas vs Invisalign"
+  },
+  "/blog/what-is-digital-smile-design": {
+    "title": "Diseño de Sonrisa Digital en Miami: Cómo se Planifica, Paso a Paso",
+    "description": "Qué es el diseño de sonrisa digital, las cinco medidas faciales de las que parte, cómo funcionan el encerado y el mock-up, cuánto cuesta en Miami y cómo evaluar cualquier diseño que te muestren.",
+    "ogImage": "blog-digital-smile-design-desk.jpg",
+    "h1": "¿Qué es el diseño de sonrisa digital? Cómo se planifica una sonrisa en Miami antes de tocar un solo diente",
+    "breadcrumb": "Qué es el diseño de sonrisa digital"
+  },
+  "/blog/who-is-a-candidate-for-veneers": {
+    "title": "¿Quién es Candidato para Carillas? Dientes Torcidos, Pequeños, Separados y Faltantes",
+    "description": "Qué dientes arreglan las carillas (espacios, dientes pequeños, apiñamiento leve, bordes desgastados), cuáles no (dientes faltantes, enfermedad de encías activa, problemas de mordida severos), qué hacer primero en cada caso y cómo lo decide un doctor con tres fotos.",
+    "ogImage": "blog-veneer-candidacy-models.jpg",
+    "h1": "¿Puedes ponerte carillas con dientes torcidos, pequeños, separados o faltantes? Quién es candidato y quién no",
+    "breadcrumb": "Quién es candidato para carillas"
   },
   "/blog/why-veneers-look-fake": {
     "title": "Por Qué las Carillas Se Ven Falsas: Tono, Forma y la Regla 4-8-10",
