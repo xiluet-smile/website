@@ -15,7 +15,16 @@ const WEBSITE_ID = `${site.url}/#website`;
 /** Absolute URL of an English route in the given locale. */
 const absL = (path: PagePath, locale: Locale) => abs(localizePath(path, locale));
 
-export const dentistRef = () => ({ "@id": DENTIST_ID });
+// References carry @type, name and url next to the @id so validators that do not resolve @graph links (Semrush Site Audit) still see a complete object; Google merges them by @id.
+export const dentistRef = () => ({ "@type": "Dentist", "@id": DENTIST_ID, name: site.name, url: site.url });
+const webSiteRef = () => ({ "@type": "WebSite", "@id": WEBSITE_ID, name: site.name, url: site.url });
+
+/** Google wants ISO 8601 date-times with a timezone on Article dates; content stores plain dates, published at 9 AM Miami time. */
+const dateTime = (iso: string) => {
+  const parts = new Intl.DateTimeFormat("en-US", { timeZone: "America/New_York", timeZoneName: "longOffset" }).formatToParts(new Date(`${iso}T12:00:00Z`));
+  const offset = (parts.find((p) => p.type === "timeZoneName")?.value ?? "GMT-05:00").replace("GMT", "") || "-05:00";
+  return `${iso}T09:00:00${offset}`;
+};
 
 export function dentist(): Node {
   return {
@@ -63,7 +72,7 @@ export function webPage(path: PagePath, locale: Locale = "en"): Node {
     url,
     name: page.title,
     description: page.description,
-    isPartOf: { "@id": WEBSITE_ID },
+    isPartOf: webSiteRef(),
     inLanguage: isLegalPath(path) ? langTag("en") : langTag(locale),
   };
 }
@@ -128,7 +137,7 @@ export function procedureOffer(path: PagePath, p: { name: string; priceUsd?: num
       priceCurrency: "USD",
       availability: "https://schema.org/InStock",
       url: absL(path, locale),
-      itemOffered: { "@id": `${absL(path, locale)}#procedure` },
+      itemOffered: { "@type": "MedicalProcedure", "@id": `${absL(path, locale)}#procedure`, name: p.name },
       offeredBy: dentistRef(),
     },
   ];
@@ -192,12 +201,12 @@ export function article(
   return {
     "@type": ["Article", "MedicalWebPage"],
     "@id": `${url}#article`,
-    mainEntityOfPage: { "@id": `${url}#webpage` },
+    mainEntityOfPage: { "@type": "WebPage", "@id": `${url}#webpage`, url },
     headline: a.headline,
     description: a.description,
     image: site.url + ogImagePath(a.image),
-    datePublished: a.datePublished,
-    dateModified: a.dateModified ?? a.datePublished,
+    datePublished: dateTime(a.datePublished),
+    dateModified: dateTime(a.dateModified ?? a.datePublished),
     author: person(a.author),
     ...(a.reviewedBy ? { reviewedBy: person(a.reviewedBy) } : {}),
     publisher: dentistRef(),

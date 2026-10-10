@@ -287,7 +287,7 @@ export function PostCard({ post, locale }: { post: BlogPost; locale: Locale }) {
   const t = ui(locale);
   return (
     <article className="glass-card flex flex-col overflow-hidden rounded-2xl text-ink lg:rounded-[18px]">
-      <Link href={localizePath(`/blog/${post.slug}` as PagePath, locale)} className="no-underline">
+      <Link href={localizePath(`/blog/${post.slug}` as PagePath, locale)} className="no-underline" aria-label={post.title}>
         <Img src={post.image} alt="" sizes="(min-width: 1440px) 384px, (min-width: 1024px) 28vw, (min-width: 768px) 46vw, 92vw" className="block aspect-[16/10] h-auto w-full object-cover" />
       </Link>
       <div className="flex flex-col gap-2.5 p-5 lg:p-6">
