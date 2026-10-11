@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import Link from "next/link";
 import FaqAccordion from "@/components/FaqAccordion";
 import Header from "@/components/Header";
@@ -50,7 +51,7 @@ export default function HomePage({ locale = "en" }: { locale?: Locale }) {
     faq,
     stories,
   } = getContent(locale);
-  const h1Parts = pages["/"].h1.includes(": ") ? pages["/"].h1.split(/: (.+)/).slice(0, 2) : null;
+  const h1Parts = pages["/"].h1.includes(": ") ? pages["/"].h1.split(/: ([\s\S]+)/).slice(0, 2) : null;
   const faqs = faq.home;
   const homeCases = home.caseIds.map((id) => caseById(locale, id));
   const { rating } = site;
@@ -92,12 +93,23 @@ export default function HomePage({ locale = "en" }: { locale?: Locale }) {
                 {home.hero.eyebrow}
               </div>
             )}
-            <h1 className="-mt-1.5 mb-0 font-serif text-[38px] leading-[1.1] font-normal text-pretty lg:-mt-2 lg:text-[60px] lg:leading-[1.05] lg:tracking-[-.01em]">
+            <h1 className="-mt-1.5 mb-0 font-serif text-[38px] leading-[1.1] font-normal text-pretty lg:-mt-2 lg:text-[56px] lg:leading-[1.05] lg:tracking-[-.01em]">
               {/* "Keyword: tagline" renders the keyword as a smaller first line so the H1 keeps both without a third 60px line. */}
               {h1Parts ? (
                 <>
                   <span className="mb-3 block font-sans text-[13px] leading-normal font-semibold tracking-[.12em] text-gold uppercase lg:mb-4 lg:text-sm">{h1Parts[0]}</span>
-                  {h1Parts[1]}
+                  {/* A "\n" in the tagline forces the desktop line break so the headline sits on two lines; phones wrap naturally. */}
+                  {h1Parts[1].split("\n").map((line, i) => (
+                    <Fragment key={i}>
+                      {i > 0 && (
+                        <>
+                          {" "}
+                          <br className="hidden lg:block" />
+                        </>
+                      )}
+                      {line}
+                    </Fragment>
+                  ))}
                 </>
               ) : (
                 pages["/"].h1
