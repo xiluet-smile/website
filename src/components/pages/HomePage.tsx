@@ -86,14 +86,14 @@ export default function HomePage({ locale = "en" }: { locale?: Locale }) {
         <div className="absolute inset-x-0 top-0 z-[5] lg:relative lg:inset-auto">
           <Header locale={locale} />
         </div>
-        <div className="wrap relative z-[2] -mt-12 flex flex-1 flex-col gap-4 pb-8 lg:mt-0 lg:grid lg:grid-cols-[minmax(0,1fr)_600px] lg:items-center lg:gap-14 lg:pt-14 lg:pb-16">
+        <div className="wrap relative z-[2] -mt-12 flex flex-1 flex-col gap-4 pb-8 lg:mt-0 lg:grid lg:grid-cols-[minmax(0,1fr)_min(600px,50%)] lg:items-center lg:gap-14 lg:pt-14 lg:pb-16">
           <div className="flex flex-col gap-4 lg:max-w-[560px] lg:gap-5">
             {!h1Parts && (
               <div className="text-[13px] font-semibold tracking-[.12em] text-gold uppercase lg:text-sm">
                 {home.hero.eyebrow}
               </div>
             )}
-            <h1 className="-mt-1.5 mb-0 font-serif text-[38px] leading-[1.1] font-normal text-pretty lg:-mt-2 lg:text-[56px] lg:leading-[1.05] lg:tracking-[-.01em]">
+            <h1 className="-mt-1.5 mb-0 font-serif text-[38px] leading-[1.1] font-normal text-pretty lg:-mt-2 lg:text-[60px] lg:leading-[1.05] lg:tracking-[-.01em]">
               {/* "Keyword: tagline" renders the keyword as a smaller first line so the H1 keeps both without a third 60px line. */}
               {h1Parts ? (
                 <>
