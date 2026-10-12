@@ -7,6 +7,7 @@ import {
   type Env,
   type Locale,
   LIMITS,
+  adLine,
   clean,
   consentRecord,
   consentRows,
@@ -15,6 +16,7 @@ import {
   isSameOrigin,
   localeOf,
   methodNotAllowed,
+  parseAttribution,
   postWebhook,
   renderRows,
   respond,
@@ -97,6 +99,8 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
     const topic = content.topics.includes(topicIn) ? topicIn : "";
     const viaIn = field("replyVia", LIMITS.short);
     const replyVia = content.replyVia.includes(viaIn) ? viaIn : "";
+    // Ad parameters the browser saved from the landing URL (CRM attribution only).
+    const attribution = parseAttribution(body.attribution, request);
 
     const id = crypto.randomUUID();
     const createdAt = new Date().toISOString();
@@ -134,6 +138,8 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
     });
     // Flat snake_case keys first: they are what the CRM (GoHighLevel inbound webhook) maps onto contact fields.
     const webhook = postWebhook(env, {
+      // Ad attribution as flat keys, same names as the landing-page quiz.
+      ...attribution,
       type: "contact",
       id,
       createdAt,
@@ -165,11 +171,13 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
           `Contact form${topic ? ` (${topic})` : ""} from the website`,
           message ? `Message: ${message}` : "",
           replyVia ? `Preferred reply: ${replyVia}` : "",
+          adLine(attribution),
           `Language: ${locale}`,
           `Message ID: ${id}`,
         ]
           .filter(Boolean)
           .join("\n"),
+        attribution,
       }),
     );
     await Promise.all([clinicEmail, webhook, crm]);

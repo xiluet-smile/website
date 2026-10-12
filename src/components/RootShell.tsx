@@ -1,5 +1,6 @@
 import Footer from "./Footer";
 import SiteScripts from "./SiteScripts";
+import AttributionCapture from "./AttributionCapture";
 import { ui } from "@/lib/content-i18n";
 import { langTag, type Locale } from "@/lib/i18n";
 
@@ -15,6 +16,7 @@ export default function RootShell({ locale, children }: { locale: Locale; childr
       </head>
       <body>
         <SiteScripts />
+        <AttributionCapture />
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:rounded-full focus:bg-card focus:px-4 focus:py-2"

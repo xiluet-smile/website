@@ -17,6 +17,13 @@ export interface Env {
   GHL_LOCATION_ID?: string;
   /** Id of the contact custom field of type "File Upload" that receives the smile photos. */
   GHL_PHOTO_FIELD_ID?: string;
+  /**
+   * Optional JSON object overriding which GoHighLevel custom-field keys receive the ad
+   * attribution values, e.g. {"utm_campaign":"lp_utm_campaign","gclid":"google_click_id"}.
+   * Keys are the site's attribution names (see DEFAULT_GHL_ATTRIBUTION_FIELDS); an empty
+   * string disables a key. Unlisted keys keep their default.
+   */
+  GHL_ATTRIBUTION_FIELDS?: string;
   LINK_SIGNING_SECRET?: string;
   /** Optional KV namespace; rate limiting is skipped without it. */
   RATE_LIMIT?: KVNamespace;
@@ -233,6 +240,131 @@ export const consentRows = (c: ConsentRecord): [string, string][] => [
   ["User agent", c.userAgent],
   ["Page", c.pageUrl],
 ];
+
+// ---------- ad attribution ----------
+
+/**
+ * Values accepted from the form's `attribution` field (JSON written by src/lib/attribution.ts).
+ * Keep the query-parameter part in sync with ATTRIBUTION_PARAMS there.
+ */
+const ATTRIBUTION_KEYS = [
+  "utm_source",
+  "utm_medium",
+  "utm_campaign",
+  "utm_term",
+  "utm_content",
+  "utm_campaign_id",
+  "utm_adset_id",
+  "utm_ad_id",
+  "fbclid",
+  "gclid",
+  "wbraid",
+  "gbraid",
+  "msclkid",
+  "ttclid",
+  "fbc",
+  "fbp",
+  "landing_url",
+  "referrer",
+  "first_utm_campaign",
+  "first_utm_ad_id",
+  "event_source_url",
+] as const;
+type AttributionKey = (typeof ATTRIBUTION_KEYS)[number] | "client_ip" | "client_ua";
+
+/** Sanitised ad attribution for one submission. Only known keys, only non-empty values. */
+export type Attribution = Partial<Record<AttributionKey, string>>;
+
+const ATTRIBUTION_VALUE_MAX = 300;
+
+/**
+ * Parses the form's `attribution` JSON and adds the request's IP and user agent.
+ * Unknown keys are dropped, values are cleaned and capped, empty values are omitted.
+ * Never throws: a bad or missing value just yields fewer keys.
+ */
+export function parseAttribution(raw: unknown, request: Request): Attribution {
+  const out: Attribution = {};
+  if (typeof raw === "string" && raw.length > 0 && raw.length <= 8192) {
+    let obj: unknown = null;
+    try {
+      obj = JSON.parse(raw);
+    } catch {
+      obj = null;
+    }
+    if (obj && typeof obj === "object" && !Array.isArray(obj)) {
+      const rec = obj as Record<string, unknown>;
+      for (const k of ATTRIBUTION_KEYS) {
+        const v = clean(rec[k], ATTRIBUTION_VALUE_MAX);
+        if (v) out[k] = v;
+      }
+    }
+  }
+  const ip = clientIp(request);
+  if (ip) out.client_ip = ip;
+  const ua = clean(request.headers.get("User-Agent"), LIMITS.userAgent);
+  if (ua) out.client_ua = ua;
+  return out;
+}
+
+/** "Ad: campaign | ad set | ad" for the contact note, or "" when no ad is known. */
+export function adLine(a: Attribution): string {
+  const parts = [a.utm_campaign, a.utm_term, a.utm_content].filter((v): v is string => Boolean(v));
+  return parts.length ? `Ad: ${parts.join(" | ")}` : "";
+}
+
+/**
+ * Site attribution key → GoHighLevel custom-field key. These are the fields the landing-page
+ * quiz (lp.xiluetsmiles.com) already fills through its inbound-webhook workflow, so the Data Hub
+ * reads website leads the same way. Override per field with GHL_ATTRIBUTION_FIELDS.
+ */
+const DEFAULT_GHL_ATTRIBUTION_FIELDS: Record<string, string> = {
+  utm_ad_id: "utm_ad_id",
+  utm_campaign: "lp_utm_campaign",
+  utm_content: "lp_utm_content",
+  utm_term: "lp_utm_term",
+  utm_campaign_id: "lp_utm_campaign_id",
+  utm_source: "lp_utm_source",
+  utm_medium: "lp_utm_medium",
+  fbclid: "fbclid",
+  fbc: "fbc",
+  fbp: "fbp",
+  // "gclid" is a reserved name in GHL; the quiz's field is "Google Click ID".
+  gclid: "google_click_id",
+  event_source_url: "event_source_url",
+  client_ua: "client_ua",
+  client_ip: "client_ip",
+};
+
+/** The effective key mapping: defaults merged with GHL_ATTRIBUTION_FIELDS (invalid JSON is logged and ignored). */
+export function ghlAttributionFieldMap(env: Env): Record<string, string> {
+  const map = { ...DEFAULT_GHL_ATTRIBUTION_FIELDS };
+  if (!env.GHL_ATTRIBUTION_FIELDS) return map;
+  try {
+    const parsed: unknown = JSON.parse(env.GHL_ATTRIBUTION_FIELDS);
+    if (parsed && typeof parsed === "object" && !Array.isArray(parsed)) {
+      for (const [k, v] of Object.entries(parsed as Record<string, unknown>)) {
+        if (typeof v === "string") map[k] = v.trim();
+      }
+    }
+  } catch (err) {
+    console.error("GHL_ATTRIBUTION_FIELDS is not valid JSON; using the default mapping", err);
+  }
+  return map;
+}
+
+/**
+ * GHL `customFields` entries for the attribution values. Empty values are skipped, so a later
+ * submission without ad parameters never erases what an earlier one saved on the contact.
+ */
+export function ghlAttributionFields(env: Env, a: Attribution): { key: string; field_value: string }[] {
+  const map = ghlAttributionFieldMap(env);
+  const out: { key: string; field_value: string }[] = [];
+  for (const [ours, theirs] of Object.entries(map)) {
+    const value = a[ours as AttributionKey];
+    if (theirs && value) out.push({ key: theirs, field_value: value });
+  }
+  return out;
+}
 
 // ---------- spam protection ----------
 
@@ -454,6 +586,8 @@ export type GhlLead = {
   tags: string[];
   /** Written as a note on the contact. */
   note: string;
+  /** Ad attribution written to the contact's custom fields (see ghlAttributionFields). */
+  attribution?: Attribution;
 };
 
 /**
@@ -486,6 +620,23 @@ export async function ghlPushLead(env: Env, lead: GhlLead, files: File[] = []): 
     }
     const contactId: string | undefined = ((await up.json()) as { contact?: { id?: string } }).contact?.id;
     if (!contactId) return undefined;
+
+    // Attribution goes in a second call so an unknown field key can never block the contact,
+    // the note or the photos. Failures are logged with GHL's answer.
+    const customFields = lead.attribution ? ghlAttributionFields(env, lead.attribution) : [];
+    if (customFields.length) {
+      await settle(
+        "GHL attribution fields",
+        fetch(`${GHL_API}/contacts/${contactId}`, {
+          method: "PUT",
+          headers: { ...headers, "Content-Type": "application/json" },
+          body: JSON.stringify({ customFields }),
+          signal: AbortSignal.timeout(10000),
+        }).then(async (r) => {
+          if (!r.ok) throw new Error(`${r.status}: ${(await r.text()).slice(0, 300)}`);
+        }),
+      );
+    }
 
     if (lead.note) {
       await settle(

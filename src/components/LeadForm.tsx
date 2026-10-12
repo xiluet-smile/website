@@ -16,6 +16,7 @@ import {
   useSentParam, trackFormSubmit } from "./FormParts";
 import { formContent, labelOf, tpl, ui } from "@/lib/ui-i18n";
 import { localizePath, type Locale } from "@/lib/i18n";
+import { getAttribution } from "@/lib/attribution";
 
 type Photo = { file: File; url: string };
 
@@ -90,6 +91,8 @@ export default function LeadForm({ locale = "en" }: { locale?: Locale }) {
     const result = await submitForm(form, (data) => {
       data.delete("photos");
       for (const p of photos) data.append("photos", p.file, p.file.name);
+      // Ad parameters saved from the landing URL (see src/lib/attribution.ts), for the CRM only.
+      data.set("attribution", JSON.stringify(getAttribution()));
       // Submitted values stay English (the server matches them); the summary shows the locale's labels.
       concerns = data.getAll("concerns").map((v) => labelOf(content.concerns, content.concernsLabels, String(v)));
       return data;

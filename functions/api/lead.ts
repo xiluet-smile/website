@@ -9,6 +9,7 @@ import {
   type Locale,
   LIMITS,
   PHOTO_LINK_TTL_SEC,
+  adLine,
   clean,
   consentRecord,
   consentRows,
@@ -20,6 +21,7 @@ import {
   isSameOrigin,
   localeOf,
   methodNotAllowed,
+  parseAttribution,
   postWebhook,
   renderRows,
   respond,
@@ -120,6 +122,8 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
     const concerns = content.concerns.filter((c) => submittedConcerns.has(c)).slice(0, LIMITS.concerns);
     const origin = field("origin", LIMITS.short);
     const notes = field("notes", LIMITS.message, true);
+    // Ad parameters the browser saved from the landing URL (CRM attribution only).
+    const attribution = parseAttribution(form.get("attribution"), request);
 
     // Photos are optional. An untouched file input submits one empty file.
     const files = form.getAll("photos").filter((v): v is File => typeof v !== "string" && v.size > 0);
@@ -162,7 +166,7 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
             originalName: clean(files[i].name, LIMITS.short),
           });
         }
-        const record = { id, createdAt: now.toISOString(), name, phone, email, concerns, origin, notes, photos, consent };
+        const record = { id, createdAt: now.toISOString(), name, phone, email, concerns, origin, notes, photos, consent, attribution };
         await storage.put(`${prefix}/lead.json`, JSON.stringify(record, null, 2), {
           httpMetadata: { contentType: "application/json" },
         });
@@ -230,6 +234,7 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
               concerns.length ? `Concerns: ${concerns.join(", ")}` : "",
               notes ? `Notes: ${notes}` : "",
               origin ? `Came from: ${origin}` : "",
+              adLine(attribution),
               `Language: ${locale}`,
               `Photos: ${files.length}${unstoredPhotos ? " (not stored on the website side)" : ""}`,
               links.length ? `Links (expire ${expiresAt}):\n${links.join("\n")}` : "",
@@ -237,6 +242,7 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
             ]
               .filter(Boolean)
               .join("\n"),
+            attribution,
           },
           files,
         ),
@@ -253,6 +259,8 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
       ),
       // Flat snake_case keys first: they are what the CRM (GoHighLevel inbound webhook) maps onto contact fields.
       postWebhook(env, {
+        // Ad attribution (utm_*, click ids, fbc/fbp, client_ip/ua) as flat keys, same names as the landing-page quiz.
+        ...attribution,
         type: "lead",
         id,
         createdAt: now.toISOString(),

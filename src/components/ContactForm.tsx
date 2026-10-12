@@ -14,6 +14,7 @@ import {
   useSentParam, trackFormSubmit } from "./FormParts";
 import { formContent, labelOf, ui } from "@/lib/ui-i18n";
 import type { Locale } from "@/lib/i18n";
+import { getAttribution } from "@/lib/attribution";
 
 const ICONS = {
   person: (
@@ -99,6 +100,8 @@ export default function ContactForm({ topic, messageLabel, messagePlaceholder, h
         if (typeof v === "string") body[k] = v;
       });
       replyVia = body.replyVia ?? "";
+      // Ad parameters saved from the landing URL (see src/lib/attribution.ts), for the CRM only.
+      body.attribution = JSON.stringify(getAttribution());
       return body;
     });
     if (result.ok) {
