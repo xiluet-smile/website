@@ -752,7 +752,11 @@ export default function HomePage({ locale = "en" }: { locale?: Locale }) {
             count: rating.count,
             reviews: reviews.reviews,
           }}
-          mapsUrl={site.maps.place}
+          reviewsUrl={
+            site.google.placeId
+              ? `https://search.google.com/local/reviews?placeid=${site.google.placeId}`
+              : site.maps.place
+          }
           writeReviewUrl={
             site.google.placeId
               ? `https://search.google.com/local/writereview?placeid=${site.google.placeId}`

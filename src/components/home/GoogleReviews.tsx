@@ -6,12 +6,13 @@ import { tpl, ui } from "@/lib/ui-i18n";
 import type { Locale } from "@/lib/i18n";
 
 export type Review = { name: string; text: string; rating?: number; when?: string; treatment?: string };
-type Live = { ok: boolean; rating: number | null; count: number | null; url: string | null; writeReviewUrl: string; reviews: Review[] };
+type Live = { ok: boolean; rating: number | null; count: number | null; url: string | null; reviewsUrl?: string; writeReviewUrl: string; reviews: Review[] };
 
 type Props = {
   /** Server-rendered fallback (from content) shown until live data arrives. */
   initial: { rating: string; count: number; reviews: Review[] };
-  mapsUrl: string;
+  /** "Read all on Google": Google's reviews panel for the Place ID. */
+  reviewsUrl: string;
   writeReviewUrl: string;
   source: string;
   locale?: Locale;
@@ -21,7 +22,7 @@ type Props = {
  * "What patients say on Google": renders the stored reviews in the HTML, then
  * swaps in the live rating, count and latest reviews from /api/reviews.
  */
-export default function GoogleReviews({ initial, mapsUrl, writeReviewUrl, source, locale = "en" }: Props) {
+export default function GoogleReviews({ initial, reviewsUrl, writeReviewUrl, source, locale = "en" }: Props) {
   const t = ui(locale).reviews;
   const [live, setLive] = useState<Live | null>(null);
 
@@ -39,7 +40,7 @@ export default function GoogleReviews({ initial, mapsUrl, writeReviewUrl, source
   const rating = live?.rating != null ? live.rating.toFixed(1) : initial.rating;
   const count = live?.count ?? initial.count;
   const reviews = (live?.reviews ?? initial.reviews).slice(0, 4);
-  const allUrl = live?.url ?? mapsUrl;
+  const allUrl = live?.reviewsUrl ?? reviewsUrl;
   const writeUrl = live?.writeReviewUrl ?? writeReviewUrl;
 
   return (

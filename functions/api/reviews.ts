@@ -48,6 +48,7 @@ export const onRequestGet: PagesFunction<Env> = async ({ request, env }) => {
     rating: place.rating ?? null,
     count: place.userRatingCount ?? null,
     url: place.googleMapsUri ?? null,
+    reviewsUrl: `https://search.google.com/local/reviews?placeid=${encodeURIComponent(placeId)}`,
     writeReviewUrl: `https://search.google.com/local/writereview?placeid=${encodeURIComponent(placeId)}`,
     reviews: (place.reviews ?? [])
       .filter((r) => (r.rating ?? 0) >= 4 && (r.text?.text || r.originalText?.text))
