@@ -26,12 +26,13 @@ export const onRequestGet: PagesFunction<Env> = async ({ request, env }) => {
   const { GOOGLE_PLACES_API_KEY: key, GOOGLE_PLACE_ID: placeId } = env;
   if (!key || !placeId) return json({ ok: false, error: "not-configured" }, 200, "public, max-age=600");
 
+  const lang = new URL(request.url).searchParams.get("lang") === "es" ? "es" : "en";
   const cache = caches.default;
-  const cacheKey = new Request(new URL("/api/reviews", request.url).toString(), { method: "GET" });
+  const cacheKey = new Request(new URL(`/api/reviews?lang=${lang}`, request.url).toString(), { method: "GET" });
   const hit = await cache.match(cacheKey);
   if (hit) return hit;
 
-  const upstream = await fetch(`https://places.googleapis.com/v1/places/${encodeURIComponent(placeId)}?languageCode=en`, {
+  const upstream = await fetch(`https://places.googleapis.com/v1/places/${encodeURIComponent(placeId)}?languageCode=${lang}`, {
     headers: {
       "X-Goog-Api-Key": key,
       "X-Goog-FieldMask": "rating,userRatingCount,reviews,googleMapsUri",
@@ -50,8 +51,10 @@ export const onRequestGet: PagesFunction<Env> = async ({ request, env }) => {
     url: place.googleMapsUri ?? null,
     reviewsUrl: `https://search.google.com/local/reviews?placeid=${encodeURIComponent(placeId)}`,
     writeReviewUrl: `https://search.google.com/local/writereview?placeid=${encodeURIComponent(placeId)}`,
+    // Google returns at most five reviews, chosen by relevance; show the newest of those first.
     reviews: (place.reviews ?? [])
       .filter((r) => (r.rating ?? 0) >= 4 && (r.text?.text || r.originalText?.text))
+      .sort((a, b) => (b.publishTime ?? "").localeCompare(a.publishTime ?? ""))
       .map((r) => ({
         name: r.authorAttribution?.displayName ?? "Google user",
         rating: r.rating ?? 5,

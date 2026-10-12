@@ -84,7 +84,7 @@ State on 2026-10-06: the Pages project `website` auto-deploys `main` to https://
 | ~~R2 bucket `xiluet-lead-photos` bound as `R2_PHOTOS`~~ done 2026-10-07 (production and preview) | done | Lead photos are stored and linked. |
 | Turnstile widget for `xiluetsmiledesign.com` + `*.pages.dev` → `NEXT_PUBLIC_TURNSTILE_SITE_KEY` (plain) and `TURNSTILE_SECRET` (encrypted) | Cloudflare → Turnstile | Bot protection on the forms. |
 | ~~Resend~~ dropped 2026-10-07: notifications come from GoHighLevel (Internal Notification steps email the clinic inbox). | n/a | |
-| Google Cloud API key with Places API (New) → `GOOGLE_PLACES_API_KEY` | console.cloud.google.com | Live Google reviews on Home. |
+| ~~Google Cloud API key with Places API (New) → `GOOGLE_PLACES_API_KEY`~~ done 2026-10-12 (project `xiluet-payroll`, Production only; the project needed a billing account before Google would return review texts, the "Enterprise + Atmosphere" tier) | done | Live Google reviews on Home. |
 | ~~`CRM_WEBHOOK_URL`~~ set 2026-10-07 to the GHL "Website Contact Form" inbound webhook | done | Re-map the GHL Create contact step to the new keys: `first_name`, `last_name`, `email`, `phone`, `message`, `concerns_text`, `photo_links`, `form`. |
 
 ### Previous checklist
