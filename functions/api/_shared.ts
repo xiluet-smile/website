@@ -313,26 +313,28 @@ export function adLine(a: Attribution): string {
 }
 
 /**
- * Site attribution key → GoHighLevel custom-field key. These are the fields the landing-page
- * quiz (lp.xiluetsmiles.com) already fills through its inbound-webhook workflow, so the Data Hub
- * reads website leads the same way. Override per field with GHL_ATTRIBUTION_FIELDS.
+ * Site attribution key → GoHighLevel custom-field key (contact fields, "Attribution" folder,
+ * confirmed in GHL on 2026-10-12). They are the fields the landing-page quiz
+ * (lp.xiluetsmiles.com) already fills, so the Data Hub reads website leads the same way.
+ * Every key must exist in GHL: an unknown one makes GHL reject the whole write.
+ * Override per field with GHL_ATTRIBUTION_FIELDS.
  */
 const DEFAULT_GHL_ATTRIBUTION_FIELDS: Record<string, string> = {
+  utm_source: "utm_source",
+  utm_medium: "utm_medium",
+  utm_campaign: "utm_campaign",
+  utm_content: "utm_content",
+  utm_term: "utm_term",
+  utm_campaign_id: "utm_campaign_id",
   utm_ad_id: "utm_ad_id",
-  utm_campaign: "lp_utm_campaign",
-  utm_content: "lp_utm_content",
-  utm_term: "lp_utm_term",
-  utm_campaign_id: "lp_utm_campaign_id",
-  utm_source: "lp_utm_source",
-  utm_medium: "lp_utm_medium",
   fbclid: "fbclid",
   fbc: "fbc",
   fbp: "fbp",
-  // "gclid" is a reserved name in GHL; the quiz's field is "Google Click ID".
+  // "gclid" is a reserved name in GHL; the field is "Google Click ID".
   gclid: "google_click_id",
-  event_source_url: "event_source_url",
   client_ua: "client_ua",
   client_ip: "client_ip",
+  // No GHL field yet for event_source_url, landing_url, referrer, first_* (kept in the webhook payload and lead record).
 };
 
 /** The effective key mapping: defaults merged with GHL_ATTRIBUTION_FIELDS (invalid JSON is logged and ignored). */
