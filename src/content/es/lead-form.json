@@ -82,7 +82,7 @@
     "receivedMany": "{count} fotos recibidas",
     "noted": ", anotamos: {concerns}.",
     "body": "Te escribiremos primero por mensaje de texto y luego por correo electrónico, en menos de {replyHours} horas durante el horario de oficina ({officeHours} ET).",
-    "link": "Mira resultados mientras esperas →"
+    "link": "Escríbenos por WhatsApp"
   },
   "autoresponder": {
     "subject": "Enviado. Un doctor está revisando tu sonrisa.",

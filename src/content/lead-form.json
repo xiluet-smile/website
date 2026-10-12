@@ -73,7 +73,7 @@
     "receivedMany": "{count} photos received",
     "noted": ", noted: {concerns}.",
     "body": "You will hear from us by text first, then email, within {replyHours} hours during office hours ({officeHours} ET).",
-    "link": "See results while you wait →"
+    "link": "Chat with us on WhatsApp"
   },
   "autoresponder": {
     "subject": "Sent. A doctor is reviewing your smile.",

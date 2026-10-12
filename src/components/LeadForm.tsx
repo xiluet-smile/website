@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import {
   CheckBadge,
@@ -15,6 +14,7 @@ import {
   useHydrated,
   useSentParam, trackFormSubmit } from "./FormParts";
 import { formContent, labelOf, tpl, ui } from "@/lib/ui-i18n";
+import { WhatsAppIcon } from "./Icons";
 import { localizePath, type Locale } from "@/lib/i18n";
 import { getAttribution } from "@/lib/attribution";
 
@@ -278,9 +278,15 @@ export default function LeadForm({ locale = "en" }: { locale?: Locale }) {
             {summary && `${summary} `}
             {tpl(c.body, { replyHours: String(site.replyHours), officeHours: site.hours.display })}
           </p>
-          <Link href={localizePath("/before-and-after", locale)} className="font-semibold text-gold no-underline hover:text-gold">
+          {/* After sending, the next step is a conversation, not more browsing: WhatsApp opens a chat with the clinic. */}
+          <a
+            href={site.whatsapp}
+            rel="noopener"
+            className="btn btn-gold mt-1 h-[52px] self-start text-[17px] shadow-[0_8px_24px_rgba(0,0,0,.25)] lg:h-12 lg:px-6 lg:text-base"
+          >
+            <WhatsAppIcon size={18} />
             {c.link}
-          </Link>
+          </a>
         </div>
         {count > 0 && (
           <div className="grid grid-cols-3 gap-2">
