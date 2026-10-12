@@ -52,7 +52,7 @@ export default function LangSwitch({ locale, variant }: { locale: Locale; varian
     <div
       className={
         desktop
-          ? "flex gap-0.5 border-l border-[rgba(247,244,238,.18)] pl-3 text-sm font-semibold 2xl:gap-1 2xl:pl-4"
+          ? "flex gap-0.5 border-l border-[rgba(247,244,238,.18)] pl-3 text-sm font-semibold"
           : "flex h-11 items-center gap-1.5 px-2 text-[15px] font-semibold text-on-dark"
       }
     >

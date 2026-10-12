@@ -34,7 +34,7 @@ export function DesktopNav({ menus, ariaLabel = "Main" }: { menus: Menu[]; ariaL
   };
 
   return (
-    <nav aria-label={ariaLabel} className="flex h-[88px] items-center justify-center gap-0.5 text-sm font-medium whitespace-nowrap 2xl:gap-1 2xl:text-[15px]">
+    <nav aria-label={ariaLabel} className="flex h-[88px] items-center justify-center gap-0.5 text-sm font-medium whitespace-nowrap">
       {menus.map((m) => {
         const isOpen = open === m.key && dismissed !== m.key;
         return (
@@ -58,7 +58,7 @@ export function DesktopNav({ menus, ariaLabel = "Main" }: { menus: Menu[]; ariaL
           >
             <Link
               href={m.href}
-              className="nav-trigger inline-flex items-center gap-1.5 rounded-full px-2.5 py-2 text-on-dark no-underline transition-colors duration-150 hover:text-gold 2xl:px-3"
+              className="nav-trigger inline-flex items-center gap-1.5 rounded-full px-2.5 py-2 text-on-dark no-underline transition-colors duration-150 hover:text-gold"
               {...(m.items ? { "aria-haspopup": true, "aria-expanded": isOpen } : {})}
             >
               {m.label}

@@ -32,17 +32,17 @@ export default function Header({ locale = "en" }: { locale?: Locale }) {
   return (
     <header className="relative z-[5]">
       {/* Desktop */}
-      <div className="header-gutter mx-auto hidden h-[88px] max-w-[1440px] grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-6 xl:grid 2xl:gap-8">
+      <div className="header-gutter mx-auto hidden h-[88px] max-w-[1440px] grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-6 xl:grid">
         {logo}
         <DesktopNav menus={menus} ariaLabel={t.header.mainNav} />
-        <div className="flex items-center gap-4 whitespace-nowrap 2xl:gap-5">
-          <a href={site.phone.href} className="inline-flex items-center gap-[7px] text-sm font-medium text-on-dark no-underline hover:text-gold 2xl:text-[15px]">
+        <div className="flex items-center gap-4 whitespace-nowrap">
+          <a href={site.phone.href} className="inline-flex items-center gap-[7px] text-sm font-medium text-on-dark no-underline hover:text-gold">
             <PhoneIcon />
             {site.phone.display}
           </a>
           <Link
             href={evaluation}
-            className="inline-flex h-11 items-center gap-2 rounded-full border border-[rgba(247,244,238,.35)] bg-[rgba(247,244,238,.14)] pr-4 pl-3.5 text-sm font-semibold text-on-dark no-underline backdrop-blur-[12px] 2xl:pr-[18px] 2xl:pl-4 2xl:text-[15px] hover:bg-[rgba(247,244,238,.24)] hover:text-on-dark"
+            className="inline-flex h-11 items-center gap-2 rounded-full border border-[rgba(247,244,238,.35)] bg-[rgba(247,244,238,.14)] pr-4 pl-3.5 text-sm font-semibold text-on-dark no-underline backdrop-blur-[12px] hover:bg-[rgba(247,244,238,.24)] hover:text-on-dark"
           >
             <CameraIcon />
             {t.freePhotoEvaluation}
