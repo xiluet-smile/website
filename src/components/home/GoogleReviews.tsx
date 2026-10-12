@@ -31,7 +31,7 @@ export default function GoogleReviews({ initial, reviewsUrl, writeReviewUrl, sou
     fetch("/api/reviews", { signal: ctrl.signal, headers: { accept: "application/json" } })
       .then((r) => (r.ok ? r.json() : null))
       .then((d: Live | null) => {
-        if (d?.ok && d.reviews.length) setLive(d);
+        if (d?.ok) setLive(d);
       })
       .catch(() => {});
     return () => ctrl.abort();
@@ -39,7 +39,8 @@ export default function GoogleReviews({ initial, reviewsUrl, writeReviewUrl, sou
 
   const rating = live?.rating != null ? live.rating.toFixed(1) : initial.rating;
   const count = live?.count ?? initial.count;
-  const reviews = (live?.reviews ?? initial.reviews).slice(0, 4);
+  // Google returns no review bodies for some listings; the stored reviews stay in that case.
+  const reviews = (live?.reviews.length ? live.reviews : initial.reviews).slice(0, 4);
   const allUrl = live?.reviewsUrl ?? reviewsUrl;
   const writeUrl = live?.writeReviewUrl ?? writeReviewUrl;
 
