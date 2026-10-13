@@ -330,6 +330,16 @@ export default function TreatmentPage({
             <p className="m-0 text-[17px] leading-[1.55] text-pretty text-body lg:text-lg">{data.material.intro}</p>
             <p className="m-0 text-[17px] leading-[1.55] text-pretty text-body lg:text-lg">{material.body}</p>
           </div>
+          {material.images.length > 0 && (
+            <ul className="m-0 mb-8 grid list-none gap-4 p-0 sm:grid-cols-2 lg:mb-10 lg:grid-cols-3 lg:gap-6">
+              {material.images.map((im) => (
+                <li key={im.src} className="flex flex-col gap-2.5">
+                  <Img src={im.src} alt={im.alt} sizes="(min-width: 1024px) 400px, (min-width: 640px) 50vw, 100vw" className="block aspect-[4/3] w-full rounded-2xl object-cover" />
+                  <span className="text-sm leading-[1.45] text-muted">{im.caption}</span>
+                </li>
+              ))}
+            </ul>
+          )}
           <div className="grid gap-6 lg:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] lg:gap-8">
             <div className="glass-card rounded-2xl p-5 lg:p-7">
               <h3 className="m-0 mb-1.5 font-serif text-[24px] leading-[1.15] font-normal text-teal lg:text-[28px]">{material.compareTitle}</h3>

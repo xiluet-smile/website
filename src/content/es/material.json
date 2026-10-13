@@ -5,14 +5,47 @@
   "compareTitle": "Zirconia vs disilicato de litio (e.max)",
   "compareIntro": "La mayoría de las clínicas usa disilicato de litio, vendido como e.max. Es una buena cerámica vítrea para dientes frontales. La zirconia es otra clase de material, y las diferencias se notan en la boca años después.",
   "table": {
-    "head": ["", "Zirconia en Xiluet Smiles", "Disilicato de litio (e.max)"],
+    "head": [
+      "",
+      "Zirconia en Xiluet Smiles",
+      "Disilicato de litio (e.max)"
+    ],
     "rows": [
-      ["Resistencia", "Entre 1,000 y 1,200 MPa aproximadamente. Aguanta la mordida de las muelas y de quien aprieta los dientes.", "Unos 470 MPa, la cifra del fabricante. Se astilla con más frecuencia bajo cargas altas y en puentes."],
-      ["Coronas: diente tallado", "Paredes de 0.5 mm, así que se quita menos diente.", "Paredes de 1.0 mm con cementación adhesiva. Más tallado."],
-      ["Carillas: diente tallado", "0.3 mm, y en algunos dientes nada.", "0.3 mm es posible; la mayoría de los laboratorios pide de 0.5 a 0.7 mm."],
-      ["Dónde queda el borde", "A la altura de la encía, donde se puede ver, limpiar y mantener sellado. La inserción de la encía y el hueso de debajo quedan intactos.", "A menudo se coloca bajo la encía para esconder la línea de cemento. Los bordes bajo la encía se asocian con inflamación, retracción y pérdida de hueso con el tiempo."],
-      ["Color con los años", "No se mancha ni cambia de tono.", "La porcelana es estable; el borde adherido puede coger tinción con los años."],
-      ["Duración esperada", "Diseñada para 20 años. Garantía escrita de 5 años.", "Lo habitual son 10 a 15 años; el astillado es la razón más común de reemplazo."]
+      [
+        "Resistencia",
+        "Entre 1,000 y 1,200 MPa aproximadamente. Aguanta la mordida de las muelas y de quien aprieta los dientes.",
+        "Unos 470 MPa, la cifra del fabricante. Se astilla con más frecuencia bajo cargas altas y en puentes."
+      ],
+      [
+        "Coronas: diente tallado",
+        "Paredes de 0.5 mm, así que se quita menos diente.",
+        "Paredes de 1.0 mm con cementación adhesiva. Más tallado."
+      ],
+      [
+        "Carillas: diente tallado",
+        "0.3 mm, y en algunos dientes nada.",
+        "0.3 mm es posible; la mayoría de los laboratorios pide de 0.5 a 0.7 mm."
+      ],
+      [
+        "Dónde queda el borde",
+        "A la altura de la encía, donde se puede ver, limpiar y mantener sellado. La inserción de la encía y el hueso de debajo quedan intactos.",
+        "A menudo se coloca bajo la encía para esconder la línea de cemento. Los bordes bajo la encía se asocian con inflamación, retracción y pérdida de hueso con el tiempo."
+      ],
+      [
+        "Tono y translucidez",
+        "Cinco capas integradas en el disco: más cálido en la encía, más translúcido hacia el borde. El degradado está en el propio material.",
+        "Un bloque de un solo tono. La translucidez del borde hay que rebajarla y añadirla a mano como una capa extra: un paso más y una unión más que se puede astillar."
+      ],
+      [
+        "Color con los años",
+        "No se mancha ni cambia de tono.",
+        "La porcelana es estable; el borde adherido puede coger tinción con los años."
+      ],
+      [
+        "Duración esperada",
+        "Diseñada para 20 años. Garantía escrita de 5 años.",
+        "Lo habitual son 10 a 15 años; el astillado es la razón más común de reemplazo."
+      ]
     ]
   },
   "finishTitle": "Cómo la terminamos",
@@ -30,9 +63,10 @@
       "d": "Como la zirconia no se decolora, no hay motivo para enterrar el margen. Preparar a la altura de la encía conserva intactas las fibras que unen la encía al diente, que es lo que evita la retracción y la pérdida de hueso que se ven alrededor de coronas colocadas demasiado profundas."
     },
     {
-      "t": "Estratificada donde se ve",
-      "d": "En los dientes frontales se construye a mano una capa de porcelana translúcida sobre la zirconia, para que la resistencia sea invisible y el borde del diente deje pasar la luz como el esmalte."
+      "t": "Cinco capas en el material, acabado a mano encima",
+      "d": "La zirconia multicapa ya pasa de un tono más cálido en la encía a un borde translúcido en cinco capas. En los dientes frontales nuestro ceramista añade a mano la textura de superficie y los efectos del esmalte, así que el degradado está en el material, no pintado."
     }
   ],
-  "footnote": "Las cifras de resistencia son los valores de flexión biaxial de los fabricantes para zirconia 3Y e IPS e.max; los grosores mínimos son las indicaciones publicadas por los fabricantes. Cuánto dura una restauración depende de la mordida, la salud de las encías y el cuidado. Los términos de nuestra garantía van por escrito en cada plan."
+  "footnote": "Las cifras de resistencia son los valores de flexión biaxial de los fabricantes para zirconia 3Y e IPS e.max; los grosores mínimos son las indicaciones publicadas por los fabricantes. Cuánto dura una restauración depende de la mordida, la salud de las encías y el cuidado. Los términos de nuestra garantía van por escrito en cada plan.",
+  "images": []
 }
