@@ -68,5 +68,21 @@
     }
   ],
   "footnote": "Las cifras de resistencia son los valores de flexión biaxial de los fabricantes para zirconia 3Y e IPS e.max; los grosores mínimos son las indicaciones publicadas por los fabricantes. Cuánto dura una restauración depende de la mordida, la salud de las encías y el cuidado. Los términos de nuestra garantía van por escrito en cada plan.",
-  "images": []
+  "images": [
+    {
+      "src": "material-five-layers.jpg",
+      "alt": "Un disco de zirconia multicapa de canto con cinco bandas de marfil cálido a blanco translúcido, junto a un bloque de disilicato de litio de un solo tono y una lámina translúcida fina",
+      "caption": "Cinco capas en el disco. El degradado de tono está en la propia zirconia; un bloque de un solo tono necesita una capa translúcida añadida a mano."
+    },
+    {
+      "src": "material-margin-gum-line.jpg",
+      "alt": "Primer plano de un diente frontal restaurado con una corona de zirconia cuyo borde se une a una encía rosada y sana sin línea oscura",
+      "caption": "El borde terminado a la altura de la encía, sellado y visible, con la inserción de la encía y el hueso de debajo intactos."
+    },
+    {
+      "src": "material-hand-finishing.jpg",
+      "alt": "Las manos enguantadas de un ceramista afinando el borde de una corona de zirconia con una fresa de pulido fina bajo una lupa de banco",
+      "caption": "Cada pieza se asienta y se pule a mano bajo magnificación hasta que ajusta sin presión."
+    }
+  ]
 }
