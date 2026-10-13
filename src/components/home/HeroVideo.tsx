@@ -8,7 +8,7 @@ import { useEffect, useRef } from "react";
  * never competes with first paint; visitors who prefer reduced motion or use
  * data saver keep the poster frame. Without JS the <noscript> copy plays instead.
  */
-export default function HeroVideo({ src, poster }: { src: string; poster?: React.ReactNode }) {
+export default function HeroVideo({ src, mobileSrc, poster }: { src: string; mobileSrc?: string; poster?: React.ReactNode }) {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -20,8 +20,13 @@ export default function HeroVideo({ src, poster }: { src: string; poster?: React
     const start = () => {
       if (cancelled) return;
       const video = document.createElement("video");
+      // Both the property and the attribute: iOS Safari only autoplays a dynamically created
+      // video when it was muted/inline *as markup*, not just via the IDL properties.
       video.muted = true;
+      video.defaultMuted = true;
+      video.setAttribute("muted", "");
       video.playsInline = true;
+      video.setAttribute("playsinline", "");
       video.preload = "auto";
       video.tabIndex = -1;
       video.setAttribute("aria-hidden", "true");
@@ -39,19 +44,36 @@ export default function HeroVideo({ src, poster }: { src: string; poster?: React
       );
       // When the clip ends (it holds its last frame) the callouts fade out.
       video.addEventListener("ended", () => (document.documentElement.dataset.heroEnded = "1"), { once: true });
-      video.src = src;
+      // Phones get the 1 MB 540p encode; the 2.4 MB 720p clip is for screens that show it large.
+      const small = !matchMedia("(min-width: 1024px)").matches;
+      video.src = small && mobileSrc ? mobileSrc : src;
       host.appendChild(video);
-      video.play().catch(() => {});
+      // Autoplay can be refused (iOS Low Power Mode, a tab in the background, a browser that
+      // wants a gesture first). Retry once the page is visible again or on the first touch/scroll,
+      // instead of leaving the poster forever.
+      const tryPlay = () => video.play().catch(() => {});
+      const retry = () => {
+        if (!video.paused || video.ended) return;
+        tryPlay();
+      };
+      const onVisible = () => {
+        if (document.visibilityState === "visible") retry();
+      };
+      document.addEventListener("visibilitychange", onVisible);
+      ["touchstart", "scroll", "pointerdown", "keydown"].forEach((e) => window.addEventListener(e, retry, { passive: true, once: true }));
+      video.addEventListener("playing", () => document.removeEventListener("visibilitychange", onVisible), { once: true });
+      tryPlay();
     };
-    // Give images and scripts a head start on slow connections before the 2.4 MB video.
-    const whenIdle = () => setTimeout(() => ("requestIdleCallback" in window ? requestIdleCallback(start, { timeout: 2000 }) : start()), 2000);
+    // Give images and scripts a head start before the video; phones wait less because their clip is smaller.
+    const delay = matchMedia("(min-width: 1024px)").matches ? 2000 : 800;
+    const whenIdle = () => setTimeout(() => ("requestIdleCallback" in window ? requestIdleCallback(start, { timeout: 2000 }) : start()), delay);
     if (document.readyState === "complete") whenIdle();
     else window.addEventListener("load", whenIdle, { once: true });
     return () => {
       cancelled = true;
       window.removeEventListener("load", whenIdle);
     };
-  }, [src]);
+  }, [src, mobileSrc]);
 
   const fallback = `<video autoplay muted playsinline aria-hidden="true" tabindex="-1" class="absolute top-px left-px h-[calc(100%-2px)] w-[calc(100%-2px)] object-cover object-[52%_30%] lg:object-[50%_40%] lg:origin-center lg:scale-150 lg:translate-x-[20%]"><source src="${encodeURI(src)}" type="video/mp4"></video><style>.hero-callout{animation-play-state:running}</style>`;
   return (

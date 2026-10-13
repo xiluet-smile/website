@@ -70,6 +70,7 @@ export default function HomePage({ locale = "en" }: { locale?: Locale }) {
         >
           <HeroVideo
             src={site.videos.hero}
+            mobileSrc={site.videos.heroMobile}
             poster={
               <Img
                 src="hero-poster.jpg"

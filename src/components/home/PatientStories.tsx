@@ -114,7 +114,10 @@ export default function PatientStories({
                     videos.current[s.id] = el;
                   }}
                   src={s.video}
-                  poster={imageInfo(s.poster).src}
+                  // No poster attribute until the story is playing: browsers download a <video poster>
+                  // immediately, even with preload="none", and 27 of them cost 1.3 MB on the home page.
+                  // The lazy <Img> below shows the same frame until then.
+                  poster={active ? imageInfo(s.poster).src : undefined}
                   preload="none"
                   playsInline
                   controls={active}
@@ -140,16 +143,19 @@ export default function PatientStories({
                       aria-hidden="true"
                       className="absolute inset-0 bg-[linear-gradient(180deg,rgba(4,30,36,.35)_0%,rgba(4,30,36,0)_30%,rgba(4,30,36,0)_55%,rgba(4,30,36,.85)_100%)]"
                     />
-                    <div
-                      aria-hidden="true"
-                      className="absolute top-3 right-3 left-3 flex gap-1"
-                    >
-                      {stories.map((_, j) => (
-                        <span
-                          key={j}
-                          className={`h-0.5 flex-1 rounded-full ${j === i ? "bg-on-dark" : "bg-[rgba(247,244,238,.35)]"}`}
-                        />
-                      ))}
+                    {/* Story progress bar drawn with two elements and a repeating gradient instead of one
+                        span per story: 27 cards × 27 spans was 729 DOM nodes on the home page. */}
+                    <div aria-hidden="true" className="absolute top-3 right-3 left-3 h-0.5">
+                      <span
+                        className="absolute inset-0 rounded-full"
+                        style={{
+                          backgroundImage: `repeating-linear-gradient(90deg, rgba(247,244,238,.35) 0, rgba(247,244,238,.35) calc(100% / ${stories.length} - 4px), transparent calc(100% / ${stories.length} - 4px), transparent calc(100% / ${stories.length}))`,
+                        }}
+                      />
+                      <span
+                        className="absolute top-0 bottom-0 rounded-full bg-on-dark"
+                        style={{ left: `${(i / stories.length) * 100}%`, width: `calc(100% / ${stories.length} - 4px)` }}
+                      />
                     </div>
                     <div className="absolute top-6 left-3.5 flex items-center gap-2 text-sm font-semibold text-on-dark">
                       <Img
