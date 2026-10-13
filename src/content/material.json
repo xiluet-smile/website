@@ -1,9 +1,58 @@
 {
   "eyebrow": "The material",
   "title": "German zirconia, finished by hand",
-  "body": "Every veneer, crown and bridge we make starts as zirconia milled from German-made discs and is finished by our ceramist in the same building as your doctor. It is the strongest metal-free ceramic used in dentistry, and that strength is what lets us remove less tooth, finish the edge at the gum line and put a 5-year warranty in writing.",
+  "body": "Every veneer, crown and bridge we make is zirconia milled from German-made discs and finished by our ceramist in the same building as your doctor. Three things that changes:",
+  "vsLabel": "vs e.max",
+  "features": [
+    {
+      "img": "material-five-layers.jpg",
+      "alt": "A multilayer zirconia disc on its edge showing five bands from warm ivory to translucent white, next to a single-shade lithium disilicate ingot and a thin translucent wafer",
+      "kicker": "The color",
+      "title": "Built into the material, not painted on",
+      "text": "Our discs come with five layers of shade: warmer at the gum, more translucent toward the edge. On front teeth the ceramist adds surface texture and enamel effects by hand, on top of a gradient that is already there.",
+      "vs": "A single-shade block. The translucent edge has to be cut back and added as an extra layer, one more step and one more joint that can chip."
+    },
+    {
+      "img": "material-margin-gum-line.jpg",
+      "alt": "Close-up of a front tooth restored with a zirconia crown whose edge meets healthy pink gum with no dark line",
+      "kicker": "The edge",
+      "title": "Finished at the gum line, not under it",
+      "text": "Zirconia does not discolor, so the edge can sit where it is visible, cleaned and sealed. The fibers that attach your gum to the tooth stay intact, which is what keeps gum and bone where they are.",
+      "vs": "The edge is often buried under the gum to hide the cement line. Edges under the gum are linked to inflammation, recession and bone loss over time."
+    },
+    {
+      "img": "material-hand-finishing.jpg",
+      "alt": "A ceramist's gloved hands refining the edge of a zirconia crown with a fine polishing bur under a bench magnifier",
+      "kicker": "The fit",
+      "title": "Seated and sealed by hand",
+      "text": "Milled crowns rarely fit straight off the machine. Each one is adjusted under magnification with fine burs until it seats without pressure, then the margin is polished into a closed seal that keeps bacteria out.",
+      "vs": "A crown forced into place leaves a gap you cannot see. It is the first thing we check at delivery, whatever the material."
+    }
+  ],
+  "glance": [
+    {
+      "label": "Strength",
+      "big": "2×",
+      "sub": "1,000 to 1,200 MPa against about 470 for e.max. Takes back teeth and grinders."
+    },
+    {
+      "label": "Tooth removed",
+      "big": "0.3 mm",
+      "sub": "Veneers 0.3 mm, crown walls 0.5 mm. An e.max crown needs 1.0 mm."
+    },
+    {
+      "label": "Designed for",
+      "big": "20 years",
+      "sub": "e.max is typically 10 to 15, with chipping the usual reason to replace it."
+    },
+    {
+      "label": "Warranty",
+      "big": "5 years",
+      "sub": "In writing, on every plan."
+    }
+  ],
+  "detailsLabel": "See the full comparison",
   "compareTitle": "Zirconia vs lithium disilicate (e.max)",
-  "compareIntro": "Most clinics use lithium disilicate, sold as e.max. It is a good glass ceramic for front teeth. Zirconia is a different class of material, and the differences show up in the mouth years later.",
   "table": {
     "head": [
       "",
@@ -48,41 +97,5 @@
       ]
     ]
   },
-  "finishTitle": "How we finish it",
-  "finish": [
-    {
-      "t": "Seated by hand, not by force",
-      "d": "Milled crowns rarely drop into place straight off the machine. Each one is adjusted under magnification with fine finishing burs until it seats without pressure. A crown that is forced on leaves a gap you cannot see."
-    },
-    {
-      "t": "A continuous seal",
-      "d": "The edge is polished into a smooth, closed margin against the tooth. That seal is what keeps bacteria out of the joint, and it is the first thing we check at delivery."
-    },
-    {
-      "t": "The edge at the gum, not under it",
-      "d": "Because zirconia does not discolor, there is no reason to bury the margin. Preparing at the gum line keeps the fibers that attach your gum to the tooth intact, which is what prevents the recession and bone loss seen around crowns placed too deep."
-    },
-    {
-      "t": "Five layers in the material, hand finishing on top",
-      "d": "Multilayer zirconia already grades from a warmer tone at the gum to a translucent edge in five layers. On front teeth our ceramist adds surface texture and enamel effects by hand, so the gradient is in the material, not painted on."
-    }
-  ],
-  "footnote": "Strength figures are the manufacturers' biaxial flexural values for 3Y zirconia and IPS e.max; thickness minimums are the manufacturers' published guidance. How long any restoration lasts depends on bite, gum health and care. Our warranty terms are written into every plan.",
-  "images": [
-    {
-      "src": "material-five-layers.jpg",
-      "alt": "A multilayer zirconia disc on its edge showing five bands from warm ivory to translucent white, next to a single-shade lithium disilicate ingot and a thin translucent wafer",
-      "caption": "Five layers in the disc. The shade gradient is in the zirconia itself; a single-shade block needs a translucent layer added by hand."
-    },
-    {
-      "src": "material-margin-gum-line.jpg",
-      "alt": "Close-up of a front tooth restored with a zirconia crown whose edge meets healthy pink gum with no dark line",
-      "caption": "The edge finished at the gum line, sealed and visible, with the gum attachment and bone underneath left alone."
-    },
-    {
-      "src": "material-hand-finishing.jpg",
-      "alt": "A ceramist's gloved hands refining the edge of a zirconia crown with a fine polishing bur under a bench magnifier",
-      "caption": "Every piece is seated and polished by hand under magnification until it fits without pressure."
-    }
-  ]
+  "footnote": "Strength figures are the manufacturers' biaxial flexural values for 3Y zirconia and IPS e.max; thickness minimums are the manufacturers' published guidance. How long any restoration lasts depends on bite, gum health and care. Our warranty terms are written into every plan."
 }

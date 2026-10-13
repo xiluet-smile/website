@@ -324,26 +324,62 @@ export default function TreatmentPage({
       {/* The material */}
       {data.material && (
         <section id="material" className="wrap scroll-mt-6 pt-16 lg:pt-28">
-          <div className="mb-7 flex max-w-[760px] flex-col gap-3 lg:mb-10">
+          <div className="mb-8 flex max-w-[760px] flex-col gap-3 lg:mb-10">
             <span className="eyebrow text-gold-text">{material.eyebrow}</span>
             <h2 className={h2}>{material.title}</h2>
-            <p className="m-0 text-[17px] leading-[1.55] text-pretty text-body lg:text-lg">{data.material.intro}</p>
-            <p className="m-0 text-[17px] leading-[1.55] text-pretty text-body lg:text-lg">{material.body}</p>
+            <p className="m-0 text-[17px] leading-[1.55] text-pretty text-body lg:text-lg">
+              {data.material.intro} {material.body}
+            </p>
           </div>
-          {material.images.length > 0 && (
-            <ul className="m-0 mb-8 grid list-none gap-4 p-0 sm:grid-cols-2 lg:mb-10 lg:grid-cols-3 lg:gap-6">
-              {material.images.map((im) => (
-                <li key={im.src} className="flex flex-col gap-2.5">
-                  <Img src={im.src} alt={im.alt} sizes="(min-width: 1024px) 400px, (min-width: 640px) 50vw, 100vw" className="block aspect-[4/3] w-full rounded-2xl object-cover" />
-                  <span className="text-sm leading-[1.45] text-muted">{im.caption}</span>
-                </li>
-              ))}
-            </ul>
-          )}
-          <div className="grid gap-6 lg:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] lg:gap-8">
-            <div className="glass-card rounded-2xl p-5 lg:p-7">
-              <h3 className="m-0 mb-1.5 font-serif text-[24px] leading-[1.15] font-normal text-teal lg:text-[28px]">{material.compareTitle}</h3>
-              <p className="m-0 mb-4 text-[15px] leading-[1.5] text-muted lg:text-base">{material.compareIntro}</p>
+
+          {/* One idea per row: photo on one side, the point on the other, and the e.max contrast as a footnote card. */}
+          <div className="flex flex-col gap-5 lg:gap-6">
+            {material.features.map((f, i) => (
+              <article
+                key={f.img}
+                className="glass-card grid overflow-hidden rounded-2xl lg:grid-cols-2 lg:items-stretch lg:rounded-[20px]"
+              >
+                <Img
+                  src={f.img}
+                  alt={f.alt}
+                  sizes="(min-width: 1024px) 600px, 100vw"
+                  className={`block aspect-[4/3] h-full w-full object-cover ${i % 2 ? "lg:order-2" : ""}`}
+                />
+                <div className="flex flex-col justify-center gap-3 p-6 lg:gap-4 lg:p-10">
+                  <span className="eyebrow text-gold-text">{f.kicker}</span>
+                  <h3 className="m-0 font-serif text-[26px] leading-[1.15] font-normal text-teal lg:text-[32px]">{f.title}</h3>
+                  <p className="m-0 text-[16px] leading-[1.55] text-body lg:text-[17px]">{f.text}</p>
+                  <p className="m-0 rounded-xl border border-sand bg-card px-4 py-3 text-[14px] leading-[1.5] text-muted lg:text-[15px]">
+                    <strong className="font-semibold text-ink">{material.vsLabel}:</strong> {f.vs}
+                  </p>
+                </div>
+              </article>
+            ))}
+          </div>
+
+          {/* The numbers, in the same card style as the "why" facts. */}
+          <ul className="m-0 mt-5 grid list-none grid-cols-2 gap-3 p-0 lg:mt-6 lg:grid-cols-4 lg:gap-4">
+            {material.glance.map((g) => (
+              <li key={g.label} className="flex flex-col gap-3 rounded-2xl border border-sand bg-card p-4 lg:min-h-[170px] lg:p-5">
+                <span className="text-sm text-muted">{g.label}</span>
+                <span className="mt-auto flex flex-col gap-1.5">
+                  <span className="font-serif text-[28px] leading-none tracking-[-.02em] text-teal lg:text-[36px]">{g.big}</span>
+                  <span className="text-[13px] leading-[1.45] text-muted lg:text-sm">{g.sub}</span>
+                </span>
+              </li>
+            ))}
+          </ul>
+
+          {/* Full table on demand. */}
+          <details className="group mt-6">
+            <summary className="inline-flex min-h-11 cursor-pointer list-none items-center gap-2 font-semibold text-teal [&::-webkit-details-marker]:hidden">
+              {material.detailsLabel}
+              <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" className="transition-transform duration-200 group-open:rotate-180">
+                <path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </summary>
+            <div className="glass-card mt-4 rounded-2xl p-5 lg:p-7">
+              <h3 className="m-0 mb-4 font-serif text-[22px] leading-[1.15] font-normal text-teal lg:text-[26px]">{material.compareTitle}</h3>
               <div className="-mx-1 overflow-x-auto px-1">
                 <table className="w-full min-w-[520px] border-collapse text-[15px] leading-[1.45] lg:text-base">
                   <thead>
@@ -370,18 +406,7 @@ export default function TreatmentPage({
               </div>
               <p className="m-0 mt-4 text-[13px] leading-[1.45] text-muted">{material.footnote}</p>
             </div>
-            <div className="flex flex-col gap-3.5">
-              <h3 className="m-0 font-serif text-[24px] leading-[1.15] font-normal text-teal lg:text-[28px]">{material.finishTitle}</h3>
-              <ul className="m-0 grid list-none gap-3 p-0">
-                {material.finish.map((f) => (
-                  <li key={f.t} className="rounded-2xl border border-sand bg-card p-5">
-                    <span className="block font-semibold text-ink">{f.t}</span>
-                    <span className="mt-1 block text-[15px] leading-[1.5] text-body">{f.d}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
+          </details>
         </section>
       )}
 

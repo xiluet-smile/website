@@ -1,9 +1,58 @@
 {
   "eyebrow": "El material",
   "title": "Zirconia alemana, terminada a mano",
-  "body": "Cada carilla, corona y puente que hacemos empieza como zirconia fresada a partir de discos de fabricación alemana y la termina nuestro ceramista en el mismo edificio que tu doctor. Es la cerámica sin metal más resistente que se usa en odontología, y esa resistencia es lo que nos permite tallar menos diente, terminar el borde a la altura de la encía y poner por escrito una garantía de 5 años.",
+  "body": "Cada carilla, corona y puente que hacemos es zirconia fresada a partir de discos de fabricación alemana y terminada por nuestro ceramista en el mismo edificio que tu doctor. Tres cosas que eso cambia:",
+  "vsLabel": "vs e.max",
+  "features": [
+    {
+      "img": "material-five-layers.jpg",
+      "alt": "Un disco de zirconia multicapa de canto con cinco bandas de marfil cálido a blanco translúcido, junto a un bloque de disilicato de litio de un solo tono y una lámina translúcida fina",
+      "kicker": "El color",
+      "title": "Integrado en el material, no pintado",
+      "text": "Nuestros discos vienen con cinco capas de tono: más cálido en la encía, más translúcido hacia el borde. En los dientes frontales el ceramista añade a mano la textura de superficie y los efectos del esmalte, sobre un degradado que ya está ahí.",
+      "vs": "Un bloque de un solo tono. El borde translúcido hay que rebajarlo y añadirlo como una capa extra: un paso más y una unión más que se puede astillar."
+    },
+    {
+      "img": "material-margin-gum-line.jpg",
+      "alt": "Primer plano de un diente frontal restaurado con una corona de zirconia cuyo borde se une a una encía rosada y sana sin línea oscura",
+      "kicker": "El borde",
+      "title": "Terminado a la altura de la encía, no debajo",
+      "text": "La zirconia no se decolora, así que el borde puede quedar donde se ve, se limpia y se sella. Las fibras que unen la encía al diente quedan intactas, que es lo que mantiene la encía y el hueso en su sitio.",
+      "vs": "El borde a menudo se entierra bajo la encía para esconder la línea de cemento. Los bordes bajo la encía se asocian con inflamación, retracción y pérdida de hueso con el tiempo."
+    },
+    {
+      "img": "material-hand-finishing.jpg",
+      "alt": "Las manos enguantadas de un ceramista afinando el borde de una corona de zirconia con una fresa de pulido fina bajo una lupa de banco",
+      "kicker": "El ajuste",
+      "title": "Asentada y sellada a mano",
+      "text": "Las coronas fresadas rara vez ajustan recién salidas de la máquina. Cada una se ajusta bajo magnificación con fresas finas hasta que asienta sin presión, y después el margen se pule hasta formar un sellado cerrado que deja fuera a las bacterias.",
+      "vs": "Una corona forzada deja un espacio que no se ve. Es lo primero que revisamos en la entrega, sea cual sea el material."
+    }
+  ],
+  "glance": [
+    {
+      "label": "Resistencia",
+      "big": "2×",
+      "sub": "De 1,000 a 1,200 MPa frente a unos 470 del e.max. Aguanta muelas y bruxismo."
+    },
+    {
+      "label": "Diente tallado",
+      "big": "0.3 mm",
+      "sub": "Carillas 0.3 mm, paredes de corona 0.5 mm. Una corona e.max necesita 1.0 mm."
+    },
+    {
+      "label": "Diseñada para",
+      "big": "20 años",
+      "sub": "El e.max suele durar de 10 a 15, y el astillado es la razón habitual de reemplazo."
+    },
+    {
+      "label": "Garantía",
+      "big": "5 años",
+      "sub": "Por escrito, en cada plan."
+    }
+  ],
+  "detailsLabel": "Ver la comparación completa",
   "compareTitle": "Zirconia vs disilicato de litio (e.max)",
-  "compareIntro": "La mayoría de las clínicas usa disilicato de litio, vendido como e.max. Es una buena cerámica vítrea para dientes frontales. La zirconia es otra clase de material, y las diferencias se notan en la boca años después.",
   "table": {
     "head": [
       "",
@@ -48,41 +97,5 @@
       ]
     ]
   },
-  "finishTitle": "Cómo la terminamos",
-  "finish": [
-    {
-      "t": "Asentada a mano, no a presión",
-      "d": "Las coronas fresadas rara vez entran bien recién salidas de la máquina. Cada una se ajusta bajo magnificación con fresas de acabado finas hasta que asienta sin presión. Una corona forzada deja un espacio que no se ve."
-    },
-    {
-      "t": "Un sellado continuo",
-      "d": "El borde se pule hasta formar un margen liso y cerrado contra el diente. Ese sellado es lo que mantiene las bacterias fuera de la unión, y es lo primero que revisamos en la entrega."
-    },
-    {
-      "t": "El borde en la encía, no debajo",
-      "d": "Como la zirconia no se decolora, no hay motivo para enterrar el margen. Preparar a la altura de la encía conserva intactas las fibras que unen la encía al diente, que es lo que evita la retracción y la pérdida de hueso que se ven alrededor de coronas colocadas demasiado profundas."
-    },
-    {
-      "t": "Cinco capas en el material, acabado a mano encima",
-      "d": "La zirconia multicapa ya pasa de un tono más cálido en la encía a un borde translúcido en cinco capas. En los dientes frontales nuestro ceramista añade a mano la textura de superficie y los efectos del esmalte, así que el degradado está en el material, no pintado."
-    }
-  ],
-  "footnote": "Las cifras de resistencia son los valores de flexión biaxial de los fabricantes para zirconia 3Y e IPS e.max; los grosores mínimos son las indicaciones publicadas por los fabricantes. Cuánto dura una restauración depende de la mordida, la salud de las encías y el cuidado. Los términos de nuestra garantía van por escrito en cada plan.",
-  "images": [
-    {
-      "src": "material-five-layers.jpg",
-      "alt": "Un disco de zirconia multicapa de canto con cinco bandas de marfil cálido a blanco translúcido, junto a un bloque de disilicato de litio de un solo tono y una lámina translúcida fina",
-      "caption": "Cinco capas en el disco. El degradado de tono está en la propia zirconia; un bloque de un solo tono necesita una capa translúcida añadida a mano."
-    },
-    {
-      "src": "material-margin-gum-line.jpg",
-      "alt": "Primer plano de un diente frontal restaurado con una corona de zirconia cuyo borde se une a una encía rosada y sana sin línea oscura",
-      "caption": "El borde terminado a la altura de la encía, sellado y visible, con la inserción de la encía y el hueso de debajo intactos."
-    },
-    {
-      "src": "material-hand-finishing.jpg",
-      "alt": "Las manos enguantadas de un ceramista afinando el borde de una corona de zirconia con una fresa de pulido fina bajo una lupa de banco",
-      "caption": "Cada pieza se asienta y se pule a mano bajo magnificación hasta que ajusta sin presión."
-    }
-  ]
+  "footnote": "Las cifras de resistencia son los valores de flexión biaxial de los fabricantes para zirconia 3Y e IPS e.max; los grosores mínimos son las indicaciones publicadas por los fabricantes. Cuánto dura una restauración depende de la mordida, la salud de las encías y el cuidado. Los términos de nuestra garantía van por escrito en cada plan."
 }

@@ -90,7 +90,7 @@ type Labels = string[] | Record<string, string>;
 
 type Site = typeof site;
 /** Shared "The material" section shown on treatment pages that opt in with `material.intro`. */
-type Material = Omit<typeof material, "images"> & { images: { src: string; alt: string; caption: string }[] };
+type Material = typeof material;
 type Nav = typeof nav;
 type Pages = typeof pages;
 type Home = typeof home;
@@ -157,7 +157,7 @@ const en = content({
   outOfState,
   contact,
   leadForm,
-  material: material as Material,
+  material,
   referrals,
   stories: stories as Story[],
   legalNotice: null,
