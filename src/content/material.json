@@ -1,0 +1,38 @@
+{
+  "eyebrow": "The material",
+  "title": "German zirconia, finished by hand",
+  "body": "Every veneer, crown and bridge we make starts as zirconia milled from German-made discs and is finished by our ceramist in the same building as your doctor. It is the strongest metal-free ceramic used in dentistry, and that strength is what lets us remove less tooth, finish the edge at the gum line and put a 5-year warranty in writing.",
+  "compareTitle": "Zirconia vs lithium disilicate (e.max)",
+  "compareIntro": "Most clinics use lithium disilicate, sold as e.max. It is a good glass ceramic for front teeth. Zirconia is a different class of material, and the differences show up in the mouth years later.",
+  "table": {
+    "head": ["", "Zirconia at Xiluet Smiles", "Lithium disilicate (e.max)"],
+    "rows": [
+      ["Strength", "About 1,000 to 1,200 MPa. Takes the bite of back teeth and grinders.", "About 470 MPa, the manufacturer's figure. Chips more often under heavy load and in bridges."],
+      ["Crowns: tooth removed", "0.5 mm walls, so less of your tooth is cut away.", "1.0 mm walls with adhesive cementation. More reduction."],
+      ["Veneers: tooth removed", "0.3 mm, and on some teeth none.", "0.3 mm is possible; most labs ask for 0.5 to 0.7 mm."],
+      ["Where the edge sits", "At the gum line, where it can be seen, cleaned and kept sealed. The gum attachment and bone underneath are left alone.", "Often placed under the gum to hide the cement line. Edges under the gum are linked to inflammation, recession and bone loss over time."],
+      ["Color over time", "Does not stain or change shade.", "The porcelain is stable; the bonded edge can pick up stain over the years."],
+      ["Expected lifespan", "Designed for 20 years. 5-year written warranty.", "10 to 15 years is typical; chipping is the usual reason for replacement."]
+    ]
+  },
+  "finishTitle": "How we finish it",
+  "finish": [
+    {
+      "t": "Seated by hand, not by force",
+      "d": "Milled crowns rarely drop into place straight off the machine. Each one is adjusted under magnification with fine finishing burs until it seats without pressure. A crown that is forced on leaves a gap you cannot see."
+    },
+    {
+      "t": "A continuous seal",
+      "d": "The edge is polished into a smooth, closed margin against the tooth. That seal is what keeps bacteria out of the joint, and it is the first thing we check at delivery."
+    },
+    {
+      "t": "The edge at the gum, not under it",
+      "d": "Because zirconia does not discolor, there is no reason to bury the margin. Preparing at the gum line keeps the fibers that attach your gum to the tooth intact, which is what prevents the recession and bone loss seen around crowns placed too deep."
+    },
+    {
+      "t": "Layered where it shows",
+      "d": "On front teeth a translucent porcelain layer is built over the zirconia by hand, so the strength is invisible and the edge of the tooth lets light through like enamel."
+    }
+  ],
+  "footnote": "Strength figures are the manufacturers' biaxial flexural values for 3Y zirconia and IPS e.max; thickness minimums are the manufacturers' published guidance. How long any restoration lasts depends on bite, gum health and care. Our warranty terms are written into every plan."
+}

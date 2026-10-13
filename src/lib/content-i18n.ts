@@ -22,6 +22,7 @@ import clinic from "@/content/clinic.json";
 import outOfState from "@/content/out-of-state.json";
 import contact from "@/content/contact.json";
 import leadForm from "@/content/lead-form.json";
+import material from "@/content/material.json";
 import referrals from "@/content/referrals.json";
 import stories from "@/content/stories.json";
 import reviews from "@/content/reviews.json";
@@ -60,6 +61,7 @@ import esClinic from "@/content/es/clinic.json";
 import esOutOfState from "@/content/es/out-of-state.json";
 import esContact from "@/content/es/contact.json";
 import esLeadForm from "@/content/es/lead-form.json";
+import esMaterial from "@/content/es/material.json";
 import esReferrals from "@/content/es/referrals.json";
 import esStories from "@/content/es/stories.json";
 import esLegalNotice from "@/content/es/legal-notice.json";
@@ -87,6 +89,8 @@ export type Faq = { q: string; a: string; doc?: string };
 type Labels = string[] | Record<string, string>;
 
 type Site = typeof site;
+/** Shared "The material" section shown on treatment pages that opt in with `material.intro`. */
+type Material = typeof material;
 type Nav = typeof nav;
 type Pages = typeof pages;
 type Home = typeof home;
@@ -122,6 +126,7 @@ const content = (l: {
   outOfState: OutOfState;
   contact: Contact;
   leadForm: LeadForm;
+  material: Material;
   referrals: Referrals;
   stories: Story[];
   legalNotice: LegalNotice | null;
@@ -152,6 +157,7 @@ const en = content({
   outOfState,
   contact,
   leadForm,
+  material,
   referrals,
   stories: stories as Story[],
   legalNotice: null,
@@ -181,6 +187,7 @@ const es = content({
   outOfState: esOutOfState as OutOfState,
   contact: esContact as Contact,
   leadForm: esLeadForm as LeadForm,
+  material: esMaterial as Material,
   referrals: esReferrals as Referrals,
   stories: esStories as Story[],
   legalNotice: esLegalNotice as LegalNotice,

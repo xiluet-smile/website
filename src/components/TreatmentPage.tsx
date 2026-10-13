@@ -46,6 +46,8 @@ export type Treatment = {
     image: { src: string; alt: string } | null;
     facts: { label: string; big: string; sub: string }[];
   };
+  /** Opt-in "The material" section (shared copy from content/material.json) with a page-specific lead sentence. */
+  material?: { intro: string };
   week: {
     title: string;
     intro: string;
@@ -112,6 +114,7 @@ export default function TreatmentPage({
   const path = data.path as PagePath;
   const pkg = packageById(locale, data.packageId);
   const { hero, candidates, why, week, results, price, faq, cta } = data;
+  const material = getContent(locale).material;
   const heroCase = hero.image.caseId
     ? caseById(locale, hero.image.caseId)
     : null;
@@ -317,6 +320,60 @@ export default function TreatmentPage({
           </ul>
         </div>
       </section>
+
+      {/* The material */}
+      {data.material && (
+        <section id="material" className="wrap scroll-mt-6 pt-16 lg:pt-28">
+          <div className="mb-7 flex max-w-[760px] flex-col gap-3 lg:mb-10">
+            <span className="eyebrow text-gold-text">{material.eyebrow}</span>
+            <h2 className={h2}>{material.title}</h2>
+            <p className="m-0 text-[17px] leading-[1.55] text-pretty text-body lg:text-lg">{data.material.intro}</p>
+            <p className="m-0 text-[17px] leading-[1.55] text-pretty text-body lg:text-lg">{material.body}</p>
+          </div>
+          <div className="grid gap-6 lg:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] lg:gap-8">
+            <div className="glass-card rounded-2xl p-5 lg:p-7">
+              <h3 className="m-0 mb-1.5 font-serif text-[24px] leading-[1.15] font-normal text-teal lg:text-[28px]">{material.compareTitle}</h3>
+              <p className="m-0 mb-4 text-[15px] leading-[1.5] text-muted lg:text-base">{material.compareIntro}</p>
+              <div className="-mx-1 overflow-x-auto px-1">
+                <table className="w-full min-w-[520px] border-collapse text-[15px] leading-[1.45] lg:text-base">
+                  <thead>
+                    <tr>
+                      {material.table.head.map((cell, i) => (
+                        <th key={i} className="border-b-2 border-gold/60 py-2.5 pr-4 text-left font-semibold text-teal">
+                          {cell}
+                        </th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {material.table.rows.map((row, r) => (
+                      <tr key={r} className="border-b border-ink/10 align-top">
+                        {row.map((cell, c) => (
+                          <td key={c} className={`py-2.5 pr-4 text-body ${c === 0 ? "font-semibold whitespace-nowrap text-ink" : ""}`}>
+                            {cell}
+                          </td>
+                        ))}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <p className="m-0 mt-4 text-[13px] leading-[1.45] text-muted">{material.footnote}</p>
+            </div>
+            <div className="flex flex-col gap-3.5">
+              <h3 className="m-0 font-serif text-[24px] leading-[1.15] font-normal text-teal lg:text-[28px]">{material.finishTitle}</h3>
+              <ul className="m-0 grid list-none gap-3 p-0">
+                {material.finish.map((f) => (
+                  <li key={f.t} className="rounded-2xl border border-sand bg-card p-5">
+                    <span className="block font-semibold text-ink">{f.t}</span>
+                    <span className="mt-1 block text-[15px] leading-[1.5] text-body">{f.d}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* The week */}
       <section id="week" className="wrap scroll-mt-6 pt-16 lg:pt-28">

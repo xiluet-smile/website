@@ -1,0 +1,38 @@
+{
+  "eyebrow": "El material",
+  "title": "Zirconia alemana, terminada a mano",
+  "body": "Cada carilla, corona y puente que hacemos empieza como zirconia fresada a partir de discos de fabricación alemana y la termina nuestro ceramista en el mismo edificio que tu doctor. Es la cerámica sin metal más resistente que se usa en odontología, y esa resistencia es lo que nos permite tallar menos diente, terminar el borde a la altura de la encía y poner por escrito una garantía de 5 años.",
+  "compareTitle": "Zirconia vs disilicato de litio (e.max)",
+  "compareIntro": "La mayoría de las clínicas usa disilicato de litio, vendido como e.max. Es una buena cerámica vítrea para dientes frontales. La zirconia es otra clase de material, y las diferencias se notan en la boca años después.",
+  "table": {
+    "head": ["", "Zirconia en Xiluet Smiles", "Disilicato de litio (e.max)"],
+    "rows": [
+      ["Resistencia", "Entre 1,000 y 1,200 MPa aproximadamente. Aguanta la mordida de las muelas y de quien aprieta los dientes.", "Unos 470 MPa, la cifra del fabricante. Se astilla con más frecuencia bajo cargas altas y en puentes."],
+      ["Coronas: diente tallado", "Paredes de 0.5 mm, así que se quita menos diente.", "Paredes de 1.0 mm con cementación adhesiva. Más tallado."],
+      ["Carillas: diente tallado", "0.3 mm, y en algunos dientes nada.", "0.3 mm es posible; la mayoría de los laboratorios pide de 0.5 a 0.7 mm."],
+      ["Dónde queda el borde", "A la altura de la encía, donde se puede ver, limpiar y mantener sellado. La inserción de la encía y el hueso de debajo quedan intactos.", "A menudo se coloca bajo la encía para esconder la línea de cemento. Los bordes bajo la encía se asocian con inflamación, retracción y pérdida de hueso con el tiempo."],
+      ["Color con los años", "No se mancha ni cambia de tono.", "La porcelana es estable; el borde adherido puede coger tinción con los años."],
+      ["Duración esperada", "Diseñada para 20 años. Garantía escrita de 5 años.", "Lo habitual son 10 a 15 años; el astillado es la razón más común de reemplazo."]
+    ]
+  },
+  "finishTitle": "Cómo la terminamos",
+  "finish": [
+    {
+      "t": "Asentada a mano, no a presión",
+      "d": "Las coronas fresadas rara vez entran bien recién salidas de la máquina. Cada una se ajusta bajo magnificación con fresas de acabado finas hasta que asienta sin presión. Una corona forzada deja un espacio que no se ve."
+    },
+    {
+      "t": "Un sellado continuo",
+      "d": "El borde se pule hasta formar un margen liso y cerrado contra el diente. Ese sellado es lo que mantiene las bacterias fuera de la unión, y es lo primero que revisamos en la entrega."
+    },
+    {
+      "t": "El borde en la encía, no debajo",
+      "d": "Como la zirconia no se decolora, no hay motivo para enterrar el margen. Preparar a la altura de la encía conserva intactas las fibras que unen la encía al diente, que es lo que evita la retracción y la pérdida de hueso que se ven alrededor de coronas colocadas demasiado profundas."
+    },
+    {
+      "t": "Estratificada donde se ve",
+      "d": "En los dientes frontales se construye a mano una capa de porcelana translúcida sobre la zirconia, para que la resistencia sea invisible y el borde del diente deje pasar la luz como el esmalte."
+    }
+  ],
+  "footnote": "Las cifras de resistencia son los valores de flexión biaxial de los fabricantes para zirconia 3Y e IPS e.max; los grosores mínimos son las indicaciones publicadas por los fabricantes. Cuánto dura una restauración depende de la mordida, la salud de las encías y el cuidado. Los términos de nuestra garantía van por escrito en cada plan."
+}
