@@ -10,35 +10,35 @@
     "title": "Diseño de sonrisa Miami | 20 carillas de porcelana $6,999, 0.3 mm, 1 semana",
     "description": "Diseño de sonrisa en Miami: 20 carillas de porcelana por $6,999, mínimo desgaste, un diseño que apruebas primero y entrega en una semana. Garantía de 5 años por escrito.",
     "ogImage": "clinic-lobby.jpg",
-    "h1": "Diseño de sonrisa: 20 carillas de porcelana tan finas como 0.3 mm, diseñadas para tu rostro.",
+    "h1": "Diseño de sonrisa: 20 carillas tan finas como 0.3 mm.",
     "breadcrumb": "Diseño de sonrisa Miami"
   },
   "/full-mouth-reconstruction-miami": {
     "title": "Reconstrucción bucal completa Miami | $10,000 en 7 días",
     "description": "Reconstruye cada diente con coronas, puentes y carillas planificados juntos. 7 días hábiles en Miami, un precio por escrito de $10,000, garantía de 5 años.",
     "ogImage": "clinic-lobby.jpg",
-    "h1": "Reconstruye cada diente. Come, habla y sonríe sin pensarlo.",
+    "h1": "Reconstruye cada diente. Come y sonríe sin pensarlo.",
     "breadcrumb": "Reconstrucción bucal completa Miami"
   },
   "/all-on-x-dental-implants-miami": {
     "title": "Implantes All-on-X Miami | $10,000 por arcada | Xiluet",
     "description": "Arcada completa de dientes fijos sobre hasta 6 implantes, $10,000 por arcada o $9,000 en efectivo. Cirujano, laboratorio y dientes finales, todo en Miami.",
     "ogImage": "clinic-lobby.jpg",
-    "h1": "Una arcada completa de dientes fijos sobre 4 a 6 implantes.",
+    "h1": "Dientes fijos de arcada completa sobre 4 a 6 implantes.",
     "breadcrumb": "Implantes All-on-X Miami"
   },
   "/smile-makeover-miami": {
     "title": "Transformación de sonrisa Miami $7,999 | 20 coronas y carillas, garantía de 5 años",
     "description": "Hasta 20 coronas o carillas de porcelana planificadas como una sola sonrisa, con blanqueamiento y contorneado de encías cuando hace falta. $7,999 con limpieza y radiografías, entrega en 5 días hábiles en Miami, garantía de 5 años por escrito.",
     "ogImage": "clinic-lobby.jpg",
-    "h1": "Transformación de sonrisa: coronas y carillas, reconstruidas como una sola sonrisa.",
+    "h1": "Transformación de sonrisa: coronas y carillas, una sola sonrisa.",
     "breadcrumb": "Transformación de sonrisa Miami"
   },
   "/doctors": {
     "title": "Nuestros doctores | Dentistas cosméticos en Miami | Xiluet",
     "description": "Tres DMD con más de 10 años de experiencia y títulos internacionales. Conoce al doctor que planificará y tratará tu caso en Xiluet Smiles, Miami.",
     "ogImage": "clinic-lobby.jpg",
-    "h1": "Tres doctores. Más de 10 años de experiencia y títulos internacionales.",
+    "h1": "Tres doctores, más de 10 años de experiencia.",
     "breadcrumb": "Nuestros doctores"
   },
   "/doctors/dr-roger-ramos-navarro": {
@@ -66,77 +66,77 @@
     "title": "Nuestra clínica | 8396 SW 8th St, Miami | Xiluet Smiles",
     "description": "Doctores, laboratorio dental propio y salas de tratamiento privadas en un mismo edificio, a 15 minutos del Aeropuerto Internacional de Miami (MIA).",
     "ogImage": "clinic-lobby.jpg",
-    "h1": "Un solo edificio. Doctores, laboratorio y todo tu tratamiento.",
+    "h1": "Doctores, laboratorio y tratamiento en un solo edificio.",
     "breadcrumb": "Nuestra clínica"
   },
   "/financing": {
     "title": "Financiamiento dental Miami | Cherry, Sunbit, CareCredit",
     "description": "Cinco socios de financiamiento, consulta de crédito suave y guía para la aprobación de una sola coordinadora. Paga carillas o implantes a plazos en Miami.",
     "ogImage": "clinic-lobby.jpg",
-    "h1": "Cinco formas de pagar a plazos. Una coordinadora que te ayuda a elegir.",
+    "h1": "Cinco formas de pagar a plazos.",
     "breadcrumb": "Financiamiento dental Miami"
   },
   "/financing/cherry": {
     "title": "Financiamiento dental Cherry | Xiluet Smiles Miami",
     "description": "Paga tus carillas mes a mes con Cherry: solicitud en 60 segundos, consulta de crédito suave, planes de 3 a 60 meses. Aceptado en Xiluet Smiles, Miami.",
     "ogImage": "clinic-lobby.jpg",
-    "h1": "Paga mes a mes con Cherry. Solicita en 60 segundos, sin consulta de crédito dura.",
+    "h1": "Cherry: paga mes a mes, sin consulta de crédito dura.",
     "breadcrumb": "Financiamiento dental Cherry"
   },
   "/financing/sunbit": {
     "title": "Financiamiento dental Sunbit | Xiluet Smiles Miami",
     "description": "Sunbit aprueba a cerca de 9 de cada 10 solicitantes en menos de un minuto, sin cargos por mora. Aceptado en Xiluet Smiles, dentista cosmético en Miami.",
     "ogImage": "clinic-lobby.jpg",
-    "h1": "Sunbit aprueba a cerca de 9 de cada 10 solicitantes, en menos de un minuto.",
+    "h1": "Sunbit: 9 de cada 10 aprobados, en menos de un minuto.",
     "breadcrumb": "Financiamiento dental Sunbit"
   },
   "/financing/carecredit": {
     "title": "Dentista que acepta CareCredit en Miami | Xiluet Smiles",
     "description": "Usa el financiamiento promocional de CareCredit, la tarjeta de crédito para salud, en tratamientos de más de $200 en Xiluet Smiles, Miami, FL.",
     "ogImage": "clinic-lobby.jpg",
-    "h1": "CareCredit. La tarjeta de crédito para salud aceptada en más de 200,000 lugares.",
+    "h1": "CareCredit: la tarjeta de crédito para salud.",
     "breadcrumb": "Dentista CareCredit Miami"
   },
   "/financing/lendingclub": {
     "title": "Préstamos dentales LendingClub | Xiluet Smiles Miami",
     "description": "Préstamos personales a tasa fija de hasta $65,000 para reconstrucción bucal completa y All-on-X en Xiluet Smiles, Miami. Un solo pago fijo, sin sorpresas.",
     "ogImage": "clinic-lobby.jpg",
-    "h1": "LendingClub. Un solo pago fijo, sin sorpresas, hasta $65,000.",
+    "h1": "LendingClub: un solo pago fijo, hasta $65,000.",
     "breadcrumb": "Préstamos dentales LendingClub"
   },
   "/financing/alphaeon": {
     "title": "Financiamiento dental Alphaeon Credit | Xiluet Smiles Miami",
     "description": "Alphaeon Credit en Xiluet Smiles, Miami: una tarjeta de crédito para salud con líneas de hasta $25,000. Precalifica con una consulta blanda que no afecta tu puntaje.",
     "ogImage": "clinic-lobby.jpg",
-    "h1": "Alphaeon Credit. Precalifica sin afectar tu puntaje de crédito.",
+    "h1": "Alphaeon Credit: precalifica con consulta suave.",
     "breadcrumb": "Financiamiento dental Alphaeon Credit"
   },
   "/before-and-after": {
     "title": "Carillas antes y después | Pacientes reales | Xiluet Smiles",
     "description": "Treinta y nueve pacientes reales de Xiluet Smiles en Miami, sin retoques, más videos de pacientes. Filtra por carillas de porcelana, restauraciones, reconstrucción bucal completa o All-on-X.",
     "ogImage": "clinic-lobby.jpg",
-    "h1": "Treinta y nueve pacientes reales. Antes y después.",
+    "h1": "Pacientes reales. Antes y después.",
     "breadcrumb": "Carillas antes y después"
   },
   "/out-of-state-patients": {
     "title": "Carillas en Miami para pacientes de otros estados | Xiluet",
     "description": "Fotos, presupuesto y fechas desde casa; tres visitas en una semana en Miami. Tarifas de hoteles aliados Hilton y Marriott con 20% de descuento, más guía de transporte para cada visita.",
     "ogImage": "clinic-lobby.jpg",
-    "h1": "Llega el lunes. Vuelve a casa el jueves con tu nueva sonrisa.",
+    "h1": "Llega el lunes. Vuelve a casa el jueves.",
     "breadcrumb": "Carillas en Miami para pacientes de otros estados"
   },
   "/veneers-cost-miami": {
     "title": "Precio carillas Miami | 20 carillas $6,999, lista de precios",
     "description": "Precio de carillas dentales en Miami: cuatro paquetes y la lista de precios completa publicada. 20 carillas $6,999, 20 restauraciones $7,999, boca completa $10,000, All-on-X $10,000 por arcada.",
     "ogImage": "clinic-lobby.jpg",
-    "h1": "Precio de carillas dentales en Miami: cuatro paquetes, un precio por escrito antes de reservar.",
+    "h1": "Precio de carillas en Miami: cuatro paquetes, una lista de precios.",
     "breadcrumb": "Precio carillas Miami"
   },
   "/blog": {
     "title": "Blog | Carillas, precios y diseño de sonrisa | Xiluet Smiles",
     "description": "Respuestas directas de los doctores de Xiluet sobre carillas de porcelana, diseño de sonrisa, precios y la semana de tratamiento en Miami. Sin rodeos.",
     "ogImage": "clinic-lobby.jpg",
-    "h1": "Respuestas directas sobre carillas, precios y la semana en Miami.",
+    "h1": "Respuestas directas sobre carillas y precios.",
     "breadcrumb": "Blog"
   },
   "/free-photo-evaluation": {
@@ -157,7 +157,7 @@
     "title": "Refiere a un amigo | Xiluet Smiles Miami",
     "description": "Refiere a un amigo a Xiluet Smiles y recibe $500 por cada tratamiento completado. Tu amigo recibe evaluación gratuita por fotos y presupuesto en 6 horas.",
     "ogImage": "clinic-lobby.jpg",
-    "h1": "Refiere a un amigo. Recibe $500 por cada tratamiento completado.",
+    "h1": "Refiere a un amigo, recibe $500.",
     "breadcrumb": "Referidos"
   },
   "/partnerships": {

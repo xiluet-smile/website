@@ -10,35 +10,35 @@
     "title": "Smile Design Miami | 20 Porcelain Veneers $6,999, 0.3 mm, 1 Week",
     "description": "Smile Design in Miami: 20 porcelain veneers for $6,999, minimal prep, a design you approve first, delivered in one week. 5-year written warranty.",
     "ogImage": "clinic-lobby.jpg",
-    "h1": "Smile Design: 20 porcelain veneers as thin as 0.3 mm, designed around your face.",
+    "h1": "Smile Design: 20 veneers as thin as 0.3 mm.",
     "breadcrumb": "Smile Design Miami"
   },
   "/full-mouth-reconstruction-miami": {
     "title": "Full Mouth Reconstruction Miami | $10,000, 7 Business Days",
     "description": "Rebuild every tooth with crowns, bridges and veneers planned together. 7 business days in Miami, one written price of $10,000, 5-year warranty.",
     "ogImage": "clinic-lobby.jpg",
-    "h1": "Rebuild every tooth. Eat, speak and smile without thinking about it.",
+    "h1": "Rebuild every tooth. Eat and smile freely.",
     "breadcrumb": "Full Mouth Reconstruction Miami"
   },
   "/all-on-x-dental-implants-miami": {
     "title": "All-on-X Dental Implants Miami | $10,000 per Arch, Same-Day Teeth",
     "description": "Full arch of fixed teeth on up to 6 implants with a hybrid bridge, $10,000 per arch or $9,000 cash. Surgeon, lab and final teeth under one roof in Miami.",
     "ogImage": "clinic-lobby.jpg",
-    "h1": "A full arch of fixed teeth on 4 to 6 implants.",
+    "h1": "Fixed full-arch teeth on 4 to 6 implants.",
     "breadcrumb": "All-on-X Dental Implants Miami"
   },
   "/smile-makeover-miami": {
     "title": "Smile Makeover Miami $7,999 | 20 Crowns & Veneers, 5-Year Warranty",
     "description": "Up to 20 porcelain crowns or veneers planned as one smile, with whitening and gum contouring when needed. $7,999 with cleaning and X-rays, delivered in 5 business days in Miami, 5-year written warranty.",
     "ogImage": "clinic-lobby.jpg",
-    "h1": "Smile makeover: crowns and veneers, rebuilt as one smile.",
+    "h1": "Smile makeover: crowns and veneers as one smile.",
     "breadcrumb": "Smile Makeover Miami"
   },
   "/doctors": {
     "title": "Our Doctors | Cosmetic Dentists in Miami | Xiluet Smiles",
     "description": "Three DMDs with 10+ years of experience and international degrees. Meet the doctor who will plan and treat your case at Xiluet Smiles, Miami.",
     "ogImage": "clinic-lobby.jpg",
-    "h1": "Three doctors. 10+ years of experience and international degrees.",
+    "h1": "Three doctors, 10+ years of experience.",
     "breadcrumb": "Our Doctors"
   },
   "/doctors/dr-roger-ramos-navarro": {
@@ -66,77 +66,77 @@
     "title": "Our Clinic | 8396 SW 8th St, Miami | Xiluet Smiles",
     "description": "Doctors, in-house dental lab and private treatment rooms in one building, 15 minutes from Miami International Airport.",
     "ogImage": "clinic-lobby.jpg",
-    "h1": "One building. Doctors, lab and your whole treatment.",
+    "h1": "Doctors, lab and treatment in one building.",
     "breadcrumb": "Our Clinic"
   },
   "/financing": {
     "title": "Dental Financing Miami | Cherry, Sunbit, CareCredit, LendingClub, Alphaeon",
     "description": "Five financing partners, soft credit checks and approval guidance from one coordinator. Pay for veneers or implants over time at Xiluet Smiles, Miami.",
     "ogImage": "clinic-lobby.jpg",
-    "h1": "Five ways to pay over time. One coordinator who helps you choose.",
+    "h1": "Five ways to pay over time.",
     "breadcrumb": "Dental Financing Miami"
   },
   "/financing/cherry": {
     "title": "Cherry Dental Financing | Xiluet Smiles Miami",
     "description": "Pay for veneers monthly with Cherry: 60-second application, soft credit check, plans from 3 to 60 months. Accepted at Xiluet Smiles, Miami.",
     "ogImage": "clinic-lobby.jpg",
-    "h1": "Pay monthly with Cherry. Apply in 60 seconds, no hard credit check.",
+    "h1": "Cherry: pay monthly, no hard credit check.",
     "breadcrumb": "Cherry Dental Financing"
   },
   "/financing/sunbit": {
     "title": "Sunbit Dental Financing | Xiluet Smiles Miami",
     "description": "Sunbit approves about 9 in 10 applicants in under a minute, with no late fees. Accepted at Xiluet Smiles, Miami.",
     "ogImage": "clinic-lobby.jpg",
-    "h1": "Sunbit approves about 9 in 10 applicants, in under a minute.",
+    "h1": "Sunbit: 9 in 10 approved, in under a minute.",
     "breadcrumb": "Sunbit Dental Financing"
   },
   "/financing/carecredit": {
     "title": "CareCredit Dentist Miami | Xiluet Smiles",
     "description": "Use CareCredit promotional financing on treatments over $200 at Xiluet Smiles in Miami.",
     "ogImage": "clinic-lobby.jpg",
-    "h1": "CareCredit. The health care credit card accepted at over 200,000 locations.",
+    "h1": "CareCredit: the health care credit card.",
     "breadcrumb": "CareCredit Dentist Miami"
   },
   "/financing/lendingclub": {
     "title": "LendingClub Dental Loans | Xiluet Smiles Miami",
     "description": "Fixed-rate personal loans up to $65,000 for full mouth reconstruction and All-on-X at Xiluet Smiles, Miami.",
     "ogImage": "clinic-lobby.jpg",
-    "h1": "LendingClub. One fixed payment, no surprises, up to $65,000.",
+    "h1": "LendingClub: one fixed payment, up to $65,000.",
     "breadcrumb": "LendingClub Dental Loans"
   },
   "/financing/alphaeon": {
     "title": "Alphaeon Credit Dental Financing | Xiluet Smiles Miami",
     "description": "Alphaeon Credit at Xiluet Smiles, Miami: a healthcare credit card with lines up to $25,000. Pre-qualify with a soft inquiry that does not affect your credit score.",
     "ogImage": "clinic-lobby.jpg",
-    "h1": "Alphaeon Credit. Pre-qualify without touching your credit score.",
+    "h1": "Alphaeon Credit: pre-qualify with a soft check.",
     "breadcrumb": "Alphaeon Credit Dental Financing"
   },
   "/before-and-after": {
     "title": "Veneers Before and After | Real Miami Patients | Xiluet Smiles",
     "description": "Thirty-nine real Xiluet patients, unretouched, plus video stories. Filter by veneers, restorations, full mouth reconstruction or All-on-X.",
     "ogImage": "clinic-lobby.jpg",
-    "h1": "Thirty-nine real patients. Before and after.",
+    "h1": "Real patients. Before and after.",
     "breadcrumb": "Veneers Before and After"
   },
   "/out-of-state-patients": {
     "title": "Veneers in Miami for Out-of-State Patients | Fly In Monday, Home Thursday",
     "description": "Photos, estimate and dates from home; three visits in one week in Miami. Hilton and Marriott partner hotel rates at 20% off, plus ride guidance for every visit.",
     "ogImage": "clinic-lobby.jpg",
-    "h1": "Fly in Monday. Fly home Thursday with your new smile.",
+    "h1": "Fly in Monday. Fly home Thursday.",
     "breadcrumb": "Veneers in Miami for Out-of-State Patients"
   },
   "/veneers-cost-miami": {
     "title": "Veneers Cost Miami | 20 Veneers $6,999, Full Price List | Xiluet Smiles",
     "description": "Veneers cost in Miami: four packages and the full published fee schedule. 20 veneers $6,999, 20 restorations $7,999, full mouth $10,000, All-on-X $10,000 per arch.",
     "ogImage": "clinic-lobby.jpg",
-    "h1": "Veneers cost in Miami: four packages, one written price before you book.",
+    "h1": "Veneers cost in Miami: four packages, one price list.",
     "breadcrumb": "Veneers Cost Miami"
   },
   "/blog": {
     "title": "Blog | Veneers, Cost and Smile Design Answers | Xiluet Smiles",
     "description": "Straight answers from the Xiluet doctors about veneers, smile design, cost and the week in Miami.",
     "ogImage": "clinic-lobby.jpg",
-    "h1": "Straight answers about veneers, cost and the week in Miami.",
+    "h1": "Straight answers about veneers and cost.",
     "breadcrumb": "Blog"
   },
   "/free-photo-evaluation": {
@@ -157,7 +157,7 @@
     "title": "Refer a Friend | Xiluet Smiles Miami",
     "description": "Refer a friend to Xiluet Smiles and receive a $500 bonus for every completed treatment. They get a free photo evaluation and a written estimate within 6 hours.",
     "ogImage": "clinic-lobby.jpg",
-    "h1": "Refer a friend. Receive $500 per completed treatment.",
+    "h1": "Refer a friend, receive $500.",
     "breadcrumb": "Referrals"
   },
   "/partnerships": {
