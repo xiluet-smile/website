@@ -52,3 +52,6 @@ next-env.d.ts
 .dev.vars
 
 /public/og/
+
+# Raw video sources (transcode with scripts/transcode-video.swift into public/videos)
+*.mov

@@ -6,6 +6,8 @@ import {
   clinicDarkPanel,
 } from "@/components/ClinicSections";
 import Img from "@/components/Img";
+import LazyVideo from "@/components/LazyVideo";
+import { imageInfo } from "@/lib/images";
 import JsonLd from "@/components/JsonLd";
 import PageHero from "@/components/PageHero";
 import { getContent, tpl, ui } from "@/lib/content-i18n";
@@ -27,13 +29,23 @@ export default function ClinicPage({ locale = "en" }: { locale?: Locale }) {
           title={pages[PATH].h1}
           lead={tpl(t.clinicPage.lead, { street: address.street, locality: address.locality })}
           media={
-            <Img
-              src="clinic-lobby.jpg"
-              alt={t.clinicPage.roomAlt}
-              sizes="(min-width: 1024px) 480px, calc(100vw - 40px)"
-              className="block aspect-[4/3] h-auto w-full object-cover"
-              priority
-            />
+            site.videos.clinic ? (
+              // The lobby photo is the poster, so the frame is painted before the clip downloads.
+              <LazyVideo
+                src={site.videos.clinic}
+                poster={imageInfo("clinic-lobby.jpg").src}
+                label={t.clinicPage.roomAlt}
+                className="block aspect-[4/3] h-auto w-full object-cover"
+              />
+            ) : (
+              <Img
+                src="clinic-lobby.jpg"
+                alt={t.clinicPage.roomAlt}
+                sizes="(min-width: 1024px) 480px, calc(100vw - 40px)"
+                className="block aspect-[4/3] h-auto w-full object-cover"
+                priority
+              />
+            )
           }
         />
       </PageHero>
