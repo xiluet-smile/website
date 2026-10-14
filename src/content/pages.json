@@ -38,7 +38,7 @@
     "title": "Our Doctors | Cosmetic Dentists in Miami | Xiluet Smiles",
     "description": "Three DMDs with 10+ years of experience and international degrees. Meet the doctor who will plan and treat your case at Xiluet Smiles, Miami.",
     "ogImage": "clinic-lobby.jpg",
-    "h1": "Three doctors, 10+ years of experience.",
+    "h1": "Three doctors and the lab that makes every smile.",
     "breadcrumb": "Our Doctors"
   },
   "/doctors/dr-roger-ramos-navarro": {
@@ -54,6 +54,13 @@
     "ogImage": "dr-marta-puentes-marrero.webp",
     "h1": "Dr. Marta Puentes Marrero, DMD",
     "breadcrumb": "Dr. Marta Puentes Marrero, DMD"
+  },
+  "/doctors/dr-edgar-castanos": {
+    "title": "Dr. Edgar Castaños | Lab Manager | Xiluet Smiles Miami",
+    "description": "Dr. Edgar Castaños runs the in-house laboratory at Xiluet Smiles in Miami: zirconia and porcelain veneers, crowns and bridges finished by hand, and laboratory design for other clinics.",
+    "ogImage": "edgar-castanos.jpg",
+    "h1": "Dr. Edgar Castaños",
+    "breadcrumb": "Dr. Edgar Castaños"
   },
   "/doctors/dr-gretell-alonso-fiel": {
     "title": "Dr. Gretell Alonso Fiel, DMD | Veneers & Smile Design | Miami",

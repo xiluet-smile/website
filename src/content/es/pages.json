@@ -38,7 +38,7 @@
     "title": "Nuestros doctores | Dentistas cosméticos en Miami | Xiluet",
     "description": "Tres DMD con más de 10 años de experiencia y títulos internacionales. Conoce al doctor que planificará y tratará tu caso en Xiluet Smiles, Miami.",
     "ogImage": "clinic-lobby.jpg",
-    "h1": "Tres doctores, más de 10 años de experiencia.",
+    "h1": "Tres doctores y el laboratorio que hace cada sonrisa.",
     "breadcrumb": "Nuestros doctores"
   },
   "/doctors/dr-roger-ramos-navarro": {
@@ -54,6 +54,13 @@
     "ogImage": "dr-marta-puentes-marrero.webp",
     "h1": "Dr. Marta Puentes Marrero, DMD",
     "breadcrumb": "Dr. Marta Puentes Marrero, DMD"
+  },
+  "/doctors/dr-edgar-castanos": {
+    "title": "Dr. Edgar Castaños | Director de laboratorio | Xiluet Smiles Miami",
+    "description": "El Dr. Edgar Castaños dirige el laboratorio interno de Xiluet Smiles en Miami: carillas, coronas y puentes de zirconia y porcelana terminados a mano, y diseño de laboratorios para otras clínicas.",
+    "ogImage": "edgar-castanos.jpg",
+    "h1": "Dr. Edgar Castaños",
+    "breadcrumb": "Dr. Edgar Castaños"
   },
   "/doctors/dr-gretell-alonso-fiel": {
     "title": "Dr. Gretell Alonso Fiel, DMD | Carillas y diseño de sonrisa",

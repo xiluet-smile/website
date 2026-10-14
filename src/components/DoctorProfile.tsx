@@ -76,7 +76,7 @@ function Hero({
             {doctor.shortName}
             <span className="sr-only">, </span>
             <span className="mt-2.5 block text-[22px] tracking-[.08em] text-on-dark-muted lg:text-[26px]">
-              DMD
+              {doctor.credential}
             </span>
           </h1>
           <p className="m-0 max-w-[56ch] text-[17px] leading-[1.55] text-pretty text-on-dark-muted lg:text-[19px]">
@@ -212,6 +212,7 @@ export default function DoctorProfile({
       </section>
 
       {/* Education */}
+      {profile.education.length > 0 && (
       <section className="wrap pt-16 lg:pt-28">
         <div
           className={`dark-panel grid items-start gap-8 rounded-2xl p-6 lg:grid-cols-[minmax(0,.8fr)_minmax(0,1.3fr)] lg:gap-16 lg:rounded-[20px] lg:p-16 ${panelShadow}`}
@@ -253,8 +254,11 @@ export default function DoctorProfile({
           </ol>
         </div>
       </section>
+      )}
 
       {/* Certifications */}
+      {/* Hidden for team members without listed credentials (e.g. the lab manager). */}
+      {profile.certs.length > 0 && (
       <section className="wrap pt-16 lg:pt-28">
         <div className="grid items-start gap-7 lg:grid-cols-[minmax(0,.8fr)_minmax(0,1.4fr)] lg:gap-16">
           <div className="flex flex-col gap-3.5">
@@ -308,6 +312,7 @@ export default function DoctorProfile({
           </ul>
         </div>
       </section>
+      )}
 
       {/* Before and after: cases from cases.json tagged to this doctor (profile.caseIds). */}
       {profile.caseIds.length > 0 && (

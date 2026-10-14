@@ -49,7 +49,7 @@
 /dr-roger-ramos-navarro /doctors/dr-roger-ramos-navarro
 /dr-marta-puentes-marrero /doctors/dr-marta-puentes-marrero
 /dr-gretell-alonso-fiel /doctors/dr-gretell-alonso-fiel
-/dr-edgar-castanos /doctors
+/dr-edgar-castanos /doctors/dr-edgar-castanos
 /dr-adriana-hernandez /doctors
 /about-us /clinic
 /gallery /before-and-after

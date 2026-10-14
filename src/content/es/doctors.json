@@ -7,7 +7,9 @@
     "role": "Implantología, endodoncia y rehabilitación bucal completa",
     "bio": "El Dr. Ramos Navarro planifica los casos complejos: rehabilitación bucal completa, implantes dentales y endodoncias. Formado en Cuba, Estados Unidos, España y Perú.",
     "langs": "Inglés y español",
-    "image": "dr-roger-ramos-navarro.webp"
+    "image": "dr-roger-ramos-navarro.webp",
+    "credential": "DMD",
+    "jobTitle": "Dentista"
   },
   {
     "slug": "dr-gretell-alonso-fiel",
@@ -17,7 +19,9 @@
     "role": "Carillas de porcelana, diseño digital de sonrisa y estética facial",
     "bio": "La Dra. Alonso diseña sonrisas para el rostro. Formada en Madrid y en Rutgers, combina carillas de porcelana, diseño digital de sonrisa y estética facial para que el resultado sea armonioso desde todos los ángulos, no solo en los dientes.",
     "langs": "Inglés y español",
-    "image": "dr-gretell-alonso-fiel.webp"
+    "image": "dr-gretell-alonso-fiel.webp",
+    "credential": "DMD",
+    "jobTitle": "Dentista"
   },
   {
     "slug": "dr-marta-puentes-marrero",
@@ -27,6 +31,20 @@
     "role": "Odontología restauradora y estética adhesiva",
     "bio": "La Dra. Puentes ha ejercido en España, el Reino Unido y Estados Unidos. Su trabajo es conservador por diseño: preservar el diente natural, restaurar la función y lograr que el resultado se vea como si siempre hubiera estado ahí.",
     "langs": "Inglés y español",
-    "image": "dr-marta-puentes-marrero.webp"
+    "image": "dr-marta-puentes-marrero.webp",
+    "credential": "DMD",
+    "jobTitle": "Dentista"
+  },
+  {
+    "slug": "dr-edgar-castanos",
+    "href": "/doctors/dr-edgar-castanos",
+    "name": "Dr. Edgar Castaños",
+    "shortName": "Dr. Edgar Castaños",
+    "credential": "Director de laboratorio",
+    "jobTitle": "Director de laboratorio dental",
+    "role": "Director de laboratorio, zirconia y porcelana",
+    "bio": "Edgar dirige el laboratorio interno que fabrica cada carilla, corona y puente de Xiluet. Ha dedicado su carrera a la porcelana y la zirconia, y además diseña y monta laboratorios para otras clínicas. Si tu sonrisa se hizo en Xiluet, sus manos la terminaron.",
+    "langs": "Español e inglés",
+    "image": "edgar-castanos.jpg"
   }
 ]

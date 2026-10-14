@@ -48,6 +48,11 @@
           "href": "/doctors/dr-marta-puentes-marrero"
         },
         {
+          "t": "Dr. Edgar Castaños",
+          "d": "Director de laboratorio, zirconia y porcelana",
+          "href": "/doctors/dr-edgar-castanos"
+        },
+        {
           "t": "Todos los doctores",
           "d": "Conoce al equipo",
           "href": "/doctors"
@@ -174,6 +179,10 @@
         {
           "label": "Dr. Marta Puentes Marrero",
           "href": "/doctors/dr-marta-puentes-marrero"
+        },
+        {
+          "label": "Dr. Edgar Castaños",
+          "href": "/doctors/dr-edgar-castanos"
         },
         {
           "label": "Todos los doctores",

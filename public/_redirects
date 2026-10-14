@@ -90,8 +90,8 @@
 /dr-marta-puentes-marrero/ /doctors/dr-marta-puentes-marrero 301
 /dr-gretell-alonso-fiel /doctors/dr-gretell-alonso-fiel 301
 /dr-gretell-alonso-fiel/ /doctors/dr-gretell-alonso-fiel 301
-/dr-edgar-castanos /doctors 301
-/dr-edgar-castanos/ /doctors 301
+/dr-edgar-castanos /doctors/dr-edgar-castanos 301
+/dr-edgar-castanos/ /doctors/dr-edgar-castanos 301
 /dr-adriana-hernandez /doctors 301
 /dr-adriana-hernandez/ /doctors 301
 /about-us /clinic 301
@@ -166,6 +166,7 @@
 /clinic/ /clinic 301
 /contact/ /contact 301
 /doctors/ /doctors 301
+/doctors/dr-edgar-castanos/ /doctors/dr-edgar-castanos 301
 /doctors/dr-gretell-alonso-fiel/ /doctors/dr-gretell-alonso-fiel 301
 /doctors/dr-marta-puentes-marrero/ /doctors/dr-marta-puentes-marrero 301
 /doctors/dr-roger-ramos-navarro/ /doctors/dr-roger-ramos-navarro 301
@@ -201,6 +202,7 @@
 /es/contacto/ /es/contacto 301
 /es/diseno-de-sonrisa-miami/ /es/diseno-de-sonrisa-miami 301
 /es/doctores/ /es/doctores 301
+/es/doctores/dr-edgar-castanos/ /es/doctores/dr-edgar-castanos 301
 /es/doctores/dr-gretell-alonso-fiel/ /es/doctores/dr-gretell-alonso-fiel 301
 /es/doctores/dr-marta-puentes-marrero/ /es/doctores/dr-marta-puentes-marrero 301
 /es/doctores/dr-roger-ramos-navarro/ /es/doctores/dr-roger-ramos-navarro 301

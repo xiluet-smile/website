@@ -16,7 +16,7 @@ export default function DoctorPage({ slug, locale = "en" }: { slug: string; loca
 
   return (
     <main id="main">
-      <JsonLd data={pageGraph(path, locale, physician(path, { name: doctor.name, image: doctor.image }, locale))} />
+      <JsonLd data={pageGraph(path, locale, physician(path, { name: doctor.name, image: doctor.image, jobTitle: doctor.jobTitle }, locale))} />
       <DoctorProfile doctor={doctor} profile={profile} locale={locale} />
     </main>
   );

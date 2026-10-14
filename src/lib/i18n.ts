@@ -20,6 +20,7 @@ export const esPaths: Record<PagePath, string> = {
   "/doctors/dr-roger-ramos-navarro": "/es/doctores/dr-roger-ramos-navarro",
   "/doctors/dr-marta-puentes-marrero": "/es/doctores/dr-marta-puentes-marrero",
   "/doctors/dr-gretell-alonso-fiel": "/es/doctores/dr-gretell-alonso-fiel",
+  "/doctors/dr-edgar-castanos": "/es/doctores/dr-edgar-castanos",
   "/clinic": "/es/clinica",
   "/financing": "/es/financiamiento",
   "/financing/cherry": "/es/financiamiento/cherry",

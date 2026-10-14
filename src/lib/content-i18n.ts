@@ -40,6 +40,7 @@ import trAllOnX from "@/content/treatments/all-on-x.json";
 import docRamos from "@/content/doctors/dr-roger-ramos-navarro.json";
 import docPuentes from "@/content/doctors/dr-marta-puentes-marrero.json";
 import docAlonso from "@/content/doctors/dr-gretell-alonso-fiel.json";
+import docCastanos from "@/content/doctors/dr-edgar-castanos.json";
 import lnCherry from "@/content/lenders/cherry.json";
 import lnSunbit from "@/content/lenders/sunbit.json";
 import lnCarecredit from "@/content/lenders/carecredit.json";
@@ -78,6 +79,7 @@ import esTrAllOnX from "@/content/es/treatments/all-on-x.json";
 import esDocRamos from "@/content/es/doctors/dr-roger-ramos-navarro.json";
 import esDocPuentes from "@/content/es/doctors/dr-marta-puentes-marrero.json";
 import esDocAlonso from "@/content/es/doctors/dr-gretell-alonso-fiel.json";
+import esDocCastanos from "@/content/es/doctors/dr-edgar-castanos.json";
 import esLnCherry from "@/content/es/lenders/cherry.json";
 import esLnSunbit from "@/content/es/lenders/sunbit.json";
 import esLnCarecredit from "@/content/es/lenders/carecredit.json";
@@ -168,7 +170,7 @@ const en = content({
     "full-mouth-reconstruction": trFullMouth as Treatment,
     "all-on-x": trAllOnX as Treatment,
   },
-  doctorProfiles: [docRamos, docPuentes, docAlonso],
+  doctorProfiles: [docRamos, docPuentes, docAlonso, docCastanos],
   lenderContent: { cherry: lnCherry, sunbit: lnSunbit, carecredit: lnCarecredit, lendingclub: lnLendingclub, alphaeon: lnAlphaeon },
 });
 
@@ -205,7 +207,7 @@ const es = content({
     "full-mouth-reconstruction": esTrFullMouth as Treatment,
     "all-on-x": esTrAllOnX as Treatment,
   },
-  doctorProfiles: [esDocRamos as DoctorProfileData, esDocPuentes as DoctorProfileData, esDocAlonso as DoctorProfileData],
+  doctorProfiles: [esDocRamos as DoctorProfileData, esDocPuentes as DoctorProfileData, esDocAlonso as DoctorProfileData, esDocCastanos as DoctorProfileData],
   lenderContent: {
     cherry: esLnCherry as LenderContent,
     sunbit: esLnSunbit as LenderContent,

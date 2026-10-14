@@ -145,12 +145,12 @@ export function procedureOffer(path: PagePath, p: { name: string; priceUsd?: num
   ];
 }
 
-export function physician(path: PagePath, d: { name: string; image: string }, locale: Locale = "en"): Node {
+export function physician(path: PagePath, d: { name: string; image: string; jobTitle?: string }, locale: Locale = "en"): Node {
   return {
     "@type": "Person",
     "@id": `${absL(path, locale)}#person`,
     name: d.name,
-    jobTitle: "Dentist",
+    jobTitle: d.jobTitle ?? "Dentist",
     image: site.url + ogImagePath(d.image),
     worksFor: dentistRef(),
     knowsLanguage: site.languages.codes,

@@ -42,7 +42,7 @@ export default function DoctorsPage({ locale = "en" }: { locale?: Locale }) {
       </PageHero>
 
       <section className="wrap pt-16 lg:pt-28">
-        <div className="grid gap-5 lg:grid-cols-3 lg:gap-6">
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
           {doctors.map((d) => (
             <Link
               key={d.slug}
