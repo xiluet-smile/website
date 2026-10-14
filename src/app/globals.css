@@ -205,6 +205,11 @@
     cursor: pointer;
     white-space: nowrap;
   }
+  /* Icons sit a hair high next to lowercase text (x-height centre is below the line-box centre). */
+  .btn > svg {
+    position: relative;
+    top: 1px;
+  }
   .btn-gold {
     background: var(--color-gold);
     color: var(--color-teal);
