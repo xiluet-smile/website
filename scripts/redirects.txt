@@ -6,6 +6,7 @@
 /lumineers /smile-design-miami
 # 2026-10-11: the Porcelain Veneers page was merged into Smile Design (one treatment, same 20-veneer package)
 /porcelain-veneers-miami /smile-design-miami
+/smile-design-candidates /smile-design-miami
 /es/carillas-de-porcelana-miami /es/diseno-de-sonrisa-miami
 /composite-veneers /blog/composite-vs-porcelain-veneers-vs-lumineers
 /cosmetic-dentistry /smile-design-miami
@@ -32,7 +33,7 @@
 /clear-aligners-invisalign-clearcorrect /blog/veneers-vs-crowns-vs-invisalign
 /orthodontics-teeth-straightening /blog/veneers-vs-crowns-vs-invisalign
 /retainers /blog/veneers-vs-crowns-vs-invisalign
-/palatal-expanders /blog/veneers-vs-crowns-vs-invisalign
+/palatal-expanders /
 /nightguard /blog/how-long-do-porcelain-veneers-last
 /services /veneers-cost-miami
 /offers /veneers-cost-miami
@@ -42,7 +43,7 @@
 /scaling-and-root-planing-deep-cleaning /veneers-cost-miami
 /root-canal-treatment /veneers-cost-miami
 /frenectomy /contact
-/celebrity-inspired-smiles-how-to-achieve-the-hollywood-look /blog/why-veneers-look-fake
+/celebrity-inspired-smiles-how-to-achieve-the-hollywood-look /smile-design-miami
 
 # Doctors and about
 /our-doctors /doctors
@@ -51,7 +52,9 @@
 /dr-gretell-alonso-fiel /doctors/dr-gretell-alonso-fiel
 /dr-edgar-castanos /doctors/dr-edgar-castanos
 /dr-adriana-hernandez /doctors
+/daniela-maria-valiente-orive-rdh /doctors
 /about-us /clinic
+/dental-clinic-miami-fl /clinic
 /gallery /before-and-after
 
 # Financing
@@ -81,3 +84,7 @@
 # Merged pages (2026-10-09): Smile Makeover with crowns and veneers now lives at /smile-makeover-miami
 /complete-restoration-miami /smile-makeover-miami
 /es/restauracion-completa-miami /es/transformacion-de-sonrisa-miami
+
+# Old WordPress sitemaps (GSC 404 report, 2026-10-14)
+/wp-sitemap.xml /sitemap.xml
+/sitemap /sitemap.xml

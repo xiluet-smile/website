@@ -8,6 +8,8 @@
 /lumineers/ /smile-design-miami 301
 /porcelain-veneers-miami /smile-design-miami 301
 /porcelain-veneers-miami/ /smile-design-miami 301
+/smile-design-candidates /smile-design-miami 301
+/smile-design-candidates/ /smile-design-miami 301
 /es/carillas-de-porcelana-miami /es/diseno-de-sonrisa-miami 301
 /es/carillas-de-porcelana-miami/ /es/diseno-de-sonrisa-miami 301
 /composite-veneers /blog/composite-vs-porcelain-veneers-vs-lumineers 301
@@ -60,8 +62,8 @@
 /orthodontics-teeth-straightening/ /blog/veneers-vs-crowns-vs-invisalign 301
 /retainers /blog/veneers-vs-crowns-vs-invisalign 301
 /retainers/ /blog/veneers-vs-crowns-vs-invisalign 301
-/palatal-expanders /blog/veneers-vs-crowns-vs-invisalign 301
-/palatal-expanders/ /blog/veneers-vs-crowns-vs-invisalign 301
+/palatal-expanders / 301
+/palatal-expanders/ / 301
 /nightguard /blog/how-long-do-porcelain-veneers-last 301
 /nightguard/ /blog/how-long-do-porcelain-veneers-last 301
 /services /veneers-cost-miami 301
@@ -80,8 +82,8 @@
 /root-canal-treatment/ /veneers-cost-miami 301
 /frenectomy /contact 301
 /frenectomy/ /contact 301
-/celebrity-inspired-smiles-how-to-achieve-the-hollywood-look /blog/why-veneers-look-fake 301
-/celebrity-inspired-smiles-how-to-achieve-the-hollywood-look/ /blog/why-veneers-look-fake 301
+/celebrity-inspired-smiles-how-to-achieve-the-hollywood-look /smile-design-miami 301
+/celebrity-inspired-smiles-how-to-achieve-the-hollywood-look/ /smile-design-miami 301
 /our-doctors /doctors 301
 /our-doctors/ /doctors 301
 /dr-roger-ramos-navarro /doctors/dr-roger-ramos-navarro 301
@@ -94,8 +96,12 @@
 /dr-edgar-castanos/ /doctors/dr-edgar-castanos 301
 /dr-adriana-hernandez /doctors 301
 /dr-adriana-hernandez/ /doctors 301
+/daniela-maria-valiente-orive-rdh /doctors 301
+/daniela-maria-valiente-orive-rdh/ /doctors 301
 /about-us /clinic 301
 /about-us/ /clinic 301
+/dental-clinic-miami-fl /clinic 301
+/dental-clinic-miami-fl/ /clinic 301
 /gallery /before-and-after 301
 /gallery/ /before-and-after 301
 /financing/ /financing 301
@@ -135,6 +141,10 @@
 /complete-restoration-miami/ /smile-makeover-miami 301
 /es/restauracion-completa-miami /es/transformacion-de-sonrisa-miami 301
 /es/restauracion-completa-miami/ /es/transformacion-de-sonrisa-miami 301
+/wp-sitemap.xml /sitemap.xml 301
+/wp-sitemap.xml/ /sitemap.xml 301
+/sitemap /sitemap.xml 301
+/sitemap/ /sitemap.xml 301
 
 # Trailing-slash versions of every live page -> no-slash canonical (301 instead of the Pages default 308).
 /all-on-x-dental-implants-miami/ /all-on-x-dental-implants-miami 301

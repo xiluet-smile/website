@@ -9,6 +9,8 @@ const esMap = Object.fromEntries([
   ...JSON.parse(readFileSync("src/content/blog-posts.json", "utf8")).map((p) => [`/blog/${p.slug}`, `/es/blog/${p.esSlug}`]),
 ]);
 const live = new Set();
+// Static files next build writes to out/ that old URLs may point at (not routes, so no trailing-slash rule).
+const files = new Set(["/sitemap.xml", "/robots.txt"]);
 for (const p of Object.keys(pages)) {
   live.add(p);
   live.add(esMap[p] ?? (p === "/" ? "/es" : `/es${p}`));
@@ -21,7 +23,7 @@ for (const raw of readFileSync("scripts/redirects.txt", "utf8").split("\n")) {
   if (!line || line.startsWith("#")) continue;
   const [from, to] = line.split(/\s+/);
   if (!from || !to) throw new Error(`Bad redirect line: ${raw}`);
-  if (!live.has(to)) throw new Error(`Redirect target is not a live route (would chain or 404): ${from} -> ${to}`);
+  if (!live.has(to) && !files.has(to)) throw new Error(`Redirect target is not a live route (would chain or 404): ${from} -> ${to}`);
   manual.push([from.replace(/\/+$/, "") || "/", to]);
 }
 const seen = new Set();
