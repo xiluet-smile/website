@@ -50,8 +50,8 @@
     "youtube": "https://www.youtube.com/channel/UCOipaDf9mbbCvfARZcROpvg"
   },
   "maps": {
-    "place": "https://www.google.com/maps/place/Xiluet+Smiles/@25.7616318,-80.3338514,17z",
-    "directions": "https://www.google.com/maps/dir/?api=1&destination=8396+SW+8th+St+Miami+FL+33144",
+    "place": "https://www.google.com/maps/search/?api=1&query=Xiluet+Smiles+8396+SW+8th+St+Miami+FL+33144&query_place_id=ChIJ--ECvsq52YgRG2Y2kpDGBOM",
+    "directions": "https://www.google.com/maps/dir/?api=1&destination=Xiluet+Smiles+8396+SW+8th+St+Miami+FL+33144&destination_place_id=ChIJ--ECvsq52YgRG2Y2kpDGBOM",
     "embed": "https://www.google.com/maps?q=8396+SW+8th+St,+Miami,+FL+33144&output=embed"
   },
   "rating": {
