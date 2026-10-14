@@ -32,8 +32,7 @@
       }
     ],
     "image": {
-      "src": "treatment-all-on-x.jpg",
-      "alt": "Man in his sixties smiling broadly on a Miami porch with a fixed All-on-X arch",
+      "caseId": "BA17",
       "caption": "All-on-X fixed arch · From $10,000 per arch · 5-year written warranty"
     }
   },
@@ -68,8 +67,8 @@
     "title": "Surgery, lab and final teeth under one roof.",
     "body": "Your surgeon, restorative doctor and ceramist work in the same building. That is why your temporary bridge is fitted the same day as surgery and your final teeth are shaped and shaded in person.",
     "image": {
-      "src": "gen-all-on-x-bridge.jpg",
-      "alt": "All-on-X fixed full-arch bridge with titanium abutment sleeves"
+      "src": "gen-all-on-x-implants.jpg",
+      "alt": "A full-arch zirconia bridge lifted above a jaw model showing the six titanium implants and abutments it will be fixed to"
     },
     "facts": [
       {

@@ -32,8 +32,7 @@
       }
     ],
     "image": {
-      "src": "treatment-all-on-x.jpg",
-      "alt": "Hombre de sesenta y tantos sonriendo ampliamente en un porche de Miami con una arcada fija All-on-X",
+      "caseId": "BA17",
       "caption": "Arcada fija All-on-X · Desde $10,000 por arcada · garantía de 5 años por escrito"
     }
   },
@@ -68,8 +67,8 @@
     "title": "Cirugía, laboratorio y dientes finales bajo un mismo techo.",
     "body": "Tu cirujano, tu doctor restaurador y tu ceramista trabajan en el mismo edificio. Por eso tu puente provisional se coloca el mismo día de la cirugía y tus dientes finales se moldean y se igualan de tono en persona.",
     "image": {
-      "src": "gen-all-on-x-bridge.jpg",
-      "alt": "Puente fijo de arcada completa All-on-X con conexiones de titanio"
+      "src": "gen-all-on-x-implants.jpg",
+      "alt": "Un puente de zirconia de arcada completa levantado sobre un modelo de la mandíbula que muestra los seis implantes de titanio y sus pilares"
     },
     "facts": [
       {
