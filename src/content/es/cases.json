@@ -14,6 +14,180 @@
   },
   "cases": [
     {
+      "id": "BA45",
+      "image": "BA45.jpg",
+      "type": "Veneers",
+      "alt": "Antes y después de carillas de porcelana, paciente de Xiluet con barba, Miami"
+    },
+    {
+      "id": "BA46",
+      "image": "BA46.jpg",
+      "type": "Veneers",
+      "alt": "Antes y después de carillas de porcelana sobre dientes amarillentos y desiguales, paciente de Xiluet, Miami"
+    },
+    {
+      "id": "BA47",
+      "image": "BA47.jpg",
+      "type": "Veneers",
+      "alt": "Antes y después de carillas de porcelana que aclaran una sonrisa manchada, paciente de Xiluet, Miami"
+    },
+    {
+      "id": "BA48",
+      "image": "BA48.jpg",
+      "type": "Veneers",
+      "alt": "Antes y después de diseño de sonrisa con carillas de porcelana, paciente de Xiluet, Miami"
+    },
+    {
+      "id": "BA49",
+      "image": "BA49.jpg",
+      "type": "Veneers",
+      "alt": "Resultado de carillas de porcelana, paciente de Xiluet con barba sonriendo, Miami"
+    },
+    {
+      "id": "BA50",
+      "image": "BA50.jpg",
+      "type": "Veneers",
+      "alt": "Resultado de carillas de porcelana, paciente de Xiluet sonriendo tras el tratamiento, Miami"
+    },
+    {
+      "id": "BA51",
+      "image": "BA51.jpg",
+      "type": "Veneers",
+      "alt": "Antes y después de carillas de porcelana que cierran espacios y cubren dientes desgastados, paciente de Xiluet, Miami"
+    },
+    {
+      "id": "BA52",
+      "image": "BA52.jpg",
+      "type": "Veneers",
+      "alt": "Resultado de carillas de porcelana, paciente de Xiluet sonriendo en la clínica, Miami"
+    },
+    {
+      "id": "BA53",
+      "image": "BA53.jpg",
+      "type": "Veneers",
+      "alt": "Antes y después de carillas de porcelana sobre dientes amarillentos, paciente de Xiluet con barba roja, Miami"
+    },
+    {
+      "id": "BA54",
+      "image": "BA54.jpg",
+      "type": "Veneers",
+      "alt": "Resultado de carillas de porcelana, paciente de Xiluet con barba gris sonriendo, Miami"
+    },
+    {
+      "id": "BA55",
+      "image": "BA55.jpg",
+      "type": "Veneers",
+      "alt": "Antes y después de carillas de porcelana que reemplazan un grill de oro, paciente de Xiluet, Miami"
+    },
+    {
+      "id": "BA56",
+      "image": "BA56.jpg",
+      "type": "Veneers",
+      "alt": "Antes y después de carillas de porcelana sobre dientes frontales desiguales, paciente de Xiluet, Miami"
+    },
+    {
+      "id": "BA57",
+      "image": "BA57.jpg",
+      "type": "Restorations",
+      "alt": "Antes y después de smile makeover que restaura dientes frontales dañados y descoloridos, paciente de Xiluet, Miami"
+    },
+    {
+      "id": "BA58",
+      "image": "BA58.jpg",
+      "type": "Veneers",
+      "alt": "Antes y después de carillas de porcelana que cierran los espacios entre los dientes frontales, paciente de Xiluet, Miami"
+    },
+    {
+      "id": "BA59",
+      "image": "BA59.jpg",
+      "type": "Veneers",
+      "alt": "Antes y después de carillas de porcelana sobre dientes frontales apiñados, paciente de Xiluet, Miami"
+    },
+    {
+      "id": "BA60",
+      "image": "BA60.jpg",
+      "type": "Veneers",
+      "alt": "Resultado de carillas de porcelana, paciente de Xiluet con gorra sonriendo, Miami"
+    },
+    {
+      "id": "BA61",
+      "image": "BA61.jpg",
+      "type": "Veneers",
+      "alt": "Resultado de carillas de porcelana, paciente de Xiluet sonriendo tras el tratamiento, Miami"
+    },
+    {
+      "id": "BA62",
+      "image": "BA62.jpg",
+      "type": "Veneers",
+      "alt": "Antes y después de carillas de porcelana sobre dientes amarillentos y desiguales, paciente de Xiluet, Miami"
+    },
+    {
+      "id": "BA63",
+      "image": "BA63.jpg",
+      "type": "Veneers",
+      "alt": "Resultado de carillas de porcelana, paciente de Xiluet con rastas sonriendo, Miami"
+    },
+    {
+      "id": "BA64",
+      "image": "BA64.jpg",
+      "type": "Full mouth",
+      "alt": "Antes y después de reconstrucción de boca completa que reemplaza dientes rotos y ausentes, paciente de Xiluet, Miami"
+    },
+    {
+      "id": "BA65",
+      "image": "BA65.jpg",
+      "type": "Veneers",
+      "alt": "Resultado final de carillas de porcelana, paciente de Xiluet sonriendo, Miami"
+    },
+    {
+      "id": "BA66",
+      "image": "BA66.jpg",
+      "type": "Veneers",
+      "alt": "Resultado final de carillas de porcelana, paciente de Xiluet con gorra blanca sonriendo, Miami"
+    },
+    {
+      "id": "BA67",
+      "image": "BA67.jpg",
+      "type": "Veneers",
+      "alt": "Resultado de carillas de porcelana, paciente de Xiluet sonriendo tras el tratamiento, Miami"
+    },
+    {
+      "id": "BA68",
+      "image": "BA68.jpg",
+      "type": "Restorations",
+      "alt": "Antes y después de smile makeover que restaura dientes desgastados y manchados, paciente de Xiluet con sombrero, Miami"
+    },
+    {
+      "id": "BA69",
+      "image": "BA69.jpg",
+      "type": "Restorations",
+      "alt": "Antes y después de smile makeover que reemplaza dientes ausentes y desgastados, paciente de Xiluet, Miami"
+    },
+    {
+      "id": "BA70",
+      "image": "BA70.jpg",
+      "type": "Veneers",
+      "alt": "Antes y después: resinas de composite reemplazadas por carillas de porcelana, paciente de Xiluet, Miami"
+    },
+    {
+      "id": "BA71",
+      "image": "BA71.jpg",
+      "type": "Veneers",
+      "alt": "Resultado de carillas de porcelana, paciente de Xiluet sonriendo en la clínica, Miami"
+    },
+    {
+      "id": "BA72",
+      "image": "BA72.jpg",
+      "type": "Veneers",
+      "alt": "Resultado de carillas de porcelana, paciente de Xiluet con gafas y gorra sonriendo, Miami"
+    },
+    {
+      "id": "BA73",
+      "image": "BA73.jpg",
+      "type": "Veneers",
+      "alt": "Antes y después de carillas de porcelana sobre dientes frontales manchados y desiguales, paciente de Xiluet, Miami"
+    },
+    {
       "id": "BA41",
       "image": "BA41.jpg",
       "type": "Veneers",

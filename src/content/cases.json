@@ -8,6 +8,180 @@
   ],
   "cases": [
     {
+      "id": "BA45",
+      "image": "BA45.jpg",
+      "type": "Veneers",
+      "alt": "Before and after porcelain veneers, Xiluet patient with a beard, Miami"
+    },
+    {
+      "id": "BA46",
+      "image": "BA46.jpg",
+      "type": "Veneers",
+      "alt": "Before and after porcelain veneers replacing yellowed and uneven front teeth, Xiluet patient, Miami"
+    },
+    {
+      "id": "BA47",
+      "image": "BA47.jpg",
+      "type": "Veneers",
+      "alt": "Before and after porcelain veneers brightening a stained smile, Xiluet patient, Miami"
+    },
+    {
+      "id": "BA48",
+      "image": "BA48.jpg",
+      "type": "Veneers",
+      "alt": "Before and after smile design with porcelain veneers, Xiluet patient, Miami"
+    },
+    {
+      "id": "BA49",
+      "image": "BA49.jpg",
+      "type": "Veneers",
+      "alt": "Porcelain veneers result, Xiluet patient with a beard smiling, Miami"
+    },
+    {
+      "id": "BA50",
+      "image": "BA50.jpg",
+      "type": "Veneers",
+      "alt": "Porcelain veneers result, Xiluet patient smiling after treatment, Miami"
+    },
+    {
+      "id": "BA51",
+      "image": "BA51.jpg",
+      "type": "Veneers",
+      "alt": "Before and after porcelain veneers closing gaps and covering worn teeth, Xiluet patient, Miami"
+    },
+    {
+      "id": "BA52",
+      "image": "BA52.jpg",
+      "type": "Veneers",
+      "alt": "Porcelain veneers result, Xiluet patient smiling at the clinic, Miami"
+    },
+    {
+      "id": "BA53",
+      "image": "BA53.jpg",
+      "type": "Veneers",
+      "alt": "Before and after porcelain veneers on yellowed teeth, Xiluet patient with a red beard, Miami"
+    },
+    {
+      "id": "BA54",
+      "image": "BA54.jpg",
+      "type": "Veneers",
+      "alt": "Porcelain veneers result, Xiluet patient with a gray beard smiling, Miami"
+    },
+    {
+      "id": "BA55",
+      "image": "BA55.jpg",
+      "type": "Veneers",
+      "alt": "Before and after porcelain veneers replacing a gold grill, Xiluet patient, Miami"
+    },
+    {
+      "id": "BA56",
+      "image": "BA56.jpg",
+      "type": "Veneers",
+      "alt": "Before and after porcelain veneers on uneven front teeth, Xiluet patient, Miami"
+    },
+    {
+      "id": "BA57",
+      "image": "BA57.jpg",
+      "type": "Restorations",
+      "alt": "Before and after smile makeover restoring damaged and discolored front teeth, Xiluet patient, Miami"
+    },
+    {
+      "id": "BA58",
+      "image": "BA58.jpg",
+      "type": "Veneers",
+      "alt": "Before and after porcelain veneers closing gaps between the front teeth, Xiluet patient, Miami"
+    },
+    {
+      "id": "BA59",
+      "image": "BA59.jpg",
+      "type": "Veneers",
+      "alt": "Before and after porcelain veneers on crowded front teeth, Xiluet patient, Miami"
+    },
+    {
+      "id": "BA60",
+      "image": "BA60.jpg",
+      "type": "Veneers",
+      "alt": "Porcelain veneers result, Xiluet patient in a cap smiling, Miami"
+    },
+    {
+      "id": "BA61",
+      "image": "BA61.jpg",
+      "type": "Veneers",
+      "alt": "Porcelain veneers result, Xiluet patient smiling after treatment, Miami"
+    },
+    {
+      "id": "BA62",
+      "image": "BA62.jpg",
+      "type": "Veneers",
+      "alt": "Before and after porcelain veneers on yellowed, uneven teeth, Xiluet patient, Miami"
+    },
+    {
+      "id": "BA63",
+      "image": "BA63.jpg",
+      "type": "Veneers",
+      "alt": "Porcelain veneers result, Xiluet patient with locs smiling, Miami"
+    },
+    {
+      "id": "BA64",
+      "image": "BA64.jpg",
+      "type": "Full mouth",
+      "alt": "Before and after full mouth reconstruction replacing broken and missing teeth, Xiluet patient, Miami"
+    },
+    {
+      "id": "BA65",
+      "image": "BA65.jpg",
+      "type": "Veneers",
+      "alt": "Porcelain veneers final result, Xiluet patient smiling, Miami"
+    },
+    {
+      "id": "BA66",
+      "image": "BA66.jpg",
+      "type": "Veneers",
+      "alt": "Porcelain veneers final result, Xiluet patient in a white cap smiling, Miami"
+    },
+    {
+      "id": "BA67",
+      "image": "BA67.jpg",
+      "type": "Veneers",
+      "alt": "Porcelain veneers result, Xiluet patient smiling after treatment, Miami"
+    },
+    {
+      "id": "BA68",
+      "image": "BA68.jpg",
+      "type": "Restorations",
+      "alt": "Before and after smile makeover restoring worn and stained teeth, Xiluet patient in a bucket hat, Miami"
+    },
+    {
+      "id": "BA69",
+      "image": "BA69.jpg",
+      "type": "Restorations",
+      "alt": "Before and after smile makeover replacing missing and worn teeth, Xiluet patient, Miami"
+    },
+    {
+      "id": "BA70",
+      "image": "BA70.jpg",
+      "type": "Veneers",
+      "alt": "Before and after: composite resins replaced with porcelain veneers, Xiluet patient, Miami"
+    },
+    {
+      "id": "BA71",
+      "image": "BA71.jpg",
+      "type": "Veneers",
+      "alt": "Porcelain veneers result, Xiluet patient smiling at the clinic, Miami"
+    },
+    {
+      "id": "BA72",
+      "image": "BA72.jpg",
+      "type": "Veneers",
+      "alt": "Porcelain veneers result, Xiluet patient in glasses and a cap smiling, Miami"
+    },
+    {
+      "id": "BA73",
+      "image": "BA73.jpg",
+      "type": "Veneers",
+      "alt": "Before and after porcelain veneers on stained, uneven front teeth, Xiluet patient, Miami"
+    },
+    {
       "id": "BA41",
       "image": "BA41.jpg",
       "type": "Veneers",
