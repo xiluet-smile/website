@@ -110,7 +110,6 @@ export default function BlogArticle({ slug, locale = "en" }: { slug: string; loc
   const { pages, site } = getContent(locale);
   const path = `/blog/${slug}` as PagePath;
   const author = doctorByName(locale, post.author);
-  const reviewer = post.reviewedBy ? doctorByName(locale, post.reviewedBy) : undefined;
   const others = posts(locale).filter((p) => p.slug !== slug);
   const related = (post.related ?? []).map((r) => ({ href: r as PagePath, label: pages[r as PagePath]?.breadcrumb ?? r })).filter((r) => r.label);
   // "Read next": the article's own list when it has one, otherwise the three most recent other posts.
@@ -172,19 +171,6 @@ export default function BlogArticle({ slug, locale = "en" }: { slug: string; loc
                   <span className="font-semibold text-on-dark">{post.author}</span>
                 )}
               </span>
-              {post.reviewedBy && (
-                <span>
-                  <span aria-hidden="true" className="hidden lg:inline">· </span>
-                  {t.blogPage.reviewedBy}{" "}
-                  {reviewer ? (
-                    <Link href={localizeHref(reviewer.href, locale)} className="font-semibold text-on-dark no-underline hover:text-gold">
-                      {post.reviewedBy}
-                    </Link>
-                  ) : (
-                    post.reviewedBy
-                  )}
-                </span>
-              )}
               <span>
                 <span aria-hidden="true" className="hidden lg:inline">· </span>
                 {post.dateModified && post.dateModified !== post.datePublished ? t.blogPage.updated : t.blogPage.published}{" "}
