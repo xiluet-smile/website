@@ -2,11 +2,13 @@ import Link from "next/link";
 import DoctorCta from "@/components/DoctorCta";
 import { PhoneIcon } from "@/components/Icons";
 import Img from "@/components/Img";
+import LazyVideo from "@/components/LazyVideo";
 import PageHero from "@/components/PageHero";
 import HomeResults from "@/components/home/HomeResults";
 import PatientStories from "@/components/home/PatientStories";
 import { caseById, getContent, tpl, ui, type Doctor } from "@/lib/content-i18n";
 import { localizeHref, localizePath, type Locale } from "@/lib/i18n";
+import { imageInfo } from "@/lib/images";
 import { site } from "@/lib/site";
 
 /** Shape of src/content/doctors/{slug}.json (profile-only data; the rest comes from doctors.json). */
@@ -22,6 +24,15 @@ export type DoctorProfileData = {
   certs: string[];
   /** Ids from cases.json. */
   caseIds: string[];
+  /** Lab manager profile: replaces the plain focus grid with the lab video, the focus list, key facts and the production steps. */
+  lab?: {
+    eyebrow: string;
+    title: string;
+    body: string;
+    facts: { big: string; sub: string }[];
+    processTitle: string;
+    process: { t: string; d: string }[];
+  };
 };
 
 const h2 =
@@ -178,6 +189,68 @@ export default function DoctorProfile({
       <Hero doctor={doctor} profile={profile} locale={locale} />
 
       {/* Focus */}
+      {profile.lab && (
+        <>
+          {/* The lab: video + what Edgar does, in the dark panel style of the treatment pages. */}
+          <section className="wrap pt-16 lg:pt-28">
+            <div className={`dark-panel ${panelShadow} grid items-center gap-8 rounded-2xl p-6 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,1fr)] lg:gap-14 lg:rounded-[20px] lg:p-14`}>
+              <div className="overflow-hidden rounded-2xl border border-[rgba(247,244,238,.18)]">
+                {site.videos.lab ? (
+                  <LazyVideo
+                    src={site.videos.lab}
+                    poster={imageInfo("lab-poster.jpg").src}
+                    label={profile.lab.title}
+                    className="block aspect-[4/3] h-auto w-full object-cover lg:aspect-[5/4]"
+                  />
+                ) : (
+                  <Img src="lab-poster.jpg" alt={profile.lab.title} sizes="(min-width: 1024px) 560px, 100vw" className="block aspect-[4/3] h-auto w-full object-cover lg:aspect-[5/4]" />
+                )}
+              </div>
+              <div className="flex flex-col gap-5">
+                <span className="eyebrow text-gold">{profile.lab.eyebrow}</span>
+                <h2 className="m-0 font-serif text-[32px] leading-[1.15] font-normal text-pretty lg:text-[44px] lg:leading-[1.08]">{profile.lab.title}</h2>
+                <p className="m-0 text-[17px] leading-[1.55] text-pretty text-on-dark-muted">{profile.lab.body}</p>
+                <ol className="m-0 flex list-none flex-col gap-3.5 p-0">
+                  {profile.focus.map((f) => (
+                    <li key={f.n} className="grid grid-cols-[32px_minmax(0,1fr)] gap-3 border-t border-[rgba(247,244,238,.14)] pt-3.5">
+                      <span aria-hidden="true" className="pt-1 text-xs font-semibold tracking-[.14em] text-gold">{f.n}</span>
+                      <div>
+                        <h3 className="m-0 font-serif text-[20px] leading-[1.2] font-normal lg:text-[22px]">{f.t}</h3>
+                        <p className="m-0 mt-1 text-[15px] leading-[1.5] text-on-dark-muted">{f.d}</p>
+                      </div>
+                    </li>
+                  ))}
+                </ol>
+              </div>
+            </div>
+            {/* The numbers that the lab makes possible. */}
+            <ul className="m-0 mt-5 grid list-none grid-cols-2 gap-3 p-0 lg:mt-6 lg:grid-cols-4 lg:gap-4">
+              {profile.lab.facts.map((g) => (
+                <li key={g.sub} className="flex flex-col gap-3 rounded-2xl border border-sand bg-card p-4 lg:min-h-[150px] lg:p-5">
+                  <span className="mt-auto font-serif text-[28px] leading-none tracking-[-.02em] text-teal lg:text-[36px]">{g.big}</span>
+                  <span className="text-[13px] leading-[1.45] text-muted lg:text-sm">{g.sub}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          {/* How a veneer is made here: the five steps between the scan and delivery. */}
+          <section className="wrap pt-16 lg:pt-28">
+            <h2 className={`${h2} mb-7 lg:mb-10 lg:text-[44px]`}>{profile.lab.processTitle}</h2>
+            <ol className="m-0 grid list-none gap-4 p-0 sm:grid-cols-2 lg:grid-cols-5 lg:gap-5">
+              {profile.lab.process.map((p, i) => (
+                <li key={p.t} className="glass-card flex flex-col gap-3 rounded-2xl p-5 lg:rounded-[18px] lg:p-6">
+                  <span className="grid h-9 w-9 place-items-center rounded-full bg-teal font-serif text-[17px] text-on-dark">{i + 1}</span>
+                  <h3 className="m-0 font-serif text-[20px] leading-[1.2] font-normal text-teal">{p.t}</h3>
+                  <p className="m-0 text-[15px] leading-[1.5] text-body">{p.d}</p>
+                </li>
+              ))}
+            </ol>
+          </section>
+        </>
+      )}
+
+      {!profile.lab && (
       <section className="wrap pt-16 lg:pt-28">
         <div className="mb-7 flex flex-col gap-3 lg:mb-10 lg:flex-row lg:items-end lg:justify-between lg:gap-8">
           <h2 className={`${h2} lg:max-w-[18ch] lg:text-[48px]`}>
@@ -210,6 +283,7 @@ export default function DoctorProfile({
           ))}
         </ul>
       </section>
+      )}
 
       {/* Education */}
       {profile.education.length > 0 && (

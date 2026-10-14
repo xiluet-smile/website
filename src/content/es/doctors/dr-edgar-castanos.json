@@ -40,5 +40,51 @@
   ],
   "education": [],
   "certs": [],
-  "caseIds": []
+  "caseIds": [],
+  "lab": {
+    "eyebrow": "El laboratorio propio",
+    "title": "Dentro del laboratorio que hace cada sonrisa de Xiluet",
+    "body": "El laboratorio de Edgar está en el mismo edificio que los consultorios. Tu doctor y tu ceramista miran los mismos escaneos, el mismo diseño y el mismo tono, contigo en el sillón, y cada carilla, corona y puente se termina aquí, a mano, antes de ir a tu boca.",
+    "facts": [
+      {
+        "big": "0.3 mm",
+        "sub": "de grosor de carilla, terminada a mano"
+      },
+      {
+        "big": "5 capas",
+        "sub": "de tono integradas en cada disco de zirconia"
+      },
+      {
+        "big": "1 semana",
+        "sub": "del primer escaneo a la entrega"
+      },
+      {
+        "big": "5 años",
+        "sub": "de garantía por escrito"
+      }
+    ],
+    "processTitle": "Cómo se hace aquí una carilla",
+    "process": [
+      {
+        "t": "Escaneo y diseño",
+        "d": "Los escaneos 3D y las fotos faciales sustituyen a las impresiones. El diseño se coloca en tu boca y se aprueba en la Visita 1, antes de tocar ningún diente."
+      },
+      {
+        "t": "Fresado",
+        "d": "Cada pieza se fresa de un disco de zirconia multicapa, elegido para que el degradado de cálido a translúcido caiga donde caería en un diente natural."
+      },
+      {
+        "t": "Acabado a mano",
+        "d": "Edgar ajusta cada pieza bajo magnificación hasta que asienta sin presión, pule el margen hasta formar un sellado cerrado y añade a mano la textura de superficie y los efectos del esmalte."
+      },
+      {
+        "t": "Prueba de tono en persona",
+        "d": "El tono se iguala contigo en el sillón, doctor y ceramista juntos, y se corrige al momento en lugar de por correo con un laboratorio en otra ciudad."
+      },
+      {
+        "t": "Entrega",
+        "d": "Cementado final la misma semana en que llegaste, con la mordida revisada y la garantía por escrito."
+      }
+    ]
+  }
 }
