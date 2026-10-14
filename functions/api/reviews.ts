@@ -28,7 +28,7 @@ export const onRequestGet: PagesFunction<Env> = async ({ request, env }) => {
 
   const lang = new URL(request.url).searchParams.get("lang") === "es" ? "es" : "en";
   const cache = caches.default;
-  const cacheKey = new Request(new URL(`/api/reviews?lang=${lang}`, request.url).toString(), { method: "GET" });
+  const cacheKey = new Request(new URL(`/api/reviews?lang=${lang}&v=2`, request.url).toString(), { method: "GET" });
   const hit = await cache.match(cacheKey);
   if (hit) return hit;
 
