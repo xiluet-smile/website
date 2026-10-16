@@ -28,6 +28,7 @@ export const esPaths: Record<PagePath, string> = {
   "/financing/carecredit": "/es/financiamiento/carecredit",
   "/financing/lendingclub": "/es/financiamiento/lendingclub",
   "/financing/alphaeon": "/es/financiamiento/alphaeon",
+  "/financing/affirm": "/es/financiamiento/affirm",
   "/before-and-after": "/es/antes-y-despues",
   "/out-of-state-patients": "/es/pacientes-de-otros-estados",
   "/veneers-cost-miami": "/es/precio-carillas-miami",

@@ -1,0 +1,56 @@
+{
+  "slug": "affirm",
+  "intro": "Paga a plazos con el costo total a la vista desde el principio. Sin cargos por mora, sin cargos ocultos, y revisar tu elegibilidad no afecta tu puntaje de crédito.",
+  "site": {
+    "url": "https://www.affirm.com",
+    "label": "Revisa tus opciones con Affirm →",
+    "note": "Consulta suave de crédito. No afecta tu puntaje."
+  },
+  "facts": [
+    {
+      "big": "Segundos",
+      "sub": "Para revisar tu elegibilidad"
+    },
+    {
+      "big": "Sin cargos por mora",
+      "sub": "Nunca, y sin cargos ocultos"
+    },
+    {
+      "big": "3 a 36 meses",
+      "sub": "Plazos según el monto"
+    },
+    {
+      "big": "Por adelantado",
+      "sub": "Costo total a la vista antes de aceptar"
+    }
+  ],
+  "steps": [
+    {
+      "n": "01",
+      "t": "Revisa tu elegibilidad con una consulta suave en segundos"
+    },
+    {
+      "n": "02",
+      "t": "Elige un plan. El total que pagarás se muestra antes de aceptar"
+    },
+    {
+      "n": "03",
+      "t": "Affirm le paga a Xiluet. Tú le pagas a Affirm cada mes"
+    }
+  ],
+  "faq": [
+    {
+      "q": "¿Affirm cobra intereses?",
+      "a": "Según tu plan, de 0 a 36 por ciento APR. El monto exacto se muestra antes de aceptar y nunca cambia."
+    },
+    {
+      "q": "¿Y si se me pasa un pago?",
+      "a": "Affirm no cobra cargos por mora, pero los pagos atrasados pueden afectar tu crédito y tu elegibilidad futura."
+    },
+    {
+      "q": "¿Puedo pagar antes?",
+      "a": "Sí, sin penalidad. Solo pagas intereses por el tiempo que tuviste el préstamo."
+    }
+  ],
+  "disclaimer": "Affirm es un prestamista externo. El financiamiento está sujeto a aprobación de crédito. Los términos y tasas los establece Affirm y pueden cambiar. Xiluet no toma decisiones de crédito."
+}

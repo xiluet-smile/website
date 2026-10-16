@@ -60,13 +60,11 @@
 # Financing
 /financing/ /financing
 /alphaeon-credit /financing/alphaeon
-/affirm /financing
+/affirm /financing/affirm
 /cherry-payment-plans /financing/cherry
 /sunbit /financing/sunbit
 /care-credit /financing/carecredit
 /lendingclub /financing/lendingclub
-/financing/affirm /financing/alphaeon
-/es/financiamiento/affirm /es/financiamiento/alphaeon
 
 # Contact and forms
 /contact-us /contact

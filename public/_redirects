@@ -107,8 +107,8 @@
 /financing/ /financing 301
 /alphaeon-credit /financing/alphaeon 301
 /alphaeon-credit/ /financing/alphaeon 301
-/affirm /financing 301
-/affirm/ /financing 301
+/affirm /financing/affirm 301
+/affirm/ /financing/affirm 301
 /cherry-payment-plans /financing/cherry 301
 /cherry-payment-plans/ /financing/cherry 301
 /sunbit /financing/sunbit 301
@@ -117,10 +117,6 @@
 /care-credit/ /financing/carecredit 301
 /lendingclub /financing/lendingclub 301
 /lendingclub/ /financing/lendingclub 301
-/financing/affirm /financing/alphaeon 301
-/financing/affirm/ /financing/alphaeon 301
-/es/financiamiento/affirm /es/financiamiento/alphaeon 301
-/es/financiamiento/affirm/ /es/financiamiento/alphaeon 301
 /contact-us /contact 301
 /contact-us/ /contact 301
 /free-consultation-xiluet-smiles /free-photo-evaluation 301
@@ -218,6 +214,7 @@
 /es/doctores/dr-roger-ramos-navarro/ /es/doctores/dr-roger-ramos-navarro 301
 /es/evaluacion-gratuita-por-fotos/ /es/evaluacion-gratuita-por-fotos 301
 /es/financiamiento/ /es/financiamiento 301
+/es/financiamiento/affirm/ /es/financiamiento/affirm 301
 /es/financiamiento/alphaeon/ /es/financiamiento/alphaeon 301
 /es/financiamiento/carecredit/ /es/financiamiento/carecredit 301
 /es/financiamiento/cherry/ /es/financiamiento/cherry 301
@@ -232,6 +229,7 @@
 /es/referidos/ /es/referidos 301
 /es/terminos/ /es/terminos 301
 /es/transformacion-de-sonrisa-miami/ /es/transformacion-de-sonrisa-miami 301
+/financing/affirm/ /financing/affirm 301
 /financing/alphaeon/ /financing/alphaeon 301
 /financing/carecredit/ /financing/carecredit 301
 /financing/cherry/ /financing/cherry 301

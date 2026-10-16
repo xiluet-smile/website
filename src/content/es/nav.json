@@ -93,6 +93,11 @@
           "t": "Alphaeon Credit",
           "d": "Tarjeta de crédito para salud, consulta blanda",
           "href": "/financing/alphaeon"
+        },
+        {
+          "t": "Affirm",
+          "d": "Términos transparentes, sin cargos por mora",
+          "href": "/financing/affirm"
         }
       ]
     },
@@ -220,6 +225,10 @@
         {
           "label": "Alphaeon Credit",
           "href": "/financing/alphaeon"
+        },
+        {
+          "label": "Affirm",
+          "href": "/financing/affirm"
         }
       ]
     },

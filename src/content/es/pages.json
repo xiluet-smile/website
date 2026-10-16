@@ -78,7 +78,7 @@
   },
   "/financing": {
     "title": "Financiamiento dental Miami | Cherry, Sunbit, CareCredit",
-    "description": "Cinco socios de financiamiento, consulta de crédito suave y guía para la aprobación de una sola coordinadora. Paga carillas o implantes a plazos en Miami.",
+    "description": "Seis socios de financiamiento, consulta de crédito suave y guía para la aprobación de una sola coordinadora. Paga carillas o implantes a plazos en Miami.",
     "ogImage": "clinic-lobby.jpg",
     "h1": "Cinco formas de pagar a plazos.",
     "breadcrumb": "Financiamiento dental Miami"
@@ -117,6 +117,13 @@
     "ogImage": "clinic-lobby.jpg",
     "h1": "Alphaeon Credit: precalifica con consulta suave.",
     "breadcrumb": "Financiamiento dental Alphaeon Credit"
+  },
+  "/financing/affirm": {
+    "title": "Financiamiento dental Affirm | Xiluet Smiles Miami",
+    "description": "Paga a plazos con Affirm: costo total a la vista desde el inicio, sin cargos por mora, y revisar tu elegibilidad no afecta tu puntaje. Aceptado en Xiluet Smiles, Miami.",
+    "ogImage": "clinic-lobby.jpg",
+    "h1": "Affirm: conoce tu pago mensual antes de comprometerte.",
+    "breadcrumb": "Financiamiento dental Affirm"
   },
   "/before-and-after": {
     "title": "Carillas antes y después | Pacientes reales | Xiluet Smiles",

@@ -93,6 +93,11 @@
           "t": "Alphaeon Credit",
           "d": "Healthcare credit card, soft check",
           "href": "/financing/alphaeon"
+        },
+        {
+          "t": "Affirm",
+          "d": "Transparent terms, no late fees",
+          "href": "/financing/affirm"
         }
       ]
     },
@@ -220,6 +225,10 @@
         {
           "label": "Alphaeon Credit",
           "href": "/financing/alphaeon"
+        },
+        {
+          "label": "Affirm",
+          "href": "/financing/affirm"
         }
       ]
     },

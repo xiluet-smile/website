@@ -1,0 +1,56 @@
+{
+  "slug": "affirm",
+  "intro": "Pay over time with the total cost shown upfront. No late fees, no hidden fees, and checking eligibility does not affect your credit score.",
+  "site": {
+    "url": "https://www.affirm.com",
+    "label": "Check your options with Affirm →",
+    "note": "Soft credit check. Does not affect your score."
+  },
+  "facts": [
+    {
+      "big": "Seconds",
+      "sub": "To check eligibility"
+    },
+    {
+      "big": "No late fees",
+      "sub": "Ever, and no hidden fees"
+    },
+    {
+      "big": "3 to 36 mo",
+      "sub": "Terms depending on amount"
+    },
+    {
+      "big": "Upfront",
+      "sub": "Total cost shown before you agree"
+    }
+  ],
+  "steps": [
+    {
+      "n": "01",
+      "t": "Check eligibility with a soft check in seconds"
+    },
+    {
+      "n": "02",
+      "t": "Pick a plan. The total you will pay is shown before you agree"
+    },
+    {
+      "n": "03",
+      "t": "Affirm pays Xiluet. You pay Affirm monthly"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Does Affirm charge interest?",
+      "a": "Depending on your plan, 0 to 36 percent APR. The exact amount is shown before you accept, and it never changes."
+    },
+    {
+      "q": "What if I miss a payment?",
+      "a": "Affirm does not charge late fees, but late payments may affect your credit and future eligibility."
+    },
+    {
+      "q": "Can I pay early?",
+      "a": "Yes, with no penalty. You only pay interest for the time you had the loan."
+    }
+  ],
+  "disclaimer": "Affirm is a third-party lender. Financing is subject to credit approval. Terms and rates are set by Affirm and may change. Xiluet does not make credit decisions."
+}
