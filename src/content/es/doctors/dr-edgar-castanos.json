@@ -66,25 +66,33 @@
     "processTitle": "Cómo se hace aquí una carilla",
     "process": [
       {
+        "k": "Visita 1 · En el sillón",
         "t": "Escaneo y diseño",
-        "d": "Los escaneos 3D y las fotos faciales sustituyen a las impresiones. El diseño se coloca en tu boca y se aprueba en la Visita 1, antes de tocar ningún diente."
+        "d": "Los escaneos 3D y las fotos faciales sustituyen a las impresiones. Ves el diseño en tu propia boca y lo apruebas antes de tocar ningún diente."
       },
       {
-        "t": "Fresado",
-        "d": "Cada pieza se fresa de un disco de zirconia multicapa, elegido para que el degradado de cálido a translúcido caiga donde caería en un diente natural."
+        "k": "En el laboratorio",
+        "t": "Fresada de un solo disco",
+        "d": "Cada carilla se fresa de un disco de zirconia multicapa, colocado para que el degradado de cálido a translúcido caiga donde cae en un diente natural."
       },
       {
-        "t": "Acabado a mano",
+        "k": "En el laboratorio",
+        "t": "Terminada a mano",
         "d": "Edgar ajusta cada pieza bajo magnificación hasta que asienta sin presión, pule el margen hasta formar un sellado cerrado y añade a mano la textura de superficie y los efectos del esmalte."
       },
       {
-        "t": "Prueba de tono en persona",
-        "d": "El tono se iguala contigo en el sillón, doctor y ceramista juntos, y se corrige al momento en lugar de por correo con un laboratorio en otra ciudad."
+        "k": "Visita 3 · En el sillón",
+        "t": "Tono comprobado contigo",
+        "d": "Doctor y ceramista igualan el tono contigo en el sillón y lo corrigen al momento, no por correo con un laboratorio en otra ciudad."
       },
       {
-        "t": "Entrega",
-        "d": "Cementado final la misma semana en que llegaste, con la mordida revisada y la garantía por escrito."
+        "k": "Visita 3 · En el sillón",
+        "t": "Cementada, con la garantía por escrito",
+        "d": "Cementado final la misma semana en que llegaste. Se revisa la mordida y se te entrega la garantía de 5 años en papel."
       }
-    ]
+    ],
+    "processEyebrow": "Cinco pasos, un solo edificio",
+    "processIntro": "La mayoría de las clínicas te escanea, envía el archivo a un laboratorio en otra ciudad y espera. Aquí el laboratorio está a un tramo de escaleras del sillón, así que cada paso ocurre con las mismas personas, en la misma semana.",
+    "processNote": "Si algo necesita un cambio el día de la entrega, sube al laboratorio y vuelve esa misma tarde. Nadie espera a un mensajero."
   }
 }

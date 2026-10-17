@@ -66,25 +66,33 @@
     "processTitle": "How a veneer is made here",
     "process": [
       {
+        "k": "Visit 1 · In the chair",
         "t": "Scan and design",
-        "d": "3D scans and facial photos replace impressions. The design is placed in your mouth and approved at Visit 1, before any tooth is touched."
+        "d": "3D scans and facial photos replace impressions. You see the design in your own mouth and approve it before any tooth is touched."
       },
       {
-        "t": "Mill",
-        "d": "Each piece is milled from a multilayer zirconia disc, chosen so the warm-to-translucent gradient falls where it would in a natural tooth."
+        "k": "In the lab",
+        "t": "Milled from one disc",
+        "d": "Each veneer is milled from a multilayer zirconia disc, positioned so the warm-to-translucent gradient falls where it does in a natural tooth."
       },
       {
-        "t": "Hand finishing",
-        "d": "Edgar adjusts every piece under magnification until it seats without pressure, polishes the margin into a closed seal and adds surface texture and enamel effects by hand."
+        "k": "In the lab",
+        "t": "Finished by hand",
+        "d": "Edgar fits every piece under magnification until it seats without pressure, polishes the margin into a closed seal and adds surface texture and enamel effects by hand."
       },
       {
-        "t": "Shade check in person",
-        "d": "Shade is matched with you in the chair, doctor and ceramist together, and corrected on the spot rather than by email with a lab in another city."
+        "k": "Visit 3 · In the chair",
+        "t": "Shade checked on you",
+        "d": "Doctor and ceramist match the shade with you in the chair and correct it on the spot, not by email with a lab in another city."
       },
       {
-        "t": "Delivery",
-        "d": "Final bonding the same week you arrived, with the bite checked and the warranty in writing."
+        "k": "Visit 3 · In the chair",
+        "t": "Bonded, with the warranty in writing",
+        "d": "Final bonding the same week you arrived. The bite is checked and the 5-year warranty is handed over on paper."
       }
-    ]
+    ],
+    "processEyebrow": "Five steps, one building",
+    "processIntro": "Most clinics scan you, ship the file to a lab in another city and wait. Here the lab is a flight of stairs from the chair, so every step below happens with the same people, in the same week.",
+    "processNote": "If something needs a change on delivery day, it goes upstairs and comes back the same afternoon. Nobody waits for a courier."
   }
 }

@@ -30,8 +30,11 @@ export type DoctorProfileData = {
     title: string;
     body: string;
     facts: { big: string; sub: string }[];
+    processEyebrow?: string;
     processTitle: string;
-    process: { t: string; d: string }[];
+    processIntro?: string;
+    process: { k?: string; t: string; d: string }[];
+    processNote?: string;
   };
 };
 
@@ -182,7 +185,7 @@ export default function DoctorProfile({
   const doctorStories = stories.filter((s) => s.doctor === doctor.name);
   const doctorCases = profile.caseIds.map((id) => caseById(locale, id));
   const name = profile.display;
-  const others = doctors.filter((d) => d.slug !== doctor.slug);
+  const others = doctors.filter((d) => d.slug !== doctor.slug && d.credential === "DMD");
 
   return (
     <>
@@ -234,18 +237,41 @@ export default function DoctorProfile({
             </ul>
           </section>
 
-          {/* How a veneer is made here: the five steps between the scan and delivery. */}
+          {/* How a veneer is made here: the five steps between the scan and delivery, as one rail from chair to lab and back. */}
           <section className="wrap pt-16 lg:pt-28">
-            <h2 className={`${h2} mb-7 lg:mb-10 lg:text-[44px]`}>{profile.lab.processTitle}</h2>
-            <ol className="m-0 grid list-none gap-4 p-0 sm:grid-cols-2 lg:grid-cols-5 lg:gap-5">
-              {profile.lab.process.map((p, i) => (
-                <li key={p.t} className="glass-card flex flex-col gap-3 rounded-2xl p-5 lg:rounded-[18px] lg:p-6">
-                  <span className="grid h-9 w-9 place-items-center rounded-full bg-teal font-serif text-[17px] text-on-dark">{i + 1}</span>
-                  <h3 className="m-0 font-serif text-[20px] leading-[1.2] font-normal text-teal">{p.t}</h3>
-                  <p className="m-0 text-[15px] leading-[1.5] text-body">{p.d}</p>
-                </li>
-              ))}
+            <div className="mb-9 flex flex-col gap-3 lg:mb-14 lg:max-w-[720px]">
+              {profile.lab.processEyebrow && <span className="eyebrow text-gold-text">{profile.lab.processEyebrow}</span>}
+              <h2 className={`${h2} lg:text-[44px]`}>{profile.lab.processTitle}</h2>
+              {profile.lab.processIntro && <p className="m-0 text-[17px] leading-[1.55] text-pretty text-body lg:text-lg">{profile.lab.processIntro}</p>}
+            </div>
+            <ol className="m-0 grid list-none gap-0 p-0 lg:grid-cols-5 lg:gap-6">
+              {profile.lab.process.map((p, i, arr) => {
+                const last = i === arr.length - 1;
+                return (
+                  <li key={p.t} className="relative grid grid-cols-[44px_minmax(0,1fr)] gap-x-4 pb-9 lg:block lg:pb-0">
+                    {!last && (
+                      <span
+                        aria-hidden="true"
+                        className="absolute top-11 bottom-0 left-[21px] w-px bg-sand lg:top-[22px] lg:right-[-24px] lg:bottom-auto lg:left-11 lg:h-px lg:w-auto"
+                      />
+                    )}
+                    <span className="relative z-[1] grid h-11 w-11 place-items-center rounded-full bg-teal font-serif text-[19px] text-on-dark shadow-[0_0_0_6px_var(--color-cream)]">
+                      {i + 1}
+                    </span>
+                    <div className="flex flex-col gap-2 lg:mt-6">
+                      {p.k && <span className="text-[12px] leading-[1.4] font-semibold tracking-[.12em] text-gold-text uppercase">{p.k}</span>}
+                      <h3 className="m-0 font-serif text-[22px] leading-[1.2] font-normal text-teal">{p.t}</h3>
+                      <p className="m-0 text-[15px] leading-[1.55] text-pretty text-body">{p.d}</p>
+                    </div>
+                  </li>
+                );
+              })}
             </ol>
+            {profile.lab.processNote && (
+              <p className="m-0 mt-2 max-w-[62ch] border-l-2 border-gold pl-5 font-serif text-[20px] leading-[1.4] text-pretty text-teal lg:mt-12 lg:text-[24px]">
+                {profile.lab.processNote}
+              </p>
+            )}
           </section>
         </>
       )}
@@ -432,7 +458,7 @@ export default function DoctorProfile({
             {t.doctor.allDoctors}
           </Link>
         </div>
-        <div className="grid gap-4 lg:grid-cols-2 lg:gap-5">
+        <div className={`grid gap-4 lg:gap-5 ${others.length > 2 ? "lg:grid-cols-3" : "lg:grid-cols-2"}`}>
           {others.map((d) => (
             <Link
               key={d.slug}

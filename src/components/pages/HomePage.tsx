@@ -189,7 +189,7 @@ export default function HomePage({ locale = "en" }: { locale?: Locale }) {
                 big: tpl(t.yearsShort, { years: site.warrantyYears }),
                 small: t.warranty,
               },
-              { big: String(doctors.length), small: t.doctorsDmd },
+              { big: String(doctors.filter((d) => d.credential === "DMD").length), small: t.doctorsDmd },
             ].map((s, i) => (
               <div
                 key={s.small}
@@ -341,7 +341,7 @@ export default function HomePage({ locale = "en" }: { locale?: Locale }) {
           </Link>
         </div>
         <div className="-mx-5 flex gap-3 overflow-x-auto px-5 pb-1 lg:mx-0 lg:grid lg:grid-cols-3 lg:gap-6 lg:overflow-visible lg:px-0 lg:pb-0">
-          {doctors.map((d) => (
+          {doctors.filter((d) => d.credential === "DMD").map((d) => (
             <Link
               key={d.slug}
               href={localizeHref(d.href, locale)}

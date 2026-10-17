@@ -119,7 +119,7 @@ const uiEn = {
     costFootnote:
       "Deep cleaning and other procedures are quoted separately, in writing, before anything starts. Final estimate may vary if additional corrections are required beyond the smile design.",
     financing: "Financing",
-    financingTitle: "Five ways to pay over time",
+    financingTitle: "Six ways to pay over time",
     financingLead: "Our coordinator helps you apply and compares offers with you before you commit.",
     approvalGuidance: "How approval guidance works →",
     financingNote: "Financing is provided by third-party lenders, subject to credit approval. Terms vary by partner.",
@@ -427,7 +427,7 @@ const uiEs: UiStrings = {
     costFootnote:
       "La limpieza profunda y otros procedimientos se cotizan aparte, por escrito, antes de empezar. El presupuesto final puede variar si se requieren correcciones adicionales más allá del diseño de sonrisa.",
     financing: "Financiamiento",
-    financingTitle: "Cinco formas de pagar a plazos",
+    financingTitle: "Seis formas de pagar a plazos",
     financingLead: "Nuestra coordinadora te ayuda a aplicar y compara las ofertas contigo antes de que te comprometas.",
     approvalGuidance: "Cómo funciona la guía de aprobación →",
     financingNote: "El financiamiento lo ofrecen prestamistas externos, sujeto a aprobación de crédito. Los términos varían según el socio.",

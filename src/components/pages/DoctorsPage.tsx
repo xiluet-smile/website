@@ -14,6 +14,8 @@ export default function DoctorsPage({ locale = "en" }: { locale?: Locale }) {
   const t = ui(locale);
   const { pages, site, doctors, doctorsIndex, faq } = getContent(locale);
   const faqs = faq.doctors;
+  /** The list shows the treating dentists; Edgar (General Manager · Lab Manager) keeps his profile page and menu entry. */
+  const dmds = doctors.filter((d) => d.credential === "DMD");
   /** Fills the {rating} / {count} tokens in doctors-index.json from site.rating. */
   const fill = (s: string) => s.replace("{rating}", site.rating.value).replace("{count}", String(site.rating.count));
   return (
@@ -42,8 +44,8 @@ export default function DoctorsPage({ locale = "en" }: { locale?: Locale }) {
       </PageHero>
 
       <section className="wrap pt-16 lg:pt-28">
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
-          {doctors.map((d) => (
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
+          {dmds.map((d) => (
             <Link
               key={d.slug}
               href={localizeHref(d.href, locale)}
