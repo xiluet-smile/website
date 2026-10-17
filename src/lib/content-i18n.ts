@@ -19,6 +19,7 @@ import doctorsIndex from "@/content/doctors-index.json";
 import lenders from "@/content/lenders.json";
 import financing from "@/content/financing.json";
 import clinic from "@/content/clinic.json";
+import lab from "@/content/lab.json";
 import outOfState from "@/content/out-of-state.json";
 import contact from "@/content/contact.json";
 import leadForm from "@/content/lead-form.json";
@@ -60,6 +61,7 @@ import esDoctorsIndex from "@/content/es/doctors-index.json";
 import esLenders from "@/content/es/lenders.json";
 import esFinancing from "@/content/es/financing.json";
 import esClinic from "@/content/es/clinic.json";
+import esLab from "@/content/es/lab.json";
 import esOutOfState from "@/content/es/out-of-state.json";
 import esContact from "@/content/es/contact.json";
 import esLeadForm from "@/content/es/lead-form.json";
@@ -105,6 +107,7 @@ type DoctorsIndex = typeof doctorsIndex;
 type Lenders = typeof lenders;
 type Financing = typeof financing;
 type Clinic = typeof clinic;
+type Lab = typeof lab;
 type OutOfState = typeof outOfState;
 type Contact = typeof contact & { topicsLabels?: Labels; replyViaLabels?: Labels };
 type LeadForm = typeof leadForm & { concernsLabels?: Labels };
@@ -127,6 +130,7 @@ const content = (l: {
   lenders: Lenders;
   financing: Financing;
   clinic: Clinic;
+  lab: Lab;
   outOfState: OutOfState;
   contact: Contact;
   leadForm: LeadForm;
@@ -158,6 +162,7 @@ const en = content({
   lenders,
   financing,
   clinic,
+  lab,
   outOfState,
   contact,
   leadForm,
@@ -188,6 +193,7 @@ const es = content({
   lenders: esLenders as Lenders,
   financing: esFinancing as Financing,
   clinic: esClinic as Clinic,
+  lab: esLab as Lab,
   outOfState: esOutOfState as OutOfState,
   contact: esContact as Contact,
   leadForm: esLeadForm as LeadForm,

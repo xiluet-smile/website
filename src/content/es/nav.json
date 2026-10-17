@@ -48,14 +48,31 @@
           "href": "/doctors/dr-marta-puentes-marrero"
         },
         {
-          "t": "Edgar Castaños",
-          "d": "Director general y de laboratorio",
-          "href": "/doctors/dr-edgar-castanos"
-        },
-        {
           "t": "Todos los doctores",
           "d": "Conoce al equipo",
           "href": "/doctors"
+        }
+      ]
+    },
+    {
+      "key": "clinic",
+      "label": "Clínica",
+      "href": "/clinic",
+      "items": [
+        {
+          "t": "Nuestra clínica",
+          "d": "Nuestra oficina en Miami",
+          "href": "/clinic"
+        },
+        {
+          "t": "Laboratorio propio",
+          "d": "Carillas de zirconia hechas en casa",
+          "href": "/custom-lab"
+        },
+        {
+          "t": "Edgar Castaños",
+          "d": "Director general y de laboratorio",
+          "href": "/doctors/dr-edgar-castanos"
         }
       ]
     },
@@ -104,13 +121,8 @@
     {
       "key": "about",
       "label": "Nosotros",
-      "href": "/clinic",
+      "href": "/contact",
       "items": [
-        {
-          "t": "Clínica",
-          "d": "Nuestra oficina en Miami",
-          "href": "/clinic"
-        },
         {
           "t": "Contacto",
           "d": "Llama, escribe, WhatsApp o email",
@@ -186,16 +198,33 @@
           "href": "/doctors/dr-marta-puentes-marrero"
         },
         {
-          "label": "Edgar Castaños",
-          "href": "/doctors/dr-edgar-castanos"
-        },
-        {
           "label": "Todos los doctores",
           "href": "/doctors"
         },
         {
           "label": "Antes y después",
           "href": "/before-and-after"
+        }
+      ]
+    },
+    {
+      "title": "Clínica",
+      "links": [
+        {
+          "label": "Nuestra clínica",
+          "href": "/clinic"
+        },
+        {
+          "label": "Laboratorio propio",
+          "href": "/custom-lab"
+        },
+        {
+          "label": "Edgar Castaños",
+          "href": "/doctors/dr-edgar-castanos"
+        },
+        {
+          "label": "Cómo llegar",
+          "href": "maps:place"
         }
       ]
     },
@@ -236,10 +265,6 @@
       "title": "Nosotros",
       "links": [
         {
-          "label": "Clínica",
-          "href": "/clinic"
-        },
-        {
           "label": "Contacto",
           "href": "/contact"
         },
@@ -262,10 +287,6 @@
         {
           "label": "Blog",
           "href": "/blog"
-        },
-        {
-          "label": "Cómo llegar",
-          "href": "maps:place"
         }
       ]
     }

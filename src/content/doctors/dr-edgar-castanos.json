@@ -41,58 +41,11 @@
   "education": [],
   "certs": [],
   "caseIds": [],
-  "lab": {
-    "eyebrow": "The in-house lab",
-    "title": "Inside the lab that makes every Xiluet smile",
-    "body": "Edgar's lab is in the same building as the treatment rooms. Your doctor and your ceramist look at the same scans, the same design and the same shade, with you in the chair, and every veneer, crown and bridge is finished here, by hand, before it goes into your mouth.",
-    "facts": [
-      {
-        "big": "0.3 mm",
-        "sub": "veneer thickness, finished by hand"
-      },
-      {
-        "big": "5 layers",
-        "sub": "of shade built into every zirconia disc"
-      },
-      {
-        "big": "1 week",
-        "sub": "from first scan to delivery"
-      },
-      {
-        "big": "5 years",
-        "sub": "written warranty on the work"
-      }
-    ],
-    "processTitle": "How a veneer is made here",
-    "process": [
-      {
-        "k": "Visit 1 · In the chair",
-        "t": "Scan and design",
-        "d": "3D scans and facial photos replace impressions. You see the design in your own mouth and approve it before any tooth is touched."
-      },
-      {
-        "k": "In the lab",
-        "t": "Milled from one disc",
-        "d": "Each veneer is milled from a multilayer zirconia disc, positioned so the warm-to-translucent gradient falls where it does in a natural tooth."
-      },
-      {
-        "k": "In the lab",
-        "t": "Finished by hand",
-        "d": "Edgar fits every piece under magnification until it seats without pressure, polishes the margin into a closed seal and adds surface texture and enamel effects by hand."
-      },
-      {
-        "k": "Visit 3 · In the chair",
-        "t": "Shade checked on you",
-        "d": "Doctor and ceramist match the shade with you in the chair and correct it on the spot, not by email with a lab in another city."
-      },
-      {
-        "k": "Visit 3 · In the chair",
-        "t": "Bonded, with the warranty in writing",
-        "d": "Final bonding the same week you arrived. The bite is checked and the 5-year warranty is handed over on paper."
-      }
-    ],
-    "processEyebrow": "Five steps, one building",
-    "processIntro": "Most clinics scan you, ship the file to a lab in another city and wait. Here the lab is a flight of stairs from the chair, so every step below happens with the same people, in the same week.",
-    "processNote": "If something needs a change on delivery day, it goes upstairs and comes back the same afternoon. Nobody waits for a courier."
+  "labLink": {
+    "eyebrow": "The lab",
+    "title": "See how a veneer is made here",
+    "body": "Edgar's lab is one floor up from the treatment rooms. The video, the materials and the five steps from scan to delivery are on the Custom Lab page.",
+    "cta": "Visit the Custom Lab",
+    "href": "/custom-lab"
   }
 }

@@ -7,6 +7,7 @@ import TreatmentPage from "@/components/TreatmentPage";
 import BlogArticle from "@/components/blog/BlogArticle";
 import BlogPage from "./BlogPage";
 import ClinicPage from "./ClinicPage";
+import CustomLabPage from "./CustomLabPage";
 import ContactPage from "./ContactPage";
 import CostPage from "./CostPage";
 import DoctorPage from "./DoctorPage";
@@ -41,6 +42,8 @@ export default function PageBody({ path, locale }: { path: PagePath; locale: Loc
       return <DoctorsPage locale={locale} />;
     case "/clinic":
       return <ClinicPage locale={locale} />;
+    case "/custom-lab":
+      return <CustomLabPage locale={locale} />;
     case "/financing":
       return <FinancingPage locale={locale} />;
     case "/before-and-after":

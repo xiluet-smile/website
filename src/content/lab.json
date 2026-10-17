@@ -1,0 +1,92 @@
+{
+  "lead": "Most clinics send your scans to a lab in another city and wait. Ours is one floor up from the treatment rooms, run by Edgar Castaños, so your doctor and your ceramist work from the same design, with you in the chair.",
+  "panel": {
+    "eyebrow": "The in-house lab",
+    "title": "Inside the lab that makes every Xiluet smile",
+    "body": "Edgar's lab is in the same building as the treatment rooms. Your doctor and your ceramist look at the same scans, the same design and the same shade, with you in the chair, and every veneer, crown and bridge is finished here, by hand, before it goes into your mouth.",
+    "image": "material-hand-finishing.jpg",
+    "alt": "A ceramist's gloved hands refining the edge of a zirconia crown with a fine polishing bur under a bench magnifier"
+  },
+  "focus": [
+    {
+      "n": "01",
+      "t": "Zirconia veneers and crowns",
+      "d": "Every piece is milled from multilayer zirconia, then seated and adjusted by hand under magnification until it fits without pressure, with the margin polished into a closed seal at the gum line."
+    },
+    {
+      "n": "02",
+      "t": "Shade and layering",
+      "d": "Shade is matched in person with the patient in the chair, not from a photo. On front teeth Edgar builds surface texture and enamel effects by hand over the gradient already in the disc."
+    },
+    {
+      "n": "03",
+      "t": "Same-week delivery",
+      "d": "Because the lab is in the building, adjustments happen between visits instead of in a courier's van. That is what makes the Monday-to-Thursday week possible."
+    },
+    {
+      "n": "04",
+      "t": "Laboratories for other clinics",
+      "d": "Edgar also plans and installs dental laboratories for other practices: milling, sintering and finishing workflows, and the training of the teams who run them."
+    }
+  ],
+  "facts": [
+    {
+      "big": "0.3 mm",
+      "sub": "veneer thickness, finished by hand"
+    },
+    {
+      "big": "5 layers",
+      "sub": "of shade built into every zirconia disc"
+    },
+    {
+      "big": "1 week",
+      "sub": "from first scan to delivery"
+    },
+    {
+      "big": "5 years",
+      "sub": "written warranty on the work"
+    }
+  ],
+  "process": {
+    "eyebrow": "Five steps, one building",
+    "title": "How a veneer is made here",
+    "intro": "Most clinics scan you, ship the file to a lab in another city and wait. Here the lab is a flight of stairs from the chair, so every step below happens with the same people, in the same week.",
+    "steps": [
+      {
+        "k": "Visit 1 · In the chair",
+        "t": "Scan and design",
+        "d": "3D scans and facial photos replace impressions. You see the design in your own mouth and approve it before any tooth is touched."
+      },
+      {
+        "k": "In the lab",
+        "t": "Milled from one disc",
+        "d": "Each veneer is milled from a multilayer zirconia disc, positioned so the warm-to-translucent gradient falls where it does in a natural tooth."
+      },
+      {
+        "k": "In the lab",
+        "t": "Finished by hand",
+        "d": "Edgar fits every piece under magnification until it seats without pressure, polishes the margin into a closed seal and adds surface texture and enamel effects by hand."
+      },
+      {
+        "k": "Visit 3 · In the chair",
+        "t": "Shade checked on you",
+        "d": "Doctor and ceramist match the shade with you in the chair and correct it on the spot, not by email with a lab in another city."
+      },
+      {
+        "k": "Visit 3 · In the chair",
+        "t": "Bonded, with the warranty in writing",
+        "d": "Final bonding the same week you arrived. The bite is checked and the 5-year warranty is handed over on paper."
+      }
+    ],
+    "note": "If something needs a change on delivery day, it goes upstairs and comes back the same afternoon. Nobody waits for a courier."
+  },
+  "edgar": {
+    "eyebrow": "Who runs it",
+    "title": "Edgar Castaños",
+    "role": "General Manager · Lab Manager",
+    "body": "Edgar has spent his career in porcelain and zirconia. He finishes every front-tooth case himself, runs the clinic day to day, and designs and installs laboratories for other practices.",
+    "cta": "Meet Edgar",
+    "href": "/doctors/dr-edgar-castanos",
+    "image": "edgar-castanos.jpg"
+  }
+}

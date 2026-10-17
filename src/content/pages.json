@@ -76,6 +76,13 @@
     "h1": "Doctors, lab and treatment in one building.",
     "breadcrumb": "Our Clinic"
   },
+  "/custom-lab": {
+    "title": "Custom Dental Lab in Miami | In-House Zirconia Veneers | Xiluet Smiles",
+    "description": "Every Xiluet veneer, crown and bridge is milled and finished by hand in our own lab, one floor from your doctor. Shade and fit are checked with you in the chair.",
+    "ogImage": "lab-poster.jpg",
+    "h1": "The lab that makes every Xiluet smile.",
+    "breadcrumb": "Custom Lab"
+  },
   "/financing": {
     "title": "Dental Financing Miami | Cherry, Sunbit, CareCredit, LendingClub, Alphaeon",
     "description": "Six financing partners, soft credit checks and approval guidance from one coordinator. Pay for veneers or implants over time at Xiluet Smiles, Miami.",

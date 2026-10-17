@@ -25,7 +25,7 @@ export default function ClinicPage({ locale = "en" }: { locale?: Locale }) {
       <JsonLd data={pageGraph(PATH, locale)} />
       <PageHero locale={locale}>
         <ClinicHero
-          trail={[{ label: t.home, href: localizePath("/", locale) }, { label: t.breadcrumb.aboutUs }, { label: t.breadcrumb.clinic }]}
+          trail={[{ label: t.home, href: localizePath("/", locale) }, { label: t.breadcrumb.clinic }]}
           title={pages[PATH].h1}
           lead={tpl(t.clinicPage.lead, { street: address.street, locality: address.locality })}
           media={

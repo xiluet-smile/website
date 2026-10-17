@@ -48,14 +48,31 @@
           "href": "/doctors/dr-marta-puentes-marrero"
         },
         {
-          "t": "Edgar Castaños",
-          "d": "General Manager and Lab Manager",
-          "href": "/doctors/dr-edgar-castanos"
-        },
-        {
           "t": "All doctors",
           "d": "Meet the team",
           "href": "/doctors"
+        }
+      ]
+    },
+    {
+      "key": "clinic",
+      "label": "Clinic",
+      "href": "/clinic",
+      "items": [
+        {
+          "t": "Our Clinic",
+          "d": "Our office in Miami",
+          "href": "/clinic"
+        },
+        {
+          "t": "Custom Lab",
+          "d": "Zirconia veneers made in-house",
+          "href": "/custom-lab"
+        },
+        {
+          "t": "Edgar Castaños",
+          "d": "General Manager and Lab Manager",
+          "href": "/doctors/dr-edgar-castanos"
         }
       ]
     },
@@ -104,13 +121,8 @@
     {
       "key": "about",
       "label": "About Us",
-      "href": "/clinic",
+      "href": "/contact",
       "items": [
-        {
-          "t": "Clinic",
-          "d": "Our office in Miami",
-          "href": "/clinic"
-        },
         {
           "t": "Contact Us",
           "d": "Call, text, WhatsApp or email",
@@ -186,16 +198,33 @@
           "href": "/doctors/dr-marta-puentes-marrero"
         },
         {
-          "label": "Edgar Castaños",
-          "href": "/doctors/dr-edgar-castanos"
-        },
-        {
           "label": "All doctors",
           "href": "/doctors"
         },
         {
           "label": "Before and after",
           "href": "/before-and-after"
+        }
+      ]
+    },
+    {
+      "title": "Clinic",
+      "links": [
+        {
+          "label": "Our Clinic",
+          "href": "/clinic"
+        },
+        {
+          "label": "Custom Lab",
+          "href": "/custom-lab"
+        },
+        {
+          "label": "Edgar Castaños",
+          "href": "/doctors/dr-edgar-castanos"
+        },
+        {
+          "label": "Get directions",
+          "href": "maps:place"
         }
       ]
     },
@@ -236,10 +265,6 @@
       "title": "About Us",
       "links": [
         {
-          "label": "Clinic",
-          "href": "/clinic"
-        },
-        {
           "label": "Contact Us",
           "href": "/contact"
         },
@@ -262,10 +287,6 @@
         {
           "label": "Blog",
           "href": "/blog"
-        },
-        {
-          "label": "Get directions",
-          "href": "maps:place"
         }
       ]
     }
