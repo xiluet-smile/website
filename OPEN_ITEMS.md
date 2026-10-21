@@ -20,7 +20,6 @@ Things the design files leave unresolved. Each is marked `TODO(clinic)` in the c
 - **Home FAQ "How does the 5-year warranty work?"** has `[covered items]` in its answer; omitted. Warranty terms needed. The Home links "How the 5-year warranty works" and "All answers" have no target page and are omitted.
 - **Home doctor cards** show `[Credential line]`; using each doctor's focus line from the Doctors page.
 - **Home in-house lab photo** is an empty slot in the design; using the supplied AI editorial image `gen-ceramist-hands.jpg`. Replace with a real lab photo.
-- **Dr. Marta Puentes Marrero's education**: "Degree in Dentistry" lists the institution as just "Spain".
 - **Blog**: six draft titles with no articles. Cards are shown without links; no `Article` schema.
 - **Legal pages**: Privacy Policy, Terms, Notice of Privacy Practices, Refund and Cancellation have no designs or copy; footer links point to `#` (`src/content/nav.json` → `legal`).
 - **Spanish**: the EN | ES switch is in the design but /es/ is phase 2; the ES link points to `#`.

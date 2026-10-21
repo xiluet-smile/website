@@ -8,8 +8,8 @@
       "sub": "países de práctica clínica"
     },
     {
-      "big": "AACD",
-      "sub": "miembro de Odontología Cosmética"
+      "big": "Kois",
+      "sub": "graduada del Kois Center"
     },
     {
       "big": "10+",
@@ -19,45 +19,65 @@
   "focus": [
     {
       "n": "01",
-      "t": "Odontología adhesiva y estética",
-      "d": "Carillas de composite, restauraciones estéticas y adhesión mínimamente invasiva que conserva el esmalte."
+      "t": "Diseño de sonrisa y carillas",
+      "d": "Primero el análisis de proporciones faciales, gingivales y dentales. Flujos de carillas del diagnóstico a la entrega final, con preparación mínimamente invasiva."
     },
     {
       "n": "02",
-      "t": "Restauraciones sobre implantes y prostodoncia",
-      "d": "Coronas, puentes y dientes sobre implantes evaluados para la armonía de la mordida y la estabilidad a largo plazo."
+      "t": "Adhesión avanzada y composite",
+      "d": "Protocolos adhesivos formados con el Dr. Pascal Magne: carillas de composite, inlays y onlays, y restauraciones posteriores que conservan el esmalte."
     },
     {
       "n": "03",
-      "t": "Endodoncia y cirugía oral menor",
-      "d": "Tratamientos de conducto y extracciones cuando conservar el diente ya no es una opción."
+      "t": "Orto-restauradora y flujo digital",
+      "d": "Proveedora Invisalign Gold. Ortodoncia integrada en los casos de diseño de sonrisa, con diagnóstico, planificación y visualización digital de la sonrisa."
     },
     {
       "n": "04",
-      "t": "Tratamiento con alineadores transparentes",
-      "d": "Primero la alineación, cuando una sonrisa más derecha importa más que cubrir los dientes."
+      "t": "Odontología restauradora integral",
+      "d": "Planificación y oclusión funcional con formación Kois: restauraciones sobre implantes, prostodoncia fija y removible y endodoncia."
     }
   ],
   "education": [
     {
       "t": "Doctora en Medicina Dental (DMD)",
-      "i": "Rutgers School of Dental Medicine",
+      "i": "Rutgers School of Dental Medicine, Newark. Premio ICOI Pre-Doctoral Student Achievement",
       "c": "Estados Unidos"
     },
     {
-      "t": "Licenciatura en Odontología",
-      "i": "España",
+      "t": "Licenciada en Odontología",
+      "i": "Universidad Europea de Madrid",
       "c": "España"
     },
     {
-      "t": "Formación avanzada en rehabilitación estética y odontología adhesiva",
-      "i": "Estados Unidos y Europa",
-      "c": ""
+      "t": "Graduada del Kois Center",
+      "i": "Dr. John Kois, Seattle: interfaz restauradora-periodontal, oclusión funcional, restauraciones sobre implantes, biomecánica y planificación avanzada",
+      "c": "Estados Unidos"
     },
     {
-      "t": "Especialización continua en oclusión, función y salud de los tejidos",
-      "i": "Educación continua",
-      "c": ""
+      "t": "Graduada Magne, The Continuum",
+      "i": "Dr. Pascal Magne, Los Ángeles: la carilla definitiva, carillas de composite avanzadas, inlays y onlays, morfología y estética",
+      "c": "Estados Unidos"
+    },
+    {
+      "t": "Aesthetic Advantage, Rosenthal Continuum",
+      "i": "Rosenthal Institute, NYU College of Dentistry",
+      "c": "Estados Unidos"
+    },
+    {
+      "t": "Certificado en Práctica Dental Restauradora",
+      "i": "UCL Eastman Dental Institute, Londres",
+      "c": "Reino Unido"
+    },
+    {
+      "t": "Prácticas clínicas en prótesis oral",
+      "i": "Universitat Internacional de Catalunya, Barcelona",
+      "c": "España"
+    },
+    {
+      "t": "Profesora adjunta",
+      "i": "Community Smiles Dental en Lindsey Hopkins Technical College, Miami",
+      "c": "Estados Unidos"
     }
   ],
   "certs": [
@@ -65,6 +85,7 @@
     "Florida Dental Association",
     "American Academy of Cosmetic Dentistry",
     "Academy of General Dentistry",
+    "Proveedora Invisalign Gold",
     "Licencia dental de Florida",
     "Certificada en CPR y BLS",
     "Credenciales DEA"

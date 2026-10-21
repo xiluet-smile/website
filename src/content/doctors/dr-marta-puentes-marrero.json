@@ -8,8 +8,8 @@
       "sub": "countries of clinical practice"
     },
     {
-      "big": "AACD",
-      "sub": "Cosmetic Dentistry member"
+      "big": "Kois",
+      "sub": "Center graduate"
     },
     {
       "big": "10+",
@@ -19,45 +19,65 @@
   "focus": [
     {
       "n": "01",
-      "t": "Adhesive and esthetic dentistry",
-      "d": "Composite veneers, esthetic restorations and minimally invasive bonding that preserves enamel."
+      "t": "Smile design and veneers",
+      "d": "Facial, gingival and dental proportions analysed first. Veneer workflows from diagnosis to final delivery, with minimally invasive preparation."
     },
     {
       "n": "02",
-      "t": "Implant restorations and prosthodontics",
-      "d": "Crowns, bridges and implant-supported teeth evaluated for bite harmony and long-term stability."
+      "t": "Advanced bonding and composite",
+      "d": "Adhesive protocols trained with Dr. Pascal Magne: composite veneers, inlays and onlays, and posterior restorations that preserve enamel."
     },
     {
       "n": "03",
-      "t": "Endodontics and minor oral surgery",
-      "d": "Root canals and extractions when preservation is no longer an option."
+      "t": "Ortho-restorative and digital workflow",
+      "d": "Invisalign Gold Provider. Orthodontics integrated into smile design cases, with digital diagnosis, planning and smile visualization."
     },
     {
       "n": "04",
-      "t": "Clear aligner therapy",
-      "d": "Alignment first when a straighter smile matters more than covering teeth."
+      "t": "Comprehensive restorative dentistry",
+      "d": "Kois-trained treatment planning and functional occlusion: implant restorations, fixed and removable prosthodontics and endodontics."
     }
   ],
   "education": [
     {
       "t": "Doctor of Dental Medicine (DMD)",
-      "i": "Rutgers School of Dental Medicine",
+      "i": "Rutgers School of Dental Medicine, Newark. ICOI Pre-Doctoral Student Achievement Award",
       "c": "United States"
     },
     {
-      "t": "Degree in Dentistry",
-      "i": "Spain",
+      "t": "Degree in Dentistry (Licenciado en Odontología)",
+      "i": "Universidad Europea de Madrid",
       "c": "Spain"
     },
     {
-      "t": "Advanced training in esthetic rehabilitation and adhesive dentistry",
-      "i": "United States and Europe",
-      "c": ""
+      "t": "Kois Center graduate",
+      "i": "Dr. John Kois, Seattle: restorative-periodontal interface, functional occlusion, implant restorations, biomechanics and advanced treatment planning",
+      "c": "United States"
     },
     {
-      "t": "Ongoing specialization in occlusion, function and tissue health",
-      "i": "Continuing education",
-      "c": ""
+      "t": "Magne graduate, The Continuum",
+      "i": "Dr. Pascal Magne, Los Angeles: the ultimate veneer, advanced composite veneers, inlays and onlays, morphology and esthetics",
+      "c": "United States"
+    },
+    {
+      "t": "Aesthetic Advantage, Rosenthal Continuum",
+      "i": "Rosenthal Institute, NYU College of Dentistry",
+      "c": "United States"
+    },
+    {
+      "t": "Certificate in Restorative Dental Practice",
+      "i": "UCL Eastman Dental Institute, London",
+      "c": "United Kingdom"
+    },
+    {
+      "t": "Clinical internship in oral prosthetics",
+      "i": "Universitat Internacional de Catalunya, Barcelona",
+      "c": "Spain"
+    },
+    {
+      "t": "Adjunct faculty",
+      "i": "Community Smiles Dental at Lindsey Hopkins Technical College, Miami",
+      "c": "United States"
     }
   ],
   "certs": [
@@ -65,6 +85,7 @@
     "Florida Dental Association",
     "American Academy of Cosmetic Dentistry",
     "Academy of General Dentistry",
+    "Invisalign Gold Provider",
     "Florida dental license",
     "CPR and BLS certified",
     "DEA credentials"
