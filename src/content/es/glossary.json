@@ -1,0 +1,49 @@
+{
+  "eyebrow": "Los términos, explicados",
+  "title": "Carilla, corona, puente: qué es cada pieza",
+  "intro": "Cada plan se escribe con estas palabras. Esto es lo que hace cada pieza, para que tu presupuesto se lea sin diccionario.",
+  "items": [
+    {
+      "id": "veneer",
+      "image": "term-veneer.jpg",
+      "t": "Carilla",
+      "d": "Una lámina fina de porcelana, de apenas 0.3 mm, que se adhiere al frente del diente para cambiar su color, forma y largo. El diente debajo queda casi intacto.",
+      "alt": "Ilustración de una carilla de porcelana fina colocándose en el frente de un diente"
+    },
+    {
+      "id": "crown",
+      "image": "term-crown.jpg",
+      "t": "Corona",
+      "d": "Una funda de porcelana que cubre todo el diente. Para dientes rotos, muy obturados o con endodoncia, que necesitan resistencia además de estética.",
+      "alt": "Ilustración de una corona de porcelana completa a punto de asentarse sobre una muela tallada"
+    },
+    {
+      "id": "three-quarter-crown",
+      "image": "term-three-quarter-crown.jpg",
+      "t": "Corona 3/4",
+      "d": "Una corona parcial que cubre tres de las cuatro paredes del diente y deja intacto el lado sano. Menos desgaste que una corona completa.",
+      "alt": "Ilustración de una corona tres cuartos que cubre tres paredes de un premolar"
+    },
+    {
+      "id": "bridge",
+      "image": "term-bridge.jpg",
+      "t": "Puente",
+      "d": "Uno o más dientes de reemplazo sostenidos por coronas en los dientes vecinos. Cierra un espacio sin cirugía.",
+      "alt": "Ilustración de un puente dental de tres unidades sobre un diente ausente"
+    },
+    {
+      "id": "implant",
+      "image": "term-implant.jpg",
+      "t": "Corona sobre implante",
+      "d": "Un poste de titanio colocado en el hueso con una corona de porcelana encima. Reemplaza un diente ausente, raíz incluida.",
+      "alt": "Ilustración de un implante dental en el hueso con una corona encima"
+    },
+    {
+      "id": "all-on-x",
+      "image": "term-all-on-x.jpg",
+      "t": "Arcada All-on-X",
+      "d": "Una fila completa de dientes fijos sobre cuatro a seis implantes por maxilar. Reemplaza todos los dientes de la arcada a la vez.",
+      "alt": "Ilustración de una arcada completa de dientes fijos sobre cuatro implantes"
+    }
+  ]
+}

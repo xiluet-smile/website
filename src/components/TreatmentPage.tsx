@@ -115,7 +115,7 @@ export default function TreatmentPage({
   const path = data.path as PagePath;
   const pkg = packageById(locale, data.packageId);
   const { hero, candidates, why, week, results, price, faq, cta } = data;
-  const material = getContent(locale).material;
+  const { material, glossary } = getContent(locale);
   const heroCase = hero.image.caseId
     ? caseById(locale, hero.image.caseId)
     : null;
@@ -252,24 +252,48 @@ export default function TreatmentPage({
             {candidates.intro}
           </p>
         </div>
-        <ul className="m-0 grid list-none gap-4 p-0 lg:grid-cols-5">
+        <ol className="m-0 grid list-none gap-3 p-0 sm:grid-cols-2 lg:grid-cols-5 lg:gap-4">
           {candidates.items.map((c, i) => (
             <li
               key={c.t}
-              className="glass-card flex flex-col gap-3.5 rounded-2xl p-5 lg:min-h-[200px] lg:rounded-[18px] lg:px-[22px] lg:py-6"
+              className="glass-card grid grid-cols-[36px_minmax(0,1fr)] gap-x-3.5 gap-y-1.5 rounded-2xl p-4 lg:flex lg:flex-col lg:gap-3 lg:rounded-[18px] lg:p-5"
             >
               <span
                 aria-hidden="true"
-                className="text-xs font-semibold tracking-[.14em] text-hint"
+                className="grid h-9 w-9 place-items-center rounded-full bg-teal font-serif text-[16px] leading-none text-on-dark"
               >
-                {String(i + 1).padStart(2, "0")}
+                {i + 1}
               </span>
-              <h3 className="m-0 font-serif text-[22px] leading-[1.2] font-normal text-teal">
+              <h3 className="m-0 self-center font-serif text-[20px] leading-[1.2] font-normal text-pretty text-teal lg:mt-1 lg:text-[21px]">
                 {c.t}
               </h3>
-              <p className="m-0 mt-auto text-[15px] leading-[1.45] text-body">
+              <p className="col-start-2 m-0 text-[15px] leading-[1.5] text-pretty text-body lg:col-auto lg:text-[14.5px]">
                 {c.d}
               </p>
+            </li>
+          ))}
+        </ol>
+      </section>
+
+      {/* The terms, explained: one illustrated card per restoration type, shared by every treatment page. */}
+      <section className="wrap pt-16 lg:pt-28" aria-labelledby="glossary-title">
+        <div className="mb-7 flex flex-col gap-3 lg:mb-10 lg:max-w-[720px]">
+          <span className="eyebrow text-gold-text">{glossary.eyebrow}</span>
+          <h2 id="glossary-title" className={h2}>
+            {glossary.title}
+          </h2>
+          <p className="m-0 text-[17px] leading-[1.5] text-pretty text-body lg:text-lg">{glossary.intro}</p>
+        </div>
+        <ul className="m-0 grid list-none gap-3 p-0 sm:grid-cols-2 lg:grid-cols-3 lg:gap-4">
+          {glossary.items.map((g) => (
+            <li key={g.id} className="glass-card grid grid-cols-[112px_minmax(0,1fr)] items-center gap-4 overflow-hidden rounded-2xl lg:grid-cols-[136px_minmax(0,1fr)] lg:rounded-[18px]">
+              <div className="self-stretch bg-[#F7F4EE]">
+                <Img src={g.image} alt={g.alt} sizes="136px" className="block h-full w-full object-contain" />
+              </div>
+              <div className="flex flex-col gap-1 py-4 pr-4 lg:py-5 lg:pr-5">
+                <h3 className="m-0 font-serif text-[19px] leading-[1.2] font-normal text-teal lg:text-[21px]">{g.t}</h3>
+                <p className="m-0 text-[13.5px] leading-[1.45] text-pretty text-body lg:text-[14px]">{g.d}</p>
+              </div>
             </li>
           ))}
         </ul>

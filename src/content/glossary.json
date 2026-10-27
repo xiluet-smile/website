@@ -1,0 +1,49 @@
+{
+  "eyebrow": "The terms, explained",
+  "title": "Veneer, crown, bridge: what each one is",
+  "intro": "Every plan is written with these words. Here is what each piece does, so your estimate reads like plain English.",
+  "items": [
+    {
+      "id": "veneer",
+      "image": "term-veneer.jpg",
+      "t": "Veneer",
+      "d": "A thin porcelain shell, as thin as 0.3 mm, bonded to the front of a tooth to change its color, shape and length. The tooth underneath stays almost intact.",
+      "alt": "Illustration of a thin porcelain veneer being placed on the front of a tooth"
+    },
+    {
+      "id": "crown",
+      "image": "term-crown.jpg",
+      "t": "Crown",
+      "d": "A porcelain cap that covers the whole tooth. For teeth that are broken, heavily filled or root-canaled and need strength as well as looks.",
+      "alt": "Illustration of a full porcelain crown about to seat over a prepared molar"
+    },
+    {
+      "id": "three-quarter-crown",
+      "image": "term-three-quarter-crown.jpg",
+      "t": "3/4 crown",
+      "d": "A partial crown that covers three of the tooth's four walls and leaves the healthy side untouched. Less drilling than a full crown.",
+      "alt": "Illustration of a three-quarter crown covering three walls of a premolar"
+    },
+    {
+      "id": "bridge",
+      "image": "term-bridge.jpg",
+      "t": "Bridge",
+      "d": "One or more replacement teeth held by crowns on the neighbouring teeth. Closes a gap without surgery.",
+      "alt": "Illustration of a three-unit dental bridge over a missing tooth"
+    },
+    {
+      "id": "implant",
+      "image": "term-implant.jpg",
+      "t": "Implant crown",
+      "d": "A titanium post placed in the bone with a porcelain crown on top. Replaces a missing tooth, root and all.",
+      "alt": "Illustration of a dental implant post in the bone with a crown on top"
+    },
+    {
+      "id": "all-on-x",
+      "image": "term-all-on-x.jpg",
+      "t": "All-on-X arch",
+      "d": "A full row of fixed teeth on four to six implants per jaw. Replaces every tooth in the arch at once.",
+      "alt": "Illustration of a full arch of fixed teeth on four implants"
+    }
+  ]
+}
