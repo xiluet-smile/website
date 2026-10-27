@@ -8,6 +8,28 @@
   ],
   "cases": [
     {
+      "id": "BA74",
+      "image": "BA74.jpg",
+      "type": "Veneers",
+      "alt": "Before and after porcelain veneers on a young woman with dark curly hair, Xiluet patient, Miami",
+      "source": "https://www.instagram.com/p/De9us9MnHtk/"
+    },
+    {
+      "id": "BA75",
+      "image": "BA75.jpg",
+      "type": "Veneers",
+      "alt": "Before and after porcelain veneers brightening a worn, yellowed smile, Xiluet patient, Miami",
+      "source": "https://www.instagram.com/p/DezfwOPxvbh/"
+    },
+    {
+      "id": "BA76",
+      "image": "BA76.jpg",
+      "type": "Veneers",
+      "layout": "stacked",
+      "alt": "Before and after: composite veneers replaced with porcelain veneers, close-up of a bearded Xiluet patient, Miami",
+      "source": "https://www.instagram.com/p/DePbTdwRy33/"
+    },
+    {
       "id": "BA45",
       "image": "BA45.jpg",
       "type": "Veneers",

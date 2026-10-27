@@ -12,7 +12,8 @@ import siteEs from "@/content/es/site.json";
 
 type Labels = string[] | Record<string, string>;
 type Cases = typeof casesEn & { typeLabels?: Record<string, string> };
-export type Case = Cases["cases"][number];
+/** `layout: "stacked"` marks a composite with the before photo on top and the after below (labels move to the corners of each half). */
+export type Case = Cases["cases"][number] & { layout?: string; source?: string };
 type LeadForm = typeof leadFormEn & { concernsLabels?: Labels };
 type Contact = typeof contactEn & { topicsLabels?: Labels; replyViaLabels?: Labels };
 

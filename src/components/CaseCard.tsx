@@ -12,14 +12,22 @@ export default function CaseCard({
   ...rest
 }: { c: Case; sizes?: string; className?: string; priority?: boolean; locale?: Locale } & React.HTMLAttributes<HTMLElement>) {
   const t = ui(locale);
+  const label = "pointer-events-none absolute text-[11px] font-semibold tracking-[.12em] text-on-dark uppercase [text-shadow:0_1px_6px_rgba(0,0,0,.6)]";
   return (
     <figure className={`m-0 flex flex-col gap-2.5 ${className}`} {...rest}>
       <div className="relative aspect-[13/16] overflow-hidden rounded-xl bg-teal">
         <Img src={c.image} alt={c.alt} sizes={sizes} priority={priority} className="block h-full w-full object-cover" />
-        <div className="pointer-events-none absolute top-3.5 right-3.5 left-3.5 flex justify-between text-[11px] font-semibold tracking-[.12em] text-on-dark uppercase [text-shadow:0_1px_6px_rgba(0,0,0,.6)]">
-          <span>{t.before}</span>
-          <span>{t.after}</span>
-        </div>
+        {c.layout === "stacked" ? (
+          <>
+            <span className={`${label} top-3.5 left-3.5`}>{t.before}</span>
+            <span className={`${label} bottom-3.5 left-3.5`}>{t.after}</span>
+          </>
+        ) : (
+          <div className={`${label} top-3.5 right-3.5 left-3.5 flex justify-between`}>
+            <span>{t.before}</span>
+            <span>{t.after}</span>
+          </div>
+        )}
       </div>
       <figcaption className="flex justify-between gap-3 text-sm text-muted">
         <span>{caseTypeLabel(locale, c.type)}</span>
