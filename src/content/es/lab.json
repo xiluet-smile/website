@@ -55,27 +55,37 @@
       {
         "k": "Visita 1 · En el sillón",
         "t": "Escaneo y diseño",
-        "d": "Los escaneos 3D y las fotos faciales sustituyen a las impresiones. Ves el diseño en tu propia boca y lo apruebas antes de tocar ningún diente."
+        "d": "Los escaneos 3D y las fotos faciales sustituyen a las impresiones. Ves el diseño en tu propia boca y lo apruebas antes de tocar ningún diente.",
+        "place": "chair",
+        "icon": "scan"
       },
       {
         "k": "En el laboratorio",
         "t": "Fresada de un solo disco",
-        "d": "Cada carilla se fresa de un disco de zirconia multicapa, colocado para que el degradado de cálido a translúcido caiga donde cae en un diente natural."
+        "d": "Cada carilla se fresa de un disco de zirconia multicapa, colocado para que el degradado de cálido a translúcido caiga donde cae en un diente natural.",
+        "place": "lab",
+        "icon": "mill"
       },
       {
         "k": "En el laboratorio",
         "t": "Terminada a mano",
-        "d": "Edgar ajusta cada pieza bajo magnificación hasta que asienta sin presión, pule el margen hasta formar un sellado cerrado y añade a mano la textura de superficie y los efectos del esmalte."
+        "d": "Edgar ajusta cada pieza bajo magnificación hasta que asienta sin presión, pule el margen hasta formar un sellado cerrado y añade a mano la textura de superficie y los efectos del esmalte.",
+        "place": "lab",
+        "icon": "loupe"
       },
       {
         "k": "Visita 3 · En el sillón",
         "t": "Tono comprobado contigo",
-        "d": "Doctor y ceramista igualan el tono contigo en el sillón y lo corrigen al momento, no por correo con un laboratorio en otra ciudad."
+        "d": "Doctor y ceramista igualan el tono contigo en el sillón y lo corrigen al momento, no por correo con un laboratorio en otra ciudad.",
+        "place": "chair",
+        "icon": "shade"
       },
       {
         "k": "Visita 3 · En el sillón",
         "t": "Cementada, con la garantía por escrito",
-        "d": "Cementado final la misma semana en que llegaste. Se revisa la mordida y se te entrega la garantía de 5 años en papel."
+        "d": "Cementado final la misma semana en que llegaste. Se revisa la mordida y se te entrega la garantía de 5 años en papel.",
+        "place": "chair",
+        "icon": "shield"
       }
     ],
     "note": "Si algo necesita un cambio el día de la entrega, sube al laboratorio y vuelve esa misma tarde. Nadie espera a un mensajero."

@@ -55,27 +55,37 @@
       {
         "k": "Visit 1 · In the chair",
         "t": "Scan and design",
-        "d": "3D scans and facial photos replace impressions. You see the design in your own mouth and approve it before any tooth is touched."
+        "d": "3D scans and facial photos replace impressions. You see the design in your own mouth and approve it before any tooth is touched.",
+        "place": "chair",
+        "icon": "scan"
       },
       {
         "k": "In the lab",
         "t": "Milled from one disc",
-        "d": "Each veneer is milled from a multilayer zirconia disc, positioned so the warm-to-translucent gradient falls where it does in a natural tooth."
+        "d": "Each veneer is milled from a multilayer zirconia disc, positioned so the warm-to-translucent gradient falls where it does in a natural tooth.",
+        "place": "lab",
+        "icon": "mill"
       },
       {
         "k": "In the lab",
         "t": "Finished by hand",
-        "d": "Edgar fits every piece under magnification until it seats without pressure, polishes the margin into a closed seal and adds surface texture and enamel effects by hand."
+        "d": "Edgar fits every piece under magnification until it seats without pressure, polishes the margin into a closed seal and adds surface texture and enamel effects by hand.",
+        "place": "lab",
+        "icon": "loupe"
       },
       {
         "k": "Visit 3 · In the chair",
         "t": "Shade checked on you",
-        "d": "Doctor and ceramist match the shade with you in the chair and correct it on the spot, not by email with a lab in another city."
+        "d": "Doctor and ceramist match the shade with you in the chair and correct it on the spot, not by email with a lab in another city.",
+        "place": "chair",
+        "icon": "shade"
       },
       {
         "k": "Visit 3 · In the chair",
         "t": "Bonded, with the warranty in writing",
-        "d": "Final bonding the same week you arrived. The bite is checked and the 5-year warranty is handed over on paper."
+        "d": "Final bonding the same week you arrived. The bite is checked and the 5-year warranty is handed over on paper.",
+        "place": "chair",
+        "icon": "shield"
       }
     ],
     "note": "If something needs a change on delivery day, it goes upstairs and comes back the same afternoon. Nobody waits for a courier."

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Img from "@/components/Img";
+import LineIcon, { type LineIconName } from "@/components/LineIcon";
 import { localizeHref, type Locale } from "@/lib/i18n";
 
 /** Shape of src/content/lab.json: the in-house lab page, in both languages. */
@@ -8,7 +9,7 @@ export type LabContent = {
   panel: { eyebrow: string; title: string; body: string; image: string; alt: string };
   focus: { n: string; t: string; d: string }[];
   facts: { big: string; sub: string }[];
-  process: { eyebrow?: string; title: string; intro?: string; steps: { k?: string; t: string; d: string }[]; note?: string };
+  process: { eyebrow?: string; title: string; intro?: string; steps: { k?: string; t: string; d: string; place?: string; icon?: string }[]; note?: string };
   edgar: { eyebrow: string; title: string; role: string; body: string; cta: string; href: string; image: string };
 };
 
@@ -56,35 +57,75 @@ export function LabFacts({ facts }: { facts: LabContent["facts"] }) {
   );
 }
 
-/** How a veneer is made here: the steps between the scan and delivery, as one rail from chair to lab and back. */
+type Step = LabContent["process"]["steps"][number];
+
+/**
+ * How a veneer is made here. Consecutive steps that share a label form a lane
+ * (chair → lab → chair), so the row reads as the trip the case makes through the
+ * building. Lab steps sit on dark teal, chair steps on glass; one card per step,
+ * equal heights on desktop, stacked under each lane label on mobile.
+ */
 export function LabProcess({ process }: { process: LabContent["process"] }) {
+  const lanes: { k?: string; place: "chair" | "lab"; steps: { step: Step; n: number }[] }[] = [];
+  process.steps.forEach((step, i) => {
+    const place: "chair" | "lab" = step.place === "lab" ? "lab" : "chair";
+    const prev = lanes[lanes.length - 1];
+    if (prev && prev.k === step.k && prev.place === place) prev.steps.push({ step, n: i + 1 });
+    else lanes.push({ k: step.k, place, steps: [{ step, n: i + 1 }] });
+  });
+
   return (
     <section className="wrap pt-16 lg:pt-28">
-      <div className="mb-9 flex flex-col gap-3 lg:mb-14 lg:max-w-[720px]">
+      <div className="mb-8 flex flex-col gap-3 lg:mb-12 lg:max-w-[720px]">
         {process.eyebrow && <span className="eyebrow text-gold-text">{process.eyebrow}</span>}
         <h2 className={`${h2} lg:text-[44px]`}>{process.title}</h2>
         {process.intro && <p className="m-0 text-[17px] leading-[1.55] text-pretty text-body lg:text-lg">{process.intro}</p>}
       </div>
-      <ol className="m-0 grid list-none gap-0 p-0 lg:grid-cols-5 lg:gap-6">
-        {process.steps.map((p, i, arr) => {
-          const last = i === arr.length - 1;
+      <ol className="m-0 flex list-none flex-col gap-8 p-0 lg:grid lg:grid-cols-5 lg:gap-x-4 lg:gap-y-5 xl:gap-x-5">
+        {lanes.map((lane) => {
+          const lab = lane.place === "lab";
           return (
-            <li key={p.t} className="relative grid grid-cols-[44px_minmax(0,1fr)] gap-x-4 pb-9 lg:block lg:pb-0">
-              {!last && (
-                <span aria-hidden="true" className="absolute top-11 bottom-0 left-[21px] w-px bg-sand lg:top-[22px] lg:right-[-24px] lg:bottom-auto lg:left-11 lg:h-px lg:w-auto" />
+            <li key={`${lane.k}-${lane.steps[0].n}`} className="flex flex-col gap-3 lg:contents">
+              {lane.k && (
+                <div className="flex items-center gap-3 lg:row-start-1" style={{ gridColumn: `span ${lane.steps.length}` }}>
+                  <span className={`eyebrow whitespace-nowrap ${lab ? "text-teal" : "text-gold-text"}`}>{lane.k}</span>
+                  <span aria-hidden="true" className={`h-px flex-1 ${lab ? "bg-teal/30" : "bg-sand"}`} />
+                </div>
               )}
-              <span className="relative z-[1] grid h-11 w-11 place-items-center rounded-full bg-teal font-serif text-[19px] text-on-dark shadow-[0_0_0_6px_var(--color-cream)]">{i + 1}</span>
-              <div className="flex flex-col gap-2 lg:mt-6">
-                {p.k && <span className="text-[12px] leading-[1.4] font-semibold tracking-[.12em] text-gold-text uppercase">{p.k}</span>}
-                <h3 className="m-0 font-serif text-[22px] leading-[1.2] font-normal text-teal">{p.t}</h3>
-                <p className="m-0 text-[15px] leading-[1.55] text-pretty text-body">{p.d}</p>
-              </div>
+              <ol className="m-0 flex list-none flex-col gap-3 p-0 lg:contents">
+                {lane.steps.map(({ step, n }) => (
+                  <li
+                    key={step.t}
+                    className={`flex flex-col gap-3 rounded-2xl p-5 lg:row-start-2 lg:h-full lg:rounded-[18px] xl:p-6 ${
+                      lab
+                        ? "border border-[rgba(247,244,238,.14)] bg-[linear-gradient(150deg,#0a3e44,#04282e)] text-on-dark shadow-[inset_0_1px_0_rgba(247,244,238,.18),0_16px_40px_rgba(4,40,46,.22)]"
+                        : "glass-card text-ink"
+                    }`}
+                  >
+                    <div className="flex items-start justify-between">
+                      <span
+                        aria-hidden="true"
+                        className={`grid h-9 w-9 place-items-center rounded-full font-serif text-[17px] leading-none ${lab ? "bg-gold text-teal" : "bg-teal text-on-dark"}`}
+                      >
+                        {n}
+                      </span>
+                      {step.icon && (
+                        <span className="h-10 w-10">
+                          <LineIcon name={step.icon as LineIconName} tone={lab ? "gold" : "teal"} />
+                        </span>
+                      )}
+                    </div>
+                    <h3 className={`m-0 mt-1 font-serif text-[22px] leading-[1.2] font-normal text-pretty lg:text-[20px] xl:text-[22px] ${lab ? "text-on-dark" : "text-teal"}`}>{step.t}</h3>
+                    <p className={`m-0 text-[15px] leading-[1.55] text-pretty lg:text-[14px] xl:text-[15px] ${lab ? "text-on-dark-muted" : "text-body"}`}>{step.d}</p>
+                  </li>
+                ))}
+              </ol>
             </li>
           );
         })}
       </ol>
       {process.note && (
-        <p className="m-0 mt-2 max-w-[62ch] border-l-2 border-gold pl-5 font-serif text-[20px] leading-[1.4] text-pretty text-teal lg:mt-12 lg:text-[24px]">{process.note}</p>
+        <p className="m-0 mt-8 max-w-[62ch] border-l-2 border-gold pl-5 font-serif text-[20px] leading-[1.4] text-pretty text-teal lg:mt-12 lg:text-[24px]">{process.note}</p>
       )}
     </section>
   );

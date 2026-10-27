@@ -40,6 +40,11 @@ const icons = {
   bus: [<rect key="r" x={9} y={8} width={30} height={30} rx={4} className="d" />, P("M9 24h30M15 8v16M24 8v16M33 8v16", "d d2"), P("M13 38v4M35 38v4", "d d3"), dot(15, 31, 1.8), dot(33, 31, 1.8)],
   clock: [<circle key="c" cx={24} cy={24} r={17} className="d" />, <g key="g" className="sp">{P("M24 24V13", "d d2")}</g>, P("M24 24l8 5", "d d3"), dot(24, 24, 1.4)],
   fullArch: [P("M6 20c0 14 8 22 18 22s18-8 18-22"), P("M10 20v10M16 20v14M22 20v16M26 20v16M32 20v14M38 20v10", "d d2"), P("M6 20h36", "d d3")],
+  // Custom Lab process steps.
+  scan: [P("M8 15V9a1 1 0 0 1 1-1h6M33 8h6a1 1 0 0 1 1 1v6M8 33v6a1 1 0 0 0 1 1h6M33 40h6a1 1 0 0 0 1-1v-6"), P(tooth, "d d2"), P("M12 24h24", "d d3 s"), dot(38, 24, 1.2)],
+  mill: [<circle key="c" cx={24} cy={24} r={16} className="d" />, P("M19 15c3-1.5 7-1.5 10 0v11c0 4-2 7-5 7s-5-3-5-7z", "d d2"), P("M24 4v4M24 40v4", "d d3"), dot(37, 11)],
+  loupe: [<circle key="c" cx={21} cy={21} r={12} className="d" />, P("M30 30l10 10", "d d2"), P("M17 15c2-1 6-1 8 0v7c0 3-1.5 5-4 5s-4-2-4-5z", "d d3"), dot(40, 9)],
+  shade: [P("M10 8h8v26l-4 5-4-5z"), P("M20 8h8v26l-4 5-4-5z", "d d2"), P("M30 8h8v26l-4 5-4-5z", "d d3"), <path key="h" d="M21 22h6v12l-3 4-3-4z" className="f" />],
 } satisfies Record<string, ReactNode[]>;
 
 export type LineIconName = keyof typeof icons;
