@@ -167,7 +167,7 @@ export default function TreatmentPage({
                 {data.breadcrumb}
               </span>
             </nav>
-            <h1 className="m-0 font-serif text-[38px] leading-[1.1] font-normal tracking-[-.01em] text-pretty lg:text-[64px] lg:leading-[1.04]">
+            <h1 className="m-0 max-w-[16ch] font-serif text-[38px] leading-[1.1] font-normal tracking-[-.01em] text-balance lg:text-[60px] lg:leading-[1.04]">
               {pages[path].h1}
             </h1>
             {/* hero.definition feeds the MedicalProcedure schema only; the visible box was removed at the clinic's request. */}
@@ -189,11 +189,11 @@ export default function TreatmentPage({
                 {hero.secondaryCta}
               </a>
             </div>
-            <div className="mt-2.5 grid grid-cols-2 gap-x-5 gap-y-[18px] border-t border-[rgba(247,244,238,.16)] pt-[22px] lg:flex lg:flex-wrap lg:gap-x-0">
+            <div className="mt-2.5 grid grid-cols-2 gap-x-5 gap-y-[18px] border-t border-[rgba(247,244,238,.16)] pt-[22px] lg:grid-cols-4 lg:gap-x-0">
               {hero.stats.map((s) => (
                 <div
                   key={s.label}
-                  className="flex flex-col gap-0.5 lg:border-l lg:border-[rgba(247,244,238,.16)] lg:px-[22px] lg:first:border-l-0 lg:first:pl-0 lg:last:pr-0"
+                  className="flex flex-col gap-0.5 lg:border-l lg:border-[rgba(247,244,238,.16)] lg:px-5 lg:first:border-l-0 lg:first:pl-0 lg:last:pr-0"
                 >
                   <span className="font-serif text-2xl leading-none whitespace-nowrap lg:text-[28px]">
                     {s.kind === "price" ? (
