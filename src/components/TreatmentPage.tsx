@@ -3,6 +3,7 @@ import FaqAccordion from "@/components/FaqAccordion";
 import FeatureIcon from "@/components/FeatureIcons";
 import { CameraIcon } from "@/components/Icons";
 import Img from "@/components/Img";
+import LineIcon, { type LineIconName } from "@/components/LineIcon";
 import JsonLd from "@/components/JsonLd";
 import PageHero from "@/components/PageHero";
 import {
@@ -44,7 +45,7 @@ export type Treatment = {
     title: string;
     body: string;
     image: { src: string; alt: string } | null;
-    facts: { label: string; big: string; sub: string }[];
+    facts: { label: string; big: string; sub: string; icon?: string }[];
   };
   /** Opt-in "The material" section (shared copy from content/material.json) with a page-specific lead sentence. */
   material?: { intro: string };
@@ -274,50 +275,59 @@ export default function TreatmentPage({
         </ul>
       </section>
 
-      {/* Why here */}
+      {/* Why here: the claim and its proof. Headline and lead on top, then the lab photo beside four fact cards. */}
       <section className="wrap pt-16 lg:pt-28">
-        <div
-          className={`dark-panel ${panelShadow} grid items-center gap-8 rounded-2xl p-6 lg:grid-cols-2 lg:gap-16 lg:rounded-[20px] lg:p-16`}
-        >
-          <div className="flex max-w-[520px] flex-col gap-[22px]">
-            <span className="eyebrow text-gold">{why.eyebrow}</span>
-            <h2 className="m-0 font-serif text-[34px] leading-[1.2] font-normal text-pretty lg:text-[52px] lg:leading-[1.06]">
-              {why.title}
-            </h2>
-            <p className="m-0 text-[17px] leading-[1.55] text-pretty text-on-dark-muted lg:text-lg">
+        <div className={`dark-panel ${panelShadow} flex flex-col gap-7 rounded-2xl p-6 lg:gap-10 lg:rounded-[20px] lg:p-14`}>
+          <div className="flex flex-col gap-4 lg:grid lg:grid-cols-[minmax(0,1.1fr)_minmax(0,.9fr)] lg:items-end lg:gap-14">
+            <div className="flex flex-col gap-4">
+              <span className="eyebrow text-gold">{why.eyebrow}</span>
+              <h2 className="m-0 max-w-[16ch] font-serif text-[34px] leading-[1.15] font-normal text-pretty lg:text-[52px] lg:leading-[1.04]">
+                {why.title}
+              </h2>
+            </div>
+            <p className="m-0 max-w-[48ch] text-[17px] leading-[1.55] text-pretty text-on-dark-muted lg:pb-1.5 lg:text-lg">
               {why.body}
             </p>
-            {why.image && (
-              <Img
-                src={why.image.src}
-                alt={why.image.alt}
-                sizes="(min-width: 1024px) 520px, 100vw"
-                className="mt-2 block aspect-video w-full rounded-2xl border border-[rgba(247,244,238,.18)] object-cover"
-              />
-            )}
           </div>
-          <ul className="m-0 grid list-none grid-cols-2 gap-3 p-0 lg:gap-4">
-            {why.facts.map((w) => (
-              <li
-                key={w.label}
-                className="relative flex flex-col gap-[18px] overflow-hidden rounded-2xl border border-[rgba(255,255,255,.28)] bg-[linear-gradient(160deg,rgba(255,253,248,.22)_0%,rgba(255,253,248,.1)_100%)] p-4 shadow-[inset_0_1px_0_rgba(255,255,255,.35),0_16px_40px_rgba(0,0,0,.25)] backdrop-blur-[22px] backdrop-saturate-[1.4] lg:min-h-[190px] lg:rounded-[20px] lg:px-6 lg:pt-[22px] lg:pb-6"
-              >
-                <span
-                  aria-hidden="true"
-                  className="absolute top-0 right-0 left-0 h-0.5 bg-[linear-gradient(90deg,rgba(205,177,128,0)_0%,#CDB180_40%,rgba(247,244,238,.9)_70%,rgba(247,244,238,0)_100%)]"
+          <div className="grid gap-3 lg:grid-cols-[minmax(0,.95fr)_minmax(0,1.05fr)] lg:gap-6">
+            {why.image && (
+              <div className="aspect-[4/3] overflow-hidden rounded-2xl border border-[rgba(247,244,238,.18)] lg:aspect-auto">
+                <Img
+                  src={why.image.src}
+                  alt={why.image.alt}
+                  sizes="(min-width: 1024px) 560px, 100vw"
+                  className="block h-full w-full object-cover"
                 />
-                <span className="text-sm text-on-dark-muted">{w.label}</span>
-                <span className="mt-auto flex flex-col gap-1.5">
-                  <span className="font-serif text-[22px] leading-[1.1] tracking-[-.02em] lg:text-[38px] lg:leading-none">
-                    {w.big}
+              </div>
+            )}
+            <ul className="m-0 grid list-none gap-3 p-0 sm:grid-cols-2 lg:gap-4">
+              {why.facts.map((w) => (
+                <li
+                  key={w.label}
+                  className="relative flex flex-col gap-4 overflow-hidden rounded-2xl border border-[rgba(255,255,255,.28)] bg-[linear-gradient(160deg,rgba(255,253,248,.22)_0%,rgba(255,253,248,.1)_100%)] p-4 shadow-[inset_0_1px_0_rgba(255,255,255,.35),0_16px_40px_rgba(0,0,0,.25)] backdrop-blur-[22px] backdrop-saturate-[1.4] lg:min-h-[200px] lg:gap-5 lg:rounded-[20px] lg:p-6"
+                >
+                  <span
+                    aria-hidden="true"
+                    className="absolute top-0 right-0 left-0 h-0.5 bg-[linear-gradient(90deg,rgba(205,177,128,0)_0%,#CDB180_40%,rgba(247,244,238,.9)_70%,rgba(247,244,238,0)_100%)]"
+                  />
+                  <span className="flex items-center gap-3">
+                    {w.icon && (
+                      <span className="grid h-9 w-9 flex-none place-items-center rounded-full border border-[rgba(205,177,128,.45)] bg-[rgba(205,177,128,.14)]">
+                        <span className="block h-[18px] w-[18px]">
+                          <LineIcon name={w.icon as LineIconName} tone="gold" />
+                        </span>
+                      </span>
+                    )}
+                    <span className="text-[12px] leading-tight font-semibold tracking-[.08em] text-on-dark-muted uppercase">{w.label}</span>
                   </span>
-                  <span className="text-sm leading-[1.4] text-on-dark-muted">
-                    {w.sub}
+                  <span className="mt-auto flex flex-col gap-1.5">
+                    <span className="font-serif text-[24px] leading-none tracking-[-.02em] text-on-dark lg:text-[34px]">{w.big}</span>
+                    <span className="text-[13px] leading-[1.45] text-on-dark-muted lg:text-sm">{w.sub}</span>
                   </span>
-                </span>
-              </li>
-            ))}
-          </ul>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -332,7 +342,7 @@ export default function TreatmentPage({
             </p>
           </div>
 
-          {/* One idea per row: photo on one side, the point on the other, and the e.max contrast as a footnote card. */}
+          {/* One idea per row: photo on one side, the point on the other, one point per card. */}
           <div className="flex flex-col gap-5 lg:gap-6">
             {material.features.map((f, i) => (
               <article
@@ -349,9 +359,6 @@ export default function TreatmentPage({
                   <span className="eyebrow text-gold-text">{f.kicker}</span>
                   <h3 className="m-0 font-serif text-[26px] leading-[1.15] font-normal text-teal lg:text-[32px]">{f.title}</h3>
                   <p className="m-0 text-[16px] leading-[1.55] text-body lg:text-[17px]">{f.text}</p>
-                  <p className="m-0 rounded-xl border border-sand bg-card px-4 py-3 text-[14px] leading-[1.5] text-muted lg:text-[15px]">
-                    <strong className="font-semibold text-ink">{material.vsLabel}:</strong> {f.vs}
-                  </p>
                 </div>
               </article>
             ))}

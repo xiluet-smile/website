@@ -2,48 +2,44 @@
   "eyebrow": "El material",
   "title": "Zirconia alemana, terminada a mano",
   "body": "Cada carilla, corona y puente que hacemos es zirconia fresada a partir de discos de fabricación alemana y terminada por nuestro ceramista en el mismo edificio que tu doctor. Tres cosas que eso cambia:",
-  "vsLabel": "vs e.max",
   "features": [
     {
       "img": "material-five-layers.jpg",
       "alt": "Un disco de zirconia multicapa de canto con cinco bandas de marfil cálido a blanco translúcido, junto a un bloque de disilicato de litio de un solo tono y una lámina translúcida fina",
       "kicker": "El color",
       "title": "Integrado en el material, no pintado",
-      "text": "Nuestros discos vienen con cinco capas de tono: más cálido en la encía, más translúcido hacia el borde. En los dientes frontales el ceramista añade a mano la textura de superficie y los efectos del esmalte, sobre un degradado que ya está ahí.",
-      "vs": "Un bloque de un solo tono. El borde translúcido hay que rebajarlo y añadirlo como una capa extra: un paso más y una unión más que se puede astillar."
+      "text": "Nuestros discos vienen con cinco capas de tono: más cálido en la encía, más translúcido hacia el borde. En los dientes frontales el ceramista añade a mano la textura de superficie y los efectos del esmalte, sobre un degradado que ya está ahí."
     },
     {
       "img": "material-margin-gum-line.jpg",
       "alt": "Primer plano de un diente frontal restaurado con una corona de zirconia cuyo borde se une a una encía rosada y sana sin línea oscura",
       "kicker": "El borde",
       "title": "Terminado a la altura de la encía, no debajo",
-      "text": "La zirconia no se decolora, así que el borde puede quedar donde se ve, se limpia y se sella. Las fibras que unen la encía al diente quedan intactas, que es lo que mantiene la encía y el hueso en su sitio.",
-      "vs": "El borde a menudo se entierra bajo la encía para esconder la línea de cemento. Los bordes bajo la encía se asocian con inflamación, retracción y pérdida de hueso con el tiempo."
+      "text": "La zirconia no se decolora, así que el borde puede quedar donde se ve, se limpia y se sella. Las fibras que unen la encía al diente quedan intactas, que es lo que mantiene la encía y el hueso en su sitio."
     },
     {
       "img": "material-hand-finishing.jpg",
       "alt": "Las manos enguantadas de un ceramista afinando el borde de una corona de zirconia con una fresa de pulido fina bajo una lupa de banco",
       "kicker": "El ajuste",
       "title": "Asentada y sellada a mano",
-      "text": "Las coronas fresadas rara vez ajustan recién salidas de la máquina. Cada una se ajusta bajo magnificación con fresas finas hasta que asienta sin presión, y después el margen se pule hasta formar un sellado cerrado que deja fuera a las bacterias.",
-      "vs": "Una corona forzada deja un espacio que no se ve. Es lo primero que revisamos en la entrega, sea cual sea el material."
+      "text": "Las coronas fresadas rara vez ajustan recién salidas de la máquina. Cada una se ajusta bajo magnificación con fresas finas hasta que asienta sin presión, y después el margen se pule hasta formar un sellado cerrado que deja fuera a las bacterias."
     }
   ],
   "glance": [
     {
       "label": "Resistencia",
       "big": "2×",
-      "sub": "De 1,000 a 1,200 MPa frente a unos 470 del e.max. Aguanta muelas y bruxismo."
+      "sub": "Alrededor del doble de resistencia que la porcelana convencional. Aguanta muelas y bruxismo."
     },
     {
       "label": "Diente tallado",
       "big": "0.3 mm",
-      "sub": "Carillas 0.3 mm, paredes de corona 0.5 mm. Una corona e.max necesita 1.0 mm."
+      "sub": "Carillas 0.3 mm, paredes de corona 0.5 mm. La mayor parte de tu diente natural se conserva."
     },
     {
       "label": "Diseñada para",
       "big": "20 años",
-      "sub": "El e.max suele durar de 10 a 15, y el astillado es la razón habitual de reemplazo."
+      "sub": "La zirconia no se mancha, no cambia de tono ni se astilla en el borde con un cuidado normal."
     },
     {
       "label": "Garantía",

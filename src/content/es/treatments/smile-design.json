@@ -64,31 +64,35 @@
   "why": {
     "eyebrow": "Por qué las carillas Xiluet",
     "title": "Tan delgadas que conservas tus dientes. Tan fuertes que duran.",
-    "body": "Nuestras carillas las termina a mano un ceramista en el mismo edificio que tu doctor. Por eso podemos hacerlas más delgadas, igualar el tono en persona y entregarlas en días, no en semanas.",
+    "body": "Cada carilla se fresa en zirconia multicapa y la termina a mano nuestro ceramista, un piso arriba de tu doctor. Por eso podemos hacerlas más delgadas, igualar tu tono en persona y entregarlas en días, no en semanas.",
     "image": {
       "src": "gen-zirconia-veneers-arch.jpg",
       "alt": "Una arcada completa de carillas de zirconia multicapa terminadas a mano en el laboratorio interno, una sostenida con pinzas para mostrar su grosor de 0.3 mm"
     },
     "facts": [
       {
+        "icon": "veneer",
         "label": "Grosor",
         "big": "0.3 mm",
         "sub": "Poco o nada de desgaste. Tu diente natural queda casi completamente intacto."
       },
       {
+        "icon": "lab",
         "label": "Laboratorio",
         "big": "Propio",
-        "sub": "Doctor y ceramista en el mismo edificio. Tono igualado en persona."
+        "sub": "Tu ceramista trabaja un piso arriba de tu doctor. El tono se iguala contigo en el sillón, no por correo."
       },
       {
-        "label": "Vista previa del diseño",
+        "icon": "approve",
+        "label": "Vista previa",
         "big": "Tú apruebas",
-        "sub": "Ves el diseño en tu boca antes de empezar cualquier trabajo permanente."
+        "sub": "Ves el diseño en tu propia boca y das el visto bueno antes de preparar ningún diente."
       },
       {
+        "icon": "mill",
         "label": "Material",
         "big": "Zirconia",
-        "sub": "Nuestra porcelana se estratifica sobre un núcleo de zirconia: una cerámica sin metal que resiste fracturas y manchas y conserva su color por años."
+        "sub": "Zirconia multicapa, sin metal. No se mancha ni cambia de tono, y aguanta la mordida de las muelas."
       }
     ]
   },

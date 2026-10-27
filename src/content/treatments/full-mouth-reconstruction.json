@@ -1,19 +1,19 @@
 {
   "path": "/full-mouth-reconstruction-miami",
   "packageId": "full-mouth-reconstruction",
-  "breadcrumb": "Full Mouth Reconstruction",
+  "breadcrumb": "Full Mouth Restoration",
   "schema": {
-    "name": "Full Mouth Reconstruction",
+    "name": "Full Mouth Restoration",
     "procedureType": "http://schema.org/NoninvasiveProcedure"
   },
   "hero": {
-    "definition": "Full mouth reconstruction rebuilds all of your teeth with crowns, bridges and veneers planned as one case, so the bite works and the smile looks natural. At Xiluet Smiles in Miami it costs $10,000, takes 7 business days across four visits, and includes a 5-year written warranty.",
-    "lead": "Crowns, bridges and veneers planned together so your bite works and your smile looks natural. Delivered in 7 business days in Miami, with a 5-year warranty in writing.",
+    "definition": "Full mouth restoration rebuilds all of your teeth with 28 porcelain veneers, crowns and bridges planned as one case, so the bite works and the smile looks natural. At Xiluet Smiles in Miami it costs $10,000, takes 7 business days across four visits, and includes a 5-year written warranty.",
+    "lead": "28 porcelain veneers, crowns and bridges planned together so your bite works and your smile looks natural. Delivered in 7 business days in Miami, with a 5-year warranty in writing.",
     "secondaryCta": "See the two-week plan",
     "stats": [
       {
         "kind": "price",
-        "label": "full mouth reconstruction"
+        "label": "28 veneers, crowns and bridges"
       },
       {
         "kind": "text",
@@ -32,12 +32,12 @@
     ],
     "image": {
       "caseId": "BA33",
-      "caption": "Full mouth reconstruction · Every tooth planned together · 7 business days"
+      "caption": "Full mouth restoration · 28 veneers, crowns and bridges · 7 business days"
     }
   },
   "candidates": {
     "title": "For teeth that are worn, broken or failing all at once",
-    "intro": "Reconstruction treats the whole mouth as one plan, not one tooth at a time.",
+    "intro": "Restoration treats the whole mouth as one plan, not one tooth at a time.",
     "items": [
       {
         "t": "Worn-down teeth",
@@ -93,7 +93,7 @@
     ]
   },
   "material": {
-    "intro": "A full mouth reconstruction puts crowns and bridges on teeth that carry the whole bite. Zirconia is the only metal-free ceramic we trust for every one of them, long bridges and grinders included."
+    "intro": "A full mouth restoration puts crowns and bridges on teeth that carry the whole bite. Zirconia is the only metal-free ceramic we trust for every one of them, long bridges and grinders included."
   },
   "week": {
     "title": "Your two weeks in Miami",
@@ -127,9 +127,9 @@
     ]
   },
   "results": {
-    "title": "Reconstruction results",
+    "title": "Restoration results",
     "linkLabel": "All cases →",
-    "label": "Full mouth reconstruction",
+    "label": "Full mouth restoration",
     "caseIds": [
       "BA18",
       "BA11",
@@ -144,13 +144,13 @@
     "lendersLabel": "Pay over time with",
     "compareLabel": "Compare all packages →",
     "card": {
-      "title": "20 dental restorations",
-      "sub": "Full mouth reconstruction",
+      "title": "28 porcelain veneers, crowns and bridges",
+      "sub": "Full mouth restoration",
       "badge": "Complete",
       "pricePrefix": null,
       "priceSuffix": null,
       "included": [
-        "Up to 20 crowns, bridges and veneers",
+        "28 porcelain veneers, crowns and bridges",
         "Bite analysis and 3D scans",
         "Temporaries shaped like your final design",
         "Delivery in 7 business days",
@@ -161,7 +161,7 @@
     "footnote": "Prices shown are minimum fees. Your final fee is confirmed in writing after a doctor's evaluation."
   },
   "faq": {
-    "title": "Reconstruction questions, answered by the doctors",
+    "title": "Restoration questions, answered by the doctors",
     "linkLabel": "All answers →",
     "items": [
       {

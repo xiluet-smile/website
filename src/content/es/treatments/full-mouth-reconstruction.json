@@ -1,19 +1,19 @@
 {
   "path": "/full-mouth-reconstruction-miami",
   "packageId": "full-mouth-reconstruction",
-  "breadcrumb": "Reconstrucción bucal completa",
+  "breadcrumb": "Restauración bucal completa",
   "schema": {
-    "name": "Reconstrucción bucal completa",
+    "name": "Restauración bucal completa",
     "procedureType": "http://schema.org/NoninvasiveProcedure"
   },
   "hero": {
-    "definition": "La reconstrucción bucal completa reconstruye todos tus dientes con coronas, puentes y carillas planificados como un solo caso, para que la mordida funcione y la sonrisa se vea natural. En Xiluet Smiles en Miami cuesta $10,000, toma 7 días hábiles en cuatro visitas e incluye garantía de 5 años por escrito.",
+    "definition": "La restauración bucal completa reconstruye todos tus dientes con 28 carillas, coronas y puentes de porcelana planificados como un solo caso, para que la mordida funcione y la sonrisa se vea natural. En Xiluet Smiles en Miami cuesta $10,000, toma 7 días hábiles en cuatro visitas e incluye garantía de 5 años por escrito.",
     "lead": "Coronas, puentes y carillas planificados en conjunto para que tu mordida funcione y tu sonrisa se vea natural. Entregado en 7 días hábiles en Miami, con garantía de 5 años por escrito.",
     "secondaryCta": "Mira el plan de dos semanas",
     "stats": [
       {
         "kind": "price",
-        "label": "reconstrucción bucal completa"
+        "label": "28 carillas, coronas y puentes"
       },
       {
         "kind": "text",
@@ -32,12 +32,12 @@
     ],
     "image": {
       "caseId": "BA33",
-      "caption": "Reconstrucción bucal completa · Cada diente planificado en conjunto · 7 días hábiles"
+      "caption": "Restauración bucal completa · 28 carillas, coronas y puentes · 7 días hábiles"
     }
   },
   "candidates": {
     "title": "Para dientes desgastados, rotos o que fallan todos a la vez",
-    "intro": "La reconstrucción trata toda la boca como un solo plan, no diente por diente.",
+    "intro": "La restauración trata toda la boca como un solo plan, no diente por diente.",
     "items": [
       {
         "t": "Dientes desgastados",
@@ -93,7 +93,7 @@
     ]
   },
   "material": {
-    "intro": "Una reconstrucción bucal completa pone coronas y puentes en dientes que cargan toda la mordida. La zirconia es la única cerámica sin metal en la que confiamos para cada uno de ellos, puentes largos y bruxistas incluidos."
+    "intro": "Una restauración bucal completa pone coronas y puentes en dientes que cargan toda la mordida. La zirconia es la única cerámica sin metal en la que confiamos para cada uno de ellos, puentes largos y bruxistas incluidos."
   },
   "week": {
     "title": "Tus dos semanas en Miami",
@@ -127,9 +127,9 @@
     ]
   },
   "results": {
-    "title": "Resultados de reconstrucción",
+    "title": "Resultados de restauración",
     "linkLabel": "Todos los casos →",
-    "label": "Reconstrucción bucal completa",
+    "label": "Restauración bucal completa",
     "caseIds": [
       "BA18",
       "BA11",
@@ -144,13 +144,13 @@
     "lendersLabel": "Paga a plazos con",
     "compareLabel": "Compara todos los paquetes →",
     "card": {
-      "title": "20 restauraciones dentales",
-      "sub": "Reconstrucción bucal completa",
+      "title": "28 carillas, coronas y puentes de porcelana",
+      "sub": "Restauración bucal completa",
       "badge": "Completo",
       "pricePrefix": null,
       "priceSuffix": null,
       "included": [
-        "Hasta 20 coronas, puentes y carillas",
+        "28 carillas, coronas y puentes de porcelana",
         "Análisis de mordida y escaneos 3D",
         "Provisionales con la forma de tu diseño final",
         "Entrega en 7 días hábiles",
@@ -161,7 +161,7 @@
     "footnote": "Los precios mostrados son tarifas mínimas. Tu precio final se confirma por escrito después de la evaluación de un doctor."
   },
   "faq": {
-    "title": "Preguntas sobre reconstrucción, respondidas por los doctores",
+    "title": "Preguntas sobre restauración, respondidas por los doctores",
     "linkLabel": "Todas las respuestas →",
     "items": [
       {

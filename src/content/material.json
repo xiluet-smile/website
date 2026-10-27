@@ -2,48 +2,44 @@
   "eyebrow": "The material",
   "title": "German zirconia, finished by hand",
   "body": "Every veneer, crown and bridge we make is zirconia milled from German-made discs and finished by our ceramist in the same building as your doctor. Three things that changes:",
-  "vsLabel": "vs e.max",
   "features": [
     {
       "img": "material-five-layers.jpg",
       "alt": "A multilayer zirconia disc on its edge showing five bands from warm ivory to translucent white, next to a single-shade lithium disilicate ingot and a thin translucent wafer",
       "kicker": "The color",
       "title": "Built into the material, not painted on",
-      "text": "Our discs come with five layers of shade: warmer at the gum, more translucent toward the edge. On front teeth the ceramist adds surface texture and enamel effects by hand, on top of a gradient that is already there.",
-      "vs": "A single-shade block. The translucent edge has to be cut back and added as an extra layer, one more step and one more joint that can chip."
+      "text": "Our discs come with five layers of shade: warmer at the gum, more translucent toward the edge. On front teeth the ceramist adds surface texture and enamel effects by hand, on top of a gradient that is already there."
     },
     {
       "img": "material-margin-gum-line.jpg",
       "alt": "Close-up of a front tooth restored with a zirconia crown whose edge meets healthy pink gum with no dark line",
       "kicker": "The edge",
       "title": "Finished at the gum line, not under it",
-      "text": "Zirconia does not discolor, so the edge can sit where it is visible, cleaned and sealed. The fibers that attach your gum to the tooth stay intact, which is what keeps gum and bone where they are.",
-      "vs": "The edge is often buried under the gum to hide the cement line. Edges under the gum are linked to inflammation, recession and bone loss over time."
+      "text": "Zirconia does not discolor, so the edge can sit where it is visible, cleaned and sealed. The fibers that attach your gum to the tooth stay intact, which is what keeps gum and bone where they are."
     },
     {
       "img": "material-hand-finishing.jpg",
       "alt": "A ceramist's gloved hands refining the edge of a zirconia crown with a fine polishing bur under a bench magnifier",
       "kicker": "The fit",
       "title": "Seated and sealed by hand",
-      "text": "Milled crowns rarely fit straight off the machine. Each one is adjusted under magnification with fine burs until it seats without pressure, then the margin is polished into a closed seal that keeps bacteria out.",
-      "vs": "A crown forced into place leaves a gap you cannot see. It is the first thing we check at delivery, whatever the material."
+      "text": "Milled crowns rarely fit straight off the machine. Each one is adjusted under magnification with fine burs until it seats without pressure, then the margin is polished into a closed seal that keeps bacteria out."
     }
   ],
   "glance": [
     {
       "label": "Strength",
       "big": "2×",
-      "sub": "1,000 to 1,200 MPa against about 470 for e.max. Takes back teeth and grinders."
+      "sub": "About twice the strength of conventional porcelain. Takes back teeth and grinders."
     },
     {
       "label": "Tooth removed",
       "big": "0.3 mm",
-      "sub": "Veneers 0.3 mm, crown walls 0.5 mm. An e.max crown needs 1.0 mm."
+      "sub": "Veneers 0.3 mm, crown walls 0.5 mm. Most of your natural tooth stays."
     },
     {
       "label": "Designed for",
       "big": "20 years",
-      "sub": "e.max is typically 10 to 15, with chipping the usual reason to replace it."
+      "sub": "Zirconia does not stain, change shade or chip at the edge with normal care."
     },
     {
       "label": "Warranty",
