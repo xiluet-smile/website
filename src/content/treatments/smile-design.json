@@ -7,8 +7,8 @@
     "procedureType": "http://schema.org/NoninvasiveProcedure"
   },
   "hero": {
-    "definition": "Smile Design is our package of 20 porcelain veneers: thin shells of ceramic, as thin as 0.3 mm, bonded to the front of your teeth to change their shape, length and color, designed around your face and previewed in your mouth before any tooth is touched. At Xiluet Smiles in Miami it costs $6,999, takes three visits in one week, and carries a 5-year written warranty.",
-    "lead": "Little to no drilling, a design you approve before any tooth is touched, and delivery in one week in Miami. Covered by a 5-year warranty, in writing.",
+    "definition": "Smile Design is our package of 20 porcelain veneers: thin shells of ceramic bonded to the front of your teeth after only about 0.3 mm of preparation, to change their shape, length and color, designed around your face and previewed in your mouth before any tooth is touched. At Xiluet Smiles in Miami it costs $5,999, takes three visits in one week, and carries a 5-year written warranty.",
+    "lead": "Minimal preparation, a design you approve before any tooth is touched, and delivery in one week in Miami. Covered by a 5-year warranty, in writing.",
     "secondaryCta": "See your week in Miami",
     "stats": [
       {
@@ -32,7 +32,7 @@
     ],
     "image": {
       "caseId": "BA44",
-      "caption": "Smile Design · 20 porcelain veneers · 0.3 mm · 5-year written warranty"
+      "caption": "Smile Design · 20 porcelain veneers · 0.3 mm prep · 5-year written warranty"
     }
   },
   "candidates": {
@@ -67,14 +67,14 @@
     "body": "Every veneer is milled from multilayer zirconia and finished by hand by our ceramist, one floor above your doctor. That is why we can go thinner, match your shade in person and deliver in days, not weeks.",
     "image": {
       "src": "gen-zirconia-veneers-arch.jpg",
-      "alt": "A full arch of hand-finished multilayer zirconia veneers from the in-house lab, one held in tweezers to show its 0.3 mm thickness"
+      "alt": "A full arch of hand-finished multilayer zirconia veneers from the in-house lab, one held in tweezers to show how thin it is"
     },
     "facts": [
       {
         "icon": "veneer",
-        "label": "Thickness",
+        "label": "Preparation",
         "big": "0.3 mm",
-        "sub": "Little to no drilling. Your natural tooth stays almost entirely intact."
+        "sub": "Only about 0.3 mm of enamel is prepared, on some teeth none. Your natural tooth stays almost entirely intact."
       },
       {
         "icon": "lab",
@@ -97,7 +97,7 @@
     ]
   },
   "material": {
-    "intro": "For Smile Design the zirconia is cut to 0.3 mm veneers and layered with translucent porcelain where it shows, which is how a veneer this thin still lasts."
+    "intro": "For Smile Design the zirconia is milled into thin veneers that sit on a 0.3 mm preparation and layered with translucent porcelain where it shows, which is how a veneer this thin still lasts."
   },
   "week": {
     "title": "Your week in Miami",
@@ -181,7 +181,7 @@
       },
       {
         "q": "How much of my tooth is removed?",
-        "a": "With 0.3 mm veneers, usually very little and sometimes none. Your doctor confirms this at Visit 1 after the scans.",
+        "a": "Usually only about 0.3 mm, and sometimes none. Your doctor confirms this at Visit 1 after the scans.",
         "doc": "Dr. Marta Puentes Marrero, DMD"
       },
       {
