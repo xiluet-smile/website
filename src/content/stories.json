@@ -123,6 +123,94 @@
     "doctor": "Dr. Gretell Alonso Fiel, DMD"
   },
   {
+    "id": "story-34",
+    "video": "/videos/stories/story-34.mp4",
+    "poster": "story-34-poster.jpg",
+    "quote": "",
+    "name": "Xiluet patient",
+    "treatment": "Smile design",
+    "duration": "0:21",
+    "doctor": "Dr. Roger Ramos Navarro, DMD",
+    "title": "A patient tells her story in her own words."
+  },
+  {
+    "id": "story-35",
+    "video": "/videos/stories/story-35.mp4",
+    "poster": "story-35-poster.jpg",
+    "quote": "",
+    "name": "Andrea",
+    "treatment": "Smile design",
+    "duration": "0:16",
+    "doctor": "Dr. Roger Ramos Navarro, DMD",
+    "title": "Andrea is in love with her new smile."
+  },
+  {
+    "id": "story-36",
+    "video": "/videos/stories/story-36.mp4",
+    "poster": "story-36-poster.jpg",
+    "quote": "",
+    "name": "William",
+    "treatment": "Smile design",
+    "duration": "0:11",
+    "doctor": "Dr. Roger Ramos Navarro, DMD",
+    "title": "William came in to improve his smile and left with a reason to smile every day."
+  },
+  {
+    "id": "story-37",
+    "video": "/videos/stories/story-37.mp4",
+    "poster": "story-37-poster.jpg",
+    "quote": "",
+    "name": "María",
+    "treatment": "Smile design",
+    "duration": "0:20",
+    "doctor": "Dr. Roger Ramos Navarro, DMD",
+    "title": "María's smile, designed with harmony and naturalness."
+  },
+  {
+    "id": "story-38",
+    "video": "/videos/stories/story-38.mp4",
+    "poster": "story-38-poster.jpg",
+    "quote": "",
+    "name": "Xiluet patient",
+    "treatment": "Smile design",
+    "duration": "0:15",
+    "doctor": "Dr. Roger Ramos Navarro, DMD",
+    "title": "She sees her new smile in the mirror for the first time."
+  },
+  {
+    "id": "story-39",
+    "video": "/videos/stories/story-39.mp4",
+    "poster": "story-39-poster.jpg",
+    "quote": "",
+    "name": "Dr. Ramos",
+    "treatment": "Smile design",
+    "duration": "0:20",
+    "doctor": "Dr. Roger Ramos Navarro, DMD",
+    "title": "Meet Dr. Ramos, the creator behind Xiluet Smiles."
+  },
+  {
+    "id": "story-40",
+    "video": "/videos/stories/story-40.mp4",
+    "poster": "story-40-poster.jpg",
+    "quote": "",
+    "name": "Xiluet patient",
+    "treatment": "Smile design",
+    "duration": "0:08",
+    "doctor": "Dr. Roger Ramos Navarro, DMD",
+    "title": "His before and after, in his own smile."
+  },
+  {
+    "id": "story-41",
+    "video": "/videos/stories/story-41.mp4",
+    "poster": "story-41-poster.jpg",
+    "quote": "",
+    "name": "Xiluet patient",
+    "treatment": "Full mouth restoration",
+    "duration": "0:15",
+    "doctor": "Dr. Roger Ramos Navarro, DMD",
+    "title": "From broken and missing teeth to a confident, radiant smile."
+  },
+  {
     "id": "story-6",
     "source": "https://www.instagram.com/p/DaxwOJQRHxW/",
     "video": "/videos/stories/story-6.mp4",
