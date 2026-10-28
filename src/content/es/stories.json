@@ -1,5 +1,71 @@
 [
   {
+    "id": "story-42",
+    "video": "/videos/stories/story-42.mp4",
+    "poster": "story-42-poster.jpg",
+    "quote": "",
+    "name": "Dra. Alonso",
+    "treatment": "Diseño de sonrisa",
+    "duration": "0:35",
+    "doctor": "Dr. Gretell Alonso Fiel, DMD",
+    "title": "La Dra. Alonso en plena sesión: un diseño de sonrisa en proceso."
+  },
+  {
+    "id": "story-43",
+    "video": "/videos/stories/story-43.mp4",
+    "poster": "story-43-poster.jpg",
+    "quote": "",
+    "name": "Dra. Alonso",
+    "treatment": "Diseño de sonrisa",
+    "duration": "0:13",
+    "doctor": "Dr. Gretell Alonso Fiel, DMD",
+    "title": "Todavía trabajando en una sonrisa hermosa; el resultado final está por llegar."
+  },
+  {
+    "id": "story-44",
+    "video": "/videos/stories/story-44.mp4",
+    "poster": "story-44-poster.jpg",
+    "quote": "",
+    "name": "Paciente de Xiluet",
+    "treatment": "Diseño de sonrisa",
+    "duration": "0:15",
+    "doctor": "Dr. Gretell Alonso Fiel, DMD",
+    "title": "De una mordida cruzada a una sonrisa impecable: color, forma y armonía."
+  },
+  {
+    "id": "story-45",
+    "video": "/videos/stories/story-45.mp4",
+    "poster": "story-45-poster.jpg",
+    "quote": "",
+    "name": "Karen",
+    "treatment": "Diseño de sonrisa",
+    "duration": "0:11",
+    "doctor": "Dr. Gretell Alonso Fiel, DMD",
+    "title": "Karen no puede dejar de sonreír después de unirse a Xiluet Smiles."
+  },
+  {
+    "id": "story-46",
+    "video": "/videos/stories/story-46.mp4",
+    "poster": "story-46-poster.jpg",
+    "quote": "",
+    "name": "Paciente de Xiluet",
+    "treatment": "Diseño de sonrisa",
+    "duration": "0:30",
+    "doctor": "Dr. Gretell Alonso Fiel, DMD",
+    "title": "Un paciente comparte su experiencia en Xiluet Smiles."
+  },
+  {
+    "id": "story-47",
+    "video": "/videos/stories/story-47.mp4",
+    "poster": "story-47-poster.jpg",
+    "quote": "",
+    "name": "Dra. Alonso",
+    "treatment": "Diseño de sonrisa",
+    "duration": "0:10",
+    "doctor": "Dr. Gretell Alonso Fiel, DMD",
+    "title": "La Dra. Alonso convierte sonrisas soñadas en confianza real."
+  },
+  {
     "id": "story-20",
     "source": "https://www.instagram.com/p/DYC_g-JxGtO/",
     "video": "/videos/stories/story-20.mp4",

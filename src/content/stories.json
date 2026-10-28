@@ -1,5 +1,71 @@
 [
   {
+    "id": "story-42",
+    "video": "/videos/stories/story-42.mp4",
+    "poster": "story-42-poster.jpg",
+    "quote": "",
+    "name": "Dr. Alonso",
+    "treatment": "Smile design",
+    "duration": "0:35",
+    "doctor": "Dr. Gretell Alonso Fiel, DMD",
+    "title": "Dr. Alonso at work: a smile design in progress."
+  },
+  {
+    "id": "story-43",
+    "video": "/videos/stories/story-43.mp4",
+    "poster": "story-43-poster.jpg",
+    "quote": "",
+    "name": "Dr. Alonso",
+    "treatment": "Smile design",
+    "duration": "0:13",
+    "doctor": "Dr. Gretell Alonso Fiel, DMD",
+    "title": "Still working on a beautiful smile; the final result is on its way."
+  },
+  {
+    "id": "story-44",
+    "video": "/videos/stories/story-44.mp4",
+    "poster": "story-44-poster.jpg",
+    "quote": "",
+    "name": "Xiluet patient",
+    "treatment": "Smile design",
+    "duration": "0:15",
+    "doctor": "Dr. Gretell Alonso Fiel, DMD",
+    "title": "From a crossbite to a flawless smile: color, shape and harmony."
+  },
+  {
+    "id": "story-45",
+    "video": "/videos/stories/story-45.mp4",
+    "poster": "story-45-poster.jpg",
+    "quote": "",
+    "name": "Karen",
+    "treatment": "Smile design",
+    "duration": "0:11",
+    "doctor": "Dr. Gretell Alonso Fiel, DMD",
+    "title": "Karen can't stop smiling after joining Xiluet Smiles."
+  },
+  {
+    "id": "story-46",
+    "video": "/videos/stories/story-46.mp4",
+    "poster": "story-46-poster.jpg",
+    "quote": "",
+    "name": "Xiluet patient",
+    "treatment": "Smile design",
+    "duration": "0:30",
+    "doctor": "Dr. Gretell Alonso Fiel, DMD",
+    "title": "A patient shares his experience at Xiluet Smiles."
+  },
+  {
+    "id": "story-47",
+    "video": "/videos/stories/story-47.mp4",
+    "poster": "story-47-poster.jpg",
+    "quote": "",
+    "name": "Dr. Alonso",
+    "treatment": "Smile design",
+    "duration": "0:10",
+    "doctor": "Dr. Gretell Alonso Fiel, DMD",
+    "title": "Dr. Alonso turns dream smiles into real confidence."
+  },
+  {
     "id": "story-20",
     "source": "https://www.instagram.com/p/DYC_g-JxGtO/",
     "video": "/videos/stories/story-20.mp4",
