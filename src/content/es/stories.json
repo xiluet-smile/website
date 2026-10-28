@@ -46,6 +46,50 @@
     "doctor": "Dr. Gretell Alonso Fiel, DMD"
   },
   {
+    "id": "story-30",
+    "video": "/videos/stories/story-30.mp4",
+    "poster": "story-30-poster.jpg",
+    "quote": "",
+    "name": "Travis",
+    "treatment": "Diseño de sonrisa",
+    "duration": "0:18",
+    "doctor": "Dr. Marta Puentes Marrero, DMD",
+    "title": "Travis escogió Xiluet y ve su nueva sonrisa por primera vez."
+  },
+  {
+    "id": "story-31",
+    "video": "/videos/stories/story-31.mp4",
+    "poster": "story-31-poster.jpg",
+    "quote": "",
+    "name": "Dra. Puentes",
+    "treatment": "Diseño de sonrisa",
+    "duration": "0:10",
+    "doctor": "Dr. Marta Puentes Marrero, DMD",
+    "title": "La Dra. Puentes sobre el primer paso hacia tu nueva sonrisa."
+  },
+  {
+    "id": "story-32",
+    "video": "/videos/stories/story-32.mp4",
+    "poster": "story-32-poster.jpg",
+    "quote": "",
+    "name": "Paciente de Xiluet",
+    "treatment": "Diseño de sonrisa",
+    "duration": "0:15",
+    "doctor": "Dr. Marta Puentes Marrero, DMD",
+    "title": "Cambios reales, resultados reales: su diseño de sonrisa, antes y después."
+  },
+  {
+    "id": "story-33",
+    "video": "/videos/stories/story-33.mp4",
+    "poster": "story-33-poster.jpg",
+    "quote": "",
+    "name": "Paciente de Xiluet",
+    "treatment": "Diseño de sonrisa",
+    "duration": "0:06",
+    "doctor": "Dr. Marta Puentes Marrero, DMD",
+    "title": "Un paciente muestra su nueva sonrisa."
+  },
+  {
     "id": "story-3",
     "source": "https://www.instagram.com/p/Dc_Rp7BhZ5r/",
     "video": "/videos/stories/story-3.mp4",

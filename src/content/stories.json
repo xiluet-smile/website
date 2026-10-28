@@ -46,6 +46,50 @@
     "doctor": "Dr. Gretell Alonso Fiel, DMD"
   },
   {
+    "id": "story-30",
+    "video": "/videos/stories/story-30.mp4",
+    "poster": "story-30-poster.jpg",
+    "quote": "",
+    "name": "Travis",
+    "treatment": "Smile design",
+    "duration": "0:18",
+    "doctor": "Dr. Marta Puentes Marrero, DMD",
+    "title": "Travis chose Xiluet and sees his new smile for the first time."
+  },
+  {
+    "id": "story-31",
+    "video": "/videos/stories/story-31.mp4",
+    "poster": "story-31-poster.jpg",
+    "quote": "",
+    "name": "Dr. Puentes",
+    "treatment": "Smile design",
+    "duration": "0:10",
+    "doctor": "Dr. Marta Puentes Marrero, DMD",
+    "title": "Dr. Puentes on the first step toward your new smile."
+  },
+  {
+    "id": "story-32",
+    "video": "/videos/stories/story-32.mp4",
+    "poster": "story-32-poster.jpg",
+    "quote": "",
+    "name": "Xiluet patient",
+    "treatment": "Smile design",
+    "duration": "0:15",
+    "doctor": "Dr. Marta Puentes Marrero, DMD",
+    "title": "Real changes, real results: her smile design, before and after."
+  },
+  {
+    "id": "story-33",
+    "video": "/videos/stories/story-33.mp4",
+    "poster": "story-33-poster.jpg",
+    "quote": "",
+    "name": "Xiluet patient",
+    "treatment": "Smile design",
+    "duration": "0:06",
+    "doctor": "Dr. Marta Puentes Marrero, DMD",
+    "title": "A patient shows off his new smile."
+  },
+  {
     "id": "story-3",
     "source": "https://www.instagram.com/p/Dc_Rp7BhZ5r/",
     "video": "/videos/stories/story-3.mp4",
