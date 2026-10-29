@@ -22,15 +22,13 @@
     "title": "Todavía trabajando en una sonrisa hermosa; el resultado final está por llegar."
   },
   {
-    "id": "story-44",
-    "video": "/videos/stories/story-44.mp4",
-    "poster": "story-44-poster.jpg",
-    "quote": "",
+    "id": "story-48",
+    "video": "/videos/stories/story-48.mp4",
+    "poster": "story-48-poster.jpg",
+    "quote": "Estoy encantada con mi nueva sonrisa. Me está dando mucha confianza.",
     "name": "Paciente de Xiluet",
     "treatment": "Diseño de sonrisa",
-    "duration": "0:15",
-    "doctor": "Dr. Gretell Alonso Fiel, DMD",
-    "title": "De una mordida cruzada a una sonrisa impecable: color, forma y armonía."
+    "duration": "0:20"
   },
   {
     "id": "story-45",
@@ -501,6 +499,17 @@
     "duration": "0:19",
     "doctor": "Dr. Marta Puentes Marrero, DMD",
     "title": "Es más que una sonrisa; es tu confianza, renovada."
+  },
+  {
+    "id": "story-44",
+    "video": "/videos/stories/story-44.mp4",
+    "poster": "story-44-poster.jpg",
+    "quote": "",
+    "name": "Paciente de Xiluet",
+    "treatment": "Diseño de sonrisa",
+    "duration": "0:15",
+    "doctor": "Dr. Gretell Alonso Fiel, DMD",
+    "title": "De una mordida cruzada a una sonrisa impecable: color, forma y armonía."
   },
   {
     "id": "story-28",

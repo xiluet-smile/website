@@ -22,15 +22,13 @@
     "title": "Still working on a beautiful smile; the final result is on its way."
   },
   {
-    "id": "story-44",
-    "video": "/videos/stories/story-44.mp4",
-    "poster": "story-44-poster.jpg",
-    "quote": "",
+    "id": "story-48",
+    "video": "/videos/stories/story-48.mp4",
+    "poster": "story-48-poster.jpg",
+    "quote": "I'm elated with my new smile. It's giving me a lot of confidence.",
     "name": "Xiluet patient",
     "treatment": "Smile design",
-    "duration": "0:15",
-    "doctor": "Dr. Gretell Alonso Fiel, DMD",
-    "title": "From a crossbite to a flawless smile: color, shape and harmony."
+    "duration": "0:20"
   },
   {
     "id": "story-45",
@@ -501,6 +499,17 @@
     "duration": "0:19",
     "doctor": "Dr. Marta Puentes Marrero, DMD",
     "title": "It's more than a smile; it's your confidence, renewed."
+  },
+  {
+    "id": "story-44",
+    "video": "/videos/stories/story-44.mp4",
+    "poster": "story-44-poster.jpg",
+    "quote": "",
+    "name": "Xiluet patient",
+    "treatment": "Smile design",
+    "duration": "0:15",
+    "doctor": "Dr. Gretell Alonso Fiel, DMD",
+    "title": "From a crossbite to a flawless smile: color, shape and harmony."
   },
   {
     "id": "story-28",
