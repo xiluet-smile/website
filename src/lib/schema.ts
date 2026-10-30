@@ -35,12 +35,15 @@ const dateTime = (iso: string) => {
   return `${iso}T09:00:00${offset}`;
 };
 
-export function dentist(): Node {
+export function dentist(locale: Locale = "en"): Node {
+  const { doctors } = getContent(locale);
   return {
     "@type": "Dentist",
     "@id": DENTIST_ID,
     name: site.name,
+    alternateName: ["Xiluet Smile Design"],
     url: site.url,
+    email: site.email,
     logo: `${site.url}/og/xiluet-logo.png`,
     image: site.url + ogImagePath(site.defaultOgImage),
     telephone: site.phone.schema,
@@ -55,9 +58,18 @@ export function dentist(): Node {
         closes: site.hours.closes,
       },
     ],
-    sameAs: [site.social.instagram, site.social.facebook, site.social.tiktok, site.social.youtube],
+    sameAs: [site.social.instagram, site.social.facebook, site.social.tiktok, site.social.youtube, site.maps.place],
+    hasMap: site.maps.place,
     areaServed: site.areaServed,
     knowsLanguage: site.languages.codes,
+    availableLanguage: site.languages.codes,
+    currenciesAccepted: "USD",
+    paymentAccepted: "Cash, Credit Card, Financing",
+    medicalSpecialty: "https://schema.org/Dentistry",
+    // The treating dentists only (DMD); the manager is not marked up as a Dentist.
+    employee: doctors
+      .filter((d) => d.credential === "DMD")
+      .map((d) => ({ "@type": "Person", "@id": `${absL(d.href as PagePath, locale)}#person`, name: d.name, jobTitle: d.jobTitle, url: absL(d.href as PagePath, locale) })),
   };
 }
 
@@ -145,11 +157,14 @@ export function procedureOffer(path: PagePath, p: { name: string; priceUsd?: num
   ];
 }
 
-export function physician(path: PagePath, d: { name: string; image: string; jobTitle?: string }, locale: Locale = "en"): Node {
+export function physician(path: PagePath, d: { name: string; image: string; jobTitle?: string; credential?: string; role?: string }, locale: Locale = "en"): Node {
+  const dmd = d.credential === "DMD";
   return {
     "@type": "Person",
     "@id": `${absL(path, locale)}#person`,
     name: d.name,
+    ...(dmd ? { honorificSuffix: "DMD", additionalType: "https://schema.org/Dentist" } : {}),
+    ...(d.role ? { knowsAbout: d.role } : {}),
     jobTitle: d.jobTitle ?? "Dentist",
     image: site.url + ogImagePath(d.image),
     worksFor: dentistRef(),
@@ -222,6 +237,6 @@ export function article(
 export function pageGraph(path: PagePath, locale: Locale, ...extra: Node[]) {
   return {
     "@context": "https://schema.org",
-    "@graph": [dentist(), webPage(path, locale), webSite(), ...(path === "/" ? [] : [breadcrumb(path, locale)]), ...extra],
+    "@graph": [dentist(locale), webPage(path, locale), webSite(), ...(path === "/" ? [] : [breadcrumb(path, locale)]), ...extra],
   };
 }
