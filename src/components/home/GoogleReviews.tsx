@@ -5,7 +5,7 @@ import { Stars } from "@/components/Icons";
 import { tpl, ui } from "@/lib/ui-i18n";
 import type { Locale } from "@/lib/i18n";
 
-export type Review = { name: string; text: string; rating?: number; when?: string; treatment?: string };
+export type Review = { name: string; text: string; rating?: number; when?: string; treatment?: string; lang?: string };
 type Live = { ok: boolean; rating: number | null; count: number | null; url: string | null; reviewsUrl?: string; writeReviewUrl: string; reviews: Review[] };
 
 type Props = {
@@ -40,7 +40,8 @@ export default function GoogleReviews({ initial, reviewsUrl, writeReviewUrl, sou
   const rating = live?.rating != null ? live.rating.toFixed(1) : initial.rating;
   const count = live?.count ?? initial.count;
   // Google returns no review bodies for some listings; the stored reviews stay in that case.
-  const reviews = (live?.reviews.length ? live.reviews : initial.reviews).slice(0, 4);
+  const stored = initial.reviews.filter((r) => !r.lang || r.lang === locale);
+  const reviews = (live?.reviews.length ? live.reviews : stored).slice(0, 4);
   const allUrl = live?.reviewsUrl ?? reviewsUrl;
   const writeUrl = live?.writeReviewUrl ?? writeReviewUrl;
 
@@ -68,6 +69,8 @@ export default function GoogleReviews({ initial, reviewsUrl, writeReviewUrl, sou
           </a>
         </div>
       </div>
+      {/* No quotes until verified reviews exist (reviews.json) or the live feed returns bodies. */}
+      {reviews.length > 0 && (
       <div className="-mx-5 flex gap-3 overflow-x-auto px-5 pb-1 lg:mx-0 lg:grid lg:grid-cols-4 lg:gap-6 lg:overflow-visible lg:px-0 lg:pb-0" aria-live="polite">
         {reviews.map((r, i) => (
           <article key={`${r.name}-${i}`} className="glass-card flex w-[280px] flex-none flex-col gap-3 rounded-2xl p-[22px] lg:min-h-[240px] lg:w-auto lg:gap-3.5 lg:p-7">
@@ -83,6 +86,7 @@ export default function GoogleReviews({ initial, reviewsUrl, writeReviewUrl, sou
           </article>
         ))}
       </div>
+      )}
     </>
   );
 }
