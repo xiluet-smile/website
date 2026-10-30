@@ -35,7 +35,7 @@ export default function CustomLabPage({ locale = "en" }: { locale?: Locale }) {
 
       <section className="wrap pt-16 lg:pt-28">
         <LabPanel panel={lab.panel} focus={lab.focus} />
-        <LabFacts facts={lab.facts} />
+        <LabFacts facts={lab.facts} links={lab.links} locale={locale} />
       </section>
 
       <LabProcess process={lab.process} />

@@ -98,5 +98,15 @@
     "cta": "Meet Edgar",
     "href": "/doctors/dr-edgar-castanos",
     "image": "edgar-castanos.jpg"
-  }
+  },
+  "links": [
+    {
+      "label": "Zirconia veneers: grades, strength and thickness →",
+      "href": "/zirconia-veneers"
+    },
+    {
+      "label": "Porcelain veneers at Xiluet →",
+      "href": "/porcelain-veneers-miami"
+    }
+  ]
 }

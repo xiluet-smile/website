@@ -1,0 +1,296 @@
+{
+  "path": "/zirconia-veneers",
+  "packageId": "signature-veneers",
+  "breadcrumb": "Carillas de zirconia",
+  "schema": {
+    "name": "Carillas de zirconia",
+    "procedureType": "http://schema.org/NoninvasiveProcedure"
+  },
+  "hero": {
+    "definition": "Las carillas de zirconia son láminas delgadas de cerámica de dióxido de zirconio, fresadas a partir de discos multicapa y cementadas al frente de los dientes tras unos 0.3 mm de preparación. La zirconia es de dos a tres veces más resistente que el disilicato de litio (e.max), no se mancha ni cambia de tono, y su borde puede terminar a la altura de la encía. En Xiluet Smiles en Miami cada carilla es de zirconia, terminada a mano en el laboratorio propio; 20 carillas cuestan $5,999 con garantía de 5 años por escrito.",
+    "lead": "El material detrás de cada carilla Xiluet: zirconia multicapa, fresada a partir del disco y terminada a mano un piso arriba de tu doctor. De dos a tres veces la resistencia de e.max en 0.3 mm. Garantía de 5 años, por escrito.",
+    "secondaryCta": "Mira cómo se hace",
+    "stats": [
+      {
+        "kind": "text",
+        "value": "1,000+",
+        "label": "MPa de resistencia a la flexión"
+      },
+      {
+        "kind": "text",
+        "value": "0.3 mm",
+        "label": "de grosor de la carilla"
+      },
+      {
+        "kind": "price",
+        "label": "20 carillas de zirconia"
+      },
+      {
+        "kind": "rating",
+        "label": "Reseñas de Google"
+      }
+    ],
+    "image": {
+      "src": "gen-zirconia-veneers-arch.jpg",
+      "alt": "Una arcada completa de carillas de zirconia multicapa terminadas a mano en el laboratorio propio, una sostenida con pinzas para mostrar lo fina que es",
+      "caption": "Carillas de zirconia multicapa del laboratorio Xiluet · fresadas y luego terminadas a mano"
+    }
+  },
+  "candidates": {
+    "title": "Dónde la zirconia es el material indicado",
+    "intro": "La zirconia empezó en coronas y puentes por su resistencia. Los discos multicapa la hicieron lo bastante translúcida para los dientes frontales. Estos son los casos donde esa resistencia importa.",
+    "items": [
+      {
+        "t": "Juegos completos de carillas",
+        "d": "Veinte dientes cortados de los mismos discos combinan entre sí en tono y translucidez, y la mordida se ajusta en todos a la vez."
+      },
+      {
+        "t": "Quienes rechinan o aprietan los dientes",
+        "d": "Los bordes que se astillarían en cerámica vítrea aguantan en zirconia, con una guarda nocturna encima."
+      },
+      {
+        "t": "Dientes oscuros o descoloridos",
+        "d": "La zirconia cubre un diente gris con 0.3 mm. e.max tiene que ser más gruesa y más opaca para lograr lo mismo."
+      },
+      {
+        "t": "Dientes que además necesitan corona",
+        "d": "Un diente con endodoncia junto a las carillas lleva una corona de zirconia con paredes de 0.5 mm, del mismo tono de disco, para que combine."
+      },
+      {
+        "t": "Bordes a la altura de la encía",
+        "d": "La zirconia no se decolora, así que el margen puede quedar donde se ve, se limpia y se mantiene sellado, en vez de debajo de la encía."
+      }
+    ]
+  },
+  "crossLink": {
+    "label": "¿Comparando todos los materiales de carillas? Mira la página de carillas de porcelana →",
+    "href": "/porcelain-veneers-miami"
+  },
+  "why": {
+    "eyebrow": "El laboratorio propio",
+    "title": "Fresadas arriba. Terminadas a mano. Revisadas en ti.",
+    "body": "La mayoría de las clínicas envía un escaneo a un laboratorio en otra ciudad y espera. Nuestro laboratorio está un piso arriba de los consultorios, dirigido por Edgar Castaños, así que tu doctor y tu ceramista trabajan con el mismo diseño, el mismo tono y el mismo escaneo, contigo en el sillón.",
+    "image": {
+      "src": "material-hand-finishing.jpg",
+      "alt": "Las manos enguantadas de un ceramista afinando el borde de una corona de zirconia con una fresa de pulido fina bajo una lupa de banco"
+    },
+    "facts": [
+      {
+        "icon": "mill",
+        "label": "Fresado",
+        "big": "Un disco",
+        "sub": "Cada carilla se corta de un disco multicapa, posicionada para que el degradado de cálido a translúcido caiga donde cae en un diente natural."
+      },
+      {
+        "icon": "loupe",
+        "label": "Terminado",
+        "big": "A mano",
+        "sub": "Ajustada bajo magnificación hasta que asienta sin presión, margen pulido hasta formar un sellado cerrado, textura y efectos de esmalte añadidos a mano."
+      },
+      {
+        "icon": "shade",
+        "label": "Tono",
+        "big": "En el sillón",
+        "sub": "Doctor y ceramista igualan el tono en ti y lo corrigen en el momento, no por correo con un laboratorio en otra ciudad."
+      },
+      {
+        "icon": "shield",
+        "label": "Garantía",
+        "big": "5 años",
+        "sub": "Por escrito, en cada carilla y corona que sale del laboratorio."
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "what-is-zirconia",
+      "eyebrow": "El material",
+      "title": "Qué es la zirconia",
+      "body": [
+        "La zirconia es dióxido de zirconio, una cerámica cristalina blanca. No es un metal ni contiene ninguno, y por eso no se corroe, no muestra una línea oscura en la encía y no provoca sensibilidad a los metales. La odontología la adoptó para coronas y puentes hace dos décadas porque fue la primera cerámica lo bastante resistente para reemplazar las estructuras de metal. Durante la mayor parte de ese tiempo fue demasiado opaca para un diente frontal.",
+        "Eso cambió con los discos multicapa. Un disco moderno se prensa en cinco capas de tono, más cálido y opaco en la base, más claro y translúcido en la parte superior, de modo que el degradado de un diente natural ya está dentro del material antes de cortar nada. Cada carilla, corona y puente que hacemos es zirconia fresada a partir de discos de fabricación alemana en nuestro [laboratorio propio](/custom-lab)."
+      ]
+    },
+    {
+      "id": "translucency",
+      "eyebrow": "Grados",
+      "title": "Grados de translucidez, y por qué importa el multicapa",
+      "body": [
+        "La zirconia viene en grados que se nombran por la cantidad de itria que estabiliza el cristal. Cuanto menor es el número, más resistente y más opaca es la cerámica; cuanto mayor, más translúcida y menos resistente. Una corona de muela quiere resistencia; una carilla frontal quiere que la luz la atraviese como atraviesa el esmalte. Los discos multicapa resuelven ese intercambio dentro de una sola pieza: el grado resistente, cálido y opaco en la base, donde un diente es más grueso cerca de la encía, y el grado translúcido arriba, donde el borde de mordida debe dejar pasar la luz. El ceramista posiciona cada carilla en el disco para que ese degradado caiga en el lugar correcto."
+      ],
+      "bullets": [
+        {
+          "t": "3Y",
+          "d": "El grado más resistente, entre 1,000 y 1,200 MPa aproximadamente. Opaco. El material para muelas, puentes y la base de un disco multicapa."
+        },
+        {
+          "t": "4Y",
+          "d": "Un grado intermedio: más translúcido que el 3Y con casi toda su resistencia. Se usa donde una corona tiene que verse natural y aun así aguantar una mordida fuerte."
+        },
+        {
+          "t": "5Y",
+          "d": "El grado más translúcido, más parecido en aspecto a la cerámica vítrea, con menor resistencia. La capa superior de un disco, donde el borde de una carilla atrapa la luz."
+        },
+        {
+          "t": "Multicapa",
+          "d": "Cinco capas, de la base opaca al borde translúcido, en un solo disco. El degradado está en el propio material, no pintado después."
+        }
+      ]
+    },
+    {
+      "id": "strength",
+      "eyebrow": "Resistencia",
+      "title": "Zirconia vs disilicato de litio (e.max)",
+      "body": [
+        "La resistencia de las cerámicas se mide como resistencia a la flexión, en megapascales. La cifra del fabricante para IPS e.max es de unos 470 MPa. La zirconia 3Y estándar está entre 1,000 y 1,200 MPa aproximadamente, de dos a tres veces más. Esa diferencia es la razón por la que la zirconia es la opción por defecto para muelas, puentes y pacientes que rechinan, y por la que e.max suele limitarse a dientes frontales individuales.",
+        "La resistencia también decide cuánto de tu diente se conserva. Una corona de e.max necesita paredes de 1.0 mm; una corona de zirconia puede hacerse con paredes de 0.5 mm, medio milímetro de tu propio diente conservado en todo el contorno. Para carillas ambas pueden hacerse a 0.3 mm, aunque la mayoría de los laboratorios pide de 0.5 a 0.7 mm de e.max por seguridad; las nuestras son de 0.3 mm como estándar, y a ese grosor la zirconia tiene resistencia de sobra, que es lo que permite que la preparación se quede dentro del esmalte en todos los dientes. En un diente oscuro el ceramista usa un poco más de la base opaca del disco para que el gris no se transparente; eso lo ves en la vista previa en la Visita 1. El [artículo zirconia vs e.max](/blog/zirconia-veneers-vs-emax-veneers) repasa las cifras diente por diente."
+      ],
+      "links": [
+        {
+          "label": "Zirconia vs e.max, en detalle",
+          "href": "/blog/zirconia-veneers-vs-emax-veneers"
+        },
+        {
+          "label": "Zirconia vs composite",
+          "href": "/blog/zirconia-veneers-vs-composite-veneers"
+        }
+      ]
+    },
+    {
+      "id": "finishing",
+      "eyebrow": "El laboratorio",
+      "title": "Cómo se termina aquí una carilla de zirconia",
+      "body": [
+        "El fresado es el principio, no el final. Recién salida de la máquina, una pieza de zirconia rara vez ajusta, y no tiene nada de la superficie que tiene un diente natural. En nuestro laboratorio cada carilla se asienta en el modelo y se ajusta bajo magnificación con fresas finas hasta que queda sin presión. El margen se pule hasta formar un sellado cerrado a la altura de la encía para que las bacterias no puedan meterse debajo. Luego el ceramista construye la superficie a mano: la textura vertical tenue del esmalte, la translucidez del borde, las pequeñas irregularidades que evitan que un juego se vea uniforme.",
+        "El tono se iguala en persona. En la Visita 3 el ceramista baja al sillón, sostiene las carillas contra tus dientes con luz natural y corrige cualquier cosa que no cuadre antes de cementar. Si una carilla necesita un cambio el día de la entrega, sube al laboratorio y vuelve esa misma tarde. Eso es lo que hace posible la [semana de lunes a jueves](/out-of-state-patients)."
+      ],
+      "links": [
+        {
+          "label": "Dentro del laboratorio propio",
+          "href": "/custom-lab"
+        },
+        {
+          "label": "Edgar Castaños, director de laboratorio",
+          "href": "/doctors/dr-edgar-castanos"
+        }
+      ]
+    },
+    {
+      "id": "when-emax",
+      "eyebrow": "La excepción honesta",
+      "title": "Cuándo e.max es la opción más adecuada",
+      "body": [
+        "Estaríamos haciendo lo que criticamos si fingiéramos que la zirconia gana en todos los casos. e.max es un buen material para una sola carilla en un diente frontal con una mordida sana, sobre todo cuando el diente de debajo ya es claro y el objetivo es un cambio pequeño de forma. Su estructura vítrea le da una profundidad de translucidez difícil de igualar en un diente junto a vecinos naturales.",
+        "Donde deja de ser la opción honesta es bajo carga: puentes largos, muelas, quienes rechinan, dientes oscuros que hay que cubrir y juegos completos donde todos los dientes tienen que combinar y la mordida se está reconstruyendo. Ahí la resistencia y las ventajas del margen de la zirconia valen más que una pizca más de translucidez. Eso es la mayor parte de nuestro trabajo, y por eso nuestro laboratorio está preparado para la zirconia. Si tu caso es el de un solo diente frontal claro, te lo diremos en tu plan por escrito."
+      ]
+    }
+  ],
+  "material": {
+    "intro": "Para carillas, la zirconia se fresa lo bastante fina para asentar sobre una preparación de 0.3 mm y se posiciona en el disco para que la capa translúcida caiga en el borde de mordida, que es lo que permite que una carilla tan fina dure."
+  },
+  "week": {
+    "title": "Del disco a la entrega en una semana",
+    "intro": "Como el laboratorio está en el edificio, el diseño, el fresado, el terminado y la entrega ocurren en tres visitas en la misma semana.",
+    "linkLabel": "¿Vienes en avión? Mira la semana para pacientes de otros estados →",
+    "visits": [
+      {
+        "k": "Desde casa",
+        "t": "Fotos, presupuesto, fechas",
+        "d": "Envía fotos, recibe tu presupuesto por escrito en menos de 6 horas, elige un plan de pago y reserva con un depósito de $250.",
+        "time": "Cualquier día, unos 2 minutos de tu tiempo"
+      },
+      {
+        "k": "Visita 1 · Lunes",
+        "t": "Escaneo y diseño",
+        "d": "Los escaneos 3D y las fotos faciales reemplazan las impresiones. Ves el diseño en tu propia boca y lo apruebas antes de tocar ningún diente.",
+        "time": "Unas 2 horas. El resto del día libre."
+      },
+      {
+        "k": "Visita 2 · Martes",
+        "t": "Preparación, y el laboratorio fresa",
+        "d": "Unos 0.3 mm de preparación y provisionales con la forma aprobada. Arriba, las carillas se fresan a partir del disco, se sinterizan y se terminan a mano el miércoles.",
+        "time": "Unas 3 horas"
+      },
+      {
+        "k": "Visita 3 · Jueves",
+        "t": "Tono revisado en ti, y luego cementadas",
+        "d": "Doctor y ceramista igualan el tono contigo en el sillón, corrigen lo que haga falta en el momento, cementan las carillas y te entregan la garantía de 5 años por escrito.",
+        "time": "Unas 2 horas. Vuelas a casa esa misma tarde."
+      }
+    ]
+  },
+  "results": {
+    "title": "Resultados de carillas de zirconia",
+    "linkLabel": "Todos los casos →",
+    "label": "Carillas de zirconia",
+    "caseTypes": [
+      "Veneers"
+    ]
+  },
+  "price": {
+    "eyebrow": "Costo",
+    "title": "Aquí la zirconia cuesta lo mismo que la porcelana, porque es nuestra porcelana",
+    "body": "Cada carilla que hacemos es de zirconia, así que no hay recargo por el material. Una carilla cuesta {veneerPrice} por unidad y veinte cuestan {price} como paquete Diseño de sonrisa, que incluye la vista previa del diseño, la limpieza y las radiografías, la entrega en la misma semana y la garantía de {warrantyYears} años por escrito. El número de tu presupuesto es el número que pagas, salvo que el examen encuentre algo que haya que tratar primero, y eso también te lo decimos por escrito.",
+    "lendersLabel": "Paga a plazos con",
+    "compareLabel": "Mira la lista de precios completa →",
+    "card": {
+      "title": "Diseño de sonrisa",
+      "sub": "20 carillas de zirconia · o {veneerPrice} por carilla por unidad",
+      "badge": "El más elegido",
+      "pricePrefix": "20 carillas",
+      "priceSuffix": null,
+      "included": [
+        "20 carillas de zirconia multicapa, preparación de 0.3 mm",
+        "Limpieza profesional y radiografías",
+        "Vista previa del diseño que apruebas primero",
+        "Fresadas y terminadas en nuestro laboratorio propio",
+        "Garantía de 5 años por escrito"
+      ],
+      "cta": "Quiero mi presupuesto por escrito"
+    },
+    "footnote": "Precio final confirmado por escrito después de la evaluación de un doctor. Solo carillas; la limpieza profunda, las coronas y otros procedimientos se cotizan aparte según la lista de precios."
+  },
+  "faq": {
+    "title": "Preguntas sobre zirconia, respondidas por los doctores y el laboratorio",
+    "linkLabel": "Todas las respuestas →",
+    "items": [
+      {
+        "q": "¿Las carillas de zirconia son de porcelana?",
+        "a": "Sí. Porcelana es la palabra de uso común para la cerámica dental, y la zirconia es una de las dos familias de cerámica que se usan para carillas; la otra es el disilicato de litio, que se vende como e.max. La zirconia es la más resistente de las dos y es de lo que está hecha cada carilla Xiluet.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "¿Las carillas de zirconia se ven falsas o demasiado blancas?",
+        "a": "No cuando se cortan de un disco multicapa y se terminan a mano. El degradado de tono está dentro del material, el ceramista añade textura y un borde translúcido, y tú apruebas el tono con nosotros en el sillón antes de cementar. Los juegos planos y opacos salen de bloques de un solo tono y de un laboratorio que nunca vio al paciente.",
+        "doc": "Dr. Gretell Alonso Fiel, DMD"
+      },
+      {
+        "q": "¿Qué tan resistente es la zirconia comparada con e.max?",
+        "a": "Entre dos y tres veces más resistente a la flexión: entre 1,000 y 1,200 MPa aproximadamente frente a los 470 MPa del fabricante para e.max. Por eso la zirconia aguanta a quienes rechinan, las muelas y los puentes, y por eso puede hacerse más fina para el mismo trabajo.",
+        "doc": "Dr. Marta Puentes Marrero, DMD"
+      },
+      {
+        "q": "¿Las carillas de zirconia pueden hacerse de 0.3 mm?",
+        "a": "Sí, y ese es nuestro estándar. En dientes pequeños o inclinados hacia adentro, la carilla se añade sin ninguna preparación. En un diente oscuro el ceramista puede usar un poco más de la base opaca del disco para que el gris no se transparente; eso lo ves en la vista previa en la Visita 1.",
+        "doc": "Dr. Gretell Alonso Fiel, DMD"
+      },
+      {
+        "q": "¿Las carillas de zirconia se manchan?",
+        "a": "No. La zirconia no absorbe manchas ni cambia de tono, así que el café, el té y el vino no son problema. La única parte que puede coger tinción con los años es la línea fina de cemento en el borde, y por eso el margen se pule hasta formar un sellado cerrado y se revisa en tus limpiezas.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "¿Qué le hace Edgar a cada carilla después del fresado?",
+        "a": "La asienta en el modelo y la ajusta bajo magnificación hasta que encaja sin presión, pule el margen hasta dejar un borde sellado y luego construye a mano la textura de la superficie y los efectos del esmalte. Él mismo termina cada caso de dientes frontales y baja las carillas al sillón para la revisión del tono.",
+        "doc": "Dr. Marta Puentes Marrero, DMD"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Empieza con fotos.",
+    "body": "Gratis, sin necesidad de visita. Presupuesto por escrito incluido.",
+    "cardTitle": "Evaluación gratuita por fotos",
+    "cardBody": "Dos fotos de tu sonrisa, desde tu celular. Toma 2 minutos.",
+    "button": "Empezar mi evaluación"
+  }
+}

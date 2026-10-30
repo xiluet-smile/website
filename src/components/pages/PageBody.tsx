@@ -27,6 +27,8 @@ const TREATMENTS: Partial<Record<PagePath, TreatmentKey>> = {
   "/full-mouth-reconstruction-miami": "full-mouth-reconstruction",
   "/all-on-x-dental-implants-miami": "all-on-x",
   "/smile-makeover-miami": "complete-restoration",
+  "/porcelain-veneers-miami": "porcelain-veneers",
+  "/zirconia-veneers": "zirconia-veneers",
 };
 
 export default function PageBody({ path, locale }: { path: PagePath; locale: Locale }) {

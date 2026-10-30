@@ -1,0 +1,296 @@
+{
+  "path": "/zirconia-veneers",
+  "packageId": "signature-veneers",
+  "breadcrumb": "Zirconia Veneers",
+  "schema": {
+    "name": "Zirconia veneers",
+    "procedureType": "http://schema.org/NoninvasiveProcedure"
+  },
+  "hero": {
+    "definition": "Zirconia veneers are thin shells of zirconium dioxide ceramic, milled from multilayer discs and bonded to the front of the teeth after about 0.3 mm of preparation. Zirconia is two to three times stronger than lithium disilicate (e.max), does not stain or change shade, and its edge can finish at the gum line. At Xiluet Smiles in Miami every veneer is zirconia, finished by hand in the in-house lab; 20 veneers cost $5,999 with a 5-year written warranty.",
+    "lead": "The material behind every Xiluet veneer: multilayer zirconia, milled from the disc and finished by hand one floor above your doctor. Two to three times the strength of e.max at 0.3 mm. 5-year warranty, in writing.",
+    "secondaryCta": "See how it is made",
+    "stats": [
+      {
+        "kind": "text",
+        "value": "1,000+",
+        "label": "MPa flexural strength"
+      },
+      {
+        "kind": "text",
+        "value": "0.3 mm",
+        "label": "veneer thickness"
+      },
+      {
+        "kind": "price",
+        "label": "20 zirconia veneers"
+      },
+      {
+        "kind": "rating",
+        "label": "Google reviews"
+      }
+    ],
+    "image": {
+      "src": "gen-zirconia-veneers-arch.jpg",
+      "alt": "A full arch of hand-finished multilayer zirconia veneers from the in-house lab, one held in tweezers to show how thin it is",
+      "caption": "Multilayer zirconia veneers from the Xiluet lab · milled, then finished by hand"
+    }
+  },
+  "candidates": {
+    "title": "Where zirconia is the right material",
+    "intro": "Zirconia started in crowns and bridges because of its strength. Multilayer discs made it translucent enough for front teeth. These are the cases where that strength matters.",
+    "items": [
+      {
+        "t": "Full sets of veneers",
+        "d": "Twenty teeth cut from the same discs match each other in shade and translucency, and the bite is set across all of them."
+      },
+      {
+        "t": "Grinders and clenchers",
+        "d": "Edges that would chip in glass ceramic hold in zirconia, with a night guard on top."
+      },
+      {
+        "t": "Dark or discolored teeth",
+        "d": "Zirconia masks a grey tooth at 0.3 mm. e.max has to be thicker and more opaque to do the same."
+      },
+      {
+        "t": "Teeth that also need a crown",
+        "d": "A root-canal tooth next to veneers gets a zirconia crown with 0.5 mm walls, from the same disc shade, so it matches."
+      },
+      {
+        "t": "Edges at the gum line",
+        "d": "Zirconia does not discolor, so the margin can sit where it is seen, cleaned and kept sealed, instead of under the gum."
+      }
+    ]
+  },
+  "crossLink": {
+    "label": "Comparing every veneer material? See the porcelain veneers page →",
+    "href": "/porcelain-veneers-miami"
+  },
+  "why": {
+    "eyebrow": "The in-house lab",
+    "title": "Milled upstairs. Finished by hand. Checked on you.",
+    "body": "Most clinics send a scan to a lab in another city and wait. Our lab is one floor above the treatment rooms, run by Edgar Castaños, so your doctor and your ceramist work from the same design, the same shade and the same scan, with you in the chair.",
+    "image": {
+      "src": "material-hand-finishing.jpg",
+      "alt": "A ceramist's gloved hands refining the edge of a zirconia crown with a fine polishing bur under a bench magnifier"
+    },
+    "facts": [
+      {
+        "icon": "mill",
+        "label": "Milled",
+        "big": "One disc",
+        "sub": "Each veneer is cut from a multilayer disc, positioned so the warm-to-translucent gradient falls where it does in a natural tooth."
+      },
+      {
+        "icon": "loupe",
+        "label": "Finished",
+        "big": "By hand",
+        "sub": "Fitted under magnification until it seats without pressure, margin polished into a closed seal, texture and enamel effects added by hand."
+      },
+      {
+        "icon": "shade",
+        "label": "Shade",
+        "big": "In the chair",
+        "sub": "Doctor and ceramist match the shade on you and correct it on the spot, not by email with a lab in another city."
+      },
+      {
+        "icon": "shield",
+        "label": "Warranty",
+        "big": "5 years",
+        "sub": "In writing, on every veneer and crown that leaves the lab."
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "what-is-zirconia",
+      "eyebrow": "The material",
+      "title": "What zirconia is",
+      "body": [
+        "Zirconia is zirconium dioxide, a white crystalline ceramic. It is not a metal and contains none, which is why it does not corrode, does not show a dark line at the gum and does not trigger metal sensitivities. Dentistry adopted it for crowns and bridges two decades ago because it was the first ceramic strong enough to replace metal frameworks. For most of that time it was too opaque for a front tooth.",
+        "That changed with multilayer discs. A modern disc is pressed in five layers of shade, warmer and more opaque at the base, lighter and more translucent toward the edge, so the gradient of a natural tooth is already inside the material before anything is cut. Every veneer, crown and bridge we make is zirconia milled from German-made discs in our [own lab](/custom-lab)."
+      ]
+    },
+    {
+      "id": "translucency",
+      "eyebrow": "Grades",
+      "title": "Translucency grades, and why multilayer matters",
+      "body": [
+        "Zirconia comes in grades named for the amount of yttria that stabilises the crystal. The lower the number, the stronger and more opaque the ceramic; the higher, the more translucent and the less strong. A molar crown wants strength; a front veneer wants light to pass through it the way it passes through enamel. Multilayer discs resolve the trade inside one piece: the strong, warm, opaque grade at the base where a tooth is thickest near the gum, the translucent grade toward the biting edge, where light should pass through. The ceramist positions each veneer in the disc so that gradient falls in the right place."
+      ],
+      "bullets": [
+        {
+          "t": "3Y",
+          "d": "The strongest grade, roughly 1,000 to 1,200 MPa. Opaque. The material for molars, bridges and the base of a multilayer disc."
+        },
+        {
+          "t": "4Y",
+          "d": "A middle grade: more translucent than 3Y with most of its strength. Used where a crown has to look natural and still take a heavy bite."
+        },
+        {
+          "t": "5Y",
+          "d": "The most translucent grade, closer in look to glass ceramic, with lower strength. The outer layer of a disc, where the edge of a veneer catches the light."
+        },
+        {
+          "t": "Multilayer",
+          "d": "Five layers from opaque base to translucent edge in one disc. The gradient is in the material itself, not painted on afterwards."
+        }
+      ]
+    },
+    {
+      "id": "strength",
+      "eyebrow": "Strength",
+      "title": "Zirconia vs lithium disilicate (e.max)",
+      "body": [
+        "Strength in ceramics is measured as flexural strength, in megapascals. The manufacturer's figure for IPS e.max is about 470 MPa. Standard 3Y zirconia is rated at roughly 1,000 to 1,200 MPa, two to three times higher. That gap is why zirconia is the default for molars, bridges and patients who grind, and why e.max is usually limited to single front teeth.",
+        "Strength also decides how much of your tooth is kept. An e.max crown needs 1.0 mm walls; a zirconia crown can be made with 0.5 mm walls, half a millimetre of your own tooth kept all the way round. For veneers both can be made at 0.3 mm, though most labs ask for 0.5 to 0.7 mm of e.max to be safe; ours are 0.3 mm as standard, and at that thickness zirconia has strength to spare, which is what lets the preparation stay inside the enamel on every tooth. On a dark tooth the ceramist uses a little more of the opaque base of the disc so the grey does not show through; you see that on the preview at Visit 1. The [zirconia vs e.max article](/blog/zirconia-veneers-vs-emax-veneers) goes through the numbers tooth by tooth."
+      ],
+      "links": [
+        {
+          "label": "Zirconia vs e.max, in detail",
+          "href": "/blog/zirconia-veneers-vs-emax-veneers"
+        },
+        {
+          "label": "Zirconia vs composite",
+          "href": "/blog/zirconia-veneers-vs-composite-veneers"
+        }
+      ]
+    },
+    {
+      "id": "finishing",
+      "eyebrow": "The lab",
+      "title": "How a zirconia veneer is finished here",
+      "body": [
+        "Milling is the start, not the end. Straight off the machine a zirconia piece rarely fits, and it has none of the surface a natural tooth has. In our lab each veneer is seated on the model and adjusted under magnification with fine burs until it sits without pressure. The margin is polished into a closed seal at the gum line so bacteria cannot get under it. Then the ceramist builds the surface by hand: the faint vertical texture of enamel, the translucency at the edge, the small irregularities that stop a set from reading as uniform.",
+        "The shade is matched in person. At Visit 3 the ceramist comes down to the chair, holds the veneers against your teeth in daylight, and corrects anything that is off before bonding. If a veneer needs a change on delivery day, it goes upstairs and comes back the same afternoon. That is what makes the [Monday-to-Thursday week](/out-of-state-patients) possible."
+      ],
+      "links": [
+        {
+          "label": "Inside the in-house lab",
+          "href": "/custom-lab"
+        },
+        {
+          "label": "Edgar Castaños, lab manager",
+          "href": "/doctors/dr-edgar-castanos"
+        }
+      ]
+    },
+    {
+      "id": "when-emax",
+      "eyebrow": "The honest exception",
+      "title": "When e.max is the better pick",
+      "body": [
+        "We would be doing what we criticise if we pretended zirconia wins every case. e.max is a fine material for a single veneer on a front tooth with a healthy bite, especially when the tooth underneath is already bright and the goal is a small change of shape. Its glass structure gives a depth of translucency that is hard to beat on one tooth next to natural neighbours.",
+        "Where it stops being the honest choice is under load: long bridges, molars, grinders, dark teeth that need masking, and full sets where every tooth has to match and the bite is being rebuilt. There the strength and the margin advantages of zirconia are worth more than a fraction more translucency. That is most of our work, which is why our lab is set up for zirconia. If your case is the single bright front tooth, we will say so in your written plan."
+      ]
+    }
+  ],
+  "material": {
+    "intro": "For veneers the zirconia is milled thin enough to sit on a 0.3 mm preparation and positioned in the disc so the translucent layer falls at the biting edge, which is how a veneer this thin still lasts."
+  },
+  "week": {
+    "title": "From disc to delivery in one week",
+    "intro": "Because the lab is in the building, design, milling, finishing and delivery happen across three visits in the same week.",
+    "linkLabel": "Flying in? See the out-of-state week →",
+    "visits": [
+      {
+        "k": "From home",
+        "t": "Photos, estimate, dates",
+        "d": "Send photos, get your written estimate within 6 hours, pick a payment plan and reserve with a $250 deposit.",
+        "time": "Any day, about 2 minutes of your time"
+      },
+      {
+        "k": "Visit 1 · Monday",
+        "t": "Scan and design",
+        "d": "3D scans and facial photos replace impressions. You see the design in your own mouth and approve it before any tooth is touched.",
+        "time": "About 2 hours. Rest of the day free."
+      },
+      {
+        "k": "Visit 2 · Tuesday",
+        "t": "Preparation, then the lab mills",
+        "d": "About 0.3 mm of preparation and temporaries in the approved shape. Upstairs, the veneers are milled from the disc, sintered and finished by hand on Wednesday.",
+        "time": "About 3 hours"
+      },
+      {
+        "k": "Visit 3 · Thursday",
+        "t": "Shade checked on you, then bonded",
+        "d": "Doctor and ceramist match the shade with you in the chair, correct anything on the spot, bond the veneers and hand over the 5-year warranty in writing.",
+        "time": "About 2 hours. Fly home the same evening."
+      }
+    ]
+  },
+  "results": {
+    "title": "Zirconia veneer results",
+    "linkLabel": "All cases →",
+    "label": "Zirconia veneers",
+    "caseTypes": [
+      "Veneers"
+    ]
+  },
+  "price": {
+    "eyebrow": "Cost",
+    "title": "Zirconia costs the same as porcelain here, because it is our porcelain",
+    "body": "Every veneer we make is zirconia, so there is no upcharge for the material. One veneer is {veneerPrice} à la carte and twenty are {price} as the Smile Design package, which includes the design preview, cleaning and X-rays, delivery in the same week and the {warrantyYears}-year written warranty. The number in your estimate is the number you pay unless the exam finds something to treat first, and we tell you that in writing too.",
+    "lendersLabel": "Pay over time with",
+    "compareLabel": "See the full price list →",
+    "card": {
+      "title": "Smile Design",
+      "sub": "20 zirconia veneers · or {veneerPrice} per veneer à la carte",
+      "badge": "Most chosen",
+      "pricePrefix": "20 veneers",
+      "priceSuffix": null,
+      "included": [
+        "20 multilayer zirconia veneers, 0.3 mm prep",
+        "Professional cleaning and X-rays",
+        "Design preview you approve first",
+        "Milled and finished in our own lab",
+        "5-year warranty, in writing"
+      ],
+      "cta": "Get my written estimate"
+    },
+    "footnote": "Final price confirmed in writing after a doctor's evaluation. Veneers only; deep cleaning, crowns and other procedures are quoted separately from the price list."
+  },
+  "faq": {
+    "title": "Zirconia questions, answered by the doctors and the lab",
+    "linkLabel": "All answers →",
+    "items": [
+      {
+        "q": "Are zirconia veneers porcelain?",
+        "a": "Yes. Porcelain is the everyday word for dental ceramic, and zirconia is one of the two ceramic families used for veneers; the other is lithium disilicate, sold as e.max. Zirconia is the stronger of the two and is what every Xiluet veneer is made of.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "Do zirconia veneers look fake or too white?",
+        "a": "Not when they are cut from a multilayer disc and finished by hand. The shade gradient is inside the material, the ceramist adds texture and a translucent edge, and you approve the shade with us in the chair before bonding. Flat, opaque sets come from single-shade blocks and a lab that never saw the patient.",
+        "doc": "Dr. Gretell Alonso Fiel, DMD"
+      },
+      {
+        "q": "How strong is zirconia compared with e.max?",
+        "a": "About two to three times stronger by flexural strength: roughly 1,000 to 1,200 MPa against the manufacturer's 470 MPa for e.max. That is why zirconia takes grinders, molars and bridges, and why it can be made thinner for the same job.",
+        "doc": "Dr. Marta Puentes Marrero, DMD"
+      },
+      {
+        "q": "Can zirconia veneers be made at 0.3 mm?",
+        "a": "Yes, and that is our standard. On small or inward-set teeth the veneer is added with no preparation at all. On a dark tooth the ceramist may use a little more of the opaque base of the disc so the grey does not show through; you see that on the preview at Visit 1.",
+        "doc": "Dr. Gretell Alonso Fiel, DMD"
+      },
+      {
+        "q": "Do zirconia veneers stain?",
+        "a": "No. Zirconia does not absorb stain or change shade, so coffee, tea and wine are fine. The only part that can pick up stain over many years is the thin line of cement at the edge, which is why the margin is polished into a closed seal and checked at your cleanings.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "What does Edgar do to each veneer after milling?",
+        "a": "Seats it on the model and adjusts it under magnification until it fits without pressure, polishes the margin into a sealed edge, then builds the surface texture and enamel effects by hand. He finishes every front-tooth case himself and brings the veneers down to the chair for the shade check.",
+        "doc": "Dr. Marta Puentes Marrero, DMD"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Start with photos.",
+    "body": "Free, no visit needed. Written estimate included.",
+    "cardTitle": "Free photo evaluation",
+    "cardBody": "Two photos of your smile, from your phone. Takes 2 minutes.",
+    "button": "Start my evaluation"
+  }
+}

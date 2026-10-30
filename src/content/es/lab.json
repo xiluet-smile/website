@@ -98,5 +98,15 @@
     "cta": "Conoce a Edgar",
     "href": "/doctors/dr-edgar-castanos",
     "image": "edgar-castanos.jpg"
-  }
+  },
+  "links": [
+    {
+      "label": "Carillas de zirconia: grados, resistencia y grosor →",
+      "href": "/zirconia-veneers"
+    },
+    {
+      "label": "Carillas de porcelana en Xiluet →",
+      "href": "/porcelain-veneers-miami"
+    }
+  ]
 }

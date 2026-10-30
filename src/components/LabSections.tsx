@@ -11,6 +11,8 @@ export type LabContent = {
   facts: { big: string; sub: string }[];
   process: { eyebrow?: string; title: string; intro?: string; steps: { k?: string; t: string; d: string; place?: string; icon?: string }[]; note?: string };
   edgar: { eyebrow: string; title: string; role: string; body: string; cta: string; href: string; image: string };
+  /** Pills under the facts: the material and treatment pages the lab feeds (zirconia veneers, porcelain veneers). */
+  links?: { label: string; href: string }[];
 };
 
 const panelShadow = "shadow-[inset_0_1px_0_rgba(247,244,238,.18),0_30px_80px_rgba(4,40,46,.32)]";
@@ -43,17 +45,33 @@ export function LabPanel({ panel, focus }: { panel: LabContent["panel"]; focus: 
   );
 }
 
-/** The numbers the lab makes possible. */
-export function LabFacts({ facts }: { facts: LabContent["facts"] }) {
+/** The numbers the lab makes possible, plus links to the pages that explain the material. */
+export function LabFacts({ facts, links, locale = "en" }: { facts: LabContent["facts"]; links?: LabContent["links"]; locale?: Locale }) {
   return (
-    <ul className="m-0 mt-5 grid list-none grid-cols-2 gap-3 p-0 lg:mt-6 lg:grid-cols-4 lg:gap-4">
-      {facts.map((g) => (
-        <li key={g.sub} className="flex flex-col gap-3 rounded-2xl border border-sand bg-card p-4 lg:min-h-[150px] lg:p-5">
-          <span className="mt-auto font-serif text-[28px] leading-none tracking-[-.02em] text-teal lg:text-[36px]">{g.big}</span>
-          <span className="text-[13px] leading-[1.45] text-muted lg:text-sm">{g.sub}</span>
-        </li>
-      ))}
-    </ul>
+    <>
+      <ul className="m-0 mt-5 grid list-none grid-cols-2 gap-3 p-0 lg:mt-6 lg:grid-cols-4 lg:gap-4">
+        {facts.map((g) => (
+          <li key={g.sub} className="flex flex-col gap-3 rounded-2xl border border-sand bg-card p-4 lg:min-h-[150px] lg:p-5">
+            <span className="mt-auto font-serif text-[28px] leading-none tracking-[-.02em] text-teal lg:text-[36px]">{g.big}</span>
+            <span className="text-[13px] leading-[1.45] text-muted lg:text-sm">{g.sub}</span>
+          </li>
+        ))}
+      </ul>
+      {links && links.length > 0 && (
+        <ul className="m-0 mt-5 flex list-none flex-wrap gap-2 p-0">
+          {links.map((l) => (
+            <li key={l.href}>
+              <Link
+                href={localizeHref(l.href, locale)}
+                className="inline-flex min-h-10 items-center rounded-full border border-teal/30 bg-white/60 px-4 text-[14px] font-semibold text-teal no-underline hover:bg-teal hover:text-on-dark"
+              >
+                {l.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      )}
+    </>
   );
 }
 

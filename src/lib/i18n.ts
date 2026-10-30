@@ -16,6 +16,8 @@ export const esPaths: Record<PagePath, string> = {
   "/full-mouth-reconstruction-miami": "/es/reconstruccion-bucal-completa-miami",
   "/all-on-x-dental-implants-miami": "/es/implantes-dentales-all-on-x-miami",
   "/smile-makeover-miami": "/es/transformacion-de-sonrisa-miami",
+  "/porcelain-veneers-miami": "/es/carillas-de-porcelana-miami",
+  "/zirconia-veneers": "/es/carillas-de-zirconia",
   "/doctors": "/es/doctores",
   "/doctors/dr-roger-ramos-navarro": "/es/doctores/dr-roger-ramos-navarro",
   "/doctors/dr-marta-puentes-marrero": "/es/doctores/dr-marta-puentes-marrero",

@@ -18,6 +18,8 @@ import {
 import { localizeHref, localizePath, type Locale } from "@/lib/i18n";
 import { postsForTreatment } from "@/lib/blog";
 import { PostCard } from "@/components/blog/BlogArticle";
+import Inline from "@/components/blog/Inline";
+import { prices as pricesEn } from "@/lib/content";
 import { faqPage, medicalProcedure, pageGraph, procedureOffer } from "@/lib/schema";
 import { site, type PagePath } from "@/lib/site";
 
@@ -42,6 +44,14 @@ export type Treatment = {
     intro: string;
     items: { t: string; d: string }[];
   };
+  /** Optional link under the candidates grid to the sibling page (Smile Design ↔ veneers à la carte). */
+  crossLink?: { label: string; href: string };
+  /**
+   * Optional page-specific guide: prose sections rendered after "why". Strings may use [text](href) links,
+   * **bold**, and the placeholders {price} (package), {veneerPrice} (one veneer à la carte), {warrantyYears},
+   * {replyHours} and {depositUsd}, filled from prices.json and site.json so numbers never live in the copy.
+   */
+  sections?: { id?: string; eyebrow?: string; title: string; body: string[]; bullets?: { t: string; d: string }[]; links?: { label: string; href: string }[] }[];
   why: {
     eyebrow: string;
     title: string;
@@ -121,7 +131,31 @@ export default function TreatmentPage({
   const { pages, lenders, cases } = getContent(locale);
   const path = data.path as PagePath;
   const pkg = packageById(locale, data.packageId);
-  const { hero, candidates, why, week, results, price, faq, cta } = data;
+  // One veneer à la carte (English price list; the number is the same in both languages).
+  const veneerItem = pricesEn.groups.flatMap((g) => g.items).find((i) => i.name === "Veneer");
+  const facts: Record<string, string | number> = {
+    price: pkg.price,
+    veneerPrice: veneerItem?.price ?? "",
+    warrantyYears: site.warrantyYears,
+    replyHours: site.replyHours,
+    depositUsd: site.depositUsd,
+  };
+  const fill = (s: string) => tpl(s, facts);
+  const { hero, candidates, why, week, results, cta } = data;
+  const sections = (data.sections ?? []).map((sec) => ({
+    ...sec,
+    body: sec.body.map(fill),
+    bullets: sec.bullets?.map((b) => ({ t: fill(b.t), d: fill(b.d) })),
+  }));
+  const price = {
+    ...data.price,
+    title: fill(data.price.title),
+    body: fill(data.price.body),
+    card: { ...data.price.card, sub: fill(data.price.card.sub), included: data.price.card.included.map(fill) },
+    footnote: fill(data.price.footnote),
+  };
+  // Filled answers feed both the accordion and the FAQPage schema, so they always match.
+  const faq = { ...data.faq, items: data.faq.items.map((f) => ({ ...f, a: fill(f.a) })) };
   // Results carousel: the curated cases first, then every other case of the treatment's types.
   const curated = (results.caseIds ?? []).map((id) => caseById(locale, id));
   const filler = cases.cases.filter((c) => (results.caseTypes ?? []).includes(c.type) && !curated.some((x) => x.id === c.id));
@@ -209,6 +243,8 @@ export default function TreatmentPage({
                   <span className="font-serif text-2xl leading-none whitespace-nowrap lg:text-[28px]">
                     {s.kind === "price" ? (
                       pkg.price
+                    ) : s.kind === "veneerPrice" ? (
+                      facts.veneerPrice
                     ) : s.kind === "rating" ? (
                       <>
                         {site.rating.value}{" "}
@@ -284,6 +320,13 @@ export default function TreatmentPage({
             </li>
           ))}
         </ol>
+        {data.crossLink && (
+          <p className="m-0 mt-6 text-[16px] lg:text-right">
+            <Link href={localizeHref(data.crossLink.href, locale)} className="inline-flex min-h-11 items-center font-semibold lg:min-h-0">
+              {data.crossLink.label}
+            </Link>
+          </p>
+        )}
       </section>
 
       {/* The terms, explained: one illustrated card per restoration type, shared by every treatment page. */}
@@ -365,6 +408,55 @@ export default function TreatmentPage({
           </div>
         </div>
       </section>
+
+      {/* Page-specific guide: prose sections with optional bullet cards and links. */}
+      {sections.length > 0 && (
+        <section className="wrap pt-16 lg:pt-28">
+          <div className="flex flex-col gap-14 lg:gap-20">
+            {sections.map((sec) => (
+              <article key={sec.title} id={sec.id} className="grid gap-6 scroll-mt-6 lg:grid-cols-[minmax(0,.8fr)_minmax(0,1.4fr)] lg:gap-16">
+                <div className="flex flex-col gap-3 lg:sticky lg:top-8">
+                  {sec.eyebrow && <span className="eyebrow text-gold-text">{sec.eyebrow}</span>}
+                  <h2 className={h2}>{sec.title}</h2>
+                </div>
+                <div className="flex flex-col gap-5">
+                  {sec.body.map((para, i) => (
+                    <p key={i} className="m-0 text-[17px] leading-[1.6] text-pretty text-body lg:text-lg">
+                      <Inline text={para} locale={locale} />
+                    </p>
+                  ))}
+                  {sec.bullets && (
+                    <ul className="m-0 grid list-none gap-3 p-0 sm:grid-cols-2">
+                      {sec.bullets.map((b) => (
+                        <li key={b.t} className="glass-card flex flex-col gap-1.5 rounded-2xl p-4 lg:p-5">
+                          <h3 className="m-0 font-serif text-[20px] leading-[1.2] font-normal text-teal">{b.t}</h3>
+                          <p className="m-0 text-[15px] leading-[1.5] text-body">
+                            <Inline text={b.d} locale={locale} />
+                          </p>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                  {sec.links && (
+                    <ul className="m-0 flex list-none flex-wrap gap-2 p-0">
+                      {sec.links.map((l) => (
+                        <li key={l.href}>
+                          <Link
+                            href={localizeHref(l.href, locale)}
+                            className="inline-flex min-h-10 items-center rounded-full border border-teal/30 bg-white/60 px-4 text-[14px] font-semibold text-teal no-underline hover:bg-teal hover:text-on-dark"
+                          >
+                            {l.label}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* The material */}
       {data.material && (

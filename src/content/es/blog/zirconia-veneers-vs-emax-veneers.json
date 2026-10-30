@@ -14,9 +14,12 @@
   "readMinutes": 8,
   "treatments": [
     "smile-design",
-    "smile-makeover"
+    "smile-makeover",
+    "zirconia-veneers",
+    "porcelain-veneers"
   ],
   "related": [
+    "/zirconia-veneers",
     "/smile-design-miami",
     "/blog/composite-vs-porcelain-veneers-vs-lumineers",
     "/blog/how-long-do-porcelain-veneers-last",
