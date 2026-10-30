@@ -1,0 +1,160 @@
+{
+  "path": "/veneers-tampa",
+  "city": "Tampa",
+  "breadcrumb": "Veneers Tampa",
+  "todo": "TODO(janse): there is no consented patient video story from Tampa or St. Petersburg in stories.json. The story section is hidden on this page until one is added; do not reuse another city's clip.",
+  "hero": {
+    "lead": "Tampa to the clinic is about four hours by car across Alligator Alley, or just over an hour by air. Drive down Monday, get 20 porcelain veneers made in our own lab, drive home Thursday with a 5-year warranty in writing.",
+    "image": "out-of-state-poster.jpg",
+    "alt": "Miami at golden hour",
+    "caption": "Tampa → Westchester, Miami · about 4 h by car via I-75 · free parking at the clinic"
+  },
+  "intro": [
+    "From Tampa Bay the trip to the clinic is a straight shot: I-75 south through Naples, east across Alligator Alley, and off at the Dolphin Expressway into Westchester. It is about 280 miles and four hours outside rush hour, and the clinic has free parking, so the car is the way most Tampa and St. Petersburg patients come. If you would rather fly, TPA to MIA is a little over an hour in the air and the clinic is fifteen minutes from the airport.",
+    "What Tampa patients get for the drive is the same as every other patient: [porcelain veneers](/porcelain-veneers-miami) in multilayer zirconia at about 0.3 mm of preparation, made in the [lab one floor above your doctor](/custom-lab), {veneerPrice} per tooth à la carte or {price} for the 20-veneer [Smile Design](/smile-design-miami), delivered in one Monday-to-Thursday week with a 5-year written warranty. The planning happens from home: photos, a doctor's plan within {replyHours} hours, the written estimate and the payment plan, and only then a date.",
+    "The week itself, including the partner hotels and what to pack, is on the [out-of-state patients page](/out-of-state-patients). This page is the Tampa part: the drive and the flight, a sample itinerary built around the car, what it costs to come, and the questions Tampa patients ask before they book."
+  ],
+  "gettingHere": {
+    "title": "Getting from Tampa to the clinic",
+    "aside": "General guidance from the clinic. Check times with your map app and the carrier on the day; we do not sell travel.",
+    "items": [
+      {
+        "t": "Driving",
+        "d": "About 280 miles: I-75 south past Fort Myers and Naples, then east across Alligator Alley to I-595 and south on the Turnpike or US 27 to the Dolphin Expressway, exiting at SW 87th Avenue for SW 8th St. About four hours. Free parking at the clinic.",
+        "icon": "car"
+      },
+      {
+        "t": "Flying",
+        "d": "TPA to MIA is about 1 hour 10 minutes in the air; American and Southwest fly it nonstop. With airport time at both ends it is close to the drive, but it is an option if you would rather not be on I-75.",
+        "icon": "plane"
+      },
+      {
+        "t": "Airport to clinic",
+        "d": "If you fly, MIA is 15 minutes from the clinic by car. Uber and Lyft pick up at arrivals; we text you the spot and the address before you land. The partner hotels are within 10 minutes of the clinic.",
+        "icon": "clock"
+      },
+      {
+        "t": "Timing the drive",
+        "d": "Leave Tampa by 6:00 am Monday to reach Westchester by about 10:00 am, ahead of Miami's late-morning traffic. On Thursday, leaving after lunch gets you home before dinner. Alligator Alley has few exits, so fill up in Naples.",
+        "icon": "bus"
+      }
+    ]
+  },
+  "itinerary": {
+    "title": "A sample Monday-to-Thursday from Tampa, by car",
+    "intro": "Times are examples. If you fly, only the Monday morning and the Thursday afternoon change; the three visits are the same.",
+    "days": [
+      {
+        "k": "Monday",
+        "t": "Drive down, late-morning Visit 1",
+        "d": "Leave Tampa around 6:00 am, park at the clinic by about 10:00 am. Exam, cleaning, X-rays, scans and the design preview you approve. Hotel check-in after.",
+        "time": "Visit 1 about 11:00 am to 1:00 pm"
+      },
+      {
+        "k": "Tuesday",
+        "t": "Preparation and temporaries",
+        "d": "About 0.3 mm of preparation and temporaries in the approved shape. Soft lunch, then a free afternoon.",
+        "time": "Visit 2 about 9:00 am to 12:00 pm"
+      },
+      {
+        "k": "Wednesday",
+        "t": "Free day while the lab finishes",
+        "d": "Veneers milled, sintered and finished by hand one floor up. You tell us anything you would change about the temporaries. Some Tampa patients drive home for the night; most stay.",
+        "time": "No visit."
+      },
+      {
+        "k": "Thursday",
+        "t": "Delivery, then the drive home",
+        "d": "Shade checked with the ceramist, veneers bonded, bite adjusted, warranty handed over in writing. Soft lunch, then west across the Alley.",
+        "time": "Visit 3 about 9:00 am to 11:00 am. Leave Miami about 12:30 pm, home in Tampa around 4:30 pm."
+      }
+    ],
+    "note": "The numbness from Visit 2 wears off within a couple of hours and does not affect driving, but if you are staying at the partner hotel you will not need the car until Thursday anyway. Nothing about Thursday's delivery stops you driving afterwards."
+  },
+  "story": {
+    "title": "From Tampa, in their own words",
+    "body": "We do not yet have a video story from a Tampa patient to show here.",
+    "todo": "TODO(janse): add a consented Tampa or St. Petersburg clip to stories.json and set storyId here."
+  },
+  "cost": {
+    "title": "What it costs to come from Tampa",
+    "body": "Treatment is priced from the [published price list](/veneers-cost-miami) and confirmed in writing before you book anything. Travel is yours; we do not add it to the price and we do not quote it. For a driver the extra cost of coming is fuel, the Alligator Alley toll and the hotel nights.",
+    "lines": [
+      {
+        "label": "Smile Design, 20 porcelain veneers",
+        "value": "{price}",
+        "note": "Design preview, cleaning, X-rays and the {warrantyYears}-year written warranty included"
+      },
+      {
+        "label": "One veneer, à la carte",
+        "value": "{veneerPrice}",
+        "note": "Same material, lab and warranty, for one to nineteen teeth"
+      },
+      {
+        "label": "Deposit to hold your Monday",
+        "value": "${depositUsd}",
+        "note": "Applied to your treatment"
+      },
+      {
+        "label": "Hotel, two to four nights",
+        "value": "Partner rate, 20% off",
+        "note": "Hilton and Marriott properties within 10 minutes; you book directly, we send the list with your estimate"
+      },
+      {
+        "label": "Fuel and tolls, or the TPA–MIA flight",
+        "value": "Paid by you",
+        "note": "Not included. Parking at the clinic is free for every visit"
+      }
+    ],
+    "footnote": "Monthly plans are available through six financing partners with a soft credit check; your coordinator helps with the application before you book the hotel.",
+    "links": [
+      {
+        "label": "Full price list",
+        "href": "/veneers-cost-miami"
+      },
+      {
+        "label": "Financing options",
+        "href": "/financing"
+      }
+    ]
+  },
+  "results": {
+    "title": "Porcelain veneer results",
+    "label": "Porcelain veneers"
+  },
+  "faq": {
+    "title": "Questions from Tampa patients",
+    "items": [
+      {
+        "q": "Can I drive home to Tampa the same day as delivery?",
+        "a": "Yes. Delivery on Thursday morning takes about two hours and nothing about it stops you driving straight after. Leave after a soft lunch and you are across the Alley and home by late afternoon.",
+        "doc": "Dr. Marta Puentes Marrero, DMD"
+      },
+      {
+        "q": "Drive or fly from Tampa?",
+        "a": "Most Tampa patients drive: four hours door to door, free parking, and the car for the free Wednesday. Flying is just over an hour in the air but about the same once you add two airports. Either way the three visits do not change.",
+        "doc": "Dr. Gretell Alonso Fiel, DMD"
+      },
+      {
+        "q": "Can I go home on the free Wednesday?",
+        "a": "You can; a few Tampa patients do, and come back for Thursday morning. It is eight hours of driving for one night in your own bed, so most stay at the partner rate and use the day.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "Can I drive after Visit 2 with the numbness?",
+        "a": "The local anesthetic wears off within a couple of hours and does not affect your ability to drive. If you would rather not, the partner hotels are within 10 minutes of the clinic and a rideshare is simple.",
+        "doc": "Dr. Marta Puentes Marrero, DMD"
+      },
+      {
+        "q": "What if something needs adjusting once I am back in Tampa?",
+        "a": "Small adjustments are covered by the {warrantyYears}-year warranty at any dentist near you, and there is a video check-in two weeks after delivery. For anything beyond a polish, a four-hour drive to the lab that made the veneers is the simplest route.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "Why come to Miami when there are clinics in Tampa?",
+        "a": "Compare the same five things in writing: material, number of teeth, veneer or crown per tooth, total, and warranty. What is different here is the lab in the building, which is why the whole set is done in one week and the shade is checked on you by the ceramist. The price list is public.",
+        "doc": "Dr. Gretell Alonso Fiel, DMD"
+      }
+    ]
+  }
+}

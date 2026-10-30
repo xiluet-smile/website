@@ -1,0 +1,159 @@
+{
+  "path": "/veneers-new-york",
+  "city": "Nueva York",
+  "breadcrumb": "Carillas Nueva York",
+  "hero": {
+    "lead": "De Nueva York a Miami son unas tres horas de vuelo directo desde JFK, LaGuardia o Newark, con salidas más o menos cada hora. Una semana de lunes a jueves, 20 carillas de porcelana hechas en nuestro laboratorio propio y una garantía de 5 años por escrito para el vuelo de regreso.",
+    "image": "blog-airplane-window-miami.jpg",
+    "alt": "Miami visto desde la ventanilla de un avión en la aproximación al Aeropuerto Internacional de Miami",
+    "caption": "JFK, LGA o EWR → MIA · unas 3 h de vuelo directo · 15 minutos del aeropuerto a la clínica"
+  },
+  "intro": [
+    "Nueva York–Miami es una de las rutas aéreas con más tráfico del país, y eso juega a tu favor: tres aeropuertos, vuelos directos desde temprano en la mañana hasta tarde en la noche, y un vuelo de unas tres horas sin cambio de horario. Aterrizas a quince minutos de la clínica. Para un neoyorquino el viaje es más corto que manejar a los Hamptons un viernes, y en invierno viene con un miércoles libre bajo el sol.",
+    "Los pacientes de Nueva York suelen llegar con más cotizaciones que nadie, y las cotizaciones varían mucho. La comparación útil no es el precio del titular sino lo que incluye: el material, el número de dientes, si cada diente lleva una carilla o una corona, y la garantía. Las nuestras están en la [lista de precios](/veneers-cost-miami): [carillas de porcelana](/porcelain-veneers-miami) en zirconia multicapa con unos 0.3 mm de preparación, {veneerPrice} por unidad o {price} por el [Diseño de sonrisa](/smile-design-miami) de 20 carillas, hechas en el [laboratorio de nuestro edificio](/custom-lab) y entregadas la misma semana.",
+    "La semana en sí, desde los hoteles aliados hasta qué empacar, está en la [página para pacientes de otros estados](/out-of-state-patients). Esta página es la parte de Nueva York: qué aeropuerto, un itinerario de ejemplo con horarios, cuánto cuesta venir, un paciente que hizo un viaje parecido desde Pensilvania y las preguntas que los neoyorquinos hacen antes de reservar."
+  ],
+  "gettingHere": {
+    "title": "Cómo llegar de Nueva York a la clínica",
+    "aside": "Orientación general de la clínica. Confirma horarios y aerolíneas con la aerolínea al reservar; no vendemos vuelos.",
+    "items": [
+      {
+        "t": "Tiempo de vuelo",
+        "d": "Entre 3 horas y 3 horas 15 minutos de vuelo directo desde cualquiera de los tres aeropuertos, sin cambio de horario. De puerta a puerta de embarque, calcula entre tres horas y media y cuatro.",
+        "icon": "plane"
+      },
+      {
+        "t": "Quién lo vuela",
+        "d": "American, Delta y JetBlue vuelan JFK–MIA; American y Delta vuelan LaGuardia–MIA; United vuela Newark–MIA. Entre todas hay un vuelo directo casi a cualquier hora del día. Fort Lauderdale (FLL) tiene aún más vuelos y aerolíneas de bajo costo, a entre 45 minutos y una hora de la clínica.",
+        "icon": "clock"
+      },
+      {
+        "t": "Del aeropuerto a la clínica",
+        "d": "MIA está a 15 minutos de la clínica en carro. Uber y Lyft recogen en llegadas; te enviamos por mensaje el punto de recogida y la dirección antes de que aterrices. Los hoteles aliados están a menos de 10 minutos, así que no necesitas carro durante la semana.",
+        "icon": "car"
+      },
+      {
+        "t": "En tren o en carro",
+        "d": "El Silver Service de Amtrak va de Nueva York a Miami en unas 28 a 30 horas, y manejar por la I-95 son unas 1,280 millas, o 19 a 20 horas. Ambas opciones son posibles con días extra a cada lado; para una semana de cuatro días, vuela.",
+        "icon": "bus"
+      }
+    ]
+  },
+  "itinerary": {
+    "title": "Un lunes a jueves de ejemplo desde Nueva York",
+    "intro": "Los horarios son ejemplos. Cualquier vuelo que aterrice a media mañana del lunes y salga después de las 4 pm del jueves mantiene el calendario; sin cambio de horario, la cuenta es sencilla.",
+    "days": [
+      {
+        "k": "Lunes",
+        "t": "Vuelo temprano, Visita 1 a media mañana",
+        "d": "Sal de JFK, LGA o EWR hacia las 7:00 am, aterriza en MIA hacia las 10:15 am y toma un rideshare a la clínica. Examen, limpieza, radiografías, escaneos y la vista previa del diseño que apruebas.",
+        "time": "Visita 1 de unas 11:30 am a 1:30 pm. Check-in en el hotel después."
+      },
+      {
+        "k": "Martes",
+        "t": "Preparación y provisionales",
+        "d": "Unos 0.3 mm de preparación y provisionales con la forma aprobada. Almuerzo blando y la tarde libre.",
+        "time": "Visita 2 de unas 9:00 am a 12:00 pm"
+      },
+      {
+        "k": "Miércoles",
+        "t": "Día libre mientras el laboratorio termina",
+        "d": "Carillas fresadas, sinterizadas y terminadas a mano un piso más arriba. Nos cuentas cualquier cosa que cambiarías de los provisionales.",
+        "time": "Sin visita. Playa, Wynwood o descanso."
+      },
+      {
+        "k": "Jueves",
+        "t": "Entrega y luego el vuelo de regreso por la tarde",
+        "d": "Tono revisado con el ceramista, carillas cementadas, mordida ajustada y garantía entregada por escrito. Almuerzo y rideshare a MIA.",
+        "time": "Visita 3 de unas 9:00 am a 11:00 am. Vuelo MIA–NYC desde las 4:00 pm aproximadamente, aterrizas hacia las 7:15 pm."
+      }
+    ],
+    "note": "Muchos pacientes de Nueva York vienen el domingo por la tarde y tratan el lunes como un primer día normal en lugar de una alarma a las 5 am. Si viajas en invierno: revisa el pronóstico en casa el jueves y, si viene una tormenta, la Visita 3 puede adelantarse ese mismo día."
+  },
+  "story": {
+    "title": "Un viaje parecido, desde Pensilvania",
+    "body": "Franklin vino desde Pensilvania para un Diseño de sonrisa con el Dr. Ramos, un vuelo de más o menos la misma duración que el de Nueva York. Grabado el día de la entrega y compartido con su permiso.",
+    "storyId": "story-28"
+  },
+  "cost": {
+    "title": "Cuánto cuesta venir desde Nueva York",
+    "body": "El tratamiento se cotiza según la [lista de precios publicada](/veneers-cost-miami) y se confirma por escrito antes de que reserves nada. El viaje lo reservas y lo pagas tú; no lo sumamos al precio ni lo cotizamos, porque las tarifas cambian a diario.",
+    "lines": [
+      {
+        "label": "Diseño de sonrisa, 20 carillas de porcelana",
+        "value": "{price}",
+        "note": "Incluye vista previa del diseño, limpieza, radiografías y la garantía de {warrantyYears} años por escrito"
+      },
+      {
+        "label": "Una carilla, por unidad",
+        "value": "{veneerPrice}",
+        "note": "Mismo material, laboratorio y garantía, para entre uno y diecinueve dientes"
+      },
+      {
+        "label": "Depósito para reservar tu lunes",
+        "value": "${depositUsd}",
+        "note": "Se abona a tu tratamiento"
+      },
+      {
+        "label": "Hotel, tres o cuatro noches",
+        "value": "Tarifa de aliados, 20% de descuento",
+        "note": "Hoteles Hilton y Marriott a menos de 10 minutos; reservas directamente, te enviamos la lista con tu presupuesto"
+      },
+      {
+        "label": "Vuelos NYC–MIA y traslados",
+        "value": "Los reservas tú",
+        "note": "No incluidos. Los rideshare desde el aeropuerto y a cada visita son cortos y los pagas tú"
+      }
+    ],
+    "footnote": "Hay planes mensuales a través de seis aliados de financiamiento con una consulta de crédito blanda; tu coordinadora te ayuda con la solicitud antes de que reserves los vuelos.",
+    "links": [
+      {
+        "label": "Lista de precios completa",
+        "href": "/veneers-cost-miami"
+      },
+      {
+        "label": "Opciones de financiamiento",
+        "href": "/financing"
+      }
+    ]
+  },
+  "results": {
+    "title": "Resultados de carillas de porcelana",
+    "label": "Carillas de porcelana"
+  },
+  "faq": {
+    "title": "Preguntas de pacientes de Nueva York",
+    "items": [
+      {
+        "q": "¿Puedo volar de regreso a Nueva York el mismo día de la entrega?",
+        "a": "Sí. La entrega del jueves toma unas dos horas por la mañana y la cementación queda definitiva cuando te levantas del sillón. Un vuelo después de las 4 pm aterriza en Nueva York hacia las 7:15 pm. Almuerza algo blando antes de ir al aeropuerto.",
+        "doc": "Dr. Marta Puentes Marrero, DMD"
+      },
+      {
+        "q": "¿Qué aeropuerto de Nueva York es el más cómodo para este viaje?",
+        "a": "El que te quede más cerca; los tres tienen vuelos directos a MIA y el tiempo de vuelo es el mismo. JFK y Newark tienen más salidas a lo largo del día. Fort Lauderdale es una opción si la tarifa es mucho más baja, a entre 45 minutos y una hora de la clínica.",
+        "doc": "Dr. Gretell Alonso Fiel, DMD"
+      },
+      {
+        "q": "Tengo tres cotizaciones de Manhattan y todas son distintas. ¿Cómo las comparo?",
+        "a": "Pon en fila las mismas cinco cosas de cada una: material, número de dientes, carilla o corona por diente, total y garantía. Muchas cotizaciones son de coronas, que eliminan entre el 60 y el 70% del diente, o de un juego de e.max de un solo tono hecho en un laboratorio externo. La nuestra está en la lista de precios, diente por diente, e incluye la garantía.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "¿Y si una tormenta de invierno cancela mi vuelo del jueves?",
+        "a": "Tus carillas ya están cementadas, así que nada cambia en lo médico. Quédate una noche más o, si la tormenta está pronosticada, avísale a tu coordinadora y la Visita 3 puede adelantarse el jueves para que alcances un vuelo de la tarde.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "¿Qué pasa con los ajustes cuando ya esté de vuelta en Nueva York?",
+        "a": "Hay una videollamada de seguimiento dos semanas después de la entrega. Los ajustes pequeños están cubiertos por la garantía de {warrantyYears} años en cualquier dentista cerca de ti; una carilla nueva se hace a partir de tu diseño en archivo y te traemos de vuelta para colocarla.",
+        "doc": "Dr. Marta Puentes Marrero, DMD"
+      },
+      {
+        "q": "¿Puedo hacerlo en un solo viaje o tendré que volver?",
+        "a": "Un solo viaje para carillas y Diseño de sonrisa, porque el laboratorio está en el edificio. La restauración bucal completa toma dos semanas. Si tus fotos muestran que primero necesitas una corona o un implante, el plan te lo dice antes de que reserves un vuelo.",
+        "doc": "Dr. Gretell Alonso Fiel, DMD"
+      }
+    ]
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "path": "/veneers-dallas",
+  "city": "Dallas–Fort Worth",
+  "breadcrumb": "Carillas Dallas",
+  "hero": {
+    "lead": "De Dallas–Fort Worth a Miami son poco menos de tres horas en vuelo directo desde DFW. Llega el lunes, recibe 20 carillas de porcelana hechas en nuestro laboratorio propio y vuela a casa el jueves por la tarde con una garantía de 5 años por escrito.",
+    "image": "blog-airplane-window-miami.jpg",
+    "alt": "Miami vista desde la ventanilla de un avión en aproximación al Aeropuerto Internacional de Miami",
+    "caption": "DFW → MIA · aprox. 2 h 50 min en vuelo directo · 15 minutos del aeropuerto a la clínica"
+  },
+  "intro": [
+    "DFW y MIA son hubs de American Airlines, y esa es la razón práctica por la que el viaje desde Dallas–Fort Worth es simple: hay vuelos directos durante todo el día y el vuelo dura poco menos de tres horas. Miami está en hora del Este, una hora adelante de Dallas, así que una salida por la mañana aterriza a tiempo para una cita por la tarde. Aterrizas a quince minutos de la clínica y los hoteles aliados están a menos de diez minutos de ella, así que el carro se queda en casa.",
+    "Lo que los pacientes de Dallas suelen querer resolver antes de volar es el material y el número de dientes. Aquí las [carillas de porcelana](/porcelain-veneers-miami) son de zirconia multicapa con unos 0.3 mm de preparación, fresadas y terminadas a mano en el [laboratorio en nuestro edificio](/custom-lab). En los dientes que muestras al sonreír, normalmente de ocho a diez arriba, son {veneerPrice} por carilla; para las dos arcadas es el [Diseño de sonrisa](/smile-design-miami) de 20 carillas a {price}. El presupuesto por escrito que recibes a partir de tus fotos dice cuál, y no se reserva nada hasta que lo tengas.",
+    "El resto de la semana, desde los hoteles aliados hasta qué empacar, está en la [página para pacientes de otros estados](/out-of-state-patients). Esta es la parte de Dallas–Fort Worth: los vuelos, un itinerario de ejemplo con la hora de diferencia incluida, cuánto cuesta venir, Yolanda y Erick, de Fort Worth, en sus propias palabras, y las preguntas que escuchamos desde DFW."
+  ],
+  "gettingHere": {
+    "title": "Cómo llegar de Dallas–Fort Worth a la clínica",
+    "aside": "Orientación general de la clínica. Confirma horarios y aerolíneas con la aerolínea al reservar; no vendemos vuelos.",
+    "items": [
+      {
+        "t": "Tiempo de vuelo",
+        "d": "Aprox. 2 horas 45 a 3 horas en vuelo directo de DFW a MIA. Miami está una hora adelante, así que un vuelo que sale a las 8 am aterriza alrededor de la 1 pm hora del Este; el regreso devuelve esa hora.",
+        "icon": "plane"
+      },
+      {
+        "t": "Qué aerolíneas lo vuelan",
+        "d": "American vuela DFW–MIA sin escalas muchas veces al día, de hub a hub. Spirit y Frontier también lo vuelan algunos días. Fort Lauderdale (FLL) suma más opciones de bajo costo, a entre 45 minutos y una hora de la clínica.",
+        "icon": "clock"
+      },
+      {
+        "t": "Del aeropuerto a la clínica",
+        "d": "MIA está a 15 minutos de la clínica en carro. Uber y Lyft recogen en llegadas; te enviamos por mensaje de texto el punto y la dirección antes de que aterrices, y los datos de recogida de cada visita la noche anterior.",
+        "icon": "car"
+      },
+      {
+        "t": "Si prefieres manejar",
+        "d": "De Dallas a Miami son unas 1,300 millas por la I-20, la I-10 y la I-75, alrededor de veinte horas al volante. No encaja en una semana de cuatro días; vuela.",
+        "icon": "bus"
+      }
+    ]
+  },
+  "itinerary": {
+    "title": "Un ejemplo de lunes a jueves desde DFW",
+    "intro": "Los horarios son ejemplos, en hora local de cada lado. Cualquier vuelo que aterrice antes del inicio de la tarde el lunes y salga después de las 4 pm el jueves mantiene el calendario.",
+    "days": [
+      {
+        "k": "Lunes",
+        "t": "Vuelo por la mañana, Visita 1 por la tarde",
+        "d": "Sal de DFW alrededor de las 8:00 am, aterriza en MIA cerca de la 1:00 pm hora del Este y toma un rideshare a la clínica. Examen, limpieza, radiografías, escaneos y la vista previa del diseño que apruebas.",
+        "time": "Visita 1 aprox. de 2:00 pm a 4:00 pm. Después, check-in en el hotel."
+      },
+      {
+        "k": "Martes",
+        "t": "Preparación y provisionales",
+        "d": "Unos 0.3 mm de preparación y provisionales con la forma aprobada. Almuerzo blando, y la tarde libre.",
+        "time": "Visita 2 aprox. de 9:00 am a 12:00 pm"
+      },
+      {
+        "k": "Miércoles",
+        "t": "Día libre mientras el laboratorio termina",
+        "d": "Carillas fresadas, sinterizadas y terminadas a mano un piso arriba. Nos dices cualquier cosa que cambiarías de los provisionales.",
+        "time": "Sin visita."
+      },
+      {
+        "k": "Jueves",
+        "t": "Entrega y luego el vuelo de la tarde a casa",
+        "d": "Tono revisado con el ceramista, carillas cementadas, mordida ajustada y garantía entregada por escrito. Almuerzo y rideshare a MIA.",
+        "time": "Visita 3 aprox. de 9:00 am a 11:00 am. Vuela MIA–DFW desde las 4:00 pm hora del Este aproximadamente y aterriza en Dallas alrededor de las 6:00 pm hora del Centro."
+      }
+    ],
+    "note": "A veces las parejas vienen juntas, uno para tratamiento y el otro de compañía, o los dos para tratamiento con el mismo calendario. Díselo a tu coordinadora y las dos series de visitas se reservan una tras otra."
+  },
+  "story": {
+    "title": "Desde Fort Worth, en sus propias palabras",
+    "body": "Yolanda y Erick vinieron de Fort Worth para el Diseño de sonrisa de Erick con el Dr. Ramos. Yolanda habla en este clip, grabado el día de la entrega y compartido con su permiso.",
+    "storyId": "story-21"
+  },
+  "cost": {
+    "title": "Cuánto cuesta venir desde Dallas–Fort Worth",
+    "body": "El tratamiento se cotiza según la [lista de precios publicada](/veneers-cost-miami) y se confirma por escrito antes de que reserves nada. El viaje lo reservas y lo pagas tú; no lo sumamos al precio ni lo cotizamos, porque las tarifas cambian a diario.",
+    "lines": [
+      {
+        "label": "Diseño de sonrisa, 20 carillas de porcelana",
+        "value": "{price}",
+        "note": "Incluye vista previa del diseño, limpieza, radiografías y la garantía de {warrantyYears} años por escrito"
+      },
+      {
+        "label": "Una carilla, por unidad",
+        "value": "{veneerPrice}",
+        "note": "Mismo material, laboratorio y garantía, de uno a diecinueve dientes"
+      },
+      {
+        "label": "Depósito para reservar tu lunes",
+        "value": "${depositUsd}",
+        "note": "Se aplica a tu tratamiento"
+      },
+      {
+        "label": "Hotel, tres o cuatro noches",
+        "value": "Tarifa de aliados, 20% de descuento",
+        "note": "Propiedades Hilton y Marriott a menos de 10 minutos; tú reservas directamente, te enviamos la lista con tu presupuesto"
+      },
+      {
+        "label": "Vuelos DFW–MIA y transporte",
+        "value": "Los reservas tú",
+        "note": "No incluidos. Los rideshares desde el aeropuerto y a cada visita son cortos y los pagas tú"
+      }
+    ],
+    "footnote": "Hay planes mensuales a través de seis aliados de financiamiento con una consulta suave de crédito; tu coordinadora te ayuda con la solicitud antes de que reserves los vuelos.",
+    "links": [
+      {
+        "label": "Lista de precios completa",
+        "href": "/veneers-cost-miami"
+      },
+      {
+        "label": "Opciones de financiamiento",
+        "href": "/financing"
+      }
+    ]
+  },
+  "results": {
+    "title": "Resultados de carillas de porcelana",
+    "label": "Carillas de porcelana"
+  },
+  "faq": {
+    "title": "Preguntas de pacientes de Dallas–Fort Worth",
+    "items": [
+      {
+        "q": "¿Puedo volar de regreso a Dallas el mismo día de la entrega?",
+        "a": "Sí. La entrega del jueves por la mañana toma unas dos horas y la cementación queda definitiva cuando te vas. Un vuelo después de las 4 pm hora del Este aterriza en DFW alrededor de las 6 pm hora del Centro. Almuerza algo blando antes del aeropuerto y estás en casa para la cena.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "¿Mi pareja y yo podemos tratarnos en la misma semana?",
+        "a": "Sí. Dos pacientes con el mismo calendario de lunes a jueves es algo común; las visitas se reservan una tras otra para que ninguno de los dos espere mucho. Cada uno recibe su propio diseño, presupuesto y garantía.",
+        "doc": "Dr. Gretell Alonso Fiel, DMD"
+      },
+      {
+        "q": "¿Necesito las 20 carillas o solo las de arriba?",
+        "a": "Cuenta los dientes que muestras en una sonrisa grande. Si los dientes de abajo quedan ocultos, ocho o diez arriba a {veneerPrice} cada una puede ser la respuesta honesta. Si muestras las dos arcadas, 20 como Diseño de sonrisa cuesta menos por diente y el tono coincide arriba y abajo. Tu plan por escrito dice cuál.",
+        "doc": "Dr. Marta Puentes Marrero, DMD"
+      },
+      {
+        "q": "¿Qué pasa si una carilla se astilla cuando estoy de vuelta en Dallas?",
+        "a": "Llámanos o escríbenos primero. Los ajustes pequeños están cubiertos por la garantía de {warrantyYears} años en cualquier dentista cerca de ti; un reemplazo se vuelve a hacer aquí a partir de tu diseño en archivo y te traemos de vuelta para colocarlo.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "¿La hora de diferencia es un problema para el lunes?",
+        "a": "No. Un vuelo por la mañana desde DFW aterriza a primera hora de la tarde hora del Este, y la Visita 1 se fija según tu hora de llegada. Si prefieres no volar y sentarte en el sillón el mismo día, llega el domingo por la noche.",
+        "doc": "Dr. Marta Puentes Marrero, DMD"
+      },
+      {
+        "q": "¿Cómo comparo esto con una cotización de una clínica de Dallas?",
+        "a": "Pide las mismas cinco cosas por escrito a las dos: el material, el número de dientes, carilla o corona por diente, el total y la garantía. Luego súmale a la nuestra tus vuelos y tres noches de hotel y compara los totales. Si la cotización de Dallas es por coronas, no es el mismo tratamiento.",
+        "doc": "Dr. Gretell Alonso Fiel, DMD"
+      }
+    ]
+  }
+}

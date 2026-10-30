@@ -61,7 +61,7 @@ export default function Footer({ locale = "en" }: { locale?: Locale }) {
         </div>
 
         {/* Brand + link columns */}
-        <div className="grid grid-cols-2 gap-x-4 gap-y-6 lg:grid-cols-[1.3fr_1fr_1fr_1fr_1fr_1fr] lg:gap-10">
+        <div className="grid grid-cols-2 gap-x-4 gap-y-6 lg:grid-cols-[1.3fr_repeat(6,minmax(0,1fr))] lg:gap-8">
           <div className="order-last col-span-2 flex flex-col gap-3.5 border-t border-[rgba(247,244,238,.12)] pt-6 lg:order-none lg:col-span-1 lg:gap-[18px] lg:border-0 lg:pt-0">
             <Img
               src={site.logo}

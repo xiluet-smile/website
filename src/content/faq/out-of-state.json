@@ -14,5 +14,13 @@
   {
     "q": "What if something needs adjusting after I get home?",
     "a": "Small adjustments are covered by the {warrantyYears}-year warranty at any dentist. Anything larger, we bring you back."
+  },
+  {
+    "q": "Can I fly home the same day as delivery?",
+    "a": "Yes. Visit 3 on Thursday takes about two hours in the morning and the bonding is final when you leave the chair. Book a flight after 4 pm, eat a soft lunch, and you are home for dinner."
+  },
+  {
+    "q": "Do you arrange the hotel or the rides?",
+    "a": "No. We send a short list of three hotels within 10 minutes, two of them Hilton and Marriott with a 20% partner rate, and the rideshare pickup details for every visit. You book and pay for the hotel, the flights and the rides directly; nothing travel-related is added to the price."
   }
 ]

@@ -1,0 +1,159 @@
+{
+  "path": "/veneers-atlanta",
+  "city": "Atlanta",
+  "breadcrumb": "Veneers Atlanta",
+  "hero": {
+    "lead": "Atlanta to Miami is under two hours nonstop, with flights from early morning to late evening. Fly in Monday, get 20 porcelain veneers made in our own lab, fly home Thursday with a 5-year warranty in writing.",
+    "image": "blog-airplane-window-miami.jpg",
+    "alt": "Miami seen from an airplane window on approach to Miami International Airport",
+    "caption": "ATL → MIA · about 1 h 55 min nonstop · 15 minutes from the airport to the clinic"
+  },
+  "intro": [
+    "Few cities are easier to fly to Miami from than Atlanta. Hartsfield-Jackson has nonstop flights to MIA from before sunrise to after dinner, the flight itself is around one hour and fifty-five minutes, and you land fifteen minutes by car from our door in Westchester. That is why Atlanta is one of the cities we see most for porcelain veneers, and why the Monday-to-Thursday week works without taking a full week off work.",
+    "The treatment is the same for every patient, local or not: [porcelain veneers](/porcelain-veneers-miami) on the teeth you show, or the 20-veneer [Smile Design](/smile-design-miami) at {price}, made of multilayer zirconia in the [lab one floor above your doctor](/custom-lab). What changes for an Atlanta patient is the planning. Photos, the doctor's plan, the written estimate and the payment plan all happen from home, usually in a week of evenings. By the time you book a flight you know which teeth, what it costs and which Monday.",
+    "Below is the trip itself: the flights, a sample itinerary with times, what it costs to come, a patient from Atlanta in his own words, and the questions Atlanta patients ask before they book. Everything else about the week is on the [out-of-state patients page](/out-of-state-patients)."
+  ],
+  "gettingHere": {
+    "title": "Getting from Atlanta to the clinic",
+    "aside": "General guidance from the clinic. Check times and carriers with the airline when you book; we do not sell flights.",
+    "items": [
+      {
+        "t": "Flight time",
+        "d": "About 1 hour 55 minutes nonstop from ATL to MIA. With boarding and taxi, plan on two and a half hours door to gate.",
+        "icon": "plane"
+      },
+      {
+        "t": "Who flies it",
+        "d": "Delta, American and Southwest all fly ATL–MIA nonstop, most days from early morning to late evening. Fort Lauderdale (FLL) is an alternative with more low-cost carriers, about 45 minutes to an hour from the clinic.",
+        "icon": "clock"
+      },
+      {
+        "t": "Airport to clinic",
+        "d": "MIA is 15 minutes away by car. Take Uber or Lyft from the rideshare pickup at arrivals; we text you the spot and the clinic address before you land. No rental car needed for the week.",
+        "icon": "car"
+      },
+      {
+        "t": "Driving instead",
+        "d": "About 660 miles down I-75, nine and a half to ten hours. Possible, but most Atlanta patients fly, land Monday morning and keep the car at home. Parking at the clinic is free if you do drive.",
+        "icon": "bus"
+      }
+    ]
+  },
+  "itinerary": {
+    "title": "A sample Monday-to-Thursday from Atlanta",
+    "intro": "Times are examples to show how the week fits. Pick any flight that lands by mid-morning Monday and leaves after 4 pm Thursday, and the schedule holds.",
+    "days": [
+      {
+        "k": "Monday",
+        "t": "Early flight, Visit 1 by late morning",
+        "d": "Leave ATL around 7:00 am, land MIA about 9:00 am, rideshare to the clinic. Exam, cleaning, X-rays, scans and the design preview you approve.",
+        "time": "Visit 1 about 11:00 am to 1:00 pm. Check in at the hotel after."
+      },
+      {
+        "k": "Tuesday",
+        "t": "Preparation and temporaries",
+        "d": "About 0.3 mm of preparation and temporaries in the shape you approved. Soft lunch, then the afternoon is yours.",
+        "time": "Visit 2 about 9:00 am to 12:00 pm"
+      },
+      {
+        "k": "Wednesday",
+        "t": "Free day while the lab finishes",
+        "d": "Your veneers are milled, sintered and finished by hand upstairs. You live with the temporaries and tell us anything you would change.",
+        "time": "No visit. Beach, Wynwood or rest."
+      },
+      {
+        "k": "Thursday",
+        "t": "Delivery, then the evening flight home",
+        "d": "Shade checked with you and the ceramist, veneers bonded, bite adjusted, warranty handed over in writing. Lunch, rideshare to MIA.",
+        "time": "Visit 3 about 9:00 am to 11:00 am. Fly MIA–ATL from about 4:00 pm, home by 7:00 pm."
+      }
+    ],
+    "note": "If you prefer not to rush Monday, fly in Sunday evening; the Sunday-night hotel is the only difference. Visit 1 can also move to Tuesday without changing Thursday delivery in most cases."
+  },
+  "story": {
+    "title": "From Atlanta, in his own words",
+    "body": "This patient flew from Atlanta for a Smile Design with Dr. Ramos and recorded this on delivery day. Just over two minutes, shared with his permission.",
+    "storyId": "story-17"
+  },
+  "cost": {
+    "title": "What it costs to come from Atlanta",
+    "body": "Treatment is priced from the [published price list](/veneers-cost-miami) and confirmed in writing before you book. Travel is yours to book and pay; we do not add it to the price and we do not quote it, because fares change daily.",
+    "lines": [
+      {
+        "label": "Smile Design, 20 porcelain veneers",
+        "value": "{price}",
+        "note": "Design preview, cleaning, X-rays and the {warrantyYears}-year written warranty included"
+      },
+      {
+        "label": "One veneer, à la carte",
+        "value": "{veneerPrice}",
+        "note": "Same material, lab and warranty, for one to nineteen teeth"
+      },
+      {
+        "label": "Deposit to hold your Monday",
+        "value": "${depositUsd}",
+        "note": "Applied to your treatment"
+      },
+      {
+        "label": "Hotel, three or four nights",
+        "value": "Partner rate, 20% off",
+        "note": "Hilton and Marriott properties within 10 minutes; you book directly, we send the list with your estimate"
+      },
+      {
+        "label": "Flights ATL–MIA and rides",
+        "value": "Booked by you",
+        "note": "Not included. Rideshares from the airport and to each visit are short and paid by you"
+      }
+    ],
+    "footnote": "Monthly plans are available through six financing partners with a soft credit check; your coordinator helps with the application before you book flights.",
+    "links": [
+      {
+        "label": "Full price list",
+        "href": "/veneers-cost-miami"
+      },
+      {
+        "label": "Financing options",
+        "href": "/financing"
+      }
+    ]
+  },
+  "results": {
+    "title": "Porcelain veneer results",
+    "label": "Porcelain veneers"
+  },
+  "faq": {
+    "title": "Questions from Atlanta patients",
+    "items": [
+      {
+        "q": "Can I fly home to Atlanta the same day as delivery?",
+        "a": "Yes. Delivery on Thursday takes about two hours in the morning, and the bonding is final when you leave the chair. Book a flight after 4 pm so there is no rush, eat a soft lunch, and you are home in Atlanta by dinner.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "Should I fly in Sunday or Monday morning?",
+        "a": "Either works. A 7 am flight from ATL lands in time for an 11 am Visit 1. If early flights are not for you, come Sunday evening; the only difference is one more hotel night.",
+        "doc": "Dr. Gretell Alonso Fiel, DMD"
+      },
+      {
+        "q": "What if something needs adjusting once I am back in Atlanta?",
+        "a": "We do a video check-in two weeks after delivery. Small adjustments are covered by the {warrantyYears}-year warranty and can be done by any dentist near you; anything larger, we bring you back.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "Can I keep seeing my Atlanta dentist for cleanings?",
+        "a": "Yes, and you should. Veneers are cleaned like natural teeth. Tell your hygienist you have zirconia veneers so they use a non-abrasive polish, and keep your six-month visits.",
+        "doc": "Dr. Marta Puentes Marrero, DMD"
+      },
+      {
+        "q": "How do I compare your price with quotes I have in Atlanta?",
+        "a": "Ask every clinic for the same five things in writing: the material, the number of teeth, veneer or crown per tooth, the total, and the warranty. Ours are on the price list and in your estimate. Then add two flights and three hotel nights to ours and compare the totals.",
+        "doc": "Dr. Gretell Alonso Fiel, DMD"
+      },
+      {
+        "q": "Do I need a rental car in Miami?",
+        "a": "No. The clinic is 15 minutes from MIA and the partner hotels are within 10 minutes of the clinic, so Uber or Lyft covers the whole week. We text you the pickup details for each visit the evening before.",
+        "doc": "Dr. Marta Puentes Marrero, DMD"
+      }
+    ]
+  }
+}

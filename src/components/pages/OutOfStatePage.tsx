@@ -1,3 +1,7 @@
+// Out-of-state hub: the whole trip in order (from home, the week, hotels and rides,
+// what to pack, companions) and the grid of "Veneers <city>" pages.
+// Content: src/content/out-of-state.json (+ es). Numbers come from site.json via fillFacts.
+import Link from "next/link";
 import {
   ClinicFeatureGrid,
   ClinicHero,
@@ -11,8 +15,9 @@ import Img from "@/components/Img";
 import LazyVideo from "@/components/LazyVideo";
 import JsonLd from "@/components/JsonLd";
 import PageHero from "@/components/PageHero";
+import Inline from "@/components/blog/Inline";
 import { getContent, tpl, ui } from "@/lib/content-i18n";
-import { localizePath, type Locale } from "@/lib/i18n";
+import { localizeHref, localizePath, type Locale } from "@/lib/i18n";
 import { imageInfo } from "@/lib/images";
 import { faqPage, pageGraph } from "@/lib/schema";
 
@@ -20,6 +25,8 @@ const PATH = "/out-of-state-patients" as const;
 
 const POSTER = "out-of-state-poster.jpg";
 const mediaClass = "block aspect-[4/3] h-auto w-full object-cover";
+const h2 = "m-0 font-serif text-[34px] leading-[1.2] font-normal lg:text-5xl lg:leading-[1.1]";
+const para = "m-0 text-[17px] leading-[1.6] text-pretty text-body lg:text-lg";
 
 const visitCard =
   "flex flex-col gap-4 rounded-2xl border border-[rgba(255,255,255,.7)] px-5 py-6 shadow-[0_1px_0_rgba(255,255,255,.6)_inset,0_12px_32px_rgba(26,26,26,.06)] lg:min-h-[240px] lg:rounded-[18px] lg:px-6 lg:py-[26px]";
@@ -54,6 +61,17 @@ export default function OutOfStatePage({ locale = "en" }: { locale?: Locale }) {
           }
         />
       </PageHero>
+
+      {/* Why the week works, and which treatments it applies to. */}
+      <section className="wrap pt-16 lg:pt-28">
+        <div className="mx-auto flex max-w-[760px] flex-col gap-5">
+          {content.intro.map((p, i) => (
+            <p key={i} className={para}>
+              <Inline text={fillFacts(p)} locale={locale} />
+            </p>
+          ))}
+        </div>
+      </section>
 
       <section className="wrap pt-16 lg:pt-28">
         <ClinicSectionHead
@@ -112,16 +130,87 @@ export default function OutOfStatePage({ locale = "en" }: { locale?: Locale }) {
         </ol>
       </section>
 
+      {/* What happens from home first: six numbered steps, links to the evaluation, price list and financing. */}
+      <section className="wrap pt-16 lg:pt-28">
+        <ClinicSectionHead title={content.fromHome.title} aside={content.fromHome.aside} />
+        <ul className="m-0 grid list-none gap-3 p-0 sm:grid-cols-2 lg:grid-cols-3 lg:gap-4">
+          {content.fromHome.items.map((f) => (
+            <li key={f.t} className="glass-card flex flex-col gap-2.5 rounded-2xl p-5 lg:min-h-[150px] lg:rounded-[18px] lg:p-6">
+              {f.icon && <FeatureIcon name={f.icon} className="mb-1" />}
+              <h3 className="m-0 font-serif text-xl leading-[1.2] font-normal text-teal lg:text-[22px]">{f.t}</h3>
+              <p className="m-0 text-[15px] leading-[1.5] text-body">
+                <Inline text={fillFacts(f.d)} locale={locale} />
+              </p>
+            </li>
+          ))}
+        </ul>
+      </section>
+
       <section className="wrap pt-16 lg:pt-28">
         <ClinicSectionHead title={t.outOfStatePage.handleTitle} />
         <ClinicFeatureGrid items={content.perks} />
       </section>
 
+      {/* Airport, rides and hotel, plainly: what the clinic does and does not arrange. */}
       <section className="wrap pt-16 lg:pt-28">
         <div className="grid items-start gap-6 lg:grid-cols-[minmax(0,.8fr)_minmax(0,1.4fr)] lg:gap-16">
-          <h2 className="m-0 font-serif text-[34px] leading-[1.2] font-normal lg:sticky lg:top-8 lg:text-5xl lg:leading-[1.1]">
-            {t.outOfStatePage.faqTitle}
-          </h2>
+          <h2 className={`${h2} lg:sticky lg:top-8`}>{content.travel.title}</h2>
+          <div className="flex flex-col gap-5">
+            {content.travel.body.map((p, i) => (
+              <p key={i} className={para}>
+                <Inline text={fillFacts(p)} locale={locale} />
+              </p>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* What to pack, and who can come with you. */}
+      <section className="wrap pt-16 lg:pt-28">
+        <div className="grid items-start gap-8 lg:grid-cols-2 lg:gap-10">
+          <div className="glass-card flex flex-col gap-4 rounded-2xl p-6 lg:rounded-[20px] lg:p-8">
+            <h2 className="m-0 font-serif text-[28px] leading-[1.2] font-normal text-teal lg:text-[34px]">{content.pack.title}</h2>
+            <p className="m-0 text-[16px] leading-[1.55] text-body">{content.pack.intro}</p>
+            <ul className="m-0 flex list-none flex-col gap-3 p-0">
+              {content.pack.items.map((item) => (
+                <li key={item} className="grid grid-cols-[18px_minmax(0,1fr)] items-start gap-3 text-[15.5px] leading-[1.5] text-body">
+                  <svg viewBox="0 0 18 18" width="18" height="18" className="mt-0.5" aria-hidden="true">
+                    <path d="M3.5 9.5l3.5 3.5 7.5-8" fill="none" stroke="#CDB180" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="dark-panel flex flex-col gap-4 rounded-2xl p-6 shadow-[0_1px_0_rgba(247,244,238,.18)_inset,0_30px_80px_rgba(4,40,46,.32)] lg:rounded-[20px] lg:p-8">
+            <h2 className="m-0 font-serif text-[28px] leading-[1.2] font-normal lg:text-[34px]">{content.companions.title}</h2>
+            <p className="m-0 text-[16px] leading-[1.6] text-pretty text-on-dark-muted lg:text-[17px]">{content.companions.body}</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Patients come from: the city pages. */}
+      <section className="wrap pt-16 lg:pt-28">
+        <ClinicSectionHead title={content.cities.title} aside={content.cities.intro} />
+        <ul className="m-0 grid list-none gap-3 p-0 sm:grid-cols-2 lg:grid-cols-3 lg:gap-4">
+          {content.cities.items.map((c) => (
+            <li key={c.href}>
+              <Link
+                href={localizeHref(c.href, locale)}
+                className="glass-card flex h-full flex-col gap-2 rounded-2xl p-5 text-ink no-underline transition-colors hover:border-gold lg:rounded-[18px] lg:p-6"
+              >
+                <span className="font-serif text-[24px] leading-[1.15] text-teal lg:text-[26px]">{c.name}</span>
+                <span className="text-[15px] leading-[1.5] text-body">{c.d}</span>
+                <span className="mt-auto pt-2 text-[14px] font-semibold text-gold-text">{t.learnMore}</span>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="wrap pt-16 lg:pt-28">
+        <div className="grid items-start gap-6 lg:grid-cols-[minmax(0,.8fr)_minmax(0,1.4fr)] lg:gap-16">
+          <h2 className={`${h2} lg:sticky lg:top-8`}>{t.outOfStatePage.faqTitle}</h2>
           <FaqAccordion faqs={faqs} name="travel-faq" className="flex flex-col gap-3" locale={locale} />
         </div>
       </section>

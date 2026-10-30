@@ -1,0 +1,347 @@
+{
+  "path": "/porcelain-veneers-miami",
+  "packageId": "signature-veneers",
+  "breadcrumb": "Porcelain Veneers",
+  "schema": {
+    "name": "Porcelain veneers",
+    "procedureType": "http://schema.org/NoninvasiveProcedure"
+  },
+  "hero": {
+    "definition": "A porcelain veneer is a thin shell of dental ceramic, about 0.3 mm thick, bonded to the front of a tooth to change its shape, length or color. At Xiluet Smiles in Miami a single veneer costs $1,000 à la carte and a full set of 20 is $5,999 as the Smile Design package, made in the clinic's own lab, delivered in three visits in one week and covered by a 5-year written warranty.",
+    "lead": "One tooth or twenty. Thin zirconia veneers made in our own lab, bonded after about 0.3 mm of preparation, delivered in one week in Miami. 5-year warranty, in writing.",
+    "secondaryCta": "See your week in Miami",
+    "stats": [
+      {
+        "kind": "veneerPrice",
+        "label": "per veneer, à la carte"
+      },
+      {
+        "kind": "price",
+        "label": "20 veneers, Smile Design"
+      },
+      {
+        "kind": "text",
+        "value": "0.3 mm",
+        "label": "of preparation, sometimes none"
+      },
+      {
+        "kind": "rating",
+        "label": "Google reviews"
+      }
+    ],
+    "image": {
+      "caseId": "BA74",
+      "caption": "Porcelain veneers · made in-house · 0.3 mm prep · 5-year written warranty"
+    }
+  },
+  "candidates": {
+    "title": "What a porcelain veneer fixes",
+    "intro": "One veneer can fix one tooth. Eight to twenty can change the whole smile. These are the problems veneers solve well.",
+    "items": [
+      {
+        "t": "Stains whitening won’t lift",
+        "d": "Tetracycline, fluorosis, a root-canal tooth gone grey, or deep internal discoloration."
+      },
+      {
+        "t": "Chips, cracks and worn edges",
+        "d": "Edges shortened by grinding, or old bonding that keeps breaking off."
+      },
+      {
+        "t": "Gaps and black triangles",
+        "d": "Spaces between front teeth closed in one week, without years of aligners."
+      },
+      {
+        "t": "Small, short or uneven teeth",
+        "d": "Peg laterals, teeth that look too short when you smile, or a lopsided edge line."
+      },
+      {
+        "t": "Old veneers that no longer match",
+        "d": "A single veneer that darkened, or a set that was never the right shade."
+      }
+    ]
+  },
+  "crossLink": {
+    "label": "Want all 20 planned as one design? See Smile Design →",
+    "href": "/smile-design-miami"
+  },
+  "why": {
+    "eyebrow": "Why Xiluet veneers",
+    "title": "Made one floor up. Fitted the same week.",
+    "body": "Every veneer is milled from multilayer zirconia and finished by hand by our ceramist, one floor above your doctor. That is why we can go as thin as 0.3 mm, match your shade with you in the chair and deliver in days, not weeks.",
+    "image": {
+      "src": "blog-veneer-translucent-tweezers.jpg",
+      "alt": "A single thin porcelain veneer held in tweezers against the light, showing its translucency"
+    },
+    "facts": [
+      {
+        "icon": "veneer",
+        "label": "Preparation",
+        "big": "0.3 mm",
+        "sub": "About the thickness of a fingernail. On small or inward-set teeth, sometimes nothing is removed at all."
+      },
+      {
+        "icon": "lab",
+        "label": "Lab",
+        "big": "In-house",
+        "sub": "Your ceramist works in the building. Shade and fit are checked with you in the chair, not by email."
+      },
+      {
+        "icon": "approve",
+        "label": "Design preview",
+        "big": "You approve",
+        "sub": "You see the new shape in your own mouth and sign off before any tooth is prepared."
+      },
+      {
+        "icon": "shield",
+        "label": "Warranty",
+        "big": "5 years",
+        "sub": "In writing, whether you have one veneer or twenty. Honored by any dentist for small adjustments."
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "what-is-a-veneer",
+      "eyebrow": "The basics",
+      "title": "What a porcelain veneer is",
+      "body": [
+        "A porcelain veneer is a thin shell of dental ceramic bonded to the front surface of a tooth. It covers what you see when you smile and leaves the back and the biting surface of the tooth as they are. Because it is bonded to enamel with a resin cement, it becomes part of the tooth: you eat with it, brush it and floss around it like any other tooth.",
+        "The word porcelain covers two ceramic families. Lithium disilicate, sold as e.max, is a glass ceramic. Zirconia is a crystalline ceramic, two to three times stronger, that now comes in multilayer discs translucent enough for front teeth. Every veneer we make is zirconia, milled from a disc and finished by hand in our [own lab](/custom-lab). The [zirconia veneers page](/zirconia-veneers) explains the material in detail.",
+        "A veneer is not a crown. A crown wraps the whole tooth and needs 60 to 70% of it cut away first. A veneer sits on the front and needs about 0.3 mm. If a clinic plans to \"veneer\" every tooth with full-coverage crowns, you are being sold crowns, and [we explain how to tell](/blog/do-veneers-ruin-your-teeth)."
+      ]
+    },
+    {
+      "id": "candidates",
+      "eyebrow": "Candidacy",
+      "title": "Who is a candidate, and who should wait",
+      "body": [
+        "Most adults with healthy gums and most of their enamel are candidates. The teeth can be stained, chipped, short, slightly crowded or gapped; those are the reasons people come. What matters more is what is underneath: enough enamel to bond to, a stable bite and gums that are not inflamed. Your doctor confirms all three at Visit 1 from the scans and X-rays, and we tell you in writing if something has to be treated first.",
+        "Three situations mean waiting or choosing something else. None of them is a no forever; they are a not yet, or a different restoration for that tooth."
+      ],
+      "bullets": [
+        {
+          "t": "Active gum disease",
+          "d": "Bleeding, swollen or receding gums move after treatment, and a veneer edge placed on an inflamed gum line ends up exposed. Deep cleaning comes first, then the design once the gums are stable. The cleaning is on our [price list](/veneers-cost-miami)."
+        },
+        {
+          "t": "Heavy grinding without a guard",
+          "d": "Bruxism is the main reason veneers chip or come off. If you grind, you can still have veneers, but you wear a night guard from the first night, and it is a condition of the warranty. If you will not wear one, we say so and do not place them."
+        },
+        {
+          "t": "Large existing fillings",
+          "d": "A veneer bonds to enamel. A front tooth that is mostly filling, or has had a root canal and is dark and brittle, holds a veneer poorly. That tooth gets a crown, planned to match the veneers next to it, and we tell you which tooth and why before you book."
+        },
+        {
+          "t": "Missing teeth or a bite that needs moving",
+          "d": "A veneer cannot replace a tooth, and it cannot fix a deep overbite or crossbite. Those cases start with an [implant](/all-on-x-dental-implants-miami), [aligners or a makeover with crowns](/blog/veneers-vs-crowns-vs-invisalign), and veneers may follow."
+        }
+      ],
+      "links": [
+        {
+          "label": "Who is a candidate for veneers, in detail",
+          "href": "/blog/who-is-a-candidate-for-veneers"
+        }
+      ]
+    },
+    {
+      "id": "how-many",
+      "eyebrow": "How many",
+      "title": "8, 10 or 20 veneers?",
+      "body": [
+        "The number depends on how wide your smile is, not on a package. Stand in front of a mirror, smile as you do in photos, and count the upper teeth you can see. Most people show eight to ten. Then do the same for the lower teeth; many people show six to eight when they talk and laugh. Veneers on the teeth you show, and only those, is the honest number.",
+        "Each option costs {veneerPrice} per tooth à la carte up to 19 teeth. At 20 the Smile Design package applies, which is why so many of our patients choose it: the per-tooth price falls to about $300 and the design, cleaning, X-rays and preview are included. The [full set cost guide](/blog/how-much-does-a-full-set-of-veneers-cost) walks through the arithmetic."
+      ],
+      "bullets": [
+        {
+          "t": "8 veneers",
+          "d": "The upper front teeth, canine to canine plus the first premolars. Right for a narrow smile where the back teeth stay hidden. {veneerPrice} each."
+        },
+        {
+          "t": "10 veneers",
+          "d": "Adds the second premolars, so the shade stays even into the corners of a wide smile. The most common à la carte number. {veneerPrice} each."
+        },
+        {
+          "t": "20 veneers",
+          "d": "Ten upper and ten lower, planned as one design. Both arches match in shade and shape, and the bite is set together. {price} as [Smile Design](/smile-design-miami)."
+        },
+        {
+          "t": "1 to 4 veneers",
+          "d": "A chipped, dark or peg-shaped tooth, matched to the neighbours by eye with you in the chair. {veneerPrice} each, same material, same warranty."
+        }
+      ]
+    },
+    {
+      "id": "materials",
+      "eyebrow": "Material",
+      "title": "Zirconia, e.max or composite",
+      "body": [
+        "Zirconia is what we make, so we will say where it is not the answer. A single front tooth with a healthy bite, where the tooth underneath is already bright and the goal is a small change of shape, is where e.max glass ceramic shows its depth. Under load it is a different story: full sets, grinders, molars and bridges need the strength of zirconia, about 1,000 to 1,200 MPa against roughly 470 for e.max, and zirconia lets the edge finish at the gum line where it can be seen and cleaned. [Zirconia vs e.max](/blog/zirconia-veneers-vs-emax-veneers) goes tooth by tooth.",
+        "Composite veneers are resin sculpted onto the tooth in one visit, with no lab. They are the right call for one chipped edge, a tooth that is still growing, or a trial of a new shape before committing to ceramic. They stain, they chip, and a full set of them rarely matches itself a year later. [Zirconia vs composite](/blog/zirconia-veneers-vs-composite-veneers) has the survival data and the cost per year.",
+        "Lumineers is a brand of thin, no-prep veneer in a different glass ceramic. The idea is sound for a few patients and oversold to the rest; the [three-way comparison](/blog/composite-vs-porcelain-veneers-vs-lumineers) covers who really qualifies."
+      ],
+      "links": [
+        {
+          "label": "Zirconia veneers at Xiluet",
+          "href": "/zirconia-veneers"
+        },
+        {
+          "label": "Zirconia vs e.max",
+          "href": "/blog/zirconia-veneers-vs-emax-veneers"
+        },
+        {
+          "label": "Zirconia vs composite",
+          "href": "/blog/zirconia-veneers-vs-composite-veneers"
+        },
+        {
+          "label": "Composite vs porcelain vs Lumineers",
+          "href": "/blog/composite-vs-porcelain-veneers-vs-lumineers"
+        }
+      ]
+    },
+    {
+      "id": "preparation",
+      "eyebrow": "Preparation",
+      "title": "0.3 mm, and what no-prep really means",
+      "body": [
+        "Preparation is the thin layer of enamel smoothed off the front of the tooth so the veneer sits flush instead of looking bulky. Ours is about 0.3 mm, roughly the thickness of a fingernail, and it stays inside the enamel, which is where a bond lasts longest. The tooth is numbed for it, and most patients describe pressure rather than pain. [What the tooth looks like underneath](/blog/what-do-teeth-look-like-under-veneers) shows a prepared tooth next to one cut for a crown.",
+        "No-prep is real, but only for some teeth. A small, inward-set or worn tooth has room for a veneer to be added without removing anything, and when your scans show that, we do it. A tooth that is already full-sized or sticks out needs 0.3 mm removed or the veneer will look thick and trap plaque at the gum. A clinic promising no-prep on every tooth is either adding bulk or not telling you what it is doing. We decide tooth by tooth at Visit 1 and show you on the scan."
+      ],
+      "links": [
+        {
+          "label": "Do veneers ruin your teeth?",
+          "href": "/blog/do-veneers-ruin-your-teeth"
+        },
+        {
+          "label": "Do veneers hurt?",
+          "href": "/blog/do-veneers-hurt"
+        }
+      ]
+    },
+    {
+      "id": "care",
+      "eyebrow": "Afterwards",
+      "title": "Care and lifespan",
+      "body": [
+        "Zirconia does not stain or change shade, so coffee, wine and tea are fine. Brush twice a day with a non-abrasive toothpaste, floss as normal, and skip whitening strips: they will not change the veneers and will only lighten the teeth around them. Do not open packages or bite nails with your front teeth, and if you grind, wear the night guard. A regular cleaning every six months, here or at home, keeps the edges sealed.",
+        "Pooled studies put porcelain veneer survival above 95% at ten years, and most failures happen in the first two, which is what a written warranty is for. Ours covers {warrantyYears} years, and small adjustments are honored by any dentist near you. With normal care, 10 to 15 years is typical before a veneer needs replacing, and zirconia is designed for 20."
+      ],
+      "links": [
+        {
+          "label": "How to care for porcelain veneers",
+          "href": "/blog/how-to-take-care-of-porcelain-veneers"
+        },
+        {
+          "label": "How long do porcelain veneers last?",
+          "href": "/blog/how-long-do-porcelain-veneers-last"
+        },
+        {
+          "label": "What the warranty covers",
+          "href": "/blog/veneer-warranty-what-it-covers"
+        }
+      ]
+    }
+  ],
+  "week": {
+    "title": "Your veneers, visit by visit",
+    "intro": "Everything before the trip happens from home: photos, written estimate, payment plan and dates. Then three visits in one week, for one veneer or twenty.",
+    "linkLabel": "Flying in? See the out-of-state week →",
+    "visits": [
+      {
+        "k": "From home",
+        "t": "Photos, estimate, dates",
+        "d": "Send photos, get your written estimate within 6 hours with the number of veneers and the price per tooth, pick a payment plan and reserve with a $250 deposit.",
+        "time": "Any day, about 2 minutes of your time"
+      },
+      {
+        "k": "Visit 1 · Monday",
+        "t": "Exam, scans and design",
+        "d": "Cleaning, X-rays, 3D scans and photos. You see the new shape in your mouth and confirm which teeth get a veneer.",
+        "time": "About 2 hours. Rest of the day free."
+      },
+      {
+        "k": "Visit 2 · Tuesday",
+        "t": "Preparation and temporaries",
+        "d": "About 0.3 mm of preparation, then temporaries in the approved shape so you can live with it on Wednesday while the lab finishes the veneers.",
+        "time": "About 1 to 3 hours, depending on the number of teeth"
+      },
+      {
+        "k": "Visit 3 · Thursday",
+        "t": "Try-in, bonding, warranty",
+        "d": "Shade checked with you and the ceramist in the chair, veneers bonded, bite adjusted, and your 5-year warranty handed over in writing.",
+        "time": "About 2 hours. Fly home the same evening."
+      }
+    ]
+  },
+  "results": {
+    "title": "Porcelain veneer results",
+    "linkLabel": "All cases →",
+    "label": "Porcelain veneers",
+    "caseTypes": ["Veneers"]
+  },
+  "price": {
+    "eyebrow": "Cost",
+    "title": "One veneer is {veneerPrice}. Twenty are {price}.",
+    "body": "À la carte veneers are {veneerPrice} per tooth, any number from one to nineteen, with the same material, lab and warranty as the package. At 20 teeth the Smile Design package applies at {price}, which works out to about $300 per veneer and includes the design preview, cleaning and X-rays. Your written estimate states the number of teeth and the total before you book; the number you see is the number you pay unless the exam finds something to treat first, and we tell you that in writing too.",
+    "lendersLabel": "Pay over time with",
+    "compareLabel": "See the full price list →",
+    "card": {
+      "title": "Smile Design",
+      "sub": "20 porcelain veneers · or {veneerPrice} per veneer à la carte",
+      "badge": "Most chosen",
+      "pricePrefix": "20 veneers",
+      "priceSuffix": null,
+      "included": [
+        "20 zirconia veneers, 0.3 mm minimal prep",
+        "Professional cleaning and X-rays",
+        "Design preview you approve first",
+        "Delivery in 5 business days",
+        "5-year warranty, in writing"
+      ],
+      "cta": "Get my written estimate"
+    },
+    "footnote": "Final price confirmed in writing after a doctor's evaluation. Veneers only; deep cleaning, crowns and other procedures are quoted separately from the price list."
+  },
+  "faq": {
+    "title": "Porcelain veneer questions, answered by the doctors",
+    "linkLabel": "All answers →",
+    "items": [
+      {
+        "q": "How much does one porcelain veneer cost in Miami?",
+        "a": "At Xiluet Smiles a single veneer is {veneerPrice}, in the same multilayer zirconia, finished in our own lab, with the same {warrantyYears}-year written warranty as a full set. Twenty veneers are {price} as the Smile Design package.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "Can I get veneers on just my front teeth?",
+        "a": "Yes. Two, four, six or eight veneers on the upper front teeth is common, matched by eye to the teeth next to them with you in the chair. The ceramist builds the shade and translucency to blend, not to stand out.",
+        "doc": "Dr. Gretell Alonso Fiel, DMD"
+      },
+      {
+        "q": "Do porcelain veneers hurt?",
+        "a": "The tooth is numbed for the 0.3 mm of preparation, and most patients describe pressure, not pain. Temporaries can feel sensitive to cold for a day or two; after bonding, that settles within a few days.",
+        "doc": "Dr. Marta Puentes Marrero, DMD"
+      },
+      {
+        "q": "Who should not get porcelain veneers?",
+        "a": "Anyone with active gum disease until it is treated, anyone who grinds and will not wear a night guard, and teeth that are mostly filling or have had a root canal, which do better with a crown. We tell you which teeth and why in your written plan.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "Are your veneers really no-prep?",
+        "a": "On some teeth, yes: small, worn or inward-set teeth can take a veneer without any enamel removed. On a tooth that is already full-sized, about 0.3 mm comes off so the veneer sits flush. We decide tooth by tooth on your scan at Visit 1 and show you.",
+        "doc": "Dr. Gretell Alonso Fiel, DMD"
+      },
+      {
+        "q": "Can I see what my veneers will look like before you start?",
+        "a": "Yes. At Visit 1 we scan your teeth and photograph your face, design the new shape, and place a preview in your mouth. You approve it, or we change it, before any tooth is prepared.",
+        "doc": "Dr. Marta Puentes Marrero, DMD"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Start with photos.",
+    "body": "Free, no visit needed. A doctor tells you how many veneers, and the written estimate follows.",
+    "cardTitle": "Free photo evaluation",
+    "cardBody": "Two photos of your smile, from your phone. Takes 2 minutes.",
+    "button": "Start my evaluation"
+  }
+}

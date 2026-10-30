@@ -1,0 +1,349 @@
+{
+  "path": "/porcelain-veneers-miami",
+  "packageId": "signature-veneers",
+  "breadcrumb": "Carillas de porcelana",
+  "schema": {
+    "name": "Carillas de porcelana",
+    "procedureType": "http://schema.org/NoninvasiveProcedure"
+  },
+  "hero": {
+    "definition": "Una carilla de porcelana es una lámina delgada de cerámica dental, de unos 0.3 mm de grosor, que se cementa al frente de un diente para cambiar su forma, largo o color. En Xiluet Smiles en Miami una carilla individual cuesta $1,000 por unidad y un juego completo de 20 cuesta $5,999 como paquete Diseño de sonrisa, hecho en el laboratorio propio de la clínica, entregado en tres visitas en una semana y cubierto por una garantía de 5 años por escrito.",
+    "lead": "Un diente o veinte. Carillas finas de zirconia hechas en nuestro laboratorio propio, cementadas tras unos 0.3 mm de preparación y entregadas en una semana en Miami. Garantía de 5 años, por escrito.",
+    "secondaryCta": "Mira tu semana en Miami",
+    "stats": [
+      {
+        "kind": "veneerPrice",
+        "label": "por carilla, por unidad"
+      },
+      {
+        "kind": "price",
+        "label": "20 carillas, Diseño de sonrisa"
+      },
+      {
+        "kind": "text",
+        "value": "0.3 mm",
+        "label": "de preparación, a veces ninguna"
+      },
+      {
+        "kind": "rating",
+        "label": "Reseñas de Google"
+      }
+    ],
+    "image": {
+      "caseId": "BA74",
+      "caption": "Carillas de porcelana · hechas en nuestro laboratorio · preparación de 0.3 mm · garantía de 5 años por escrito"
+    }
+  },
+  "candidates": {
+    "title": "Lo que corrige una carilla de porcelana",
+    "intro": "Una carilla puede corregir un diente. De ocho a veinte pueden cambiar toda la sonrisa. Estos son los problemas que las carillas resuelven bien.",
+    "items": [
+      {
+        "t": "Manchas que el blanqueamiento no quita",
+        "d": "Tetraciclina, fluorosis, un diente con endodoncia que se puso gris o decoloración interna profunda."
+      },
+      {
+        "t": "Astillas, fisuras y bordes desgastados",
+        "d": "Bordes acortados por el bruxismo o resinas viejas que se siguen rompiendo."
+      },
+      {
+        "t": "Espacios y triángulos negros",
+        "d": "Espacios entre los dientes frontales cerrados en una semana, sin años de alineadores."
+      },
+      {
+        "t": "Dientes pequeños, cortos o desiguales",
+        "d": "Laterales cónicos, dientes que se ven demasiado cortos al sonreír o una línea de bordes torcida."
+      },
+      {
+        "t": "Carillas viejas que ya no combinan",
+        "d": "Una sola carilla que se oscureció, o un juego que nunca tuvo el tono correcto."
+      }
+    ]
+  },
+  "crossLink": {
+    "label": "¿Quieres las 20 planificadas como un solo diseño? Mira Diseño de sonrisa →",
+    "href": "/smile-design-miami"
+  },
+  "why": {
+    "eyebrow": "Por qué las carillas Xiluet",
+    "title": "Hechas un piso arriba. Colocadas la misma semana.",
+    "body": "Cada carilla se fresa en zirconia multicapa y la termina a mano nuestro ceramista, un piso arriba de tu doctor. Por eso podemos llegar a 0.3 mm, igualar tu tono contigo en el sillón y entregar en días, no en semanas.",
+    "image": {
+      "src": "blog-veneer-translucent-tweezers.jpg",
+      "alt": "Una sola carilla fina de porcelana sostenida con pinzas a contraluz, mostrando su translucidez"
+    },
+    "facts": [
+      {
+        "icon": "veneer",
+        "label": "Preparación",
+        "big": "0.3 mm",
+        "sub": "Más o menos el grosor de una uña. En dientes pequeños o inclinados hacia adentro, a veces no se quita nada."
+      },
+      {
+        "icon": "lab",
+        "label": "Laboratorio",
+        "big": "Propio",
+        "sub": "Tu ceramista trabaja en el edificio. El tono y el ajuste se revisan contigo en el sillón, no por correo."
+      },
+      {
+        "icon": "approve",
+        "label": "Vista previa",
+        "big": "Tú apruebas",
+        "sub": "Ves la nueva forma en tu propia boca y das el visto bueno antes de preparar ningún diente."
+      },
+      {
+        "icon": "shield",
+        "label": "Garantía",
+        "big": "5 años",
+        "sub": "Por escrito, tengas una carilla o veinte. Los ajustes pequeños se honran con cualquier dentista."
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "what-is-a-veneer",
+      "eyebrow": "Lo básico",
+      "title": "Qué es una carilla de porcelana",
+      "body": [
+        "Una carilla de porcelana es una lámina delgada de cerámica dental que se cementa a la cara frontal de un diente. Cubre lo que se ve al sonreír y deja la parte de atrás y la superficie de mordida del diente como están. Como se adhiere al esmalte con un cemento de resina, pasa a formar parte del diente: comes con ella, la cepillas y pasas el hilo dental alrededor como con cualquier otro diente.",
+        "La palabra porcelana abarca dos familias de cerámica. El disilicato de litio, que se vende como e.max, es una cerámica vítrea. La zirconia es una cerámica cristalina, de dos a tres veces más resistente, que ahora viene en discos multicapa lo bastante translúcidos para los dientes frontales. Cada carilla que hacemos es de zirconia, fresada a partir de un disco y terminada a mano en nuestro [laboratorio propio](/custom-lab). La [página de carillas de zirconia](/zirconia-veneers) explica el material en detalle.",
+        "Una carilla no es una corona. Una corona envuelve todo el diente y requiere tallar primero entre el 60 y el 70% de él. Una carilla se apoya en el frente y necesita unos 0.3 mm. Si una clínica planea \"ponerte carillas\" en todos los dientes con coronas de cobertura completa, te están vendiendo coronas, y [te explicamos cómo distinguirlo](/blog/do-veneers-ruin-your-teeth)."
+      ]
+    },
+    {
+      "id": "candidates",
+      "eyebrow": "Candidatos",
+      "title": "Quién es candidato, y quién debería esperar",
+      "body": [
+        "La mayoría de los adultos con encías sanas y la mayor parte de su esmalte son candidatos. Los dientes pueden estar manchados, astillados, cortos, un poco apiñados o con espacios; por eso viene la gente. Lo que más importa es lo que hay debajo: suficiente esmalte para la cementación, una mordida estable y encías sin inflamación. Tu doctor confirma las tres cosas en la Visita 1 con los escaneos y las radiografías, y te decimos por escrito si hay algo que tratar primero.",
+        "Tres situaciones implican esperar o elegir otra cosa. Ninguna es un no para siempre; son un todavía no, o una restauración distinta para ese diente."
+      ],
+      "bullets": [
+        {
+          "t": "Enfermedad activa de las encías",
+          "d": "Las encías que sangran, están inflamadas o retraídas se mueven después del tratamiento, y el borde de una carilla colocado sobre una línea de la encía inflamada termina expuesto. Primero va la limpieza profunda y luego el diseño, cuando las encías estén estables. La limpieza está en nuestra [lista de precios](/veneers-cost-miami)."
+        },
+        {
+          "t": "Bruxismo fuerte sin guarda",
+          "d": "El bruxismo es la razón principal por la que las carillas se astillan o se despegan. Si rechinas los dientes, puedes tener carillas igual, pero usas una guarda nocturna desde la primera noche, y es una condición de la garantía. Si no vas a usarla, te lo decimos y no las colocamos."
+        },
+        {
+          "t": "Empastes grandes ya existentes",
+          "d": "Una carilla se adhiere al esmalte. Un diente frontal que es casi todo empaste, o que tiene endodoncia y está oscuro y frágil, sostiene mal una carilla. Ese diente lleva una corona, planificada para combinar con las carillas de al lado, y te decimos qué diente y por qué antes de que reserves."
+        },
+        {
+          "t": "Dientes ausentes o una mordida que hay que mover",
+          "d": "Una carilla no puede reemplazar un diente, y no puede corregir una sobremordida profunda ni una mordida cruzada. Esos casos empiezan con un [implante](/all-on-x-dental-implants-miami), [alineadores o una transformación con coronas](/blog/veneers-vs-crowns-vs-invisalign), y las carillas pueden venir después."
+        }
+      ],
+      "links": [
+        {
+          "label": "Quién es candidato para carillas, en detalle",
+          "href": "/blog/who-is-a-candidate-for-veneers"
+        }
+      ]
+    },
+    {
+      "id": "how-many",
+      "eyebrow": "Cuántas",
+      "title": "¿8, 10 o 20 carillas?",
+      "body": [
+        "El número depende de qué tan amplia es tu sonrisa, no de un paquete. Párate frente a un espejo, sonríe como en las fotos y cuenta los dientes superiores que se ven. La mayoría muestra de ocho a diez. Luego haz lo mismo con los inferiores; muchos muestran de seis a ocho al hablar y reír. Carillas en los dientes que muestras, y solo en esos, es el número honesto.",
+        "Cada opción cuesta {veneerPrice} por diente por unidad hasta 19 dientes. A partir de 20 aplica el paquete Diseño de sonrisa, y por eso tantos de nuestros pacientes lo eligen: el precio por diente baja a unos $300 y el diseño, la limpieza, las radiografías y la vista previa van incluidos. La [guía de costo del juego completo](/blog/how-much-does-a-full-set-of-veneers-cost) repasa las cuentas."
+      ],
+      "bullets": [
+        {
+          "t": "8 carillas",
+          "d": "Los dientes frontales superiores, de canino a canino más los primeros premolares. Lo indicado para una sonrisa estrecha donde las muelas quedan ocultas. {veneerPrice} cada una."
+        },
+        {
+          "t": "10 carillas",
+          "d": "Suma los segundos premolares, para que el tono siga parejo hasta las esquinas de una sonrisa amplia. El número por unidad más común. {veneerPrice} cada una."
+        },
+        {
+          "t": "20 carillas",
+          "d": "Diez superiores y diez inferiores, planificadas como un solo diseño. Ambas arcadas combinan en tono y forma, y la mordida se ajusta en conjunto. {price} como [Diseño de sonrisa](/smile-design-miami)."
+        },
+        {
+          "t": "1 a 4 carillas",
+          "d": "Un diente astillado, oscuro o cónico, igualado a ojo con los vecinos contigo en el sillón. {veneerPrice} cada una, mismo material, misma garantía."
+        }
+      ]
+    },
+    {
+      "id": "materials",
+      "eyebrow": "Material",
+      "title": "Zirconia, e.max o composite",
+      "body": [
+        "La zirconia es lo que hacemos, así que te diremos dónde no es la respuesta. Un solo diente frontal con una mordida sana, donde el diente de debajo ya es claro y el objetivo es un cambio pequeño de forma, es donde la cerámica vítrea e.max luce su profundidad. Bajo carga la historia es otra: los juegos completos, quienes rechinan, las muelas y los puentes necesitan la resistencia de la zirconia, entre 1,000 y 1,200 MPa frente a unos 470 de e.max, y la zirconia permite que el borde termine a la altura de la encía, donde se puede ver y limpiar. [Zirconia vs e.max](/blog/zirconia-veneers-vs-emax-veneers) lo repasa diente por diente.",
+        "Las carillas de composite son resina modelada sobre el diente en una sola visita, sin laboratorio. Son lo indicado para un borde astillado, un diente que todavía está creciendo o para probar una forma nueva antes de comprometerse con la cerámica. Se manchan, se astillan, y un juego completo rara vez sigue combinando consigo mismo un año después. [Zirconia vs composite](/blog/zirconia-veneers-vs-composite-veneers) tiene los datos de supervivencia y el costo por año.",
+        "Lumineers es una marca de carillas finas sin preparación en otra cerámica vítrea. La idea es válida para unos pocos pacientes y se vende de más al resto; la [comparación a tres bandas](/blog/composite-vs-porcelain-veneers-vs-lumineers) cubre quién califica de verdad."
+      ],
+      "links": [
+        {
+          "label": "Carillas de zirconia en Xiluet",
+          "href": "/zirconia-veneers"
+        },
+        {
+          "label": "Zirconia vs e.max",
+          "href": "/blog/zirconia-veneers-vs-emax-veneers"
+        },
+        {
+          "label": "Zirconia vs composite",
+          "href": "/blog/zirconia-veneers-vs-composite-veneers"
+        },
+        {
+          "label": "Composite vs porcelana vs Lumineers",
+          "href": "/blog/composite-vs-porcelain-veneers-vs-lumineers"
+        }
+      ]
+    },
+    {
+      "id": "preparation",
+      "eyebrow": "Preparación",
+      "title": "0.3 mm, y qué significa de verdad sin preparación",
+      "body": [
+        "La preparación es la capa fina de esmalte que se alisa en el frente del diente para que la carilla quede al ras en vez de verse abultada. La nuestra es de unos 0.3 mm, más o menos el grosor de una uña, y se queda dentro del esmalte, que es donde una cementación dura más. El diente se anestesia para hacerla, y la mayoría de los pacientes describe presión más que dolor. [Cómo se ve el diente debajo](/blog/what-do-teeth-look-like-under-veneers) muestra un diente preparado junto a uno tallado para corona.",
+        "Sin preparación existe, pero solo para algunos dientes. Un diente pequeño, inclinado hacia adentro o desgastado tiene espacio para añadir una carilla sin quitar nada, y cuando tus escaneos lo muestran, lo hacemos. Un diente que ya tiene su tamaño completo o sobresale necesita que se quiten 0.3 mm, o la carilla se verá gruesa y acumulará placa en la encía. Una clínica que promete sin preparación en todos los dientes está añadiendo volumen o no te está diciendo lo que hace. Lo decidimos diente por diente en la Visita 1 y te lo mostramos en el escaneo."
+      ],
+      "links": [
+        {
+          "label": "¿Las carillas arruinan tus dientes?",
+          "href": "/blog/do-veneers-ruin-your-teeth"
+        },
+        {
+          "label": "¿Duelen las carillas?",
+          "href": "/blog/do-veneers-hurt"
+        }
+      ]
+    },
+    {
+      "id": "care",
+      "eyebrow": "Después",
+      "title": "Cuidado y duración",
+      "body": [
+        "La zirconia no se mancha ni cambia de tono, así que el café, el vino y el té no son problema. Cepíllate dos veces al día con una pasta no abrasiva, usa hilo dental como siempre y olvídate de las tiras blanqueadoras: no cambian las carillas y solo aclaran los dientes de alrededor. No abras paquetes ni te muerdas las uñas con los dientes frontales, y si rechinas, usa la guarda nocturna. Una limpieza regular cada seis meses, aquí o en tu ciudad, mantiene los bordes sellados.",
+        "Los estudios combinados sitúan la supervivencia de las carillas de porcelana por encima del 95% a diez años, y la mayoría de los fallos ocurre en los dos primeros, que es para lo que sirve una garantía por escrito. La nuestra cubre {warrantyYears} años, y los ajustes pequeños se honran con cualquier dentista cerca de ti. Con un cuidado normal, lo típico es de 10 a 15 años antes de que una carilla necesite reemplazo, y la zirconia está diseñada para 20."
+      ],
+      "links": [
+        {
+          "label": "Cómo cuidar las carillas de porcelana",
+          "href": "/blog/how-to-take-care-of-porcelain-veneers"
+        },
+        {
+          "label": "¿Cuánto duran las carillas de porcelana?",
+          "href": "/blog/how-long-do-porcelain-veneers-last"
+        },
+        {
+          "label": "Qué cubre la garantía",
+          "href": "/blog/veneer-warranty-what-it-covers"
+        }
+      ]
+    }
+  ],
+  "week": {
+    "title": "Tus carillas, visita por visita",
+    "intro": "Todo lo previo al viaje se hace desde casa: fotos, presupuesto por escrito, plan de pago y fechas. Luego, tres visitas en una semana, para una carilla o veinte.",
+    "linkLabel": "¿Vienes en avión? Mira la semana para pacientes de otros estados →",
+    "visits": [
+      {
+        "k": "Desde casa",
+        "t": "Fotos, presupuesto, fechas",
+        "d": "Envía fotos, recibe tu presupuesto por escrito en menos de 6 horas con el número de carillas y el precio por diente, elige un plan de pago y reserva con un depósito de $250.",
+        "time": "Cualquier día, unos 2 minutos de tu tiempo"
+      },
+      {
+        "k": "Visita 1 · Lunes",
+        "t": "Examen, escaneos y diseño",
+        "d": "Limpieza, radiografías, escaneos 3D y fotos. Ves la nueva forma en tu boca y confirmas qué dientes llevan carilla.",
+        "time": "Unas 2 horas. El resto del día libre."
+      },
+      {
+        "k": "Visita 2 · Martes",
+        "t": "Preparación y provisionales",
+        "d": "Unos 0.3 mm de preparación y luego provisionales con la forma aprobada, para que vivas con ella el miércoles mientras el laboratorio termina las carillas.",
+        "time": "De 1 a 3 horas, según el número de dientes"
+      },
+      {
+        "k": "Visita 3 · Jueves",
+        "t": "Prueba, cementación, garantía",
+        "d": "Tono revisado contigo y con el ceramista en el sillón, carillas cementadas, mordida ajustada y tu garantía de 5 años entregada por escrito.",
+        "time": "Unas 2 horas. Vuelas a casa esa misma tarde."
+      }
+    ]
+  },
+  "results": {
+    "title": "Resultados de carillas de porcelana",
+    "linkLabel": "Todos los casos →",
+    "label": "Carillas de porcelana",
+    "caseTypes": [
+      "Veneers"
+    ]
+  },
+  "price": {
+    "eyebrow": "Costo",
+    "title": "Una carilla cuesta {veneerPrice}. Veinte cuestan {price}.",
+    "body": "Las carillas por unidad cuestan {veneerPrice} por diente, en cualquier cantidad de una a diecinueve, con el mismo material, laboratorio y garantía que el paquete. A partir de 20 dientes aplica el paquete Diseño de sonrisa por {price}, que sale a unos $300 por carilla e incluye la vista previa del diseño, la limpieza y las radiografías. Tu presupuesto por escrito indica el número de dientes y el total antes de reservar; el número que ves es el número que pagas, salvo que el examen encuentre algo que haya que tratar primero, y eso también te lo decimos por escrito.",
+    "lendersLabel": "Paga a plazos con",
+    "compareLabel": "Mira la lista de precios completa →",
+    "card": {
+      "title": "Diseño de sonrisa",
+      "sub": "20 carillas de porcelana · o {veneerPrice} por carilla por unidad",
+      "badge": "El más elegido",
+      "pricePrefix": "20 carillas",
+      "priceSuffix": null,
+      "included": [
+        "20 carillas de zirconia, preparación mínima de 0.3 mm",
+        "Limpieza profesional y radiografías",
+        "Vista previa del diseño que apruebas primero",
+        "Entrega en 5 días hábiles",
+        "Garantía de 5 años por escrito"
+      ],
+      "cta": "Quiero mi presupuesto por escrito"
+    },
+    "footnote": "Precio final confirmado por escrito después de la evaluación de un doctor. Solo carillas; la limpieza profunda, las coronas y otros procedimientos se cotizan aparte según la lista de precios."
+  },
+  "faq": {
+    "title": "Preguntas sobre carillas de porcelana, respondidas por los doctores",
+    "linkLabel": "Todas las respuestas →",
+    "items": [
+      {
+        "q": "¿Cuánto cuesta una carilla de porcelana en Miami?",
+        "a": "En Xiluet Smiles una sola carilla cuesta {veneerPrice}, en la misma zirconia multicapa, terminada en nuestro laboratorio propio, con la misma garantía de {warrantyYears} años por escrito que un juego completo. Veinte carillas cuestan {price} como paquete Diseño de sonrisa.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "¿Puedo ponerme carillas solo en los dientes de adelante?",
+        "a": "Sí. Dos, cuatro, seis u ocho carillas en los dientes frontales superiores es algo común, igualadas a ojo con los dientes de al lado contigo en el sillón. El ceramista construye el tono y la translucidez para que se integren, no para que resalten.",
+        "doc": "Dr. Gretell Alonso Fiel, DMD"
+      },
+      {
+        "q": "¿Duelen las carillas de porcelana?",
+        "a": "El diente se anestesia para los 0.3 mm de preparación, y la mayoría de los pacientes describe presión, no dolor. Los provisionales pueden sentirse sensibles al frío uno o dos días; después de la cementación, eso se asienta en pocos días.",
+        "doc": "Dr. Marta Puentes Marrero, DMD"
+      },
+      {
+        "q": "¿Quién no debería ponerse carillas de porcelana?",
+        "a": "Quien tenga enfermedad activa de las encías hasta que se trate, quien rechine los dientes y no vaya a usar una guarda nocturna, y los dientes que son casi todo empaste o tienen endodoncia, a los que les conviene una corona. Te decimos qué dientes y por qué en tu plan por escrito.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "¿Sus carillas son de verdad sin preparación?",
+        "a": "En algunos dientes, sí: los dientes pequeños, desgastados o inclinados hacia adentro pueden recibir una carilla sin quitar nada de esmalte. En un diente que ya tiene su tamaño completo, se retiran unos 0.3 mm para que la carilla quede al ras. Lo decidimos diente por diente en tu escaneo en la Visita 1 y te lo mostramos.",
+        "doc": "Dr. Gretell Alonso Fiel, DMD"
+      },
+      {
+        "q": "¿Puedo ver cómo quedarán mis carillas antes de empezar?",
+        "a": "Sí. En la Visita 1 escaneamos tus dientes y fotografiamos tu rostro, diseñamos la nueva forma y colocamos una vista previa en tu boca. La apruebas, o la cambiamos, antes de preparar ningún diente.",
+        "doc": "Dr. Marta Puentes Marrero, DMD"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Empieza con fotos.",
+    "body": "Gratis, sin necesidad de visita. Un doctor te dice cuántas carillas, y el presupuesto por escrito viene después.",
+    "cardTitle": "Evaluación gratuita por fotos",
+    "cardBody": "Dos fotos de tu sonrisa, desde tu celular. Toma 2 minutos.",
+    "button": "Empezar mi evaluación"
+  }
+}

@@ -1,4 +1,9 @@
 {
+  "todo": "TODO(janse): confirm how patients access the Hilton and Marriott partner rate (code, link or booking through the coordinator) and the names of the three partner hotels; the copy says the list is sent with the estimate and the rate is 20% off, per the clinic.",
+  "intro": [
+    "Muchos de nuestros pacientes de carillas no viven en Florida. Envían fotos desde Atlanta, Houston, Dallas o Nueva York, reciben un presupuesto por escrito y vuelan para una semana de lunes a jueves. La razón por la que cabe en una semana es simple: nuestro [laboratorio está en el edificio](/custom-lab), así que las carillas se fresan, se terminan y se ajustan entre visitas en lugar de enviarse a otra ciudad y de vuelta.",
+    "Esta página es el viaje completo, en orden: qué pasa desde casa, las tres visitas, los hoteles aliados, cómo llegar desde el aeropuerto, qué empacar y quién puede venir contigo. El mismo calendario aplica a las [carillas de porcelana](/porcelain-veneers-miami) en unos pocos dientes y al [Diseño de sonrisa](/smile-design-miami) de 20 carillas. La restauración bucal completa toma dos semanas y All-on-X se planifica por separado; tu coordinadora te dice cuál aplica antes de que reserves nada."
+  ],
   "visits": [
     {
       "k": "Desde casa",
@@ -29,6 +34,42 @@
       "icon": "delivery"
     }
   ],
+  "fromHome": {
+    "title": "Qué pasa primero desde casa",
+    "aside": "No se reserva nada hasta que tengas la cifra por escrito. La mayoría de los pacientes hace todo esto en una semana, por las noches.",
+    "items": [
+      {
+        "t": "1 · Envía tus fotos",
+        "d": "Tres fotos de tu sonrisa desde tu teléfono, a través de la [evaluación gratuita por fotos](/free-photo-evaluation). Sin visita y sin costo.",
+        "icon": "photo"
+      },
+      {
+        "t": "2 · Un doctor responde",
+        "d": "En menos de {replyHours} horas en horario de oficina, con el plan de tratamiento: qué dientes, carilla o corona por diente, y cualquier cosa que haya que tratar primero.",
+        "icon": "estimate"
+      },
+      {
+        "t": "3 · Presupuesto por escrito",
+        "d": "El total, por escrito, según la [lista de precios publicada](/veneers-cost-miami). La cifra que ves es la cifra que pagas, a menos que el examen de la Visita 1 encuentre algo nuevo.",
+        "icon": "estimate"
+      },
+      {
+        "t": "4 · Plan de pago",
+        "d": "Precalifica con uno de seis [aliados de financiamiento](/financing) con una consulta suave de crédito, o paga el total. Tu coordinadora te ayuda con la solicitud.",
+        "icon": "pay"
+      },
+      {
+        "t": "5 · Elige tu lunes",
+        "d": "Un depósito de ${depositUsd}, que se aplica a tu tratamiento, reserva las tres visitas. Te enviamos la lista de hoteles y los datos de recogida ese mismo día.",
+        "icon": "calendar"
+      },
+      {
+        "t": "6 · Reserva vuelos y hotel",
+        "d": "Llega el domingo por la noche o el lunes temprano; vuela a casa el jueves por la tarde. Tú reservas directamente, con la tarifa de aliados de Hilton y Marriott.",
+        "icon": "plane"
+      }
+    ]
+  },
   "perks": [
     {
       "t": "Tarifas de hoteles aliados",
@@ -60,5 +101,64 @@
       "d": "Un día libre entre la preparación y la entrega. Playa, Wynwood o simplemente descansar.",
       "icon": "sun"
     }
-  ]
+  ],
+  "travel": {
+    "title": "Aeropuerto, transporte y hotel, sin rodeos",
+    "body": [
+      "Somos una clínica dental, no una agencia de viajes, así que esto es lo que hacemos y lo que no. Te enviamos una lista corta de tres hoteles a menos de diez minutos de la clínica, dos de ellos propiedades Hilton y Marriott donde nuestros pacientes tienen una tarifa de aliados con 20% de descuento. Tú reservas la habitación directamente con el hotel. No gestionamos hoteles, recogidas en el aeropuerto ni transporte, y nada relacionado con el viaje está incluido en el precio del tratamiento.",
+      "La clínica está en 8396 SW 8th St, en el segundo piso, a unos 15 minutos en carro del Aeropuerto Internacional de Miami y a entre 45 minutos y una hora de Fort Lauderdale. Uber y Lyft recogen en el aeropuerto y en nuestra puerta; no necesitas carro durante la semana. Si vienes manejando desde Orlando o Tampa, hay estacionamiento en el edificio. Tu coordinadora te envía el punto de recogida en llegadas y la dirección de la clínica antes de que aterrices, y los datos de recogida de cada visita la noche anterior."
+    ]
+  },
+  "pack": {
+    "title": "Qué empacar",
+    "intro": "Menos de lo que crees. La clínica tiene todo lo necesario para las visitas; esto es lo que hace la semana más fácil.",
+    "items": [
+      "Tu presupuesto por escrito y la identificación con la que reservaste. Tu doctor ya tiene tus fotos y el plan.",
+      "Una lista de los medicamentos que tomas, y tu férula nocturna si ya usas una.",
+      "Lentes de sol: el miércoles es un día libre en Miami, y vas a estar con provisionales, así que un almuerzo blando conviene más que un restaurante de carnes.",
+      "Las comidas blandas son más fáciles durante los dos días con provisionales. Nada está prohibido, pero no vas a querer morder una baguette el martes por la noche.",
+      "Un teléfono con batería. Tu coordinadora te contacta por mensaje de texto, y los datos de recogida de cada visita llegan la noche anterior.",
+      "Si te pidieron blanquear primero, trae el tono en el que terminaste. Las carillas se igualan a ese tono en el sillón."
+    ]
+  },
+  "companions": {
+    "title": "Quién puede venir contigo",
+    "body": "Quien tú quieras. Parejas, padres y amigos son bienvenidos en la sala de espera y en el consultorio privado de consulta en la Visita 1, donde se revisa el diseño; Yolanda y Erick, de Fort Worth, vinieron juntos, y las palabras de ella están en la página de Dallas. Durante la preparación y la cementación el acompañante espera en el lobby, y ambas visitas son lo bastante cortas como para planificar el día alrededor de ellas. Los niños son bienvenidos en la sala de espera con un adulto. Si vienes solo, también es normal: nada en la semana requiere acompañante. Las visitas de carillas se hacen con anestesia local, así que puedes volver en rideshare después de cada una."
+  },
+  "cities": {
+    "title": "Nuestros pacientes vienen de",
+    "intro": "Tiempos de vuelo, un itinerario de ejemplo de lunes a jueves, cuánto cuesta venir y las palabras de un paciente, para las ciudades que más vemos. Desde cualquier otro lugar funciona igual; envía tus fotos y planificamos la semana contigo.",
+    "items": [
+      {
+        "name": "Atlanta",
+        "d": "Menos de dos horas en vuelo directo. Llega el lunes por la mañana, vuelve a casa el jueves por la tarde.",
+        "href": "/veneers-atlanta"
+      },
+      {
+        "name": "Houston",
+        "d": "Unas dos horas y media en vuelo directo desde Bush o Hobby.",
+        "href": "/veneers-houston"
+      },
+      {
+        "name": "Dallas–Fort Worth",
+        "d": "Poco menos de tres horas en vuelo directo desde DFW.",
+        "href": "/veneers-dallas"
+      },
+      {
+        "name": "Nueva York",
+        "d": "Tres horas desde JFK, LaGuardia o Newark, con vuelos cada hora.",
+        "href": "/veneers-new-york"
+      },
+      {
+        "name": "Orlando",
+        "d": "De tres horas y media a cuatro en carro o en tren, o una hora en avión.",
+        "href": "/veneers-orlando"
+      },
+      {
+        "name": "Tampa",
+        "d": "Cuatro horas en carro por Alligator Alley, o poco más de una hora en avión.",
+        "href": "/veneers-tampa"
+      }
+    ]
+  }
 }

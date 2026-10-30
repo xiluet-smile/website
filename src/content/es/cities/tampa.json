@@ -1,0 +1,160 @@
+{
+  "path": "/veneers-tampa",
+  "city": "Tampa",
+  "breadcrumb": "Carillas Tampa",
+  "todo": "TODO(janse): there is no consented patient video story from Tampa or St. Petersburg in stories.json. The story section is hidden on this page until one is added; do not reuse another city's clip.",
+  "hero": {
+    "lead": "De Tampa a la clínica son unas cuatro horas en carro por Alligator Alley, o poco más de una hora en avión. Baja el lunes, hazte 20 carillas de porcelana hechas en nuestro laboratorio propio y vuelve a casa el jueves con una garantía de 5 años por escrito.",
+    "image": "out-of-state-poster.jpg",
+    "alt": "Miami a la hora dorada",
+    "caption": "Tampa → Westchester, Miami · unas 4 h en carro por la I-75 · estacionamiento gratis en la clínica"
+  },
+  "intro": [
+    "Desde Tampa Bay el viaje a la clínica es directo: la I-75 al sur pasando Naples, al este por Alligator Alley y la salida al Dolphin Expressway hacia Westchester. Son unas 280 millas y cuatro horas fuera de hora pico, y la clínica tiene estacionamiento gratis, así que el carro es la forma en que llegan la mayoría de los pacientes de Tampa y St. Petersburg. Si prefieres volar, de TPA a MIA es poco más de una hora en el aire y la clínica está a quince minutos del aeropuerto.",
+    "Lo que los pacientes de Tampa reciben a cambio del viaje es lo mismo que cualquier otro paciente: [carillas de porcelana](/porcelain-veneers-miami) en zirconia multicapa con unos 0.3 mm de preparación, hechas en el [laboratorio un piso arriba de tu doctor](/custom-lab), {veneerPrice} por unidad o {price} por el [Diseño de sonrisa](/smile-design-miami) de 20 carillas, entregadas en una semana de lunes a jueves con garantía de 5 años por escrito. La planificación se hace desde casa: fotos, el plan de un doctor en menos de {replyHours} horas, el presupuesto por escrito y el plan de pago, y solo entonces una fecha.",
+    "La semana en sí, incluidos los hoteles aliados y qué empacar, está en la [página para pacientes de otros estados](/out-of-state-patients). Esta página es la parte de Tampa: el viaje en carro y el vuelo, un itinerario de ejemplo armado alrededor del carro, cuánto cuesta venir y las preguntas que los pacientes de Tampa hacen antes de reservar."
+  ],
+  "gettingHere": {
+    "title": "Cómo llegar de Tampa a la clínica",
+    "aside": "Orientación general de la clínica. Confirma los tiempos con tu app de mapas y con la empresa de transporte ese día; no vendemos viajes.",
+    "items": [
+      {
+        "t": "En carro",
+        "d": "Unas 280 millas: la I-75 al sur pasando Fort Myers y Naples, luego al este por Alligator Alley hasta la I-595 y al sur por el Turnpike o la US 27 hasta el Dolphin Expressway, con salida en SW 87th Avenue hacia SW 8th St. Unas cuatro horas. Estacionamiento gratis en la clínica.",
+        "icon": "car"
+      },
+      {
+        "t": "En avión",
+        "d": "De TPA a MIA es alrededor de 1 hora 10 minutos en el aire; American y Southwest lo vuelan directo. Con el tiempo de aeropuerto en ambos extremos se acerca al tiempo en carro, pero es una opción si prefieres no estar en la I-75.",
+        "icon": "plane"
+      },
+      {
+        "t": "Del aeropuerto a la clínica",
+        "d": "Si vuelas, MIA está a 15 minutos de la clínica en carro. Uber y Lyft recogen en llegadas; te enviamos por mensaje el punto de recogida y la dirección antes de que aterrices. Los hoteles aliados están a menos de 10 minutos de la clínica.",
+        "icon": "clock"
+      },
+      {
+        "t": "Cuándo salir",
+        "d": "Sal de Tampa antes de las 6:00 am del lunes para llegar a Westchester hacia las 10:00 am, antes del tráfico de media mañana de Miami. El jueves, saliendo después del almuerzo llegas a casa antes de la cena. Alligator Alley tiene pocas salidas, así que llena el tanque en Naples.",
+        "icon": "bus"
+      }
+    ]
+  },
+  "itinerary": {
+    "title": "Un lunes a jueves de ejemplo desde Tampa, en carro",
+    "intro": "Los horarios son ejemplos. Si vuelas, solo cambian la mañana del lunes y la tarde del jueves; las tres visitas son las mismas.",
+    "days": [
+      {
+        "k": "Lunes",
+        "t": "Bajas en carro, Visita 1 a media mañana",
+        "d": "Sal de Tampa hacia las 6:00 am y estaciona en la clínica hacia las 10:00 am. Examen, limpieza, radiografías, escaneos y la vista previa del diseño que apruebas. Check-in en el hotel después.",
+        "time": "Visita 1 de unas 11:00 am a 1:00 pm"
+      },
+      {
+        "k": "Martes",
+        "t": "Preparación y provisionales",
+        "d": "Unos 0.3 mm de preparación y provisionales con la forma aprobada. Almuerzo blando y la tarde libre.",
+        "time": "Visita 2 de unas 9:00 am a 12:00 pm"
+      },
+      {
+        "k": "Miércoles",
+        "t": "Día libre mientras el laboratorio termina",
+        "d": "Carillas fresadas, sinterizadas y terminadas a mano un piso más arriba. Nos cuentas cualquier cosa que cambiarías de los provisionales. Algunos pacientes de Tampa van a dormir a casa; la mayoría se queda.",
+        "time": "Sin visita."
+      },
+      {
+        "k": "Jueves",
+        "t": "Entrega y luego el regreso en carro",
+        "d": "Tono revisado con el ceramista, carillas cementadas, mordida ajustada y garantía entregada por escrito. Almuerzo blando y luego al oeste por el Alley.",
+        "time": "Visita 3 de unas 9:00 am a 11:00 am. Sales de Miami hacia las 12:30 pm, en casa en Tampa hacia las 4:30 pm."
+      }
+    ],
+    "note": "El adormecimiento de la Visita 2 se pasa en un par de horas y no afecta la conducción, pero si te quedas en el hotel aliado de todos modos no necesitarás el carro hasta el jueves. Nada de la entrega del jueves te impide manejar después."
+  },
+  "story": {
+    "title": "Desde Tampa, en sus propias palabras",
+    "body": "Todavía no tenemos una historia en video de un paciente de Tampa para mostrar aquí.",
+    "todo": "TODO(janse): add a consented Tampa or St. Petersburg clip to stories.json and set storyId here."
+  },
+  "cost": {
+    "title": "Cuánto cuesta venir desde Tampa",
+    "body": "El tratamiento se cotiza según la [lista de precios publicada](/veneers-cost-miami) y se confirma por escrito antes de que reserves nada. El viaje corre por tu cuenta; no lo sumamos al precio ni lo cotizamos. Para quien viene en carro, el costo extra de venir es la gasolina, el peaje de Alligator Alley y las noches de hotel.",
+    "lines": [
+      {
+        "label": "Diseño de sonrisa, 20 carillas de porcelana",
+        "value": "{price}",
+        "note": "Incluye vista previa del diseño, limpieza, radiografías y la garantía de {warrantyYears} años por escrito"
+      },
+      {
+        "label": "Una carilla, por unidad",
+        "value": "{veneerPrice}",
+        "note": "Mismo material, laboratorio y garantía, para entre uno y diecinueve dientes"
+      },
+      {
+        "label": "Depósito para reservar tu lunes",
+        "value": "${depositUsd}",
+        "note": "Se abona a tu tratamiento"
+      },
+      {
+        "label": "Hotel, dos a cuatro noches",
+        "value": "Tarifa de aliados, 20% de descuento",
+        "note": "Hoteles Hilton y Marriott a menos de 10 minutos; reservas directamente, te enviamos la lista con tu presupuesto"
+      },
+      {
+        "label": "Gasolina y peajes, o el vuelo TPA–MIA",
+        "value": "Lo pagas tú",
+        "note": "No incluidos. El estacionamiento en la clínica es gratis en todas las visitas"
+      }
+    ],
+    "footnote": "Hay planes mensuales a través de seis aliados de financiamiento con una consulta de crédito blanda; tu coordinadora te ayuda con la solicitud antes de que reserves el hotel.",
+    "links": [
+      {
+        "label": "Lista de precios completa",
+        "href": "/veneers-cost-miami"
+      },
+      {
+        "label": "Opciones de financiamiento",
+        "href": "/financing"
+      }
+    ]
+  },
+  "results": {
+    "title": "Resultados de carillas de porcelana",
+    "label": "Carillas de porcelana"
+  },
+  "faq": {
+    "title": "Preguntas de pacientes de Tampa",
+    "items": [
+      {
+        "q": "¿Puedo volver manejando a Tampa el mismo día de la entrega?",
+        "a": "Sí. La entrega del jueves por la mañana toma unas dos horas y nada de ella te impide manejar justo después. Sal después de un almuerzo blando, cruzas el Alley y estás en casa a media tarde.",
+        "doc": "Dr. Marta Puentes Marrero, DMD"
+      },
+      {
+        "q": "¿Carro o avión desde Tampa?",
+        "a": "La mayoría de los pacientes de Tampa viene en carro: cuatro horas de puerta a puerta, estacionamiento gratis y el carro para el miércoles libre. Volar es poco más de una hora en el aire, pero más o menos lo mismo una vez que sumas dos aeropuertos. De cualquier forma las tres visitas no cambian.",
+        "doc": "Dr. Gretell Alonso Fiel, DMD"
+      },
+      {
+        "q": "¿Puedo ir a casa el miércoles libre?",
+        "a": "Puedes; algunos pacientes de Tampa lo hacen y vuelven para el jueves por la mañana. Son ocho horas de carro por una noche en tu propia cama, así que la mayoría se queda con la tarifa de aliados y aprovecha el día.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "¿Puedo manejar después de la Visita 2 con el adormecimiento?",
+        "a": "La anestesia local se pasa en un par de horas y no afecta tu capacidad para manejar. Si prefieres no hacerlo, los hoteles aliados están a menos de 10 minutos de la clínica y un rideshare es sencillo.",
+        "doc": "Dr. Marta Puentes Marrero, DMD"
+      },
+      {
+        "q": "¿Y si algo necesita ajuste cuando ya esté de vuelta en Tampa?",
+        "a": "Los ajustes pequeños están cubiertos por la garantía de {warrantyYears} años en cualquier dentista cerca de ti, y hay una videollamada de seguimiento dos semanas después de la entrega. Para cualquier cosa más allá de un pulido, cuatro horas en carro hasta el laboratorio que hizo las carillas es la vía más sencilla.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "¿Por qué venir a Miami si hay clínicas en Tampa?",
+        "a": "Compara las mismas cinco cosas por escrito: material, número de dientes, carilla o corona por diente, total y garantía. Lo que es distinto aquí es el laboratorio en el edificio, y por eso el juego completo se hace en una semana y el ceramista revisa el tono en ti. La lista de precios es pública.",
+        "doc": "Dr. Gretell Alonso Fiel, DMD"
+      }
+    ]
+  }
+}

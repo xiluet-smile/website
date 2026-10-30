@@ -1,0 +1,159 @@
+{
+  "path": "/veneers-orlando",
+  "city": "Orlando",
+  "breadcrumb": "Carillas Orlando",
+  "hero": {
+    "lead": "De Orlando a la clínica son entre tres horas y media y cuatro por el Turnpike, unas tres horas y media en el tren Brightline o una hora en avión. Baja el lunes, hazte 20 carillas de porcelana hechas en nuestro laboratorio propio y vuelve a casa el jueves con una garantía de 5 años por escrito.",
+    "image": "blog-calle-ocho-morning.jpg",
+    "alt": "La Calle Ocho de Miami temprano en la mañana, la calle donde está la clínica",
+    "caption": "Orlando → Westchester, Miami · unas 3 h 45 min en carro · estacionamiento gratis en la clínica"
+  },
+  "intro": [
+    "Los pacientes de Orlando tienen una opción que nadie que llega en avión tiene: manejar, tomar el tren o volar. La clínica está en 8396 SW 8th St en Westchester, justo al lado del Turnpike de Florida y del Dolphin Expressway, lo que hace que el viaje en carro desde Orlando sea de entre tres horas y media y cuatro de puerta a puerta. Brightline va del Aeropuerto Internacional de Orlando a MiamiCentral en unas tres horas y media, y desde ahí la clínica está a 20 minutos en rideshare. Y el vuelo de MCO a MIA es de alrededor de una hora, aunque al sumar el tiempo de aeropuerto el carro suele ser más rápido.",
+    "Como el viaje es corto, algunos pacientes de Orlando preguntan si pueden bajar para cada visita y dormir en casa. La respuesta honesta es que pueden, pero la mayoría no lo hace: la Visita 1 y la Visita 2 caen en días consecutivos, y el miércoles libre existe porque el laboratorio lo necesita, así que una o dos noches de hotel con la tarifa de aliados resultan más fáciles que cuatro viajes de ida y vuelta. El tratamiento es el mismo de cualquier forma: [carillas de porcelana](/porcelain-veneers-miami) en zirconia multicapa con unos 0.3 mm, {veneerPrice} por unidad o {price} por el [Diseño de sonrisa](/smile-design-miami) de 20 carillas, hechas en el [laboratorio un piso arriba de tu doctor](/custom-lab).",
+    "El resto de la semana, los hoteles y qué empacar, está en la [página para pacientes de otros estados](/out-of-state-patients). Esta página es la parte de Orlando: las opciones en carro, tren y avión, un itinerario de ejemplo armado alrededor del viaje en carro, cuánto cuesta venir, Elisa de Orlando en sus propias palabras y las preguntas que hacen los pacientes de Orlando."
+  ],
+  "gettingHere": {
+    "title": "Cómo llegar de Orlando a la clínica",
+    "aside": "Orientación general de la clínica. Confirma los tiempos con tu app de mapas y con la empresa de transporte ese día; no vendemos viajes.",
+    "items": [
+      {
+        "t": "En carro",
+        "d": "Unas 235 millas: el Turnpike de Florida hacia el sur hasta el Dolphin Expressway (SR 836), y luego al oeste hasta SW 87th Avenue y SW 8th St. Entre tres horas y media y cuatro fuera de hora pico. Estacionamiento gratis en la clínica.",
+        "icon": "car"
+      },
+      {
+        "t": "Brightline",
+        "d": "Del Aeropuerto Internacional de Orlando a MiamiCentral en unas tres horas y media, sin manejar. Desde la estación la clínica está a 20 minutos en rideshare hacia el oeste por la Calle Ocho. Revisa el horario para las salidas del lunes por la mañana y del jueves por la tarde.",
+        "icon": "bus"
+      },
+      {
+        "t": "En avión",
+        "d": "De MCO a MIA es alrededor de una hora en el aire; American lo vuela directo. Con el tiempo de aeropuerto en ambos extremos rara vez es más rápido que el carro, pero es una opción si prefieres no manejar.",
+        "icon": "plane"
+      },
+      {
+        "t": "Cuándo salir",
+        "d": "Sal de Orlando antes de las 6:30 am del lunes y llegas a Westchester antes del tráfico de media mañana de Miami. El jueves, saliendo después del almuerzo llegas a casa antes de la cena.",
+        "icon": "clock"
+      }
+    ]
+  },
+  "itinerary": {
+    "title": "Un lunes a jueves de ejemplo desde Orlando, en carro",
+    "intro": "Los horarios son ejemplos. El tren o el vuelo encajan en los mismos días; solo cambian la mañana del lunes y la tarde del jueves.",
+    "days": [
+      {
+        "k": "Lunes",
+        "t": "Bajas en carro, Visita 1 a media mañana",
+        "d": "Sal de Orlando hacia las 6:30 am y estaciona en la clínica hacia las 10:15 am. Examen, limpieza, radiografías, escaneos y la vista previa del diseño que apruebas. Check-in en el hotel después.",
+        "time": "Visita 1 de unas 11:00 am a 1:00 pm"
+      },
+      {
+        "k": "Martes",
+        "t": "Preparación y provisionales",
+        "d": "Unos 0.3 mm de preparación y provisionales con la forma aprobada. Almuerzo blando y la tarde libre.",
+        "time": "Visita 2 de unas 9:00 am a 12:00 pm"
+      },
+      {
+        "k": "Miércoles",
+        "t": "Día libre mientras el laboratorio termina",
+        "d": "Carillas fresadas, sinterizadas y terminadas a mano un piso más arriba. Nos cuentas cualquier cosa que cambiarías de los provisionales. Algunos pacientes de Orlando van a dormir a casa y vuelven el jueves; la mayoría se queda.",
+        "time": "Sin visita."
+      },
+      {
+        "k": "Jueves",
+        "t": "Entrega y luego el regreso en carro",
+        "d": "Tono revisado con el ceramista, carillas cementadas, mordida ajustada y garantía entregada por escrito. Almuerzo blando y luego al norte por el Turnpike.",
+        "time": "Visita 3 de unas 9:00 am a 11:00 am. Sales de Miami hacia las 12:30 pm, en casa en Orlando hacia las 4:30 pm."
+      }
+    ],
+    "note": "¿Manejar con el adormecimiento de la Visita 2? Se pasa en un par de horas y no afecta la conducción, pero un acompañante hace el martes más fácil. Nada de la entrega del jueves te impide manejar después."
+  },
+  "story": {
+    "title": "Desde Orlando, en sus propias palabras",
+    "body": "Elisa vino desde Orlando para un Diseño de sonrisa con el Dr. Ramos y grabó esto en español el día de la entrega. Compartido con su permiso.",
+    "storyId": "story-25"
+  },
+  "cost": {
+    "title": "Cuánto cuesta venir desde Orlando",
+    "body": "El tratamiento se cotiza según la [lista de precios publicada](/veneers-cost-miami) y se confirma por escrito antes de que reserves nada. El viaje corre por tu cuenta; no lo sumamos al precio ni lo cotizamos. Para quien viene en carro, el costo extra de venir es la gasolina, los peajes y las noches de hotel.",
+    "lines": [
+      {
+        "label": "Diseño de sonrisa, 20 carillas de porcelana",
+        "value": "{price}",
+        "note": "Incluye vista previa del diseño, limpieza, radiografías y la garantía de {warrantyYears} años por escrito"
+      },
+      {
+        "label": "Una carilla, por unidad",
+        "value": "{veneerPrice}",
+        "note": "Mismo material, laboratorio y garantía, para entre uno y diecinueve dientes"
+      },
+      {
+        "label": "Depósito para reservar tu lunes",
+        "value": "${depositUsd}",
+        "note": "Se abona a tu tratamiento"
+      },
+      {
+        "label": "Hotel, dos a cuatro noches",
+        "value": "Tarifa de aliados, 20% de descuento",
+        "note": "Hoteles Hilton y Marriott a menos de 10 minutos; reservas directamente, te enviamos la lista con tu presupuesto"
+      },
+      {
+        "label": "Peajes del Turnpike, gasolina o pasaje de tren",
+        "value": "Lo pagas tú",
+        "note": "No incluidos. El estacionamiento en la clínica es gratis en todas las visitas"
+      }
+    ],
+    "footnote": "Hay planes mensuales a través de seis aliados de financiamiento con una consulta de crédito blanda; tu coordinadora te ayuda con la solicitud antes de que reserves el hotel.",
+    "links": [
+      {
+        "label": "Lista de precios completa",
+        "href": "/veneers-cost-miami"
+      },
+      {
+        "label": "Opciones de financiamiento",
+        "href": "/financing"
+      }
+    ]
+  },
+  "results": {
+    "title": "Resultados de carillas de porcelana",
+    "label": "Carillas de porcelana"
+  },
+  "faq": {
+    "title": "Preguntas de pacientes de Orlando",
+    "items": [
+      {
+        "q": "¿Puedo volver manejando a Orlando el mismo día de la entrega?",
+        "a": "Sí. La entrega del jueves por la mañana toma unas dos horas y nada de ella te impide manejar justo después. Sal después de un almuerzo blando y estás en casa en Orlando a media tarde.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "¿Puedo dormir en casa y bajar para cada visita?",
+        "a": "Puedes, pero son cuatro viajes de ida y vuelta de siete a ocho horas cada uno. La mayoría de los pacientes de Orlando se queda de lunes a jueves con la tarifa de aliados, o va a casa el miércoles libre y vuelve el jueves por la mañana. La Visita 1 y la Visita 2 en días consecutivos son más fáciles desde un hotel.",
+        "doc": "Dr. Gretell Alonso Fiel, DMD"
+      },
+      {
+        "q": "¿Es práctico venir en Brightline?",
+        "a": "Sí. Del Aeropuerto Internacional de Orlando a MiamiCentral son unas tres horas y media, y la clínica está a 20 minutos en rideshare desde la estación. Toma un tren el lunes por la mañana y otro el jueves por la tarde; revisa el horario cuando reserves.",
+        "doc": "Dr. Marta Puentes Marrero, DMD"
+      },
+      {
+        "q": "¿Puedo manejar después de la Visita 2 con el adormecimiento?",
+        "a": "La anestesia local se pasa en un par de horas y no afecta tu capacidad para manejar. Si prefieres no manejar adormecido, los hoteles aliados están a menos de 10 minutos y un rideshare es sencillo.",
+        "doc": "Dr. Marta Puentes Marrero, DMD"
+      },
+      {
+        "q": "Si algo necesita ajuste, ¿puedo simplemente bajar en carro?",
+        "a": "Sí, y estar cerca es una ventaja. Los ajustes pequeños están cubiertos por la garantía de {warrantyYears} años en cualquier dentista, incluido el tuyo en Orlando, pero cuatro horas en carro hasta quienes hicieron las carillas es una decisión fácil para cualquier cosa más allá de un pulido.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "¿Por qué venir a Miami si hay clínicas en Orlando?",
+        "a": "Compara las mismas cinco cosas por escrito: material, número de dientes, carilla o corona por diente, total y garantía. Lo que es distinto aquí es el laboratorio en el edificio, y por eso el juego completo se hace en una semana y el ceramista revisa el tono en ti. La lista de precios es pública.",
+        "doc": "Dr. Gretell Alonso Fiel, DMD"
+      }
+    ]
+  }
+}
