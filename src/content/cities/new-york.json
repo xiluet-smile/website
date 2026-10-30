@@ -1,0 +1,159 @@
+{
+  "path": "/veneers-new-york",
+  "city": "New York",
+  "breadcrumb": "Veneers New York",
+  "hero": {
+    "lead": "New York to Miami is about three hours nonstop from JFK, LaGuardia or Newark, with flights roughly every hour. One Monday-to-Thursday week, 20 porcelain veneers made in our own lab, and a 5-year warranty in writing for the flight home.",
+    "image": "blog-airplane-window-miami.jpg",
+    "alt": "Miami seen from an airplane window on approach to Miami International Airport",
+    "caption": "JFK, LGA or EWR → MIA · about 3 h nonstop · 15 minutes from the airport to the clinic"
+  },
+  "intro": [
+    "New York to Miami is one of the busiest air routes in the country, and that works in your favour: three airports, nonstop flights from early morning to late evening, and a flight of about three hours with no time change. You land fifteen minutes from the clinic. For a New Yorker the trip is shorter than a drive to the Hamptons on a Friday, and in winter it comes with a free Wednesday in the sun.",
+    "New York patients usually arrive with more quotes than anyone else, and the quotes vary widely. The useful comparison is not the headline price but what is in it: the material, the number of teeth, whether each tooth gets a veneer or a crown, and the warranty. Ours are on the [price list](/veneers-cost-miami): [porcelain veneers](/porcelain-veneers-miami) in multilayer zirconia at about 0.3 mm of preparation, {veneerPrice} per tooth à la carte or {price} for the 20-veneer [Smile Design](/smile-design-miami), made in the [lab in our building](/custom-lab) and delivered in the same week.",
+    "The week itself, from partner hotels to what to pack, is on the [out-of-state patients page](/out-of-state-patients). This page is the New York part: which airport, a sample itinerary with times, what it costs to come, a patient who made a similar trip from Pennsylvania, and the questions New Yorkers ask before they book."
+  ],
+  "gettingHere": {
+    "title": "Getting from New York to the clinic",
+    "aside": "General guidance from the clinic. Check times and carriers with the airline when you book; we do not sell flights.",
+    "items": [
+      {
+        "t": "Flight time",
+        "d": "About 3 hours to 3 hours 15 minutes nonstop from any of the three airports, with no time change. Door to gate, plan on three and a half to four hours.",
+        "icon": "plane"
+      },
+      {
+        "t": "Who flies it",
+        "d": "American, Delta and JetBlue fly JFK–MIA; American and Delta fly LaGuardia–MIA; United flies Newark–MIA. Between them there is a nonstop most hours of the day. Fort Lauderdale (FLL) has even more flights and low-cost carriers, about 45 minutes to an hour from the clinic.",
+        "icon": "clock"
+      },
+      {
+        "t": "Airport to clinic",
+        "d": "MIA is 15 minutes from the clinic by car. Uber and Lyft pick up at arrivals; we text you the spot and the address before you land. The partner hotels are within 10 minutes, so you do not need a car for the week.",
+        "icon": "car"
+      },
+      {
+        "t": "Train or car instead",
+        "d": "Amtrak's Silver Service runs New York to Miami in about 28 to 30 hours, and the drive down I-95 is about 1,280 miles, or 19 to 20 hours. Both are possible with extra days either side; for a four-day week, fly.",
+        "icon": "bus"
+      }
+    ]
+  },
+  "itinerary": {
+    "title": "A sample Monday-to-Thursday from New York",
+    "intro": "Times are examples. Any flight that lands by mid-morning Monday and leaves after 4 pm Thursday keeps the schedule; with no time change the arithmetic is simple.",
+    "days": [
+      {
+        "k": "Monday",
+        "t": "Early flight, late-morning Visit 1",
+        "d": "Leave JFK, LGA or EWR around 7:00 am, land MIA about 10:15 am, rideshare to the clinic. Exam, cleaning, X-rays, scans and the design preview you approve.",
+        "time": "Visit 1 about 11:30 am to 1:30 pm. Hotel check-in after."
+      },
+      {
+        "k": "Tuesday",
+        "t": "Preparation and temporaries",
+        "d": "About 0.3 mm of preparation and temporaries in the approved shape. Soft lunch, then a free afternoon.",
+        "time": "Visit 2 about 9:00 am to 12:00 pm"
+      },
+      {
+        "k": "Wednesday",
+        "t": "Free day while the lab finishes",
+        "d": "Veneers milled, sintered and finished by hand one floor up. You tell us anything you would change about the temporaries.",
+        "time": "No visit. Beach, Wynwood or rest."
+      },
+      {
+        "k": "Thursday",
+        "t": "Delivery, then the evening flight home",
+        "d": "Shade checked with the ceramist, veneers bonded, bite adjusted, warranty handed over in writing. Lunch, rideshare to MIA.",
+        "time": "Visit 3 about 9:00 am to 11:00 am. Fly MIA–NYC from about 4:00 pm, land around 7:15 pm."
+      }
+    ],
+    "note": "Many New York patients come Sunday evening and treat Monday as a normal first day rather than a 5 am alarm. Winter travellers: check the forecast at home on Thursday, and if a storm is coming, Visit 3 can move earlier in the day."
+  },
+  "story": {
+    "title": "A similar trip, from Pennsylvania",
+    "body": "Franklin came from Pennsylvania for a Smile Design with Dr. Ramos, a flight of about the same length as New York's. Recorded on delivery day and shared with his permission.",
+    "storyId": "story-28"
+  },
+  "cost": {
+    "title": "What it costs to come from New York",
+    "body": "Treatment is priced from the [published price list](/veneers-cost-miami) and confirmed in writing before you book anything. Travel is yours to book and pay; we do not add it to the price and we do not quote it, because fares change daily.",
+    "lines": [
+      {
+        "label": "Smile Design, 20 porcelain veneers",
+        "value": "{price}",
+        "note": "Design preview, cleaning, X-rays and the {warrantyYears}-year written warranty included"
+      },
+      {
+        "label": "One veneer, à la carte",
+        "value": "{veneerPrice}",
+        "note": "Same material, lab and warranty, for one to nineteen teeth"
+      },
+      {
+        "label": "Deposit to hold your Monday",
+        "value": "${depositUsd}",
+        "note": "Applied to your treatment"
+      },
+      {
+        "label": "Hotel, three or four nights",
+        "value": "Partner rate, 20% off",
+        "note": "Hilton and Marriott properties within 10 minutes; you book directly, we send the list with your estimate"
+      },
+      {
+        "label": "Flights NYC–MIA and rides",
+        "value": "Booked by you",
+        "note": "Not included. Rideshares from the airport and to each visit are short and paid by you"
+      }
+    ],
+    "footnote": "Monthly plans are available through six financing partners with a soft credit check; your coordinator helps with the application before you book flights.",
+    "links": [
+      {
+        "label": "Full price list",
+        "href": "/veneers-cost-miami"
+      },
+      {
+        "label": "Financing options",
+        "href": "/financing"
+      }
+    ]
+  },
+  "results": {
+    "title": "Porcelain veneer results",
+    "label": "Porcelain veneers"
+  },
+  "faq": {
+    "title": "Questions from New York patients",
+    "items": [
+      {
+        "q": "Can I fly home to New York the same day as delivery?",
+        "a": "Yes. Thursday delivery takes about two hours in the morning and the bonding is final when you leave the chair. A flight after 4 pm lands in New York around 7:15 pm. Eat a soft lunch before the airport.",
+        "doc": "Dr. Marta Puentes Marrero, DMD"
+      },
+      {
+        "q": "Which New York airport is easiest for this trip?",
+        "a": "Whichever is closest to you; all three have nonstops to MIA and the flight time is the same. JFK and Newark have the most departures across the day. Fort Lauderdale is an option if the fare is much better, at about 45 minutes to an hour from the clinic.",
+        "doc": "Dr. Gretell Alonso Fiel, DMD"
+      },
+      {
+        "q": "I have three quotes from Manhattan and they are all different. How do I compare?",
+        "a": "Line up the same five things from each: material, number of teeth, veneer or crown per tooth, total, and warranty. Many quotes are for crowns, which remove 60 to 70% of the tooth, or for a single-shade e.max set from an outside lab. Ours is on the price list, tooth by tooth, and includes the warranty.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "What if a winter storm cancels my Thursday flight?",
+        "a": "Your veneers are already bonded, so nothing medical changes. Stay the extra night, or if the storm is forecast, tell your coordinator and Visit 3 can move earlier on Thursday so you make an afternoon flight.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "What about adjustments once I am back in New York?",
+        "a": "There is a video check-in two weeks after delivery. Small adjustments are covered by the {warrantyYears}-year warranty at any dentist near you; a remake comes from your design on file and we bring you back for it.",
+        "doc": "Dr. Marta Puentes Marrero, DMD"
+      },
+      {
+        "q": "Can I do this in one trip, or will I need to come back?",
+        "a": "One trip for veneers and Smile Design, because the lab is in the building. Full mouth restoration is two weeks. If your photos show you need a crown or an implant first, the plan tells you before you book a flight.",
+        "doc": "Dr. Gretell Alonso Fiel, DMD"
+      }
+    ]
+  }
+}

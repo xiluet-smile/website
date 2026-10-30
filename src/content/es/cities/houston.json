@@ -1,0 +1,159 @@
+{
+  "path": "/veneers-houston",
+  "city": "Houston",
+  "breadcrumb": "Carillas Houston",
+  "hero": {
+    "lead": "De Houston a Miami son unas dos horas y media en vuelo directo desde Bush Intercontinental o Hobby. Una semana de lunes a jueves, 20 carillas de porcelana hechas en nuestro laboratorio propio y una garantía de 5 años por escrito para el vuelo de regreso.",
+    "image": "blog-airplane-window-miami.jpg",
+    "alt": "Miami vista desde la ventanilla de un avión en aproximación al Aeropuerto Internacional de Miami",
+    "caption": "IAH o HOU → MIA · aprox. 2 h 30 min en vuelo directo · 15 minutos del aeropuerto a la clínica"
+  },
+  "intro": [
+    "Houston tiene dos aeropuertos con vuelos directos a Miami, y los dos son útiles. Bush Intercontinental (IAH), al norte, tiene la mayor cantidad de salidas a lo largo del día; Hobby (HOU), más cerca del centro y del Medical Center, también tiene vuelos directos. En cualquier caso el vuelo dura alrededor de dos horas y media, más o menos lo que toma cruzar Houston en hora pico, y aterrizas a quince minutos de la clínica. Toda la semana se puede hacer en español o en inglés, que suele ser lo primero que preguntan los pacientes de Houston.",
+    "Algunos pacientes de Houston llegan con un plan ya en mano: una cotización en casa para una sonrisa completa, muchas veces con coronas en lugar de carillas, y quieren una segunda opinión sobre el material y la cantidad de diente que se elimina. Nuestra respuesta va por escrito antes de que reserves: [carillas de porcelana](/porcelain-veneers-miami) con unos 0.3 mm de preparación, zirconia multicapa del [laboratorio en nuestro edificio](/custom-lab) y el [Diseño de sonrisa](/smile-design-miami) de 20 carillas a {price}. Si un diente de verdad necesita una corona, el plan dice cuál y por qué.",
+    "La semana en sí es la misma para todos los pacientes de otros estados; la [página para pacientes de otros estados](/out-of-state-patients) cubre hoteles, logística del aeropuerto y qué empacar. Esta página es la parte específica de Houston: vuelos desde los dos aeropuertos, un itinerario de ejemplo, cuánto cuesta venir, un paciente de Texas en sus propias palabras y las preguntas que escuchamos desde Houston."
+  ],
+  "gettingHere": {
+    "title": "Cómo llegar de Houston a la clínica",
+    "aside": "Orientación general de la clínica. Confirma horarios y aerolíneas con la aerolínea al reservar; no vendemos vuelos.",
+    "items": [
+      {
+        "t": "Tiempo de vuelo",
+        "d": "Aprox. 2 horas 30 a 2 horas 45 minutos en vuelo directo. Hay una hora de diferencia: Miami está en hora del Este, una hora adelante de Houston, así que un vuelo que sale a las 7 am aterriza alrededor de las 11:30 am hora local.",
+        "icon": "plane"
+      },
+      {
+        "t": "Qué aerolíneas lo vuelan",
+        "d": "United y American vuelan IAH–MIA sin escalas a lo largo del día. Southwest vuela de Hobby (HOU) a MIA. Fort Lauderdale (FLL) es una alternativa con más aerolíneas de bajo costo, a entre 45 minutos y una hora de la clínica.",
+        "icon": "clock"
+      },
+      {
+        "t": "Del aeropuerto a la clínica",
+        "d": "MIA está a 15 minutos en carro. Uber y Lyft recogen en llegadas; te enviamos por mensaje de texto el punto y la dirección de la clínica antes de que aterrices. Los hoteles aliados están a menos de 10 minutos de la clínica, así que no necesitas alquilar carro.",
+        "icon": "car"
+      },
+      {
+        "t": "Si prefieres manejar",
+        "d": "De Houston a Miami son unas 1,200 millas por la I-10 y la I-75, cerca de diecinueve horas al volante. No es una opción realista para una semana de cuatro días; vuela.",
+        "icon": "bus"
+      }
+    ]
+  },
+  "itinerary": {
+    "title": "Un ejemplo de lunes a jueves desde Houston",
+    "intro": "Los horarios son ejemplos, en hora local de cada lado, para mostrar cómo encaja la semana con la hora de diferencia. Funciona cualquier vuelo que aterrice antes del inicio de la tarde el lunes y salga después de las 4 pm el jueves.",
+    "days": [
+      {
+        "k": "Domingo o lunes",
+        "t": "Llegada, Visita 1 el lunes",
+        "d": "Sal de IAH alrededor de las 7:00 am del lunes, aterriza en MIA cerca de las 11:30 am hora del Este y toma un rideshare a la clínica para una Visita 1 a primera hora de la tarde: examen, limpieza, radiografías, escaneos y la vista previa del diseño. O vuela el domingo y llega descansado.",
+        "time": "Visita 1 aprox. de 1:00 pm a 3:00 pm el lunes"
+      },
+      {
+        "k": "Martes",
+        "t": "Preparación y provisionales",
+        "d": "Unos 0.3 mm de preparación y provisionales con la forma que aprobaste. Almuerzo blando cerca, y la tarde queda libre.",
+        "time": "Visita 2 aprox. de 9:00 am a 12:00 pm"
+      },
+      {
+        "k": "Miércoles",
+        "t": "Día libre mientras el laboratorio termina",
+        "d": "Carillas fresadas, sinterizadas y terminadas a mano un piso arriba. Nos dices cualquier cosa que cambiarías de los provisionales antes del jueves.",
+        "time": "Sin visita."
+      },
+      {
+        "k": "Jueves",
+        "t": "Entrega y luego el vuelo de la tarde a casa",
+        "d": "Tono revisado con el ceramista, carillas cementadas, mordida ajustada y garantía por escrito. Almuerzo y rideshare a MIA.",
+        "time": "Visita 3 aprox. de 9:00 am a 11:00 am. Vuela MIA–IAH desde las 4:00 pm hora del Este aproximadamente y aterriza en Houston alrededor de las 6:30 pm hora del Centro."
+      }
+    ],
+    "note": "Con la hora de diferencia, un vuelo temprano el lunes aterriza a tiempo para una Visita 1 por la tarde. Si prefieres no volar y sentarte en el sillón el mismo día, ven el domingo; la noche de hotel del domingo es la única diferencia."
+  },
+  "story": {
+    "title": "Desde Texas, en sus propias palabras",
+    "body": "Jesús vino desde Texas para un Diseño de sonrisa con la Dra. Alonso y grabó este video en español el día de la entrega. Compartido con su permiso.",
+    "storyId": "story-24"
+  },
+  "cost": {
+    "title": "Cuánto cuesta venir desde Houston",
+    "body": "El tratamiento se cotiza según la [lista de precios publicada](/veneers-cost-miami) y se confirma por escrito antes de que reserves nada. El viaje lo reservas y lo pagas tú; no lo sumamos al precio ni lo cotizamos, porque las tarifas cambian a diario.",
+    "lines": [
+      {
+        "label": "Diseño de sonrisa, 20 carillas de porcelana",
+        "value": "{price}",
+        "note": "Incluye vista previa del diseño, limpieza, radiografías y la garantía de {warrantyYears} años por escrito"
+      },
+      {
+        "label": "Una carilla, por unidad",
+        "value": "{veneerPrice}",
+        "note": "Mismo material, laboratorio y garantía, de uno a diecinueve dientes"
+      },
+      {
+        "label": "Depósito para reservar tu lunes",
+        "value": "${depositUsd}",
+        "note": "Se aplica a tu tratamiento"
+      },
+      {
+        "label": "Hotel, tres o cuatro noches",
+        "value": "Tarifa de aliados, 20% de descuento",
+        "note": "Propiedades Hilton y Marriott a menos de 10 minutos; tú reservas directamente, te enviamos la lista con tu presupuesto"
+      },
+      {
+        "label": "Vuelos de IAH o HOU a MIA, y transporte",
+        "value": "Los reservas tú",
+        "note": "No incluidos. Los rideshares desde el aeropuerto y a cada visita son cortos y los pagas tú"
+      }
+    ],
+    "footnote": "Hay planes mensuales a través de seis aliados de financiamiento con una consulta suave de crédito; tu coordinadora te ayuda con la solicitud antes de que reserves los vuelos.",
+    "links": [
+      {
+        "label": "Lista de precios completa",
+        "href": "/veneers-cost-miami"
+      },
+      {
+        "label": "Opciones de financiamiento",
+        "href": "/financing"
+      }
+    ]
+  },
+  "results": {
+    "title": "Resultados de carillas de porcelana",
+    "label": "Carillas de porcelana"
+  },
+  "faq": {
+    "title": "Preguntas de pacientes de Houston",
+    "items": [
+      {
+        "q": "¿Puedo volar de regreso a Houston el mismo día de la entrega?",
+        "a": "Sí. La entrega del jueves toma unas dos horas por la mañana y la cementación queda definitiva cuando te levantas del sillón. Un vuelo después de las 4 pm hora del Este te deja en IAH o Hobby alrededor de las 6:30 pm hora del Centro, sin apuros en ninguno de los dos lados.",
+        "doc": "Dr. Gretell Alonso Fiel, DMD"
+      },
+      {
+        "q": "¿La diferencia de hora afecta el calendario?",
+        "a": "Solo el lunes. Miami está una hora adelante de Houston, así que un vuelo de las 7 am aterriza a las 11:30 am hora local y la Visita 1 es a primera hora de la tarde. Fijamos la cita del lunes según tu hora de llegada cuando reservas.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "En Houston me cotizaron coronas para toda la sonrisa. ¿Es lo mismo?",
+        "a": "No. Una corona elimina entre el 60 y el 70% del diente; una carilla elimina unos 0.3 mm del frente. Envíanos la cotización con tus fotos y el plan que recibes dice, diente por diente, cuáles necesitan carilla y si alguno de verdad necesita corona.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "¿Puedo hacer todo el proceso en español?",
+        "a": "Sí. Los doctores, la coordinadora y el laboratorio trabajan en español y en inglés, y el presupuesto y la garantía se entregan en cualquiera de los dos idiomas. El sitio en inglés está en xiluetsmiledesign.com para los familiares que lo prefieran.",
+        "doc": "Dr. Gretell Alonso Fiel, DMD"
+      },
+      {
+        "q": "¿Y si necesito un ajuste cuando ya estoy de vuelta en Houston?",
+        "a": "Hay una videollamada de seguimiento dos semanas después de la entrega. Los ajustes pequeños están cubiertos por la garantía de {warrantyYears} años en cualquier dentista cerca de ti; si es algo mayor, te traemos de vuelta.",
+        "doc": "Dr. Marta Puentes Marrero, DMD"
+      },
+      {
+        "q": "¿Vale la pena volar habiendo clínicas en Houston?",
+        "a": "Solo tú puedes decidirlo, pero compara las mismas cinco cosas por escrito: material, número de dientes, carilla o corona por diente, total y garantía. Las nuestras están en la lista de precios. Luego súmale dos vuelos y tres noches de hotel y compara los totales, no el precio de titular.",
+        "doc": "Dr. Marta Puentes Marrero, DMD"
+      }
+    ]
+  }
+}

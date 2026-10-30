@@ -11,6 +11,11 @@
           "href": "/smile-design-miami"
         },
         {
+          "t": "Carillas de porcelana",
+          "d": "$1,000 por carilla · 20 por $5,999",
+          "href": "/porcelain-veneers-miami"
+        },
+        {
           "t": "Transformación de sonrisa",
           "d": "20 carillas, coronas y puentes · $6,999",
           "href": "/smile-makeover-miami"
@@ -165,6 +170,10 @@
           "href": "/smile-design-miami"
         },
         {
+          "label": "Carillas de porcelana",
+          "href": "/porcelain-veneers-miami"
+        },
+        {
           "label": "Transformación de sonrisa",
           "href": "/smile-makeover-miami"
         },
@@ -269,10 +278,6 @@
           "href": "/contact"
         },
         {
-          "label": "Pacientes de otros estados",
-          "href": "/out-of-state-patients"
-        },
-        {
           "label": "Referidos",
           "href": "/referrals"
         },
@@ -287,6 +292,39 @@
         {
           "label": "Blog",
           "href": "/blog"
+        }
+      ]
+    },
+    {
+      "title": "Otros estados",
+      "links": [
+        {
+          "label": "Pacientes de otros estados",
+          "href": "/out-of-state-patients"
+        },
+        {
+          "label": "Carillas Atlanta",
+          "href": "/veneers-atlanta"
+        },
+        {
+          "label": "Carillas Houston",
+          "href": "/veneers-houston"
+        },
+        {
+          "label": "Carillas Dallas",
+          "href": "/veneers-dallas"
+        },
+        {
+          "label": "Carillas Nueva York",
+          "href": "/veneers-new-york"
+        },
+        {
+          "label": "Carillas Orlando",
+          "href": "/veneers-orlando"
+        },
+        {
+          "label": "Carillas Tampa",
+          "href": "/veneers-tampa"
         }
       ]
     }

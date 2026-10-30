@@ -1,0 +1,159 @@
+{
+  "path": "/veneers-dallas",
+  "city": "Dallas–Fort Worth",
+  "breadcrumb": "Veneers Dallas",
+  "hero": {
+    "lead": "Dallas–Fort Worth to Miami is just under three hours nonstop from DFW. Fly in Monday, get 20 porcelain veneers made in our own lab, and fly home Thursday evening with a 5-year warranty in writing.",
+    "image": "blog-airplane-window-miami.jpg",
+    "alt": "Miami seen from an airplane window on approach to Miami International Airport",
+    "caption": "DFW → MIA · about 2 h 50 min nonstop · 15 minutes from the airport to the clinic"
+  },
+  "intro": [
+    "DFW and MIA are both American Airlines hubs, which is the practical reason the trip from Dallas–Fort Worth is simple: nonstop flights run through the whole day, and the flight is just under three hours. Miami is on Eastern time, an hour ahead of Dallas, so a morning departure still lands in time for an afternoon appointment. You land fifteen minutes from the clinic and the partner hotels are within ten minutes of it, so the car stays at home.",
+    "What Dallas patients usually want settled before they fly is the material and the number of teeth. [Porcelain veneers](/porcelain-veneers-miami) here are multilayer zirconia at about 0.3 mm of preparation, milled and finished by hand in the [lab in our building](/custom-lab). On the teeth you show when you smile, usually eight to ten in the upper arch, that is {veneerPrice} per veneer; for both arches it is the 20-veneer [Smile Design](/smile-design-miami) at {price}. The written estimate you get from your photos says which, and nothing is booked until you have it.",
+    "The rest of the week, from the partner hotels to what to pack, is on the [out-of-state patients page](/out-of-state-patients). Here is the Dallas–Fort Worth part: the flights, a sample itinerary with the time change worked in, what it costs to come, Yolanda and Erick from Fort Worth in their own words, and the questions we hear from DFW."
+  ],
+  "gettingHere": {
+    "title": "Getting from Dallas–Fort Worth to the clinic",
+    "aside": "General guidance from the clinic. Check times and carriers with the airline when you book; we do not sell flights.",
+    "items": [
+      {
+        "t": "Flight time",
+        "d": "About 2 hours 45 to 3 hours nonstop from DFW to MIA. Miami is an hour ahead, so an 8 am departure lands around 1 pm Eastern; the return gives the hour back.",
+        "icon": "plane"
+      },
+      {
+        "t": "Who flies it",
+        "d": "American flies DFW–MIA nonstop many times a day, hub to hub. Spirit and Frontier also fly it on some days. Fort Lauderdale (FLL) adds more low-cost options, about 45 minutes to an hour from the clinic.",
+        "icon": "clock"
+      },
+      {
+        "t": "Airport to clinic",
+        "d": "MIA is 15 minutes from the clinic by car. Uber and Lyft pick up at arrivals; we text you the spot and the address before you land, and the pickup details for each visit the evening before.",
+        "icon": "car"
+      },
+      {
+        "t": "Driving instead",
+        "d": "Dallas to Miami is about 1,300 miles via I-20, I-10 and I-75, around twenty hours of driving. Not a fit for a four-day week; fly.",
+        "icon": "bus"
+      }
+    ]
+  },
+  "itinerary": {
+    "title": "A sample Monday-to-Thursday from DFW",
+    "intro": "Times are examples, in local time at each end. Any flight that lands by early afternoon Monday and leaves after 4 pm Thursday keeps the schedule.",
+    "days": [
+      {
+        "k": "Monday",
+        "t": "Morning flight, afternoon Visit 1",
+        "d": "Leave DFW around 8:00 am, land MIA about 1:00 pm Eastern, rideshare to the clinic. Exam, cleaning, X-rays, scans and the design preview you approve.",
+        "time": "Visit 1 about 2:00 pm to 4:00 pm. Hotel check-in after."
+      },
+      {
+        "k": "Tuesday",
+        "t": "Preparation and temporaries",
+        "d": "About 0.3 mm of preparation and temporaries in the approved shape. Soft lunch, then a free afternoon.",
+        "time": "Visit 2 about 9:00 am to 12:00 pm"
+      },
+      {
+        "k": "Wednesday",
+        "t": "Free day while the lab finishes",
+        "d": "Veneers milled, sintered and finished by hand one floor up. You tell us anything you would change about the temporaries.",
+        "time": "No visit."
+      },
+      {
+        "k": "Thursday",
+        "t": "Delivery, then the evening flight home",
+        "d": "Shade checked with the ceramist, veneers bonded, bite adjusted, warranty handed over in writing. Lunch, rideshare to MIA.",
+        "time": "Visit 3 about 9:00 am to 11:00 am. Fly MIA–DFW from about 4:00 pm Eastern, land Dallas around 6:00 pm Central."
+      }
+    ],
+    "note": "Couples sometimes come together, one for treatment and one for company, or both for treatment on the same schedule. Tell your coordinator and the two sets of visits are booked back to back."
+  },
+  "story": {
+    "title": "From Fort Worth, in their own words",
+    "body": "Yolanda and Erick came from Fort Worth for Erick's Smile Design with Dr. Ramos. Yolanda speaks in this clip, recorded on delivery day and shared with their permission.",
+    "storyId": "story-21"
+  },
+  "cost": {
+    "title": "What it costs to come from Dallas–Fort Worth",
+    "body": "Treatment is priced from the [published price list](/veneers-cost-miami) and confirmed in writing before you book anything. Travel is yours to book and pay; we do not add it to the price and we do not quote it, because fares change daily.",
+    "lines": [
+      {
+        "label": "Smile Design, 20 porcelain veneers",
+        "value": "{price}",
+        "note": "Design preview, cleaning, X-rays and the {warrantyYears}-year written warranty included"
+      },
+      {
+        "label": "One veneer, à la carte",
+        "value": "{veneerPrice}",
+        "note": "Same material, lab and warranty, for one to nineteen teeth"
+      },
+      {
+        "label": "Deposit to hold your Monday",
+        "value": "${depositUsd}",
+        "note": "Applied to your treatment"
+      },
+      {
+        "label": "Hotel, three or four nights",
+        "value": "Partner rate, 20% off",
+        "note": "Hilton and Marriott properties within 10 minutes; you book directly, we send the list with your estimate"
+      },
+      {
+        "label": "Flights DFW–MIA and rides",
+        "value": "Booked by you",
+        "note": "Not included. Rideshares from the airport and to each visit are short and paid by you"
+      }
+    ],
+    "footnote": "Monthly plans are available through six financing partners with a soft credit check; your coordinator helps with the application before you book flights.",
+    "links": [
+      {
+        "label": "Full price list",
+        "href": "/veneers-cost-miami"
+      },
+      {
+        "label": "Financing options",
+        "href": "/financing"
+      }
+    ]
+  },
+  "results": {
+    "title": "Porcelain veneer results",
+    "label": "Porcelain veneers"
+  },
+  "faq": {
+    "title": "Questions from Dallas–Fort Worth patients",
+    "items": [
+      {
+        "q": "Can I fly home to Dallas the same day as delivery?",
+        "a": "Yes. Delivery on Thursday morning takes about two hours and the bonding is final when you leave. A flight after 4 pm Eastern lands at DFW around 6 pm Central. Eat a soft lunch before the airport and you are home for dinner.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "Can my partner and I both be treated in the same week?",
+        "a": "Yes. Two patients on the same Monday-to-Thursday schedule is common; the visits are booked back to back so one of you is never waiting long. Each of you gets your own design, estimate and warranty.",
+        "doc": "Dr. Gretell Alonso Fiel, DMD"
+      },
+      {
+        "q": "Do I need all 20 veneers, or just the top?",
+        "a": "Count the teeth you show in a big smile. If the lower teeth stay hidden, eight or ten upper veneers at {veneerPrice} each may be the honest answer. If you show both arches, 20 as Smile Design costs less per tooth and the shade matches across both arches. Your written plan says which.",
+        "doc": "Dr. Marta Puentes Marrero, DMD"
+      },
+      {
+        "q": "What happens if a veneer chips back in Dallas?",
+        "a": "Call or text us first. Small adjustments are covered by the {warrantyYears}-year warranty at any dentist near you; a replacement is remade here from your design on file and we bring you back for it.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "Is the one-hour time change a problem for Monday?",
+        "a": "No. A morning flight from DFW lands early afternoon Eastern, and Visit 1 is set around your landing time. If you would rather not fly and sit in the chair on the same day, come in Sunday evening.",
+        "doc": "Dr. Marta Puentes Marrero, DMD"
+      },
+      {
+        "q": "How do I compare this with a quote from a Dallas clinic?",
+        "a": "Get the same five things in writing from both: the material, the number of teeth, veneer or crown per tooth, the total, and the warranty. Then add your flights and three hotel nights to ours and compare totals. If the Dallas quote is for crowns, it is not the same treatment.",
+        "doc": "Dr. Gretell Alonso Fiel, DMD"
+      }
+    ]
+  }
+}

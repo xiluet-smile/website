@@ -279,6 +279,10 @@ const uiEn = {
     handleTitle: "How we help with the trip",
     faqTitle: "Travel questions",
   },
+  cityPage: {
+    hubLink: "Hotels, airport and what to pack: the full out-of-state guide →",
+    costEyebrow: "What it costs to come",
+  },
   blogPage: {
     lead: "Written by the doctors. No filler.",
     articles: "Articles",
@@ -586,6 +590,10 @@ const uiEs: UiStrings = {
     weekAside: "El mismo calendario para cada paciente de carillas y diseño de sonrisa.",
     handleTitle: "Cómo te ayudamos con el viaje",
     faqTitle: "Preguntas sobre el viaje",
+  },
+  cityPage: {
+    hubLink: "Hoteles, aeropuerto y qué empacar: la guía completa para pacientes de otros estados →",
+    costEyebrow: "Cuánto cuesta venir",
   },
   blogPage: {
     lead: "Escrito por los doctores. Sin relleno.",

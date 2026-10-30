@@ -11,6 +11,11 @@
           "href": "/smile-design-miami"
         },
         {
+          "t": "Porcelain Veneers",
+          "d": "$1,000 per veneer · 20 for $5,999",
+          "href": "/porcelain-veneers-miami"
+        },
+        {
           "t": "Smile Makeover",
           "d": "20 porcelain veneers, crowns and bridges · $6,999",
           "href": "/smile-makeover-miami"
@@ -165,6 +170,10 @@
           "href": "/smile-design-miami"
         },
         {
+          "label": "Porcelain Veneers",
+          "href": "/porcelain-veneers-miami"
+        },
+        {
           "label": "Smile Makeover",
           "href": "/smile-makeover-miami"
         },
@@ -269,10 +278,6 @@
           "href": "/contact"
         },
         {
-          "label": "Out-of-state patients",
-          "href": "/out-of-state-patients"
-        },
-        {
           "label": "Referrals",
           "href": "/referrals"
         },
@@ -287,6 +292,39 @@
         {
           "label": "Blog",
           "href": "/blog"
+        }
+      ]
+    },
+    {
+      "title": "Out of State",
+      "links": [
+        {
+          "label": "Out-of-state patients",
+          "href": "/out-of-state-patients"
+        },
+        {
+          "label": "Veneers Atlanta",
+          "href": "/veneers-atlanta"
+        },
+        {
+          "label": "Veneers Houston",
+          "href": "/veneers-houston"
+        },
+        {
+          "label": "Veneers Dallas",
+          "href": "/veneers-dallas"
+        },
+        {
+          "label": "Veneers New York",
+          "href": "/veneers-new-york"
+        },
+        {
+          "label": "Veneers Orlando",
+          "href": "/veneers-orlando"
+        },
+        {
+          "label": "Veneers Tampa",
+          "href": "/veneers-tampa"
         }
       ]
     }

@@ -160,6 +160,48 @@
     "h1": "Llega el lunes. Vuelve a casa el jueves.",
     "breadcrumb": "Carillas en Miami para pacientes de otros estados"
   },
+  "/veneers-atlanta": {
+    "title": "Carillas para pacientes de Atlanta | 2 h a Miami | Xiluet",
+    "description": "Carillas de porcelana para pacientes de Atlanta: vuelo directo de dos horas a Miami, tres visitas de lunes a jueves, 20 carillas por $5,999, garantía de 5 años.",
+    "ogImage": "blog-airplane-window-miami.jpg",
+    "h1": "Carillas para pacientes de Atlanta: menos de dos horas a Miami.",
+    "breadcrumb": "Carillas Atlanta"
+  },
+  "/veneers-houston": {
+    "title": "Carillas para pacientes de Houston | 2.5 h a Miami | Xiluet",
+    "description": "Carillas de porcelana para pacientes de Houston: vuelo directo desde IAH o Hobby, tres visitas de lunes a jueves en Miami, 20 carillas por $5,999, en español.",
+    "ogImage": "blog-airplane-window-miami.jpg",
+    "h1": "Carillas para pacientes de Houston: dos horas y media a Miami.",
+    "breadcrumb": "Carillas Houston"
+  },
+  "/veneers-dallas": {
+    "title": "Carillas para pacientes de Dallas | DFW a Miami lun–jue",
+    "description": "Carillas de porcelana para pacientes de Dallas–Fort Worth: menos de tres horas de vuelo desde DFW, tres visitas de lunes a jueves, 20 carillas por $5,999.",
+    "ogImage": "blog-airplane-window-miami.jpg",
+    "h1": "Carillas para pacientes de Dallas–Fort Worth: tres horas a Miami.",
+    "breadcrumb": "Carillas Dallas"
+  },
+  "/veneers-new-york": {
+    "title": "Carillas para pacientes de Nueva York | 3 h a Miami | Xiluet",
+    "description": "Carillas de porcelana para pacientes de Nueva York: tres horas de vuelo desde JFK, LaGuardia o Newark, tres visitas de lunes a jueves, 20 carillas por $5,999.",
+    "ogImage": "blog-airplane-window-miami.jpg",
+    "h1": "Carillas para pacientes de Nueva York: tres horas a Miami, sin cambio de hora.",
+    "breadcrumb": "Carillas Nueva York"
+  },
+  "/veneers-orlando": {
+    "title": "Carillas para pacientes de Orlando | En auto o Brightline",
+    "description": "Carillas de porcelana para pacientes de Orlando: cuatro horas en auto o en Brightline a Miami, tres visitas de lunes a jueves, 20 carillas por $5,999.",
+    "ogImage": "blog-calle-ocho-morning.jpg",
+    "h1": "Carillas para pacientes de Orlando: cuatro horas por el Turnpike.",
+    "breadcrumb": "Carillas Orlando"
+  },
+  "/veneers-tampa": {
+    "title": "Carillas para pacientes de Tampa | 4 h a Miami | Xiluet",
+    "description": "Carillas de porcelana para pacientes de Tampa: cuatro horas en auto por Alligator Alley o una hora de vuelo, tres visitas de lunes a jueves, 20 carillas $5,999.",
+    "ogImage": "out-of-state-poster.jpg",
+    "h1": "Carillas para pacientes de Tampa: cuatro horas por Alligator Alley.",
+    "breadcrumb": "Carillas Tampa"
+  },
   "/veneers-cost-miami": {
     "title": "Precio carillas Miami | 20 carillas $5,999, lista de precios",
     "description": "Precio de carillas en Miami: cuatro paquetes y la lista de precios completa. 20 carillas desde $5,999, 20 restauraciones $6,999, boca completa $10,000.",

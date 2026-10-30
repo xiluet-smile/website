@@ -6,6 +6,7 @@ import ReferralPage from "@/components/ReferralPage";
 import TreatmentPage from "@/components/TreatmentPage";
 import BlogArticle from "@/components/blog/BlogArticle";
 import BlogPage from "./BlogPage";
+import CityPage from "./CityPage";
 import ClinicPage from "./ClinicPage";
 import CustomLabPage from "./CustomLabPage";
 import ContactPage from "./ContactPage";
@@ -18,7 +19,7 @@ import HomePage from "./HomePage";
 import LenderDetailPage from "./LenderDetailPage";
 import OutOfStatePage from "./OutOfStatePage";
 import ResultsPage from "./ResultsPage";
-import { getContent, type TreatmentKey } from "@/lib/content-i18n";
+import { getContent, type CityKey, type TreatmentKey } from "@/lib/content-i18n";
 import type { Locale } from "@/lib/i18n";
 import type { PagePath } from "@/lib/site";
 
@@ -30,10 +31,20 @@ const TREATMENTS: Partial<Record<PagePath, TreatmentKey>> = {
   "/porcelain-veneers-miami": "porcelain-veneers",
   "/zirconia-veneers": "zirconia-veneers",
 };
+const CITIES: Partial<Record<PagePath, CityKey>> = {
+  "/veneers-atlanta": "atlanta",
+  "/veneers-houston": "houston",
+  "/veneers-dallas": "dallas",
+  "/veneers-new-york": "new-york",
+  "/veneers-orlando": "orlando",
+  "/veneers-tampa": "tampa",
+};
 
 export default function PageBody({ path, locale }: { path: PagePath; locale: Locale }) {
   const treatment = TREATMENTS[path];
   if (treatment) return <TreatmentPage data={getContent(locale).treatments[treatment]} locale={locale} />;
+  const city = CITIES[path];
+  if (city) return <CityPage data={getContent(locale).cities[city]} locale={locale} />;
   if (path.startsWith("/blog/")) return <BlogArticle slug={path.slice("/blog/".length)} locale={locale} />;
   if (path.startsWith("/doctors/")) return <DoctorPage slug={path.slice("/doctors/".length)} locale={locale} />;
   if (path.startsWith("/financing/")) return <LenderDetailPage slug={path.slice("/financing/".length)} locale={locale} />;

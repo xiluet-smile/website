@@ -1,0 +1,159 @@
+{
+  "path": "/veneers-orlando",
+  "city": "Orlando",
+  "breadcrumb": "Veneers Orlando",
+  "hero": {
+    "lead": "Orlando to the clinic is three and a half to four hours down the Turnpike, about three and a half hours on the Brightline train, or an hour by air. Drive down Monday, get 20 porcelain veneers made in our own lab, drive home Thursday with a 5-year warranty in writing.",
+    "image": "blog-calle-ocho-morning.jpg",
+    "alt": "Calle Ocho in Miami in the early morning, the street the clinic is on",
+    "caption": "Orlando → Westchester, Miami · about 3 h 45 min by car · free parking at the clinic"
+  },
+  "intro": [
+    "Orlando patients have a choice nobody flying in gets: drive, take the train, or fly. The clinic is at 8396 SW 8th St in Westchester, just off the Florida's Turnpike and the Dolphin Expressway, which makes the drive from Orlando about three and a half to four hours door to door. Brightline runs Orlando International to MiamiCentral in about three and a half hours, and from there the clinic is a 20-minute rideshare. And the flight from MCO to MIA is about an hour, though by the time you count airport time the car is often faster.",
+    "Because the trip is short, some Orlando patients ask whether they can come down for each visit and sleep at home. The honest answer is that they can, but most do not: Visit 1 and Visit 2 fall on consecutive days, and the free Wednesday exists because the lab needs it, so a hotel night or two with the partner rate is easier than four round trips. The treatment is the same either way: [porcelain veneers](/porcelain-veneers-miami) in multilayer zirconia at about 0.3 mm, {veneerPrice} per tooth à la carte or {price} for the 20-veneer [Smile Design](/smile-design-miami), made in the [lab one floor above your doctor](/custom-lab).",
+    "The rest of the week, hotels and what to pack, is on the [out-of-state patients page](/out-of-state-patients). This page is the Orlando part: driving, train and flight options, a sample itinerary built around the drive, what it costs to come, Elisa from Orlando in her own words, and the questions Orlando patients ask."
+  ],
+  "gettingHere": {
+    "title": "Getting from Orlando to the clinic",
+    "aside": "General guidance from the clinic. Check times with your map app and the carrier on the day; we do not sell travel.",
+    "items": [
+      {
+        "t": "Driving",
+        "d": "About 235 miles: Florida's Turnpike south to the Dolphin Expressway (SR 836), then west to SW 87th Avenue and SW 8th St. Three and a half to four hours outside rush hour. Free parking at the clinic.",
+        "icon": "car"
+      },
+      {
+        "t": "Brightline",
+        "d": "Orlando International to MiamiCentral in about three and a half hours, no driving. From the station the clinic is a 20-minute rideshare west on Calle Ocho. Check the timetable for the Monday morning and Thursday afternoon departures.",
+        "icon": "bus"
+      },
+      {
+        "t": "Flying",
+        "d": "MCO to MIA is about an hour in the air; American flies it nonstop. With airport time at both ends it is rarely faster than the car, but it is an option if you would rather not drive.",
+        "icon": "plane"
+      },
+      {
+        "t": "Timing the drive",
+        "d": "Leave Orlando by 6:30 am Monday and you are in Westchester before Miami's late-morning traffic. On Thursday, leaving after lunch gets you home before dinner.",
+        "icon": "clock"
+      }
+    ]
+  },
+  "itinerary": {
+    "title": "A sample Monday-to-Thursday from Orlando, by car",
+    "intro": "Times are examples. The train or the flight slot into the same days; only the Monday morning and Thursday afternoon change.",
+    "days": [
+      {
+        "k": "Monday",
+        "t": "Drive down, late-morning Visit 1",
+        "d": "Leave Orlando around 6:30 am, park at the clinic by about 10:15 am. Exam, cleaning, X-rays, scans and the design preview you approve. Hotel check-in after.",
+        "time": "Visit 1 about 11:00 am to 1:00 pm"
+      },
+      {
+        "k": "Tuesday",
+        "t": "Preparation and temporaries",
+        "d": "About 0.3 mm of preparation and temporaries in the approved shape. Soft lunch, then a free afternoon.",
+        "time": "Visit 2 about 9:00 am to 12:00 pm"
+      },
+      {
+        "k": "Wednesday",
+        "t": "Free day while the lab finishes",
+        "d": "Veneers milled, sintered and finished by hand one floor up. You tell us anything you would change about the temporaries. Some Orlando patients drive home for the night and come back Thursday; most stay.",
+        "time": "No visit."
+      },
+      {
+        "k": "Thursday",
+        "t": "Delivery, then the drive home",
+        "d": "Shade checked with the ceramist, veneers bonded, bite adjusted, warranty handed over in writing. Soft lunch, then north on the Turnpike.",
+        "time": "Visit 3 about 9:00 am to 11:00 am. Leave Miami about 12:30 pm, home in Orlando around 4:30 pm."
+      }
+    ],
+    "note": "Driving with the numbness from Visit 2? It wears off within a couple of hours and does not affect driving, but a passenger makes the Tuesday easier. Nothing about Thursday's delivery stops you driving afterwards."
+  },
+  "story": {
+    "title": "From Orlando, in her own words",
+    "body": "Elisa came from Orlando for a Smile Design with Dr. Ramos and recorded this in Spanish on delivery day. Shared with her permission.",
+    "storyId": "story-25"
+  },
+  "cost": {
+    "title": "What it costs to come from Orlando",
+    "body": "Treatment is priced from the [published price list](/veneers-cost-miami) and confirmed in writing before you book anything. Travel is yours; we do not add it to the price and we do not quote it. For a driver the extra cost of coming is fuel, tolls and the hotel nights.",
+    "lines": [
+      {
+        "label": "Smile Design, 20 porcelain veneers",
+        "value": "{price}",
+        "note": "Design preview, cleaning, X-rays and the {warrantyYears}-year written warranty included"
+      },
+      {
+        "label": "One veneer, à la carte",
+        "value": "{veneerPrice}",
+        "note": "Same material, lab and warranty, for one to nineteen teeth"
+      },
+      {
+        "label": "Deposit to hold your Monday",
+        "value": "${depositUsd}",
+        "note": "Applied to your treatment"
+      },
+      {
+        "label": "Hotel, two to four nights",
+        "value": "Partner rate, 20% off",
+        "note": "Hilton and Marriott properties within 10 minutes; you book directly, we send the list with your estimate"
+      },
+      {
+        "label": "Turnpike tolls, fuel or train fare",
+        "value": "Paid by you",
+        "note": "Not included. Parking at the clinic is free for every visit"
+      }
+    ],
+    "footnote": "Monthly plans are available through six financing partners with a soft credit check; your coordinator helps with the application before you book the hotel.",
+    "links": [
+      {
+        "label": "Full price list",
+        "href": "/veneers-cost-miami"
+      },
+      {
+        "label": "Financing options",
+        "href": "/financing"
+      }
+    ]
+  },
+  "results": {
+    "title": "Porcelain veneer results",
+    "label": "Porcelain veneers"
+  },
+  "faq": {
+    "title": "Questions from Orlando patients",
+    "items": [
+      {
+        "q": "Can I drive home to Orlando the same day as delivery?",
+        "a": "Yes. Delivery on Thursday morning takes about two hours and nothing about it stops you driving straight after. Leave after a soft lunch and you are home in Orlando by late afternoon.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "Can I sleep at home and drive down for each visit?",
+        "a": "You can, but it is four round trips of seven to eight hours each. Most Orlando patients stay Monday to Thursday at the partner rate, or drive home on the free Wednesday and return Thursday morning. Visit 1 and Visit 2 on consecutive days are easier from a hotel.",
+        "doc": "Dr. Gretell Alonso Fiel, DMD"
+      },
+      {
+        "q": "Is Brightline practical for this?",
+        "a": "Yes. Orlando International to MiamiCentral is about three and a half hours, and the clinic is a 20-minute rideshare from the station. Take a Monday morning train and a Thursday afternoon one; check the timetable when you book.",
+        "doc": "Dr. Marta Puentes Marrero, DMD"
+      },
+      {
+        "q": "Can I drive after Visit 2 with the numbness?",
+        "a": "The local anesthetic wears off within a couple of hours and does not affect your ability to drive. If you would rather not drive numb, the partner hotels are within 10 minutes and a rideshare is simple.",
+        "doc": "Dr. Marta Puentes Marrero, DMD"
+      },
+      {
+        "q": "If something needs adjusting, can I just drive down?",
+        "a": "Yes, and being close is an advantage. Small adjustments are covered by the {warrantyYears}-year warranty at any dentist, including your own in Orlando, but a four-hour drive to the people who made the veneers is an easy call for anything beyond a polish.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "Why come to Miami when there are clinics in Orlando?",
+        "a": "Compare the same five things in writing: material, number of teeth, veneer or crown per tooth, total, and warranty. What is different here is the lab in the building, which is why the whole set is done in one week and the shade is checked on you by the ceramist. The price list is public.",
+        "doc": "Dr. Gretell Alonso Fiel, DMD"
+      }
+    ]
+  }
+}

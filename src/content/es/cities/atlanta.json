@@ -1,0 +1,159 @@
+{
+  "path": "/veneers-atlanta",
+  "city": "Atlanta",
+  "breadcrumb": "Carillas Atlanta",
+  "hero": {
+    "lead": "De Atlanta a Miami son menos de dos horas en vuelo directo, con vuelos desde temprano en la mañana hasta tarde en la noche. Llega el lunes, recibe 20 carillas de porcelana hechas en nuestro laboratorio propio y vuela a casa el jueves con una garantía de 5 años por escrito.",
+    "image": "blog-airplane-window-miami.jpg",
+    "alt": "Miami vista desde la ventanilla de un avión en aproximación al Aeropuerto Internacional de Miami",
+    "caption": "ATL → MIA · aprox. 1 h 55 min en vuelo directo · 15 minutos del aeropuerto a la clínica"
+  },
+  "intro": [
+    "Pocas ciudades tienen un vuelo a Miami tan fácil como Atlanta. Hartsfield-Jackson tiene vuelos directos a MIA desde antes del amanecer hasta después de la cena, el vuelo dura alrededor de una hora y cincuenta y cinco minutos, y aterrizas a quince minutos en carro de nuestra puerta en Westchester. Por eso Atlanta es una de las ciudades que más vemos para carillas de porcelana, y por eso la semana de lunes a jueves funciona sin tomarte una semana completa de trabajo.",
+    "El tratamiento es el mismo para todos los pacientes, locales o no: [carillas de porcelana](/porcelain-veneers-miami) en los dientes que muestras, o el [Diseño de sonrisa](/smile-design-miami) de 20 carillas a {price}, hechas de zirconia multicapa en el [laboratorio un piso arriba de tu doctor](/custom-lab). Lo que cambia para un paciente de Atlanta es la planificación. Las fotos, el plan del doctor, el presupuesto por escrito y el plan de pago ocurren desde casa, normalmente en una semana, por las noches. Cuando reservas el vuelo ya sabes qué dientes, cuánto cuesta y qué lunes.",
+    "Abajo está el viaje en sí: los vuelos, un itinerario de ejemplo con horarios, cuánto cuesta venir, un paciente de Atlanta en sus propias palabras y las preguntas que hacen los pacientes de Atlanta antes de reservar. Todo lo demás sobre la semana está en la [página para pacientes de otros estados](/out-of-state-patients)."
+  ],
+  "gettingHere": {
+    "title": "Cómo llegar de Atlanta a la clínica",
+    "aside": "Orientación general de la clínica. Confirma horarios y aerolíneas con la aerolínea al reservar; no vendemos vuelos.",
+    "items": [
+      {
+        "t": "Tiempo de vuelo",
+        "d": "Aprox. 1 hora 55 minutos en vuelo directo de ATL a MIA. Con el abordaje y el rodaje en pista, calcula unas dos horas y media de puerta a puerta.",
+        "icon": "plane"
+      },
+      {
+        "t": "Qué aerolíneas lo vuelan",
+        "d": "Delta, American y Southwest vuelan ATL–MIA sin escalas, casi todos los días desde temprano en la mañana hasta tarde en la noche. Fort Lauderdale (FLL) es una alternativa con más aerolíneas de bajo costo, a entre 45 minutos y una hora de la clínica.",
+        "icon": "clock"
+      },
+      {
+        "t": "Del aeropuerto a la clínica",
+        "d": "MIA está a 15 minutos en carro. Toma un Uber o Lyft en el punto de recogida de rideshare en llegadas; te enviamos por mensaje de texto el punto y la dirección de la clínica antes de que aterrices. No necesitas alquilar carro durante la semana.",
+        "icon": "car"
+      },
+      {
+        "t": "Si prefieres manejar",
+        "d": "Unas 660 millas por la I-75, entre nueve horas y media y diez. Es posible, pero la mayoría de los pacientes de Atlanta vuela, aterriza el lunes por la mañana y deja el carro en casa. Si vienes manejando, el estacionamiento en la clínica es gratis.",
+        "icon": "bus"
+      }
+    ]
+  },
+  "itinerary": {
+    "title": "Un ejemplo de lunes a jueves desde Atlanta",
+    "intro": "Los horarios son ejemplos para mostrar cómo encaja la semana. Elige cualquier vuelo que aterrice antes de media mañana el lunes y salga después de las 4 pm el jueves, y el calendario se mantiene.",
+    "days": [
+      {
+        "k": "Lunes",
+        "t": "Vuelo temprano, Visita 1 al final de la mañana",
+        "d": "Sal de ATL alrededor de las 7:00 am, aterriza en MIA cerca de las 9:00 am y toma un rideshare a la clínica. Examen, limpieza, radiografías, escaneos y la vista previa del diseño que apruebas.",
+        "time": "Visita 1 aprox. de 11:00 am a 1:00 pm. Después, check-in en el hotel."
+      },
+      {
+        "k": "Martes",
+        "t": "Preparación y provisionales",
+        "d": "Unos 0.3 mm de preparación y provisionales con la forma que aprobaste. Almuerzo blando, y la tarde es tuya.",
+        "time": "Visita 2 aprox. de 9:00 am a 12:00 pm"
+      },
+      {
+        "k": "Miércoles",
+        "t": "Día libre mientras el laboratorio termina",
+        "d": "Tus carillas se fresan, se sinterizan y se terminan a mano un piso arriba. Vives con los provisionales y nos dices cualquier cosa que cambiarías.",
+        "time": "Sin visita. Playa, Wynwood o descanso."
+      },
+      {
+        "k": "Jueves",
+        "t": "Entrega y luego el vuelo de la tarde a casa",
+        "d": "Tono revisado contigo y con el ceramista, carillas cementadas, mordida ajustada y garantía entregada por escrito. Almuerzo y rideshare a MIA.",
+        "time": "Visita 3 aprox. de 9:00 am a 11:00 am. Vuela MIA–ATL desde las 4:00 pm aproximadamente y llegas a casa a las 7:00 pm."
+      }
+    ],
+    "note": "Si prefieres no apurarte el lunes, llega el domingo por la noche; la única diferencia es la noche de hotel del domingo. En la mayoría de los casos, la Visita 1 también puede pasar al martes sin cambiar la entrega del jueves."
+  },
+  "story": {
+    "title": "Desde Atlanta, en sus propias palabras",
+    "body": "Este paciente voló desde Atlanta para un Diseño de sonrisa con el Dr. Ramos y grabó este video el día de la entrega. Poco más de dos minutos, compartido con su permiso.",
+    "storyId": "story-17"
+  },
+  "cost": {
+    "title": "Cuánto cuesta venir desde Atlanta",
+    "body": "El tratamiento se cotiza según la [lista de precios publicada](/veneers-cost-miami) y se confirma por escrito antes de que reserves. El viaje lo reservas y lo pagas tú; no lo sumamos al precio ni lo cotizamos, porque las tarifas cambian a diario.",
+    "lines": [
+      {
+        "label": "Diseño de sonrisa, 20 carillas de porcelana",
+        "value": "{price}",
+        "note": "Incluye vista previa del diseño, limpieza, radiografías y la garantía de {warrantyYears} años por escrito"
+      },
+      {
+        "label": "Una carilla, por unidad",
+        "value": "{veneerPrice}",
+        "note": "Mismo material, laboratorio y garantía, de uno a diecinueve dientes"
+      },
+      {
+        "label": "Depósito para reservar tu lunes",
+        "value": "${depositUsd}",
+        "note": "Se aplica a tu tratamiento"
+      },
+      {
+        "label": "Hotel, tres o cuatro noches",
+        "value": "Tarifa de aliados, 20% de descuento",
+        "note": "Propiedades Hilton y Marriott a menos de 10 minutos; tú reservas directamente, te enviamos la lista con tu presupuesto"
+      },
+      {
+        "label": "Vuelos ATL–MIA y transporte",
+        "value": "Los reservas tú",
+        "note": "No incluidos. Los rideshares desde el aeropuerto y a cada visita son cortos y los pagas tú"
+      }
+    ],
+    "footnote": "Hay planes mensuales a través de seis aliados de financiamiento con una consulta suave de crédito; tu coordinadora te ayuda con la solicitud antes de que reserves los vuelos.",
+    "links": [
+      {
+        "label": "Lista de precios completa",
+        "href": "/veneers-cost-miami"
+      },
+      {
+        "label": "Opciones de financiamiento",
+        "href": "/financing"
+      }
+    ]
+  },
+  "results": {
+    "title": "Resultados de carillas de porcelana",
+    "label": "Carillas de porcelana"
+  },
+  "faq": {
+    "title": "Preguntas de pacientes de Atlanta",
+    "items": [
+      {
+        "q": "¿Puedo volar de regreso a Atlanta el mismo día de la entrega?",
+        "a": "Sí. La entrega del jueves toma unas dos horas por la mañana, y la cementación queda definitiva cuando te levantas del sillón. Reserva un vuelo después de las 4 pm para no apurarte, almuerza algo blando y estás en Atlanta para la cena.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "¿Me conviene llegar el domingo o el lunes por la mañana?",
+        "a": "Las dos opciones funcionan. Un vuelo de las 7 am desde ATL aterriza a tiempo para una Visita 1 a las 11 am. Si los vuelos tempranos no son lo tuyo, ven el domingo por la noche; la única diferencia es una noche más de hotel.",
+        "doc": "Dr. Gretell Alonso Fiel, DMD"
+      },
+      {
+        "q": "¿Y si algo necesita un ajuste cuando ya estoy de vuelta en Atlanta?",
+        "a": "Hacemos una videollamada de seguimiento dos semanas después de la entrega. Los ajustes pequeños están cubiertos por la garantía de {warrantyYears} años y puede hacerlos cualquier dentista cerca de ti; si es algo mayor, te traemos de vuelta.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "¿Puedo seguir yendo a mi dentista de Atlanta para las limpiezas?",
+        "a": "Sí, y deberías. Las carillas se limpian como los dientes naturales. Dile a tu higienista que tienes carillas de zirconia para que use un pulido no abrasivo, y mantén tus visitas cada seis meses.",
+        "doc": "Dr. Marta Puentes Marrero, DMD"
+      },
+      {
+        "q": "¿Cómo comparo su precio con las cotizaciones que tengo en Atlanta?",
+        "a": "Pide a cada clínica las mismas cinco cosas por escrito: el material, el número de dientes, carilla o corona por diente, el total y la garantía. Las nuestras están en la lista de precios y en tu presupuesto. Luego súmale a la nuestra dos vuelos y tres noches de hotel y compara los totales.",
+        "doc": "Dr. Gretell Alonso Fiel, DMD"
+      },
+      {
+        "q": "¿Necesito alquilar un carro en Miami?",
+        "a": "No. La clínica está a 15 minutos de MIA y los hoteles aliados a menos de 10 minutos de la clínica, así que con Uber o Lyft cubres toda la semana. Te enviamos por mensaje de texto los datos de recogida de cada visita la noche anterior.",
+        "doc": "Dr. Marta Puentes Marrero, DMD"
+      }
+    ]
+  }
+}

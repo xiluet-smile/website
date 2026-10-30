@@ -1,0 +1,159 @@
+{
+  "path": "/veneers-houston",
+  "city": "Houston",
+  "breadcrumb": "Veneers Houston",
+  "hero": {
+    "lead": "Houston to Miami is about two and a half hours nonstop from Bush Intercontinental or Hobby. One Monday-to-Thursday week, 20 porcelain veneers made in our own lab, and a 5-year warranty in writing for the flight home.",
+    "image": "blog-airplane-window-miami.jpg",
+    "alt": "Miami seen from an airplane window on approach to Miami International Airport",
+    "caption": "IAH or HOU → MIA · about 2 h 30 min nonstop · 15 minutes from the airport to the clinic"
+  },
+  "intro": [
+    "Houston has two airports with nonstop flights to Miami, and both of them are useful. Bush Intercontinental (IAH) on the north side has the most departures across the day; Hobby (HOU), closer to downtown and the Medical Center, has nonstops too. Either way the flight is around two and a half hours, roughly the time it takes to cross Houston at rush hour, and you land fifteen minutes from the clinic. The whole week runs in Spanish or English, which is often the first thing Houston patients ask.",
+    "Some Houston patients arrive with a plan already in hand: a quote at home for a full set, often as crowns rather than veneers, and want a second opinion on the material and the amount of tooth removed. Our answer is in writing before you book: [porcelain veneers](/porcelain-veneers-miami) at about 0.3 mm of preparation, multilayer zirconia from the [lab in our building](/custom-lab), and the 20-veneer [Smile Design](/smile-design-miami) at {price}. If a tooth genuinely needs a crown, the plan says which one and why.",
+    "The week itself is the same for every out-of-state patient; the [out-of-state page](/out-of-state-patients) covers hotels, airport logistics and what to pack. This page is the Houston-specific part: flights from both airports, a sample itinerary, the cost of coming, a Texas patient in his own words, and the questions we hear from Houston."
+  ],
+  "gettingHere": {
+    "title": "Getting from Houston to the clinic",
+    "aside": "General guidance from the clinic. Check times and carriers with the airline when you book; we do not sell flights.",
+    "items": [
+      {
+        "t": "Flight time",
+        "d": "About 2 hours 30 to 2 hours 45 minutes nonstop. There is a one-hour time change: Miami is on Eastern time, an hour ahead of Houston, so a 7 am departure lands around 11:30 am local.",
+        "icon": "plane"
+      },
+      {
+        "t": "Who flies it",
+        "d": "United and American fly IAH–MIA nonstop through the day. Southwest flies Hobby (HOU) to MIA. Fort Lauderdale (FLL) is an alternative with more low-cost carriers, about 45 minutes to an hour from the clinic.",
+        "icon": "clock"
+      },
+      {
+        "t": "Airport to clinic",
+        "d": "MIA is 15 minutes away by car. Uber and Lyft pick up at arrivals; we text you the spot and the clinic address before you land. The partner hotels are within 10 minutes of the clinic, so no rental car is needed.",
+        "icon": "car"
+      },
+      {
+        "t": "Driving instead",
+        "d": "Houston to Miami is about 1,200 miles along I-10 and I-75, close to nineteen hours of driving. It is not a realistic option for a four-day week; fly.",
+        "icon": "bus"
+      }
+    ]
+  },
+  "itinerary": {
+    "title": "A sample Monday-to-Thursday from Houston",
+    "intro": "Times are examples, in local time at each end, to show how the week fits with the one-hour time change. Any flight that lands by early afternoon Monday and leaves after 4 pm Thursday works.",
+    "days": [
+      {
+        "k": "Sunday or Monday",
+        "t": "Fly in, Visit 1 Monday",
+        "d": "Leave IAH around 7:00 am Monday, land MIA about 11:30 am Eastern, rideshare to the clinic for an early-afternoon Visit 1: exam, cleaning, X-rays, scans and the design preview. Or fly Sunday and come in rested.",
+        "time": "Visit 1 about 1:00 pm to 3:00 pm Monday"
+      },
+      {
+        "k": "Tuesday",
+        "t": "Preparation and temporaries",
+        "d": "About 0.3 mm of preparation and temporaries in the shape you approved. Soft lunch nearby, then the afternoon is free.",
+        "time": "Visit 2 about 9:00 am to 12:00 pm"
+      },
+      {
+        "k": "Wednesday",
+        "t": "Free day while the lab finishes",
+        "d": "Veneers milled, sintered and finished by hand upstairs. You tell us anything you would change about the temporaries before Thursday.",
+        "time": "No visit."
+      },
+      {
+        "k": "Thursday",
+        "t": "Delivery, then the evening flight home",
+        "d": "Shade checked with the ceramist, veneers bonded, bite adjusted, warranty in writing. Lunch, rideshare to MIA.",
+        "time": "Visit 3 about 9:00 am to 11:00 am. Fly MIA–IAH from about 4:00 pm Eastern, land Houston around 6:30 pm Central."
+      }
+    ],
+    "note": "With the time change, an early Monday flight still lands in time for an afternoon Visit 1. If you would rather not fly and sit in the chair on the same day, come Sunday; the Sunday hotel night is the only difference."
+  },
+  "story": {
+    "title": "From Texas, in his own words",
+    "body": "Jesús came from Texas for a Smile Design with Dr. Alonso and recorded this in Spanish on delivery day. Shared with his permission.",
+    "storyId": "story-24"
+  },
+  "cost": {
+    "title": "What it costs to come from Houston",
+    "body": "Treatment is priced from the [published price list](/veneers-cost-miami) and confirmed in writing before you book anything. Travel is yours to book and pay; we do not add it to the price and we do not quote it, because fares change daily.",
+    "lines": [
+      {
+        "label": "Smile Design, 20 porcelain veneers",
+        "value": "{price}",
+        "note": "Design preview, cleaning, X-rays and the {warrantyYears}-year written warranty included"
+      },
+      {
+        "label": "One veneer, à la carte",
+        "value": "{veneerPrice}",
+        "note": "Same material, lab and warranty, for one to nineteen teeth"
+      },
+      {
+        "label": "Deposit to hold your Monday",
+        "value": "${depositUsd}",
+        "note": "Applied to your treatment"
+      },
+      {
+        "label": "Hotel, three or four nights",
+        "value": "Partner rate, 20% off",
+        "note": "Hilton and Marriott properties within 10 minutes; you book directly, we send the list with your estimate"
+      },
+      {
+        "label": "Flights IAH or HOU to MIA, and rides",
+        "value": "Booked by you",
+        "note": "Not included. Rideshares from the airport and to each visit are short and paid by you"
+      }
+    ],
+    "footnote": "Monthly plans are available through six financing partners with a soft credit check; your coordinator helps with the application before you book flights.",
+    "links": [
+      {
+        "label": "Full price list",
+        "href": "/veneers-cost-miami"
+      },
+      {
+        "label": "Financing options",
+        "href": "/financing"
+      }
+    ]
+  },
+  "results": {
+    "title": "Porcelain veneer results",
+    "label": "Porcelain veneers"
+  },
+  "faq": {
+    "title": "Questions from Houston patients",
+    "items": [
+      {
+        "q": "Can I fly home to Houston the same day as delivery?",
+        "a": "Yes. Thursday delivery takes about two hours in the morning and the bonding is final when you stand up. A flight after 4 pm Eastern gets you to IAH or Hobby by about 6:30 pm Central, with no rush at either end.",
+        "doc": "Dr. Gretell Alonso Fiel, DMD"
+      },
+      {
+        "q": "Does the time change affect the schedule?",
+        "a": "Only on Monday. Miami is an hour ahead of Houston, so a 7 am flight lands at 11:30 am local and Visit 1 is early afternoon. We set the Monday appointment around your arrival time when you book.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "I was quoted crowns for my whole smile in Houston. Is that the same thing?",
+        "a": "No. A crown removes 60 to 70% of the tooth; a veneer removes about 0.3 mm from the front. Send us the quote with your photos and the plan you get back names, tooth by tooth, which need a veneer and whether any genuinely needs a crown.",
+        "doc": "Dr. Roger Ramos Navarro, DMD"
+      },
+      {
+        "q": "Can the whole thing be done in Spanish?",
+        "a": "Yes. The doctors, the coordinator and the lab work in Spanish and English, the estimate and the warranty come in either language, and this site is at /es for your family at home.",
+        "doc": "Dr. Gretell Alonso Fiel, DMD"
+      },
+      {
+        "q": "What if I need an adjustment once I am back in Houston?",
+        "a": "There is a video check-in two weeks after delivery. Small adjustments are covered by the {warrantyYears}-year warranty at any dentist near you; anything larger, we bring you back.",
+        "doc": "Dr. Marta Puentes Marrero, DMD"
+      },
+      {
+        "q": "Is it worth flying when there are clinics in Houston?",
+        "a": "Only you can say, but compare the same five things in writing: material, number of teeth, veneer or crown per tooth, total, and warranty. Ours are on the price list. Then add two flights and three hotel nights and compare the totals, not the headline price.",
+        "doc": "Dr. Marta Puentes Marrero, DMD"
+      }
+    ]
+  }
+}

@@ -6,6 +6,7 @@ import type { Locale } from "./i18n";
 import type { Treatment } from "@/components/TreatmentPage";
 import type { DoctorProfileData } from "@/components/DoctorProfile";
 import type { LenderContent } from "@/components/LenderPage";
+import type { CityContent } from "@/components/pages/CityPage";
 
 // ---------- English ----------
 import site from "@/content/site.json";
@@ -41,6 +42,12 @@ import trCompleteRestoration from "@/content/treatments/complete-restoration.jso
 import trAllOnX from "@/content/treatments/all-on-x.json";
 import trPorcelainVeneers from "@/content/treatments/porcelain-veneers.json";
 import trZirconiaVeneers from "@/content/treatments/zirconia-veneers.json";
+import cityAtlanta from "@/content/cities/atlanta.json";
+import cityHouston from "@/content/cities/houston.json";
+import cityDallas from "@/content/cities/dallas.json";
+import cityNewYork from "@/content/cities/new-york.json";
+import cityOrlando from "@/content/cities/orlando.json";
+import cityTampa from "@/content/cities/tampa.json";
 import docRamos from "@/content/doctors/dr-roger-ramos-navarro.json";
 import docPuentes from "@/content/doctors/dr-marta-puentes-marrero.json";
 import docAlonso from "@/content/doctors/dr-gretell-alonso-fiel.json";
@@ -85,6 +92,12 @@ import esTrCompleteRestoration from "@/content/es/treatments/complete-restoratio
 import esTrAllOnX from "@/content/es/treatments/all-on-x.json";
 import esTrPorcelainVeneers from "@/content/es/treatments/porcelain-veneers.json";
 import esTrZirconiaVeneers from "@/content/es/treatments/zirconia-veneers.json";
+import esCityAtlanta from "@/content/es/cities/atlanta.json";
+import esCityHouston from "@/content/es/cities/houston.json";
+import esCityDallas from "@/content/es/cities/dallas.json";
+import esCityNewYork from "@/content/es/cities/new-york.json";
+import esCityOrlando from "@/content/es/cities/orlando.json";
+import esCityTampa from "@/content/es/cities/tampa.json";
 import esDocRamos from "@/content/es/doctors/dr-roger-ramos-navarro.json";
 import esDocPuentes from "@/content/es/doctors/dr-marta-puentes-marrero.json";
 import esDocAlonso from "@/content/es/doctors/dr-gretell-alonso-fiel.json";
@@ -125,6 +138,8 @@ export type Story = { id: string; video: string; poster: string; quote: string; 
 export type LegalNotice = { notice: string; names: Record<string, string> };
 
 export type TreatmentKey = "smile-design" | "complete-restoration" | "full-mouth-reconstruction" | "all-on-x" | "porcelain-veneers" | "zirconia-veneers";
+/** "Veneers <city>" pages for out-of-state patients (src/content/cities). */
+export type CityKey = "atlanta" | "houston" | "dallas" | "new-york" | "orlando" | "tampa";
 
 const content = (l: {
   site: Site;
@@ -149,6 +164,7 @@ const content = (l: {
   legalNotice: LegalNotice | null;
   faq: { home: Faq[]; contact: Faq[]; cost: Faq[]; doctors: Faq[]; financing: Faq[]; outOfState: Faq[] };
   treatments: Record<TreatmentKey, Treatment>;
+  cities: Record<CityKey, CityContent>;
   doctorProfiles: DoctorProfileData[];
   lenderContent: Record<string, LenderContent>;
 }) => ({
@@ -188,6 +204,14 @@ const en = content({
     "all-on-x": trAllOnX as Treatment,
     "porcelain-veneers": trPorcelainVeneers as Treatment,
     "zirconia-veneers": trZirconiaVeneers as Treatment,
+  },
+  cities: {
+    atlanta: cityAtlanta as CityContent,
+    houston: cityHouston as CityContent,
+    dallas: cityDallas as CityContent,
+    "new-york": cityNewYork as CityContent,
+    orlando: cityOrlando as CityContent,
+    tampa: cityTampa as CityContent,
   },
   doctorProfiles: [docRamos, docPuentes, docAlonso, docCastanos],
   lenderContent: { cherry: lnCherry, sunbit: lnSunbit, carecredit: lnCarecredit, lendingclub: lnLendingclub, alphaeon: lnAlphaeon, affirm: lnAffirm },
@@ -229,6 +253,14 @@ const es = content({
     "all-on-x": esTrAllOnX as Treatment,
     "porcelain-veneers": esTrPorcelainVeneers as Treatment,
     "zirconia-veneers": esTrZirconiaVeneers as Treatment,
+  },
+  cities: {
+    atlanta: esCityAtlanta as CityContent,
+    houston: esCityHouston as CityContent,
+    dallas: esCityDallas as CityContent,
+    "new-york": esCityNewYork as CityContent,
+    orlando: esCityOrlando as CityContent,
+    tampa: esCityTampa as CityContent,
   },
   doctorProfiles: [esDocRamos as DoctorProfileData, esDocPuentes as DoctorProfileData, esDocAlonso as DoctorProfileData, esDocCastanos as DoctorProfileData],
   lenderContent: {

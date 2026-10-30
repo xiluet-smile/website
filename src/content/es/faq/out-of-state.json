@@ -14,5 +14,13 @@
   {
     "q": "¿Y si algo necesita un ajuste cuando ya estoy en casa?",
     "a": "Los ajustes pequeños están cubiertos por la garantía de {warrantyYears} años en cualquier dentista. Si es algo mayor, te traemos de vuelta."
+  },
+  {
+    "q": "¿Puedo volar a casa el mismo día de la entrega?",
+    "a": "Sí. La Visita 3 del jueves toma unas dos horas por la mañana y la cementación queda definitiva cuando te levantas del sillón. Reserva un vuelo después de las 4 pm, almuerza algo blando y llegas a casa para la cena."
+  },
+  {
+    "q": "¿Ustedes reservan el hotel o el transporte?",
+    "a": "No. Te enviamos una lista corta de tres hoteles a menos de 10 minutos, dos de ellos Hilton y Marriott con una tarifa de aliados del 20% de descuento, y los datos de recogida de rideshare para cada visita. Tú reservas y pagas el hotel, los vuelos y los viajes directamente; nada relacionado con el viaje se suma al precio."
   }
 ]
