@@ -5,7 +5,7 @@ Branch `seo/fix-pass-1`. The brief assumed an Astro site with no structured data
 ## What changed
 
 **Compliance and head**
-- Minimum-fee disclaimer: the pass added it under the home and cost-page package grids and on All-on-X; Janse asked for that addition to be removed (2026-10-30), so those three places are back to their previous wording. The sentence still appears on the Smile Design, Smile Makeover and Full Mouth pages and in several articles, as before. Florida's dental advertising rule expects advertised fees to say whether they are minimums; if the clinic wants it off everywhere, say so and the treatment-page footnotes change too.
+- Minimum-fee disclaimer: removed from the whole site at Janse's request (2026-10-30). The pass had first added "Prices shown are minimum fees. Your final fee is confirmed in writing after a doctor's evaluation." under the home and cost-page grids; it was then taken out there and also from the three treatment-page footnotes (now "Final price confirmed in writing after a doctor's evaluation.") and from 16 articles (EN + ES). Note for the record: Florida's dental advertising rule expects an advertised fee to state whether it is a minimum; the clinic decided to rely on the written estimate instead.
 - `og:locale:alternate` added for the paired language on every non-legal page.
 - Home `<h1>` no longer contains the 🏝️ emoji (it stays in the hero eyebrow).
 - "All answers →" (which linked to /contact from beside the FAQ) removed from the four treatment pages.
