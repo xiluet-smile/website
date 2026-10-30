@@ -5,7 +5,7 @@ Branch `seo/fix-pass-1`. The brief assumed an Astro site with no structured data
 ## What changed
 
 **Compliance and head**
-- Florida minimum-fee disclaimer now sits under every package grid: home "What it costs" (`homePage.costFootnote`, EN/ES), the cost page (new line under the four cards), and the All-on-X page (same sentence as the other three treatment pages). The duplicate "Final estimate may vary…" sentence was dropped.
+- Minimum-fee disclaimer: the pass added it under the home and cost-page package grids and on All-on-X; Janse asked for that addition to be removed (2026-10-30), so those three places are back to their previous wording. The sentence still appears on the Smile Design, Smile Makeover and Full Mouth pages and in several articles, as before. Florida's dental advertising rule expects advertised fees to say whether they are minimums; if the clinic wants it off everywhere, say so and the treatment-page footnotes change too.
 - `og:locale:alternate` added for the paired language on every non-legal page.
 - Home `<h1>` no longer contains the 🏝️ emoji (it stays in the hero eyebrow).
 - "All answers →" (which linked to /contact from beside the FAQ) removed from the four treatment pages.

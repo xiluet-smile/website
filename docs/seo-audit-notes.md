@@ -17,7 +17,7 @@ Phase 0 of the "SEO fix & improvement pass (round 1)" brief. The brief was writt
 | Reviews | `src/content/reviews.json` + `src/components/home/GoogleReviews.tsx` (live feed via `/api/reviews` when `GOOGLE_PLACES_API_KEY` is set) | Five named quotes from the design files (Maria G., Daniel R., Sofia M., Carlos V., Andrea L.) were still rendered and could not be verified against Google. |
 | Rating / count | `site.json` + `es/site.json` → `rating` (5.0 · 255) | Already one constant; no date of last update. |
 | Media | `Img.tsx` (lazy, async, intrinsic width/height), `LazyVideo.tsx` and `PatientStories.tsx` (`preload="none"`, poster attached only when playing), no `data:` URIs in content | OK. Hero video still streams from the designer's CloudFront URL (open item). |
-| Fee disclaimer | Treatment pages (`price.footnote`), most blog posts | Missing under the home "What it costs" grid and the cost-page package grid; All-on-X used a different sentence. The home/cost footnote also carried the "Final estimate may vary…" sentence the brief says to drop. |
+| Fee disclaimer | Treatment pages (`price.footnote`), most blog posts | Not under the home "What it costs" grid or the cost-page package grid; All-on-X uses a different sentence. Added in this pass, then removed again at Janse's request (2026-10-30); left as it was. |
 | Titles / descriptions | `pages.json`, `es/pages.json`, blog `seoTitle` | 43 EN and 33 ES routes had titles over 60 chars (some over 85); ~20 descriptions outside 110–160. |
 | Home H1 | `pages.json` → `/` → `h1` | Contained the 🏝️ emoji inside the heading text (the hero eyebrow in `home.json` carries it too). |
 | "All answers →" | `TreatmentPage.tsx` | Linked to `/contact` from beside the FAQ accordion. |

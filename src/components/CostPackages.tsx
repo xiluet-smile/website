@@ -7,7 +7,6 @@ export default function CostPackages({ locale = "en" }: { locale?: Locale }) {
   const t = ui(locale).cost;
   const { prices } = getContent(locale);
   return (
-    <>
     <div className="grid items-stretch gap-4 md:grid-cols-2 xl:grid-cols-4">
       {prices.packages.map((p) => (
         <article
@@ -60,8 +59,5 @@ export default function CostPackages({ locale = "en" }: { locale?: Locale }) {
         </article>
       ))}
     </div>
-    {/* Florida dental advertising rule: minimum-fee disclaimer wherever a fee is shown. */}
-    <p className="mt-4 mb-0 text-[13px] text-muted">{ui(locale).homePage.costFootnote}</p>
-    </>
   );
 }
