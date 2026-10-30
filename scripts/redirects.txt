@@ -33,7 +33,7 @@
 /clear-aligners-invisalign-clearcorrect /blog/veneers-vs-crowns-vs-invisalign
 /orthodontics-teeth-straightening /blog/veneers-vs-crowns-vs-invisalign
 /retainers /blog/veneers-vs-crowns-vs-invisalign
-/palatal-expanders /
+/palatal-expanders /blog/veneers-vs-crowns-vs-invisalign
 /nightguard /blog/how-long-do-porcelain-veneers-last
 /services /veneers-cost-miami
 /offers /veneers-cost-miami
@@ -69,8 +69,8 @@
 # Contact and forms
 /contact-us /contact
 /free-consultation-xiluet-smiles /free-photo-evaluation
-/thank-you /
-/sample-page /
+/thank-you /contact
+# /sample-page: no equivalent, left as 404 on purpose (no catch-all to the homepage)
 
 # Legal (old slugs)
 /terms-and-conditions /terms

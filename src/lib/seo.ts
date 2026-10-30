@@ -23,6 +23,8 @@ export function pageMetadata(path: PagePath, locale: Locale = "en"): Metadata {
       description: page.description,
       url,
       locale: locale === "es" ? "es_US" : "en_US",
+      // og:locale:alternate for the paired language (legal pages are English only).
+      ...(legal ? {} : { alternateLocale: locale === "es" ? "en_US" : "es_US" }),
       images: [{ url: ogImagePath(page.ogImage), width: 1200, height: 630 }],
     },
     twitter: { card: "summary_large_image" },
