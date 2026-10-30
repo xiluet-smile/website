@@ -118,7 +118,7 @@ const uiEn = {
     getEstimate: "Get your free estimate",
     aboutPackage: "About this package",
     costFootnote:
-      "Deep cleaning and other procedures are quoted separately, in writing, before anything starts. Final estimate may vary if additional corrections are required beyond the smile design.",
+      "Prices shown are minimum fees. Your final fee is confirmed in writing after a doctor's evaluation. Deep cleaning and other procedures are quoted separately, in writing, before anything starts.",
     financing: "Financing",
     financingTitle: "Six ways to pay over time",
     financingLead: "Our coordinator helps you apply and compares offers with you before you commit.",
@@ -426,7 +426,7 @@ const uiEs: UiStrings = {
     getEstimate: "Obtén tu presupuesto gratis",
     aboutPackage: "Sobre este paquete",
     costFootnote:
-      "La limpieza profunda y otros procedimientos se cotizan aparte, por escrito, antes de empezar. El presupuesto final puede variar si se requieren correcciones adicionales más allá del diseño de sonrisa.",
+      "Los precios mostrados son tarifas mínimas. Su tarifa final se confirma por escrito después de la evaluación del doctor. La limpieza profunda y otros procedimientos se cotizan aparte, por escrito, antes de empezar.",
     financing: "Financiamiento",
     financingTitle: "Seis formas de pagar a plazos",
     financingLead: "Nuestra coordinadora te ayuda a aplicar y compara las ofertas contigo antes de que te comprometas.",
