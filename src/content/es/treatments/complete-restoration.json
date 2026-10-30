@@ -135,7 +135,8 @@
       "BA9",
       "BA14",
       "BA11"
-    ]
+    ],
+    "caseTypes": ["Restorations"]
   },
   "price": {
     "eyebrow": "Costo",

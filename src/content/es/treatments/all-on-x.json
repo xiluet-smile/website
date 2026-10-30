@@ -152,7 +152,8 @@
     ],
     "caseIds": [
       "BA17"
-    ]
+    ],
+    "caseTypes": ["All-on-X"]
   },
   "price": {
     "eyebrow": "Costo",

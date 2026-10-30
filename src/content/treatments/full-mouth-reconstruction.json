@@ -135,7 +135,8 @@
       "BA11",
       "BA9",
       "BA13"
-    ]
+    ],
+    "caseTypes": ["Full mouth","Restorations"]
   },
   "price": {
     "eyebrow": "Cost",
