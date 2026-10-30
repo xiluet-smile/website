@@ -135,7 +135,8 @@
       "BA9",
       "BA14",
       "BA11"
-    ]
+    ],
+    "caseTypes": ["Restorations"]
   },
   "price": {
     "eyebrow": "Cost",
@@ -158,7 +159,7 @@
       ],
       "cta": "Get my written estimate"
     },
-    "footnote": "Prices shown are minimum fees. Your final fee is confirmed in writing after a doctor's evaluation."
+    "footnote": "Final price confirmed in writing after a doctor's evaluation."
   },
   "faq": {
     "title": "Makeover questions, answered by the doctors",

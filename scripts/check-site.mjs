@@ -37,6 +37,37 @@ const fail = (path, msg) => {
   failures++;
   console.log(`✗ ${path}: ${msg}`);
 };
+
+// ---------- SEO pass checks (2026-10-30), shared by both languages ----------
+// Every old URL in public/_redirects: no live page may link to one (the link would 301).
+const redirected = new Set(
+  readFileSync("public/_redirects", "utf8").split("\n").map((l) => l.trim()).filter((l) => l && !l.startsWith("#")).map((l) => l.split(/\s+/)[0]),
+);
+// Florida dental advertising: never in claims. "warranty" is allowed; best/top/permanent are only reported (they have neutral uses).
+const BANNED = /\b(guaranteed|painless|pain-free|all-inclusive|stain-proof|garantizad[oa]s?|indolor[oa]s?|a prueba de manchas|todo incluido)\b|\bsin dolor\b|#1\b/i;
+const SOFT = /\b(best|top|permanent(ly)?|mejor(es)?|permanente?s?)\b/gi;
+let softHits = 0;
+function seoChecks(path, html, text, title, desc, lang, enPath) {
+  if (title.length > 60) fail(path, `title is ${title.length} chars (max 60)`);
+  if (desc.length < 110 || desc.length > 160) fail(path, `meta description is ${desc.length} chars (110–160)`);
+  const main = strip((html.match(/<main[\s>][\s\S]*?<\/main>/) || ["", ""])[0]);
+  const banned = main.match(BANNED);
+  if (banned) fail(path, `banned advertising word in <main>: "${banned[0]}"`);
+  softHits += (main.match(SOFT) || []).length;
+  if (/7,999/.test(text)) fail(path, "$7,999 is not a current price");
+  // The package name (capitalised) right before the Makeover price; lower-case "smile design" in a sentence about crowns is fine.
+  if (/Smile Design[^.$;]{0,40}\$6,999|Diseño de Sonrisa[^.$;]{0,40}\$6,999/.test(text)) fail(path, "Smile Design shown next to $6,999 (package is $5,999)");
+  for (const m of html.matchAll(/href="(\/[^"#?]*)/g)) if (redirected.has(m[1])) fail(path, `links to a redirected URL: ${m[1]}`);
+  if (lang === "en" && !LEGAL.includes(path)) {
+    const es = esPaths[path];
+    for (const [l, target] of [["en-US", `https://xiluetsmiledesign.com${path}`], ["es-US", `https://xiluetsmiledesign.com${es}`], ["x-default", `https://xiluetsmiledesign.com${path}`]]) {
+      const re = new RegExp(`<link rel="alternate" hrefLang="${l}" href="${target.replace(/\/$/, "").replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}/?"`);
+      if (!re.test(html)) fail(path, `no hreflang ${l} link to ${target}`);
+    }
+    if (!html.includes(`property="og:locale:alternate" content="es_US"`)) fail(path, "no og:locale:alternate es_US");
+  }
+  if (lang === "es" && !LEGAL.includes(enPath) && !html.includes(`property="og:locale:alternate" content="en_US"`)) fail(path, "no og:locale:alternate en_US");
+}
 const titles = new Set();
 
 for (const [path, page] of Object.entries(pages)) {
@@ -57,6 +88,7 @@ for (const [path, page] of Object.entries(pages)) {
   const canonical = (html.match(/<link rel="canonical" href="([^"]*)"/) || [])[1] ?? "";
   if (canonical.replace(/\/$/, "") !== `https://xiluetsmiledesign.com${path}`.replace(/\/$/, "")) fail(path, `canonical is "${canonical}"`);
   if (!/property="og:image"/.test(html)) fail(path, "no og:image");
+  seoChecks(path, html, text, title, desc, "en", path);
 
   const h1s = html.match(/<h1[\s>]/g) || [];
   if (h1s.length !== 1) fail(path, `${h1s.length} <h1> elements`);
@@ -139,6 +171,7 @@ for (const [enPath, page] of Object.entries(esPages)) {
     if (!re.test(html)) fail(path, `no hreflang ${lang} link to ${target}`);
   }
   if (!/property="og:image"/.test(html)) fail(path, "no og:image");
+  seoChecks(path, html, text, title, desc, "es", enPath);
 
   // Inline spans (e.g. the sr-only ", " before "DMD") add whitespace before punctuation; ignore it.
   // The home H1 renders "Keyword: tagline" as two lines without the colon.
@@ -178,5 +211,6 @@ for (const [enPath, page] of Object.entries(esPages)) {
   }
 }
 
+if (softHits) console.log(`  note: ${softHits} use(s) of best/top/permanent (or mejor/permanente) in page bodies; fine in neutral wording, never in a claim about results.`);
 console.log(failures ? `\n${failures} failure(s)` : `\n✓ ${Object.keys(pages).length} English + ${esCount} Spanish routes passed`);
 process.exit(failures ? 1 : 0);

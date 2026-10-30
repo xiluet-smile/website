@@ -5,7 +5,8 @@
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()
-  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  # No includeSubDomains: app.xiluetsmiledesign.com and other subdomains are served by other providers.
+  Strict-Transport-Security: max-age=31536000
   Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: blob: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src https:; connect-src 'self' https: wss:; form-action 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'
 
 # Long-lived caching for fingerprinted build output and static media.

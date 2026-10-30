@@ -6,10 +6,12 @@ import Img from "@/components/Img";
 import LineIcon, { type LineIconName } from "@/components/LineIcon";
 import JsonLd from "@/components/JsonLd";
 import PageHero from "@/components/PageHero";
+import ScrollRow from "@/components/ScrollRow";
 import {
   caseById,
   getContent,
   packageById,
+  tpl,
   ui,
   type Faq,
 } from "@/lib/content-i18n";
@@ -60,7 +62,10 @@ export type Treatment = {
     linkLabel: string;
     /** Patient cases from cases.json, captioned with `label`. */
     label?: string;
+    /** Curated cases shown first, in this order. */
     caseIds?: string[];
+    /** Case types (cases.json → types) that fill the carousel after the curated ones, up to MAX_RESULT_CASES. */
+    caseTypes?: string[];
     /** Editorial (non-patient) images, used when there are no cases to show. */
     editorial?: { src: string; label: string; cap: string; alt: string }[];
   };
@@ -95,6 +100,8 @@ const h2 =
   "m-0 font-serif text-[34px] leading-[1.2] font-normal text-pretty lg:text-[48px] lg:leading-[1.1]";
 const sectionHead =
   "flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between lg:gap-8";
+/** Cases per treatment results carousel; the rest are on /before-and-after. */
+const MAX_RESULT_CASES = 12;
 const photoLabel =
   "absolute text-[11px] font-semibold tracking-[.14em] text-on-dark uppercase [text-shadow:0_1px_8px_rgba(0,0,0,.5)]";
 const panelShadow =
@@ -115,6 +122,10 @@ export default function TreatmentPage({
   const path = data.path as PagePath;
   const pkg = packageById(locale, data.packageId);
   const { hero, candidates, why, week, results, price, faq, cta } = data;
+  // Results carousel: the curated cases first, then every other case of the treatment's types.
+  const curated = (results.caseIds ?? []).map((id) => caseById(locale, id));
+  const filler = cases.cases.filter((c) => (results.caseTypes ?? []).includes(c.type) && !curated.some((x) => x.id === c.id));
+  const shownCases = [...curated, ...filler].slice(0, MAX_RESULT_CASES);
   const { material, glossary } = getContent(locale);
   const heroCase = hero.image.caseId
     ? caseById(locale, hero.image.caseId)
@@ -514,48 +525,56 @@ export default function TreatmentPage({
             {results.linkLabel}
           </Link>
         </div>
-        <div className="grid gap-6 lg:grid-cols-3">
-          {(results.caseIds ?? [])
-            .map((id) => caseById(locale, id))
-            .map((c) => (
-              <figure key={c.id} className="m-0 flex flex-col gap-2.5">
-                <div className="relative overflow-hidden rounded-2xl shadow-[0_12px_32px_rgba(26,26,26,.1)]">
+        {/* Carousel: scroll-snap row (works without JS) with arrows on desktop; three cards per view. */}
+        <ScrollRow locale={locale} ariaLabel={results.title} caption={tpl(t.results.casesCaption, { shown: shownCases.length + (results.editorial ?? []).length })}>
+          {shownCases.map((c) => (
+            <li key={c.id} className="flex-[0_0_78%] snap-start lg:flex-[0_0_calc((100%-40px)/3)]">
+              <figure className="m-0 flex flex-col gap-2.5">
+                <div className="relative aspect-[13/16] overflow-hidden rounded-2xl bg-teal shadow-[0_12px_32px_rgba(26,26,26,.1)]">
                   <Img
                     src={c.image}
                     alt={c.alt}
-                    sizes="(min-width: 1024px) 33vw, 100vw"
-                    className="block h-auto w-full"
+                    sizes="(min-width: 1024px) 380px, 78vw"
+                    className="block h-full w-full object-cover"
                   />
-                  <span className={`${photoLabel} top-3 left-3.5`}>
-                    {t.before}
-                  </span>
-                  <span className={`${photoLabel} top-3 right-3.5`}>
-                    {t.after}
-                  </span>
+                  {c.layout === "stacked" ? (
+                    <>
+                      <span className={`${photoLabel} top-3 left-3.5`}>{t.before}</span>
+                      <span className={`${photoLabel} bottom-3 left-3.5`}>{t.after}</span>
+                    </>
+                  ) : (
+                    <>
+                      <span className={`${photoLabel} top-3 left-3.5`}>{t.before}</span>
+                      <span className={`${photoLabel} top-3 right-3.5`}>{t.after}</span>
+                    </>
+                  )}
                 </div>
                 <figcaption className="flex justify-between gap-3 text-sm text-muted">
                   <span>{results.label}</span>
                   <span className="text-right">{cases.disclaimer}</span>
                 </figcaption>
               </figure>
-            ))}
-          {(results.editorial ?? []).map((e) => (
-            <figure key={e.src} className="m-0 flex flex-col gap-2.5">
-              <div className="relative overflow-hidden rounded-2xl shadow-[0_12px_32px_rgba(26,26,26,.1)]">
-                <Img
-                  src={e.src}
-                  alt={e.alt}
-                  sizes="(min-width: 1024px) 33vw, 100vw"
-                  className="block aspect-[4/5] w-full object-cover object-[50%_30%] lg:aspect-[5/6]"
-                />
-              </div>
-              <figcaption className="flex justify-between gap-3 text-sm text-muted">
-                <span>{e.label}</span>
-                <span className="text-right">{e.cap}</span>
-              </figcaption>
-            </figure>
+            </li>
           ))}
-        </div>
+          {(results.editorial ?? []).map((e) => (
+            <li key={e.src} className="flex-[0_0_78%] snap-start lg:flex-[0_0_calc((100%-40px)/3)]">
+              <figure className="m-0 flex flex-col gap-2.5">
+                <div className="relative aspect-[13/16] overflow-hidden rounded-2xl shadow-[0_12px_32px_rgba(26,26,26,.1)]">
+                  <Img
+                    src={e.src}
+                    alt={e.alt}
+                    sizes="(min-width: 1024px) 380px, 78vw"
+                    className="block h-full w-full object-cover object-[50%_30%]"
+                  />
+                </div>
+                <figcaption className="flex justify-between gap-3 text-sm text-muted">
+                  <span>{e.label}</span>
+                  <span className="text-right">{e.cap}</span>
+                </figcaption>
+              </figure>
+            </li>
+          ))}
+        </ScrollRow>
       </section>
 
       {/* Price */}
@@ -686,12 +705,6 @@ export default function TreatmentPage({
         <div className="grid items-start gap-7 lg:grid-cols-[minmax(0,.8fr)_minmax(0,1.4fr)] lg:gap-16">
           <div className="flex flex-col gap-3 lg:sticky lg:top-8 lg:gap-4">
             <h2 className={h2}>{faq.title}</h2>
-            <Link
-              href={localizePath("/contact", locale)}
-              className="inline-flex min-h-11 items-center self-start font-semibold lg:min-h-0"
-            >
-              {faq.linkLabel}
-            </Link>
           </div>
           <FaqAccordion
             faqs={faq.items}
