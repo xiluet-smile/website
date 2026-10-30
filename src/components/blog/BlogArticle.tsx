@@ -173,8 +173,13 @@ export default function BlogArticle({ slug, locale = "en" }: { slug: string; loc
               </span>
               <span>
                 <span aria-hidden="true" className="hidden lg:inline">· </span>
-                {post.dateModified && post.dateModified !== post.datePublished ? t.blogPage.updated : t.blogPage.published}{" "}
-                <time dateTime={post.dateModified ?? post.datePublished}>{dateFmt(post.dateModified ?? post.datePublished, locale)}</time>
+                {t.blogPage.published} <time dateTime={post.datePublished}>{dateFmt(post.datePublished, locale)}</time>
+                {post.dateModified && post.dateModified !== post.datePublished && (
+                  <>
+                    {" · "}
+                    {t.blogPage.updated} <time dateTime={post.dateModified}>{dateFmt(post.dateModified, locale)}</time>
+                  </>
+                )}
               </span>
               <span>
                 <span aria-hidden="true" className="hidden lg:inline">· </span>
