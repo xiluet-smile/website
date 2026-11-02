@@ -94,7 +94,8 @@ export default function HomePage({ locale = "en" }: { locale?: Locale }) {
                 {home.hero.eyebrow}
               </div>
             )}
-            <h1 className="-mt-1.5 mb-0 font-serif text-[44px] leading-[1.1] font-normal text-pretty lg:-mt-2 lg:text-[clamp(52px,5vw,72px)] lg:leading-[1.05] lg:tracking-[-.01em]">
+            {/* The headline may run past its column into the dark side of the portrait, so a two-line tagline fits at hero size. */}
+            <h1 className="-mt-1.5 mb-0 font-serif text-[44px] leading-[1.1] font-normal text-pretty lg:-mt-2 lg:w-[calc(100%+200px)] lg:max-w-none lg:text-[clamp(48px,4.2vw,60px)] lg:leading-[1.05] lg:tracking-[-.01em]">
               {/* "Keyword: tagline" renders the keyword as a smaller first line so the H1 keeps both without a third 60px line. */}
               {h1Parts ? (
                 <>
