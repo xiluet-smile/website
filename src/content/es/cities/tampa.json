@@ -10,9 +10,8 @@
     "caption": "Tampa → Westchester, Miami · unas 4 h en carro por la I-75 · estacionamiento gratis en la clínica"
   },
   "intro": [
-    "Desde Tampa Bay el viaje a la clínica es directo: la I-75 al sur pasando Naples, al este por Alligator Alley y la salida al Dolphin Expressway hacia Westchester. Son unas 280 millas y cuatro horas fuera de hora pico, y la clínica tiene estacionamiento gratis, así que el carro es la forma en que llegan la mayoría de los pacientes de Tampa y St. Petersburg. Si prefieres volar, de TPA a MIA es poco más de una hora en el aire y la clínica está a quince minutos del aeropuerto.",
-    "Lo que los pacientes de Tampa reciben a cambio del viaje es lo mismo que cualquier otro paciente: [carillas de porcelana](/porcelain-veneers-miami) en zirconia multicapa con unos 0.3 mm de preparación, hechas en el [laboratorio un piso arriba de tu doctor](/custom-lab), {veneerPrice} por unidad o {price} por el [Diseño de sonrisa](/smile-design-miami) de 20 carillas, entregadas en una semana de lunes a jueves con garantía de 5 años por escrito. La planificación se hace desde casa: fotos, el plan de un doctor en menos de {replyHours} horas, el presupuesto por escrito y el plan de pago, y solo entonces una fecha.",
-    "La semana en sí, incluidos los hoteles aliados y qué empacar, está en la [página para pacientes de otros estados](/out-of-state-patients). Esta página es la parte de Tampa: el viaje en carro y el vuelo, un itinerario de ejemplo armado alrededor del carro, cuánto cuesta venir y las preguntas que los pacientes de Tampa hacen antes de reservar."
+    "Desde Tampa Bay el viaje en carro es directo: la I-75 al sur pasando Naples, al este por Alligator Alley y la salida al Dolphin Expressway hacia Westchester. Unas 280 millas y cuatro horas fuera de hora pico, con estacionamiento gratis en la clínica. Si prefieres volar, de TPA a MIA es poco más de una hora, y la clínica está a 15 minutos del aeropuerto.",
+    "El tratamiento es el mismo que para cualquier paciente: [carillas de porcelana](/porcelain-veneers-miami) en zirconia multicapa, hechas en el [laboratorio un piso arriba de tu doctor](/custom-lab), a {veneerPrice} por unidad o {price} por el [Diseño de sonrisa](/smile-design-miami) de 20 carillas, entregadas en una semana de lunes a jueves. La planificación se hace desde casa: fotos, el plan de un doctor en menos de {replyHours} horas, el presupuesto por escrito y luego una fecha. Hoteles y qué empacar están en la [página para pacientes de otros estados](/out-of-state-patients)."
   ],
   "gettingHere": {
     "title": "Cómo llegar de Tampa a la clínica",
@@ -78,17 +77,17 @@
   },
   "cost": {
     "title": "Cuánto cuesta venir desde Tampa",
-    "body": "El tratamiento se cotiza según la [lista de precios publicada](/veneers-cost-miami) y se confirma por escrito antes de que reserves nada. El viaje corre por tu cuenta; no lo sumamos al precio ni lo cotizamos. Para quien viene en carro, el costo extra de venir es la gasolina, el peaje de Alligator Alley y las noches de hotel.",
+    "body": "El tratamiento se cotiza según la [lista de precios publicada](/veneers-cost-miami) y se confirma por escrito antes de que reserves. El viaje corre por tu cuenta; en carro, el costo extra es gasolina, peajes y las noches de hotel.",
     "lines": [
       {
         "label": "Diseño de sonrisa, 20 carillas de porcelana",
         "value": "{price}",
-        "note": "Incluye vista previa del diseño, limpieza, radiografías y la garantía de {warrantyYears} años por escrito"
+        "note": "Incluye vista previa, limpieza, radiografías y la garantía de {warrantyYears} años por escrito"
       },
       {
         "label": "Una carilla, por unidad",
         "value": "{veneerPrice}",
-        "note": "Mismo material, laboratorio y garantía, para entre uno y diecinueve dientes"
+        "note": "Mismo material, laboratorio y garantía, de 1 a 19 dientes"
       },
       {
         "label": "Depósito para reservar tu lunes",
@@ -97,16 +96,16 @@
       },
       {
         "label": "Hotel, dos a cuatro noches",
-        "value": "Tarifa de aliados, 20% de descuento",
-        "note": "Hoteles Hilton y Marriott a menos de 10 minutos; reservas directamente, te enviamos la lista con tu presupuesto"
+        "value": "20% de descuento",
+        "note": "Hilton y Marriott a menos de 10 minutos; reservas directamente con la lista que te enviamos"
       },
       {
         "label": "Gasolina y peajes, o el vuelo TPA–MIA",
         "value": "Lo pagas tú",
-        "note": "No incluidos. El estacionamiento en la clínica es gratis en todas las visitas"
+        "note": "No incluido. El estacionamiento en la clínica es gratis"
       }
     ],
-    "footnote": "Hay planes mensuales a través de seis aliados de financiamiento con una consulta de crédito blanda; tu coordinadora te ayuda con la solicitud antes de que reserves el hotel.",
+    "footnote": "Planes mensuales con seis aliados de financiamiento y consulta de crédito suave. Tu coordinadora te ayuda con la solicitud antes de que reserves el hotel.",
     "links": [
       {
         "label": "Lista de precios completa",

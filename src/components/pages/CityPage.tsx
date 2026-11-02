@@ -147,19 +147,24 @@ export default function CityPage({ data, locale = "en" }: { data: CityContent; l
       {/* A patient from this city, in their own words. Hidden until a consented clip exists (see the JSON's todo). */}
       {story && (
         <section className="wrap pt-16 lg:pt-28">
-          <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_320px] lg:gap-16">
-            <div className="flex flex-col gap-4">
+          <div className="glass-card grid items-center gap-8 rounded-2xl p-6 lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-16 lg:rounded-[20px] lg:px-14 lg:py-12">
+            <div className="flex flex-col gap-4 lg:gap-5">
               <span className="eyebrow text-gold-text">{t.storiesTitle}</span>
               <h2 className={h2}>{data.story.title}</h2>
-              <p className="m-0 text-[17px] leading-[1.55] text-pretty text-body lg:text-lg">{data.story.body}</p>
-              {story.doctor && (
-                <p className="m-0 text-[15px] text-muted">
-                  {story.name} · {story.treatment} · {story.doctor}
+              {story.quote && (
+                <p className="m-0 border-l-2 border-gold pl-5 font-serif text-[22px] leading-[1.3] text-pretty text-teal lg:text-[26px]">
+                  “{story.quote}”
                 </p>
               )}
+              <p className="m-0 text-[16px] leading-[1.55] text-pretty text-body lg:text-[17px]">{data.story.body}</p>
+              <p className="m-0 text-[14px] leading-[1.5] text-muted">
+                {story.name} · {story.treatment} · {story.duration}
+                {story.doctor && ` · ${story.doctor}`}
+              </p>
+              <p className="m-0 text-[13px] text-hint">{t.storiesDisclaimer}</p>
             </div>
-            <div className="mx-auto w-full max-w-[320px]">
-              <PatientStories stories={[story]} locale={locale} layout="grid" />
+            <div className="mx-auto w-full max-w-[280px] lg:max-w-none">
+              <PatientStories stories={[story]} locale={locale} layout="single" />
             </div>
           </div>
         </section>
@@ -167,8 +172,8 @@ export default function CityPage({ data, locale = "en" }: { data: CityContent; l
 
       {/* What it costs to come: treatment from prices.json, travel booked by the patient, no fares. */}
       <section className="wrap pt-16 lg:pt-28">
-        <div className={`${clinicDarkPanel} grid items-start gap-8 p-6 lg:grid-cols-[minmax(0,.9fr)_minmax(0,1.1fr)] lg:gap-14 lg:p-14`}>
-          <div className="flex flex-col gap-4">
+        <div className={`${clinicDarkPanel} grid items-start gap-8 p-6 lg:grid-cols-[minmax(0,.9fr)_minmax(0,1.1fr)] lg:items-center lg:gap-14 lg:p-14`}>
+          <div className="flex flex-col gap-4 lg:gap-5">
             <span className="eyebrow text-gold">{t.cityPage.costEyebrow}</span>
             <h2 className="m-0 font-serif text-[34px] leading-[1.15] font-normal text-pretty lg:text-[44px] lg:leading-[1.06]">{data.cost.title}</h2>
             <p className="m-0 text-[17px] leading-[1.55] text-pretty text-on-dark-muted [&_a]:text-gold">
@@ -187,16 +192,27 @@ export default function CityPage({ data, locale = "en" }: { data: CityContent; l
               ))}
             </ul>
           </div>
-          <div className="flex flex-col rounded-2xl border border-[rgba(255,255,255,.8)] bg-[rgba(247,244,238,.92)] px-5 py-2 text-ink lg:px-7">
-            {data.cost.lines.map((l) => (
-              <div key={l.label} className="flex flex-col gap-1 border-b border-ink/10 py-4 last:border-b-0 sm:flex-row sm:items-baseline sm:justify-between sm:gap-6">
-                <div className="flex flex-col gap-0.5">
-                  <span className="text-[16px] font-semibold text-ink">{l.label}</span>
-                  {l.note && <span className="text-[13.5px] leading-[1.45] text-muted">{fill(l.note)}</span>}
+          <div className="flex flex-col rounded-2xl border border-[rgba(255,255,255,.8)] bg-[rgba(247,244,238,.92)] px-5 py-1 text-ink lg:px-7">
+            {data.cost.lines.map((l) => {
+              const value = fill(l.value);
+              // Dollar amounts get the big serif figure; "You book" style values get a quiet pill so they do not wrap into three lines.
+              const amount = /^\$?\d/.test(value);
+              return (
+                <div key={l.label} className="flex flex-col gap-1.5 border-b border-ink/10 py-4 last:border-b-0 sm:flex-row sm:items-center sm:justify-between sm:gap-6">
+                  <div className="flex flex-col gap-0.5">
+                    <span className="text-[16px] font-semibold text-ink">{l.label}</span>
+                    {l.note && <span className="text-[13.5px] leading-[1.45] text-muted">{fill(l.note)}</span>}
+                  </div>
+                  {amount ? (
+                    <span className="flex-none font-serif text-[24px] leading-[1.1] text-teal sm:text-right lg:text-[28px]">{value}</span>
+                  ) : (
+                    <span className="inline-flex flex-none self-start rounded-full border border-teal/15 bg-teal/[.06] px-3 py-1 text-[13px] font-semibold whitespace-nowrap text-teal sm:self-auto">
+                      {value}
+                    </span>
+                  )}
                 </div>
-                <span className="font-serif text-[24px] leading-[1.1] text-teal sm:max-w-[45%] sm:text-right lg:text-[28px]">{fill(l.value)}</span>
-              </div>
-            ))}
+              );
+            })}
             <p className="m-0 border-t border-ink/10 py-4 text-[13.5px] leading-[1.5] text-muted">{fill(data.cost.footnote)}</p>
           </div>
         </div>
