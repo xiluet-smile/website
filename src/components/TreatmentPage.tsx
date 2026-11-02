@@ -44,7 +44,7 @@ export type Treatment = {
     intro: string;
     items: { t: string; d: string }[];
   };
-  /** Optional link under the candidates grid to the sibling page (Smile Design ↔ veneers à la carte). */
+  /** Optional link under the candidates grid to the sibling page (Porcelain Veneers package ↔ veneers à la carte). */
   crossLink?: { label: string; href: string };
   /**
    * Optional page-specific guide: prose sections rendered after "why". Strings may use [text](href) links,

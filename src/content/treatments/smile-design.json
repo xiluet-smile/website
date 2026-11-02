@@ -1,13 +1,13 @@
 {
   "path": "/smile-design-miami",
   "packageId": "signature-veneers",
-  "breadcrumb": "Smile Design",
+  "breadcrumb": "Porcelain Veneers",
   "schema": {
-    "name": "Smile Design with porcelain veneers",
+    "name": "Porcelain Veneers package, 20 porcelain veneers",
     "procedureType": "http://schema.org/NoninvasiveProcedure"
   },
   "hero": {
-    "definition": "Smile Design is our package of 20 porcelain veneers: thin shells of ceramic bonded to the front of your teeth after only about 0.3 mm of preparation, to change their shape, length and color, designed around your face and previewed in your mouth before any tooth is touched. At Xiluet Smiles in Miami it costs $5,999, takes three visits in one week, and carries a 5-year written warranty.",
+    "definition": "Our Porcelain Veneers package is 20 porcelain veneers: thin shells of ceramic bonded to the front of your teeth after only about 0.3 mm of preparation, to change their shape, length and color, designed around your face and previewed in your mouth before any tooth is touched. At Xiluet Smiles in Miami it costs $5,999, takes three visits in one week, and carries a 5-year written warranty.",
     "lead": "Minimal preparation, a design you approve before any tooth is touched, and delivery in one week in Miami. Covered by a 5-year warranty, in writing.",
     "secondaryCta": "See your week in Miami",
     "stats": [
@@ -32,7 +32,7 @@
     ],
     "image": {
       "caseId": "BA44",
-      "caption": "Smile Design · 20 porcelain veneers · 0.3 mm prep · 5-year written warranty"
+      "caption": "Porcelain Veneers · 20 as a package · 0.3 mm prep · 5-year written warranty"
     }
   },
   "candidates": {
@@ -101,7 +101,7 @@
     ]
   },
   "material": {
-    "intro": "For Smile Design the zirconia is milled into thin veneers that sit on a 0.3 mm preparation and layered with translucent porcelain where it shows, which is how a veneer this thin still lasts."
+    "intro": "For the Porcelain Veneers package the zirconia is milled into thin veneers that sit on a 0.3 mm preparation and layered with translucent porcelain where it shows, which is how a veneer this thin still lasts."
   },
   "week": {
     "title": "Your week in Miami",
@@ -135,9 +135,9 @@
     ]
   },
   "results": {
-    "title": "Smile Design results",
+    "title": "Porcelain Veneers results",
     "linkLabel": "All cases →",
-    "label": "Smile Design",
+    "label": "Porcelain Veneers",
     "caseIds": [
       "BA16",
       "BA19",
@@ -156,7 +156,7 @@
     "lendersLabel": "Pay over time with",
     "compareLabel": "Compare all packages →",
     "card": {
-      "title": "Smile Design",
+      "title": "Porcelain Veneers",
       "sub": "20 porcelain veneers",
       "badge": "Most chosen",
       "pricePrefix": "20 veneers",
@@ -173,12 +173,12 @@
     "footnote": "Final price confirmed in writing after a doctor's evaluation."
   },
   "faq": {
-    "title": "Smile Design and veneer questions, answered by the doctors",
+    "title": "Porcelain veneer questions, answered by the doctors",
     "linkLabel": "All answers →",
     "items": [
       {
-        "q": "What is the difference between Smile Design and veneers?",
-        "a": "Veneers are the material. Smile Design is our package of 20 porcelain veneers planned on your face: the digital design, the preview you approve in your mouth, the veneers, the cleaning and X-rays, and the 5-year warranty, for one written price.",
+        "q": "What is the difference between the Porcelain Veneers package and veneers à la carte?",
+        "a": "À la carte veneers are priced per tooth. The Porcelain Veneers package is our set of 20 porcelain veneers planned on your face: the digital design, the preview you approve in your mouth, the veneers, the cleaning and X-rays, and the 5-year warranty, for one written price.",
         "doc": "Dr. Roger Ramos Navarro, DMD"
       },
       {

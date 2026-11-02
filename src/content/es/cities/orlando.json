@@ -10,7 +10,7 @@
   },
   "intro": [
     "Los pacientes de Orlando pueden manejar, tomar el tren o volar. La clínica está en 8396 SW 8th St en Westchester, junto al Turnpike y al Dolphin Expressway, a entre tres horas y media y cuatro en carro. Brightline llega a MiamiCentral en unas tres horas y media, con un rideshare de 20 minutos desde ahí, y el vuelo MCO–MIA dura alrededor de una hora.",
-    "Como el viaje es corto, algunos pacientes preguntan si pueden dormir en casa entre visitas. Pueden, pero la mayoría se queda: las Visitas 1 y 2 caen en días consecutivos y el laboratorio necesita el miércoles, así que una o dos noches con la tarifa de aliados resultan mejor que cuatro viajes de ida y vuelta. El tratamiento es el mismo de cualquier forma: [carillas de porcelana](/porcelain-veneers-miami) a {veneerPrice} por unidad, o {price} por el [Diseño de sonrisa](/smile-design-miami) de 20 carillas, hechas en el [laboratorio un piso arriba de tu doctor](/custom-lab). Hoteles y qué empacar están en la [página para pacientes de otros estados](/out-of-state-patients)."
+    "Como el viaje es corto, algunos pacientes preguntan si pueden dormir en casa entre visitas. Pueden, pero la mayoría se queda: las Visitas 1 y 2 caen en días consecutivos y el laboratorio necesita el miércoles, así que una o dos noches con la tarifa de aliados resultan mejor que cuatro viajes de ida y vuelta. El tratamiento es el mismo de cualquier forma: [carillas de porcelana](/porcelain-veneers-miami) a {veneerPrice} por unidad, o {price} por el paquete [Carillas de porcelana](/smile-design-miami) de 20 carillas, hechas en el [laboratorio un piso arriba de tu doctor](/custom-lab). Hoteles y qué empacar están en la [página para pacientes de otros estados](/out-of-state-patients)."
   ],
   "gettingHere": {
     "title": "Cómo llegar de Orlando a la clínica",
@@ -71,7 +71,7 @@
   },
   "story": {
     "title": "Desde Orlando, en sus propias palabras",
-    "body": "Elisa grabó esto en español el día de la entrega, tras un Diseño de sonrisa con el Dr. Ramos. Compartido con su permiso.",
+    "body": "Elisa grabó esto en español el día de la entrega, tras 20 carillas de porcelana con el Dr. Ramos. Compartido con su permiso.",
     "storyId": "story-25"
   },
   "cost": {
@@ -79,7 +79,7 @@
     "body": "El tratamiento se cotiza según la [lista de precios publicada](/veneers-cost-miami) y se confirma por escrito antes de que reserves. El viaje corre por tu cuenta; en carro, el costo extra es gasolina, peajes y las noches de hotel.",
     "lines": [
       {
-        "label": "Diseño de sonrisa, 20 carillas de porcelana",
+        "label": "Paquete Carillas de porcelana, 20 dientes",
         "value": "{price}",
         "note": "Incluye vista previa, limpieza, radiografías y la garantía de {warrantyYears} años por escrito"
       },

@@ -11,7 +11,7 @@
   },
   "intro": [
     "Desde Tampa Bay el viaje en carro es directo: la I-75 al sur pasando Naples, al este por Alligator Alley y la salida al Dolphin Expressway hacia Westchester. Unas 280 millas y cuatro horas fuera de hora pico, con estacionamiento gratis en la clínica. Si prefieres volar, de TPA a MIA es poco más de una hora, y la clínica está a 15 minutos del aeropuerto.",
-    "El tratamiento es el mismo que para cualquier paciente: [carillas de porcelana](/porcelain-veneers-miami) en zirconia multicapa, hechas en el [laboratorio un piso arriba de tu doctor](/custom-lab), a {veneerPrice} por unidad o {price} por el [Diseño de sonrisa](/smile-design-miami) de 20 carillas, entregadas en una semana de lunes a jueves. La planificación se hace desde casa: fotos, el plan de un doctor en menos de {replyHours} horas, el presupuesto por escrito y luego una fecha. Hoteles y qué empacar están en la [página para pacientes de otros estados](/out-of-state-patients)."
+    "El tratamiento es el mismo que para cualquier paciente: [carillas de porcelana](/porcelain-veneers-miami) en zirconia multicapa, hechas en el [laboratorio un piso arriba de tu doctor](/custom-lab), a {veneerPrice} por unidad o {price} por el paquete [Carillas de porcelana](/smile-design-miami) de 20 carillas, entregadas en una semana de lunes a jueves. La planificación se hace desde casa: fotos, el plan de un doctor en menos de {replyHours} horas, el presupuesto por escrito y luego una fecha. Hoteles y qué empacar están en la [página para pacientes de otros estados](/out-of-state-patients)."
   ],
   "gettingHere": {
     "title": "Cómo llegar de Tampa a la clínica",
@@ -80,7 +80,7 @@
     "body": "El tratamiento se cotiza según la [lista de precios publicada](/veneers-cost-miami) y se confirma por escrito antes de que reserves. El viaje corre por tu cuenta; en carro, el costo extra es gasolina, peajes y las noches de hotel.",
     "lines": [
       {
-        "label": "Diseño de sonrisa, 20 carillas de porcelana",
+        "label": "Paquete Carillas de porcelana, 20 dientes",
         "value": "{price}",
         "note": "Incluye vista previa, limpieza, radiografías y la garantía de {warrantyYears} años por escrito"
       },

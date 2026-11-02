@@ -10,7 +10,7 @@
   },
   "intro": [
     "New York to Miami is one of the busiest routes in the country: three airports, nonstop flights from early morning to late evening, about three hours in the air and no time change. You land 15 minutes from the clinic, and in winter the week comes with a free Wednesday in the sun.",
-    "New Yorkers arrive with more quotes than anyone, so compare what is in them: material, number of teeth, veneer or crown per tooth, and the warranty. Ours are on the [price list](/veneers-cost-miami): [porcelain veneers](/porcelain-veneers-miami) in multilayer zirconia at {veneerPrice} per tooth, or {price} for the 20-veneer [Smile Design](/smile-design-miami), made in the [lab in our building](/custom-lab) and delivered the same week. Hotels, airport and what to pack are on the [out-of-state patients page](/out-of-state-patients)."
+    "New Yorkers arrive with more quotes than anyone, so compare what is in them: material, number of teeth, veneer or crown per tooth, and the warranty. Ours are on the [price list](/veneers-cost-miami): [porcelain veneers](/porcelain-veneers-miami) in multilayer zirconia at {veneerPrice} per tooth, or {price} for the 20-veneer [Porcelain Veneers package](/smile-design-miami), made in the [lab in our building](/custom-lab) and delivered the same week. Hotels, airport and what to pack are on the [out-of-state patients page](/out-of-state-patients)."
   ],
   "gettingHere": {
     "title": "Getting from New York to the clinic",
@@ -71,7 +71,7 @@
   },
   "story": {
     "title": "A similar trip, from Pennsylvania",
-    "body": "Franklin's flight was about as long as New York's. Recorded on delivery day after a Smile Design with Dr. Ramos, shared with his permission.",
+    "body": "Franklin's flight was about as long as New York's. Recorded on delivery day after 20 porcelain veneers with Dr. Ramos, shared with his permission.",
     "storyId": "story-28"
   },
   "cost": {
@@ -79,7 +79,7 @@
     "body": "Treatment is priced from the [published price list](/veneers-cost-miami) and confirmed in writing before you book. Travel is yours to book; we do not quote fares because they change daily.",
     "lines": [
       {
-        "label": "Smile Design, 20 porcelain veneers",
+        "label": "Porcelain Veneers package, 20 teeth",
         "value": "{price}",
         "note": "Preview, cleaning, X-rays and the {warrantyYears}-year written warranty included"
       },
@@ -150,7 +150,7 @@
       },
       {
         "q": "Can I do this in one trip, or will I need to come back?",
-        "a": "One trip for veneers and Smile Design, because the lab is in the building. Full mouth restoration is two weeks. If your photos show you need a crown or an implant first, the plan tells you before you book a flight.",
+        "a": "One trip for veneers, à la carte or as the 20-veneer package, because the lab is in the building. Full mouth restoration is two weeks. If your photos show you need a crown or an implant first, the plan tells you before you book a flight.",
         "doc": "Dr. Gretell Alonso Fiel, DMD"
       }
     ]

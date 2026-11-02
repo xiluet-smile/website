@@ -161,14 +161,12 @@
       "title": "Treatments",
       "links": [
         {
-          "label": "Smile Design",
-          "href": "/smile-design-miami",
-          "t": "Porcelain Veneers"
+          "label": "Porcelain Veneers",
+          "href": "/smile-design-miami"
         },
         {
-          "label": "Smile Makeover",
-          "href": "/smile-makeover-miami",
-          "t": "Smile Design"
+          "label": "Smile Design",
+          "href": "/smile-makeover-miami"
         },
         {
           "label": "Full Mouth Restoration",

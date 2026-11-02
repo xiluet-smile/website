@@ -87,7 +87,7 @@ const uiEn = {
     title: "Page not found",
     lead: "This address does not match a page on our site.",
     linksAria: "Helpful links",
-    links: ["Home", "Smile Design", "Before and after", "Free photo evaluation", "Contact"],
+    links: ["Home", "Porcelain Veneers", "Before and after", "Free photo evaluation", "Contact"],
   },
   homePage: {
     heroCta: "Book your free consultation",
@@ -399,7 +399,7 @@ const uiEs: UiStrings = {
     title: "Página no encontrada",
     lead: "Esta dirección no corresponde a ninguna página de nuestro sitio.",
     linksAria: "Enlaces útiles",
-    links: ["Inicio", "Diseño de sonrisa", "Antes y después", "Evaluación gratuita por fotos", "Contacto"],
+    links: ["Inicio", "Carillas de porcelana", "Antes y después", "Evaluación gratuita por fotos", "Contacto"],
   },
   homePage: {
     heroCta: "Reserva tu consulta gratis",
