@@ -1,13 +1,13 @@
 {
   "path": "/smile-makeover-miami",
   "packageId": "complete-restoration",
-  "breadcrumb": "Diseño de sonrisa",
+  "breadcrumb": "Transformación de sonrisa",
   "schema": {
-    "name": "Diseño de sonrisa",
+    "name": "Transformación de sonrisa",
     "procedureType": "http://schema.org/NoninvasiveProcedure"
   },
   "hero": {
-    "definition": "El Diseño de sonrisa reconstruye o cubre hasta 20 dientes con coronas, puentes y carillas de porcelana, planificados en conjunto para que el color, la forma y la mordida coincidan. El blanqueamiento y el contorneado de encías se añaden cuando el diseño lo requiere. En Xiluet Smiles en Miami el paquete cuesta $6,999, incluye limpieza profesional y radiografías, se entrega en 5 días hábiles y tiene garantía de 5 años por escrito.",
+    "definition": "La transformación de sonrisa reconstruye o cubre hasta 20 dientes con coronas, puentes y carillas de porcelana, planificados en conjunto para que el color, la forma y la mordida coincidan. El blanqueamiento y el contorneado de encías se añaden cuando el diseño lo requiere. En Xiluet Smiles en Miami el paquete cuesta $6,999, incluye limpieza profesional y radiografías, se entrega en 5 días hábiles y tiene garantía de 5 años por escrito.",
     "lead": "Coronas, puentes y carillas elegidos diente por diente, diseñados como una sola sonrisa y hechos en nuestro propio laboratorio. El blanqueamiento y el contorneado de encías se añaden cuando tu sonrisa lo necesita.",
     "secondaryCta": "Mira tu semana en Miami",
     "stats": [
@@ -32,7 +32,7 @@
     ],
     "image": {
       "caseId": "BA7",
-      "caption": "Diseño de sonrisa · 20 coronas, puentes y carillas · 5 días hábiles"
+      "caption": "Transformación de sonrisa · 20 coronas, puentes y carillas · 5 días hábiles"
     }
   },
   "candidates": {
@@ -93,10 +93,10 @@
     ]
   },
   "material": {
-    "intro": "El Diseño de sonrisa combina carillas y coronas en la misma fila de dientes. La zirconia permite que ambas sean finas, vayan en un mismo tono y terminen a la altura de la encía, para que las coronas no se delaten junto a las carillas."
+    "intro": "Una transformación de sonrisa combina carillas y coronas en la misma fila de dientes. La zirconia permite que ambas sean finas, vayan en un mismo tono y terminen a la altura de la encía, para que las coronas no se delaten junto a las carillas."
   },
   "week": {
-    "title": "Tu semana de Diseño de sonrisa en Miami",
+    "title": "Tu semana de transformación en Miami",
     "intro": "Fotos, presupuesto y plan desde casa. Luego tres visitas en 5 días hábiles.",
     "linkLabel": "Elige una fecha y mira el calendario completo →",
     "visits": [
@@ -127,9 +127,9 @@
     ]
   },
   "results": {
-    "title": "Resultados de Diseño de sonrisa",
+    "title": "Resultados de transformación de sonrisa",
     "linkLabel": "Todos los casos →",
-    "label": "Diseño de sonrisa",
+    "label": "Transformación de sonrisa",
     "caseIds": [
       "BA18",
       "BA9",
@@ -146,7 +146,7 @@
     "compareLabel": "Compara todos los paquetes →",
     "card": {
       "title": "20 coronas, puentes y carillas",
-      "sub": "Diseño de sonrisa",
+      "sub": "Transformación de sonrisa",
       "badge": "Completo",
       "pricePrefix": null,
       "priceSuffix": null,
@@ -162,7 +162,7 @@
     "footnote": "Precio final confirmado por escrito después de la evaluación de un doctor."
   },
   "faq": {
-    "title": "Preguntas sobre el Diseño de sonrisa, respondidas por los doctores",
+    "title": "Preguntas sobre la transformación, respondidas por los doctores",
     "linkLabel": "Todas las respuestas →",
     "items": [
       {

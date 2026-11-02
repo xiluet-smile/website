@@ -6,12 +6,17 @@
       "href": "/smile-design-miami",
       "items": [
         {
-          "t": "Porcelain Veneers",
+          "t": "Smile Design",
           "d": "20 porcelain veneers · $5,999",
           "href": "/smile-design-miami"
         },
         {
-          "t": "Smile Design",
+          "t": "Porcelain Veneers",
+          "d": "$1,000 per veneer · 20 for $5,999",
+          "href": "/porcelain-veneers-miami"
+        },
+        {
+          "t": "Smile Makeover",
           "d": "20 porcelain veneers, crowns and bridges · $6,999",
           "href": "/smile-makeover-miami"
         },
@@ -161,11 +166,15 @@
       "title": "Treatments",
       "links": [
         {
-          "label": "Porcelain Veneers",
+          "label": "Smile Design",
           "href": "/smile-design-miami"
         },
         {
-          "label": "Smile Design",
+          "label": "Porcelain Veneers",
+          "href": "/porcelain-veneers-miami"
+        },
+        {
+          "label": "Smile Makeover",
           "href": "/smile-makeover-miami"
         },
         {

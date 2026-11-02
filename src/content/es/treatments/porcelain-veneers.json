@@ -7,7 +7,7 @@
     "procedureType": "http://schema.org/NoninvasiveProcedure"
   },
   "hero": {
-    "definition": "Una carilla de porcelana es una lámina delgada de cerámica dental, de unos 0.3 mm de grosor, que se cementa al frente de un diente para cambiar su forma, largo o color. En Xiluet Smiles en Miami una carilla individual cuesta $1,000 por unidad y un juego completo de 20 cuesta $5,999 como paquete Carillas de porcelana, hecho en el laboratorio propio de la clínica, entregado en tres visitas en una semana y cubierto por una garantía de 5 años por escrito.",
+    "definition": "Una carilla de porcelana es una lámina delgada de cerámica dental, de unos 0.3 mm de grosor, que se cementa al frente de un diente para cambiar su forma, largo o color. En Xiluet Smiles en Miami una carilla individual cuesta $1,000 por unidad y un juego completo de 20 cuesta $5,999 como paquete Diseño de sonrisa, hecho en el laboratorio propio de la clínica, entregado en tres visitas en una semana y cubierto por una garantía de 5 años por escrito.",
     "lead": "Un diente o veinte. Carillas finas de zirconia hechas en nuestro laboratorio propio, cementadas tras unos 0.3 mm de preparación y entregadas en una semana en Miami. Garantía de 5 años, por escrito.",
     "secondaryCta": "Mira tu semana en Miami",
     "stats": [
@@ -17,7 +17,7 @@
       },
       {
         "kind": "price",
-        "label": "20 carillas como paquete"
+        "label": "20 carillas, Diseño de sonrisa"
       },
       {
         "kind": "text",
@@ -61,7 +61,7 @@
     ]
   },
   "crossLink": {
-    "label": "¿Quieres las 20 como un paquete? Mira Carillas de porcelana →",
+    "label": "¿Quieres las 20 planificadas como un solo diseño? Mira Diseño de sonrisa →",
     "href": "/smile-design-miami"
   },
   "why": {
@@ -149,7 +149,7 @@
       "title": "¿8, 10 o 20 carillas?",
       "body": [
         "El número depende de qué tan amplia es tu sonrisa, no de un paquete. Párate frente a un espejo, sonríe como en las fotos y cuenta los dientes superiores que se ven. La mayoría muestra de ocho a diez. Luego haz lo mismo con los inferiores; muchos muestran de seis a ocho al hablar y reír. Carillas en los dientes que muestras, y solo en esos, es el número honesto.",
-        "Cada opción cuesta {veneerPrice} por diente por unidad hasta 19 dientes. A partir de 20 aplica el paquete Carillas de porcelana, y por eso tantos de nuestros pacientes lo eligen: el precio por diente baja a unos $300 y el diseño, la limpieza, las radiografías y la vista previa van incluidos. La [guía de costo del juego completo](/blog/how-much-does-a-full-set-of-veneers-cost) repasa las cuentas."
+        "Cada opción cuesta {veneerPrice} por diente por unidad hasta 19 dientes. A partir de 20 aplica el paquete Diseño de sonrisa, y por eso tantos de nuestros pacientes lo eligen: el precio por diente baja a unos $300 y el diseño, la limpieza, las radiografías y la vista previa van incluidos. La [guía de costo del juego completo](/blog/how-much-does-a-full-set-of-veneers-cost) repasa las cuentas."
       ],
       "bullets": [
         {
@@ -162,7 +162,7 @@
         },
         {
           "t": "20 carillas",
-          "d": "Diez superiores y diez inferiores, planificadas como un solo diseño. Ambas arcadas combinan en tono y forma, y la mordida se ajusta en conjunto. {price} como [paquete Carillas de porcelana](/smile-design-miami)."
+          "d": "Diez superiores y diez inferiores, planificadas como un solo diseño. Ambas arcadas combinan en tono y forma, y la mordida se ajusta en conjunto. {price} como [Diseño de sonrisa](/smile-design-miami)."
         },
         {
           "t": "1 a 4 carillas",
@@ -283,11 +283,11 @@
   "price": {
     "eyebrow": "Costo",
     "title": "Una carilla cuesta {veneerPrice}. Veinte cuestan {price}.",
-    "body": "Las carillas por unidad cuestan {veneerPrice} por diente, en cualquier cantidad de una a diecinueve, con el mismo material, laboratorio y garantía que el paquete. A partir de 20 dientes aplica el paquete Carillas de porcelana por {price}, que sale a unos $300 por carilla e incluye la vista previa del diseño, la limpieza y las radiografías. Tu presupuesto por escrito indica el número de dientes y el total antes de reservar; el número que ves es el número que pagas, salvo que el examen encuentre algo que haya que tratar primero, y eso también te lo decimos por escrito.",
+    "body": "Las carillas por unidad cuestan {veneerPrice} por diente, en cualquier cantidad de una a diecinueve, con el mismo material, laboratorio y garantía que el paquete. A partir de 20 dientes aplica el paquete Diseño de sonrisa por {price}, que sale a unos $300 por carilla e incluye la vista previa del diseño, la limpieza y las radiografías. Tu presupuesto por escrito indica el número de dientes y el total antes de reservar; el número que ves es el número que pagas, salvo que el examen encuentre algo que haya que tratar primero, y eso también te lo decimos por escrito.",
     "lendersLabel": "Paga a plazos con",
     "compareLabel": "Mira la lista de precios completa →",
     "card": {
-      "title": "Carillas de porcelana",
+      "title": "Diseño de sonrisa",
       "sub": "20 carillas de porcelana · o {veneerPrice} por carilla por unidad",
       "badge": "El más elegido",
       "pricePrefix": "20 carillas",
@@ -309,7 +309,7 @@
     "items": [
       {
         "q": "¿Cuánto cuesta una carilla de porcelana en Miami?",
-        "a": "En Xiluet Smiles una sola carilla cuesta {veneerPrice}, en la misma zirconia multicapa, terminada en nuestro laboratorio propio, con la misma garantía de {warrantyYears} años por escrito que un juego completo. Veinte carillas cuestan {price} como paquete Carillas de porcelana.",
+        "a": "En Xiluet Smiles una sola carilla cuesta {veneerPrice}, en la misma zirconia multicapa, terminada en nuestro laboratorio propio, con la misma garantía de {warrantyYears} años por escrito que un juego completo. Veinte carillas cuestan {price} como paquete Diseño de sonrisa.",
         "doc": "Dr. Roger Ramos Navarro, DMD"
       },
       {
