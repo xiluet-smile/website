@@ -9,9 +9,8 @@
     "caption": "DFW → MIA · about 2 h 50 min nonstop · 15 minutes from the airport to the clinic"
   },
   "intro": [
-    "DFW and MIA are both American Airlines hubs, which is the practical reason the trip from Dallas–Fort Worth is simple: nonstop flights run through the whole day, and the flight is just under three hours. Miami is on Eastern time, an hour ahead of Dallas, so a morning departure still lands in time for an afternoon appointment. You land fifteen minutes from the clinic and the partner hotels are within ten minutes of it, so the car stays at home.",
-    "What Dallas patients usually want settled before they fly is the material and the number of teeth. [Porcelain veneers](/porcelain-veneers-miami) here are multilayer zirconia at about 0.3 mm of preparation, milled and finished by hand in the [lab in our building](/custom-lab). On the teeth you show when you smile, usually eight to ten in the upper arch, that is {veneerPrice} per veneer; for both arches it is the 20-veneer [Smile Design](/smile-design-miami) at {price}. The written estimate you get from your photos says which, and nothing is booked until you have it.",
-    "The rest of the week, from the partner hotels to what to pack, is on the [out-of-state patients page](/out-of-state-patients). Here is the Dallas–Fort Worth part: the flights, a sample itinerary with the time change worked in, what it costs to come, Yolanda and Erick from Fort Worth in their own words, and the questions we hear from DFW."
+    "DFW and MIA are both American Airlines hubs, so nonstop flights run all day and take just under three hours. Miami is an hour ahead of Dallas, and a morning departure still lands in time for an afternoon visit. You land 15 minutes from the clinic, and the partner hotels are within ten minutes of it.",
+    "What Dallas patients usually want settled before they fly is the material and the number of teeth. [Porcelain veneers](/porcelain-veneers-miami) here are multilayer zirconia from the [lab in our building](/custom-lab): {veneerPrice} per veneer on the teeth you show, or the 20-veneer [Smile Design](/smile-design-miami) at {price}. Your written estimate says which before anything is booked. Hotels, airport and what to pack are on the [out-of-state patients page](/out-of-state-patients)."
   ],
   "gettingHere": {
     "title": "Getting from Dallas–Fort Worth to the clinic",
@@ -72,22 +71,22 @@
   },
   "story": {
     "title": "From Fort Worth, in their own words",
-    "body": "Yolanda and Erick came from Fort Worth for Erick's Smile Design with Dr. Ramos. Yolanda speaks in this clip, recorded on delivery day and shared with their permission.",
+    "body": "Yolanda speaks about Erick's Smile Design with Dr. Ramos, recorded on delivery day and shared with their permission.",
     "storyId": "story-21"
   },
   "cost": {
     "title": "What it costs to come from Dallas–Fort Worth",
-    "body": "Treatment is priced from the [published price list](/veneers-cost-miami) and confirmed in writing before you book anything. Travel is yours to book and pay; we do not add it to the price and we do not quote it, because fares change daily.",
+    "body": "Treatment is priced from the [published price list](/veneers-cost-miami) and confirmed in writing before you book. Travel is yours to book; we do not quote fares because they change daily.",
     "lines": [
       {
         "label": "Smile Design, 20 porcelain veneers",
         "value": "{price}",
-        "note": "Design preview, cleaning, X-rays and the {warrantyYears}-year written warranty included"
+        "note": "Preview, cleaning, X-rays and the {warrantyYears}-year written warranty included"
       },
       {
         "label": "One veneer, à la carte",
         "value": "{veneerPrice}",
-        "note": "Same material, lab and warranty, for one to nineteen teeth"
+        "note": "Same material, lab and warranty, for 1 to 19 teeth"
       },
       {
         "label": "Deposit to hold your Monday",
@@ -96,16 +95,16 @@
       },
       {
         "label": "Hotel, three or four nights",
-        "value": "Partner rate, 20% off",
-        "note": "Hilton and Marriott properties within 10 minutes; you book directly, we send the list with your estimate"
+        "value": "20% off",
+        "note": "Hilton and Marriott within 10 minutes; you book directly from the list we send"
       },
       {
         "label": "Flights DFW–MIA and rides",
-        "value": "Booked by you",
-        "note": "Not included. Rideshares from the airport and to each visit are short and paid by you"
+        "value": "You book",
+        "note": "Not included. Rides from the airport and to each visit are short"
       }
     ],
-    "footnote": "Monthly plans are available through six financing partners with a soft credit check; your coordinator helps with the application before you book flights.",
+    "footnote": "Monthly plans through six financing partners with a soft credit check. Your coordinator helps with the application before you book flights.",
     "links": [
       {
         "label": "Full price list",

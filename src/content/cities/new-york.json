@@ -9,9 +9,8 @@
     "caption": "JFK, LGA or EWR → MIA · about 3 h nonstop · 15 minutes from the airport to the clinic"
   },
   "intro": [
-    "New York to Miami is one of the busiest air routes in the country, and that works in your favour: three airports, nonstop flights from early morning to late evening, and a flight of about three hours with no time change. You land fifteen minutes from the clinic. For a New Yorker the trip is shorter than a drive to the Hamptons on a Friday, and in winter it comes with a free Wednesday in the sun.",
-    "New York patients usually arrive with more quotes than anyone else, and the quotes vary widely. The useful comparison is not the headline price but what is in it: the material, the number of teeth, whether each tooth gets a veneer or a crown, and the warranty. Ours are on the [price list](/veneers-cost-miami): [porcelain veneers](/porcelain-veneers-miami) in multilayer zirconia at about 0.3 mm of preparation, {veneerPrice} per tooth à la carte or {price} for the 20-veneer [Smile Design](/smile-design-miami), made in the [lab in our building](/custom-lab) and delivered in the same week.",
-    "The week itself, from partner hotels to what to pack, is on the [out-of-state patients page](/out-of-state-patients). This page is the New York part: which airport, a sample itinerary with times, what it costs to come, a patient who made a similar trip from Pennsylvania, and the questions New Yorkers ask before they book."
+    "New York to Miami is one of the busiest routes in the country: three airports, nonstop flights from early morning to late evening, about three hours in the air and no time change. You land 15 minutes from the clinic, and in winter the week comes with a free Wednesday in the sun.",
+    "New Yorkers arrive with more quotes than anyone, so compare what is in them: material, number of teeth, veneer or crown per tooth, and the warranty. Ours are on the [price list](/veneers-cost-miami): [porcelain veneers](/porcelain-veneers-miami) in multilayer zirconia at {veneerPrice} per tooth, or {price} for the 20-veneer [Smile Design](/smile-design-miami), made in the [lab in our building](/custom-lab) and delivered the same week. Hotels, airport and what to pack are on the [out-of-state patients page](/out-of-state-patients)."
   ],
   "gettingHere": {
     "title": "Getting from New York to the clinic",
@@ -72,22 +71,22 @@
   },
   "story": {
     "title": "A similar trip, from Pennsylvania",
-    "body": "Franklin came from Pennsylvania for a Smile Design with Dr. Ramos, a flight of about the same length as New York's. Recorded on delivery day and shared with his permission.",
+    "body": "Franklin's flight was about as long as New York's. Recorded on delivery day after a Smile Design with Dr. Ramos, shared with his permission.",
     "storyId": "story-28"
   },
   "cost": {
     "title": "What it costs to come from New York",
-    "body": "Treatment is priced from the [published price list](/veneers-cost-miami) and confirmed in writing before you book anything. Travel is yours to book and pay; we do not add it to the price and we do not quote it, because fares change daily.",
+    "body": "Treatment is priced from the [published price list](/veneers-cost-miami) and confirmed in writing before you book. Travel is yours to book; we do not quote fares because they change daily.",
     "lines": [
       {
         "label": "Smile Design, 20 porcelain veneers",
         "value": "{price}",
-        "note": "Design preview, cleaning, X-rays and the {warrantyYears}-year written warranty included"
+        "note": "Preview, cleaning, X-rays and the {warrantyYears}-year written warranty included"
       },
       {
         "label": "One veneer, à la carte",
         "value": "{veneerPrice}",
-        "note": "Same material, lab and warranty, for one to nineteen teeth"
+        "note": "Same material, lab and warranty, for 1 to 19 teeth"
       },
       {
         "label": "Deposit to hold your Monday",
@@ -96,16 +95,16 @@
       },
       {
         "label": "Hotel, three or four nights",
-        "value": "Partner rate, 20% off",
-        "note": "Hilton and Marriott properties within 10 minutes; you book directly, we send the list with your estimate"
+        "value": "20% off",
+        "note": "Hilton and Marriott within 10 minutes; you book directly from the list we send"
       },
       {
         "label": "Flights NYC–MIA and rides",
-        "value": "Booked by you",
-        "note": "Not included. Rideshares from the airport and to each visit are short and paid by you"
+        "value": "You book",
+        "note": "Not included. Rides from the airport and to each visit are short"
       }
     ],
-    "footnote": "Monthly plans are available through six financing partners with a soft credit check; your coordinator helps with the application before you book flights.",
+    "footnote": "Monthly plans through six financing partners with a soft credit check. Your coordinator helps with the application before you book flights.",
     "links": [
       {
         "label": "Full price list",

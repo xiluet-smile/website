@@ -35,8 +35,9 @@ export default function PatientStories({
   locale?: Locale;
   title?: string;
   lead?: string;
-  /** "strip" = horizontal scroll-snap row with arrows (Home, doctors); "grid" = responsive grid, no header (results page tab). */
-  layout?: "strip" | "grid";
+  /** "strip" = horizontal scroll-snap row with arrows (Home, doctors); "grid" = responsive grid, no header (results page tab);
+   *  "single" = one card filling its container, no header or disclaimer (city pages, which caption it themselves). */
+  layout?: "strip" | "grid" | "single";
 }) {
   const t = ui(locale);
   const row = useRef<HTMLUListElement>(null);
@@ -61,9 +62,10 @@ export default function PatientStories({
     "grid h-11 w-11 cursor-pointer place-items-center rounded-full border-[1.5px] text-lg";
 
   const grid = layout === "grid";
+  const single = layout === "single";
 
   return (
-    <section className={grid ? "" : "defer-render overflow-hidden pt-16 lg:pt-28"}>
+    <section className={grid || single ? "" : "defer-render overflow-hidden pt-16 lg:pt-28"}>
       {title && (
       <div className="wrap mb-6 flex flex-col gap-3 lg:mb-8 lg:flex-row lg:items-end lg:justify-between lg:gap-8">
         <div>
@@ -93,11 +95,13 @@ export default function PatientStories({
       </div>
       )}
 
-      <div className={grid ? "" : "wrap"}>
+      <div className={grid || single ? "" : "wrap"}>
         <ul
           ref={row}
           className={
-            grid
+            single
+              ? "m-0 list-none p-0"
+              : grid
               ? "m-0 grid list-none grid-cols-2 gap-4 p-0 sm:grid-cols-3 lg:grid-cols-4 lg:gap-6"
               : "-mx-5 flex list-none snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-2 [scrollbar-width:none] lg:-mx-2 lg:scroll-px-2 lg:gap-5 lg:px-2"
           }
@@ -107,7 +111,7 @@ export default function PatientStories({
             return (
               <li
                 key={s.id}
-                className={`relative aspect-[9/16] overflow-hidden rounded-[20px] border border-[rgba(255,255,255,.35)] bg-teal shadow-[0_16px_40px_rgba(26,26,26,.12)] ${grid ? "w-full" : "w-[260px] flex-none snap-start lg:w-[280px]"}`}
+                className={`relative aspect-[9/16] overflow-hidden rounded-[20px] border border-[rgba(255,255,255,.35)] bg-teal shadow-[0_16px_40px_rgba(26,26,26,.12)] ${grid || single ? "w-full" : "w-[260px] flex-none snap-start lg:w-[280px]"}`}
               >
                 <video
                   ref={(el) => {
@@ -196,9 +200,11 @@ export default function PatientStories({
           })}
         </ul>
       </div>
-      <p className="wrap mt-5 mb-0 text-[13px] text-muted">
-        {t.storiesDisclaimer}
-      </p>
+      {!single && (
+        <p className="wrap mt-5 mb-0 text-[13px] text-muted">
+          {t.storiesDisclaimer}
+        </p>
+      )}
     </section>
   );
 }

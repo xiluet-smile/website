@@ -9,9 +9,8 @@
     "caption": "ATL → MIA · aprox. 1 h 55 min en vuelo directo · 15 minutos del aeropuerto a la clínica"
   },
   "intro": [
-    "Pocas ciudades tienen un vuelo a Miami tan fácil como Atlanta. Hartsfield-Jackson tiene vuelos directos a MIA desde antes del amanecer hasta después de la cena, el vuelo dura alrededor de una hora y cincuenta y cinco minutos, y aterrizas a quince minutos en carro de nuestra puerta en Westchester. Por eso Atlanta es una de las ciudades que más vemos para carillas de porcelana, y por eso la semana de lunes a jueves funciona sin tomarte una semana completa de trabajo.",
-    "El tratamiento es el mismo para todos los pacientes, locales o no: [carillas de porcelana](/porcelain-veneers-miami) en los dientes que muestras, o el [Diseño de sonrisa](/smile-design-miami) de 20 carillas a {price}, hechas de zirconia multicapa en el [laboratorio un piso arriba de tu doctor](/custom-lab). Lo que cambia para un paciente de Atlanta es la planificación. Las fotos, el plan del doctor, el presupuesto por escrito y el plan de pago ocurren desde casa, normalmente en una semana, por las noches. Cuando reservas el vuelo ya sabes qué dientes, cuánto cuesta y qué lunes.",
-    "Abajo está el viaje en sí: los vuelos, un itinerario de ejemplo con horarios, cuánto cuesta venir, un paciente de Atlanta en sus propias palabras y las preguntas que hacen los pacientes de Atlanta antes de reservar. Todo lo demás sobre la semana está en la [página para pacientes de otros estados](/out-of-state-patients)."
+    "Atlanta es una de las ciudades que más vemos, y el vuelo es la razón: Hartsfield-Jackson tiene vuelos directos a MIA todo el día, el vuelo dura cerca de 1 hora 55 minutos y aterrizas a 15 minutos de nuestra puerta en Westchester. La semana de lunes a jueves cabe sin tomarte una semana completa de trabajo.",
+    "El tratamiento es el mismo para todos los pacientes: [carillas de porcelana](/porcelain-veneers-miami) en los dientes que muestras, o el [Diseño de sonrisa](/smile-design-miami) de 20 carillas a {price}, hechas en el [laboratorio un piso arriba de tu doctor](/custom-lab). La planificación se hace desde casa, así que cuando reservas el vuelo ya sabes qué dientes, cuánto cuesta y qué lunes. Hoteles, aeropuerto y qué empacar están en la [página para pacientes de otros estados](/out-of-state-patients)."
   ],
   "gettingHere": {
     "title": "Cómo llegar de Atlanta a la clínica",
@@ -72,22 +71,22 @@
   },
   "story": {
     "title": "Desde Atlanta, en sus propias palabras",
-    "body": "Este paciente voló desde Atlanta para un Diseño de sonrisa con el Dr. Ramos y grabó este video el día de la entrega. Poco más de dos minutos, compartido con su permiso.",
+    "body": "Grabado el día de la entrega tras un Diseño de sonrisa con el Dr. Ramos. Poco más de dos minutos, compartido con su permiso.",
     "storyId": "story-17"
   },
   "cost": {
     "title": "Cuánto cuesta venir desde Atlanta",
-    "body": "El tratamiento se cotiza según la [lista de precios publicada](/veneers-cost-miami) y se confirma por escrito antes de que reserves. El viaje lo reservas y lo pagas tú; no lo sumamos al precio ni lo cotizamos, porque las tarifas cambian a diario.",
+    "body": "El tratamiento se cotiza según la [lista de precios publicada](/veneers-cost-miami) y se confirma por escrito antes de que reserves. El viaje lo reservas tú; no cotizamos tarifas porque cambian a diario.",
     "lines": [
       {
         "label": "Diseño de sonrisa, 20 carillas de porcelana",
         "value": "{price}",
-        "note": "Incluye vista previa del diseño, limpieza, radiografías y la garantía de {warrantyYears} años por escrito"
+        "note": "Incluye vista previa, limpieza, radiografías y la garantía de {warrantyYears} años por escrito"
       },
       {
         "label": "Una carilla, por unidad",
         "value": "{veneerPrice}",
-        "note": "Mismo material, laboratorio y garantía, de uno a diecinueve dientes"
+        "note": "Mismo material, laboratorio y garantía, de 1 a 19 dientes"
       },
       {
         "label": "Depósito para reservar tu lunes",
@@ -96,16 +95,16 @@
       },
       {
         "label": "Hotel, tres o cuatro noches",
-        "value": "Tarifa de aliados, 20% de descuento",
-        "note": "Propiedades Hilton y Marriott a menos de 10 minutos; tú reservas directamente, te enviamos la lista con tu presupuesto"
+        "value": "20% de descuento",
+        "note": "Hilton y Marriott a menos de 10 minutos; reservas directamente con la lista que te enviamos"
       },
       {
         "label": "Vuelos ATL–MIA y transporte",
         "value": "Los reservas tú",
-        "note": "No incluidos. Los rideshares desde el aeropuerto y a cada visita son cortos y los pagas tú"
+        "note": "No incluidos. Los traslados desde el aeropuerto y a cada visita son cortos"
       }
     ],
-    "footnote": "Hay planes mensuales a través de seis aliados de financiamiento con una consulta suave de crédito; tu coordinadora te ayuda con la solicitud antes de que reserves los vuelos.",
+    "footnote": "Planes mensuales con seis aliados de financiamiento y consulta de crédito suave. Tu coordinadora te ayuda con la solicitud antes de que reserves los vuelos.",
     "links": [
       {
         "label": "Lista de precios completa",

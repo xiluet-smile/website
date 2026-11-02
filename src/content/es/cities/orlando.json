@@ -9,9 +9,8 @@
     "caption": "Orlando → Westchester, Miami · unas 3 h 45 min en carro · estacionamiento gratis en la clínica"
   },
   "intro": [
-    "Los pacientes de Orlando tienen una opción que nadie que llega en avión tiene: manejar, tomar el tren o volar. La clínica está en 8396 SW 8th St en Westchester, justo al lado del Turnpike de Florida y del Dolphin Expressway, lo que hace que el viaje en carro desde Orlando sea de entre tres horas y media y cuatro de puerta a puerta. Brightline va del Aeropuerto Internacional de Orlando a MiamiCentral en unas tres horas y media, y desde ahí la clínica está a 20 minutos en rideshare. Y el vuelo de MCO a MIA es de alrededor de una hora, aunque al sumar el tiempo de aeropuerto el carro suele ser más rápido.",
-    "Como el viaje es corto, algunos pacientes de Orlando preguntan si pueden bajar para cada visita y dormir en casa. La respuesta honesta es que pueden, pero la mayoría no lo hace: la Visita 1 y la Visita 2 caen en días consecutivos, y el miércoles libre existe porque el laboratorio lo necesita, así que una o dos noches de hotel con la tarifa de aliados resultan más fáciles que cuatro viajes de ida y vuelta. El tratamiento es el mismo de cualquier forma: [carillas de porcelana](/porcelain-veneers-miami) en zirconia multicapa con unos 0.3 mm, {veneerPrice} por unidad o {price} por el [Diseño de sonrisa](/smile-design-miami) de 20 carillas, hechas en el [laboratorio un piso arriba de tu doctor](/custom-lab).",
-    "El resto de la semana, los hoteles y qué empacar, está en la [página para pacientes de otros estados](/out-of-state-patients). Esta página es la parte de Orlando: las opciones en carro, tren y avión, un itinerario de ejemplo armado alrededor del viaje en carro, cuánto cuesta venir, Elisa de Orlando en sus propias palabras y las preguntas que hacen los pacientes de Orlando."
+    "Los pacientes de Orlando pueden manejar, tomar el tren o volar. La clínica está en 8396 SW 8th St en Westchester, junto al Turnpike y al Dolphin Expressway, a entre tres horas y media y cuatro en carro. Brightline llega a MiamiCentral en unas tres horas y media, con un rideshare de 20 minutos desde ahí, y el vuelo MCO–MIA dura alrededor de una hora.",
+    "Como el viaje es corto, algunos pacientes preguntan si pueden dormir en casa entre visitas. Pueden, pero la mayoría se queda: las Visitas 1 y 2 caen en días consecutivos y el laboratorio necesita el miércoles, así que una o dos noches con la tarifa de aliados resultan mejor que cuatro viajes de ida y vuelta. El tratamiento es el mismo de cualquier forma: [carillas de porcelana](/porcelain-veneers-miami) a {veneerPrice} por unidad, o {price} por el [Diseño de sonrisa](/smile-design-miami) de 20 carillas, hechas en el [laboratorio un piso arriba de tu doctor](/custom-lab). Hoteles y qué empacar están en la [página para pacientes de otros estados](/out-of-state-patients)."
   ],
   "gettingHere": {
     "title": "Cómo llegar de Orlando a la clínica",
@@ -72,22 +71,22 @@
   },
   "story": {
     "title": "Desde Orlando, en sus propias palabras",
-    "body": "Elisa vino desde Orlando para un Diseño de sonrisa con el Dr. Ramos y grabó esto en español el día de la entrega. Compartido con su permiso.",
+    "body": "Elisa grabó esto en español el día de la entrega, tras un Diseño de sonrisa con el Dr. Ramos. Compartido con su permiso.",
     "storyId": "story-25"
   },
   "cost": {
     "title": "Cuánto cuesta venir desde Orlando",
-    "body": "El tratamiento se cotiza según la [lista de precios publicada](/veneers-cost-miami) y se confirma por escrito antes de que reserves nada. El viaje corre por tu cuenta; no lo sumamos al precio ni lo cotizamos. Para quien viene en carro, el costo extra de venir es la gasolina, los peajes y las noches de hotel.",
+    "body": "El tratamiento se cotiza según la [lista de precios publicada](/veneers-cost-miami) y se confirma por escrito antes de que reserves. El viaje corre por tu cuenta; en carro, el costo extra es gasolina, peajes y las noches de hotel.",
     "lines": [
       {
         "label": "Diseño de sonrisa, 20 carillas de porcelana",
         "value": "{price}",
-        "note": "Incluye vista previa del diseño, limpieza, radiografías y la garantía de {warrantyYears} años por escrito"
+        "note": "Incluye vista previa, limpieza, radiografías y la garantía de {warrantyYears} años por escrito"
       },
       {
         "label": "Una carilla, por unidad",
         "value": "{veneerPrice}",
-        "note": "Mismo material, laboratorio y garantía, para entre uno y diecinueve dientes"
+        "note": "Mismo material, laboratorio y garantía, de 1 a 19 dientes"
       },
       {
         "label": "Depósito para reservar tu lunes",
@@ -96,16 +95,16 @@
       },
       {
         "label": "Hotel, dos a cuatro noches",
-        "value": "Tarifa de aliados, 20% de descuento",
-        "note": "Hoteles Hilton y Marriott a menos de 10 minutos; reservas directamente, te enviamos la lista con tu presupuesto"
+        "value": "20% de descuento",
+        "note": "Hilton y Marriott a menos de 10 minutos; reservas directamente con la lista que te enviamos"
       },
       {
         "label": "Peajes del Turnpike, gasolina o pasaje de tren",
         "value": "Lo pagas tú",
-        "note": "No incluidos. El estacionamiento en la clínica es gratis en todas las visitas"
+        "note": "No incluido. El estacionamiento en la clínica es gratis"
       }
     ],
-    "footnote": "Hay planes mensuales a través de seis aliados de financiamiento con una consulta de crédito blanda; tu coordinadora te ayuda con la solicitud antes de que reserves el hotel.",
+    "footnote": "Planes mensuales con seis aliados de financiamiento y consulta de crédito suave. Tu coordinadora te ayuda con la solicitud antes de que reserves el hotel.",
     "links": [
       {
         "label": "Lista de precios completa",

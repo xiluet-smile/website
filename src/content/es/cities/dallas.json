@@ -9,9 +9,8 @@
     "caption": "DFW → MIA · aprox. 2 h 50 min en vuelo directo · 15 minutos del aeropuerto a la clínica"
   },
   "intro": [
-    "DFW y MIA son hubs de American Airlines, y esa es la razón práctica por la que el viaje desde Dallas–Fort Worth es simple: hay vuelos directos durante todo el día y el vuelo dura poco menos de tres horas. Miami está en hora del Este, una hora adelante de Dallas, así que una salida por la mañana aterriza a tiempo para una cita por la tarde. Aterrizas a quince minutos de la clínica y los hoteles aliados están a menos de diez minutos de ella, así que el carro se queda en casa.",
-    "Lo que los pacientes de Dallas suelen querer resolver antes de volar es el material y el número de dientes. Aquí las [carillas de porcelana](/porcelain-veneers-miami) son de zirconia multicapa con unos 0.3 mm de preparación, fresadas y terminadas a mano en el [laboratorio en nuestro edificio](/custom-lab). En los dientes que muestras al sonreír, normalmente de ocho a diez arriba, son {veneerPrice} por carilla; para las dos arcadas es el [Diseño de sonrisa](/smile-design-miami) de 20 carillas a {price}. El presupuesto por escrito que recibes a partir de tus fotos dice cuál, y no se reserva nada hasta que lo tengas.",
-    "El resto de la semana, desde los hoteles aliados hasta qué empacar, está en la [página para pacientes de otros estados](/out-of-state-patients). Esta es la parte de Dallas–Fort Worth: los vuelos, un itinerario de ejemplo con la hora de diferencia incluida, cuánto cuesta venir, Yolanda y Erick, de Fort Worth, en sus propias palabras, y las preguntas que escuchamos desde DFW."
+    "DFW y MIA son hubs de American Airlines, así que hay vuelos directos todo el día y duran poco menos de tres horas. Miami está una hora adelante de Dallas, y una salida por la mañana aterriza a tiempo para una visita por la tarde. Aterrizas a 15 minutos de la clínica, y los hoteles aliados están a menos de diez minutos de ella.",
+    "Lo que los pacientes de Dallas suelen querer resolver antes de volar es el material y el número de dientes. Aquí las [carillas de porcelana](/porcelain-veneers-miami) son de zirconia multicapa del [laboratorio en nuestro edificio](/custom-lab): {veneerPrice} por carilla en los dientes que muestras, o el [Diseño de sonrisa](/smile-design-miami) de 20 carillas a {price}. Tu presupuesto por escrito dice cuál antes de reservar nada. Hoteles, aeropuerto y qué empacar están en la [página para pacientes de otros estados](/out-of-state-patients)."
   ],
   "gettingHere": {
     "title": "Cómo llegar de Dallas–Fort Worth a la clínica",
@@ -72,22 +71,22 @@
   },
   "story": {
     "title": "Desde Fort Worth, en sus propias palabras",
-    "body": "Yolanda y Erick vinieron de Fort Worth para el Diseño de sonrisa de Erick con el Dr. Ramos. Yolanda habla en este clip, grabado el día de la entrega y compartido con su permiso.",
+    "body": "Yolanda habla del Diseño de sonrisa de Erick con el Dr. Ramos, grabado el día de la entrega y compartido con su permiso.",
     "storyId": "story-21"
   },
   "cost": {
     "title": "Cuánto cuesta venir desde Dallas–Fort Worth",
-    "body": "El tratamiento se cotiza según la [lista de precios publicada](/veneers-cost-miami) y se confirma por escrito antes de que reserves nada. El viaje lo reservas y lo pagas tú; no lo sumamos al precio ni lo cotizamos, porque las tarifas cambian a diario.",
+    "body": "El tratamiento se cotiza según la [lista de precios publicada](/veneers-cost-miami) y se confirma por escrito antes de que reserves. El viaje lo reservas tú; no cotizamos tarifas porque cambian a diario.",
     "lines": [
       {
         "label": "Diseño de sonrisa, 20 carillas de porcelana",
         "value": "{price}",
-        "note": "Incluye vista previa del diseño, limpieza, radiografías y la garantía de {warrantyYears} años por escrito"
+        "note": "Incluye vista previa, limpieza, radiografías y la garantía de {warrantyYears} años por escrito"
       },
       {
         "label": "Una carilla, por unidad",
         "value": "{veneerPrice}",
-        "note": "Mismo material, laboratorio y garantía, de uno a diecinueve dientes"
+        "note": "Mismo material, laboratorio y garantía, de 1 a 19 dientes"
       },
       {
         "label": "Depósito para reservar tu lunes",
@@ -96,16 +95,16 @@
       },
       {
         "label": "Hotel, tres o cuatro noches",
-        "value": "Tarifa de aliados, 20% de descuento",
-        "note": "Propiedades Hilton y Marriott a menos de 10 minutos; tú reservas directamente, te enviamos la lista con tu presupuesto"
+        "value": "20% de descuento",
+        "note": "Hilton y Marriott a menos de 10 minutos; reservas directamente con la lista que te enviamos"
       },
       {
         "label": "Vuelos DFW–MIA y transporte",
         "value": "Los reservas tú",
-        "note": "No incluidos. Los rideshares desde el aeropuerto y a cada visita son cortos y los pagas tú"
+        "note": "No incluidos. Los traslados desde el aeropuerto y a cada visita son cortos"
       }
     ],
-    "footnote": "Hay planes mensuales a través de seis aliados de financiamiento con una consulta suave de crédito; tu coordinadora te ayuda con la solicitud antes de que reserves los vuelos.",
+    "footnote": "Planes mensuales con seis aliados de financiamiento y consulta de crédito suave. Tu coordinadora te ayuda con la solicitud antes de que reserves los vuelos.",
     "links": [
       {
         "label": "Lista de precios completa",
