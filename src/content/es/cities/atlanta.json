@@ -10,7 +10,7 @@
   },
   "intro": [
     "Atlanta es una de las ciudades que más vemos, y el vuelo es la razón: Hartsfield-Jackson tiene vuelos directos a MIA todo el día, el vuelo dura cerca de 1 hora 55 minutos y aterrizas a 15 minutos de nuestra puerta en Westchester. La semana de lunes a jueves cabe sin tomarte una semana completa de trabajo.",
-    "El tratamiento es el mismo para todos los pacientes: [carillas de porcelana](/porcelain-veneers-miami) en los dientes que muestras, o el [Diseño de sonrisa](/smile-design-miami) de 20 carillas a {price}, hechas en el [laboratorio un piso arriba de tu doctor](/custom-lab). La planificación se hace desde casa, así que cuando reservas el vuelo ya sabes qué dientes, cuánto cuesta y qué lunes. Hoteles, aeropuerto y qué empacar están en la [página para pacientes de otros estados](/out-of-state-patients)."
+    "El tratamiento es el mismo para todos los pacientes: [carillas de porcelana](/porcelain-veneers-miami) en los dientes que muestras, o el paquete [Carillas de porcelana](/smile-design-miami) de 20 carillas a {price}, hechas en el [laboratorio un piso arriba de tu doctor](/custom-lab). La planificación se hace desde casa, así que cuando reservas el vuelo ya sabes qué dientes, cuánto cuesta y qué lunes. Hoteles, aeropuerto y qué empacar están en la [página para pacientes de otros estados](/out-of-state-patients)."
   ],
   "gettingHere": {
     "title": "Cómo llegar de Atlanta a la clínica",
@@ -71,7 +71,7 @@
   },
   "story": {
     "title": "Desde Atlanta, en sus propias palabras",
-    "body": "Grabado el día de la entrega tras un Diseño de sonrisa con el Dr. Ramos. Poco más de dos minutos, compartido con su permiso.",
+    "body": "Grabado el día de la entrega tras 20 carillas de porcelana con el Dr. Ramos. Poco más de dos minutos, compartido con su permiso.",
     "storyId": "story-17"
   },
   "cost": {
@@ -79,7 +79,7 @@
     "body": "El tratamiento se cotiza según la [lista de precios publicada](/veneers-cost-miami) y se confirma por escrito antes de que reserves. El viaje lo reservas tú; no cotizamos tarifas porque cambian a diario.",
     "lines": [
       {
-        "label": "Diseño de sonrisa, 20 carillas de porcelana",
+        "label": "Paquete Carillas de porcelana, 20 dientes",
         "value": "{price}",
         "note": "Incluye vista previa, limpieza, radiografías y la garantía de {warrantyYears} años por escrito"
       },

@@ -2,8 +2,8 @@
   "packages": [
     {
       "id": "signature-veneers",
-      "kicker": "Porcelain Veneers",
-      "name": "Smile Design",
+      "kicker": "Veneer package",
+      "name": "Porcelain Veneers",
       "price": "$5,999",
       "sub": "20 porcelain veneers",
       "badge": "Most chosen",
@@ -31,7 +31,7 @@
     {
       "id": "complete-restoration",
       "kicker": "Crowns, bridges and veneers",
-      "name": "Smile Makeover",
+      "name": "Smile Design",
       "price": "$6,999",
       "sub": "20 dental restorations",
       "badge": "",

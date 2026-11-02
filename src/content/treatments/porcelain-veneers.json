@@ -7,7 +7,7 @@
     "procedureType": "http://schema.org/NoninvasiveProcedure"
   },
   "hero": {
-    "definition": "A porcelain veneer is a thin shell of dental ceramic, about 0.3 mm thick, bonded to the front of a tooth to change its shape, length or color. At Xiluet Smiles in Miami a single veneer costs $1,000 à la carte and a full set of 20 is $5,999 as the Smile Design package, made in the clinic's own lab, delivered in three visits in one week and covered by a 5-year written warranty.",
+    "definition": "A porcelain veneer is a thin shell of dental ceramic, about 0.3 mm thick, bonded to the front of a tooth to change its shape, length or color. At Xiluet Smiles in Miami a single veneer costs $1,000 à la carte and a full set of 20 is $5,999 as the Porcelain Veneers package, made in the clinic's own lab, delivered in three visits in one week and covered by a 5-year written warranty.",
     "lead": "One tooth or twenty. Thin zirconia veneers made in our own lab, bonded after about 0.3 mm of preparation, delivered in one week in Miami. 5-year warranty, in writing.",
     "secondaryCta": "See your week in Miami",
     "stats": [
@@ -17,7 +17,7 @@
       },
       {
         "kind": "price",
-        "label": "20 veneers, Smile Design"
+        "label": "20 veneers as a package"
       },
       {
         "kind": "text",
@@ -61,7 +61,7 @@
     ]
   },
   "crossLink": {
-    "label": "Want all 20 planned as one design? See Smile Design →",
+    "label": "Want all 20 as one package? See Porcelain Veneers →",
     "href": "/smile-design-miami"
   },
   "why": {
@@ -149,7 +149,7 @@
       "title": "8, 10 or 20 veneers?",
       "body": [
         "The number depends on how wide your smile is, not on a package. Stand in front of a mirror, smile as you do in photos, and count the upper teeth you can see. Most people show eight to ten. Then do the same for the lower teeth; many people show six to eight when they talk and laugh. Veneers on the teeth you show, and only those, is the honest number.",
-        "Each option costs {veneerPrice} per tooth à la carte up to 19 teeth. At 20 the Smile Design package applies, which is why so many of our patients choose it: the per-tooth price falls to about $300 and the design, cleaning, X-rays and preview are included. The [full set cost guide](/blog/how-much-does-a-full-set-of-veneers-cost) walks through the arithmetic."
+        "Each option costs {veneerPrice} per tooth à la carte up to 19 teeth. At 20 the Porcelain Veneers package applies, which is why so many of our patients choose it: the per-tooth price falls to about $300 and the design, cleaning, X-rays and preview are included. The [full set cost guide](/blog/how-much-does-a-full-set-of-veneers-cost) walks through the arithmetic."
       ],
       "bullets": [
         {
@@ -162,7 +162,7 @@
         },
         {
           "t": "20 veneers",
-          "d": "Ten upper and ten lower, planned as one design. Both arches match in shade and shape, and the bite is set together. {price} as [Smile Design](/smile-design-miami)."
+          "d": "Ten upper and ten lower, planned as one design. Both arches match in shade and shape, and the bite is set together. {price} as [Porcelain Veneers package](/smile-design-miami)."
         },
         {
           "t": "1 to 4 veneers",
@@ -281,11 +281,11 @@
   "price": {
     "eyebrow": "Cost",
     "title": "One veneer is {veneerPrice}. Twenty are {price}.",
-    "body": "À la carte veneers are {veneerPrice} per tooth, any number from one to nineteen, with the same material, lab and warranty as the package. At 20 teeth the Smile Design package applies at {price}, which works out to about $300 per veneer and includes the design preview, cleaning and X-rays. Your written estimate states the number of teeth and the total before you book; the number you see is the number you pay unless the exam finds something to treat first, and we tell you that in writing too.",
+    "body": "À la carte veneers are {veneerPrice} per tooth, any number from one to nineteen, with the same material, lab and warranty as the package. At 20 teeth the Porcelain Veneers package applies at {price}, which works out to about $300 per veneer and includes the design preview, cleaning and X-rays. Your written estimate states the number of teeth and the total before you book; the number you see is the number you pay unless the exam finds something to treat first, and we tell you that in writing too.",
     "lendersLabel": "Pay over time with",
     "compareLabel": "See the full price list →",
     "card": {
-      "title": "Smile Design",
+      "title": "Porcelain Veneers",
       "sub": "20 porcelain veneers · or {veneerPrice} per veneer à la carte",
       "badge": "Most chosen",
       "pricePrefix": "20 veneers",
@@ -307,7 +307,7 @@
     "items": [
       {
         "q": "How much does one porcelain veneer cost in Miami?",
-        "a": "At Xiluet Smiles a single veneer is {veneerPrice}, in the same multilayer zirconia, finished in our own lab, with the same {warrantyYears}-year written warranty as a full set. Twenty veneers are {price} as the Smile Design package.",
+        "a": "At Xiluet Smiles a single veneer is {veneerPrice}, in the same multilayer zirconia, finished in our own lab, with the same {warrantyYears}-year written warranty as a full set. Twenty veneers are {price} as the Porcelain Veneers package.",
         "doc": "Dr. Roger Ramos Navarro, DMD"
       },
       {

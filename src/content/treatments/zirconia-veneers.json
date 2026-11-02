@@ -230,11 +230,11 @@
   "price": {
     "eyebrow": "Cost",
     "title": "Zirconia costs the same as porcelain here, because it is our porcelain",
-    "body": "Every veneer we make is zirconia, so there is no upcharge for the material. One veneer is {veneerPrice} à la carte and twenty are {price} as the Smile Design package, which includes the design preview, cleaning and X-rays, delivery in the same week and the {warrantyYears}-year written warranty. The number in your estimate is the number you pay unless the exam finds something to treat first, and we tell you that in writing too.",
+    "body": "Every veneer we make is zirconia, so there is no upcharge for the material. One veneer is {veneerPrice} à la carte and twenty are {price} as the Porcelain Veneers package, which includes the design preview, cleaning and X-rays, delivery in the same week and the {warrantyYears}-year written warranty. The number in your estimate is the number you pay unless the exam finds something to treat first, and we tell you that in writing too.",
     "lendersLabel": "Pay over time with",
     "compareLabel": "See the full price list →",
     "card": {
-      "title": "Smile Design",
+      "title": "Porcelain Veneers",
       "sub": "20 zirconia veneers · or {veneerPrice} per veneer à la carte",
       "badge": "Most chosen",
       "pricePrefix": "20 veneers",

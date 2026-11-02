@@ -2,8 +2,8 @@
   "packages": [
     {
       "id": "signature-veneers",
-      "kicker": "Carillas de porcelana",
-      "name": "Diseño de sonrisa",
+      "kicker": "Paquete de carillas",
+      "name": "Carillas de porcelana",
       "price": "$5,999",
       "sub": "20 carillas de porcelana",
       "badge": "La más elegida",
@@ -31,7 +31,7 @@
     {
       "id": "complete-restoration",
       "kicker": "Coronas, puentes y carillas",
-      "name": "Transformación de sonrisa",
+      "name": "Diseño de sonrisa",
       "price": "$6,999",
       "sub": "20 restauraciones dentales",
       "badge": "",

@@ -11,7 +11,7 @@
   },
   "intro": [
     "From Tampa Bay the drive is a straight shot: I-75 south through Naples, east across Alligator Alley, and off at the Dolphin Expressway into Westchester. About 280 miles and four hours outside rush hour, with free parking at the clinic. If you would rather fly, TPA to MIA is just over an hour, and the clinic is 15 minutes from the airport.",
-    "The treatment is the same as for every patient: [porcelain veneers](/porcelain-veneers-miami) in multilayer zirconia, made in the [lab one floor above your doctor](/custom-lab), at {veneerPrice} per tooth or {price} for the 20-veneer [Smile Design](/smile-design-miami), delivered in one Monday-to-Thursday week. The planning happens from home: photos, a doctor's plan within {replyHours} hours, the written estimate, then a date. Hotels and what to pack are on the [out-of-state patients page](/out-of-state-patients)."
+    "The treatment is the same as for every patient: [porcelain veneers](/porcelain-veneers-miami) in multilayer zirconia, made in the [lab one floor above your doctor](/custom-lab), at {veneerPrice} per tooth or {price} for the 20-veneer [Porcelain Veneers package](/smile-design-miami), delivered in one Monday-to-Thursday week. The planning happens from home: photos, a doctor's plan within {replyHours} hours, the written estimate, then a date. Hotels and what to pack are on the [out-of-state patients page](/out-of-state-patients)."
   ],
   "gettingHere": {
     "title": "Getting from Tampa to the clinic",
@@ -80,7 +80,7 @@
     "body": "Treatment is priced from the [published price list](/veneers-cost-miami) and confirmed in writing before you book. Travel is yours; for a driver the extra cost is fuel, tolls and the hotel nights.",
     "lines": [
       {
-        "label": "Smile Design, 20 porcelain veneers",
+        "label": "Porcelain Veneers package, 20 teeth",
         "value": "{price}",
         "note": "Preview, cleaning, X-rays and the {warrantyYears}-year written warranty included"
       },
