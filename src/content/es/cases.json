@@ -14,6 +14,31 @@
   },
   "cases": [
     {
+      "id": "BA77",
+      "image": "BA77.jpg",
+      "type": "Veneers",
+      "alt": "Antes y después de carillas de porcelana en una mujer de pelo largo rubio, cerrando el espacio entre los dientes frontales, paciente de Xiluet, Miami"
+    },
+    {
+      "id": "BA43",
+      "image": "BA43.jpg",
+      "type": "Veneers",
+      "alt": "Antes y después de carillas de porcelana sobre dientes frontales desgastados y manchados, paciente de Xiluet, Miami"
+    },
+    {
+      "id": "BA44",
+      "image": "BA44.jpg",
+      "type": "Veneers",
+      "alt": "Antes y después de carillas de porcelana que reparan un diente frontal astillado, paciente de Xiluet, Miami"
+    },
+    {
+      "id": "BA16",
+      "image": "BA16.jpg",
+      "type": "Veneers",
+      "alt": "Antes y después: carillas de resina reemplazadas por carillas de porcelana, paciente de Xiluet, Miami",
+      "source": "https://www.instagram.com/p/Dd_8l3fxVGC/"
+    },
+    {
       "id": "BA74",
       "image": "BA74.jpg",
       "type": "Veneers",
@@ -214,25 +239,6 @@
       "image": "BA41.jpg",
       "type": "Veneers",
       "alt": "Antes y después de carillas de porcelana, paciente de Xiluet con barba, Miami"
-    },
-    {
-      "id": "BA43",
-      "image": "BA43.jpg",
-      "type": "Veneers",
-      "alt": "Antes y después de carillas de porcelana sobre dientes frontales desgastados y manchados, paciente de Xiluet, Miami"
-    },
-    {
-      "id": "BA44",
-      "image": "BA44.jpg",
-      "type": "Veneers",
-      "alt": "Antes y después de carillas de porcelana que reparan un diente frontal astillado, paciente de Xiluet, Miami"
-    },
-    {
-      "id": "BA16",
-      "image": "BA16.jpg",
-      "type": "Veneers",
-      "alt": "Antes y después: carillas de resina reemplazadas por carillas de porcelana, paciente de Xiluet, Miami",
-      "source": "https://www.instagram.com/p/Dd_8l3fxVGC/"
     },
     {
       "id": "BA17",
