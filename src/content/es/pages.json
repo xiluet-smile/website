@@ -290,6 +290,13 @@
     "h1": "Composite vs porcelana vs Lumineers: ¿cuál te conviene?",
     "breadcrumb": "Composite vs porcelana vs Lumineers"
   },
+  "/blog/cosmetic-smile-makeover-guide": {
+    "title": "Smile Makeover Cosmético: Costo, Tratamientos y Tiempos",
+    "description": "Un smile makeover combina carillas, coronas y puentes en un plan diseñado para tu rostro. Qué incluye, quién lo necesita, costo en Miami y tiempos.",
+    "ogImage": "blog-smile-makeover-full-set.jpg",
+    "h1": "¿Qué es un smile makeover cosmético? Tratamientos, costo y tiempos",
+    "breadcrumb": "Guía del smile makeover"
+  },
   "/blog/do-veneers-hurt": {
     "title": "¿Duelen las Carillas? Guía Día a Día de Dolor y Sensibilidad",
     "description": "Qué se siente en cada visita, por qué los 0.3 mm se quedan en el esmalte, cuándo llega el pico de sensibilidad y cuándo llamar.",
@@ -346,6 +353,13 @@
     "h1": "Cómo cuidar las carillas de porcelana",
     "breadcrumb": "Cómo cuidar las carillas"
   },
+  "/blog/minimal-prep-veneers-vs-no-prep-veneers": {
+    "title": "Carillas Sin Preparación vs Preparación Mínima",
+    "description": "Carillas no-prep y de preparación mínima: cuánto esmalte elimina cada una, quién es candidato, por qué las no-prep pueden verse abultadas y su costo.",
+    "ogImage": "blog-minimal-prep-veneer-contact-lens.jpg",
+    "h1": "Carillas de preparación mínima vs carillas sin preparación: qué significan 0.3 mm",
+    "breadcrumb": "Preparación mínima vs sin preparación"
+  },
   "/blog/porcelain-veneers-cost-miami": {
     "title": "Precio de Carillas de Porcelana en Miami 2026: Por Diente",
     "description": "Lo que cobran las clínicas de Miami por carilla y por set, los cargos que suelen ir aparte y cómo es posible $5,999 por 20 carillas.",
@@ -359,6 +373,13 @@
     "ogImage": "blog-veneer-translucent-tweezers.jpg",
     "h1": "Carillas en Miami: material, preparación y laboratorio",
     "breadcrumb": "Carillas de porcelana en Miami"
+  },
+  "/blog/porcelain-veneers-procedure-step-by-step": {
+    "title": "Procedimiento de Carillas de Porcelana, Paso a Paso",
+    "description": "El proceso de las carillas, de las fotos a la cementación: diseño previo, preparación de 0.3 mm, provisionales, laboratorio y entrega en una semana.",
+    "ogImage": "blog-veneer-procedure-design-screen.jpg",
+    "h1": "El procedimiento de las carillas de porcelana, paso a paso: cómo se hacen",
+    "breadcrumb": "Procedimiento de carillas"
   },
   "/blog/snap-on-veneers-vs-porcelain-veneers": {
     "title": "Carillas Snap-On vs Porcelana: Costo, Riesgos y Duración",

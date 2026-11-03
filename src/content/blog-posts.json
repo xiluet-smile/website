@@ -21,6 +21,17 @@
     "dateModified": "2026-10-06"
   },
   {
+    "slug": "cosmetic-smile-makeover-guide",
+    "esSlug": "que-es-un-smile-makeover",
+    "treatments": [
+      "smile-makeover",
+      "smile-design",
+      "porcelain-veneers"
+    ],
+    "datePublished": "2026-11-03",
+    "dateModified": "2026-11-03"
+  },
+  {
     "slug": "do-veneers-hurt",
     "esSlug": "duelen-las-carillas",
     "treatments": [
@@ -100,6 +111,17 @@
     "dateModified": "2026-10-10"
   },
   {
+    "slug": "minimal-prep-veneers-vs-no-prep-veneers",
+    "esSlug": "carillas-de-preparacion-minima-vs-sin-preparacion",
+    "treatments": [
+      "porcelain-veneers",
+      "smile-design",
+      "zirconia-veneers"
+    ],
+    "datePublished": "2026-11-03",
+    "dateModified": "2026-11-03"
+  },
+  {
     "slug": "porcelain-veneers-cost-miami",
     "esSlug": "precio-carillas-de-porcelana-miami",
     "treatments": [
@@ -120,6 +142,16 @@
     ],
     "datePublished": "2026-10-11",
     "dateModified": "2026-10-11"
+  },
+  {
+    "slug": "porcelain-veneers-procedure-step-by-step",
+    "esSlug": "procedimiento-de-carillas-de-porcelana-paso-a-paso",
+    "treatments": [
+      "porcelain-veneers",
+      "smile-design"
+    ],
+    "datePublished": "2026-11-03",
+    "dateModified": "2026-11-03"
   },
   {
     "slug": "snap-on-veneers-vs-porcelain-veneers",
