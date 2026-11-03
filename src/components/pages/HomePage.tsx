@@ -537,12 +537,23 @@ export default function HomePage({ locale = "en" }: { locale?: Locale }) {
         <p className="mt-3.5 mb-0 text-[13px] text-muted">{t.financingNote}</p>
       </section>
 
-      {/* Why trust */}
+      {/* Why trust: four facts in one hairline ledger instead of four floating cards.
+          Numerals share a baseline band, every cell has the same three rows (label, figure, proof),
+          and the review count links to the Google listing. */}
       <section className="defer-render wrap pt-16 lg:pt-24">
-        <div className="dark-panel flex flex-col gap-7 rounded-[20px] px-6 py-8 lg:grid lg:grid-cols-[minmax(0,.85fr)_minmax(0,1.15fr)] lg:items-center lg:gap-14 lg:px-12 lg:py-12">
-          <div className="flex max-w-[460px] flex-col gap-4">
+        <div className="dark-panel relative isolate flex flex-col gap-8 overflow-hidden rounded-[24px] px-6 py-9 lg:grid lg:grid-cols-[minmax(0,.9fr)_minmax(0,1.1fr)] lg:items-center lg:gap-16 lg:px-14 lg:py-14">
+          {/* Two soft lights so the panel reads as glass, not a flat slab. */}
+          <span
+            aria-hidden="true"
+            className="pointer-events-none absolute -top-44 -left-28 -z-10 h-[460px] w-[460px] rounded-full bg-[radial-gradient(closest-side,rgba(205,177,128,.22),rgba(205,177,128,0))]"
+          />
+          <span
+            aria-hidden="true"
+            className="pointer-events-none absolute -right-36 -bottom-52 -z-10 h-[520px] w-[520px] rounded-full bg-[radial-gradient(closest-side,rgba(247,244,238,.09),rgba(247,244,238,0))]"
+          />
+          <div className="flex max-w-[480px] flex-col gap-5">
             <span className="eyebrow text-gold">{t.trustEyebrow}</span>
-            <h2 className="m-0 font-serif text-[32px] leading-[1.15] font-normal text-pretty lg:text-[38px] lg:leading-[1.08]">
+            <h2 className="m-0 font-serif text-[34px] leading-[1.12] font-normal text-pretty lg:text-[44px] lg:leading-[1.06]">
               {t.trustTitle}
             </h2>
             <p className="m-0 text-base leading-normal text-pretty text-on-dark-muted lg:text-lg">
@@ -550,26 +561,29 @@ export default function HomePage({ locale = "en" }: { locale?: Locale }) {
             </p>
             <Link
               href={localizePath("/before-and-after", locale)}
-              className="mt-1 inline-flex min-h-11 items-center gap-2 self-start font-semibold text-gold lg:min-h-0"
+              className="mt-1 inline-flex min-h-11 items-center gap-2 self-start font-semibold text-gold hover:text-on-dark lg:min-h-0"
             >
               {u.doctor.seeResults}
             </Link>
           </div>
-          <ul className="m-0 grid list-none grid-cols-2 gap-3 p-0 lg:gap-4">
+          <ul className="m-0 grid list-none grid-cols-2 overflow-hidden rounded-2xl border border-[rgba(247,244,238,.16)] bg-[rgba(247,244,238,.05)] p-0 shadow-[inset_0_1px_0_rgba(247,244,238,.12)] lg:rounded-[20px]">
             {[
               {
                 icon: "shield",
                 label: t.trust.warranty,
                 big: String(site.warrantyYears),
                 unit: t.trust.years,
-                gold: tpl(t.trust.usual, { years: site.warrantyYears }),
+                sub: tpl(t.trust.usual, { years: site.warrantyYears }),
               },
               {
                 icon: "approve",
                 label: t.trust.rating,
                 big: rating.value,
-                gold: tpl(t.trust.reviews, { count: rating.count }),
                 stars: true,
+                sub: tpl(t.trust.reviews, { count: rating.count }),
+                href: site.google.placeId
+                  ? `https://search.google.com/local/reviews?placeid=${site.google.placeId}`
+                  : site.maps.place,
               },
               {
                 icon: "design",
@@ -585,45 +599,34 @@ export default function HomePage({ locale = "en" }: { locale?: Locale }) {
                 small: true,
                 sub: t.trust.sideBySide,
               },
-            ].map((x) => (
+            ].map((x, i) => (
               <li
                 key={x.label}
-                className="relative flex flex-col gap-4 overflow-hidden rounded-2xl border border-[rgba(255,255,255,.28)] bg-[linear-gradient(160deg,rgba(255,253,248,.22)_0%,rgba(255,253,248,.1)_100%)] p-5 shadow-[inset_0_1px_0_rgba(255,255,255,.35),inset_0_-1px_0_rgba(255,255,255,.08),0_16px_40px_rgba(0,0,0,.25)] backdrop-blur-[22px] backdrop-saturate-[1.4] lg:gap-5 lg:p-6"
+                className={`flex flex-col gap-5 p-5 lg:gap-7 lg:p-7 ${i % 2 === 1 ? "border-l border-[rgba(247,244,238,.14)]" : ""} ${i >= 2 ? "border-t border-[rgba(247,244,238,.14)]" : ""}`}
               >
-                <span
-                  aria-hidden="true"
-                  className="absolute inset-x-0 top-0 h-0.5 bg-[linear-gradient(90deg,rgba(205,177,128,0)_0%,#CDB180_40%,rgba(247,244,238,.9)_70%,rgba(247,244,238,0)_100%)]"
-                />
-                <span className="flex items-center gap-3">
-                  <span className="grid h-9 w-9 flex-none place-items-center rounded-full border border-[rgba(205,177,128,.45)] bg-[rgba(205,177,128,.14)]">
-                    <span className="block h-[18px] w-[18px]">
-                      <LineIcon name={x.icon as LineIconName} tone="gold" />
-                    </span>
+                <span className="flex items-center gap-2.5">
+                  <span className="block h-[18px] w-[18px] flex-none">
+                    <LineIcon name={x.icon as LineIconName} tone="gold" />
                   </span>
-                  <span className="text-[12px] leading-tight font-semibold tracking-[.08em] text-on-dark-muted uppercase">
+                  <span className="text-[11px] leading-tight font-semibold tracking-[.14em] text-on-dark-muted uppercase lg:text-[12px]">
                     {x.label}
                   </span>
                 </span>
-                <span className="flex min-w-0 flex-col gap-2">
-                  <span
-                    className={`flex flex-wrap items-baseline gap-x-2 gap-y-1 font-serif text-on-dark ${x.small ? "text-[26px] leading-[1.1] lg:text-[30px]" : "text-[36px] leading-none tracking-[-.02em] lg:text-[44px]"}`}
-                  >
+                <span className="flex min-h-[48px] flex-wrap items-end gap-x-2.5 gap-y-1 font-serif text-on-dark tabular-nums lg:min-h-[58px]">
+                  <span className={x.small ? "text-[26px] leading-[1.05] lg:text-[34px]" : "text-[40px] leading-[.9] tracking-[-.02em] lg:text-[56px]"}>
                     {x.big}
-                    {x.unit && (
-                      <span className="font-sans text-sm tracking-normal text-on-dark-muted">
-                        {x.unit}
-                      </span>
-                    )}
-                    {x.stars && <Stars className="text-[12px] text-gold" />}
                   </span>
-                  {x.gold && (
-                    <span className="flex items-center gap-2 text-[13px] font-semibold text-gold">
-                      <span className="inline-block h-[3px] w-3 flex-none rounded-sm bg-gold" />
-                      {x.gold}
-                    </span>
-                  )}
-                  {x.sub && (
-                    <span className="text-[13px] leading-snug text-on-dark-muted">{x.sub}</span>
+                  {x.unit && <span className="pb-[2px] font-sans text-[14px] text-on-dark-muted lg:pb-[3px] lg:text-[15px]">{x.unit}</span>}
+                  {x.stars && <Stars className="mb-1.5 text-[13px] text-gold" />}
+                </span>
+                <span className="mt-auto flex items-start gap-2.5 text-[14px] leading-snug text-on-dark-muted">
+                  <span aria-hidden="true" className="mt-[9px] inline-block h-px w-3.5 flex-none bg-gold" />
+                  {x.href ? (
+                    <a href={x.href} target="_blank" rel="noopener" className="text-on-dark-muted underline-offset-4 hover:text-gold">
+                      {x.sub}
+                    </a>
+                  ) : (
+                    <span>{x.sub}</span>
                   )}
                 </span>
               </li>
