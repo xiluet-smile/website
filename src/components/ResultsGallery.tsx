@@ -61,7 +61,6 @@ export default function ResultsGallery({ locale = "en", stories = [] }: { locale
       </div>
       {stories.length > 0 && (
         <div className={videos ? "" : "hidden"}>
-          <p className="mt-0 mb-5 text-base text-muted lg:text-lg">{t.results.videosLead}</p>
           <PatientStories stories={stories} locale={locale} layout="grid" />
         </div>
       )}

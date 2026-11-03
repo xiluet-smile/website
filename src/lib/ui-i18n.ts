@@ -173,7 +173,6 @@ const uiEn = {
     galleryName: "Before and after, Xiluet Smiles patients",
     photos: "Before & after",
     videos: "Testimonials",
-    videosLead: "Patients in their own words, recorded on their delivery day. Tap a card to play with sound.",
   },
   planner: {
     sendOn: "If I send my photos on",
@@ -486,7 +485,6 @@ const uiEs: UiStrings = {
     galleryName: "Antes y después, pacientes de Xiluet Smiles",
     photos: "Antes y después",
     videos: "Testimonios",
-    videosLead: "Pacientes con sus propias palabras, grabados el día de la entrega. Toca una tarjeta para reproducir con sonido.",
   },
   planner: {
     sendOn: "Si envío mis fotos el",
