@@ -1,5 +1,59 @@
 {
   "source": "Google",
-  "note": "TODO(janse): paste verbatim Google reviews here: { name (as shown on Google), when (e.g. 'Oct 2026'), treatment, text, lang: 'en' | 'es' }. The five design placeholders (Maria G., Daniel R., Sofia M., Carlos V., Andrea L.) were removed on 2026-10-30 because they could not be verified against the listing. Spanish-language reviews show on /es when present.",
-  "reviews": []
+  "note": "Verbatim Google reviews (5-star, text unchanged), copied from the live Places feed on 2026-10-30 as the server-rendered fallback; the home page swaps in the live feed when /api/reviews answers. `lang` picks which site shows a review. Refresh when the count in site.json is updated.",
+  "reviews": [
+    {
+      "name": "Erick S",
+      "when": "Oct 2026",
+      "rating": 5,
+      "treatment": "Smile makeover",
+      "lang": "en",
+      "text": "This is an excellent clinic! My wife chose this clinic for her smile makeover treatment, and she was extremely pleased with the results. And believe me, she is very particular and has high standards!\n\nWe decided to share this review to help others make an informed decision, because this truly is an outstanding place. The staff is professional, caring, and dedicated to providing excellent service. We highly recommend this clinic to anyone considering dental treatment or a smile makeover.\nMy wife's name is Yureisys Saavedra."
+    },
+    {
+      "name": "Sofia Antonella",
+      "when": "Oct 2026",
+      "rating": 5,
+      "treatment": "Cleanings",
+      "lang": "en",
+      "text": "I’m so happy with the services I’ve received at Xiluet Smiles! The entire experience feels so luxurious and exclusive, and the staff always makes me feel special and taken care of. I get my deep cleanings done here every three months, and I genuinely look forward to every appointment. The attention to detail and the way they treat their patients really makes a difference. Thank you to the entire Xiluet Smiles team for always making my visits such a great experience! 🤍"
+    },
+    {
+      "name": "Vanessa Zea",
+      "when": "May 2026",
+      "rating": 5,
+      "treatment": "Veneers",
+      "lang": "en",
+      "text": "I can’t even begin to explain the confidence boost and the restoration of trust that the people here gave me. Only a year ago, I made a huge mistake getting resin veneers done at another place that completely botched my smile. My teeth looked horrible and so fake, honestly like Jim Carrey in The Mask… and I’m not exaggerating. The moment I saw my smile, I cried from instant regret and felt completely defeated.\n\nThen I came to Xiulet Smile, and from the very first visit, everything felt different. They took the time to explain every detail about my porcelain veneers, answered every question, and most importantly, they were honest. They didn’t overpromise and underdeliver, they underpromised and OVER delivered by farrrr.\n\nToday, I finally feel what I should have felt a year ago: confident, happy, and proud to smile again. What this team did for me was truly life changing, and I cannot thank them enough for giving me back something so important.\n\nTo every single amazing staff member here, thank you from the bottom of my heart. I honestly would have been lost without you 😢 Thank you to the entire Xiulet Smile family for changing my life and restoring my confidence. This place is the real deal, and I am beyond grateful."
+    },
+    {
+      "name": "Frank Enriquez",
+      "when": "Apr 2026",
+      "rating": 5,
+      "treatment": "Smile design",
+      "lang": "en",
+      "text": "I had an amazing experience at Xiluet Smiles ! From the moment I walked in, the entire team made me feel welcomed and care for. Dr. Alonso did an incredible job with my smile design. The results exceed all my expectations. The attention to detail, professionalism and quality of work are truly outstanding. I voy of be happier with TNT new smile. Highly recommend this office to anyone looking for too-quality dental care! Thank you so much."
+    },
+    {
+      "name": "Elianne Perdomo",
+      "when": "abr 2026",
+      "rating": 5,
+      "lang": "es",
+      "text": "Excelente experiencia en Xiluet Smiles. Me estoy realizando varios procedimientos en mis muelas y todo salió muy bien. El Dr. Roger es simplemente magnífico: muy profesional, cuidadoso y atento en todo momento. Se nota que realmente le importa el bienestar de sus pacientes.También quiero destacar a la doctora Hernández, quien fue muy amable durante todo el proceso. Ambos transmiten mucha confianza y hacen que uno se sienta en buenas manos.\nAdemás, cuentan con un equipo de especialistas muy preparados, lo que te da muchísima tranquilidad desde que entras. El cuidado y la atención son de primera, siempre pendientes de cada detalle y de que te sientas cómodo."
+    },
+    {
+      "name": "Maria V",
+      "when": "feb 2026",
+      "rating": 5,
+      "lang": "es",
+      "text": "No conocía el lugar pero me lo habían recomendado, así que decidí probar.\nMe quedé maravillada. Primero parece un Hotel 5 🌟 estrellas, pero lo principal es el trato todos sonrientes y amables y los doctores con una paciencia infinita.\nVolvería y se lo recomendaría a todos mis familiares y amigos. Se te quita el miedo al dentista de una sola vez."
+    },
+    {
+      "name": "Yunia Gonzalez",
+      "when": "dic 2025",
+      "rating": 5,
+      "lang": "es",
+      "text": "Un lugar increíble,su atención es muy muy buena ,mucha profesionalidad y empatía con paciente ,el doctor Roger Ramos un amor y sus colaboradores ,la verdad quisiera mencionarlos a todos ,pues son un equipo increíble ,ofrecen soluciones no impedimentos,muchas gracias a todos!"
+    }
+  ]
 }
