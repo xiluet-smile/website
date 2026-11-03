@@ -14,7 +14,7 @@ import { imageInfo } from "@/lib/images";
 import HomeResults from "@/components/home/HomeResults";
 import ScrollRow from "@/components/ScrollRow";
 import WeekPlanner from "@/components/home/WeekPlanner";
-import { caseById, getContent, tpl, ui } from "@/lib/content-i18n";
+import { getContent, tpl, ui } from "@/lib/content-i18n";
 import { localizeHref, localizePath, type Locale } from "@/lib/i18n";
 import { faqPage, pageGraph } from "@/lib/schema";
 
@@ -53,7 +53,8 @@ export default function HomePage({ locale = "en" }: { locale?: Locale }) {
   } = getContent(locale);
   const h1Parts = pages["/"].h1.includes(": ") ? pages["/"].h1.split(/: ([\s\S]+)/).slice(0, 2) : null;
   const faqs = faq.home;
-  const homeCases = home.caseIds.map((id) => caseById(locale, id));
+  // Same list and order as the Results page, so the newest case leads both.
+  const homeCases = cases.cases;
   const { rating } = site;
   const l = (path: Parameters<typeof localizePath>[0]) =>
     localizePath(path, locale);

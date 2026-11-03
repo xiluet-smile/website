@@ -86,24 +86,6 @@
       "a": "Fotos, presupuesto, plan de pago y fechas: todo se hace desde casa. En Miami son tres visitas en una semana, con una lista corta de hoteles (tarifas de aliados Hilton y Marriott, 20% de descuento) y los datos de transporte para cada visita de parte de tu coordinadora."
     }
   ],
-  "caseIds": [
-    "BA16",
-    "BA8",
-    "BA1",
-    "BA17",
-    "BA4",
-    "BA2",
-    "BA5",
-    "BA7",
-    "BA6",
-    "BA13",
-    "BA14",
-    "BA15",
-    "BA10",
-    "BA11",
-    "BA9",
-    "BA12"
-  ],
   "steps": [
     {
       "icon": "photo",
