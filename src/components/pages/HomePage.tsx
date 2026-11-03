@@ -6,6 +6,7 @@ import { PhoneIcon, Stars, WhatsAppIcon } from "@/components/Icons";
 import Img from "@/components/Img";
 import JsonLd from "@/components/JsonLd";
 import LineIcon, { type LineIconName } from "@/components/LineIcon";
+import TrustIcon, { TrustBackdrop, type TrustIconName } from "@/components/TrustIcons";
 import GoogleReviews from "@/components/home/GoogleReviews";
 import HeroVideo from "@/components/home/HeroVideo";
 import PatientStories from "@/components/home/PatientStories";
@@ -552,6 +553,7 @@ export default function HomePage({ locale = "en" }: { locale?: Locale }) {
             aria-hidden="true"
             className="pointer-events-none absolute -right-36 -bottom-52 -z-10 h-[520px] w-[520px] rounded-full bg-[radial-gradient(closest-side,rgba(247,244,238,.09),rgba(247,244,238,0))]"
           />
+          <TrustBackdrop />
           <div className="flex max-w-[480px] flex-col gap-5">
             <span className="eyebrow text-gold">{t.trustEyebrow}</span>
             <h2 className="m-0 font-serif text-[34px] leading-[1.12] font-normal text-pretty lg:text-[44px] lg:leading-[1.06]">
@@ -570,14 +572,14 @@ export default function HomePage({ locale = "en" }: { locale?: Locale }) {
           <ul className="m-0 grid list-none grid-cols-2 overflow-hidden rounded-2xl border border-[rgba(247,244,238,.16)] bg-[rgba(247,244,238,.05)] p-0 shadow-[inset_0_1px_0_rgba(247,244,238,.12)] lg:rounded-[20px]">
             {[
               {
-                icon: "shield",
+                icon: "warranty",
                 label: t.trust.warranty,
                 big: String(site.warrantyYears),
                 unit: t.trust.years,
                 sub: tpl(t.trust.usual, { years: site.warrantyYears }),
               },
               {
-                icon: "approve",
+                icon: "rating",
                 label: t.trust.rating,
                 big: rating.value,
                 stars: true,
@@ -587,14 +589,14 @@ export default function HomePage({ locale = "en" }: { locale?: Locale }) {
                   : site.maps.place,
               },
               {
-                icon: "design",
+                icon: "doctors",
                 label: t.trust.doctors,
                 big: "10+",
                 unit: t.trust.years,
                 sub: t.trust.experience,
               },
               {
-                icon: "lab",
+                icon: "planning",
                 label: t.trust.planning,
                 big: t.trust.oneBuilding,
                 small: true,
@@ -605,9 +607,9 @@ export default function HomePage({ locale = "en" }: { locale?: Locale }) {
                 key={x.label}
                 className={`flex flex-col gap-5 p-5 lg:gap-7 lg:p-7 ${i % 2 === 1 ? "border-l border-[rgba(247,244,238,.14)]" : ""} ${i >= 2 ? "border-t border-[rgba(247,244,238,.14)]" : ""}`}
               >
-                <span className="flex items-center gap-2.5">
-                  <span className="block h-[18px] w-[18px] flex-none">
-                    <LineIcon name={x.icon as LineIconName} tone="gold" />
+                <span className="flex items-center gap-3">
+                  <span className="grid h-10 w-10 flex-none place-items-center rounded-xl border border-[rgba(205,177,128,.3)] bg-[linear-gradient(160deg,rgba(205,177,128,.18),rgba(205,177,128,.04))] p-2.5 text-gold shadow-[inset_0_1px_0_rgba(247,244,238,.14)]">
+                    <TrustIcon name={x.icon as TrustIconName} />
                   </span>
                   <span className="text-[11px] leading-tight font-semibold tracking-[.14em] text-on-dark-muted uppercase lg:text-[12px]">
                     {x.label}
