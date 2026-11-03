@@ -681,7 +681,7 @@ export default function HomePage({ locale = "en" }: { locale?: Locale }) {
 
       {/* Out of state */}
       <section className="defer-render wrap pt-16 lg:pt-28">
-        <div className="relative overflow-hidden rounded-[18px] bg-teal text-on-dark lg:grid lg:min-h-[520px] lg:grid-cols-[minmax(0,.9fr)_minmax(0,1.1fr)] lg:rounded-[20px] lg:shadow-[0_30px_80px_rgba(4,40,46,.28)]">
+        <div className="relative overflow-hidden rounded-[18px] bg-teal text-on-dark lg:grid lg:min-h-[520px] lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:rounded-[20px] lg:shadow-[0_30px_80px_rgba(4,40,46,.28)]">
           {site.videos.miamiArrival ? (
             <LazyVideo
               src={site.videos.miamiArrival}
@@ -704,7 +704,7 @@ export default function HomePage({ locale = "en" }: { locale?: Locale }) {
             <div className="text-xs font-semibold tracking-[.12em] text-gold uppercase lg:text-sm">
               {t.outOfStateEyebrow}
             </div>
-            <h2 className="-mt-1 mb-0 font-serif text-[30px] leading-[1.15] font-normal text-pretty lg:-mt-2 lg:text-[48px] lg:leading-[1.1]">
+            <h2 className="-mt-1 mb-0 font-serif text-[30px] leading-[1.15] font-normal text-pretty lg:-mt-2 lg:w-[calc(100%+40px)] lg:text-[clamp(36px,3.6vw,44px)] lg:leading-[1.1]">
               {t.outOfStateTitle}
             </h2>
             <p className="m-0 max-w-[40ch] text-base text-[#E3DDD0] lg:text-[19px]">
@@ -723,7 +723,7 @@ export default function HomePage({ locale = "en" }: { locale?: Locale }) {
                   <div className="text-[11px] font-semibold tracking-[.08em] text-gold uppercase lg:text-xs lg:tracking-[.1em]">
                     {d.short}
                   </div>
-                  <div className="font-serif text-[15px] leading-[1.25] [overflow-wrap:anywhere] lg:pr-3 lg:text-[19px]">
+                  <div className="font-serif text-[15px] leading-[1.25] text-balance [overflow-wrap:anywhere] lg:pr-3 lg:text-[19px]">
                     {d.title}
                   </div>
                 </li>
