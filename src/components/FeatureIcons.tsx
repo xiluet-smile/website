@@ -144,6 +144,34 @@ const icons: Record<string, (p: P) => React.JSX.Element> = {
       <path d="M7 17l-2.5 2.5" />
     </Svg>
   ),
+  /** Clock: flight times and who flies the route. */
+  clock: (p) => (
+    <Svg {...p}>
+      <circle cx="12" cy="12" r="8.5" />
+      <path d="M12 7.5V12l3 2" />
+    </Svg>
+  ),
+  /** Road with a center line: driving instead of flying. */
+  bus: (p) => (
+    <Svg {...p}>
+      <path d="M4 20L9.5 4h5L20 20" />
+      <path d="M12 8v2M12 13v2M12 18v2" />
+    </Svg>
+  ),
+  /** Sheet with a total: the written estimate. */
+  estimate: (p) => (
+    <Svg {...p}>
+      <path d="M7 3h7l4 4v12.5A1.5 1.5 0 0116.5 21h-9A1.5 1.5 0 016 19.5V4.5A1.5 1.5 0 017.5 3z" />
+      <path d="M14 3v4h4M9 12h6M9 15.5h6" />
+    </Svg>
+  ),
+  /** Card: payment plan (same drawing as "card"). */
+  pay: (p) => (
+    <Svg {...p}>
+      <rect x="3" y="6" width="18" height="12" rx="2" />
+      <path d="M3 10h18M7 14.5h3" />
+    </Svg>
+  ),
   /** Car: rides to every visit. */
   car: (p) => (
     <Svg {...p}>

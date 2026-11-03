@@ -4,36 +4,37 @@
   "breadcrumb": "Veneers New York",
   "hero": {
     "lead": "New York to Miami is about three hours nonstop from JFK, LaGuardia or Newark, with flights roughly every hour. One Monday-to-Thursday week, 20 porcelain veneers made in our own lab, and a 5-year warranty in writing for the flight home.",
-    "image": "blog-airplane-window-miami.jpg",
-    "alt": "Miami seen from an airplane window on approach to Miami International Airport",
+    "image": "city-new-york.jpg",
+    "alt": "The Manhattan skyline from a plane window on a clear morning",
     "caption": "JFK, LGA or EWR → MIA · about 3 h nonstop · 15 minutes from the airport to the clinic"
   },
   "intro": [
-    "New York to Miami is one of the busiest routes in the country: three airports, nonstop flights from early morning to late evening, about three hours in the air and no time change. You land 15 minutes from the clinic, and in winter the week comes with a free Wednesday in the sun.",
-    "New Yorkers arrive with more quotes than anyone, so compare what is in them: material, number of teeth, veneer or crown per tooth, and the warranty. Ours are on the [price list](/veneers-cost-miami): [porcelain veneers](/porcelain-veneers-miami) in multilayer zirconia at {veneerPrice} per tooth, or {price} for the 20-veneer [Smile Design](/smile-design-miami), made in the [lab in our building](/custom-lab) and delivered the same week. Hotels, airport and what to pack are on the [out-of-state patients page](/out-of-state-patients)."
+    "New York to Miami is about three hours nonstop from three airports, with no time change and a free Wednesday in the sun. Compare quotes on material, number of teeth and warranty; ours are on the [price list](/veneers-cost-miami): [porcelain veneers](/porcelain-veneers-miami) at {veneerPrice} per tooth, or {price} for the 20-veneer [Smile Design](/smile-design-miami), made in the [lab in our building](/custom-lab). Hotels, airport and what to pack are on the [out-of-state patients page](/out-of-state-patients)."
   ],
   "gettingHere": {
     "title": "Getting from New York to the clinic",
     "aside": "General guidance from the clinic. Check times and carriers with the airline when you book; we do not sell flights.",
+    "image": "blog-airplane-window-miami.jpg",
+    "alt": "Miami from the plane window on approach to Miami International Airport",
     "items": [
       {
         "t": "Flight time",
-        "d": "About 3 hours to 3 hours 15 minutes nonstop from any of the three airports, with no time change. Door to gate, plan on three and a half to four hours.",
+        "d": "About three hours nonstop from JFK, LaGuardia or Newark, no time change.",
         "icon": "plane"
       },
       {
         "t": "Who flies it",
-        "d": "American, Delta and JetBlue fly JFK–MIA; American and Delta fly LaGuardia–MIA; United flies Newark–MIA. Between them there is a nonstop most hours of the day. Fort Lauderdale (FLL) has even more flights and low-cost carriers, about 45 minutes to an hour from the clinic.",
+        "d": "American, Delta, JetBlue and United between them fly a nonstop most hours.",
         "icon": "clock"
       },
       {
         "t": "Airport to clinic",
-        "d": "MIA is 15 minutes from the clinic by car. Uber and Lyft pick up at arrivals; we text you the spot and the address before you land. The partner hotels are within 10 minutes, so you do not need a car for the week.",
+        "d": "15 minutes by Uber or Lyft. We text you the pickup spot before you land.",
         "icon": "car"
       },
       {
         "t": "Train or car instead",
-        "d": "Amtrak's Silver Service runs New York to Miami in about 28 to 30 hours, and the drive down I-95 is about 1,280 miles, or 19 to 20 hours. Both are possible with extra days either side; for a four-day week, fly.",
+        "d": "Amtrak takes about 28 hours and the drive about 20. Both cost a working day each way; fly.",
         "icon": "bus"
       }
     ]
@@ -45,29 +46,29 @@
       {
         "k": "Monday",
         "t": "Early flight, late-morning Visit 1",
-        "d": "Leave JFK, LGA or EWR around 7:00 am, land MIA about 10:15 am, rideshare to the clinic. Exam, cleaning, X-rays, scans and the design preview you approve.",
+        "d": "Land, rideshare to the clinic. Exam, scans and the design preview you approve.",
         "time": "Visit 1 about 11:30 am to 1:30 pm. Hotel check-in after."
       },
       {
         "k": "Tuesday",
         "t": "Preparation and temporaries",
-        "d": "About 0.3 mm of preparation and temporaries in the approved shape. Soft lunch, then a free afternoon.",
+        "d": "Minimal preparation, then temporaries in the shape you approved. Afternoon free.",
         "time": "Visit 2 about 9:00 am to 12:00 pm"
       },
       {
         "k": "Wednesday",
         "t": "Free day while the lab finishes",
-        "d": "Veneers milled, sintered and finished by hand one floor up. You tell us anything you would change about the temporaries.",
+        "d": "Your veneers are finished by hand in the lab upstairs. No visit.",
         "time": "No visit. Beach, Wynwood or rest."
       },
       {
         "k": "Thursday",
         "t": "Delivery, then the evening flight home",
-        "d": "Shade checked with the ceramist, veneers bonded, bite adjusted, warranty handed over in writing. Lunch, rideshare to MIA.",
+        "d": "Shade check, bonding, bite adjusted, warranty in writing. Then the airport.",
         "time": "Visit 3 about 9:00 am to 11:00 am. Fly MIA–NYC from about 4:00 pm, land around 7:15 pm."
       }
     ],
-    "note": "Many New York patients come Sunday evening and treat Monday as a normal first day rather than a 5 am alarm. Winter travellers: check the forecast at home on Thursday, and if a storm is coming, Visit 3 can move earlier in the day."
+    "note": "Many New York patients come Sunday evening and skip the 5 am alarm."
   },
   "story": {
     "title": "A similar trip, from Pennsylvania",

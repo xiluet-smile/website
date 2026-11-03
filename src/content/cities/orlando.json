@@ -4,36 +4,37 @@
   "breadcrumb": "Veneers Orlando",
   "hero": {
     "lead": "Orlando to the clinic is three and a half to four hours down the Turnpike, about three and a half hours on the Brightline train, or an hour by air. Drive down Monday, get 20 porcelain veneers made in our own lab, drive home Thursday with a 5-year warranty in writing.",
-    "image": "blog-calle-ocho-morning.jpg",
-    "alt": "Calle Ocho in Miami in the early morning, the street the clinic is on",
+    "image": "city-orlando.jpg",
+    "alt": "Florida's Turnpike heading south at sunrise, seen from the passenger seat",
     "caption": "Orlando → Westchester, Miami · about 3 h 45 min by car · free parking at the clinic"
   },
   "intro": [
-    "Orlando patients can drive, take the train or fly. The clinic is at 8396 SW 8th St in Westchester, just off the Turnpike and the Dolphin Expressway, about three and a half to four hours by car. Brightline reaches MiamiCentral in about three and a half hours, with a 20-minute rideshare from there, and the MCO–MIA flight is about an hour.",
-    "Because the trip is short, some patients ask whether they can sleep at home between visits. They can, but most stay: Visits 1 and 2 fall on consecutive days and the lab needs the Wednesday, so a night or two at the partner rate beats four round trips. The treatment is the same either way: [porcelain veneers](/porcelain-veneers-miami) at {veneerPrice} per tooth, or {price} for the 20-veneer [Smile Design](/smile-design-miami), made in the [lab one floor above your doctor](/custom-lab). Hotels and what to pack are on the [out-of-state patients page](/out-of-state-patients)."
+    "Orlando patients drive, take Brightline or fly; the clinic is just off the Turnpike in Westchester, three and a half to four hours by car. Most stay the week rather than commute, since Visits 1 and 2 fall on consecutive days. The treatment is [porcelain veneers](/porcelain-veneers-miami) at {veneerPrice} per tooth, or {price} for the 20-veneer [Smile Design](/smile-design-miami), made in the [lab one floor above your doctor](/custom-lab). Hotels, airport and what to pack are on the [out-of-state patients page](/out-of-state-patients)."
   ],
   "gettingHere": {
     "title": "Getting from Orlando to the clinic",
     "aside": "General guidance from the clinic. Check times with your map app and the carrier on the day; we do not sell travel.",
+    "image": "blog-calle-ocho-morning.jpg",
+    "alt": "Calle Ocho in the early morning, the street the clinic is on",
     "items": [
       {
         "t": "Driving",
-        "d": "About 235 miles: Florida's Turnpike south to the Dolphin Expressway (SR 836), then west to SW 87th Avenue and SW 8th St. Three and a half to four hours outside rush hour. Free parking at the clinic.",
+        "d": "About 235 miles down the Turnpike to the Dolphin Expressway, three and a half to four hours.",
         "icon": "car"
       },
       {
         "t": "Brightline",
-        "d": "Orlando International to MiamiCentral in about three and a half hours, no driving. From the station the clinic is a 20-minute rideshare west on Calle Ocho. Check the timetable for the Monday morning and Thursday afternoon departures.",
+        "d": "Orlando to MiamiCentral in about three and a half hours, then a 20-minute rideshare.",
         "icon": "bus"
       },
       {
         "t": "Flying",
-        "d": "MCO to MIA is about an hour in the air; American flies it nonstop. With airport time at both ends it is rarely faster than the car, but it is an option if you would rather not drive.",
+        "d": "MCO to MIA is about an hour in the air, rarely faster than the car door to door.",
         "icon": "plane"
       },
       {
         "t": "Timing the drive",
-        "d": "Leave Orlando by 6:30 am Monday and you are in Westchester before Miami's late-morning traffic. On Thursday, leaving after lunch gets you home before dinner.",
+        "d": "Leave by 6:30 am Monday to beat Miami's late-morning traffic. Parking at the clinic is free.",
         "icon": "clock"
       }
     ]
@@ -45,29 +46,29 @@
       {
         "k": "Monday",
         "t": "Drive down, late-morning Visit 1",
-        "d": "Leave Orlando around 6:30 am, park at the clinic by about 10:15 am. Exam, cleaning, X-rays, scans and the design preview you approve. Hotel check-in after.",
+        "d": "Drive down, park at the clinic. Exam, scans and the design preview you approve.",
         "time": "Visit 1 about 11:00 am to 1:00 pm"
       },
       {
         "k": "Tuesday",
         "t": "Preparation and temporaries",
-        "d": "About 0.3 mm of preparation and temporaries in the approved shape. Soft lunch, then a free afternoon.",
+        "d": "Minimal preparation, then temporaries in the shape you approved. Afternoon free.",
         "time": "Visit 2 about 9:00 am to 12:00 pm"
       },
       {
         "k": "Wednesday",
         "t": "Free day while the lab finishes",
-        "d": "Veneers milled, sintered and finished by hand one floor up. You tell us anything you would change about the temporaries. Some Orlando patients drive home for the night and come back Thursday; most stay.",
+        "d": "Your veneers are finished by hand in the lab upstairs. No visit.",
         "time": "No visit."
       },
       {
         "k": "Thursday",
         "t": "Delivery, then the drive home",
-        "d": "Shade checked with the ceramist, veneers bonded, bite adjusted, warranty handed over in writing. Soft lunch, then north on the Turnpike.",
+        "d": "Shade check, bonding, bite adjusted, warranty in writing. Then the drive home.",
         "time": "Visit 3 about 9:00 am to 11:00 am. Leave Miami about 12:30 pm, home in Orlando around 4:30 pm."
       }
     ],
-    "note": "Driving with the numbness from Visit 2? It wears off within a couple of hours and does not affect driving, but a passenger makes the Tuesday easier. Nothing about Thursday's delivery stops you driving afterwards."
+    "note": "The numbness from Visit 2 wears off in a couple of hours and does not affect driving."
   },
   "story": {
     "title": "From Orlando, in her own words",

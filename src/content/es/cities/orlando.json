@@ -4,36 +4,37 @@
   "breadcrumb": "Carillas Orlando",
   "hero": {
     "lead": "De Orlando a la clínica son entre tres horas y media y cuatro por el Turnpike, unas tres horas y media en el tren Brightline o una hora en avión. Baja el lunes, hazte 20 carillas de porcelana hechas en nuestro laboratorio propio y vuelve a casa el jueves con una garantía de 5 años por escrito.",
-    "image": "blog-calle-ocho-morning.jpg",
-    "alt": "La Calle Ocho de Miami temprano en la mañana, la calle donde está la clínica",
+    "image": "city-orlando.jpg",
+    "alt": "El Turnpike de Florida rumbo al sur al amanecer, desde el asiento del copiloto",
     "caption": "Orlando → Westchester, Miami · unas 3 h 45 min en carro · estacionamiento gratis en la clínica"
   },
   "intro": [
-    "Los pacientes de Orlando pueden manejar, tomar el tren o volar. La clínica está en 8396 SW 8th St en Westchester, junto al Turnpike y al Dolphin Expressway, a entre tres horas y media y cuatro en carro. Brightline llega a MiamiCentral en unas tres horas y media, con un rideshare de 20 minutos desde ahí, y el vuelo MCO–MIA dura alrededor de una hora.",
-    "Como el viaje es corto, algunos pacientes preguntan si pueden dormir en casa entre visitas. Pueden, pero la mayoría se queda: las Visitas 1 y 2 caen en días consecutivos y el laboratorio necesita el miércoles, así que una o dos noches con la tarifa de aliados resultan mejor que cuatro viajes de ida y vuelta. El tratamiento es el mismo de cualquier forma: [carillas de porcelana](/porcelain-veneers-miami) a {veneerPrice} por unidad, o {price} por el [Diseño de sonrisa](/smile-design-miami) de 20 carillas, hechas en el [laboratorio un piso arriba de tu doctor](/custom-lab). Hoteles y qué empacar están en la [página para pacientes de otros estados](/out-of-state-patients)."
+    "Los pacientes de Orlando manejan, toman Brightline o vuelan; la clínica está junto al Turnpike en Westchester, a entre tres horas y media y cuatro en carro. La mayoría se queda la semana en vez de ir y venir, porque las Visitas 1 y 2 caen en días consecutivos. El tratamiento son [carillas de porcelana](/porcelain-veneers-miami) a {veneerPrice} por unidad, o {price} por el [Diseño de sonrisa](/smile-design-miami) de 20 carillas, hechas en el [laboratorio un piso arriba de tu doctor](/custom-lab). Hoteles, aeropuerto y qué empacar están en la [página para pacientes de otros estados](/out-of-state-patients)."
   ],
   "gettingHere": {
     "title": "Cómo llegar de Orlando a la clínica",
     "aside": "Orientación general de la clínica. Confirma los tiempos con tu app de mapas y con la empresa de transporte ese día; no vendemos viajes.",
+    "image": "blog-calle-ocho-morning.jpg",
+    "alt": "La Calle Ocho temprano en la mañana, la calle donde está la clínica",
     "items": [
       {
         "t": "En carro",
-        "d": "Unas 235 millas: el Turnpike de Florida hacia el sur hasta el Dolphin Expressway (SR 836), y luego al oeste hasta SW 87th Avenue y SW 8th St. Entre tres horas y media y cuatro fuera de hora pico. Estacionamiento gratis en la clínica.",
+        "d": "Unas 235 millas por el Turnpike hasta el Dolphin Expressway, de tres horas y media a cuatro.",
         "icon": "car"
       },
       {
         "t": "Brightline",
-        "d": "Del Aeropuerto Internacional de Orlando a MiamiCentral en unas tres horas y media, sin manejar. Desde la estación la clínica está a 20 minutos en rideshare hacia el oeste por la Calle Ocho. Revisa el horario para las salidas del lunes por la mañana y del jueves por la tarde.",
+        "d": "De Orlando a MiamiCentral en unas tres horas y media, y luego un rideshare de 20 minutos.",
         "icon": "bus"
       },
       {
         "t": "En avión",
-        "d": "De MCO a MIA es alrededor de una hora en el aire; American lo vuela directo. Con el tiempo de aeropuerto en ambos extremos rara vez es más rápido que el carro, pero es una opción si prefieres no manejar.",
+        "d": "De MCO a MIA es cerca de una hora de vuelo, rara vez más rápido que el carro de puerta a puerta.",
         "icon": "plane"
       },
       {
         "t": "Cuándo salir",
-        "d": "Sal de Orlando antes de las 6:30 am del lunes y llegas a Westchester antes del tráfico de media mañana de Miami. El jueves, saliendo después del almuerzo llegas a casa antes de la cena.",
+        "d": "Sal antes de las 6:30 am el lunes para evitar el tráfico de media mañana. El estacionamiento en la clínica es gratis.",
         "icon": "clock"
       }
     ]
@@ -45,29 +46,29 @@
       {
         "k": "Lunes",
         "t": "Bajas en carro, Visita 1 a media mañana",
-        "d": "Sal de Orlando hacia las 6:30 am y estaciona en la clínica hacia las 10:15 am. Examen, limpieza, radiografías, escaneos y la vista previa del diseño que apruebas. Check-in en el hotel después.",
+        "d": "Manejas, estacionas en la clínica. Examen, escaneos y la vista previa del diseño que apruebas.",
         "time": "Visita 1 de unas 11:00 am a 1:00 pm"
       },
       {
         "k": "Martes",
         "t": "Preparación y provisionales",
-        "d": "Unos 0.3 mm de preparación y provisionales con la forma aprobada. Almuerzo blando y la tarde libre.",
+        "d": "Preparación mínima y provisionales con la forma que aprobaste. Tarde libre.",
         "time": "Visita 2 de unas 9:00 am a 12:00 pm"
       },
       {
         "k": "Miércoles",
         "t": "Día libre mientras el laboratorio termina",
-        "d": "Carillas fresadas, sinterizadas y terminadas a mano un piso más arriba. Nos cuentas cualquier cosa que cambiarías de los provisionales. Algunos pacientes de Orlando van a dormir a casa y vuelven el jueves; la mayoría se queda.",
+        "d": "Tus carillas se terminan a mano en el laboratorio de arriba. Sin visita.",
         "time": "Sin visita."
       },
       {
         "k": "Jueves",
         "t": "Entrega y luego el regreso en carro",
-        "d": "Tono revisado con el ceramista, carillas cementadas, mordida ajustada y garantía entregada por escrito. Almuerzo blando y luego al norte por el Turnpike.",
+        "d": "Control de color, cementación, ajuste de mordida, garantía por escrito. Luego el viaje a casa.",
         "time": "Visita 3 de unas 9:00 am a 11:00 am. Sales de Miami hacia las 12:30 pm, en casa en Orlando hacia las 4:30 pm."
       }
     ],
-    "note": "¿Manejar con el adormecimiento de la Visita 2? Se pasa en un par de horas y no afecta la conducción, pero un acompañante hace el martes más fácil. Nada de la entrega del jueves te impide manejar después."
+    "note": "El adormecimiento de la Visita 2 se pasa en un par de horas y no afecta la conducción."
   },
   "story": {
     "title": "Desde Orlando, en sus propias palabras",

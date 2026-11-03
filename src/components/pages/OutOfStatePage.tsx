@@ -197,11 +197,22 @@ export default function OutOfStatePage({ locale = "en" }: { locale?: Locale }) {
             <li key={c.href}>
               <Link
                 href={localizeHref(c.href, locale)}
-                className="glass-card flex h-full flex-col gap-2 rounded-2xl p-5 text-ink no-underline transition-colors hover:border-gold lg:rounded-[18px] lg:p-6"
+                className="glass-card group flex h-full flex-col gap-2 overflow-hidden rounded-2xl p-0 text-ink no-underline transition-colors hover:border-gold lg:rounded-[18px]"
               >
-                <span className="font-serif text-[24px] leading-[1.15] text-teal lg:text-[26px]">{c.name}</span>
-                <span className="text-[15px] leading-[1.5] text-body">{c.d}</span>
-                <span className="mt-auto pt-2 text-[14px] font-semibold text-gold-text">{t.learnMore}</span>
+                {/* The city's own hero photo: leaving from there, the same image that opens its page. */}
+                <div className="overflow-hidden">
+                  <Img
+                    src={c.image}
+                    alt=""
+                    sizes="(min-width: 1024px) 400px, (min-width: 640px) 50vw, calc(100vw - 40px)"
+                    className="block aspect-[3/2] h-auto w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                  />
+                </div>
+                <div className="flex flex-1 flex-col gap-2 p-5 lg:p-6">
+                  <span className="font-serif text-[24px] leading-[1.15] text-teal lg:text-[26px]">{c.name}</span>
+                  <span className="text-[15px] leading-[1.5] text-body">{c.d}</span>
+                  <span className="mt-auto pt-2 text-[14px] font-semibold text-gold-text">{t.learnMore}</span>
+                </div>
               </Link>
             </li>
           ))}

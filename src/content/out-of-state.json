@@ -1,8 +1,7 @@
 {
   "todo": "TODO(janse): confirm how patients access the Hilton and Marriott partner rate (code, link or booking through the coordinator) and the names of the three partner hotels; the copy says the list is sent with the estimate and the rate is 20% off, per the clinic.",
   "intro": [
-    "Many of our veneer patients do not live in Florida. They send photos from Atlanta, Houston, Dallas or New York, get a written estimate, and fly in for one Monday-to-Thursday week. The reason it fits in a week is simple: our [lab is in the building](/custom-lab), so the veneers are milled, finished and adjusted between visits instead of being shipped to another city and back.",
-    "This page is the whole trip, in order: what happens from home, the three visits, the partner hotels, how to get from the airport, what to pack and who can come with you. The same schedule applies to [porcelain veneers](/porcelain-veneers-miami) on a few teeth and to the 20-veneer [Smile Design](/smile-design-miami). Full mouth restoration takes two weeks and All-on-X is planned separately; your coordinator tells you which applies before you book anything."
+    "Many of our veneer patients do not live in Florida. They send photos, get a written estimate, and fly in for one Monday-to-Thursday week. It fits because our [lab is in the building](/custom-lab), so the veneers are made between visits instead of shipped. The same schedule applies to [porcelain veneers](/porcelain-veneers-miami) on a few teeth and to the 20-veneer [Smile Design](/smile-design-miami); full mouth restoration takes two weeks and All-on-X is planned separately."
   ],
   "visits": [
     {
@@ -40,32 +39,32 @@
     "items": [
       {
         "t": "1 · Send photos",
-        "d": "Three photos of your smile from your phone, through the [free photo evaluation](/free-photo-evaluation). No visit, no cost.",
+        "d": "Three photos from your phone, through the [free photo evaluation](/free-photo-evaluation). No visit, no cost.",
         "icon": "photo"
       },
       {
         "t": "2 · A doctor replies",
-        "d": "Within {replyHours} hours during office hours, with the treatment plan: which teeth, veneer or crown per tooth, and anything that needs treating first.",
+        "d": "Within {replyHours} hours in office hours, with which teeth and veneer or crown per tooth.",
         "icon": "estimate"
       },
       {
         "t": "3 · Written estimate",
-        "d": "The total, in writing, from the [published price list](/veneers-cost-miami). The number you see is the number you pay unless the exam at Visit 1 finds something new.",
+        "d": "The total, in writing, from the [published price list](/veneers-cost-miami). It only changes if the exam finds something new.",
         "icon": "estimate"
       },
       {
         "t": "4 · Payment plan",
-        "d": "Pre-qualify with one of six [financing partners](/financing) with a soft credit check, or pay in full. Your coordinator helps with the application.",
+        "d": "Pre-qualify with one of six [financing partners](/financing) with a soft credit check, or pay in full.",
         "icon": "pay"
       },
       {
         "t": "5 · Pick your Monday",
-        "d": "A ${depositUsd} deposit, applied to your treatment, holds the three visits. We send the hotel list and the pickup details the same day.",
+        "d": "A ${depositUsd} deposit, applied to your treatment, holds the three visits.",
         "icon": "calendar"
       },
       {
         "t": "6 · Book flights and hotel",
-        "d": "Arrive Sunday evening or early Monday; fly home Thursday evening. You book directly, with the partner rate for Hilton and Marriott.",
+        "d": "Arrive Sunday evening or early Monday; home Thursday evening. You book directly, with the Hilton and Marriott partner rate.",
         "icon": "plane"
       }
     ]
@@ -73,17 +72,17 @@
   "perks": [
     {
       "t": "Partner hotel rates",
-      "d": "Three vetted hotels within 10 minutes, with Hilton and Marriott partner rates at 20% off for our patients. You book directly; we send the list with your estimate.",
+      "d": "Three vetted hotels within 10 minutes, Hilton and Marriott at 20% off. You book directly from the list we send.",
       "icon": "bed"
     },
     {
       "t": "Getting from the airport",
-      "d": "MIA is 15 minutes away. We send you the rideshare pickup spot at arrivals and the clinic address for Visit 1; you book the ride.",
+      "d": "MIA is 15 minutes away. We text you the rideshare pickup spot before you land.",
       "icon": "plane"
     },
     {
       "t": "Rides to every visit",
-      "d": "Uber and Lyft pick up at our front door. We send the pickup details for each visit; rides are booked and paid by you.",
+      "d": "Uber and Lyft pick up at our front door; we send the details for each visit.",
       "icon": "car"
     },
     {
@@ -93,7 +92,7 @@
     },
     {
       "t": "Aftercare from home",
-      "d": "Video check-in two weeks after delivery. Your warranty is honored by any dentist for small adjustments.",
+      "d": "Video check-in two weeks after delivery; small adjustments are covered by the warranty anywhere.",
       "icon": "video"
     },
     {
@@ -105,25 +104,22 @@
   "travel": {
     "title": "Airport, rides and hotel, plainly",
     "body": [
-      "We are a dental clinic, not a travel agency, so this is what we do and do not do. We send you a short list of three hotels within ten minutes of the clinic, two of them Hilton and Marriott properties where our patients get a partner rate of 20% off. You book the room yourself, directly with the hotel. We do not arrange hotels, airport pickups or rides, and nothing travel-related is included in the price of treatment.",
-      "The clinic is at 8396 SW 8th St, on the second floor, about 15 minutes from Miami International Airport by car and 45 minutes to an hour from Fort Lauderdale. Uber and Lyft pick up at the airport and at our front door; a car is not needed for the week. If you drive in from Orlando or Tampa, there is parking at the building. Your coordinator sends the pickup spot at arrivals and the clinic address before you land, and the pickup details for each visit the evening before."
+      "We are a dental clinic, not a travel agency. We send a short list of three hotels within ten minutes, two with a 20% partner rate, and you book directly; nothing travel-related is included in the price of treatment. The clinic is at 8396 SW 8th St, 15 minutes from MIA and about an hour from Fort Lauderdale, with Uber and Lyft at the door and parking at the building if you drive."
     ]
   },
   "pack": {
     "title": "What to pack",
-    "intro": "Less than you think. The clinic has everything for the visits; this is what makes the week easier.",
+    "intro": "Less than you think. The clinic has everything for the visits.",
     "items": [
-      "Your written estimate and the ID you booked with. Your doctor already has your photos and the plan.",
-      "A list of medications you take, and your night guard if you already wear one.",
-      "Sunglasses: the Wednesday off is a free day in Miami, and you will be in temporaries, so a soft lunch spot beats a steakhouse.",
-      "Soft foods are easier for the two days in temporaries. Nothing is forbidden, but you will not want to bite into a baguette on Tuesday night.",
-      "A charged phone. Your coordinator reaches you by text, and the pickup details for each visit arrive the evening before.",
-      "If you were asked to whiten first, bring the shade you finished at. The veneers are matched to it in the chair."
+      "Your written estimate and the ID you booked with.",
+      "Your medication list, and your night guard if you wear one.",
+      "Sunglasses for the free Wednesday, and a taste for soft lunches while you are in temporaries.",
+      "If you were asked to whiten first, the shade you finished at; the veneers are matched to it in the chair."
     ]
   },
   "companions": {
     "title": "Who can come with you",
-    "body": "Anyone you like. Partners, parents and friends are welcome in the waiting area and in the private consultation room at Visit 1, where the design is reviewed; Yolanda and Erick from Fort Worth came together, and her words are on the Dallas page. During preparation and bonding a companion waits in the lobby, and both visits are short enough to plan the day around. Children are welcome in the waiting area with an adult. If you come alone, that is normal too: nothing in the week requires an escort. Veneer visits are done under local anesthesia, so you can take a rideshare home after each one."
+    "body": "Anyone you like. Partners, parents and friends are welcome in the waiting area and at the Visit 1 design review; during preparation and bonding they wait in the lobby. Children are welcome with an adult. Coming alone is normal too: visits are under local anesthesia, so you can take a rideshare after each one."
   },
   "cities": {
     "title": "Patients come from",
@@ -132,32 +128,38 @@
       {
         "name": "Atlanta",
         "d": "Under two hours nonstop. Fly in Monday morning, home Thursday evening.",
-        "href": "/veneers-atlanta"
+        "href": "/veneers-atlanta",
+        "image": "city-atlanta.jpg"
       },
       {
         "name": "Houston",
         "d": "About two and a half hours nonstop from Bush or Hobby.",
-        "href": "/veneers-houston"
+        "href": "/veneers-houston",
+        "image": "city-houston.jpg"
       },
       {
         "name": "Dallas–Fort Worth",
         "d": "Just under three hours nonstop from DFW.",
-        "href": "/veneers-dallas"
+        "href": "/veneers-dallas",
+        "image": "city-dallas.jpg"
       },
       {
         "name": "New York",
         "d": "Three hours from JFK, LaGuardia or Newark, with flights every hour.",
-        "href": "/veneers-new-york"
+        "href": "/veneers-new-york",
+        "image": "city-new-york.jpg"
       },
       {
         "name": "Orlando",
         "d": "Three and a half to four hours by car or train, or an hour by air.",
-        "href": "/veneers-orlando"
+        "href": "/veneers-orlando",
+        "image": "city-orlando.jpg"
       },
       {
         "name": "Tampa",
         "d": "Four hours by car across Alligator Alley, or just over an hour by air.",
-        "href": "/veneers-tampa"
+        "href": "/veneers-tampa",
+        "image": "city-tampa.jpg"
       }
     ]
   }

@@ -4,36 +4,37 @@
   "breadcrumb": "Veneers Houston",
   "hero": {
     "lead": "Houston to Miami is about two and a half hours nonstop from Bush Intercontinental or Hobby. One Monday-to-Thursday week, 20 porcelain veneers made in our own lab, and a 5-year warranty in writing for the flight home.",
-    "image": "blog-airplane-window-miami.jpg",
-    "alt": "Miami seen from an airplane window on approach to Miami International Airport",
+    "image": "city-houston.jpg",
+    "alt": "The Houston skyline from a plane window at sunrise",
     "caption": "IAH or HOU → MIA · about 2 h 30 min nonstop · 15 minutes from the airport to the clinic"
   },
   "intro": [
-    "Houston has two airports with nonstop flights to Miami: Bush Intercontinental (IAH) with the most departures, and Hobby (HOU), closer to downtown and the Medical Center. Either way the flight is about two and a half hours, and you land 15 minutes from the clinic. The whole week runs in Spanish or English.",
-    "Many Houston patients arrive with a quote in hand, often for crowns, and want a second opinion on the material and how much tooth is removed. Our answer goes in writing before you book: [porcelain veneers](/porcelain-veneers-miami) at about 0.3 mm of preparation, made in the [lab in our building](/custom-lab), or the 20-veneer [Smile Design](/smile-design-miami) at {price}. Hotels, airport and what to pack are on the [out-of-state patients page](/out-of-state-patients)."
+    "Houston has two airports with nonstop flights to Miami, Bush (IAH) and Hobby (HOU), about two and a half hours either way. Many Houston patients come for a second opinion on a crown quote; ours goes in writing before you book: [porcelain veneers](/porcelain-veneers-miami) at about 0.3 mm of preparation, made in the [lab in our building](/custom-lab), or the 20-veneer [Smile Design](/smile-design-miami) at {price}. Hotels, airport and what to pack are on the [out-of-state patients page](/out-of-state-patients)."
   ],
   "gettingHere": {
     "title": "Getting from Houston to the clinic",
     "aside": "General guidance from the clinic. Check times and carriers with the airline when you book; we do not sell flights.",
+    "image": "blog-airplane-window-miami.jpg",
+    "alt": "Miami from the plane window on approach to Miami International Airport",
     "items": [
       {
         "t": "Flight time",
-        "d": "About 2 hours 30 to 2 hours 45 minutes nonstop. There is a one-hour time change: Miami is on Eastern time, an hour ahead of Houston, so a 7 am departure lands around 11:30 am local.",
+        "d": "About 2 h 30 min nonstop. Miami is an hour ahead, so a 7 am flight lands around 11:30 am.",
         "icon": "plane"
       },
       {
         "t": "Who flies it",
-        "d": "United and American fly IAH–MIA nonstop through the day. Southwest flies Hobby (HOU) to MIA. Fort Lauderdale (FLL) is an alternative with more low-cost carriers, about 45 minutes to an hour from the clinic.",
+        "d": "United and American from IAH, Southwest from Hobby, nonstop through the day.",
         "icon": "clock"
       },
       {
         "t": "Airport to clinic",
-        "d": "MIA is 15 minutes away by car. Uber and Lyft pick up at arrivals; we text you the spot and the clinic address before you land. The partner hotels are within 10 minutes of the clinic, so no rental car is needed.",
+        "d": "15 minutes by Uber or Lyft. We text you the pickup spot before you land.",
         "icon": "car"
       },
       {
         "t": "Driving instead",
-        "d": "Houston to Miami is about 1,200 miles along I-10 and I-75, close to nineteen hours of driving. It is not a realistic option for a four-day week; fly.",
+        "d": "About 1,200 miles and nineteen hours. Not a fit for a four-day week; fly.",
         "icon": "bus"
       }
     ]
@@ -45,29 +46,29 @@
       {
         "k": "Sunday or Monday",
         "t": "Fly in, Visit 1 Monday",
-        "d": "Leave IAH around 7:00 am Monday, land MIA about 11:30 am Eastern, rideshare to the clinic for an early-afternoon Visit 1: exam, cleaning, X-rays, scans and the design preview. Or fly Sunday and come in rested.",
+        "d": "Land, rideshare to the clinic. Exam, scans and the design preview you approve.",
         "time": "Visit 1 about 1:00 pm to 3:00 pm Monday"
       },
       {
         "k": "Tuesday",
         "t": "Preparation and temporaries",
-        "d": "About 0.3 mm of preparation and temporaries in the shape you approved. Soft lunch nearby, then the afternoon is free.",
+        "d": "Minimal preparation, then temporaries in the shape you approved. Afternoon free.",
         "time": "Visit 2 about 9:00 am to 12:00 pm"
       },
       {
         "k": "Wednesday",
         "t": "Free day while the lab finishes",
-        "d": "Veneers milled, sintered and finished by hand upstairs. You tell us anything you would change about the temporaries before Thursday.",
+        "d": "Your veneers are finished by hand in the lab upstairs. No visit.",
         "time": "No visit."
       },
       {
         "k": "Thursday",
         "t": "Delivery, then the evening flight home",
-        "d": "Shade checked with the ceramist, veneers bonded, bite adjusted, warranty in writing. Lunch, rideshare to MIA.",
+        "d": "Shade check, bonding, bite adjusted, warranty in writing. Then the airport.",
         "time": "Visit 3 about 9:00 am to 11:00 am. Fly MIA–IAH from about 4:00 pm Eastern, land Houston around 6:30 pm Central."
       }
     ],
-    "note": "With the time change, an early Monday flight still lands in time for an afternoon Visit 1. If you would rather not fly and sit in the chair on the same day, come Sunday; the Sunday hotel night is the only difference."
+    "note": "Rather not fly and sit in the chair the same day? Come Sunday; the extra hotel night is the only difference."
   },
   "story": {
     "title": "From Texas, in his own words",

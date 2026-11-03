@@ -4,36 +4,37 @@
   "breadcrumb": "Carillas Atlanta",
   "hero": {
     "lead": "De Atlanta a Miami son menos de dos horas en vuelo directo, con vuelos desde temprano en la mañana hasta tarde en la noche. Llega el lunes, recibe 20 carillas de porcelana hechas en nuestro laboratorio propio y vuela a casa el jueves con una garantía de 5 años por escrito.",
-    "image": "blog-airplane-window-miami.jpg",
-    "alt": "Miami vista desde la ventanilla de un avión en aproximación al Aeropuerto Internacional de Miami",
+    "image": "city-atlanta.jpg",
+    "alt": "El skyline de Atlanta desde la ventanilla del avión justo después del despegue, al amanecer",
     "caption": "ATL → MIA · aprox. 1 h 55 min en vuelo directo · 15 minutos del aeropuerto a la clínica"
   },
   "intro": [
-    "Atlanta es una de las ciudades que más vemos, y el vuelo es la razón: Hartsfield-Jackson tiene vuelos directos a MIA todo el día, el vuelo dura cerca de 1 hora 55 minutos y aterrizas a 15 minutos de nuestra puerta en Westchester. La semana de lunes a jueves cabe sin tomarte una semana completa de trabajo.",
-    "El tratamiento es el mismo para todos los pacientes: [carillas de porcelana](/porcelain-veneers-miami) en los dientes que muestras, o el [Diseño de sonrisa](/smile-design-miami) de 20 carillas a {price}, hechas en el [laboratorio un piso arriba de tu doctor](/custom-lab). La planificación se hace desde casa, así que cuando reservas el vuelo ya sabes qué dientes, cuánto cuesta y qué lunes. Hoteles, aeropuerto y qué empacar están en la [página para pacientes de otros estados](/out-of-state-patients)."
+    "Atlanta es una de las ciudades que más vemos: vuelos directos a MIA todo el día, cerca de 1 hora 55 minutos de vuelo, y aterrizas a 15 minutos de nuestra puerta. El tratamiento son [carillas de porcelana](/porcelain-veneers-miami) en los dientes que muestras, o el [Diseño de sonrisa](/smile-design-miami) de 20 carillas a {price}, hechas en el [laboratorio un piso arriba de tu doctor](/custom-lab). Hoteles, aeropuerto y qué empacar están en la [página para pacientes de otros estados](/out-of-state-patients)."
   ],
   "gettingHere": {
     "title": "Cómo llegar de Atlanta a la clínica",
     "aside": "Orientación general de la clínica. Confirma horarios y aerolíneas con la aerolínea al reservar; no vendemos vuelos.",
+    "image": "blog-airplane-window-miami.jpg",
+    "alt": "Miami desde la ventanilla del avión al aproximarse al Aeropuerto Internacional de Miami",
     "items": [
       {
         "t": "Tiempo de vuelo",
-        "d": "Aprox. 1 hora 55 minutos en vuelo directo de ATL a MIA. Con el abordaje y el rodaje en pista, calcula unas dos horas y media de puerta a puerta.",
+        "d": "Cerca de 1 h 55 min en vuelo directo de ATL a MIA. Calcula dos horas y media de puerta a puerta.",
         "icon": "plane"
       },
       {
         "t": "Qué aerolíneas lo vuelan",
-        "d": "Delta, American y Southwest vuelan ATL–MIA sin escalas, casi todos los días desde temprano en la mañana hasta tarde en la noche. Fort Lauderdale (FLL) es una alternativa con más aerolíneas de bajo costo, a entre 45 minutos y una hora de la clínica.",
+        "d": "Delta, American y Southwest, directo desde temprano hasta tarde en la noche.",
         "icon": "clock"
       },
       {
         "t": "Del aeropuerto a la clínica",
-        "d": "MIA está a 15 minutos en carro. Toma un Uber o Lyft en el punto de recogida de rideshare en llegadas; te enviamos por mensaje de texto el punto y la dirección de la clínica antes de que aterrices. No necesitas alquilar carro durante la semana.",
+        "d": "15 minutos en Uber o Lyft. Te escribimos el punto de recogida antes de aterrizar.",
         "icon": "car"
       },
       {
         "t": "Si prefieres manejar",
-        "d": "Unas 660 millas por la I-75, entre nueve horas y media y diez. Es posible, pero la mayoría de los pacientes de Atlanta vuela, aterriza el lunes por la mañana y deja el carro en casa. Si vienes manejando, el estacionamiento en la clínica es gratis.",
+        "d": "Unas 660 millas por la I-75, de nueve a diez horas. La mayoría de los pacientes de Atlanta vuela.",
         "icon": "bus"
       }
     ]
@@ -45,29 +46,29 @@
       {
         "k": "Lunes",
         "t": "Vuelo temprano, Visita 1 al final de la mañana",
-        "d": "Sal de ATL alrededor de las 7:00 am, aterriza en MIA cerca de las 9:00 am y toma un rideshare a la clínica. Examen, limpieza, radiografías, escaneos y la vista previa del diseño que apruebas.",
+        "d": "Aterrizas, rideshare a la clínica. Examen, escaneos y la vista previa del diseño que apruebas.",
         "time": "Visita 1 aprox. de 11:00 am a 1:00 pm. Después, check-in en el hotel."
       },
       {
         "k": "Martes",
         "t": "Preparación y provisionales",
-        "d": "Unos 0.3 mm de preparación y provisionales con la forma que aprobaste. Almuerzo blando, y la tarde es tuya.",
+        "d": "Preparación mínima y provisionales con la forma que aprobaste. Tarde libre.",
         "time": "Visita 2 aprox. de 9:00 am a 12:00 pm"
       },
       {
         "k": "Miércoles",
         "t": "Día libre mientras el laboratorio termina",
-        "d": "Tus carillas se fresan, se sinterizan y se terminan a mano un piso arriba. Vives con los provisionales y nos dices cualquier cosa que cambiarías.",
+        "d": "Tus carillas se terminan a mano en el laboratorio de arriba. Sin visita.",
         "time": "Sin visita. Playa, Wynwood o descanso."
       },
       {
         "k": "Jueves",
         "t": "Entrega y luego el vuelo de la tarde a casa",
-        "d": "Tono revisado contigo y con el ceramista, carillas cementadas, mordida ajustada y garantía entregada por escrito. Almuerzo y rideshare a MIA.",
+        "d": "Control de color, cementación, ajuste de mordida, garantía por escrito. Luego al aeropuerto.",
         "time": "Visita 3 aprox. de 9:00 am a 11:00 am. Vuela MIA–ATL desde las 4:00 pm aproximadamente y llegas a casa a las 7:00 pm."
       }
     ],
-    "note": "Si prefieres no apurarte el lunes, llega el domingo por la noche; la única diferencia es la noche de hotel del domingo. En la mayoría de los casos, la Visita 1 también puede pasar al martes sin cambiar la entrega del jueves."
+    "note": "¿Prefieres no apurarte el lunes? Llega el domingo por la noche; la noche extra de hotel es la única diferencia."
   },
   "story": {
     "title": "Desde Atlanta, en sus propias palabras",

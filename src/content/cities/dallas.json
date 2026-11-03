@@ -4,36 +4,37 @@
   "breadcrumb": "Veneers Dallas",
   "hero": {
     "lead": "Dallas–Fort Worth to Miami is just under three hours nonstop from DFW. Fly in Monday, get 20 porcelain veneers made in our own lab, and fly home Thursday evening with a 5-year warranty in writing.",
-    "image": "blog-airplane-window-miami.jpg",
-    "alt": "Miami seen from an airplane window on approach to Miami International Airport",
+    "image": "city-dallas.jpg",
+    "alt": "The Dallas skyline from a plane window at sunrise",
     "caption": "DFW → MIA · about 2 h 50 min nonstop · 15 minutes from the airport to the clinic"
   },
   "intro": [
-    "DFW and MIA are both American Airlines hubs, so nonstop flights run all day and take just under three hours. Miami is an hour ahead of Dallas, and a morning departure still lands in time for an afternoon visit. You land 15 minutes from the clinic, and the partner hotels are within ten minutes of it.",
-    "What Dallas patients usually want settled before they fly is the material and the number of teeth. [Porcelain veneers](/porcelain-veneers-miami) here are multilayer zirconia from the [lab in our building](/custom-lab): {veneerPrice} per veneer on the teeth you show, or the 20-veneer [Smile Design](/smile-design-miami) at {price}. Your written estimate says which before anything is booked. Hotels, airport and what to pack are on the [out-of-state patients page](/out-of-state-patients)."
+    "DFW and MIA are both American Airlines hubs, so nonstop flights run all day and take just under three hours. [Porcelain veneers](/porcelain-veneers-miami) here are multilayer zirconia from the [lab in our building](/custom-lab): {veneerPrice} per veneer, or the 20-veneer [Smile Design](/smile-design-miami) at {price}, settled in writing before you fly. Hotels, airport and what to pack are on the [out-of-state patients page](/out-of-state-patients)."
   ],
   "gettingHere": {
     "title": "Getting from Dallas–Fort Worth to the clinic",
     "aside": "General guidance from the clinic. Check times and carriers with the airline when you book; we do not sell flights.",
+    "image": "blog-airplane-window-miami.jpg",
+    "alt": "Miami from the plane window on approach to Miami International Airport",
     "items": [
       {
         "t": "Flight time",
-        "d": "About 2 hours 45 to 3 hours nonstop from DFW to MIA. Miami is an hour ahead, so an 8 am departure lands around 1 pm Eastern; the return gives the hour back.",
+        "d": "Just under three hours nonstop, DFW to MIA. Miami is an hour ahead.",
         "icon": "plane"
       },
       {
         "t": "Who flies it",
-        "d": "American flies DFW–MIA nonstop many times a day, hub to hub. Spirit and Frontier also fly it on some days. Fort Lauderdale (FLL) adds more low-cost options, about 45 minutes to an hour from the clinic.",
+        "d": "American flies it hub to hub many times a day; Spirit and Frontier on some days.",
         "icon": "clock"
       },
       {
         "t": "Airport to clinic",
-        "d": "MIA is 15 minutes from the clinic by car. Uber and Lyft pick up at arrivals; we text you the spot and the address before you land, and the pickup details for each visit the evening before.",
+        "d": "15 minutes by Uber or Lyft. We text you the pickup spot before you land.",
         "icon": "car"
       },
       {
         "t": "Driving instead",
-        "d": "Dallas to Miami is about 1,300 miles via I-20, I-10 and I-75, around twenty hours of driving. Not a fit for a four-day week; fly.",
+        "d": "About 1,300 miles and twenty hours. Not a fit for a four-day week; fly.",
         "icon": "bus"
       }
     ]
@@ -45,29 +46,29 @@
       {
         "k": "Monday",
         "t": "Morning flight, afternoon Visit 1",
-        "d": "Leave DFW around 8:00 am, land MIA about 1:00 pm Eastern, rideshare to the clinic. Exam, cleaning, X-rays, scans and the design preview you approve.",
+        "d": "Land, rideshare to the clinic. Exam, scans and the design preview you approve.",
         "time": "Visit 1 about 2:00 pm to 4:00 pm. Hotel check-in after."
       },
       {
         "k": "Tuesday",
         "t": "Preparation and temporaries",
-        "d": "About 0.3 mm of preparation and temporaries in the approved shape. Soft lunch, then a free afternoon.",
+        "d": "Minimal preparation, then temporaries in the shape you approved. Afternoon free.",
         "time": "Visit 2 about 9:00 am to 12:00 pm"
       },
       {
         "k": "Wednesday",
         "t": "Free day while the lab finishes",
-        "d": "Veneers milled, sintered and finished by hand one floor up. You tell us anything you would change about the temporaries.",
+        "d": "Your veneers are finished by hand in the lab upstairs. No visit.",
         "time": "No visit."
       },
       {
         "k": "Thursday",
         "t": "Delivery, then the evening flight home",
-        "d": "Shade checked with the ceramist, veneers bonded, bite adjusted, warranty handed over in writing. Lunch, rideshare to MIA.",
+        "d": "Shade check, bonding, bite adjusted, warranty in writing. Then the airport.",
         "time": "Visit 3 about 9:00 am to 11:00 am. Fly MIA–DFW from about 4:00 pm Eastern, land Dallas around 6:00 pm Central."
       }
     ],
-    "note": "Couples sometimes come together, one for treatment and one for company, or both for treatment on the same schedule. Tell your coordinator and the two sets of visits are booked back to back."
+    "note": "Couples sometimes come together for treatment; tell your coordinator and the visits are booked back to back."
   },
   "story": {
     "title": "From Fort Worth, in their own words",

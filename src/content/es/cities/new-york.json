@@ -4,36 +4,37 @@
   "breadcrumb": "Carillas Nueva York",
   "hero": {
     "lead": "De Nueva York a Miami son unas tres horas de vuelo directo desde JFK, LaGuardia o Newark, con salidas más o menos cada hora. Una semana de lunes a jueves, 20 carillas de porcelana hechas en nuestro laboratorio propio y una garantía de 5 años por escrito para el vuelo de regreso.",
-    "image": "blog-airplane-window-miami.jpg",
-    "alt": "Miami visto desde la ventanilla de un avión en la aproximación al Aeropuerto Internacional de Miami",
+    "image": "city-new-york.jpg",
+    "alt": "El skyline de Manhattan desde la ventanilla del avión en una mañana despejada",
     "caption": "JFK, LGA o EWR → MIA · unas 3 h de vuelo directo · 15 minutos del aeropuerto a la clínica"
   },
   "intro": [
-    "Nueva York–Miami es una de las rutas con más tráfico del país: tres aeropuertos, vuelos directos desde temprano hasta tarde en la noche, unas tres horas de vuelo y sin cambio de horario. Aterrizas a 15 minutos de la clínica, y en invierno la semana viene con un miércoles libre bajo el sol.",
-    "Los neoyorquinos llegan con más cotizaciones que nadie, así que compara lo que incluyen: material, número de dientes, carilla o corona por diente, y la garantía. Las nuestras están en la [lista de precios](/veneers-cost-miami): [carillas de porcelana](/porcelain-veneers-miami) en zirconia multicapa a {veneerPrice} por unidad, o {price} por el [Diseño de sonrisa](/smile-design-miami) de 20 carillas, hechas en el [laboratorio de nuestro edificio](/custom-lab) y entregadas la misma semana. Hoteles, aeropuerto y qué empacar están en la [página para pacientes de otros estados](/out-of-state-patients)."
+    "Nueva York–Miami son unas tres horas en vuelo directo desde tres aeropuertos, sin cambio de horario y con un miércoles libre bajo el sol. Compara las cotizaciones por material, número de dientes y garantía; las nuestras están en la [lista de precios](/veneers-cost-miami): [carillas de porcelana](/porcelain-veneers-miami) a {veneerPrice} por unidad, o {price} por el [Diseño de sonrisa](/smile-design-miami) de 20 carillas, hechas en el [laboratorio de nuestro edificio](/custom-lab). Hoteles, aeropuerto y qué empacar están en la [página para pacientes de otros estados](/out-of-state-patients)."
   ],
   "gettingHere": {
     "title": "Cómo llegar de Nueva York a la clínica",
     "aside": "Orientación general de la clínica. Confirma horarios y aerolíneas con la aerolínea al reservar; no vendemos vuelos.",
+    "image": "blog-airplane-window-miami.jpg",
+    "alt": "Miami desde la ventanilla del avión al aproximarse al Aeropuerto Internacional de Miami",
     "items": [
       {
         "t": "Tiempo de vuelo",
-        "d": "Entre 3 horas y 3 horas 15 minutos de vuelo directo desde cualquiera de los tres aeropuertos, sin cambio de horario. De puerta a puerta de embarque, calcula entre tres horas y media y cuatro.",
+        "d": "Unas tres horas en vuelo directo desde JFK, LaGuardia o Newark, sin cambio de horario.",
         "icon": "plane"
       },
       {
         "t": "Quién lo vuela",
-        "d": "American, Delta y JetBlue vuelan JFK–MIA; American y Delta vuelan LaGuardia–MIA; United vuela Newark–MIA. Entre todas hay un vuelo directo casi a cualquier hora del día. Fort Lauderdale (FLL) tiene aún más vuelos y aerolíneas de bajo costo, a entre 45 minutos y una hora de la clínica.",
+        "d": "Entre American, Delta, JetBlue y United hay un vuelo directo casi cada hora.",
         "icon": "clock"
       },
       {
         "t": "Del aeropuerto a la clínica",
-        "d": "MIA está a 15 minutos de la clínica en carro. Uber y Lyft recogen en llegadas; te enviamos por mensaje el punto de recogida y la dirección antes de que aterrices. Los hoteles aliados están a menos de 10 minutos, así que no necesitas carro durante la semana.",
+        "d": "15 minutos en Uber o Lyft. Te escribimos el punto de recogida antes de aterrizar.",
         "icon": "car"
       },
       {
         "t": "En tren o en carro",
-        "d": "El Silver Service de Amtrak va de Nueva York a Miami en unas 28 a 30 horas, y manejar por la I-95 son unas 1,280 millas, o 19 a 20 horas. Ambas opciones son posibles con días extra a cada lado; para una semana de cuatro días, vuela.",
+        "d": "Amtrak tarda unas 28 horas y el carro unas 20. Ambos cuestan un día de trabajo por trayecto; vuela.",
         "icon": "bus"
       }
     ]
@@ -45,29 +46,29 @@
       {
         "k": "Lunes",
         "t": "Vuelo temprano, Visita 1 a media mañana",
-        "d": "Sal de JFK, LGA o EWR hacia las 7:00 am, aterriza en MIA hacia las 10:15 am y toma un rideshare a la clínica. Examen, limpieza, radiografías, escaneos y la vista previa del diseño que apruebas.",
+        "d": "Aterrizas, rideshare a la clínica. Examen, escaneos y la vista previa del diseño que apruebas.",
         "time": "Visita 1 de unas 11:30 am a 1:30 pm. Check-in en el hotel después."
       },
       {
         "k": "Martes",
         "t": "Preparación y provisionales",
-        "d": "Unos 0.3 mm de preparación y provisionales con la forma aprobada. Almuerzo blando y la tarde libre.",
+        "d": "Preparación mínima y provisionales con la forma que aprobaste. Tarde libre.",
         "time": "Visita 2 de unas 9:00 am a 12:00 pm"
       },
       {
         "k": "Miércoles",
         "t": "Día libre mientras el laboratorio termina",
-        "d": "Carillas fresadas, sinterizadas y terminadas a mano un piso más arriba. Nos cuentas cualquier cosa que cambiarías de los provisionales.",
+        "d": "Tus carillas se terminan a mano en el laboratorio de arriba. Sin visita.",
         "time": "Sin visita. Playa, Wynwood o descanso."
       },
       {
         "k": "Jueves",
         "t": "Entrega y luego el vuelo de regreso por la tarde",
-        "d": "Tono revisado con el ceramista, carillas cementadas, mordida ajustada y garantía entregada por escrito. Almuerzo y rideshare a MIA.",
+        "d": "Control de color, cementación, ajuste de mordida, garantía por escrito. Luego al aeropuerto.",
         "time": "Visita 3 de unas 9:00 am a 11:00 am. Vuelo MIA–NYC desde las 4:00 pm aproximadamente, aterrizas hacia las 7:15 pm."
       }
     ],
-    "note": "Muchos pacientes de Nueva York vienen el domingo por la tarde y tratan el lunes como un primer día normal en lugar de una alarma a las 5 am. Si viajas en invierno: revisa el pronóstico en casa el jueves y, si viene una tormenta, la Visita 3 puede adelantarse ese mismo día."
+    "note": "Muchos pacientes de Nueva York llegan el domingo por la tarde y se ahorran la alarma de las 5 am."
   },
   "story": {
     "title": "Un viaje parecido, desde Pensilvania",

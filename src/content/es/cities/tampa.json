@@ -5,36 +5,37 @@
   "todo": "TODO(janse): there is no consented patient video story from Tampa or St. Petersburg in stories.json. The story section is hidden on this page until one is added; do not reuse another city's clip.",
   "hero": {
     "lead": "De Tampa a la clínica son unas cuatro horas en carro por Alligator Alley, o poco más de una hora en avión. Baja el lunes, hazte 20 carillas de porcelana hechas en nuestro laboratorio propio y vuelve a casa el jueves con una garantía de 5 años por escrito.",
-    "image": "out-of-state-poster.jpg",
-    "alt": "Miami a la hora dorada",
+    "image": "city-tampa.jpg",
+    "alt": "Alligator Alley a través de los Everglades al amanecer, desde el asiento del copiloto",
     "caption": "Tampa → Westchester, Miami · unas 4 h en carro por la I-75 · estacionamiento gratis en la clínica"
   },
   "intro": [
-    "Desde Tampa Bay el viaje en carro es directo: la I-75 al sur pasando Naples, al este por Alligator Alley y la salida al Dolphin Expressway hacia Westchester. Unas 280 millas y cuatro horas fuera de hora pico, con estacionamiento gratis en la clínica. Si prefieres volar, de TPA a MIA es poco más de una hora, y la clínica está a 15 minutos del aeropuerto.",
-    "El tratamiento es el mismo que para cualquier paciente: [carillas de porcelana](/porcelain-veneers-miami) en zirconia multicapa, hechas en el [laboratorio un piso arriba de tu doctor](/custom-lab), a {veneerPrice} por unidad o {price} por el [Diseño de sonrisa](/smile-design-miami) de 20 carillas, entregadas en una semana de lunes a jueves. La planificación se hace desde casa: fotos, el plan de un doctor en menos de {replyHours} horas, el presupuesto por escrito y luego una fecha. Hoteles y qué empacar están en la [página para pacientes de otros estados](/out-of-state-patients)."
+    "Desde Tampa Bay el camino es directo: la I-75 al sur, al este por Alligator Alley, unas cuatro horas con estacionamiento gratis en la clínica, o poco más de una hora en avión. El tratamiento son [carillas de porcelana](/porcelain-veneers-miami) en zirconia multicapa del [laboratorio un piso arriba de tu doctor](/custom-lab), a {veneerPrice} por unidad o {price} por el [Diseño de sonrisa](/smile-design-miami) de 20 carillas. Hoteles, aeropuerto y qué empacar están en la [página para pacientes de otros estados](/out-of-state-patients)."
   ],
   "gettingHere": {
     "title": "Cómo llegar de Tampa a la clínica",
     "aside": "Orientación general de la clínica. Confirma los tiempos con tu app de mapas y con la empresa de transporte ese día; no vendemos viajes.",
+    "image": "blog-calle-ocho-morning.jpg",
+    "alt": "La Calle Ocho temprano en la mañana, la calle donde está la clínica",
     "items": [
       {
         "t": "En carro",
-        "d": "Unas 280 millas: la I-75 al sur pasando Fort Myers y Naples, luego al este por Alligator Alley hasta la I-595 y al sur por el Turnpike o la US 27 hasta el Dolphin Expressway, con salida en SW 87th Avenue hacia SW 8th St. Unas cuatro horas. Estacionamiento gratis en la clínica.",
+        "d": "Unas 280 millas: la I-75 al sur y luego al este por Alligator Alley. Unas cuatro horas.",
         "icon": "car"
       },
       {
         "t": "En avión",
-        "d": "De TPA a MIA es alrededor de 1 hora 10 minutos en el aire; American y Southwest lo vuelan directo. Con el tiempo de aeropuerto en ambos extremos se acerca al tiempo en carro, pero es una opción si prefieres no estar en la I-75.",
+        "d": "De TPA a MIA es cerca de 1 h 10 min de vuelo, con American o Southwest.",
         "icon": "plane"
       },
       {
         "t": "Del aeropuerto a la clínica",
-        "d": "Si vuelas, MIA está a 15 minutos de la clínica en carro. Uber y Lyft recogen en llegadas; te enviamos por mensaje el punto de recogida y la dirección antes de que aterrices. Los hoteles aliados están a menos de 10 minutos de la clínica.",
+        "d": "Si vuelas, MIA está a 15 minutos en Uber o Lyft. Te escribimos el punto de recogida.",
         "icon": "clock"
       },
       {
         "t": "Cuándo salir",
-        "d": "Sal de Tampa antes de las 6:00 am del lunes para llegar a Westchester hacia las 10:00 am, antes del tráfico de media mañana de Miami. El jueves, saliendo después del almuerzo llegas a casa antes de la cena. Alligator Alley tiene pocas salidas, así que llena el tanque en Naples.",
+        "d": "Sal antes de las 6:00 am el lunes para evitar el tráfico de media mañana. El estacionamiento en la clínica es gratis.",
         "icon": "bus"
       }
     ]
@@ -46,29 +47,29 @@
       {
         "k": "Lunes",
         "t": "Bajas en carro, Visita 1 a media mañana",
-        "d": "Sal de Tampa hacia las 6:00 am y estaciona en la clínica hacia las 10:00 am. Examen, limpieza, radiografías, escaneos y la vista previa del diseño que apruebas. Check-in en el hotel después.",
+        "d": "Manejas, estacionas en la clínica. Examen, escaneos y la vista previa del diseño que apruebas.",
         "time": "Visita 1 de unas 11:00 am a 1:00 pm"
       },
       {
         "k": "Martes",
         "t": "Preparación y provisionales",
-        "d": "Unos 0.3 mm de preparación y provisionales con la forma aprobada. Almuerzo blando y la tarde libre.",
+        "d": "Preparación mínima y provisionales con la forma que aprobaste. Tarde libre.",
         "time": "Visita 2 de unas 9:00 am a 12:00 pm"
       },
       {
         "k": "Miércoles",
         "t": "Día libre mientras el laboratorio termina",
-        "d": "Carillas fresadas, sinterizadas y terminadas a mano un piso más arriba. Nos cuentas cualquier cosa que cambiarías de los provisionales. Algunos pacientes de Tampa van a dormir a casa; la mayoría se queda.",
+        "d": "Tus carillas se terminan a mano en el laboratorio de arriba. Sin visita.",
         "time": "Sin visita."
       },
       {
         "k": "Jueves",
         "t": "Entrega y luego el regreso en carro",
-        "d": "Tono revisado con el ceramista, carillas cementadas, mordida ajustada y garantía entregada por escrito. Almuerzo blando y luego al oeste por el Alley.",
+        "d": "Control de color, cementación, ajuste de mordida, garantía por escrito. Luego el viaje a casa.",
         "time": "Visita 3 de unas 9:00 am a 11:00 am. Sales de Miami hacia las 12:30 pm, en casa en Tampa hacia las 4:30 pm."
       }
     ],
-    "note": "El adormecimiento de la Visita 2 se pasa en un par de horas y no afecta la conducción, pero si te quedas en el hotel aliado de todos modos no necesitarás el carro hasta el jueves. Nada de la entrega del jueves te impide manejar después."
+    "note": "El adormecimiento de la Visita 2 se pasa en un par de horas y no afecta la conducción."
   },
   "story": {
     "title": "Desde Tampa, en sus propias palabras",

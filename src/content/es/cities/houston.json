@@ -4,36 +4,37 @@
   "breadcrumb": "Carillas Houston",
   "hero": {
     "lead": "De Houston a Miami son unas dos horas y media en vuelo directo desde Bush Intercontinental o Hobby. Una semana de lunes a jueves, 20 carillas de porcelana hechas en nuestro laboratorio propio y una garantía de 5 años por escrito para el vuelo de regreso.",
-    "image": "blog-airplane-window-miami.jpg",
-    "alt": "Miami vista desde la ventanilla de un avión en aproximación al Aeropuerto Internacional de Miami",
+    "image": "city-houston.jpg",
+    "alt": "El skyline de Houston desde la ventanilla del avión al amanecer",
     "caption": "IAH o HOU → MIA · aprox. 2 h 30 min en vuelo directo · 15 minutos del aeropuerto a la clínica"
   },
   "intro": [
-    "Houston tiene dos aeropuertos con vuelos directos a Miami: Bush Intercontinental (IAH), con más salidas, y Hobby (HOU), más cerca del centro y del Medical Center. En cualquier caso el vuelo dura unas dos horas y media, y aterrizas a 15 minutos de la clínica. Toda la semana se hace en español o en inglés.",
-    "Muchos pacientes de Houston llegan con una cotización en mano, muchas veces con coronas, y quieren una segunda opinión sobre el material y cuánto diente se elimina. Nuestra respuesta va por escrito antes de que reserves: [carillas de porcelana](/porcelain-veneers-miami) con unos 0.3 mm de preparación, hechas en el [laboratorio en nuestro edificio](/custom-lab), o el [Diseño de sonrisa](/smile-design-miami) de 20 carillas a {price}. Hoteles, aeropuerto y qué empacar están en la [página para pacientes de otros estados](/out-of-state-patients)."
+    "Houston tiene dos aeropuertos con vuelos directos a Miami, Bush (IAH) y Hobby (HOU), unas dos horas y media en cualquier caso. Muchos pacientes de Houston vienen por una segunda opinión sobre una cotización de coronas; la nuestra va por escrito antes de reservar: [carillas de porcelana](/porcelain-veneers-miami) con unos 0.3 mm de preparación, hechas en el [laboratorio en nuestro edificio](/custom-lab), o el [Diseño de sonrisa](/smile-design-miami) de 20 carillas a {price}. Hoteles, aeropuerto y qué empacar están en la [página para pacientes de otros estados](/out-of-state-patients)."
   ],
   "gettingHere": {
     "title": "Cómo llegar de Houston a la clínica",
     "aside": "Orientación general de la clínica. Confirma horarios y aerolíneas con la aerolínea al reservar; no vendemos vuelos.",
+    "image": "blog-airplane-window-miami.jpg",
+    "alt": "Miami desde la ventanilla del avión al aproximarse al Aeropuerto Internacional de Miami",
     "items": [
       {
         "t": "Tiempo de vuelo",
-        "d": "Aprox. 2 horas 30 a 2 horas 45 minutos en vuelo directo. Hay una hora de diferencia: Miami está en hora del Este, una hora adelante de Houston, así que un vuelo que sale a las 7 am aterriza alrededor de las 11:30 am hora local.",
+        "d": "Unas 2 h 30 min en vuelo directo. Miami está una hora adelante, así que un vuelo de las 7 am aterriza cerca de las 11:30 am.",
         "icon": "plane"
       },
       {
         "t": "Qué aerolíneas lo vuelan",
-        "d": "United y American vuelan IAH–MIA sin escalas a lo largo del día. Southwest vuela de Hobby (HOU) a MIA. Fort Lauderdale (FLL) es una alternativa con más aerolíneas de bajo costo, a entre 45 minutos y una hora de la clínica.",
+        "d": "United y American desde IAH, Southwest desde Hobby, directo durante todo el día.",
         "icon": "clock"
       },
       {
         "t": "Del aeropuerto a la clínica",
-        "d": "MIA está a 15 minutos en carro. Uber y Lyft recogen en llegadas; te enviamos por mensaje de texto el punto y la dirección de la clínica antes de que aterrices. Los hoteles aliados están a menos de 10 minutos de la clínica, así que no necesitas alquilar carro.",
+        "d": "15 minutos en Uber o Lyft. Te escribimos el punto de recogida antes de aterrizar.",
         "icon": "car"
       },
       {
         "t": "Si prefieres manejar",
-        "d": "De Houston a Miami son unas 1,200 millas por la I-10 y la I-75, cerca de diecinueve horas al volante. No es una opción realista para una semana de cuatro días; vuela.",
+        "d": "Unas 1,200 millas y diecinueve horas. No encaja en una semana de cuatro días; vuela.",
         "icon": "bus"
       }
     ]
@@ -45,29 +46,29 @@
       {
         "k": "Domingo o lunes",
         "t": "Llegada, Visita 1 el lunes",
-        "d": "Sal de IAH alrededor de las 7:00 am del lunes, aterriza en MIA cerca de las 11:30 am hora del Este y toma un rideshare a la clínica para una Visita 1 a primera hora de la tarde: examen, limpieza, radiografías, escaneos y la vista previa del diseño. O vuela el domingo y llega descansado.",
+        "d": "Aterrizas, rideshare a la clínica. Examen, escaneos y la vista previa del diseño que apruebas.",
         "time": "Visita 1 aprox. de 1:00 pm a 3:00 pm el lunes"
       },
       {
         "k": "Martes",
         "t": "Preparación y provisionales",
-        "d": "Unos 0.3 mm de preparación y provisionales con la forma que aprobaste. Almuerzo blando cerca, y la tarde queda libre.",
+        "d": "Preparación mínima y provisionales con la forma que aprobaste. Tarde libre.",
         "time": "Visita 2 aprox. de 9:00 am a 12:00 pm"
       },
       {
         "k": "Miércoles",
         "t": "Día libre mientras el laboratorio termina",
-        "d": "Carillas fresadas, sinterizadas y terminadas a mano un piso arriba. Nos dices cualquier cosa que cambiarías de los provisionales antes del jueves.",
+        "d": "Tus carillas se terminan a mano en el laboratorio de arriba. Sin visita.",
         "time": "Sin visita."
       },
       {
         "k": "Jueves",
         "t": "Entrega y luego el vuelo de la tarde a casa",
-        "d": "Tono revisado con el ceramista, carillas cementadas, mordida ajustada y garantía por escrito. Almuerzo y rideshare a MIA.",
+        "d": "Control de color, cementación, ajuste de mordida, garantía por escrito. Luego al aeropuerto.",
         "time": "Visita 3 aprox. de 9:00 am a 11:00 am. Vuela MIA–IAH desde las 4:00 pm hora del Este aproximadamente y aterriza en Houston alrededor de las 6:30 pm hora del Centro."
       }
     ],
-    "note": "Con la hora de diferencia, un vuelo temprano el lunes aterriza a tiempo para una Visita 1 por la tarde. Si prefieres no volar y sentarte en el sillón el mismo día, ven el domingo; la noche de hotel del domingo es la única diferencia."
+    "note": "¿Prefieres no volar y sentarte en el sillón el mismo día? Ven el domingo; la noche extra de hotel es la única diferencia."
   },
   "story": {
     "title": "Desde Texas, en sus propias palabras",

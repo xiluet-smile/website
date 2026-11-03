@@ -5,36 +5,37 @@
   "todo": "TODO(janse): there is no consented patient video story from Tampa or St. Petersburg in stories.json. The story section is hidden on this page until one is added; do not reuse another city's clip.",
   "hero": {
     "lead": "Tampa to the clinic is about four hours by car across Alligator Alley, or just over an hour by air. Drive down Monday, get 20 porcelain veneers made in our own lab, drive home Thursday with a 5-year warranty in writing.",
-    "image": "out-of-state-poster.jpg",
-    "alt": "Miami at golden hour",
+    "image": "city-tampa.jpg",
+    "alt": "Alligator Alley across the Everglades at sunrise, seen from the passenger seat",
     "caption": "Tampa → Westchester, Miami · about 4 h by car via I-75 · free parking at the clinic"
   },
   "intro": [
-    "From Tampa Bay the drive is a straight shot: I-75 south through Naples, east across Alligator Alley, and off at the Dolphin Expressway into Westchester. About 280 miles and four hours outside rush hour, with free parking at the clinic. If you would rather fly, TPA to MIA is just over an hour, and the clinic is 15 minutes from the airport.",
-    "The treatment is the same as for every patient: [porcelain veneers](/porcelain-veneers-miami) in multilayer zirconia, made in the [lab one floor above your doctor](/custom-lab), at {veneerPrice} per tooth or {price} for the 20-veneer [Smile Design](/smile-design-miami), delivered in one Monday-to-Thursday week. The planning happens from home: photos, a doctor's plan within {replyHours} hours, the written estimate, then a date. Hotels and what to pack are on the [out-of-state patients page](/out-of-state-patients)."
+    "From Tampa Bay it is a straight shot: I-75 south, east across Alligator Alley, about four hours with free parking at the clinic, or just over an hour by air. The treatment is [porcelain veneers](/porcelain-veneers-miami) in multilayer zirconia from the [lab one floor above your doctor](/custom-lab), at {veneerPrice} per tooth or {price} for the 20-veneer [Smile Design](/smile-design-miami). Hotels, airport and what to pack are on the [out-of-state patients page](/out-of-state-patients)."
   ],
   "gettingHere": {
     "title": "Getting from Tampa to the clinic",
     "aside": "General guidance from the clinic. Check times with your map app and the carrier on the day; we do not sell travel.",
+    "image": "blog-calle-ocho-morning.jpg",
+    "alt": "Calle Ocho in the early morning, the street the clinic is on",
     "items": [
       {
         "t": "Driving",
-        "d": "About 280 miles: I-75 south past Fort Myers and Naples, then east across Alligator Alley to I-595 and south on the Turnpike or US 27 to the Dolphin Expressway, exiting at SW 87th Avenue for SW 8th St. About four hours. Free parking at the clinic.",
+        "d": "About 280 miles: I-75 south, then east across Alligator Alley. About four hours.",
         "icon": "car"
       },
       {
         "t": "Flying",
-        "d": "TPA to MIA is about 1 hour 10 minutes in the air; American and Southwest fly it nonstop. With airport time at both ends it is close to the drive, but it is an option if you would rather not be on I-75.",
+        "d": "TPA to MIA is about 1 h 10 min in the air, on American or Southwest.",
         "icon": "plane"
       },
       {
         "t": "Airport to clinic",
-        "d": "If you fly, MIA is 15 minutes from the clinic by car. Uber and Lyft pick up at arrivals; we text you the spot and the address before you land. The partner hotels are within 10 minutes of the clinic.",
+        "d": "If you fly, MIA is 15 minutes by Uber or Lyft. We text you the pickup spot.",
         "icon": "clock"
       },
       {
         "t": "Timing the drive",
-        "d": "Leave Tampa by 6:00 am Monday to reach Westchester by about 10:00 am, ahead of Miami's late-morning traffic. On Thursday, leaving after lunch gets you home before dinner. Alligator Alley has few exits, so fill up in Naples.",
+        "d": "Leave by 6:00 am Monday to beat Miami's late-morning traffic. Parking at the clinic is free.",
         "icon": "bus"
       }
     ]
@@ -46,29 +47,29 @@
       {
         "k": "Monday",
         "t": "Drive down, late-morning Visit 1",
-        "d": "Leave Tampa around 6:00 am, park at the clinic by about 10:00 am. Exam, cleaning, X-rays, scans and the design preview you approve. Hotel check-in after.",
+        "d": "Drive down, park at the clinic. Exam, scans and the design preview you approve.",
         "time": "Visit 1 about 11:00 am to 1:00 pm"
       },
       {
         "k": "Tuesday",
         "t": "Preparation and temporaries",
-        "d": "About 0.3 mm of preparation and temporaries in the approved shape. Soft lunch, then a free afternoon.",
+        "d": "Minimal preparation, then temporaries in the shape you approved. Afternoon free.",
         "time": "Visit 2 about 9:00 am to 12:00 pm"
       },
       {
         "k": "Wednesday",
         "t": "Free day while the lab finishes",
-        "d": "Veneers milled, sintered and finished by hand one floor up. You tell us anything you would change about the temporaries. Some Tampa patients drive home for the night; most stay.",
+        "d": "Your veneers are finished by hand in the lab upstairs. No visit.",
         "time": "No visit."
       },
       {
         "k": "Thursday",
         "t": "Delivery, then the drive home",
-        "d": "Shade checked with the ceramist, veneers bonded, bite adjusted, warranty handed over in writing. Soft lunch, then west across the Alley.",
+        "d": "Shade check, bonding, bite adjusted, warranty in writing. Then the drive home.",
         "time": "Visit 3 about 9:00 am to 11:00 am. Leave Miami about 12:30 pm, home in Tampa around 4:30 pm."
       }
     ],
-    "note": "The numbness from Visit 2 wears off within a couple of hours and does not affect driving, but if you are staying at the partner hotel you will not need the car until Thursday anyway. Nothing about Thursday's delivery stops you driving afterwards."
+    "note": "The numbness from Visit 2 wears off in a couple of hours and does not affect driving."
   },
   "story": {
     "title": "From Tampa, in their own words",

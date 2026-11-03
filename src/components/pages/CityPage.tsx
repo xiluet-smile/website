@@ -27,7 +27,8 @@ export type CityContent = {
   todo?: string;
   hero: { lead: string; image: string; alt: string; caption: string };
   intro: string[];
-  gettingHere: { title: string; aside?: string; items: { t: string; d: string; icon?: string }[] };
+  /** image/alt: the Miami end of the trip, shown beside the compact list of ways to get here. */
+  gettingHere: { title: string; aside?: string; image?: string; alt?: string; items: { t: string; d: string; icon?: string }[] };
   itinerary: { title: string; intro: string; days: { k: string; t: string; d: string; time: string }[]; note?: string };
   /** A consented clip from stories.json for a patient from this city; the section is hidden without a storyId. */
   story: { title: string; body: string; storyId?: string; todo?: string };
@@ -104,10 +105,34 @@ export default function CityPage({ data, locale = "en" }: { data: CityContent; l
         </div>
       </section>
 
-      {/* Flights, drive, airport. */}
+      {/* Flights, drive, airport: the Miami end of the trip in a photo, the ways to get here as a short list. */}
       <section className="wrap pt-16 lg:pt-28">
         <ClinicSectionHead title={data.gettingHere.title} aside={data.gettingHere.aside} />
-        <ClinicFeatureGrid items={data.gettingHere.items.map((i) => ({ ...i, d: fill(i.d) }))} />
+        {data.gettingHere.image ? (
+          <div className="grid items-stretch gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-10">
+            <div className="overflow-hidden rounded-2xl shadow-[0_12px_32px_rgba(26,26,26,.08)] lg:rounded-[20px]">
+              <Img
+                src={data.gettingHere.image}
+                alt={data.gettingHere.alt ?? ""}
+                sizes="(min-width: 1024px) 50vw, calc(100vw - 40px)"
+                className="block aspect-[4/3] h-full w-full object-cover lg:aspect-auto lg:min-h-[420px]"
+              />
+            </div>
+            <ul className="m-0 flex list-none flex-col divide-y divide-ink/10 p-0">
+              {data.gettingHere.items.map((f) => (
+                <li key={f.t} className="grid grid-cols-[44px_minmax(0,1fr)] items-start gap-4 py-5 first:pt-0 last:pb-0 lg:py-6">
+                  {f.icon ? <FeatureIcon name={f.icon} /> : <span />}
+                  <div className="flex flex-col gap-1.5">
+                    <h3 className="m-0 font-serif text-xl leading-[1.2] font-normal text-teal lg:text-[22px]">{f.t}</h3>
+                    <p className="m-0 text-[15px] leading-[1.5] text-body lg:text-base">{fill(f.d)}</p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : (
+          <ClinicFeatureGrid items={data.gettingHere.items.map((i) => ({ ...i, d: fill(i.d) }))} />
+        )}
       </section>
 
       {/* Sample Monday-to-Thursday, in the visit-card style of the hub. */}

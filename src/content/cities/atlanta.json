@@ -4,36 +4,37 @@
   "breadcrumb": "Veneers Atlanta",
   "hero": {
     "lead": "Atlanta to Miami is under two hours nonstop, with flights from early morning to late evening. Fly in Monday, get 20 porcelain veneers made in our own lab, fly home Thursday with a 5-year warranty in writing.",
-    "image": "blog-airplane-window-miami.jpg",
-    "alt": "Miami seen from an airplane window on approach to Miami International Airport",
+    "image": "city-atlanta.jpg",
+    "alt": "The Atlanta skyline from a plane window just after takeoff at sunrise",
     "caption": "ATL → MIA · about 1 h 55 min nonstop · 15 minutes from the airport to the clinic"
   },
   "intro": [
-    "Atlanta is one of the cities we see most, and the flight is why: Hartsfield-Jackson has nonstop flights to MIA all day, the flight is about 1 hour 55 minutes, and you land 15 minutes from our door in Westchester. The Monday-to-Thursday week fits without taking a full week off work.",
-    "The treatment is the same for every patient: [porcelain veneers](/porcelain-veneers-miami) on the teeth you show, or the 20-veneer [Smile Design](/smile-design-miami) at {price}, made in the [lab one floor above your doctor](/custom-lab). The planning happens from home, so by the time you book a flight you know which teeth, what it costs and which Monday. Hotels, airport and what to pack are on the [out-of-state patients page](/out-of-state-patients)."
+    "Atlanta is one of the cities we see most: nonstop flights to MIA all day, about 1 hour 55 minutes in the air, and you land 15 minutes from our door. The treatment is [porcelain veneers](/porcelain-veneers-miami) on the teeth you show, or the 20-veneer [Smile Design](/smile-design-miami) at {price}, made in the [lab one floor above your doctor](/custom-lab). Hotels, airport and what to pack are on the [out-of-state patients page](/out-of-state-patients)."
   ],
   "gettingHere": {
     "title": "Getting from Atlanta to the clinic",
     "aside": "General guidance from the clinic. Check times and carriers with the airline when you book; we do not sell flights.",
+    "image": "blog-airplane-window-miami.jpg",
+    "alt": "Miami from the plane window on approach to Miami International Airport",
     "items": [
       {
         "t": "Flight time",
-        "d": "About 1 hour 55 minutes nonstop from ATL to MIA. With boarding and taxi, plan on two and a half hours door to gate.",
+        "d": "About 1 h 55 min nonstop, ATL to MIA. Plan on two and a half hours door to gate.",
         "icon": "plane"
       },
       {
         "t": "Who flies it",
-        "d": "Delta, American and Southwest all fly ATL–MIA nonstop, most days from early morning to late evening. Fort Lauderdale (FLL) is an alternative with more low-cost carriers, about 45 minutes to an hour from the clinic.",
+        "d": "Delta, American and Southwest, nonstop from early morning to late evening.",
         "icon": "clock"
       },
       {
         "t": "Airport to clinic",
-        "d": "MIA is 15 minutes away by car. Take Uber or Lyft from the rideshare pickup at arrivals; we text you the spot and the clinic address before you land. No rental car needed for the week.",
+        "d": "15 minutes by Uber or Lyft. We text you the pickup spot before you land.",
         "icon": "car"
       },
       {
         "t": "Driving instead",
-        "d": "About 660 miles down I-75, nine and a half to ten hours. Possible, but most Atlanta patients fly, land Monday morning and keep the car at home. Parking at the clinic is free if you do drive.",
+        "d": "About 660 miles down I-75, nine to ten hours. Most Atlanta patients fly.",
         "icon": "bus"
       }
     ]
@@ -45,29 +46,29 @@
       {
         "k": "Monday",
         "t": "Early flight, Visit 1 by late morning",
-        "d": "Leave ATL around 7:00 am, land MIA about 9:00 am, rideshare to the clinic. Exam, cleaning, X-rays, scans and the design preview you approve.",
+        "d": "Land, rideshare to the clinic. Exam, scans and the design preview you approve.",
         "time": "Visit 1 about 11:00 am to 1:00 pm. Check in at the hotel after."
       },
       {
         "k": "Tuesday",
         "t": "Preparation and temporaries",
-        "d": "About 0.3 mm of preparation and temporaries in the shape you approved. Soft lunch, then the afternoon is yours.",
+        "d": "Minimal preparation, then temporaries in the shape you approved. Afternoon free.",
         "time": "Visit 2 about 9:00 am to 12:00 pm"
       },
       {
         "k": "Wednesday",
         "t": "Free day while the lab finishes",
-        "d": "Your veneers are milled, sintered and finished by hand upstairs. You live with the temporaries and tell us anything you would change.",
+        "d": "Your veneers are finished by hand in the lab upstairs. No visit.",
         "time": "No visit. Beach, Wynwood or rest."
       },
       {
         "k": "Thursday",
         "t": "Delivery, then the evening flight home",
-        "d": "Shade checked with you and the ceramist, veneers bonded, bite adjusted, warranty handed over in writing. Lunch, rideshare to MIA.",
+        "d": "Shade check, bonding, bite adjusted, warranty in writing. Then the airport.",
         "time": "Visit 3 about 9:00 am to 11:00 am. Fly MIA–ATL from about 4:00 pm, home by 7:00 pm."
       }
     ],
-    "note": "If you prefer not to rush Monday, fly in Sunday evening; the Sunday-night hotel is the only difference. Visit 1 can also move to Tuesday without changing Thursday delivery in most cases."
+    "note": "Prefer not to rush Monday? Fly in Sunday evening; the extra hotel night is the only difference."
   },
   "story": {
     "title": "From Atlanta, in his own words",
