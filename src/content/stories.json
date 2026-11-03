@@ -1,5 +1,39 @@
 [
   {
+    "id": "story-11",
+    "source": "https://www.instagram.com/p/DZ-PDvXRKJ9/",
+    "video": "/videos/stories/story-11.mp4",
+    "poster": "story-11-poster.jpg",
+    "quote": "They look like your own teeth. It's going to look so good. Thank you.",
+    "name": "Xiluet patient's mother",
+    "treatment": "Delivery day",
+    "duration": "0:26",
+    "doctor": "Dr. Gretell Alonso Fiel, DMD"
+  },
+  {
+    "id": "story-20",
+    "source": "https://www.instagram.com/p/DYC_g-JxGtO/",
+    "video": "/videos/stories/story-20.mp4",
+    "poster": "story-20-poster.jpg",
+    "quote": "",
+    "name": "Yesenia",
+    "treatment": "Full mouth rehabilitation",
+    "duration": "1:13",
+    "doctor": "Dr. Gretell Alonso Fiel, DMD",
+    "title": "Yesenia sees her new smile before the final cementation."
+  },
+  {
+    "id": "story-29",
+    "video": "/videos/stories/story-29.mp4",
+    "poster": "story-29-poster.jpg",
+    "quote": "",
+    "name": "Yanelis",
+    "treatment": "Smile design",
+    "duration": "0:10",
+    "doctor": "Dr. Gretell Alonso Fiel, DMD",
+    "title": "Yanelis shows off her new smile."
+  },
+  {
     "id": "story-42",
     "video": "/videos/stories/story-42.mp4",
     "poster": "story-42-poster.jpg",
@@ -62,29 +96,6 @@
     "duration": "0:10",
     "doctor": "Dr. Gretell Alonso Fiel, DMD",
     "title": "Dr. Alonso turns dream smiles into real confidence."
-  },
-  {
-    "id": "story-20",
-    "source": "https://www.instagram.com/p/DYC_g-JxGtO/",
-    "video": "/videos/stories/story-20.mp4",
-    "poster": "story-20-poster.jpg",
-    "quote": "",
-    "name": "Yesenia",
-    "treatment": "Full mouth rehabilitation",
-    "duration": "1:13",
-    "doctor": "Dr. Gretell Alonso Fiel, DMD",
-    "title": "Yesenia sees her new smile before the final cementation."
-  },
-  {
-    "id": "story-29",
-    "video": "/videos/stories/story-29.mp4",
-    "poster": "story-29-poster.jpg",
-    "quote": "",
-    "name": "Yanelis",
-    "treatment": "Smile design",
-    "duration": "0:10",
-    "doctor": "Dr. Gretell Alonso Fiel, DMD",
-    "title": "Yanelis shows off her new smile."
   },
   {
     "id": "story-1",
@@ -330,17 +341,6 @@
     "treatment": "Smile makeover",
     "duration": "0:14",
     "doctor": "Dr. Marta Puentes Marrero, DMD"
-  },
-  {
-    "id": "story-11",
-    "source": "https://www.instagram.com/p/DZ-PDvXRKJ9/",
-    "video": "/videos/stories/story-11.mp4",
-    "poster": "story-11-poster.jpg",
-    "quote": "They look like your own teeth. It's going to look so good. Thank you.",
-    "name": "Xiluet patient's mother",
-    "treatment": "Delivery day",
-    "duration": "0:26",
-    "doctor": "Dr. Gretell Alonso Fiel, DMD"
   },
   {
     "id": "story-12",
