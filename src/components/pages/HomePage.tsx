@@ -127,7 +127,7 @@ export default function HomePage({ locale = "en" }: { locale?: Locale }) {
                 rel="noopener"
                 className="btn btn-gold h-[52px] text-[17px] shadow-[0_8px_24px_rgba(0,0,0,.25)] lg:h-12 lg:px-6 lg:text-base"
               >
-                <WhatsAppIcon size={18} />
+                <WhatsAppIcon size={20} />
                 {t.heroCta}
               </a>
               <a
@@ -135,7 +135,7 @@ export default function HomePage({ locale = "en" }: { locale?: Locale }) {
                 rel="noopener"
                 className="btn btn-ghost h-[52px] text-[17px] lg:h-12 lg:px-5 lg:text-base"
               >
-                <WhatsAppIcon />
+                <WhatsAppIcon size={20} />
                 {t.whatsapp}
               </a>
             </div>

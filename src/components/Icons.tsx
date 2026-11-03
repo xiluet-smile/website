@@ -25,8 +25,9 @@ export const PhoneIcon = ({ size = 16, className }: P) => (
   </svg>
 );
 
+/** `top-0` cancels the 1px nudge `.btn > svg` applies: this glyph is bottom-heavy, so it reads centred without it. */
 export const WhatsAppIcon = ({ size = 22, className }: P) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" aria-hidden="true" className={`flex-none ${className ?? ""}`}>
+  <svg width={size} height={size} viewBox="0 0 24 24" aria-hidden="true" className={`flex-none top-0 ${className ?? ""}`}>
     <path
       fill="currentColor"
       d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 1.8a8.2 8.2 0 1 1-4.2 15.3l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 0 1 12 3.8zm-3 4.4c-.2 0-.5 0-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.2 5 4.4 2.5 1 3 .8 3.5.7.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.1-1.4l-1.9-.9c-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6.3-.5c.1-.2 0-.4 0-.5l-.9-2c-.2-.5-.4-.5-.6-.5H9z"
