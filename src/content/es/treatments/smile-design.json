@@ -1,13 +1,13 @@
 {
   "path": "/smile-design-miami",
   "packageId": "signature-veneers",
-  "breadcrumb": "Carillas de porcelana",
+  "breadcrumb": "Diseño de sonrisa",
   "schema": {
-    "name": "Paquete Carillas de porcelana, 20 carillas",
+    "name": "Diseño de sonrisa con carillas de porcelana",
     "procedureType": "http://schema.org/NoninvasiveProcedure"
   },
   "hero": {
-    "definition": "Nuestro paquete Carillas de porcelana son 20 carillas de porcelana: láminas delgadas de cerámica que se adhieren al frente de tus dientes tras apenas 0.3 mm de preparación, para cambiar su forma, largo y color, diseñadas para tu rostro y probadas en tu boca antes de tocar un solo diente. En Xiluet Smiles en Miami cuesta $5,999, se hace en tres visitas en una semana e incluye garantía de 5 años por escrito.",
+    "definition": "Diseño de sonrisa es nuestro paquete de 20 carillas de porcelana: láminas delgadas de cerámica que se adhieren al frente de tus dientes tras apenas 0.3 mm de preparación, para cambiar su forma, largo y color, diseñadas para tu rostro y probadas en tu boca antes de tocar un solo diente. En Xiluet Smiles en Miami cuesta $5,999, se hace en tres visitas en una semana e incluye garantía de 5 años por escrito.",
     "lead": "Preparación mínima, un diseño que apruebas antes de tocar un solo diente y entrega en una semana en Miami. Con garantía de 5 años, por escrito.",
     "secondaryCta": "Mira tu semana en Miami",
     "stats": [
@@ -32,7 +32,7 @@
     ],
     "image": {
       "caseId": "BA44",
-      "caption": "Carillas de porcelana · 20 como paquete · preparación de 0.3 mm · garantía de 5 años por escrito"
+      "caption": "Diseño de sonrisa · 20 carillas de porcelana · preparación de 0.3 mm · garantía de 5 años por escrito"
     }
   },
   "candidates": {
@@ -101,7 +101,7 @@
     ]
   },
   "material": {
-    "intro": "En el paquete Carillas de porcelana, la zirconia se talla en carillas finas que asientan sobre una preparación de 0.3 mm y se estratifica con porcelana translúcida donde se ve, que es lo que permite que una carilla tan fina dure."
+    "intro": "En el Diseño de sonrisa, la zirconia se talla en carillas finas que asientan sobre una preparación de 0.3 mm y se estratifica con porcelana translúcida donde se ve, que es lo que permite que una carilla tan fina dure."
   },
   "week": {
     "title": "Tu semana en Miami",
@@ -135,9 +135,9 @@
     ]
   },
   "results": {
-    "title": "Resultados de carillas de porcelana",
+    "title": "Resultados de diseño de sonrisa",
     "linkLabel": "Todos los casos →",
-    "label": "Carillas de porcelana",
+    "label": "Diseño de sonrisa",
     "caseIds": [
       "BA16",
       "BA19",
@@ -156,7 +156,7 @@
     "lendersLabel": "Paga a plazos con",
     "compareLabel": "Compara todos los paquetes →",
     "card": {
-      "title": "Carillas de porcelana",
+      "title": "Diseño de sonrisa",
       "sub": "20 carillas de porcelana",
       "badge": "El más elegido",
       "pricePrefix": "20 carillas",
@@ -173,12 +173,12 @@
     "footnote": "Precio final confirmado por escrito después de la evaluación de un doctor."
   },
   "faq": {
-    "title": "Preguntas sobre carillas de porcelana, respondidas por los doctores",
+    "title": "Preguntas sobre diseño de sonrisa y carillas, respondidas por los doctores",
     "linkLabel": "Todas las respuestas →",
     "items": [
       {
-        "q": "¿Cuál es la diferencia entre el paquete Carillas de porcelana y las carillas por unidad?",
-        "a": "Las carillas por unidad se cotizan por diente. El paquete Carillas de porcelana es nuestro juego de 20 carillas de porcelana planificadas sobre tu rostro: el diseño digital, la vista previa que apruebas en tu boca, las carillas, la limpieza y las radiografías, y la garantía de 5 años, por un solo precio por escrito.",
+        "q": "¿Cuál es la diferencia entre diseño de sonrisa y carillas?",
+        "a": "Las carillas son el material. Diseño de sonrisa es nuestro paquete de 20 carillas de porcelana planificadas sobre tu rostro: el diseño digital, la vista previa que apruebas en tu boca, las carillas, la limpieza y las radiografías, y la garantía de 5 años, por un solo precio por escrito.",
         "doc": "Dr. Roger Ramos Navarro, DMD"
       },
       {

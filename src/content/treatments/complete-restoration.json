@@ -1,13 +1,13 @@
 {
   "path": "/smile-makeover-miami",
   "packageId": "complete-restoration",
-  "breadcrumb": "Smile Design",
+  "breadcrumb": "Smile Makeover",
   "schema": {
-    "name": "Smile Design",
+    "name": "Smile Makeover",
     "procedureType": "http://schema.org/NoninvasiveProcedure"
   },
   "hero": {
-    "definition": "Smile Design rebuilds or resurfaces up to 20 teeth with porcelain crowns, bridges and veneers, planned together so color, shape and bite match. Whitening and gum contouring are added when the design calls for them. At Xiluet Smiles in Miami the package costs $6,999, includes a professional cleaning and X-rays, is delivered in 5 business days and carries a 5-year written warranty.",
+    "definition": "A smile makeover rebuilds or resurfaces up to 20 teeth with porcelain crowns, bridges and veneers, planned together so color, shape and bite match. Whitening and gum contouring are added when the design calls for them. At Xiluet Smiles in Miami the package costs $6,999, includes a professional cleaning and X-rays, is delivered in 5 business days and carries a 5-year written warranty.",
     "lead": "Crowns, bridges and veneers chosen tooth by tooth, designed as one smile and made in our own lab. Whitening and gum contouring are added when your smile needs them.",
     "secondaryCta": "See your week in Miami",
     "stats": [
@@ -32,7 +32,7 @@
     ],
     "image": {
       "caseId": "BA7",
-      "caption": "Smile Design · 20 crowns, bridges and veneers · 5 business days"
+      "caption": "Smile Makeover · 20 crowns, bridges and veneers · 5 business days"
     }
   },
   "candidates": {
@@ -93,7 +93,7 @@
     ]
   },
   "material": {
-    "intro": "Smile Design mixes veneers and crowns in the same row of teeth. Zirconia lets both be thin, matched in one shade and finished at the gum line, so the crowns do not give themselves away next to the veneers."
+    "intro": "A smile makeover mixes veneers and crowns in the same row of teeth. Zirconia lets both be thin, matched in one shade and finished at the gum line, so the crowns do not give themselves away next to the veneers."
   },
   "week": {
     "title": "Your makeover week in Miami",
@@ -127,9 +127,9 @@
     ]
   },
   "results": {
-    "title": "Smile Design results",
+    "title": "Smile makeover results",
     "linkLabel": "All cases →",
-    "label": "Smile Design",
+    "label": "Smile makeover",
     "caseIds": [
       "BA18",
       "BA9",
@@ -146,7 +146,7 @@
     "compareLabel": "Compare all packages →",
     "card": {
       "title": "20 crowns, bridges and veneers",
-      "sub": "Smile Design",
+      "sub": "Smile makeover",
       "badge": "Complete",
       "pricePrefix": null,
       "priceSuffix": null,

@@ -55,9 +55,8 @@ function seoChecks(path, html, text, title, desc, lang, enPath) {
   if (banned) fail(path, `banned advertising word in <main>: "${banned[0]}"`);
   softHits += (main.match(SOFT) || []).length;
   if (/7,999/.test(text)) fail(path, "$7,999 is not a current price");
-  // Package names (capitalised) right before the other package's price; lower-case mentions in prose are fine.
-  if (/Porcelain Veneers package[^.$;]{0,40}\$6,999|paquete Carillas de porcelana[^.$;]{0,40}\$6,999/.test(text)) fail(path, "Porcelain Veneers package shown next to $6,999 (package is $5,999)");
-  if (/Smile Design[^.$;]{0,40}\$5,999|Diseño de sonrisa[^.$;]{0,40}\$5,999/.test(text)) fail(path, "Smile Design shown next to $5,999 (package is $6,999)");
+  // The package name (capitalised) right before the Makeover price; lower-case "smile design" in a sentence about crowns is fine.
+  if (/Smile Design[^.$;]{0,40}\$6,999|Diseño de Sonrisa[^.$;]{0,40}\$6,999/.test(text)) fail(path, "Smile Design shown next to $6,999 (package is $5,999)");
   for (const m of html.matchAll(/href="(\/[^"#?]*)/g)) if (redirected.has(m[1])) fail(path, `links to a redirected URL: ${m[1]}`);
   if (lang === "en" && !LEGAL.includes(path)) {
     const es = esPaths[path];

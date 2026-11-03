@@ -10,7 +10,7 @@
   },
   "intro": [
     "Houston tiene dos aeropuertos con vuelos directos a Miami: Bush Intercontinental (IAH), con más salidas, y Hobby (HOU), más cerca del centro y del Medical Center. En cualquier caso el vuelo dura unas dos horas y media, y aterrizas a 15 minutos de la clínica. Toda la semana se hace en español o en inglés.",
-    "Muchos pacientes de Houston llegan con una cotización en mano, muchas veces con coronas, y quieren una segunda opinión sobre el material y cuánto diente se elimina. Nuestra respuesta va por escrito antes de que reserves: [carillas de porcelana](/porcelain-veneers-miami) con unos 0.3 mm de preparación, hechas en el [laboratorio en nuestro edificio](/custom-lab), o el paquete [Carillas de porcelana](/smile-design-miami) de 20 carillas a {price}. Hoteles, aeropuerto y qué empacar están en la [página para pacientes de otros estados](/out-of-state-patients)."
+    "Muchos pacientes de Houston llegan con una cotización en mano, muchas veces con coronas, y quieren una segunda opinión sobre el material y cuánto diente se elimina. Nuestra respuesta va por escrito antes de que reserves: [carillas de porcelana](/porcelain-veneers-miami) con unos 0.3 mm de preparación, hechas en el [laboratorio en nuestro edificio](/custom-lab), o el [Diseño de sonrisa](/smile-design-miami) de 20 carillas a {price}. Hoteles, aeropuerto y qué empacar están en la [página para pacientes de otros estados](/out-of-state-patients)."
   ],
   "gettingHere": {
     "title": "Cómo llegar de Houston a la clínica",
@@ -71,7 +71,7 @@
   },
   "story": {
     "title": "Desde Texas, en sus propias palabras",
-    "body": "Jesús grabó esto en español el día de la entrega, tras 20 carillas de porcelana con la Dra. Alonso. Compartido con su permiso.",
+    "body": "Jesús grabó esto en español el día de la entrega, tras un Diseño de sonrisa con la Dra. Alonso. Compartido con su permiso.",
     "storyId": "story-24"
   },
   "cost": {
@@ -79,7 +79,7 @@
     "body": "El tratamiento se cotiza según la [lista de precios publicada](/veneers-cost-miami) y se confirma por escrito antes de que reserves. El viaje lo reservas tú; no cotizamos tarifas porque cambian a diario.",
     "lines": [
       {
-        "label": "Paquete Carillas de porcelana, 20 dientes",
+        "label": "Diseño de sonrisa, 20 carillas de porcelana",
         "value": "{price}",
         "note": "Incluye vista previa, limpieza, radiografías y la garantía de {warrantyYears} años por escrito"
       },

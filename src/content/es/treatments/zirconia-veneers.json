@@ -230,11 +230,11 @@
   "price": {
     "eyebrow": "Costo",
     "title": "Aquí la zirconia cuesta lo mismo que la porcelana, porque es nuestra porcelana",
-    "body": "Cada carilla que hacemos es de zirconia, así que no hay recargo por el material. Una carilla cuesta {veneerPrice} por unidad y veinte cuestan {price} como paquete Carillas de porcelana, que incluye la vista previa del diseño, la limpieza y las radiografías, la entrega en la misma semana y la garantía de {warrantyYears} años por escrito. El número de tu presupuesto es el número que pagas, salvo que el examen encuentre algo que haya que tratar primero, y eso también te lo decimos por escrito.",
+    "body": "Cada carilla que hacemos es de zirconia, así que no hay recargo por el material. Una carilla cuesta {veneerPrice} por unidad y veinte cuestan {price} como paquete Diseño de sonrisa, que incluye la vista previa del diseño, la limpieza y las radiografías, la entrega en la misma semana y la garantía de {warrantyYears} años por escrito. El número de tu presupuesto es el número que pagas, salvo que el examen encuentre algo que haya que tratar primero, y eso también te lo decimos por escrito.",
     "lendersLabel": "Paga a plazos con",
     "compareLabel": "Mira la lista de precios completa →",
     "card": {
-      "title": "Carillas de porcelana",
+      "title": "Diseño de sonrisa",
       "sub": "20 carillas de zirconia · o {veneerPrice} por carilla por unidad",
       "badge": "El más elegido",
       "pricePrefix": "20 carillas",

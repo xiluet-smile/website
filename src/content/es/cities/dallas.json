@@ -10,7 +10,7 @@
   },
   "intro": [
     "DFW y MIA son hubs de American Airlines, así que hay vuelos directos todo el día y duran poco menos de tres horas. Miami está una hora adelante de Dallas, y una salida por la mañana aterriza a tiempo para una visita por la tarde. Aterrizas a 15 minutos de la clínica, y los hoteles aliados están a menos de diez minutos de ella.",
-    "Lo que los pacientes de Dallas suelen querer resolver antes de volar es el material y el número de dientes. Aquí las [carillas de porcelana](/porcelain-veneers-miami) son de zirconia multicapa del [laboratorio en nuestro edificio](/custom-lab): {veneerPrice} por carilla en los dientes que muestras, o el paquete [Carillas de porcelana](/smile-design-miami) de 20 carillas a {price}. Tu presupuesto por escrito dice cuál antes de reservar nada. Hoteles, aeropuerto y qué empacar están en la [página para pacientes de otros estados](/out-of-state-patients)."
+    "Lo que los pacientes de Dallas suelen querer resolver antes de volar es el material y el número de dientes. Aquí las [carillas de porcelana](/porcelain-veneers-miami) son de zirconia multicapa del [laboratorio en nuestro edificio](/custom-lab): {veneerPrice} por carilla en los dientes que muestras, o el [Diseño de sonrisa](/smile-design-miami) de 20 carillas a {price}. Tu presupuesto por escrito dice cuál antes de reservar nada. Hoteles, aeropuerto y qué empacar están en la [página para pacientes de otros estados](/out-of-state-patients)."
   ],
   "gettingHere": {
     "title": "Cómo llegar de Dallas–Fort Worth a la clínica",
@@ -71,7 +71,7 @@
   },
   "story": {
     "title": "Desde Fort Worth, en sus propias palabras",
-    "body": "Yolanda habla de las 20 carillas de porcelana de Erick con el Dr. Ramos, grabado el día de la entrega y compartido con su permiso.",
+    "body": "Yolanda habla del Diseño de sonrisa de Erick con el Dr. Ramos, grabado el día de la entrega y compartido con su permiso.",
     "storyId": "story-21"
   },
   "cost": {
@@ -79,7 +79,7 @@
     "body": "El tratamiento se cotiza según la [lista de precios publicada](/veneers-cost-miami) y se confirma por escrito antes de que reserves. El viaje lo reservas tú; no cotizamos tarifas porque cambian a diario.",
     "lines": [
       {
-        "label": "Paquete Carillas de porcelana, 20 dientes",
+        "label": "Diseño de sonrisa, 20 carillas de porcelana",
         "value": "{price}",
         "note": "Incluye vista previa, limpieza, radiografías y la garantía de {warrantyYears} años por escrito"
       },
@@ -135,7 +135,7 @@
       },
       {
         "q": "¿Necesito las 20 carillas o solo las de arriba?",
-        "a": "Cuenta los dientes que muestras en una sonrisa grande. Si los dientes de abajo quedan ocultos, ocho o diez arriba a {veneerPrice} cada una puede ser la respuesta honesta. Si muestras las dos arcadas, 20 como paquete Carillas de porcelana cuesta menos por diente y el tono coincide arriba y abajo. Tu plan por escrito dice cuál.",
+        "a": "Cuenta los dientes que muestras en una sonrisa grande. Si los dientes de abajo quedan ocultos, ocho o diez arriba a {veneerPrice} cada una puede ser la respuesta honesta. Si muestras las dos arcadas, 20 como Diseño de sonrisa cuesta menos por diente y el tono coincide arriba y abajo. Tu plan por escrito dice cuál.",
         "doc": "Dr. Marta Puentes Marrero, DMD"
       },
       {
