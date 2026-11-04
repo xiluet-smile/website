@@ -6,19 +6,9 @@
       "href": "/smile-design-miami",
       "items": [
         {
-          "t": "Porcelain Veneers",
-          "d": "$1,000 each · 20 for $5,999",
-          "href": "/porcelain-veneers-miami"
-        },
-        {
           "t": "Smile Design",
           "d": "20 porcelain veneers · $5,999",
           "href": "/smile-design-miami"
-        },
-        {
-          "t": "Zirconia Veneers",
-          "d": "The material, made in our own lab",
-          "href": "/zirconia-veneers"
         },
         {
           "t": "Smile Makeover",
@@ -83,6 +73,16 @@
           "t": "Custom Lab",
           "d": "Zirconia veneers made in-house",
           "href": "/custom-lab"
+        },
+        {
+          "t": "Porcelain Veneers",
+          "d": "Thin veneers made in our own lab, one tooth or twenty",
+          "href": "/porcelain-veneers-miami"
+        },
+        {
+          "t": "Zirconia Veneers",
+          "d": "The material, made in our own lab",
+          "href": "/zirconia-veneers"
         },
         {
           "t": "Edgar Castaños",

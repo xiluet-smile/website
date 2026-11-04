@@ -6,19 +6,9 @@
       "href": "/smile-design-miami",
       "items": [
         {
-          "t": "Carillas de porcelana",
-          "d": "$1,000 c/u · 20 por $5,999",
-          "href": "/porcelain-veneers-miami"
-        },
-        {
           "t": "Diseño de sonrisa",
           "d": "20 carillas de porcelana · $5,999",
           "href": "/smile-design-miami"
-        },
-        {
-          "t": "Carillas de zirconia",
-          "d": "El material, hecho en nuestro laboratorio",
-          "href": "/zirconia-veneers"
         },
         {
           "t": "Transformación de sonrisa",
@@ -83,6 +73,16 @@
           "t": "Laboratorio propio",
           "d": "Carillas de zirconia hechas en casa",
           "href": "/custom-lab"
+        },
+        {
+          "t": "Carillas de porcelana",
+          "d": "Carillas finas hechas en nuestro laboratorio, un diente o veinte",
+          "href": "/porcelain-veneers-miami"
+        },
+        {
+          "t": "Carillas de zirconia",
+          "d": "El material, hecho en nuestro laboratorio",
+          "href": "/zirconia-veneers"
         },
         {
           "t": "Edgar Castaños",
