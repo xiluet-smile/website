@@ -85,11 +85,6 @@
         "note": "Incluye vista previa, limpieza, radiografías y la garantía de {warrantyYears} años por escrito"
       },
       {
-        "label": "Una carilla, por unidad",
-        "value": "{veneerPrice}",
-        "note": "Mismo material, laboratorio y garantía, de 1 a 19 dientes"
-      },
-      {
         "label": "Depósito para reservar tu lunes",
         "value": "${depositUsd}",
         "note": "Se abona a tu tratamiento"

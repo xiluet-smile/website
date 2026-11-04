@@ -86,11 +86,6 @@
         "note": "Preview, cleaning, X-rays and the {warrantyYears}-year written warranty included"
       },
       {
-        "label": "One veneer, à la carte",
-        "value": "{veneerPrice}",
-        "note": "Same material, lab and warranty, for 1 to 19 teeth"
-      },
-      {
         "label": "Deposit to hold your Monday",
         "value": "${depositUsd}",
         "note": "Applied to your treatment"
