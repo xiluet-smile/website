@@ -2,7 +2,6 @@ import Link from "next/link";
 import CostHero from "@/components/CostHero";
 import CostPackages from "@/components/CostPackages";
 import CostPhotoCta from "@/components/CostPhotoCta";
-import CostPriceTables from "@/components/CostPriceTables";
 import FaqAccordion from "@/components/FaqAccordion";
 import Img from "@/components/Img";
 import JsonLd from "@/components/JsonLd";
@@ -33,24 +32,6 @@ export default function CostPage({ locale = "en" }: { locale?: Locale }) {
         <CostPackages locale={locale} />
         <p className="mt-5 mb-0 max-w-[90ch] text-sm text-muted">
           {t.cost.packagesNote}
-        </p>
-      </section>
-
-      <section className="wrap pt-16 lg:pt-28">
-        <div className="mb-6 flex flex-col gap-3 lg:mb-9 lg:flex-row lg:items-end lg:justify-between lg:gap-8">
-          <div className="flex flex-col gap-3">
-            <span className="eyebrow text-gold-text">{t.cost.listEyebrow}</span>
-            <h2 className="m-0 font-serif text-[34px] leading-[1.2] font-normal lg:text-5xl lg:leading-[1.1]">
-              {t.cost.listTitle}
-            </h2>
-          </div>
-          <p className="m-0 max-w-[460px] text-[17px] leading-[1.5] text-pretty text-body lg:mb-1.5 lg:text-right">
-            {t.cost.listAside}
-          </p>
-        </div>
-        <CostPriceTables locale={locale} />
-        <p className="mt-5 mb-0 text-sm text-muted">
-          {t.cost.listNote}
         </p>
       </section>
 
