@@ -304,11 +304,11 @@ export default function TreatmentPage({
           {candidates.items.map((c, i) => (
             <li
               key={c.t}
-              className="glass-card grid grid-cols-[36px_minmax(0,1fr)] gap-x-3.5 gap-y-1.5 rounded-2xl p-4 lg:flex lg:flex-col lg:gap-3 lg:rounded-[18px] lg:p-5"
+              className={`glass-card grid ${c.img ? "grid-cols-[56px_minmax(0,1fr)]" : "grid-cols-[36px_minmax(0,1fr)]"} gap-x-3.5 gap-y-1.5 rounded-2xl p-4 lg:flex lg:flex-col lg:gap-3 lg:rounded-[18px] lg:p-5`}
             >
               {c.img ? (
-                <span aria-hidden="true" className="block h-9 w-9 overflow-hidden rounded-xl lg:h-16 lg:w-16">
-                  <Img src={c.img} alt="" sizes="64px" className="block h-full w-full object-cover" />
+                <span aria-hidden="true" className="block h-14 w-14 overflow-hidden rounded-xl lg:-mt-1 lg:h-24 lg:w-24">
+                  <Img src={c.img} alt="" sizes="96px" className="block h-full w-full object-cover mix-blend-multiply" />
                 </span>
               ) : (
                 <span
