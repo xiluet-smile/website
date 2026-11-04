@@ -171,16 +171,8 @@
       "title": "Treatments",
       "links": [
         {
-          "label": "Porcelain Veneers",
-          "href": "/porcelain-veneers-miami"
-        },
-        {
           "label": "Smile Design",
           "href": "/smile-design-miami"
-        },
-        {
-          "label": "Zirconia Veneers",
-          "href": "/zirconia-veneers"
         },
         {
           "label": "Smile Makeover",
@@ -235,6 +227,14 @@
         {
           "label": "Custom Lab",
           "href": "/custom-lab"
+        },
+        {
+          "label": "Porcelain Veneers",
+          "href": "/porcelain-veneers-miami"
+        },
+        {
+          "label": "Zirconia Veneers",
+          "href": "/zirconia-veneers"
         },
         {
           "label": "Edgar Castaños",

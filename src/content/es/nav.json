@@ -171,16 +171,8 @@
       "title": "Tratamientos",
       "links": [
         {
-          "label": "Carillas de porcelana",
-          "href": "/porcelain-veneers-miami"
-        },
-        {
           "label": "Diseño de sonrisa",
           "href": "/smile-design-miami"
-        },
-        {
-          "label": "Carillas de zirconia",
-          "href": "/zirconia-veneers"
         },
         {
           "label": "Transformación de sonrisa",
@@ -235,6 +227,14 @@
         {
           "label": "Laboratorio propio",
           "href": "/custom-lab"
+        },
+        {
+          "label": "Carillas de porcelana",
+          "href": "/porcelain-veneers-miami"
+        },
+        {
+          "label": "Carillas de zirconia",
+          "href": "/zirconia-veneers"
         },
         {
           "label": "Edgar Castaños",
