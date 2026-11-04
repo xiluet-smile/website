@@ -8,7 +8,7 @@
   },
   "hero": {
     "definition": "La transformación de sonrisa reconstruye o cubre hasta 20 dientes con coronas, puentes y carillas de porcelana, planificados en conjunto para que el color, la forma y la mordida coincidan. El blanqueamiento y el contorneado de encías se añaden cuando el diseño lo requiere. En Xiluet Smiles en Miami el paquete cuesta $6,999, incluye limpieza profesional y radiografías, se entrega en 5 días hábiles y tiene garantía de 5 años por escrito.",
-    "lead": "Coronas, puentes y carillas elegidos diente por diente, diseñados como una sola sonrisa y hechos en nuestro propio laboratorio. El blanqueamiento y el contorneado de encías se añaden cuando tu sonrisa lo necesita.",
+    "lead": "Cuando algunos dientes necesitan más que una carilla, planificamos cada corona, puente y carilla en conjunto, igualamos el color en nuestro laboratorio y entregamos la sonrisa completa en 5 días hábiles. Garantía de 5 años por escrito.",
     "secondaryCta": "Mira tu semana en Miami",
     "stats": [
       {
@@ -136,7 +136,9 @@
       "BA14",
       "BA11"
     ],
-    "caseTypes": ["Restorations"]
+    "caseTypes": [
+      "Restorations"
+    ]
   },
   "price": {
     "eyebrow": "Costo",

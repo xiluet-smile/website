@@ -8,7 +8,7 @@
   },
   "hero": {
     "definition": "A smile makeover rebuilds or resurfaces up to 20 teeth with porcelain crowns, bridges and veneers, planned together so color, shape and bite match. Whitening and gum contouring are added when the design calls for them. At Xiluet Smiles in Miami the package costs $6,999, includes a professional cleaning and X-rays, is delivered in 5 business days and carries a 5-year written warranty.",
-    "lead": "Crowns, bridges and veneers chosen tooth by tooth, designed as one smile and made in our own lab. Whitening and gum contouring are added when your smile needs them.",
+    "lead": "When some teeth need more than a veneer, we plan every crown, bridge and veneer together, shade-match them in our own lab, and deliver the whole smile in 5 business days. 5-year written warranty.",
     "secondaryCta": "See your week in Miami",
     "stats": [
       {
@@ -136,7 +136,9 @@
       "BA14",
       "BA11"
     ],
-    "caseTypes": ["Restorations"]
+    "caseTypes": [
+      "Restorations"
+    ]
   },
   "price": {
     "eyebrow": "Cost",

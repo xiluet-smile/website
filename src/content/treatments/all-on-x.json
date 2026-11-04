@@ -8,7 +8,7 @@
   },
   "hero": {
     "definition": "All-on-X replaces a whole arch of missing or failing teeth with a fixed bridge supported by 4 to 6 dental implants. At Xiluet Smiles in Miami the package is $10,000 per arch ($9,000 cash) for up to 6 implants and a hybrid bridge; extractions, grafts and sinus lifts are quoted separately after a CT scan.",
-    "lead": "For a whole jaw of missing or failing teeth. Implants placed and a fixed temporary bridge fitted in one visit, final zirconia teeth after healing. Nothing removable.",
+    "lead": "For a whole jaw of missing or failing teeth: implants placed and a fixed temporary bridge fitted the same day, final zirconia teeth shaped to look natural after healing. Nothing removable, nothing to take out at night.",
     "secondaryCta": "See the timeline",
     "stats": [
       {
@@ -153,7 +153,9 @@
     "caseIds": [
       "BA17"
     ],
-    "caseTypes": ["All-on-X"]
+    "caseTypes": [
+      "All-on-X"
+    ]
   },
   "price": {
     "eyebrow": "Cost",

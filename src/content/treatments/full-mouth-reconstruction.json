@@ -8,7 +8,7 @@
   },
   "hero": {
     "definition": "Full mouth restoration rebuilds all of your teeth with 28 porcelain veneers, crowns and bridges planned as one case, so the bite works and the smile looks natural. At Xiluet Smiles in Miami it costs $10,000, takes 7 business days across four visits, and includes a 5-year written warranty.",
-    "lead": "28 porcelain veneers, crowns and bridges planned together so your bite works and your smile looks natural. Delivered in 7 business days in Miami, with a 5-year warranty in writing.",
+    "lead": "28 porcelain veneers, crowns and bridges planned as one bite and one smile, made in our own lab and delivered in 7 business days in Miami. Teeth that look natural and work, with a 5-year written warranty.",
     "secondaryCta": "See the two-week plan",
     "stats": [
       {
@@ -136,7 +136,10 @@
       "BA9",
       "BA13"
     ],
-    "caseTypes": ["Full mouth","Restorations"]
+    "caseTypes": [
+      "Full mouth",
+      "Restorations"
+    ]
   },
   "price": {
     "eyebrow": "Cost",

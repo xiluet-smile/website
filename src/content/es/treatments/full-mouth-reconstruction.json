@@ -8,7 +8,7 @@
   },
   "hero": {
     "definition": "La restauración bucal completa reconstruye todos tus dientes con 28 carillas, coronas y puentes de porcelana planificados como un solo caso, para que la mordida funcione y la sonrisa se vea natural. En Xiluet Smiles en Miami cuesta $10,000, toma 7 días hábiles en cuatro visitas e incluye garantía de 5 años por escrito.",
-    "lead": "Coronas, puentes y carillas planificados en conjunto para que tu mordida funcione y tu sonrisa se vea natural. Entregado en 7 días hábiles en Miami, con garantía de 5 años por escrito.",
+    "lead": "28 carillas, coronas y puentes de porcelana planificados como una sola mordida y una sola sonrisa, hechos en nuestro laboratorio y entregados en 7 días hábiles en Miami. Dientes que se ven naturales y funcionan, con garantía de 5 años por escrito.",
     "secondaryCta": "Mira el plan de dos semanas",
     "stats": [
       {
@@ -136,7 +136,10 @@
       "BA9",
       "BA13"
     ],
-    "caseTypes": ["Full mouth","Restorations"]
+    "caseTypes": [
+      "Full mouth",
+      "Restorations"
+    ]
   },
   "price": {
     "eyebrow": "Costo",

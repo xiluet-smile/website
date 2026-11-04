@@ -8,7 +8,7 @@
   },
   "hero": {
     "definition": "Los implantes All-on-X reemplazan toda una arcada de dientes perdidos o en mal estado con un puente fijo sostenido por 4 a 6 implantes dentales. En Xiluet Smiles en Miami el paquete cuesta $10,000 por arcada ($9,000 en efectivo) por hasta 6 implantes y un puente híbrido; extracciones, injertos y elevaciones de seno se cotizan aparte tras una tomografía.",
-    "lead": "Para toda una mandíbula de dientes perdidos o en mal estado. Implantes colocados y un puente provisional fijo en una sola visita, y dientes finales de zirconia después de la cicatrización. Nada removible.",
+    "lead": "Para toda una arcada de dientes ausentes o deteriorados: implantes colocados y un puente provisional fijo el mismo día, dientes definitivos de zirconia con aspecto natural tras la cicatrización. Nada removible, nada que quitarse por la noche.",
     "secondaryCta": "Mira el cronograma",
     "stats": [
       {
@@ -153,7 +153,9 @@
     "caseIds": [
       "BA17"
     ],
-    "caseTypes": ["All-on-X"]
+    "caseTypes": [
+      "All-on-X"
+    ]
   },
   "price": {
     "eyebrow": "Costo",
