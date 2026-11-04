@@ -1,8 +1,8 @@
 {
   "hero": {
-    "eyebrow": "Diseño de Sonrisa · Carillas de Porcelana · Miami, FL 🏝️",
-    "lead": "Ve tu nueva sonrisa primero y aprueba el diseño antes de que toquemos un diente. Luego colocamos tus carillas de porcelana en 3 visitas, preparando solo 0.3 mm de esmalte.",
-    "promise": "Cada sonrisa respaldada por 5 años de garantía.",
+    "eyebrow": "Diseño de Sonrisa · Miami, FL 🏝️",
+    "lead": "Una sonrisa natural, diseñada a tu medida, que parece de tus propios dientes — solo que mejor.",
+    "promise": "Aprueba el diseño de tu sonrisa antes de que toquemos un diente.",
     "callouts": [
       {
         "delay": 2.2,
@@ -67,8 +67,8 @@
     {
       "icon": "veneer",
       "q": "Tengo los dientes manchados y el blanqueamiento no hace nada.",
-      "link": "Las carillas corrigen lo que el blanqueamiento no puede",
-      "href": "/smile-design-miami",
+      "link": "Las carillas de porcelana corrigen lo que el blanqueamiento no puede",
+      "href": "/porcelain-veneers-miami",
       "a": "La tetraciclina, la fluorosis y la decoloración interna profunda no se quitan con blanqueamiento. Las carillas de porcelana cubren la mancha con un tono elegido en persona, con luz de día, y apruebas el diseño antes de preparar cualquier diente."
     },
     {

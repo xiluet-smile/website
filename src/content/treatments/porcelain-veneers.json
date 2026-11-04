@@ -276,14 +276,16 @@
     "title": "Porcelain veneer results",
     "linkLabel": "All cases →",
     "label": "Porcelain veneers",
-    "caseTypes": ["Veneers"]
+    "caseTypes": [
+      "Veneers"
+    ]
   },
   "price": {
     "eyebrow": "Cost",
     "title": "One veneer is {veneerPrice}. Twenty are {price}.",
     "body": "À la carte veneers are {veneerPrice} per tooth, any number from one to nineteen, with the same material, lab and warranty as the package. At 20 teeth the Smile Design package applies at {price}, which works out to about $300 per veneer and includes the design preview, cleaning and X-rays. Your written estimate states the number of teeth and the total before you book; the number you see is the number you pay unless the exam finds something to treat first, and we tell you that in writing too.",
     "lendersLabel": "Pay over time with",
-    "compareLabel": "See all packages →",
+    "compareLabel": "Veneers cost in Miami: all packages →",
     "card": {
       "title": "Smile Design",
       "sub": "20 porcelain veneers · or {veneerPrice} per veneer à la carte",

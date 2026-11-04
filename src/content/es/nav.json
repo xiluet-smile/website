@@ -6,9 +6,19 @@
       "href": "/smile-design-miami",
       "items": [
         {
+          "t": "Carillas de porcelana",
+          "d": "$1,000 c/u · 20 por $5,999",
+          "href": "/porcelain-veneers-miami"
+        },
+        {
           "t": "Diseño de sonrisa",
           "d": "20 carillas de porcelana · $5,999",
           "href": "/smile-design-miami"
+        },
+        {
+          "t": "Carillas de zirconia",
+          "d": "El material, hecho en nuestro laboratorio",
+          "href": "/zirconia-veneers"
         },
         {
           "t": "Transformación de sonrisa",
@@ -161,8 +171,16 @@
       "title": "Tratamientos",
       "links": [
         {
+          "label": "Carillas de porcelana",
+          "href": "/porcelain-veneers-miami"
+        },
+        {
           "label": "Diseño de sonrisa",
           "href": "/smile-design-miami"
+        },
+        {
+          "label": "Carillas de zirconia",
+          "href": "/zirconia-veneers"
         },
         {
           "label": "Transformación de sonrisa",

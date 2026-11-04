@@ -6,9 +6,19 @@
       "href": "/smile-design-miami",
       "items": [
         {
+          "t": "Porcelain Veneers",
+          "d": "$1,000 each · 20 for $5,999",
+          "href": "/porcelain-veneers-miami"
+        },
+        {
           "t": "Smile Design",
           "d": "20 porcelain veneers · $5,999",
           "href": "/smile-design-miami"
+        },
+        {
+          "t": "Zirconia Veneers",
+          "d": "The material, made in our own lab",
+          "href": "/zirconia-veneers"
         },
         {
           "t": "Smile Makeover",
@@ -161,8 +171,16 @@
       "title": "Treatments",
       "links": [
         {
+          "label": "Porcelain Veneers",
+          "href": "/porcelain-veneers-miami"
+        },
+        {
           "label": "Smile Design",
           "href": "/smile-design-miami"
+        },
+        {
+          "label": "Zirconia Veneers",
+          "href": "/zirconia-veneers"
         },
         {
           "label": "Smile Makeover",

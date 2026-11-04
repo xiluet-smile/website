@@ -66,6 +66,7 @@ export function dentist(locale: Locale = "en"): Node {
     currenciesAccepted: "USD",
     paymentAccepted: "Cash, Credit Card, Financing",
     medicalSpecialty: "https://schema.org/Dentistry",
+    knowsAbout: ["Porcelain veneers", "Zirconia veneers", "Digital smile design", "Smile makeover", "Full mouth reconstruction", "All-on-X dental implants"],
     // The treating dentists only (DMD); the manager is not marked up as a Dentist.
     employee: doctors
       .filter((d) => d.credential === "DMD")

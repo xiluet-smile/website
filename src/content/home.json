@@ -1,8 +1,8 @@
 {
   "hero": {
-    "eyebrow": "Smile Design · Porcelain Veneers · Miami, FL 🏝️",
-    "lead": "See your new smile first and approve the design before we touch a tooth. Then your porcelain veneers are placed in 3 visits, with only 0.3 mm of enamel prepared.",
-    "promise": "Every smile backed by a 5-year warranty.",
+    "eyebrow": "Smile Design · Miami, FL 🏝️",
+    "lead": "A natural, custom-designed smile that looks like your own teeth — only better.",
+    "promise": "Approve your smile design before we touch a tooth.",
     "callouts": [
       {
         "delay": 2.2,
@@ -67,8 +67,8 @@
     {
       "icon": "veneer",
       "q": "My teeth are stained and whitening does nothing.",
-      "link": "Veneers fix what whitening cannot",
-      "href": "/smile-design-miami",
+      "link": "Porcelain veneers fix what whitening cannot",
+      "href": "/porcelain-veneers-miami",
       "a": "Tetracycline, fluorosis and deep internal discoloration do not lift with whitening. Porcelain veneers cover the stain with a shade matched in person, in daylight, and you approve the design before any tooth is prepared."
     },
     {
