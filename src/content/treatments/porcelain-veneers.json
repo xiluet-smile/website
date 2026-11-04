@@ -121,7 +121,7 @@
       "bullets": [
         {
           "t": "Active gum disease",
-          "d": "Bleeding, swollen or receding gums move after treatment, and a veneer edge placed on an inflamed gum line ends up exposed. Deep cleaning comes first, then the design once the gums are stable. The cleaning is on our [price list](/veneers-cost-miami)."
+          "d": "Bleeding, swollen or receding gums move after treatment, and a veneer edge placed on an inflamed gum line ends up exposed. Deep cleaning comes first, then the design once the gums are stable. The cleaning is quoted in writing before you book."
         },
         {
           "t": "Heavy grinding without a guard",
@@ -283,7 +283,7 @@
     "title": "One veneer is {veneerPrice}. Twenty are {price}.",
     "body": "À la carte veneers are {veneerPrice} per tooth, any number from one to nineteen, with the same material, lab and warranty as the package. At 20 teeth the Smile Design package applies at {price}, which works out to about $300 per veneer and includes the design preview, cleaning and X-rays. Your written estimate states the number of teeth and the total before you book; the number you see is the number you pay unless the exam finds something to treat first, and we tell you that in writing too.",
     "lendersLabel": "Pay over time with",
-    "compareLabel": "See the full price list →",
+    "compareLabel": "See all packages →",
     "card": {
       "title": "Smile Design",
       "sub": "20 porcelain veneers · or {veneerPrice} per veneer à la carte",
@@ -299,7 +299,7 @@
       ],
       "cta": "Get my written estimate"
     },
-    "footnote": "Final price confirmed in writing after a doctor's evaluation. Veneers only; deep cleaning, crowns and other procedures are quoted separately from the price list."
+    "footnote": "Final price confirmed in writing after a doctor's evaluation. Veneers only; deep cleaning, crowns and other procedures are quoted separately in writing."
   },
   "faq": {
     "title": "Porcelain veneer questions, answered by the doctors",

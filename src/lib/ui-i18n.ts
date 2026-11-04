@@ -116,7 +116,7 @@ const uiEn = {
     fullProcess: "See the full process →",
     costTitle: "What it costs",
     costLead: "One written price before you book. Every package includes a professional cleaning and X-rays.",
-    fullPriceList: "Full price list →",
+    fullPriceList: "See all packages →",
     getEstimate: "Get your free estimate",
     aboutPackage: "About this package",
     costFootnote:
@@ -426,7 +426,7 @@ const uiEs: UiStrings = {
     fullProcess: "Ver el proceso completo →",
     costTitle: "Cuánto cuesta",
     costLead: "Un precio por escrito antes de reservar. Cada paquete incluye limpieza profesional y radiografías.",
-    fullPriceList: "Lista de precios completa →",
+    fullPriceList: "Ver todos los paquetes →",
     getEstimate: "Obtén tu presupuesto gratis",
     aboutPackage: "Sobre este paquete",
     costFootnote:

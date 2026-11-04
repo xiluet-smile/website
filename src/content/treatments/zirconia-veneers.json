@@ -232,7 +232,7 @@
     "title": "Zirconia costs the same as porcelain here, because it is our porcelain",
     "body": "Every veneer we make is zirconia, so there is no upcharge for the material. One veneer is {veneerPrice} à la carte and twenty are {price} as the Smile Design package, which includes the design preview, cleaning and X-rays, delivery in the same week and the {warrantyYears}-year written warranty. The number in your estimate is the number you pay unless the exam finds something to treat first, and we tell you that in writing too.",
     "lendersLabel": "Pay over time with",
-    "compareLabel": "See the full price list →",
+    "compareLabel": "See all packages →",
     "card": {
       "title": "Smile Design",
       "sub": "20 zirconia veneers · or {veneerPrice} per veneer à la carte",
@@ -248,7 +248,7 @@
       ],
       "cta": "Get my written estimate"
     },
-    "footnote": "Final price confirmed in writing after a doctor's evaluation. Veneers only; deep cleaning, crowns and other procedures are quoted separately from the price list."
+    "footnote": "Final price confirmed in writing after a doctor's evaluation. Veneers only; deep cleaning, crowns and other procedures are quoted separately in writing."
   },
   "faq": {
     "title": "Zirconia questions, answered by the doctors and the lab",

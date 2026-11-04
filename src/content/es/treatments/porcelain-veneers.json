@@ -121,7 +121,7 @@
       "bullets": [
         {
           "t": "Enfermedad activa de las encías",
-          "d": "Las encías que sangran, están inflamadas o retraídas se mueven después del tratamiento, y el borde de una carilla colocado sobre una línea de la encía inflamada termina expuesto. Primero va la limpieza profunda y luego el diseño, cuando las encías estén estables. La limpieza está en nuestra [lista de precios](/veneers-cost-miami)."
+          "d": "Las encías que sangran, están inflamadas o retraídas se mueven después del tratamiento, y el borde de una carilla colocado sobre una línea de la encía inflamada termina expuesto. Primero va la limpieza profunda y luego el diseño, cuando las encías estén estables. La limpieza se cotiza por escrito antes de que reserves."
         },
         {
           "t": "Bruxismo fuerte sin guarda",
@@ -285,7 +285,7 @@
     "title": "Una carilla cuesta {veneerPrice}. Veinte cuestan {price}.",
     "body": "Las carillas por unidad cuestan {veneerPrice} por diente, en cualquier cantidad de una a diecinueve, con el mismo material, laboratorio y garantía que el paquete. A partir de 20 dientes aplica el paquete Diseño de sonrisa por {price}, que sale a unos $300 por carilla e incluye la vista previa del diseño, la limpieza y las radiografías. Tu presupuesto por escrito indica el número de dientes y el total antes de reservar; el número que ves es el número que pagas, salvo que el examen encuentre algo que haya que tratar primero, y eso también te lo decimos por escrito.",
     "lendersLabel": "Paga a plazos con",
-    "compareLabel": "Mira la lista de precios completa →",
+    "compareLabel": "Mira todos los paquetes →",
     "card": {
       "title": "Diseño de sonrisa",
       "sub": "20 carillas de porcelana · o {veneerPrice} por carilla por unidad",
@@ -301,7 +301,7 @@
       ],
       "cta": "Quiero mi presupuesto por escrito"
     },
-    "footnote": "Precio final confirmado por escrito después de la evaluación de un doctor. Solo carillas; la limpieza profunda, las coronas y otros procedimientos se cotizan aparte según la lista de precios."
+    "footnote": "Precio final confirmado por escrito después de la evaluación de un doctor. Solo carillas; la limpieza profunda, las coronas y otros procedimientos se cotizan aparte por escrito."
   },
   "faq": {
     "title": "Preguntas sobre carillas de porcelana, respondidas por los doctores",
