@@ -157,56 +157,56 @@
     "title": "Veneers in Miami for Out-of-State Patients | Xiluet Smiles",
     "description": "Photos, estimate and dates from home, then three visits in one week in Miami. Hilton and Marriott partner hotel rates at 20% off and ride guidance.",
     "ogImage": "clinic-lobby.jpg",
-    "h1": "Fly in Monday. Fly home Thursday.",
+    "h1": "Veneers for Out-of-State Patients: Fly In Monday, Home Thursday",
     "breadcrumb": "Veneers in Miami for Out-of-State Patients"
   },
   "/veneers-atlanta": {
     "title": "Veneers for Atlanta Patients | 2 Hours to Miami | Xiluet",
     "description": "Porcelain veneers for Atlanta patients: a two-hour nonstop to Miami, three visits Monday to Thursday, 20 veneers for $5,999, 5-year warranty, partner hotels.",
     "ogImage": "blog-airplane-window-miami.jpg",
-    "h1": "Veneers for Atlanta patients: under two hours to Miami.",
+    "h1": "Natural Veneers for Atlanta Patients, Under Two Hours From Miami",
     "breadcrumb": "Veneers Atlanta"
   },
   "/veneers-houston": {
     "title": "Veneers for Houston Patients | 2.5 Hours to Miami | Xiluet",
     "description": "Porcelain veneers for Houston patients: nonstop from IAH or Hobby, three visits Monday to Thursday in Miami, 20 veneers for $5,999, 5-year warranty, in Spanish.",
     "ogImage": "blog-airplane-window-miami.jpg",
-    "h1": "Veneers for Houston patients: two and a half hours to Miami.",
+    "h1": "Natural Veneers for Houston Patients, One Nonstop Flight From Miami",
     "breadcrumb": "Veneers Houston"
   },
   "/veneers-dallas": {
     "title": "Veneers for Dallas Patients | DFW to Miami Mon–Thu | Xiluet",
     "description": "Porcelain veneers for Dallas–Fort Worth patients: under three hours nonstop from DFW, three visits Monday to Thursday, 20 veneers for $5,999, 5-year warranty.",
     "ogImage": "blog-airplane-window-miami.jpg",
-    "h1": "Veneers for Dallas–Fort Worth patients: three hours to Miami.",
+    "h1": "Natural Veneers for Dallas–Fort Worth Patients, Three Hours From Miami",
     "breadcrumb": "Veneers Dallas"
   },
   "/veneers-new-york": {
     "title": "Veneers for New York Patients | 3 Hours to Miami | Xiluet",
     "description": "Porcelain veneers for New York patients: three hours nonstop from JFK, LaGuardia or Newark, three visits Monday to Thursday, 20 veneers for $5,999.",
     "ogImage": "blog-airplane-window-miami.jpg",
-    "h1": "Veneers for New York patients: three hours to Miami, no time change.",
+    "h1": "Natural Veneers for New York Patients, Three Hours From Miami",
     "breadcrumb": "Veneers New York"
   },
   "/veneers-orlando": {
     "title": "Veneers for Orlando Patients | Drive or Brightline | Xiluet",
     "description": "Porcelain veneers for Orlando patients: four hours by car or Brightline to Miami, three visits Monday to Thursday, 20 veneers for $5,999, 5-year warranty.",
     "ogImage": "blog-calle-ocho-morning.jpg",
-    "h1": "Veneers for Orlando patients: four hours down the Turnpike.",
+    "h1": "Natural Veneers for Orlando Patients, Four Hours Down the Turnpike",
     "breadcrumb": "Veneers Orlando"
   },
   "/veneers-tampa": {
     "title": "Veneers for Tampa Patients | 4 Hours to Miami | Xiluet",
     "description": "Porcelain veneers for Tampa patients: four hours by car across Alligator Alley or an hour by air, three visits Monday to Thursday, 20 veneers for $5,999.",
     "ogImage": "out-of-state-poster.jpg",
-    "h1": "Veneers for Tampa patients: four hours across Alligator Alley.",
+    "h1": "Natural Veneers for Tampa Patients, Four Hours Across Alligator Alley",
     "breadcrumb": "Veneers Tampa"
   },
   "/veneers-cost-miami": {
     "title": "Veneers Cost in Miami 2026 | Packages from $5,999 | Xiluet",
     "description": "Veneers cost in Miami: four published packages. 20 veneers from $5,999, 20 restorations $6,999, full mouth $10,000, All-on-X $10,000.",
     "ogImage": "clinic-lobby.jpg",
-    "h1": "Veneers cost in Miami: four packages, one written estimate.",
+    "h1": "Veneers Cost in Miami: One Written Price, No Surprises",
     "breadcrumb": "Veneers Cost Miami"
   },
   "/blog": {
@@ -289,6 +289,13 @@
     "ogImage": "blog-veneers-painful-calm-chair.jpg",
     "h1": "Are veneers painful? Pain levels, anesthesia and what is not normal",
     "breadcrumb": "Are veneers painful"
+  },
+  "/blog/are-veneers-permanent": {
+    "title": "Are Veneers Permanent? Reversibility, Lifespan, Removal",
+    "description": "Veneers are not reversible, but they are not forever either: what 0.3 mm of enamel means, replacement after 10 to 15 years, removal, and the 5-year warranty.",
+    "ogImage": "blog-are-veneers-permanent.jpg",
+    "h1": "Are veneers permanent? What cannot be undone, what wears out, and what happens next",
+    "breadcrumb": "Are veneers permanent"
   },
   "/blog/composite-vs-porcelain-veneers-vs-lumineers": {
     "title": "Composite vs Porcelain Veneers vs Lumineers: Cost & Lifespan",
@@ -394,6 +401,13 @@
     "ogImage": "blog-snap-on-vs-porcelain-veneer.jpg",
     "h1": "Snap-on veneers vs porcelain veneers: what $300 buys",
     "breadcrumb": "Snap-on vs porcelain veneers"
+  },
+  "/blog/temporary-veneers": {
+    "title": "Temporary Veneers: How Long You Wear Them, Look and Cost",
+    "description": "Temporary veneers are resin shells worn between preparation and bonding. How long you wear them (two days at Xiluet), how they look, care rules and cost.",
+    "ogImage": "blog-temporary-veneers.jpg",
+    "h1": "Temporary veneers: what they are, how long you wear them and how they look",
+    "breadcrumb": "Temporary veneers"
   },
   "/blog/veneer-warranty-what-it-covers": {
     "title": "Veneer Warranty: What It Covers and What to Ask",

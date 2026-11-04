@@ -253,7 +253,7 @@ const uiEn = {
     faqTitle: "Financing questions",
   },
   cost: {
-    lead: "Package prices, published. Send photos and a doctor confirms your exact number in writing within 6 hours.",
+    lead: "Four packages, each with the price in writing and the lab, a professional cleaning and X-rays included. Send photos and a doctor confirms your exact number in writing within 6 hours.",
     packagesAria: "Packages",
     packagesNote:
       "All packages include a professional dental cleaning and X-rays. Deep cleaning and any other procedure are not included; if your exam finds something that needs treating first, it is quoted in writing before anything starts. Final estimate may vary if additional corrections are required beyond the smile design.",
@@ -278,7 +278,7 @@ const uiEn = {
     gettingHere: "Getting here",
   },
   outOfStatePage: {
-    lead: "Everything before the trip happens from home: photos, written estimate, payment plan and dates. Then one week in Miami, three visits, and a {years}-year warranty in writing.",
+    lead: "Photos, written estimate, payment plan and dates, all settled from home first. Then one week in Miami, three visits, natural-looking veneers made in our own lab during your stay, and a {years}-year written warranty.",
     mediaAlt: "Miami at golden hour",
     weekTitle: "Your week, day by day",
     weekAside: "The same schedule for every veneer and smile design patient.",
@@ -571,7 +571,7 @@ const uiEs: UiStrings = {
     faqTitle: "Preguntas sobre financiamiento",
   },
   cost: {
-    lead: "Precios de paquetes, publicados. Envía fotos y un doctor confirma tu cifra exacta por escrito en menos de 6 horas.",
+    lead: "Cuatro paquetes, cada uno con el precio por escrito y con laboratorio, limpieza profesional y radiografías incluidas. Envía fotos y un doctor confirma tu cifra exacta por escrito en menos de 6 horas.",
     packagesAria: "Paquetes",
     packagesNote:
       "Todos los paquetes incluyen limpieza dental profesional y radiografías. La limpieza profunda y cualquier otro procedimiento no están incluidos; si tu examen encuentra algo que debe tratarse primero, se cotiza por escrito antes de empezar. El presupuesto final puede variar si se requieren correcciones adicionales más allá del diseño de sonrisa.",
@@ -596,7 +596,7 @@ const uiEs: UiStrings = {
     gettingHere: "Cómo llegar",
   },
   outOfStatePage: {
-    lead: "Todo lo previo al viaje se hace desde casa: fotos, presupuesto por escrito, plan de pago y fechas. Después, una semana en Miami, tres visitas y una garantía de {years} años por escrito.",
+    lead: "Fotos, presupuesto por escrito, plan de pago y fechas, todo desde casa. Después, una semana en Miami, tres visitas, carillas naturales de nuestro laboratorio durante tu estadía y garantía de {years} años por escrito.",
     mediaAlt: "Miami al atardecer",
     weekTitle: "Tu semana, día por día",
     weekAside: "El mismo calendario para cada paciente de carillas y diseño de sonrisa.",

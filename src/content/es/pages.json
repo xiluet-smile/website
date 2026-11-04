@@ -157,56 +157,56 @@
     "title": "Carillas en Miami para pacientes de otros estados | Xiluet",
     "description": "Fotos, presupuesto y fechas desde casa; tres visitas en una semana en Miami. Hoteles aliados Hilton y Marriott con 20% de descuento y guía de transporte.",
     "ogImage": "clinic-lobby.jpg",
-    "h1": "Llega el lunes. Vuelve a casa el jueves.",
+    "h1": "Carillas para pacientes de otros estados: llega el lunes, vuelve el jueves",
     "breadcrumb": "Carillas en Miami para pacientes de otros estados"
   },
   "/veneers-atlanta": {
     "title": "Carillas para pacientes de Atlanta | 2 h a Miami | Xiluet",
     "description": "Carillas de porcelana para pacientes de Atlanta: vuelo directo de dos horas a Miami, tres visitas de lunes a jueves, 20 carillas por $5,999, garantía de 5 años.",
     "ogImage": "blog-airplane-window-miami.jpg",
-    "h1": "Carillas para pacientes de Atlanta: menos de dos horas a Miami.",
+    "h1": "Carillas naturales para pacientes de Atlanta: menos de dos horas a Miami",
     "breadcrumb": "Carillas Atlanta"
   },
   "/veneers-houston": {
     "title": "Carillas para pacientes de Houston | 2.5 h a Miami | Xiluet",
     "description": "Carillas de porcelana para pacientes de Houston: vuelo directo desde IAH o Hobby, tres visitas de lunes a jueves en Miami, 20 carillas por $5,999, en español.",
     "ogImage": "blog-airplane-window-miami.jpg",
-    "h1": "Carillas para pacientes de Houston: dos horas y media a Miami.",
+    "h1": "Carillas naturales para pacientes de Houston: un vuelo directo a Miami",
     "breadcrumb": "Carillas Houston"
   },
   "/veneers-dallas": {
     "title": "Carillas para pacientes de Dallas | DFW a Miami lun–jue",
     "description": "Carillas de porcelana para pacientes de Dallas–Fort Worth: menos de tres horas de vuelo desde DFW, tres visitas de lunes a jueves, 20 carillas por $5,999.",
     "ogImage": "blog-airplane-window-miami.jpg",
-    "h1": "Carillas para pacientes de Dallas–Fort Worth: tres horas a Miami.",
+    "h1": "Carillas naturales para pacientes de Dallas–Fort Worth: tres horas a Miami",
     "breadcrumb": "Carillas Dallas"
   },
   "/veneers-new-york": {
     "title": "Carillas para pacientes de Nueva York | 3 h a Miami | Xiluet",
     "description": "Carillas de porcelana para pacientes de Nueva York: tres horas de vuelo desde JFK, LaGuardia o Newark, tres visitas de lunes a jueves, 20 carillas por $5,999.",
     "ogImage": "blog-airplane-window-miami.jpg",
-    "h1": "Carillas para pacientes de Nueva York: tres horas a Miami, sin cambio de hora.",
+    "h1": "Carillas naturales para pacientes de Nueva York: tres horas a Miami",
     "breadcrumb": "Carillas Nueva York"
   },
   "/veneers-orlando": {
     "title": "Carillas para pacientes de Orlando | En auto o Brightline",
     "description": "Carillas de porcelana para pacientes de Orlando: cuatro horas en auto o en Brightline a Miami, tres visitas de lunes a jueves, 20 carillas por $5,999.",
     "ogImage": "blog-calle-ocho-morning.jpg",
-    "h1": "Carillas para pacientes de Orlando: cuatro horas por el Turnpike.",
+    "h1": "Carillas naturales para pacientes de Orlando: cuatro horas por el Turnpike",
     "breadcrumb": "Carillas Orlando"
   },
   "/veneers-tampa": {
     "title": "Carillas para pacientes de Tampa | 4 h a Miami | Xiluet",
     "description": "Carillas de porcelana para pacientes de Tampa: cuatro horas en auto por Alligator Alley o una hora de vuelo, tres visitas de lunes a jueves, 20 carillas $5,999.",
     "ogImage": "out-of-state-poster.jpg",
-    "h1": "Carillas para pacientes de Tampa: cuatro horas por Alligator Alley.",
+    "h1": "Carillas naturales para pacientes de Tampa: cuatro horas por Alligator Alley",
     "breadcrumb": "Carillas Tampa"
   },
   "/veneers-cost-miami": {
     "title": "Precio carillas Miami | 20 carillas $5,999, cuatro paquetes",
     "description": "Precio de carillas en Miami: cuatro paquetes publicados. 20 carillas desde $5,999, 20 restauraciones $6,999, boca completa $10,000.",
     "ogImage": "clinic-lobby.jpg",
-    "h1": "Precio de carillas en Miami: cuatro paquetes, un presupuesto por escrito.",
+    "h1": "Precio de carillas en Miami: una cifra por escrito, sin sorpresas",
     "breadcrumb": "Precio carillas Miami"
   },
   "/blog": {
@@ -289,6 +289,13 @@
     "ogImage": "blog-veneers-painful-calm-chair.jpg",
     "h1": "¿Son dolorosas las carillas? Niveles de dolor, anestesia y qué no es normal",
     "breadcrumb": "Son dolorosas las carillas"
+  },
+  "/blog/are-veneers-permanent": {
+    "title": "¿Son Permanentes las Carillas? Reversibilidad y Duración",
+    "description": "Las carillas no son reversibles, pero tampoco son para siempre: qué implican 0.3 mm de esmalte, el reemplazo a los 10 a 15 años, el retiro y la garantía.",
+    "ogImage": "blog-are-veneers-permanent.jpg",
+    "h1": "¿Son permanentes las carillas? Lo que no se puede deshacer, lo que se desgasta y lo que viene después",
+    "breadcrumb": "Son permanentes las carillas"
   },
   "/blog/composite-vs-porcelain-veneers-vs-lumineers": {
     "title": "Carillas de Composite vs Porcelana vs Lumineers: Precio",
@@ -394,6 +401,13 @@
     "ogImage": "blog-snap-on-vs-porcelain-veneer.jpg",
     "h1": "Carillas snap-on vs porcelana: lo que compran $300",
     "breadcrumb": "Snap-on vs carillas de porcelana"
+  },
+  "/blog/temporary-veneers": {
+    "title": "Carillas Provisionales: Cuánto Se Usan, Cómo Se Ven y Costo",
+    "description": "Las carillas provisionales son fundas de resina que se usan entre la preparación y la cementación: cuánto tiempo se llevan, cómo se ven, cuidados y costo.",
+    "ogImage": "blog-temporary-veneers.jpg",
+    "h1": "Carillas provisionales: qué son, cuánto tiempo se usan y cómo se ven",
+    "breadcrumb": "Carillas provisionales"
   },
   "/blog/veneer-warranty-what-it-covers": {
     "title": "Garantía de Carillas: Qué Cubre y Qué Preguntar",

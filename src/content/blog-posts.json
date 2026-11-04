@@ -20,6 +20,16 @@
     "dateModified": "2026-11-03"
   },
   {
+    "slug": "are-veneers-permanent",
+    "esSlug": "son-permanentes-las-carillas",
+    "treatments": [
+      "porcelain-veneers",
+      "smile-design"
+    ],
+    "datePublished": "2026-11-04",
+    "dateModified": "2026-11-04"
+  },
+  {
     "slug": "composite-vs-porcelain-veneers-vs-lumineers",
     "esSlug": "carillas-de-composite-vs-porcelana-vs-lumineers",
     "treatments": [
@@ -171,6 +181,16 @@
     ],
     "datePublished": "2026-10-12",
     "dateModified": "2026-10-12"
+  },
+  {
+    "slug": "temporary-veneers",
+    "esSlug": "carillas-provisionales",
+    "treatments": [
+      "porcelain-veneers",
+      "smile-design"
+    ],
+    "datePublished": "2026-11-04",
+    "dateModified": "2026-11-04"
   },
   {
     "slug": "veneer-warranty-what-it-covers",
