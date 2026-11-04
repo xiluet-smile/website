@@ -40,23 +40,28 @@
     "items": [
       {
         "t": "Stains whitening won’t lift",
-        "d": "Tetracycline, fluorosis, a root-canal tooth gone grey, or deep internal discoloration."
+        "d": "Tetracycline, fluorosis, a root-canal tooth gone grey, or deep internal discoloration.",
+        "img": "cand-stains.jpg"
       },
       {
         "t": "Chips, cracks and worn edges",
-        "d": "Edges shortened by grinding, or old bonding that keeps breaking off."
+        "d": "Edges shortened by grinding, or old bonding that keeps breaking off.",
+        "img": "cand-chips.jpg"
       },
       {
         "t": "Gaps and black triangles",
-        "d": "Spaces between front teeth closed in one week, without years of aligners."
+        "d": "Spaces between front teeth closed in one week, without years of aligners.",
+        "img": "cand-gaps.jpg"
       },
       {
         "t": "Small, short or uneven teeth",
-        "d": "Peg laterals, teeth that look too short when you smile, or a lopsided edge line."
+        "d": "Peg laterals, teeth that look too short when you smile, or a lopsided edge line.",
+        "img": "cand-shape.jpg"
       },
       {
         "t": "Old veneers that no longer match",
-        "d": "A single veneer that darkened, or a set that was never the right shade."
+        "d": "A single veneer that darkened, or a set that was never the right shade.",
+        "img": "cand-old-veneer.jpg"
       }
     ]
   },

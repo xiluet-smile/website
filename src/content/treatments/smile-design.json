@@ -41,23 +41,28 @@
     "items": [
       {
         "t": "Stains whitening won’t lift",
-        "d": "Tetracycline, fluorosis or deep internal discoloration."
+        "d": "Tetracycline, fluorosis or deep internal discoloration.",
+        "img": "cand-stains.jpg"
       },
       {
         "t": "Chips and worn edges",
-        "d": "Teeth shortened by grinding or old bonding that keeps breaking."
+        "d": "Teeth shortened by grinding or old bonding that keeps breaking.",
+        "img": "cand-chips.jpg"
       },
       {
         "t": "Gaps between teeth",
-        "d": "Closed in one week, without years of aligners."
+        "d": "Closed in one week, without years of aligners.",
+        "img": "cand-gaps.jpg"
       },
       {
         "t": "Uneven size or shape",
-        "d": "Small, peg-shaped or mismatched front teeth."
+        "d": "Small, peg-shaped or mismatched front teeth.",
+        "img": "cand-shape.jpg"
       },
       {
         "t": "Mild crowding or rotation",
-        "d": "When a straighter look matters more than moving roots."
+        "d": "When a straighter look matters more than moving roots.",
+        "img": "cand-crowding.jpg"
       }
     ]
   },

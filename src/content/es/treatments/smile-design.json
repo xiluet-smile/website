@@ -41,23 +41,28 @@
     "items": [
       {
         "t": "Manchas que el blanqueamiento no quita",
-        "d": "Tetraciclina, fluorosis o decoloración interna profunda."
+        "d": "Tetraciclina, fluorosis o decoloración interna profunda.",
+        "img": "cand-stains.jpg"
       },
       {
         "t": "Dientes astillados y bordes desgastados",
-        "d": "Dientes acortados por el bruxismo o resinas viejas que se siguen rompiendo."
+        "d": "Dientes acortados por el bruxismo o resinas viejas que se siguen rompiendo.",
+        "img": "cand-chips.jpg"
       },
       {
         "t": "Espacios entre los dientes",
-        "d": "Cerrados en una semana, sin años de alineadores."
+        "d": "Cerrados en una semana, sin años de alineadores.",
+        "img": "cand-gaps.jpg"
       },
       {
         "t": "Tamaño o forma desigual",
-        "d": "Dientes frontales pequeños, cónicos o disparejos."
+        "d": "Dientes frontales pequeños, cónicos o disparejos.",
+        "img": "cand-shape.jpg"
       },
       {
         "t": "Apiñamiento o rotación leve",
-        "d": "Cuando importa más verse alineado que mover las raíces."
+        "d": "Cuando importa más verse alineado que mover las raíces.",
+        "img": "cand-crowding.jpg"
       }
     ]
   },

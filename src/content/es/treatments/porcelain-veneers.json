@@ -40,23 +40,28 @@
     "items": [
       {
         "t": "Manchas que el blanqueamiento no quita",
-        "d": "Tetraciclina, fluorosis, un diente con endodoncia que se puso gris o decoloración interna profunda."
+        "d": "Tetraciclina, fluorosis, un diente con endodoncia que se puso gris o decoloración interna profunda.",
+        "img": "cand-stains.jpg"
       },
       {
         "t": "Astillas, fisuras y bordes desgastados",
-        "d": "Bordes acortados por el bruxismo o resinas viejas que se siguen rompiendo."
+        "d": "Bordes acortados por el bruxismo o resinas viejas que se siguen rompiendo.",
+        "img": "cand-chips.jpg"
       },
       {
         "t": "Espacios y triángulos negros",
-        "d": "Espacios entre los dientes frontales cerrados en una semana, sin años de alineadores."
+        "d": "Espacios entre los dientes frontales cerrados en una semana, sin años de alineadores.",
+        "img": "cand-gaps.jpg"
       },
       {
         "t": "Dientes pequeños, cortos o desiguales",
-        "d": "Laterales cónicos, dientes que se ven demasiado cortos al sonreír o una línea de bordes torcida."
+        "d": "Laterales cónicos, dientes que se ven demasiado cortos al sonreír o una línea de bordes torcida.",
+        "img": "cand-shape.jpg"
       },
       {
         "t": "Carillas viejas que ya no combinan",
-        "d": "Una sola carilla que se oscureció, o un juego que nunca tuvo el tono correcto."
+        "d": "Una sola carilla que se oscureció, o un juego que nunca tuvo el tono correcto.",
+        "img": "cand-old-veneer.jpg"
       }
     ]
   },

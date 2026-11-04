@@ -42,7 +42,8 @@ export type Treatment = {
   candidates: {
     title: string;
     intro: string;
-    items: { t: string; d: string }[];
+    /** Optional small illustration (file in src/assets) shown instead of the step number. */
+    items: { t: string; d: string; img?: string }[];
   };
   /** Optional link under the candidates grid to the sibling page (Smile Design ↔ veneers à la carte). */
   crossLink?: { label: string; href: string };
@@ -305,12 +306,18 @@ export default function TreatmentPage({
               key={c.t}
               className="glass-card grid grid-cols-[36px_minmax(0,1fr)] gap-x-3.5 gap-y-1.5 rounded-2xl p-4 lg:flex lg:flex-col lg:gap-3 lg:rounded-[18px] lg:p-5"
             >
-              <span
-                aria-hidden="true"
-                className="grid h-9 w-9 place-items-center rounded-full bg-teal font-serif text-[16px] leading-none text-on-dark"
-              >
-                {i + 1}
-              </span>
+              {c.img ? (
+                <span aria-hidden="true" className="block h-9 w-9 overflow-hidden rounded-xl lg:h-16 lg:w-16">
+                  <Img src={c.img} alt="" sizes="64px" className="block h-full w-full object-cover" />
+                </span>
+              ) : (
+                <span
+                  aria-hidden="true"
+                  className="grid h-9 w-9 place-items-center rounded-full bg-teal font-serif text-[16px] leading-none text-on-dark"
+                >
+                  {i + 1}
+                </span>
+              )}
               <h3 className="m-0 self-center font-serif text-[20px] leading-[1.2] font-normal text-pretty text-teal lg:mt-1 lg:text-[21px]">
                 {c.t}
               </h3>
