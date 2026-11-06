@@ -175,14 +175,6 @@ const uiEn = {
     galleryName: "Before and after, Xiluet Smiles patients",
     photos: "Before & after",
     videos: "Testimonials",
-    intro: [
-      "Porcelain veneer, smile makeover, full mouth reconstruction and All-on-X results from Xiluet Smiles in Miami, photographed in the clinic before treatment and on delivery day. Most cases are 20 veneers made in our own lab with about 0.3 mm of preparation; some are single veneers, or crowns and veneers planned together.",
-      "Filter by treatment, open any case to compare both photos at full size, and look at what we check at every try-in: the edge line against the lower lip, the width of the two front teeth, and how the shade sits next to the whites of the eyes.",
-    ],
-    costPrefix: "What a case like yours would cost: ",
-    costAnchor: "veneers cost in Miami",
-    veneersPrefix: "How each veneer is made and who it suits: ",
-    veneersAnchor: "porcelain veneers in Miami",
   },
   planner: {
     sendOn: "If I send my photos on",
@@ -493,14 +485,6 @@ const uiEs: UiStrings = {
     galleryName: "Antes y después, pacientes de Xiluet Smiles",
     photos: "Antes y después",
     videos: "Testimonios",
-    intro: [
-      "Resultados de carillas de porcelana, transformación de sonrisa, reconstrucción bucal completa y All-on-X de Xiluet Smiles en Miami, fotografiados en la clínica antes del tratamiento y el día de la entrega. La mayoría son 20 carillas hechas en nuestro laboratorio con unos 0.3 mm de preparación; algunos son carillas individuales, o coronas y carillas planificadas juntas.",
-      "Filtra por tratamiento, abre cualquier caso para comparar ambas fotos a tamaño completo y fíjate en lo que revisamos en cada prueba: la línea del borde frente al labio inferior, el ancho de los dos dientes frontales y cómo se ve el color junto al blanco de los ojos.",
-    ],
-    costPrefix: "Lo que costaría un caso como el tuyo: ",
-    costAnchor: "precio de carillas en Miami",
-    veneersPrefix: "Cómo se hace cada carilla y a quién le conviene: ",
-    veneersAnchor: "carillas de porcelana en Miami",
   },
   planner: {
     sendOn: "Si envío mis fotos el",
